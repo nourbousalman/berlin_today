@@ -66,13 +66,14 @@ def main() -> int:
     events.sort(key=lambda e: e.start)
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
+    n_rec = sum(1 for e in events if e.recurring)
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "count": len(events),
         "events": [e.to_dict() for e in events],
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"Wrote {len(events)} events → {OUT.relative_to(ROOT)}")
+    print(f"Wrote {len(events)} events ({n_rec} recurring, {len(events)-n_rec} one-off) → {OUT.relative_to(ROOT)}")
     return 0
 
 

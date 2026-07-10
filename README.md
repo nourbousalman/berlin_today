@@ -5,6 +5,10 @@ timetable (free-only toggle, "this weekend" view, category filters, search).
 No server to run and no hosting bill: a scheduled **GitHub Action** rebuilds the
 data a few times a day and **GitHub Pages** serves the page.
 
+**Two sections, toggled at the top of the page:**
+- **One-off** — dated events (concerts, screenings, openings), grouped by day, with the "This weekend / Today / 7 days / All" filter.
+- **Recurring** — the weekly and monthly regulars (jams, parkrun, language exchange…), grouped by day of the week. Anything with an iCal repeat rule (RRULE) is detected as recurring automatically; you can also force a whole feed into this section with `recurring: true`.
+
 ```
 sources ──► aggregate.py ──► docs/events.json ──► docs/index.html (the page)
    ▲                                 ▲

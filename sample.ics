@@ -3,58 +3,90 @@ VERSION:2.0
 PRODID:-//berlin-events//demo//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
-UID:demo-jam-001@berlin-events
+UID:demo-swagjam@berlin-events
 SUMMARY:Swag Jam — hip-hop open jam
-DTSTART:20260710T193000
-DTEND:20260710T233000
+DTSTART:20260630T200000
+DTEND:20260630T233000
+RRULE:FREQ=WEEKLY;BYDAY=TU
 LOCATION:Badehaus, Revaler Str. 99, Friedrichshain
 CATEGORIES:music
-URL:https://badehaus-berlin.com/
-DESCRIPTION:Weekly open jam with a house band. Free-to-play open stage after the set.
+DESCRIPTION:Hip-hop open jam with a house band; open stage after the set.
 END:VEVENT
 BEGIN:VEVENT
-UID:demo-run-001@berlin-events
-SUMMARY:parkrun Hasenheide — free 5K
-DTSTART:20260711T090000
-DTEND:20260711T100000
+UID:demo-parkrun@berlin-events
+SUMMARY:parkrun Hasenheide — 5K
+DTSTART:20260704T090000
+DTEND:20260704T100000
+RRULE:FREQ=WEEKLY;BYDAY=SA
 LOCATION:Volkspark Hasenheide
 CATEGORIES:sport
 DESCRIPTION:Free timed 5K. Walk, jog or run. One-time registration.
 END:VEVENT
 BEGIN:VEVENT
-UID:demo-flea-001@berlin-events
+UID:demo-mauerpark@berlin-events
 SUMMARY:Mauerpark Flohmarkt + Bearpit Karaoke
-DTSTART:20260712T100000
-DTEND:20260712T180000
+DTSTART:20260705T100000
+DTEND:20260705T180000
+RRULE:FREQ=WEEKLY;BYDAY=SU
 LOCATION:Bernauer Str. 63-64, Prenzlauer Berg
 CATEGORIES:market
-DESCRIPTION:Berlin's biggest Sunday flea market. Free open-air karaoke in the amphitheatre from ~15:00.
+DESCRIPTION:Sunday flea market. Free open-air karaoke in the amphitheatre from ~15:00.
 END:VEVENT
 BEGIN:VEVENT
-UID:demo-art-001@berlin-events
-SUMMARY:Hamburger Bahnhof — free first-Thursday evening
-DTSTART:20260806T160000
-DTEND:20260806T200000
-LOCATION:Invalidenstr. 50-51, Mitte
-CATEGORIES:art
-DESCRIPTION:Free entry 16:00-20:00 (Volkswagen Art4All). Contemporary art.
-END:VEVENT
-BEGIN:VEVENT
-UID:demo-classical-001@berlin-events
+UID:demo-lunchkonzert@berlin-events
 SUMMARY:Philharmonie Lunchkonzert (free)
-DTSTART:20260715T130000
-DTEND:20260715T135000
+DTSTART:20260701T130000
+DTEND:20260701T135000
+RRULE:FREQ=WEEKLY;BYDAY=WE
 LOCATION:Philharmonie, Herbert-von-Karajan-Str. 1
 CATEGORIES:music
 DESCRIPTION:Free lunchtime chamber concert. First-come; arrive early for a chip.
 END:VEVENT
 BEGIN:VEVENT
-UID:demo-lang-001@berlin-events
+UID:demo-sprachcafe@berlin-events
 SUMMARY:Sprachcafé — language exchange
-DTSTART:20260713T180000
-DTEND:20260713T200000
+DTSTART:20260706T180000
+DTEND:20260706T200000
+RRULE:FREQ=WEEKLY;BYDAY=MO
 LOCATION:Denizen House, Köpenicker Str. 40
 CATEGORIES:community
-DESCRIPTION:Moderated German/English language exchange. All levels.
+DESCRIPTION:Language exchange, kostenlos. All levels welcome.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-hbf@berlin-events
+SUMMARY:Hamburger Bahnhof — free first-Thursday evening
+DTSTART:20260702T160000
+DTEND:20260702T200000
+RRULE:FREQ=MONTHLY;BYDAY=1TH
+LOCATION:Invalidenstr. 50-51, Mitte
+CATEGORIES:art
+DESCRIPTION:Free entry 16:00-20:00 (Volkswagen Art4All). Contemporary art.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-oneoff-concert@berlin-events
+SUMMARY:Kali Malone — organ & electronics (live)
+DTSTART:20260711T200000
+DTEND:20260711T220000
+LOCATION:St. Elisabeth-Kirche, Mitte
+CATEGORIES:music
+DESCRIPTION:One-night drone/minimalism concert. Tickets required.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-oneoff-vernissage@berlin-events
+SUMMARY:Vernissage: New Contemporaries (free entry)
+DTSTART:20260712T180000
+DTEND:20260712T210000
+LOCATION:KINDL, Neukölln
+CATEGORIES:art
+DESCRIPTION:Opening night for a new group show. Free entry, drinks.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-oneoff-panel@berlin-events
+SUMMARY:Panel: Housing & the City
+DTSTART:20260716T190000
+DTEND:20260716T210000
+LOCATION:Volksbühne, Mitte
+CATEGORIES:art
+DESCRIPTION:One-off panel discussion on Berlin housing policy. Tickets required.
 END:VEVENT
 END:VCALENDAR

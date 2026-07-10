@@ -11,16 +11,16 @@ CATEGORIES = ["music", "nightlife", "art", "sport", "community", "market", "othe
 # Keyword -> category. First match wins. Used to normalise free-text tags
 # (from ICS CATEGORIES, RSS categories, feed defaults, etc.) into our set.
 _CATEGORY_KEYWORDS = [
-    ("nightlife", ["club", "rave", "techno", "house", "dj", "party", "nacht", "afterhour"]),
-    ("music", ["concert", "konzert", "gig", "live music", "jam", "open mic", "open stage",
-               "band", "jazz", "classical", "klassik", "chor", "choir", "song"]),
+    ("nightlife", ["nightlife", "club", "rave", "techno", "house", "dj", "party", "nacht", "afterhour"]),
+    ("music", ["music", "musik", "concert", "konzert", "gig", "live music", "jam", "open mic",
+               "open stage", "band", "jazz", "classical", "klassik", "chor", "choir", "song"]),
     ("art", ["art", "kunst", "exhibition", "ausstellung", "gallery", "galerie", "museum",
              "vernissage", "film", "kino", "cinema", "talk", "lesung", "reading", "theatre",
              "theater", "performance"]),
     ("sport", ["sport", "run", "lauf", "yoga", "fitness", "workout", "calisthenics",
                "hike", "wander", "swim", "schwimm", "cycl", "bike", "climb", "bouldern"]),
-    ("community", ["language", "sprach", "tandem", "meetup", "stammtisch", "workshop",
-                   "kiez", "nachbarschaft", "community", "volunteer", "repair", "swap"]),
+    ("community", ["community", "language", "sprach", "tandem", "meetup", "stammtisch", "workshop",
+                   "kiez", "nachbarschaft", "volunteer", "repair", "swap"]),
     ("market", ["market", "markt", "flohmarkt", "flea", "trödel", "flowmarkt", "bazaar"]),
 ]
 
@@ -32,6 +32,30 @@ def normalise_category(*hints: str) -> str:
         if any(w in blob for w in words):
             return cat
     return "other"
+
+
+# Strong cadence phrases → treat as recurring even without an iCal RRULE.
+_RECUR_KEYWORDS = [
+    "every ", "weekly", "wöchentlich", "monthly", "monatlich", "daily", "täglich",
+    "jeden ", "jede ", "jeweils", "regelmäßig", "immer ",
+    "mondays", "tuesdays", "wednesdays", "thursdays", "fridays", "saturdays", "sundays",
+    "montags", "dienstags", "mittwochs", "donnerstags", "freitags", "samstags", "sonntags",
+]
+
+
+def looks_recurring(*hints: str) -> bool:
+    blob = " ".join(h for h in hints if h).lower()
+    return any(w in blob for w in _RECUR_KEYWORDS)
+
+
+# Words that clearly mean no-cost entry. Donation/PWYW deliberately excluded.
+_FREE_KEYWORDS = ["free entry", "free admission", "free ", "kostenlos", "gratis",
+                  "eintritt frei", "umsonst", "for free"]
+
+
+def looks_free(*hints: str) -> bool:
+    blob = " ".join(h for h in hints if h).lower()
+    return any(w in blob for w in _FREE_KEYWORDS)
 
 
 @dataclass
@@ -48,6 +72,8 @@ class Event:
     price: str | None = None        # free-text, e.g. "€7", "ticketed", "donation"
     image: str | None = None
     description: str | None = None
+    recurring: bool = False         # True = repeats on a schedule (weekly/monthly regular)
+    recurrence: str | None = None   # human-readable cadence, e.g. "Weekly · Wed"
 
     def key(self) -> str:
         """Stable identity for de-duplication (title + day + venue)."""
