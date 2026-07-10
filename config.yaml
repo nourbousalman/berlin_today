@@ -74,6 +74,15 @@ rss_feeds:
   - name: "Kleidertausch"
     url: "https://kleidertausch.de/feed/"
     category: "market"
+  # City-magazine blogs (WordPress). These post editorial round-ups more than
+  # single dated events, so expect articles here — the Sources panel will show
+  # how many land, and you can drop them if they're noisy.
+  - name: "iHeartBerlin"
+    url: "https://www.iheartberlin.de/feed/"
+    category: "art"
+  - name: "Mit Vergnügen"
+    url: "https://mitvergnuegen.com/feed/"
+    category: "other"
 
 # HTML scrapers — fragile, opt-in. See sources/html_scrapers.py before enabling.
 html_scrapers:
