@@ -1,0 +1,46 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Berlin events aggregator — configuration
+# Edit this file to add sources. No code changes needed for iCal/RSS feeds.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# How far ahead to collect events (days).
+horizon_days: 45
+
+# Resident Advisor — Berlin's club / electronic scene. Works out of the box.
+resident_advisor:
+  enabled: true
+  area_id: 34          # 34 == Berlin. Verify at ra.co/events/de/berlin if results look off.
+
+# iCal feeds — the robust, low-maintenance source. Add as many as you like.
+# Each event is tagged with `category` unless the feed's own CATEGORIES say otherwise.
+# category is one of: music, nightlife, art, sport, community, market, other
+ics_feeds:
+  # Bundled demo feed (a local file) so the pipeline produces output before you
+  # add real feeds. Delete this entry once you've added your own.
+  - name: "Demo"
+    url: "sample.ics"
+    category: "other"
+    is_free: true
+
+  # ── Add real feeds below. Find them via a venue/org's "Subscribe / Add to
+  #    calendar" link, or a public Google Calendar's "Public address in iCal format".
+  # - name: "SO36"          # Kreuzberg venue
+  #   url: "https://…/events.ics"
+  #   category: "music"
+  #   is_free: false
+  # - name: "Sport im Park"
+  #   url: "https://…/calendar.ics"
+  #   category: "sport"
+  #   is_free: true
+
+# RSS / Atom feeds. Weaker for events (dates are often publish-dates), but handy
+# for sources that only offer RSS.
+rss_feeds:
+  # - name: "gratis-in-berlin"
+  #   url: "https://www.gratis-in-berlin.de/…/feed"
+  #   category: "other"
+  #   is_free: true
+
+# HTML scrapers — fragile, opt-in. See sources/html_scrapers.py before enabling.
+html_scrapers:
+  enabled: false

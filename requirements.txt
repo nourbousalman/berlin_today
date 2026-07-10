@@ -1,0 +1,5 @@
+requests>=2.31
+icalendar>=5.0
+feedparser>=6.0
+PyYAML>=6.0
+# selectolax>=0.3   # uncomment ONLY if you enable html_scrapers in config.yaml

@@ -1,0 +1,60 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//berlin-events//demo//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:demo-jam-001@berlin-events
+SUMMARY:Swag Jam — hip-hop open jam
+DTSTART:20260710T193000
+DTEND:20260710T233000
+LOCATION:Badehaus, Revaler Str. 99, Friedrichshain
+CATEGORIES:music
+URL:https://badehaus-berlin.com/
+DESCRIPTION:Weekly open jam with a house band. Free-to-play open stage after the set.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-run-001@berlin-events
+SUMMARY:parkrun Hasenheide — free 5K
+DTSTART:20260711T090000
+DTEND:20260711T100000
+LOCATION:Volkspark Hasenheide
+CATEGORIES:sport
+DESCRIPTION:Free timed 5K. Walk, jog or run. One-time registration.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-flea-001@berlin-events
+SUMMARY:Mauerpark Flohmarkt + Bearpit Karaoke
+DTSTART:20260712T100000
+DTEND:20260712T180000
+LOCATION:Bernauer Str. 63-64, Prenzlauer Berg
+CATEGORIES:market
+DESCRIPTION:Berlin's biggest Sunday flea market. Free open-air karaoke in the amphitheatre from ~15:00.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-art-001@berlin-events
+SUMMARY:Hamburger Bahnhof — free first-Thursday evening
+DTSTART:20260806T160000
+DTEND:20260806T200000
+LOCATION:Invalidenstr. 50-51, Mitte
+CATEGORIES:art
+DESCRIPTION:Free entry 16:00-20:00 (Volkswagen Art4All). Contemporary art.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-classical-001@berlin-events
+SUMMARY:Philharmonie Lunchkonzert (free)
+DTSTART:20260715T130000
+DTEND:20260715T135000
+LOCATION:Philharmonie, Herbert-von-Karajan-Str. 1
+CATEGORIES:music
+DESCRIPTION:Free lunchtime chamber concert. First-come; arrive early for a chip.
+END:VEVENT
+BEGIN:VEVENT
+UID:demo-lang-001@berlin-events
+SUMMARY:Sprachcafé — language exchange
+DTSTART:20260713T180000
+DTEND:20260713T200000
+LOCATION:Denizen House, Köpenicker Str. 40
+CATEGORIES:community
+DESCRIPTION:Moderated German/English language exchange. All levels.
+END:VEVENT
+END:VCALENDAR
