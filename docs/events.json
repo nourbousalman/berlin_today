@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-10T17:23:05.433671+00:00",
+ "generated_at": "2026-07-10T19:27:32.976442+00:00",
  "count": 344,
  "sources": {
   "Resident Advisor": 282,
@@ -483,7 +483,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "On May 9th We are celebrating a big street party on Annemirl-Bauer-Platz and the surrounding area together with the “Ostkreuz remains colorful” initiative and many neighbors. There will be more than 30 stands with lots of information, promotions and snacks. There are also readings, lectures and lots of music…",
+   "description": "On May 9th We are celebrating a big street party at Annemirl-Bauer-Platz and the surrounding area together with the “Ostkreuz remains colorful” initiative and many neighbors. There will be more than 30 stands with lots of information, promotions and snacks. There are also readings, lectures and lots of music…",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -635,7 +635,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "On Tuesday June 9th Our first argumentation training against anti-feminist and anti-queer slogans takes place. Anti-feminist narratives are widespread - often hidden in everyday sayings. In the seminar we strengthen attitude and language to combat anti-feminist...",
+   "description": "On Tuesday June 9th Our first argumentation training against anti-feminist and anti-queer slogans takes place. Anti-feminist narratives are widespread - often hidden in everyday sayings. In the seminar we strengthen attitude and language to combat anti-feminist…",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -958,7 +958,7 @@
    "price": "€5–25",
    "price_value": 5.0,
    "image": null,
-   "description": "<p>While many smaller cities have a maximum of one or two vegetarian options on the menu, you can hardly find a restaurant in Berlin that doesn't offer at least one vegan option, because Berlin is the Mecca for people who follow a vegan diet. Eg…",
+   "description": "<p>While many smaller cities have a maximum of one or two vegetarian options on the menu, you can hardly find a restaurant in Berlin that doesn't offer at least one vegan option, because Berlin is the Mecca for people who follow a vegan diet. Eg...",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -1740,7 +1740,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "id": "68dc7f866264c58cfcd17ea1071ecac8e71734c8"
   },
   {
@@ -2709,7 +2709,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": false,
+   "translated": true,
    "id": "e35a88fd24a0eed52fadcd92bbd634e20fb5a687"
   },
   {
@@ -2804,7 +2804,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": false,
+   "translated": true,
    "id": "bebdae2a44ce716f2a38461bc0332c2271f6178c"
   },
   {
@@ -3397,7 +3397,7 @@
    "id": "2ae832d85f0b3fa12b69677532a161ddca6a1ae6"
   },
   {
-   "title": "Fuego Noches",
+   "title": "Fire Nights",
    "start": "2026-07-11T21:00:00.000",
    "source": "Resident Advisor",
    "url": "https://ra.co/events/2484313",
@@ -3412,8 +3412,8 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": false,
-   "id": "b784218f7eac182297eaaf08039a636d6c627799"
+   "translated": true,
+   "id": "ee206a1f6c0df56a5ed90ab20267144a8071ca73"
   },
   {
    "title": "Captain's Club Party - pure disco",
@@ -4119,7 +4119,7 @@
    "id": "8b8ff2973b73304b8951069003d82da306d5948f"
   },
   {
-   "title": "Mauerpark Flohmarkt + Bearpit Karaoke",
+   "title": "Mauerpark flea market + Bearpit karaoke",
    "start": "2026-07-12T10:00:00+02:00",
    "source": "cal:Demo",
    "url": "",
@@ -4134,8 +4134,8 @@
    "description": "Sunday flea market. Free open-air karaoke in the amphitheatre from ~15:00.",
    "recurring": true,
    "recurrence": "Weekly · Sun",
-   "translated": false,
-   "id": "3334fc098fb71f56cc75fe1025b60bf68fc77a0c"
+   "translated": true,
+   "id": "d0307800a694ccdf886069e24b4786315fc5ab6c"
   },
   {
    "title": "THE DARK ROOMS VEINS",
@@ -4191,7 +4191,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "id": "c77b45cc6816c18d613725700a2efb75850858d3"
   },
   {
@@ -4533,7 +4533,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "id": "ac91af9999339b5f08018f835b5c869d7f42c10f"
   },
   {
@@ -5354,7 +5354,7 @@
    "id": "ac1e474eb82d6a0c76d489b70dc584248aeace59"
   },
   {
-   "title": "SIGNALS - 5€ Tickets - with Bobaz Lobster, cravings320 & kichererbsenstampf",
+   "title": "SIGNALS - 5€ tickets - with Bobaz Lobster, cravings320 & chickpea stamp",
    "start": "2026-07-15T23:00:00.000",
    "source": "Resident Advisor",
    "url": "https://ra.co/events/2351999",
@@ -5369,8 +5369,8 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": false,
-   "id": "b47ff289c3f785ae602196ee67dace648a7712eb"
+   "translated": true,
+   "id": "17a64cb6a5f62fff015bba6c7284afd141e6a01c"
   },
   {
    "title": "Tresor New Faces hosted by Trifec",
@@ -5559,7 +5559,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "id": "90372cf20a5ab389448a5c69f9fb8220823fefe5"
   },
   {
