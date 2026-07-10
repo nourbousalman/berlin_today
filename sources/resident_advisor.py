@@ -92,6 +92,7 @@ def _map(e: dict) -> Event | None:
     content = e.get("contentUrl") or ""
     url = f"https://ra.co{content}" if content.startswith("/") else content
     start = e.get("startTime") or e.get("date")
+    ticketed = bool(e.get("isTicketed"))
     return Event(
         title=title,
         start=start,
@@ -101,7 +102,7 @@ def _map(e: dict) -> Event | None:
         source="Resident Advisor",
         url=url,
         category="nightlife",
-        is_free=None,                                   # RA doesn't expose free-ness
-        price="ticketed" if e.get("isTicketed") else None,
+        is_free=False if ticketed else None,            # RA doesn't publish the amount
+        price="ticketed" if ticketed else None,
         image=e.get("flyerFront"),
     )

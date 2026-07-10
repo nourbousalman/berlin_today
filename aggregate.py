@@ -11,10 +11,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 import json
 import sys
+from collections import Counter
 import yaml
 
 from sources.base import Event, dedupe
 from sources import resident_advisor, ics_feeds, rss_feeds, html_scrapers
+from sources.translate import translate_events
 
 ROOT = Path(__file__).parent
 OUT = ROOT / "docs" / "events.json"
@@ -57,19 +59,36 @@ def _run(label: str, fn) -> list[Event]:
         return []
 
 
+def _expected_sources(cfg: dict) -> list[str]:
+    """All source labels we tried this run — so the page can show 0-count feeds."""
+    labels = []
+    if (cfg.get("resident_advisor", {}) or {}).get("enabled"):
+        labels.append("Resident Advisor")
+    for f in cfg.get("ics_feeds", []) or []:
+        labels.append(f"cal:{f.get('name', 'calendar')}")
+    for f in cfg.get("rss_feeds", []) or []:
+        labels.append(f"rss:{f.get('name', 'feed')}")
+    return labels
+
+
 def main() -> int:
     print("Collecting Berlin events…")
     cfg = load_config()
     events = collect(cfg)
     events = dedupe(events)
+    events = translate_events(events, enabled=cfg.get("translate", True))
     events = [e for e in events if e.start]                       # drop dateless
     events.sort(key=lambda e: e.start)
+
+    counts = Counter(e.source for e in events)
+    sources = {label: counts.get(label, 0) for label in _expected_sources(cfg)}
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     n_rec = sum(1 for e in events if e.recurring)
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "count": len(events),
+        "sources": sources,
         "events": [e.to_dict() for e in events],
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")

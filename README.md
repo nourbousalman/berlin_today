@@ -8,6 +8,9 @@ data a few times a day and **GitHub Pages** serves the page.
 **Two sections, toggled at the top of the page:**
 - **One-off** — dated events (concerts, screenings, openings), grouped by day, with the "This weekend / Today / 7 days / All" filter.
 - **Recurring** — the weekly and monthly regulars (jams, parkrun, language exchange…), grouped by day of the week. Anything with an iCal repeat rule (RRULE) is detected as recurring automatically; you can also force a whole feed into this section with `recurring: true`.
+- **Directory** — a curated list of Berlin's best listings sites, jam directories, sport programmes, markets and more (the resources to check by hand for things no feed covers).
+
+**Also on the page:** a **Cost** filter (Any / Free / ≤€10 / ≤€20), **Sort** by time or price, and a **Sources** panel at the bottom showing how many events each feed returned (a `0` means that feed is empty or broken — your at-a-glance health check). German titles and descriptions are **auto-translated to English** in the Action (cached; falls back to the original if translation is unavailable).
 
 ```
 sources ──► aggregate.py ──► docs/events.json ──► docs/index.html (the page)

@@ -6,6 +6,9 @@
 # How far ahead to collect events (days).
 horizon_days: 45
 
+# Auto-translate German event titles/descriptions to English. Runs in the Action.
+translate: true
+
 # Resident Advisor — Berlin's club / electronic scene. Works out of the box.
 resident_advisor:
   enabled: true
@@ -43,10 +46,34 @@ ics_feeds:
 # RSS / Atom feeds. Weaker for events (dates are often publish-dates), but handy
 # for sources that only offer RSS.
 rss_feeds:
-  # - name: "gratis-in-berlin"
-  #   url: "https://www.gratis-in-berlin.de/…/feed"
-  #   category: "other"
-  #   is_free: true
+  # ── Your sites, wired in as WordPress RSS (provisional — see notes below).
+  # These sites publish an RSS feed of recent posts. Coverage varies: some post
+  # real dated events, others mostly news. The Sources panel on the page shows
+  # how many each one actually returned, so you can see what's working and drop
+  # the empties. Community centres are marked recurring so their standing
+  # offers land in the "Recurring" section.
+  - name: "NBH Urbanstraße"
+    url: "https://www.nachbarschaftshaus.de/feed/"
+    category: "community"
+    recurring: true
+  - name: "Rudi NBH"
+    url: "https://rudi-nachbarschaftshaus.de/feed/"
+    category: "community"
+    recurring: true
+  - name: "NBH Neukölln"
+    url: "https://www.nbh-neukoelln.de/feed/"
+    category: "community"
+    recurring: true
+  - name: "Mittelhof"
+    url: "https://www.mittelhof.org/feed/"
+    category: "community"
+    recurring: true
+  - name: "Literarische Aktion"
+    url: "https://berliner-literarische-aktion.de/feed/"
+    category: "art"
+  - name: "Kleidertausch"
+    url: "https://kleidertausch.de/feed/"
+    category: "market"
 
 # HTML scrapers — fragile, opt-in. See sources/html_scrapers.py before enabling.
 html_scrapers:

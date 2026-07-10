@@ -58,6 +58,30 @@ def looks_free(*hints: str) -> bool:
     return any(w in blob for w in _FREE_KEYWORDS)
 
 
+import re as _re
+_PRICE_RE = _re.compile(
+    r'(?:€|eur\b|euro)\s?(\d{1,3}(?:[.,]\d{1,2})?)|(\d{1,3}(?:[.,]\d{1,2})?)\s?(?:€|eur\b|euro)', _re.I)
+
+
+def detect_price(*hints: str):
+    """Find a price in text. Returns (display_str, min_value) or (None, None)."""
+    text = " ".join(h for h in hints if h)
+    vals = []
+    for m in _PRICE_RE.finditer(text):
+        num = (m.group(1) or m.group(2) or "").replace(",", ".")
+        try:
+            v = float(num)
+            if 0 < v < 1000:
+                vals.append(v)
+        except ValueError:
+            pass
+    if not vals:
+        return None, None
+    lo, hi = min(vals), max(vals)
+    disp = f"€{lo:g}" if lo == hi else f"€{lo:g}–{hi:g}"
+    return disp, lo
+
+
 @dataclass
 class Event:
     title: str
@@ -69,11 +93,13 @@ class Event:
     area: str | None = None         # neighbourhood / city area if known
     category: str = "other"
     is_free: bool | None = None     # True / False / None (unknown)
-    price: str | None = None        # free-text, e.g. "€7", "ticketed", "donation"
+    price: str | None = None        # free-text, e.g. "€7", "€8–12", "ticketed"
+    price_value: float | None = None  # numeric min price in EUR (None = unknown)
     image: str | None = None
     description: str | None = None
     recurring: bool = False         # True = repeats on a schedule (weekly/monthly regular)
     recurrence: str | None = None   # human-readable cadence, e.g. "Weekly · Wed"
+    translated: bool = False        # True if title/description were auto-translated to English
 
     def key(self) -> str:
         """Stable identity for de-duplication (title + day + venue)."""

@@ -13,7 +13,7 @@ import requests
 from icalendar import Calendar
 from dateutil.rrule import rrulestr
 
-from .base import Event, normalise_category, to_iso, looks_recurring, looks_free
+from .base import Event, normalise_category, to_iso, looks_recurring, looks_free, detect_price
 
 BERLIN = ZoneInfo("Europe/Berlin")
 
@@ -75,7 +75,15 @@ def _parse(raw, name, default_cat, is_free, force_recurring, now, horizon) -> li
 
         end_dt = _to_dt(comp.get("dtend"))
         cat_hint = _first_category(comp.get("categories"))
-        free = is_free if is_free is not None else (True if looks_free(title, desc, cat_hint) else None)
+        price_disp, price_val = detect_price(title, desc)
+        if is_free is True:
+            free, price_disp, price_val = True, None, None
+        elif is_free is False:
+            free = False
+        elif looks_free(title, desc, cat_hint):
+            free, price_disp, price_val = True, None, None
+        else:
+            free = False if price_val is not None else None
         events.append(Event(
             title=title,
             start=to_iso(display_dt),
@@ -85,6 +93,8 @@ def _parse(raw, name, default_cat, is_free, force_recurring, now, horizon) -> li
             url=str(comp.get("url")) if comp.get("url") else "",
             category=normalise_category(cat_hint, default_cat, title),
             is_free=free,
+            price=price_disp,
+            price_value=price_val,
             description=_clip(desc or None),
             recurring=recurring,
             recurrence=recurrence,
