@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-11T02:32:07.826310+00:00",
+ "generated_at": "2026-07-11T07:54:44.055872+00:00",
  "count": 343,
  "sources": {
   "Resident Advisor": 281,
@@ -787,7 +787,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "<p>No sign of a summer lull in the Berlin cultural calendar! July not only brings lots of sun, but above all also great festivals: quiet tones at Unpluggedival, orchestral sounds at Classic Open Air or absolute demolition at Lollapallooza. You can also…",
+   "description": "<p>No sign of a summer lull in the Berlin cultural calendar! July not only brings lots of sun, but above all also great festivals: quiet tones at Unpluggedival, orchestral sounds at Classic Open Air or absolute demolition at Lollapallooza. You can also...",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -1288,7 +1288,7 @@
    "id": "b5e1c01eed120ee38ae09200a2d7f32d378e0d9c"
   },
   {
-   "title": "HyperrTerra by Midgar x Transmissions [Openair + Indoors]",
+   "title": "(SOLD OUT) HyperrTerra by Midgar x Transmissions [Openair + Indoors]",
    "start": "2026-07-11T13:00:00.000",
    "source": "Resident Advisor",
    "url": "https://ra.co/events/2416182",
@@ -1304,7 +1304,7 @@
    "recurring": false,
    "recurrence": null,
    "translated": false,
-   "id": "b246f1832e523932db4d48daeb78eaad3634d758"
+   "id": "83c2ffe4ecb40227e29c14d6dcc176445b433e44"
   },
   {
    "title": "Toy Tonics Summer Jam (OPEN AIR & INDOOR 18Hours - 4 FLOORS)",
@@ -1360,27 +1360,8 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
-   "id": "bebdae2a44ce716f2a38461bc0332c2271f6178c"
-  },
-  {
-   "title": "Aurōra x Dance Power at Tegel Airport (Open Air)",
-   "start": "2026-07-11T14:00:00.000",
-   "source": "Resident Advisor",
-   "url": "https://ra.co/events/2448853",
-   "end": "2026-07-11T22:00:00.000",
-   "venue": "frachtkante",
-   "area": "Berlin",
-   "category": "nightlife",
-   "is_free": false,
-   "price": "ticketed",
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
    "translated": false,
-   "id": "9593c6e6bed44d25cc2925ff89e01563e57cf67f"
+   "id": "bebdae2a44ce716f2a38461bc0332c2271f6178c"
   },
   {
    "title": "Renate x Callshop Radio x KANN Records (Klubnacht + Free Open Air)",
@@ -1400,6 +1381,25 @@
    "recurrence": null,
    "translated": false,
    "id": "24336808a8795beb28b1341fdef6e21e6cb3fe6d"
+  },
+  {
+   "title": "Aurōra x Dance Power at Tegel Airport (Open Air)",
+   "start": "2026-07-11T14:00:00.000",
+   "source": "Resident Advisor",
+   "url": "https://ra.co/events/2448853",
+   "end": "2026-07-11T22:00:00.000",
+   "venue": "frachtkante",
+   "area": "Berlin",
+   "category": "nightlife",
+   "is_free": false,
+   "price": "ticketed",
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "id": "9593c6e6bed44d25cc2925ff89e01563e57cf67f"
   },
   {
    "title": "Circular Music 'Open Air' with finest House Music w/ Dole & Kom",
@@ -1516,25 +1516,6 @@
    "id": "276b3bd69bbbf086fc106e2871307cdacd4c9ebc"
   },
   {
-   "title": "El Junte Latino",
-   "start": "2026-07-11T15:00:00.000",
-   "source": "Resident Advisor",
-   "url": "https://ra.co/events/2465700",
-   "end": "2026-07-12T06:00:00.000",
-   "venue": "TBA",
-   "area": "Berlin",
-   "category": "nightlife",
-   "is_free": false,
-   "price": "ticketed",
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "id": "b2bc256031dc0c488af261f341bc6ad632d8394c"
-  },
-  {
    "title": "Perestroika - party and politics in Humboldthain",
    "start": "2026-07-11T15:00:00.000",
    "source": "Resident Advisor",
@@ -1552,6 +1533,25 @@
    "recurrence": null,
    "translated": true,
    "id": "fc903157fcc1ef7b4dd9d012d00bbce16fe65581"
+  },
+  {
+   "title": "El Junte Latino",
+   "start": "2026-07-11T15:00:00.000",
+   "source": "Resident Advisor",
+   "url": "https://ra.co/events/2465700",
+   "end": "2026-07-12T06:00:00.000",
+   "venue": "TBA",
+   "area": "Berlin",
+   "category": "nightlife",
+   "is_free": false,
+   "price": "ticketed",
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "id": "b2bc256031dc0c488af261f341bc6ad632d8394c"
   },
   {
    "title": "Amphitheatre by Circadian",
@@ -1820,25 +1820,6 @@
    "id": "0f01fe3b665f57e6eeb9799339686a9c6a9c18ac"
   },
   {
-   "title": "Nazanin Noori, 'A LETTER TO EUROPE'",
-   "start": "2026-07-11T20:00:00.000",
-   "source": "Resident Advisor",
-   "url": "https://ra.co/events/2459352",
-   "end": "2026-07-11T21:00:00.000",
-   "venue": "KW Institute for Contemporary Art",
-   "area": "Berlin",
-   "category": "nightlife",
-   "is_free": null,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "id": "9142fba083823f52044164c2843babb8697d221e"
-  },
-  {
    "title": "LELOUCH: Berlin's night for live music",
    "start": "2026-07-11T20:00:00.000",
    "source": "Resident Advisor",
@@ -1856,6 +1837,25 @@
    "recurrence": null,
    "translated": false,
    "id": "7048a17fad1f51407c3b87a7123fe2f237695e51"
+  },
+  {
+   "title": "Nazanin Noori, 'A LETTER TO EUROPE'",
+   "start": "2026-07-11T20:00:00.000",
+   "source": "Resident Advisor",
+   "url": "https://ra.co/events/2459352",
+   "end": "2026-07-11T21:00:00.000",
+   "venue": "KW Institute for Contemporary Art",
+   "area": "Berlin",
+   "category": "nightlife",
+   "is_free": null,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "id": "9142fba083823f52044164c2843babb8697d221e"
   },
   {
    "title": "jon van mono plays at migas",
@@ -1901,7 +1901,7 @@
    "source": "Resident Advisor",
    "url": "https://ra.co/events/2472236",
    "end": "2026-07-12T04:00:00.000",
-   "venue": "TBA - Westend",
+   "venue": "0punkt",
    "area": "Berlin",
    "category": "nightlife",
    "is_free": null,
@@ -1912,7 +1912,7 @@
    "recurring": false,
    "recurrence": null,
    "translated": false,
-   "id": "c5640fbdb8ff4e41931335c023dd6bdd829cc18b"
+   "id": "80dae0754e9af33d1996754abf5d745fa970d887"
   },
   {
    "title": "Independent Tanzmusik + THE CURE Special",
@@ -2105,25 +2105,6 @@
    "id": "842c24a0d166e90cc4127992165da86a663830de"
   },
   {
-   "title": "Tausend House: Sam Paradise",
-   "start": "2026-07-11T22:00:00.000",
-   "source": "Resident Advisor",
-   "url": "https://ra.co/events/2484140",
-   "end": "2026-07-12T03:00:00.000",
-   "venue": "Tausend",
-   "area": "Berlin",
-   "category": "nightlife",
-   "is_free": null,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "id": "6bde635fb8db7199395cc73a713f83afb5469d9f"
-  },
-  {
    "title": "GROOVEJET BERLIN | Funky House & Nu-Disco Summer Vibes",
    "start": "2026-07-11T22:00:00.000",
    "source": "Resident Advisor",
@@ -2141,6 +2122,25 @@
    "recurrence": null,
    "translated": true,
    "id": "b2a3514ec3e61f770c8dea5d9d1b7184e9d68a14"
+  },
+  {
+   "title": "Tausend House: Sam Paradise",
+   "start": "2026-07-11T22:00:00.000",
+   "source": "Resident Advisor",
+   "url": "https://ra.co/events/2484140",
+   "end": "2026-07-12T03:00:00.000",
+   "venue": "Tausend",
+   "area": "Berlin",
+   "category": "nightlife",
+   "is_free": null,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "id": "6bde635fb8db7199395cc73a713f83afb5469d9f"
   },
   {
    "title": "Beate Invites /// 9th Floor x La Casita Recordings",
@@ -2352,23 +2352,23 @@
    "id": "c3d4d7abb4b8dc6bc16349d033681b18bc6f030a"
   },
   {
-   "title": "HOUSE OF BERLINSHIT #2: Candice, Wallat Wallat, Subassi, MagDita, ADAM REC.",
+   "title": "Soundvision PRESENTS KINK x TUTU with Angel Karel, Dstm, WarinD, LEGION, VINKA WYDRO + more",
    "start": "2026-07-11T23:00:00.000",
    "source": "Resident Advisor",
-   "url": "https://ra.co/events/2465891",
-   "end": "2026-07-12T06:00:00.000",
-   "venue": "Bulbul Berlin",
+   "url": "https://ra.co/events/2332583",
+   "end": "2026-07-12T09:00:00.000",
+   "venue": "Lokschuppen Berlin",
    "area": "Berlin",
    "category": "nightlife",
-   "is_free": null,
-   "price": null,
+   "is_free": false,
+   "price": "ticketed",
    "price_value": null,
    "image": null,
    "description": null,
    "recurring": false,
    "recurrence": null,
    "translated": false,
-   "id": "c92a1edae89f9b592004476eb63e30d816013b62"
+   "id": "c0f19e63a8ac816a03265c8490df2a805d6390f7"
   },
   {
    "title": "Immigration Office presents: UNDERGROUND PLAN w/ Ben Pest (Live), Ixindamix (Live), and many more",
@@ -2390,6 +2390,25 @@
    "id": "59a9692a6300eb612c16cc8db84a6b54c9b446d9"
   },
   {
+   "title": "HOUSE OF BERLINSHIT #2: Candice, Wallat Wallat, Subassi, MagDita, ADAM REC.",
+   "start": "2026-07-11T23:00:00.000",
+   "source": "Resident Advisor",
+   "url": "https://ra.co/events/2465891",
+   "end": "2026-07-12T06:00:00.000",
+   "venue": "Bulbul Berlin",
+   "area": "Berlin",
+   "category": "nightlife",
+   "is_free": null,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "id": "c92a1edae89f9b592004476eb63e30d816013b62"
+  },
+  {
    "title": "KLANGWERK Vol.2",
    "start": "2026-07-11T23:00:00.000",
    "source": "Resident Advisor",
@@ -2407,25 +2426,6 @@
    "recurrence": null,
    "translated": false,
    "id": "92e55c52df2c5bc4f89669047c2546ce8bb631f5"
-  },
-  {
-   "title": "Soundvision PRESENTS KINK x TUTU with Angel Karel, Dstm, WarinD, LEGION, VINKA WYDRO + more",
-   "start": "2026-07-11T23:00:00.000",
-   "source": "Resident Advisor",
-   "url": "https://ra.co/events/2332583",
-   "end": "2026-07-12T09:00:00.000",
-   "venue": "Lokschuppen Berlin",
-   "area": "Berlin",
-   "category": "nightlife",
-   "is_free": false,
-   "price": "ticketed",
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "id": "c0f19e63a8ac816a03265c8490df2a805d6390f7"
   },
   {
    "title": "CUNTCORE",
@@ -3089,7 +3089,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "id": "ac91af9999339b5f08018f835b5c869d7f42c10f"
   },
   {
@@ -3302,25 +3302,6 @@
    "id": "c5822fda4cdecc87cefc26b997e975f118c7b634"
   },
   {
-   "title": "Open decks & table tennis",
-   "start": "2026-07-14T18:00:00.000",
-   "source": "Resident Advisor",
-   "url": "https://ra.co/events/2414411",
-   "end": "2026-07-15T04:00:00.000",
-   "venue": "Humboldthain Club",
-   "area": "Berlin",
-   "category": "nightlife",
-   "is_free": null,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": true,
-   "id": "40d3465befbe6974edb8d5e6acc08bfbe3878145"
-  },
-  {
    "title": "The Funky Chicken Club",
    "start": "2026-07-14T18:00:00.000",
    "source": "Resident Advisor",
@@ -3338,6 +3319,25 @@
    "recurrence": null,
    "translated": false,
    "id": "1783450d308d91b858196ceeef3a969021ad23df"
+  },
+  {
+   "title": "Open decks & table tennis",
+   "start": "2026-07-14T18:00:00.000",
+   "source": "Resident Advisor",
+   "url": "https://ra.co/events/2414411",
+   "end": "2026-07-15T04:00:00.000",
+   "venue": "Humboldthain Club",
+   "area": "Berlin",
+   "category": "nightlife",
+   "is_free": null,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": true,
+   "id": "40d3465befbe6974edb8d5e6acc08bfbe3878145"
   },
   {
    "title": "Klubkneipe x Tuesday Ritual - Makramee Workshop",
@@ -3454,25 +3454,6 @@
    "id": "4b70088f7c3f3edd5263d165cf336d46e5952ea8"
   },
   {
-   "title": "PHASE:ONE",
-   "start": "2026-07-14T23:00:00.000",
-   "source": "Resident Advisor",
-   "url": "https://ra.co/events/2434850",
-   "end": "2026-07-15T05:00:00.000",
-   "venue": "Lokschuppen Berlin",
-   "area": "Berlin",
-   "category": "nightlife",
-   "is_free": false,
-   "price": "ticketed",
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "id": "4c3dc0743b51e2c783d44495cd66da5cc528bcf6"
-  },
-  {
    "title": "✦encore.une.fois✦ / INDOOR RAVE + OPEN AIR CHILL GARDEN",
    "start": "2026-07-14T23:00:00.000",
    "source": "Resident Advisor",
@@ -3490,6 +3471,25 @@
    "recurrence": null,
    "translated": false,
    "id": "43a11eec31d09c3c13763e781a639c17e9137fbd"
+  },
+  {
+   "title": "PHASE:ONE",
+   "start": "2026-07-14T23:00:00.000",
+   "source": "Resident Advisor",
+   "url": "https://ra.co/events/2434850",
+   "end": "2026-07-15T05:00:00.000",
+   "venue": "Lokschuppen Berlin",
+   "area": "Berlin",
+   "category": "nightlife",
+   "is_free": false,
+   "price": "ticketed",
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "id": "4c3dc0743b51e2c783d44495cd66da5cc528bcf6"
   },
   {
    "title": "Smash & HART ◢◤ Tuesday Rave & Open Air Garden [free entry until midnight*]",
@@ -3644,25 +3644,6 @@
    "id": "66cb2b6263713da0462f3b832ae8ad71a800aded"
   },
   {
-   "title": "Unkompress Deep Dive: Night Drives",
-   "start": "2026-07-15T18:00:00.000",
-   "source": "Resident Advisor",
-   "url": "https://ra.co/events/2484619",
-   "end": "2026-07-15T23:59:00.000",
-   "venue": "Unkompress",
-   "area": "Berlin",
-   "category": "nightlife",
-   "is_free": null,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "id": "517736e2917fd9661b93fcb1feb99995924a4f58"
-  },
-  {
    "title": "Crêpes & Open Decks - 2 YEARS ANNIVERSARY",
    "start": "2026-07-15T18:00:00.000",
    "source": "Resident Advisor",
@@ -3680,6 +3661,25 @@
    "recurrence": null,
    "translated": false,
    "id": "b27369f8f355f45da8e960f3e11f59845aedbf25"
+  },
+  {
+   "title": "Unkompress Deep Dive: Night Drives",
+   "start": "2026-07-15T18:00:00.000",
+   "source": "Resident Advisor",
+   "url": "https://ra.co/events/2484619",
+   "end": "2026-07-15T23:59:00.000",
+   "venue": "Unkompress",
+   "area": "Berlin",
+   "category": "nightlife",
+   "is_free": null,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "id": "517736e2917fd9661b93fcb1feb99995924a4f58"
   },
   {
    "title": "Cartographies of Dissolution",
@@ -3910,7 +3910,7 @@
    "id": "ac1e474eb82d6a0c76d489b70dc584248aeace59"
   },
   {
-   "title": "SIGNALS - 5€ tickets - with Bobaz Lobster, cravings320 & chickpea stamp",
+   "title": "SIGNALS - 5€ Tickets - with Bobaz Lobster, cravings320 & kichererbsenstampf",
    "start": "2026-07-15T23:00:00.000",
    "source": "Resident Advisor",
    "url": "https://ra.co/events/2351999",
@@ -3925,27 +3925,8 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
-   "id": "17a64cb6a5f62fff015bba6c7284afd141e6a01c"
-  },
-  {
-   "title": "Tresor New Faces hosted by Trifec",
-   "start": "2026-07-15T23:00:00.000",
-   "source": "Resident Advisor",
-   "url": "https://ra.co/events/2456369",
-   "end": "2026-07-16T08:00:00.000",
-   "venue": "Tresor / Globus",
-   "area": "Berlin",
-   "category": "nightlife",
-   "is_free": false,
-   "price": "ticketed",
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
    "translated": false,
-   "id": "5062138966d32e476f0fee06580f0e44e21907a1"
+   "id": "b47ff289c3f785ae602196ee67dace648a7712eb"
   },
   {
    "title": "Lilith",
@@ -3965,6 +3946,25 @@
    "recurrence": null,
    "translated": false,
    "id": "896463ede4817c78cc15050a4d0810245ac621a0"
+  },
+  {
+   "title": "Tresor New Faces hosted by Trifec",
+   "start": "2026-07-15T23:00:00.000",
+   "source": "Resident Advisor",
+   "url": "https://ra.co/events/2456369",
+   "end": "2026-07-16T08:00:00.000",
+   "venue": "Tresor / Globus",
+   "area": "Berlin",
+   "category": "nightlife",
+   "is_free": false,
+   "price": "ticketed",
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "id": "5062138966d32e476f0fee06580f0e44e21907a1"
   },
   {
    "title": "Sssmile Afterhour",
@@ -4115,7 +4115,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": false,
+   "translated": true,
    "id": "90372cf20a5ab389448a5c69f9fb8220823fefe5"
   },
   {
@@ -4860,25 +4860,6 @@
    "id": "bf8f0312088b3c6e232540679e57a30d30f9ba6e"
   },
   {
-   "title": "WKND X DON'T TELL ANYONE",
-   "start": "2026-07-17T18:00:00.000",
-   "source": "Resident Advisor",
-   "url": "https://ra.co/events/2433300",
-   "end": "2026-07-18T06:00:00.000",
-   "venue": "Weekend",
-   "area": "Berlin",
-   "category": "nightlife",
-   "is_free": false,
-   "price": "ticketed",
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "id": "ddf9595520673931cd31d5add59e1a25a68ca7cf"
-  },
-  {
    "title": "Soli-Céilí by the Irish Bloc Berlin",
    "start": "2026-07-17T18:00:00.000",
    "source": "Resident Advisor",
@@ -4896,6 +4877,25 @@
    "recurrence": null,
    "translated": false,
    "id": "dbcbb56f9cc0b9368aa04f6a0b58aa102cade3c4"
+  },
+  {
+   "title": "WKND X DON'T TELL ANYONE",
+   "start": "2026-07-17T18:00:00.000",
+   "source": "Resident Advisor",
+   "url": "https://ra.co/events/2433300",
+   "end": "2026-07-18T06:00:00.000",
+   "venue": "Weekend",
+   "area": "Berlin",
+   "category": "nightlife",
+   "is_free": false,
+   "price": "ticketed",
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "id": "ddf9595520673931cd31d5add59e1a25a68ca7cf"
   },
   {
    "title": "Giri x immigration office",
@@ -5734,6 +5734,25 @@
    "id": "99690e73857c645a84cc186361bc325e7da78709"
   },
   {
+   "title": "Taranau at Secret Location",
+   "start": "2026-07-17T23:00:00.000",
+   "source": "Resident Advisor",
+   "url": "https://ra.co/events/2474598",
+   "end": "2026-07-18T09:00:00.000",
+   "venue": "TBA - See Telegram",
+   "area": "Berlin",
+   "category": "nightlife",
+   "is_free": null,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "id": "07fd46d018300f23e7b4b33803b9dca5f93f7403"
+  },
+  {
    "title": "KNOCKOUT with DJ LAG (South Africa) with FREAK DE L'AFRIQUE, UNBORN SOUNDS (South Korea)",
    "start": "2026-07-17T23:00:00.000",
    "source": "Resident Advisor",
@@ -5772,25 +5791,6 @@
    "id": "05dc923d89f0aced519f6ea9d311356e146dad21"
   },
   {
-   "title": "Taranau at Secret Location",
-   "start": "2026-07-17T23:00:00.000",
-   "source": "Resident Advisor",
-   "url": "https://ra.co/events/2474598",
-   "end": "2026-07-18T09:00:00.000",
-   "venue": "TBA - See Telegram",
-   "area": "Berlin",
-   "category": "nightlife",
-   "is_free": null,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "id": "07fd46d018300f23e7b4b33803b9dca5f93f7403"
-  },
-  {
    "title": "All My Friends - HITZEFREI",
    "start": "2026-07-17T23:00:00.000",
    "source": "Resident Advisor",
@@ -5810,25 +5810,6 @@
    "id": "37157e60e0dadddedd37ba5ed25ee92f36ecf8e9"
   },
   {
-   "title": "EVERYTHING IS O.K. collective presents MiiSCHA, Tomasz Guiddo, Tina Colada (SPECIAL GUEST)",
-   "start": "2026-07-17T23:00:00.000",
-   "source": "Resident Advisor",
-   "url": "https://ra.co/events/2405435",
-   "end": "2026-07-18T06:00:00.000",
-   "venue": "Georgia Bar",
-   "area": "Berlin",
-   "category": "nightlife",
-   "is_free": null,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "id": "aa490a6464e91e57f7a33e4c3eb3314d12010d5b"
-  },
-  {
    "title": "OST Club Night",
    "start": "2026-07-17T23:00:00.000",
    "source": "Resident Advisor",
@@ -5846,6 +5827,25 @@
    "recurrence": null,
    "translated": true,
    "id": "944457f130ee55020aa12d6bb0dd00b3eb1cf7e5"
+  },
+  {
+   "title": "EVERYTHING IS O.K. collective presents MiiSCHA, Tomasz Guiddo, Tina Colada (SPECIAL GUEST)",
+   "start": "2026-07-17T23:00:00.000",
+   "source": "Resident Advisor",
+   "url": "https://ra.co/events/2405435",
+   "end": "2026-07-18T06:00:00.000",
+   "venue": "Georgia Bar",
+   "area": "Berlin",
+   "category": "nightlife",
+   "is_free": null,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "id": "aa490a6464e91e57f7a33e4c3eb3314d12010d5b"
   },
   {
    "title": "Paloma Invites",
