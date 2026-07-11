@@ -204,9 +204,9 @@ function render(){
 }
 
 function pool(){
-  if(state.mode==="recurring")return ALL.filter(e=>e.recurring&&passesFilters(e));
-  const[s,e]=range();
-  return ALL.filter(e=>!e.recurring&&passesFilters(e)&&(()=>{const t=new Date(e.start);return t>=s&&t<=e;})());
+  if(state.mode==="recurring")return ALL.filter(ev=>ev.recurring&&passesFilters(ev));
+  const[rangeStart,rangeEnd]=range();
+  return ALL.filter(ev=>!ev.recurring&&passesFilters(ev)&&(()=>{const t=new Date(ev.start);return t>=rangeStart&&t<=rangeEnd;})());
 }
 
 function renderGrouped(){
