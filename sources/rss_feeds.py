@@ -21,12 +21,16 @@ def fetch(feeds: list[dict], horizon_days: int = 45) -> list[Event]:
         default_cat = feed.get("category", "other")
         is_free = feed.get("is_free")
         force_recurring = bool(feed.get("recurring", False))
+        only_loc = (feed.get("only_location") or "").lower()
         try:
             parsed = feedparser.parse(url)
             for entry in parsed.entries:
                 ev = _map(entry, name, default_cat, is_free, force_recurring)
-                if ev:
-                    out.append(ev)
+                if not ev:
+                    continue
+                if only_loc and only_loc not in (ev.title + " " + (ev.description or "")).lower():
+                    continue
+                out.append(ev)
         except Exception as exc:
             print(f"  ! RSS feed '{name}' failed: {exc}")
     return out

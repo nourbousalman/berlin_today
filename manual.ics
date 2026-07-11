@@ -13,4 +13,81 @@ CATEGORIES:community
 URL:https://www.lighthouseberlin.com/
 DESCRIPTION:Free multicultural language café by Lighthouse Berlin, hosted at the church on Hasenheide. All welcome, no registration. More: linktr.ee/lighthouseberlin
 END:VEVENT
+BEGIN:VEVENT
+UID:manual-forro-atopia@berlin-events
+SUMMARY:Forró de Quarta @ Atopia Kaffeehaus
+DTSTART:20260708T200000
+DTEND:20260709T000000
+RRULE:FREQ=WEEKLY;BYDAY=WE
+LOCATION:Atopia Kaffeehaus, Prenzlauer Allee 187, Prenzlauer Berg
+CATEGORIES:music
+URL:https://tomeforro.berlin/
+DESCRIPTION:Brazilian Forró dance party. 20:00 intro class, 21:00 party until midnight, all welcome. Entry €5.
+END:VEVENT
+BEGIN:VEVENT
+UID:manual-scottish-dance@berlin-events
+SUMMARY:Scottish country dancing (SCDS Berlin)
+DTSTART:20260703T193000
+DTEND:20260703T210000
+RRULE:FREQ=WEEKLY;BYDAY=FR
+LOCATION:Berlin — see scds-berlin.de
+CATEGORIES:community
+URL:https://www.scds-berlin.de/indexe.html
+DESCRIPTION:Scottish country dancing, all levels welcome, no partner needed. Entry €3.
+END:VEVENT
+BEGIN:VEVENT
+UID:manual-sip-happens@berlin-events
+SUMMARY:Sip Happens! Saturday Social
+DTSTART:20260704T190000
+DTEND:20260704T220000
+RRULE:FREQ=WEEKLY;BYDAY=SA
+LOCATION:Rotating bar — see Meetup
+CATEGORIES:community
+URL:https://www.meetup.com/sip_happens_berlin/
+DESCRIPTION:Free Saturday social — meet new people at one of Berlin's bars. Venue and start time vary weekly, check Meetup or Telegram (t.me/siphappens_berlin). Free (buy a drink to support the venue).
+END:VEVENT
+BEGIN:VEVENT
+UID:manual-boardgames-tue@berlin-events
+SUMMARY:Board game night — Schöneberg
+DTSTART:20260707T190000
+DTEND:20260707T230000
+RRULE:FREQ=WEEKLY;BYDAY=TU
+LOCATION:Brettspielegruppe Schöneberg, Klixstraße 2, Schöneberg
+CATEGORIES:community
+URL:https://allaboutberlin.com/guides/board-games-in-berlin
+DESCRIPTION:Weekly board game night, newcomers welcome. Many games on site. Entry €3, bring your own drinks.
+END:VEVENT
+BEGIN:VEVENT
+UID:manual-boardgames-wed@berlin-events
+SUMMARY:Board game night — Spieletreff Berlin (Wedding)
+DTSTART:20260708T190000
+DTEND:20260708T230000
+RRULE:FREQ=WEEKLY;BYDAY=WE
+LOCATION:Gemeindehaus, Nazarethkirchstr. 50, Wedding
+CATEGORIES:community
+URL:https://www.meetup.com/Spieletreffberlin/
+DESCRIPTION:Spieletreff Berlin board game night, 30-40 players and ~150 games. Entry €5, drinks sold on site.
+END:VEVENT
+BEGIN:VEVENT
+UID:manual-boardgames-thu@berlin-events
+SUMMARY:Board game night — RuDi (Friedrichshain)
+DTSTART:20260709T190000
+DTEND:20260709T230000
+RRULE:FREQ=WEEKLY;BYDAY=TH
+LOCATION:RuDi Nachbarschaftshaus, Friedrichshain
+CATEGORIES:community
+URL:https://www.meetup.com/berlin-board-gamers/
+DESCRIPTION:Berlin Board Gamers — the biggest and longest-running weekly board game meetup. Mix of English and German speakers. Small entrance fee, pay on site.
+END:VEVENT
+BEGIN:VEVENT
+UID:manual-boardgames-fri@berlin-events
+SUMMARY:Board game night — Nachbarschaftshaus Urbanstraße
+DTSTART:20260703T180000
+DTEND:20260703T220000
+RRULE:FREQ=WEEKLY;BYDAY=FR
+LOCATION:Nachbarschaftshaus Urbanstraße, Kreuzberg
+CATEGORIES:community
+URL:https://www.meetup.com/berlin-board-gamers/
+DESCRIPTION:Board & card games (mostly language-neutral), casual and core players welcome. ~150 games on site. Entry €3.
+END:VEVENT
 END:VCALENDAR

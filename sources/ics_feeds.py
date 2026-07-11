@@ -28,9 +28,14 @@ def fetch(feeds: list[dict], horizon_days: int = 45) -> list[Event]:
         default_cat = feed.get("category", "other")
         is_free = feed.get("is_free")
         force_recurring = bool(feed.get("recurring", False))
+        only_loc = (feed.get("only_location") or "").lower()
         try:
             raw = _load(url)
-            out.extend(_parse(raw, name, default_cat, is_free, force_recurring, now, horizon))
+            evs = _parse(raw, name, default_cat, is_free, force_recurring, now, horizon)
+            if only_loc:
+                evs = [e for e in evs
+                       if only_loc in (e.title + " " + (e.venue or "") + " " + (e.description or "")).lower()]
+            out.extend(evs)
         except Exception as exc:                       # one bad feed must not sink the rest
             print(f"  ! ICS feed '{name}' failed: {exc}")
     return out

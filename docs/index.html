@@ -6,78 +6,94 @@
 <title>Nour's Planner</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#EAE7DF;--paper-2:#E2DED4;--ink:#17160F;--muted:#7C776A;
-    --line:rgba(23,22,15,.16);--accent:#1B34E0;--accent-ink:#fff;
-    --disp:'Space Grotesk',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace;
-    --controls-h:190px;
+    --bg:#FBF7F1; --surface:#FFFFFF; --ink:#4B4757; --head:#39354A; --muted:#A29DAB;
+    --line:rgba(57,53,74,.10); --track:#F1ECE6; --accent:#7B84DB; --accent-soft:#EAEBFB;
+    --shadow:0 2px 10px rgba(60,50,80,.06),0 1px 3px rgba(60,50,80,.05);
+    --disp:'Fredoka',system-ui,sans-serif; --body:'Nunito',system-ui,sans-serif;
+    --controls-h:150px;
   }
   *{box-sizing:border-box}html,body{margin:0}
-  body{background:var(--paper);color:var(--ink);font-family:var(--disp);line-height:1.4;-webkit-font-smoothing:antialiased}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:500;line-height:1.45;-webkit-font-smoothing:antialiased}
   a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 
-  .mast{border-bottom:2px solid var(--ink);padding:22px clamp(16px,4vw,40px) 16px}
-  .mast h1{font-size:clamp(28px,6vw,52px);font-weight:700;letter-spacing:-.02em;margin:0;line-height:.98;text-transform:uppercase}
-  .mast h1 span{color:var(--accent)}
-  .mast .sub{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:8px;display:flex;gap:16px;flex-wrap:wrap;text-transform:uppercase;letter-spacing:.04em}
+  /* soft, calm colour per category */
+  .cat-music{--c:#E1734E;--cb:#FCE6DD}
+  .cat-nightlife{--c:#9A72CF;--cb:#EDE4FB}
+  .cat-art{--c:#D66A9E;--cb:#FBE1EE}
+  .cat-sport{--c:#4FA377;--cb:#DDF0E4}
+  .cat-community{--c:#5A90CC;--cb:#DFEDFB}
+  .cat-market{--c:#C6912F;--cb:#FAECCF}
+  .cat-other{--c:#8C88A0;--cb:#ECEAF3}
 
-  .controls{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line);padding:12px clamp(16px,4vw,40px);display:flex;flex-direction:column;gap:10px}
-  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-  .lbl{font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-right:2px}
+  .mast{padding:26px clamp(16px,4vw,40px) 14px}
+  .mast h1{font-family:var(--disp);font-size:clamp(30px,6vw,52px);font-weight:600;letter-spacing:-.01em;margin:0;line-height:1;color:var(--head)}
+  .mast h1 .a{color:var(--accent)}
+  .mast .sub{font-size:13px;color:var(--muted);margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-weight:600}
 
-  button.chip,.seg button{font-family:var(--mono);font-size:12px;font-weight:500;background:transparent;color:var(--ink);border:1px solid var(--line);padding:6px 11px;cursor:pointer;text-transform:uppercase;letter-spacing:.03em;transition:background .12s,border-color .12s,color .12s}
-  button.chip:hover,.seg button:hover{border-color:var(--ink)}
-  button.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-  .seg{display:inline-flex;border:1px solid var(--ink)}
-  .seg button{border:0;border-right:1px solid var(--line)}
-  .seg button:last-child{border-right:0}
-  .seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
-  .mode-seg button{font-weight:700;padding:8px 16px;font-size:13px}
-  .search{font-family:var(--mono);font-size:13px;border:1px solid var(--line);background:var(--paper-2);padding:7px 11px;min-width:200px;flex:1;color:var(--ink)}
-  .search:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+  .controls{position:sticky;top:0;z-index:5;background:rgba(251,247,241,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px clamp(16px,4vw,40px)}
+  .ctrl-top{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+  .group{display:flex;align-items:center;gap:8px}
+  .lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+  .seg{display:inline-flex;gap:2px;background:var(--track);border-radius:999px;padding:3px}
+  .seg button{font-family:var(--body);font-weight:700;font-size:13px;border:0;border-radius:999px;background:transparent;color:var(--ink);padding:6px 13px;cursor:pointer;transition:background .15s,color .15s}
+  .seg button:hover{color:var(--head)}
+  .seg button[aria-pressed="true"]{background:var(--surface);color:var(--head);box-shadow:var(--shadow)}
+  .mode-seg{background:var(--accent-soft)}
+  .mode-seg button[aria-pressed="true"]{background:var(--accent);color:#fff;box-shadow:none}
+  .searchwrap{flex:1;min-width:180px;display:flex}
+  .search{flex:1;font-family:var(--body);font-weight:600;font-size:14px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:9px 16px;color:var(--ink)}
+  .search::placeholder{color:var(--muted)}
+  .search:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
 
-  main{padding:0 clamp(16px,4vw,40px) 40px;max-width:960px}
-  .day{position:sticky;top:var(--controls-h);z-index:2;background:var(--paper);padding:22px 0 8px;border-bottom:1px solid var(--ink);margin-top:14px;display:flex;align-items:baseline;gap:12px}
-  .day .dow{font-size:clamp(20px,4.5vw,30px);font-weight:700;text-transform:uppercase;letter-spacing:-.01em}
-  .day .date{font-family:var(--mono);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
-  .day .n{font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:auto}
+  .cats{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+  .chip{font-family:var(--body);font-weight:700;font-size:13px;border:0;border-radius:999px;padding:6px 13px;cursor:pointer;background:var(--cb,#eee);color:var(--c,#666);opacity:.85;transition:transform .1s,box-shadow .15s,opacity .15s}
+  .chip:hover{opacity:1;transform:translateY(-1px)}
+  .chip[aria-pressed="true"]{background:var(--c,#666);color:#fff;opacity:1;box-shadow:var(--shadow)}
 
-  .ev{display:grid;grid-template-columns:96px 1fr auto;gap:16px;align-items:start;padding:14px 8px 14px 12px;border-bottom:1px solid var(--line);border-left:3px solid transparent;transition:background .12s,border-color .12s}
-  .ev:hover{background:var(--paper-2);border-left-color:var(--accent)}
-  .ev .time{font-family:var(--mono);font-size:13px;font-weight:600;padding-top:2px;white-space:nowrap}
-  .ev .time .to{color:var(--muted);font-weight:400;font-size:11px;display:block}
-  .ev .title{font-size:17px;font-weight:500;letter-spacing:-.01em}
-  .ev .meta{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.03em}
-  .ev .desc{font-size:13px;color:var(--muted);margin-top:6px;max-width:60ch}
+  main{padding:8px clamp(16px,4vw,40px) 40px;max-width:1000px}
+  .day{position:sticky;top:var(--controls-h);z-index:2;background:var(--bg);padding:20px 4px 8px;margin-top:10px;display:flex;align-items:baseline;gap:12px}
+  .day .dow{font-family:var(--disp);font-size:clamp(21px,4vw,30px);font-weight:600;color:var(--head)}
+  .day .date{font-size:13px;color:var(--muted);font-weight:700}
+  .day .n{margin-left:auto;font-size:12px;color:var(--muted);font-weight:700;background:var(--track);border-radius:999px;padding:2px 10px}
+
+  .ev{display:grid;grid-template-columns:88px 1fr auto;gap:16px;align-items:start;background:var(--surface);border-radius:16px;box-shadow:var(--shadow);border-left:5px solid var(--c,var(--accent));padding:14px 16px;margin-bottom:10px;transition:transform .12s,box-shadow .15s}
+  .ev:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(60,50,80,.10)}
+  .ev .time{font-family:var(--disp);font-size:15px;font-weight:500;color:var(--head);padding-top:1px;white-space:nowrap}
+  .ev .time .to{display:block;color:var(--muted);font-size:12px;font-weight:400}
+  .ev .title{font-size:17px;font-weight:700;color:var(--head);line-height:1.25}
+  .ev .meta{font-size:12.5px;color:var(--muted);margin-top:4px;font-weight:600}
+  .ev .desc{font-size:13.5px;color:var(--ink);margin-top:7px;max-width:64ch;opacity:.85}
   .ev .tags{display:flex;flex-direction:column;gap:6px;align-items:flex-end;text-align:right}
-  .tag{font-family:var(--mono);font-size:10px;letter-spacing:.08em;border:1px solid var(--line);padding:2px 6px;text-transform:uppercase;white-space:nowrap}
-  .tag.free{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
-  .tag.price{border-color:var(--ink);font-weight:600}
-  .tag.cadence{border-color:var(--ink)}
-  .tag.tr{border:0;color:var(--muted);padding:2px 0}
+  .tag{font-size:11px;font-weight:800;border-radius:999px;padding:3px 10px;white-space:nowrap;letter-spacing:.02em}
+  .cat-tag{background:var(--cb);color:var(--c)}
+  .tag.free{background:#D6EFDF;color:#358056}
+  .tag.price{background:#F0ECE6;color:#7C776C}
+  .tag.cadence{background:var(--track);color:var(--muted)}
+  .tag.tr{background:transparent;color:var(--muted);font-weight:700;padding:3px 0}
 
-  .dir{padding:4px 0 8px}
-  .dir-item{display:block;padding:11px 8px 11px 12px;border-bottom:1px solid var(--line);border-left:3px solid transparent}
-  .dir-item:hover{background:var(--paper-2);border-left-color:var(--accent);text-decoration:none}
-  .dir-name{font-size:16px;font-weight:500;color:var(--accent)}
-  .dir-note{display:block;font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:3px;text-transform:none}
+  .dir{margin-bottom:6px}
+  .dir-item{display:block;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:12px 16px;margin-bottom:8px;border-left:5px solid var(--accent);transition:transform .12s,box-shadow .15s}
+  .dir-item:hover{text-decoration:none;transform:translateY(-2px);box-shadow:0 6px 18px rgba(60,50,80,.10)}
+  .dir-name{font-family:var(--disp);font-size:16px;font-weight:500;color:var(--accent)}
+  .dir-note{display:block;font-size:12.5px;color:var(--muted);margin-top:3px;font-weight:600}
 
-  .state{font-family:var(--mono);font-size:13px;color:var(--muted);padding:60px 4px;line-height:1.7;max-width:52ch}
-  .state b{color:var(--ink);display:block;font-size:15px;margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em}
-  code{background:var(--paper-2);padding:1px 5px;font-size:12px}
+  .state{font-size:14px;color:var(--muted);padding:50px 6px;line-height:1.7;max-width:54ch;font-weight:600}
+  .state b{display:block;font-family:var(--disp);color:var(--head);font-size:18px;font-weight:600;margin-bottom:6px}
+  code{background:var(--track);border-radius:6px;padding:1px 6px;font-size:12.5px;font-family:ui-monospace,monospace}
 
-  .sources{max-width:960px;margin:0 clamp(16px,4vw,40px);border-top:1px solid var(--line);padding:16px 0 60px}
-  .sources summary{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;cursor:pointer}
-  .src-grid{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:12px}
-  .src-item{font-family:var(--mono);font-size:11px;color:var(--ink)}
-  .src-item .z{color:#b23b3b}
-  .src-item .c{color:var(--muted)}
+  .sources{max-width:1000px;margin:0 clamp(16px,4vw,40px);border-top:1px solid var(--line);padding:16px 0 60px}
+  .sources summary{font-size:12px;color:var(--muted);cursor:pointer;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+  .src-grid{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:12px}
+  .src-item{font-size:12.5px;color:var(--ink);font-weight:600;background:var(--surface);border-radius:999px;padding:4px 12px;box-shadow:var(--shadow)}
+  .src-item .z{color:#D06868;font-weight:800}
+  .src-item .c{color:#4FA377;font-weight:800}
 
-  @media (max-width:560px){
-    .ev{grid-template-columns:1fr;gap:4px}
-    .ev .tags{flex-direction:row;align-items:center;text-align:left;margin-top:4px;flex-wrap:wrap}
+  @media (max-width:600px){
+    .ev{grid-template-columns:1fr;gap:5px}
+    .ev .tags{flex-direction:row;align-items:center;text-align:left;margin-top:6px;flex-wrap:wrap}
     .ev .time{padding-top:0}.ev .time .to{display:inline;margin-left:6px}
     .day{top:0}.controls{position:static}
   }
@@ -86,45 +102,49 @@
 </head>
 <body>
   <header class="mast">
-    <h1>Nour's <span>Planner</span></h1>
+    <h1>Nour's <span class="a">Planner</span></h1>
     <div class="sub"><span id="count">loading…</span><span id="updated"></span><span>Berlin · free &amp; almost-free</span></div>
   </header>
 
   <section class="controls" id="controls" aria-label="Filters">
-    <div class="row" role="group" aria-label="View">
-      <span class="lbl">View</span>
-      <div class="seg mode-seg" id="modes">
-        <button data-mode="oneoff" aria-pressed="true">One-off</button>
-        <button data-mode="recurring" aria-pressed="false">Recurring</button>
-        <button data-mode="directory" aria-pressed="false">Directory</button>
+    <div class="ctrl-top">
+      <div class="group" role="group" aria-label="View">
+        <span class="lbl">View</span>
+        <div class="seg mode-seg" id="modes">
+          <button data-mode="oneoff" aria-pressed="true">One-off</button>
+          <button data-mode="recurring" aria-pressed="false">Recurring</button>
+          <button data-mode="directory" aria-pressed="false">Directory</button>
+        </div>
+      </div>
+      <div class="group filter-row" id="whenRow" role="group" aria-label="When">
+        <span class="lbl">When</span>
+        <div class="seg" id="presets">
+          <button data-preset="weekend" aria-pressed="true">This weekend</button>
+          <button data-preset="today" aria-pressed="false">Today</button>
+          <button data-preset="week" aria-pressed="false">7 days</button>
+          <button data-preset="all" aria-pressed="false">All</button>
+        </div>
+      </div>
+      <div class="group filter-row" role="group" aria-label="Cost">
+        <span class="lbl">Cost</span>
+        <div class="seg" id="costs">
+          <button data-cost="any" aria-pressed="true">Any</button>
+          <button data-cost="free" aria-pressed="false">Free</button>
+          <button data-cost="5" aria-pressed="false">≤€5</button>
+        </div>
+      </div>
+      <div class="group filter-row" role="group" aria-label="Sort">
+        <span class="lbl">Sort</span>
+        <div class="seg" id="sorts">
+          <button data-sort="time" aria-pressed="true">Time</button>
+          <button data-sort="price" aria-pressed="false">Price</button>
+        </div>
+      </div>
+      <div class="searchwrap filter-row">
+        <input class="search" id="search" type="search" placeholder="Search title or venue…" aria-label="Search">
       </div>
     </div>
-    <div class="row filter-row" id="whenRow" role="group" aria-label="When">
-      <span class="lbl">When</span>
-      <div class="seg" id="presets">
-        <button data-preset="weekend" aria-pressed="true">This weekend</button>
-        <button data-preset="today" aria-pressed="false">Today</button>
-        <button data-preset="week" aria-pressed="false">7 days</button>
-        <button data-preset="all" aria-pressed="false">All</button>
-      </div>
-    </div>
-    <div class="row filter-row" id="cats" role="group" aria-label="Categories"><span class="lbl">What</span></div>
-    <div class="row filter-row">
-      <span class="lbl">Cost</span>
-      <div class="seg" id="costs">
-        <button data-cost="any" aria-pressed="true">Any</button>
-        <button data-cost="free" aria-pressed="false">Free</button>
-        <button data-cost="5" aria-pressed="false">≤€5</button>
-      </div>
-      <span class="lbl" style="margin-left:8px">Sort</span>
-      <div class="seg" id="sorts">
-        <button data-sort="time" aria-pressed="true">Time</button>
-        <button data-sort="price" aria-pressed="false">Price</button>
-      </div>
-    </div>
-    <div class="row filter-row">
-      <input class="search" id="search" type="search" placeholder="Search title or venue…" aria-label="Search">
-    </div>
+    <div class="cats filter-row" id="cats" role="group" aria-label="Categories"><span class="lbl">What</span></div>
   </section>
 
   <main id="feed"><div class="state">Loading events…</div></main>
@@ -351,7 +371,7 @@ function card(ev,opts){
   const desc=ev.description?`<div class="desc">${esc(ev.description)}${tr}</div>`:(tr?`<div class="desc">${tr}</div>`:"");
   const money=ev.is_free===true?`<span class="tag free">Free</span>`:(ev.price?`<span class="tag price">${esc(ev.price)}</span>`:"");
   const cadence=recurring&&ev.recurrence?`<span class="tag cadence">${esc(ev.recurrence)}</span>`:"";
-  return `<article class="ev"><div class="time">${bTime(ev.start)}${to}</div><div><div class="title">${title}</div><div class="meta">${metaBits.join(" · ")}</div>${desc}</div><div class="tags"><span class="tag">${catLabel}</span>${cadence}${money}</div></article>`;
+  return `<article class="ev cat-${ev.category}"><div class="time">${bTime(ev.start)}${to}</div><div><div class="title">${title}</div><div class="meta">${metaBits.join(" · ")}</div>${desc}</div><div class="tags"><span class="tag cat-tag">${catLabel}</span>${cadence}${money}</div></article>`;
 }
 
 function renderDirectory(){
@@ -372,7 +392,7 @@ function emptyState(){
 }
 
 function buildSeg(id,key,cb){document.getElementById(id).addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;state[key]=b.dataset[key];[...b.parentElement.children].forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false"));(cb||render)();});}
-function buildCats(){const box=document.getElementById("cats");for(const[id,label]of CATS){const b=document.createElement("button");b.className="chip";b.textContent=label;b.setAttribute("aria-pressed","false");b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.cats.delete(id),b.setAttribute("aria-pressed","false")):(state.cats.add(id),b.setAttribute("aria-pressed","true"));render();};box.appendChild(b);}}
+function buildCats(){const box=document.getElementById("cats");for(const[id,label]of CATS){const b=document.createElement("button");b.className="chip cat-"+id;b.textContent=label;b.setAttribute("aria-pressed","false");b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.cats.delete(id),b.setAttribute("aria-pressed","false")):(state.cats.add(id),b.setAttribute("aria-pressed","true"));render();};box.appendChild(b);}}
 buildCats();
 buildSeg("modes","mode");buildSeg("presets","preset");buildSeg("costs","cost");buildSeg("sorts","sort");
 document.getElementById("search").addEventListener("input",e=>{state.q=e.target.value.trim().toLowerCase();render();});
