@@ -114,7 +114,8 @@
       <div class="seg" id="costs">
         <button data-cost="any" aria-pressed="true">Any</button>
         <button data-cost="free" aria-pressed="false">Free</button>
-        <button data-cost="5" aria-pressed="false">≤€5</button>
+        <button data-cost="10" aria-pressed="false">≤€10</button>
+        <button data-cost="20" aria-pressed="false">≤€20</button>
       </div>
       <span class="lbl" style="margin-left:8px">Sort</span>
       <div class="seg" id="sorts">
@@ -134,146 +135,41 @@
 const CATS=[["music","Music"],["nightlife","Nightlife"],["art","Art / film / talks"],["sport","Sport"],["community","Community"],["market","Markets"],["other","Other"]];
 const WEEKDAYS=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 const DIRECTORY=[
-  {group:"Listings & what's on",items:[
+  {group:"Listings & what's-on",items:[
     {name:"gratis-in-berlin.de",url:"https://www.gratis-in-berlin.de/",note:"The dedicated free-events site + newsletter"},
     {name:"Berlin.de — Events",url:"https://www.berlin.de/en/events/",note:"Official city listings"},
-    {name:"Berlin.de — Gratis",url:"https://www.berlin.de/kultur-und-tickets/gratis/",note:"Official free-entry events & museums"},
     {name:"visitBerlin — Free",url:"https://www.visitberlin.de/en/events-free-berlin",note:"Curated free things to do"},
-    {name:"tip Berlin",url:"https://www.tip-berlin.de/",note:"City magazine; strong concert/party listings"},
+    {name:"tip Berlin",url:"https://www.tip-berlin.de/",note:"City magazine, strong concert/party listings"},
     {name:"The Berliner",url:"https://www.the-berliner.com/",note:"English-language culture guides"},
+    {name:"Resident Advisor — Berlin",url:"https://ra.co/events/de/berlin",note:"Clubs & electronic (already fed into this page)"},
+    {name:"Meetup — Berlin",url:"https://www.meetup.com/find/",note:"Community, language, hikes, boardgames"},
+    {name:"Luma — Berlin",url:"https://luma.com/berlin",note:"Tech / creative / community events"},
     {name:"Rausgegangen — Berlin",url:"https://rausgegangen.de/en/berlin/",note:"Big event portal (this is where Ask Helmut moved)"},
     {name:"Mit Vergnügen Berlin",url:"https://mitvergnuegen.com/",note:"City magazine; daily tips incl. free round-ups"},
     {name:"iHeartBerlin",url:"https://www.iheartberlin.de/",note:"Art / nightlife / culture blog with weekly picks"},
+    {name:"Berlin.de — Gratis",url:"https://www.berlin.de/kultur-und-tickets/gratis/",note:"Official free-entry events & museums"},
     {name:"QIEZ Berlin",url:"https://www.qiez.de/",note:"Neighbourhood events & free-sport guides"},
-    {name:"Reddit — r/berlin",url:"https://www.reddit.com/r/berlin/",note:"Locals post recurring free things & answer what is on"},
-    {name:"Meetup — all Berlin events",url:"https://www.meetup.com/find/?location=de--berlin&source=EVENTS",note:"Every kind of meetup; many free"},
-    {name:"Luma — Berlin",url:"https://luma.com/berlin",note:"Tech / creative / community events"},
-    {name:"Resident Advisor — Berlin",url:"https://ra.co/events/de/berlin",note:"Clubs & electronic (already fed into this page)"},
-    {name:"Eventbrite — Berlin free",url:"https://www.eventbrite.com/d/germany--berlin/free--events/",note:"Free events filter"},
-    {name:"CreativeMornings Berlin",url:"https://creativemornings.com/cities/ber",note:"Free monthly breakfast talks"},
-    {name:"Songkick — Berlin",url:"https://www.songkick.com/metro-areas/28443-germany-berlin",note:"Concert calendar & alerts"},
+    {name:"Reddit — r/berlin",url:"https://www.reddit.com/r/berlin/",note:"Locals post recurring free things & answer 'what's on'"},
   ]},
-  {group:"Music venues",items:[
-    {name:"SO36",url:"https://so36.de/",note:"Legendary Kreuzberg punk/indie/queer venue"},
-    {name:"Lido",url:"https://www.lido-berlin.de/",note:"Kreuzberg indie/rock/electro"},
-    {name:"Astra Kulturhaus",url:"https://www.astra-berlin.de/",note:"Mid-size concerts, RAW site"},
-    {name:"Cassiopeia",url:"https://www.cassiopeia-berlin.de/",note:"RAW-site club & live stage"},
-    {name:"Kesselhaus (Kulturbrauerei)",url:"https://www.kesselhaus-berlin.de/",note:"Rock, pop, world music"},
-    {name:"Badehaus",url:"https://badehaus-berlin.com/",note:"RAW venue; home of the Tuesday Swag Jam"},
-    {name:"Klunkerkranich",url:"https://klunkerkranich.org/",note:"Rooftop bar, music & free-ish entry"},
-    {name:"Silent Green",url:"https://www.silent-green.net/",note:"Former crematorium; concerts, film, art"},
-    {name:"Gretchen",url:"https://gretchen-club.de/",note:"Electronic, hip-hop, bass"},
-    {name:"YAAM",url:"https://www.yaam.de/",note:"Riverside reggae/dancehall/afrobeat & culture"},
-    {name:"Heimathafen Neukölln",url:"https://www.heimathafen-neukoelln.de/",note:"Concerts, theatre, readings"},
-    {name:"Festsaal Kreuzberg",url:"https://festsaal-kreuzberg.de/",note:"Eclectic concerts & events"},
-    {name:"Konzerthaus Berlin",url:"https://www.konzerthaus.de/",note:"Classical; cheap tickets & some free events"},
-    {name:"Berliner Philharmonie",url:"https://www.berliner-philharmoniker.de/",note:"World-class classical"},
-    {name:"Philharmonie Lunchkonzert",url:"https://www.berliner-philharmoniker.de/en/concerts/lunch-concerts/",note:"FREE, Wed 13:00, Sep–Jun"},
-  ]},
-  {group:"Jazz & jam sessions",items:[
+  {group:"Live music & jams",items:[
     {name:"berlinersessions.de",url:"https://berlinersessions.de/",note:"70+ open mics & jams by weekday/district"},
     {name:"berlin-sessions.com",url:"https://berlin-sessions.com/",note:"Jam directory by genre"},
-    {name:"visitBerlin — 11 jazz bars",url:"https://www.visitberlin.de/en/blog/11-jazz-bars-berlin",note:"Guide to the city's jazz clubs"},
-    {name:"A-Trane",url:"https://www.a-trane.de/",note:"Charlottenburg jazz; free late-night jam sessions"},
-    {name:"b-flat",url:"https://b-flat-berlin.de/",note:"Mitte jazz; free Wednesday jam"},
-    {name:"Quasimodo",url:"https://www.quasimodo.de/",note:"Historic City West jazz club"},
-    {name:"Donau115",url:"https://www.donau115.de/",note:"Neukölln jazz; Two-Song-Tuesday open mic"},
-    {name:"ZigZag Jazzclub",url:"https://zigzag-jazz.de/",note:"Friedenau; free/donation shows"},
-  ]},
-  {group:"Clubs & nightlife",items:[
-    {name:"://about blank",url:"https://aboutblank.li/",note:"Club & garden, political collective"},
-    {name:"Holzmarkt",url:"https://www.holzmarkt.com/",note:"Riverside village: club, events, community"},
-    {name:"Berghain / Panorama Bar",url:"https://www.berghain.berlin/",note:"The techno institution; also concerts (Kantine)"},
-    {name:"SchwuZ",url:"https://www.schwuz.de/",note:"Long-running queer club & events"},
-    {name:"Südblock",url:"https://suedblock.org/",note:"Queer/inclusive Kreuzberg venue & café"},
-    {name:"K-Fetisch (Instagram)",url:"https://www.instagram.com/k_fetisch/",note:"Neukölln bar/collective — no feed, follow here"},
-    {name:"ida Nowhere (Instagram)",url:"https://www.instagram.com/ida_nowhere/",note:"Art/queer space — no feed, follow here"},
-    {name:"knoise",url:"https://knoise.org/",note:"Underground/experimental music listings"},
-    {name:"Stressfaktor",url:"https://stressfaktor.squat.net/termine",note:"DIY/autonomous calendar (bot-walled; browse by hand)"},
-  ]},
-  {group:"Theatre & dance",items:[
-    {name:"Volksbühne",url:"https://www.volksbuehne.berlin/en",note:"Flagship experimental theatre"},
-    {name:"Berliner Ensemble",url:"https://www.berliner-ensemble.de/",note:"Brecht's house; big repertoire"},
-    {name:"Deutsches Theater",url:"https://www.deutschestheater.de/",note:"Major state theatre"},
-    {name:"Schaubühne",url:"https://www.schaubuehne.de/en/",note:"Internationally known ensemble theatre"},
-    {name:"Maxim Gorki Theater",url:"https://www.gorki.de/en",note:"Post-migrant, socially engaged theatre"},
-    {name:"HAU Hebbel am Ufer",url:"https://www.hebbel-am-ufer.de/en/",note:"Contemporary performance & dance"},
-    {name:"Sophiensæle",url:"https://www.sophiensaele.com/en",note:"Independent dance & performance"},
-    {name:"Radialsystem",url:"https://www.radialsystem.de/en/",note:"Dance, new music, cross-arts on the Spree"},
-    {name:"SCDS Berlin",url:"https://www.scds-berlin.de/indexe.html",note:"Dance society — see site for classes/events"},
-  ]},
-  {group:"Cinema",items:[
-    {name:"Berlin.de — Kinos",url:"https://www.berlin.de/kino/kinos/",note:"All Berlin cinemas + weekly programme"},
-    {name:"visitBerlin — Cinemas",url:"https://www.visitberlin.de/en/cinemas",note:"Arthouse & original-version guide"},
-    {name:"Kino Babylon",url:"http://babylonberlin.eu/",note:"Free Sat-midnight silent film w/ live organ"},
-    {name:"Arsenal",url:"https://www.arsenal-berlin.de/",note:"Cinematheque; retrospectives & experimental"},
-    {name:"Wolf Kino",url:"https://wolfberlin.org/",note:"Neukölln neighbourhood arthouse"},
-    {name:"fsk Kino",url:"https://www.fsk-kino.de/",note:"Independent originals with subtitles"},
-    {name:"Il Kino",url:"https://www.ilkino.de/",note:"Neukölln; OV films, café & bar"},
-    {name:"Moviemento",url:"https://www.moviemento.de/",note:"Germany's oldest cinema; 15+ festivals/yr"},
-    {name:"Lichtblick Kino",url:"https://www.lichtblick-kino.org/",note:"Tiny Verein-run cult cinema (Casablanca nights)"},
-    {name:"b-ware! Ladenkino",url:"https://www.ladenkino.de/",note:"Cosy Friedrichshain arthouse"},
-  ]},
-  {group:"Museums & galleries",items:[
-    {name:"Staatliche Museen (SMB)",url:"https://www.smb.museum/en/home/",note:"Free under 18 daily; free 1st-Thu eve at Hamburger Bahnhof"},
-    {name:"Humboldt Forum",url:"https://www.humboldtforum.org/en/",note:"Large free & paid programme in the palace"},
-    {name:"Berlinische Galerie",url:"https://www.berlinischegalerie.de/en/",note:"Modern art; flat €7 first-Wed"},
-    {name:"KW Institute",url:"https://www.kw-berlin.de/en/",note:"Contemporary art, Mitte"},
-    {name:"Berliner Festspiele",url:"https://www.berlinerfestspiele.de/en",note:"Theatertreffen, JazzFest, MaerzMusik, Gropius Bau"},
-    {name:"C/O Berlin",url:"https://co-berlin.org/en",note:"Photography museum, Amerika Haus"},
-    {name:"Futurium",url:"https://futurium.de/en",note:"Museum of futures — FREE entry + events"},
-    {name:"Topographie des Terrors",url:"https://www.topographie.de/en/",note:"Documentation centre — FREE, daily"},
-    {name:"Haus der Kulturen der Welt",url:"https://www.hkw.de/en",note:"World cultures: talks, music, film, art"},
-    {name:"n.b.k.",url:"https://www.nbk.org/en/",note:"Neuer Berliner Kunstverein — free exhibitions"},
-    {name:"Jüdisches Museum",url:"https://www.jmberlin.de/en",note:"Jewish history & culture"},
-    {name:"Deutsches Historisches Museum",url:"https://www.dhm.de/en/",note:"German history (main building under renovation)"},
-    {name:"Museum für Naturkunde",url:"https://www.museumfuernaturkunde.berlin/en",note:"Natural history; dinosaurs"},
-    {name:"Schwules Museum",url:"https://www.schwulesmuseum.de/?lang=en",note:"Queer history & art"},
-    {name:"Berlin Art Link",url:"https://www.berlinartlink.com/",note:"Contemporary art events & openings, often free"},
-  ]},
-  {group:"Community & neighbourhood",items:[
-    {name:"Berliner Stadtteilzentren",url:"https://stadtteilzentren.de/",note:"Umbrella site — 40+ neighbourhood centres citywide"},
-    {name:"VskA Berlin",url:"https://vska.de/berlin/",note:"Association of Berlin's community houses"},
-    {name:"Rudi Nachbarschaftshaus",url:"https://rudi-nachbarschaftshaus.de/angebot/",note:"Kreuzberg community programme"},
-    {name:"NBH Neukölln",url:"https://www.nbh-neukoelln.de/angebot/erwachsene/",note:"Neukölln community programme"},
-    {name:"Mittelhof",url:"https://www.mittelhof.org/angebote/alle-angebote/",note:"Steglitz-Zehlendorf community programme"},
-    {name:"NBH Urbanstraße",url:"https://www.nachbarschaftshaus.de/angebote/",note:"Kreuzberg community house"},
-    {name:"NBH am Lietzensee (DRK)",url:"https://www.drk-berlin-zentrum.de/angebote/nachbarschaftshaus-am-lietzensee/veranstaltungen.html",note:"Charlottenburg events"},
-    {name:"Offenes Wohnzimmer",url:"https://offeneswohnzimmer.org/index.php/veranstaltungen/",note:"Community living-room events"},
-    {name:"Pfefferwerk",url:"https://www.pfefferwerk.de/",note:"Prenzlauer Berg Stadtteilzentrum"},
-    {name:"KREATIVHAUS",url:"https://www.kreativhaus-tpz.de/",note:"Fischerinsel community & theatre centre"},
-    {name:"ufaFabrik",url:"https://www.ufafabrik.de/en/",note:"Tempelhof culture farm; free festivals"},
-    {name:"Moabiter Ratschlag / Stadtschloss",url:"https://www.moabiter-ratschlag.de/",note:"Moabit neighbourhood house"},
-  ]},
-  {group:"Literature & talks",items:[
-    {name:"Berliner Literarische Aktion",url:"https://berliner-literarische-aktion.de/termine/",note:"Readings & literary events"},
-    {name:"Literaturhaus Berlin",url:"https://literaturhaus-berlin.de/",note:"Readings, talks in a Charlottenburg villa"},
-    {name:"Lettrétage",url:"https://lettretage.de/",note:"Independent literature house, Kreuzberg"},
-    {name:"LCB",url:"https://lcb.de/",note:"Literarisches Colloquium; lakeside readings"},
-  ]},
-  {group:"Cultural institutes",items:[
-    {name:"Italian Cultural Institute",url:"https://iicberlino.esteri.it/it/",note:"Italian films, talks, concerts"},
-    {name:"Institut français",url:"https://www.institutfrancais.de/",note:"French film nights, talks, events"},
-    {name:"Instituto Cervantes",url:"https://berlin.cervantes.es/",note:"Spanish-language culture & film"},
-    {name:"Nordic Embassies (Felleshus)",url:"https://www.nordicembassies.org/",note:"Nordic exhibitions, concerts, talks"},
-    {name:"Polish Institute",url:"https://instytutpolski.pl/berlin/",note:"Polish culture events"},
-    {name:"Japan Foundation (JKI)",url:"https://www.jki.de/",note:"Japanese culture, film, talks"},
+    {name:"Philharmonie Lunchkonzert",url:"https://www.berliner-philharmoniker.de/en/concerts/lunch-concerts/",note:"Free, Wed 13:00, Sep–Jun"},
   ]},
   {group:"Sport & outdoors",items:[
     {name:"Sport im Park",url:"https://www.berlin.de/sen/inneres/sport/breitensport/sport-im-park/",note:"270+ free outdoor courses citywide"},
     {name:"parkrun Germany",url:"https://www.parkrun.com.de/",note:"Free timed 5K, Saturdays"},
     {name:"Running Clubs Berlin",url:"https://www.runningclubsberlin.de/",note:"Directory of free run crews"},
     {name:"calisthenics-parks.com",url:"https://calisthenics-parks.com/regions/1-en-berlin-area",note:"Free outdoor gyms + communities"},
-    {name:"ADFC Berlin",url:"https://adfc-berlin.de/",note:"Cycling club; group rides & tours"},
-    {name:"DAV Sektion Berlin",url:"https://www.dav-berlin.de/",note:"Alpine club; hikes, climbing, trips"},
   ]},
-  {group:"Markets, libraries & language",items:[
+  {group:"Community & language",items:[
+    {name:"Tandem app",url:"https://tandem.net/language-exchange/germany/berlin",note:"1-on-1 language partners"},
+    {name:"Meetup — Language exchange",url:"https://www.meetup.com/find/de--berlin/language-exchange/",note:"Sprachcafés & tandems"},
+  ]},
+  {group:"Art, markets & museums",items:[
+    {name:"Berlin Art Link",url:"https://www.berlinartlink.com/",note:"Contemporary art events & gallery openings, often free"},
     {name:"Berlin.de — Flea markets",url:"https://www.berlin.de/en/shopping/markets/flea-markets/",note:"Master list; most are free Sundays"},
-    {name:"Markthalle Neun",url:"https://markthalleneun.de/",note:"Street Food Thursday & market events"},
-    {name:"Kleidertausch",url:"https://kleidertausch.de/events/",note:"Free clothes-swap events"},
-    {name:"ZLB (Central Library)",url:"https://www.zlb.de/",note:"Free events, workshops, workspace"},
-    {name:"VÖBB (all libraries)",url:"https://www.voebb.de/",note:"Every Berlin public library + events"},
-    {name:"Tandem — language exchange",url:"https://tandem.net/language-exchange/germany/berlin",note:"Find 1-on-1 language partners"},
+    {name:"Staatliche Museen (SMB)",url:"https://www.smb.museum/en/home/",note:"Free under 18 daily; free 1st-Thu evening at Hamburger Bahnhof"},
   ]},
 ];
 const state={mode:"oneoff",preset:"weekend",cats:new Set(),cost:"any",sort:"time",q:""};
@@ -291,7 +187,8 @@ function range(){const now=new Date();if(state.preset==="weekend")return weekend
 function passesFilters(ev){
   if(state.cats.size&&!state.cats.has(ev.category))return false;
   if(state.cost==="free"&&ev.is_free!==true)return false;
-  if(state.cost==="5"&&!(ev.is_free===true||(ev.price_value!=null&&ev.price_value<=5)))return false;
+  if(state.cost==="10"&&!(ev.is_free===true||(ev.price_value!=null&&ev.price_value<=10)))return false;
+  if(state.cost==="20"&&!(ev.is_free===true||(ev.price_value!=null&&ev.price_value<=20)))return false;
   if(state.q){const hay=(ev.title+" "+(ev.venue||"")+" "+(ev.area||"")).toLowerCase();if(!hay.includes(state.q))return false;}
   return true;
 }

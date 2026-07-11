@@ -10,7 +10,9 @@ data a few times a day and **GitHub Pages** serves the page.
 - **Recurring** — the weekly and monthly regulars (jams, parkrun, language exchange…), grouped by day of the week. Anything with an iCal repeat rule (RRULE) is detected as recurring automatically; you can also force a whole feed into this section with `recurring: true`.
 - **Directory** — a curated list of Berlin's best listings sites, jam directories, sport programmes, markets and more (the resources to check by hand for things no feed covers).
 
-**Also on the page:** a **Cost** filter (Any / Free / ≤€10 / ≤€20), **Sort** by time or price, and a **Sources** panel at the bottom showing how many events each feed returned (a `0` means that feed is empty or broken — your at-a-glance health check). German titles and descriptions are **auto-translated to English** in the Action (cached; falls back to the original if translation is unavailable).
+**Also on the page:** a **Cost** filter (Any / Free / ≤€5), **Sort** by time or price, and a **Sources** panel at the bottom showing how many events each feed returned (a `0` means that feed is empty or broken — your at-a-glance health check). German titles and descriptions are **auto-translated to English** in the Action (cached; falls back to the original if translation is unavailable).
+
+**Free/cheap only:** the aggregator drops anything over **€5** (set by `max_price` in config) and anything known to be paid without a stated price. Resident Advisor is **off** by default for this reason — it's paid clubs and its API doesn't expose prices, so every event came through as "ticketed" with no amount. Flip `resident_advisor.enabled` to `true` if you ever want paid nightlife back.
 
 ```
 sources ──► aggregate.py ──► docs/events.json ──► docs/index.html (the page)

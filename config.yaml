@@ -9,9 +9,18 @@ horizon_days: 45
 # Auto-translate German event titles/descriptions to English. Runs in the Action.
 translate: true
 
-# Resident Advisor — Berlin's club / electronic scene. Works out of the box.
+# Free/cheap only: drop anything that costs more than this (in EUR), and drop
+# events that are known to be paid but don't state a price (e.g. RA "ticketed").
+# Free events, events priced at or under this, and events with no price signal
+# are kept. Set higher if you want a bigger budget.
+max_price: 5
+
+# Resident Advisor — Berlin's club/electronic scene. DISABLED: it's paid clubs and
+# its API doesn't expose ticket prices, so it can't fit a free/cheap (<=€5) planner
+# (every event came through as "ticketed" with no amount). Flip to true if you ever
+# want paid nightlife back.
 resident_advisor:
-  enabled: true
+  enabled: false
   area_id: 34          # 34 == Berlin. Verify at ra.co/events/de/berlin if results look off.
 
 # iCal feeds — the robust, low-maintenance source. Add as many as you like.
@@ -26,6 +35,12 @@ resident_advisor:
 # Events that carry a proper iCal repeat rule (RRULE) are detected as recurring
 # automatically — no flag needed.
 ics_feeds:
+  # Hand-added real events (edit manual.ics to add your own one-offs or regulars).
+  - name: "Sprachcafé Lighthouse"
+    url: "manual.ics"
+    category: "community"
+    is_free: true
+
   # Bundled demo feed (a local file) so the pipeline produces output before you
   # add real feeds. Delete this entry once you've added your own.
   - name: "Demo"
@@ -46,16 +61,12 @@ ics_feeds:
 # RSS / Atom feeds. Weaker for events (dates are often publish-dates), but handy
 # for sources that only offer RSS.
 rss_feeds:
-  # ── Your sites, wired in as WordPress RSS (provisional — see notes below).
-  # These sites publish an RSS feed of recent posts. Coverage varies: some post
-  # real dated events, others mostly news. The Sources panel on the page shows
-  # how many each one actually returned, so you can see what's working and drop
-  # the empties. Community centres are marked recurring so their standing
+  # ── Your sites, wired in as WordPress RSS. Coverage varies: some post real
+  # dated events, others mostly news. The Sources panel on the page shows how
+  # many each returned. Community centres are marked recurring so their standing
   # offers land in the "Recurring" section.
-  - name: "NBH Urbanstraße"
-    url: "https://www.nachbarschaftshaus.de/feed/"
-    category: "community"
-    recurring: true
+  # (Removed: NBH Urbanstraße, Mittelhof, Kleidertausch — those /feed/ URLs
+  #  returned 0. If you find their real event feed, add it back here.)
   - name: "Rudi NBH"
     url: "https://rudi-nachbarschaftshaus.de/feed/"
     category: "community"
@@ -64,16 +75,9 @@ rss_feeds:
     url: "https://www.nbh-neukoelln.de/feed/"
     category: "community"
     recurring: true
-  - name: "Mittelhof"
-    url: "https://www.mittelhof.org/feed/"
-    category: "community"
-    recurring: true
   - name: "Literarische Aktion"
     url: "https://berliner-literarische-aktion.de/feed/"
     category: "art"
-  - name: "Kleidertausch"
-    url: "https://kleidertausch.de/feed/"
-    category: "market"
   # City-magazine blogs (WordPress). These post editorial round-ups more than
   # single dated events, so expect articles here — the Sources panel will show
   # how many land, and you can drop them if they're noisy.

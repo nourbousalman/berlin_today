@@ -25,11 +25,20 @@ _CATEGORY_KEYWORDS = [
 ]
 
 
+_CATEGORY_SET = set(CATEGORIES)
+
+
 def normalise_category(*hints: str) -> str:
     """Map any free-text hints to one of CATEGORIES."""
+    # 1) Honour an explicit tag if a hint already names a category.
+    for h in hints:
+        if h and h.strip().lower() in _CATEGORY_SET:
+            return h.strip().lower()
+    # 2) Otherwise match keywords at word boundaries (so "house" won't fire on
+    #    "lighthouse", "run" won't fire on "Brunnen", etc.).
     blob = " ".join(h for h in hints if h).lower()
     for cat, words in _CATEGORY_KEYWORDS:
-        if any(w in blob for w in words):
+        if any(re.search(r"\b" + re.escape(w), blob) for w in words):
             return cat
     return "other"
 

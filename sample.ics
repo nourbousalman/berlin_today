@@ -69,7 +69,7 @@ DTSTART:20260711T200000
 DTEND:20260711T220000
 LOCATION:St. Elisabeth-Kirche, Mitte
 CATEGORIES:music
-DESCRIPTION:One-night drone/minimalism concert. Tickets required.
+DESCRIPTION:One-night drone/minimalism concert. Tickets €18.
 END:VEVENT
 BEGIN:VEVENT
 UID:demo-oneoff-vernissage@berlin-events
@@ -87,6 +87,6 @@ DTSTART:20260716T190000
 DTEND:20260716T210000
 LOCATION:Volksbühne, Mitte
 CATEGORIES:art
-DESCRIPTION:One-off panel discussion on Berlin housing policy. Tickets required.
+DESCRIPTION:One-off panel discussion on Berlin housing policy. Tickets €12.
 END:VEVENT
 END:VCALENDAR

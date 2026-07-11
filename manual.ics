@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//berlin-events//manual//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:manual-sprachcafe-lighthouse@berlin-events
+SUMMARY:Sprachcafé Lighthouse — language & culture exchange
+DTSTART:20260709T170000
+DTEND:20260709T190000
+RRULE:FREQ=WEEKLY;BYDAY=TH
+LOCATION:Evangelische Freie Gemeinde, Hasenheide, Neukölln
+CATEGORIES:community
+URL:https://www.lighthouseberlin.com/
+DESCRIPTION:Free multicultural language café by Lighthouse Berlin, hosted at the church on Hasenheide. All welcome, no registration. More: linktr.ee/lighthouseberlin
+END:VEVENT
+END:VCALENDAR

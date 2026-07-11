@@ -71,13 +71,28 @@ def _expected_sources(cfg: dict) -> list[str]:
     return labels
 
 
+def _within_budget(e, max_price: float) -> bool:
+    """Keep free / cheap / unknown-price events; drop >max_price and known-paid-no-amount."""
+    if e.price_value is not None:
+        return e.price_value <= max_price      # known price: within budget?
+    if e.is_free is True:
+        return True                            # free
+    if e.is_free is False:
+        return False                           # known-paid but no amount (e.g. RA "ticketed")
+    return True                                # no price signal at all -> keep
+
+
 def main() -> int:
     print("Collecting Berlin events…")
     cfg = load_config()
+    max_price = float(cfg.get("max_price", 5))
     events = collect(cfg)
     events = dedupe(events)
     events = translate_events(events, enabled=cfg.get("translate", True))
     events = [e for e in events if e.start]                       # drop dateless
+    before = len(events)
+    events = [e for e in events if _within_budget(e, max_price)]  # free/cheap only
+    dropped = before - len(events)
     events.sort(key=lambda e: e.start)
 
     counts = Counter(e.source for e in events)
@@ -92,7 +107,8 @@ def main() -> int:
         "events": [e.to_dict() for e in events],
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"Wrote {len(events)} events ({n_rec} recurring, {len(events)-n_rec} one-off) → {OUT.relative_to(ROOT)}")
+    print(f"Wrote {len(events)} events ({n_rec} recurring, {len(events)-n_rec} one-off) "
+          f"→ {OUT.relative_to(ROOT)}  [dropped {dropped} over €{max_price:g}/ticketed]")
     return 0
 
 
