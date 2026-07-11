@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-11T13:16:06.017553+00:00",
+ "generated_at": "2026-07-11T19:01:31.817931+00:00",
  "count": 64,
  "sources": {
   "cal:Berlin regulars": 8,
@@ -394,7 +394,7 @@
    "id": "f3d064179a591a5db2b65d7ed0f5dfe3616a602f"
   },
   {
-   "title": "Garden action",
+   "title": "Gartenaktion",
    "start": "2026-03-31T12:48:58+00:00",
    "source": "rss:Rudi NBH",
    "url": "https://rudi-nachbarschaftshaus.de/gartenaktion/",
@@ -410,7 +410,7 @@
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
-   "id": "6b23a0b1016412a4013daef48603258330e46d1e"
+   "id": "2a5d02e27466df6ecc828f509561394b29d686f9"
   },
   {
    "title": "RegenRetter film and compost tutorial",
@@ -482,7 +482,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "On May 9th We are celebrating a big street party at Annemirl-Bauer-Platz and the surrounding area together with the “Ostkreuz remains colorful” initiative and many neighbors. There will be more than 30 stands with lots of information, promotions and snacks. There are also readings, lectures and lots of music…",
+   "description": "On May 9th We are celebrating a big street party on Annemirl-Bauer-Platz and the surrounding area together with the “Ostkreuz remains colorful” initiative and many neighbors. There will be more than 30 stands with lots of information, promotions and snacks. There are also readings, lectures and lots of music…",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -634,7 +634,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "On Tuesday June 9th Our first argumentation training against anti-feminist and anti-queer slogans takes place. Anti-feminist narratives are widespread - often hidden in everyday sayings. In the seminar we strengthen attitude and language to combat anti-feminist…",
+   "description": "On Tuesday June 9th Our first argumentation training against anti-feminist and anti-queer slogans takes place. Anti-feminist narratives are widespread - often hidden in everyday sayings. In the seminar we strengthen attitude and language to combat anti-feminist...",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -862,7 +862,7 @@
    "price": "€5–25",
    "price_value": 5.0,
    "image": null,
-   "description": "<p>While many smaller cities have a maximum of one or two vegetarian options on the menu, you can hardly find a restaurant in Berlin that doesn't offer at least one vegan option, because Berlin is the Mecca for people who follow a vegan diet. Eg...",
+   "description": "<p>While many smaller cities have a maximum of one or two vegetarian options on the menu, you can hardly find a restaurant in Berlin that doesn't offer at least one vegan option, because Berlin is the Mecca for people who follow a vegan diet. Eg…",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -964,7 +964,7 @@
    "id": "6f89eaa4d8dad29e74075181eb8752dd6765358f"
   },
   {
-   "title": "Mauerpark Flohmarkt + Bearpit Karaoke",
+   "title": "Mauerpark flea market + Bearpit karaoke",
    "start": "2026-07-12T10:00:00+02:00",
    "source": "cal:Demo",
    "url": "",
@@ -979,8 +979,8 @@
    "description": "Sunday flea market. Free open-air karaoke in the amphitheatre from ~15:00.",
    "recurring": true,
    "recurrence": "Weekly · Sun",
-   "translated": false,
-   "id": "3334fc098fb71f56cc75fe1025b60bf68fc77a0c"
+   "translated": true,
+   "id": "d0307800a694ccdf886069e24b4786315fc5ab6c"
   },
   {
    "title": "Vernissage: New Contemporaries (free entry)",
