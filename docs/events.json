@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-12T02:38:00.623548+00:00",
+ "generated_at": "2026-07-12T08:14:54.506826+00:00",
  "count": 64,
  "sources": {
   "cal:Berlin regulars": 8,
@@ -786,7 +786,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "<p>No sign of a summer lull in the Berlin cultural calendar! July not only brings lots of sun, but above all also great festivals: quiet tones at Unpluggedival, orchestral sounds at Classic Open Air or absolute demolition at Lollapallooza. You can also...",
+   "description": "<p>No sign of a summer lull in the Berlin cultural calendar! July not only brings lots of sun, but above all also great festivals: quiet tones at Unpluggedival, orchestral sounds at Classic Open Air or absolute demolition at Lollapallooza. You can also…",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -945,7 +945,7 @@
    "id": "60d2314ffae162fa15f68c164b475c1746028ef1"
   },
   {
-   "title": "Mauerpark flea market + Bearpit karaoke",
+   "title": "Mauerpark Flohmarkt + Bearpit Karaoke",
    "start": "2026-07-12T10:00:00+02:00",
    "source": "cal:Demo",
    "url": "",
@@ -960,8 +960,8 @@
    "description": "Sunday flea market. Free open-air karaoke in the amphitheatre from ~15:00.",
    "recurring": true,
    "recurrence": "Weekly · Sun",
-   "translated": true,
-   "id": "d0307800a694ccdf886069e24b4786315fc5ab6c"
+   "translated": false,
+   "id": "3334fc098fb71f56cc75fe1025b60bf68fc77a0c"
   },
   {
    "title": "Vernissage: New Contemporaries (free entry)",
