@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-11T19:01:31.817931+00:00",
+ "generated_at": "2026-07-12T02:38:00.623548+00:00",
  "count": 64,
  "sources": {
   "cal:Berlin regulars": 8,
@@ -786,7 +786,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "<p>No sign of a summer lull in the Berlin cultural calendar! July not only brings lots of sun, but above all also great festivals: quiet tones at Unpluggedival, orchestral sounds at Classic Open Air or absolute demolition at Lollapallooza. You can also…",
+   "description": "<p>No sign of a summer lull in the Berlin cultural calendar! July not only brings lots of sun, but above all also great festivals: quiet tones at Unpluggedival, orchestral sounds at Classic Open Air or absolute demolition at Lollapallooza. You can also...",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -943,25 +943,6 @@
    "recurrence": "Recurring",
    "translated": true,
    "id": "60d2314ffae162fa15f68c164b475c1746028ef1"
-  },
-  {
-   "title": "Sip Happens! Saturday Social",
-   "start": "2026-07-11T19:00:00+02:00",
-   "source": "cal:Berlin regulars",
-   "url": "https://www.meetup.com/sip_happens_berlin/",
-   "end": null,
-   "venue": "Rotating bar — see Meetup",
-   "area": null,
-   "category": "community",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": "Free Saturday social — meet new people at one of Berlin's bars. Venue and start time vary weekly, check Meetup or Telegram (t.me/siphappens_berlin). Free (buy a drink to support the venue).",
-   "recurring": true,
-   "recurrence": "Weekly · Sat",
-   "translated": false,
-   "id": "6f89eaa4d8dad29e74075181eb8752dd6765358f"
   },
   {
    "title": "Mauerpark flea market + Bearpit karaoke",
@@ -1209,6 +1190,25 @@
    "recurrence": "Weekly · Sat",
    "translated": false,
    "id": "d6554925d14088b507ff61b6b2b3cf493a49e8f2"
+  },
+  {
+   "title": "Sip Happens! Saturday Social",
+   "start": "2026-07-18T19:00:00+02:00",
+   "source": "cal:Berlin regulars",
+   "url": "https://www.meetup.com/sip_happens_berlin/",
+   "end": null,
+   "venue": "Rotating bar — see Meetup",
+   "area": null,
+   "category": "community",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": "Free Saturday social — meet new people at one of Berlin's bars. Venue and start time vary weekly, check Meetup or Telegram (t.me/siphappens_berlin). Free (buy a drink to support the venue).",
+   "recurring": true,
+   "recurrence": "Weekly · Sat",
+   "translated": false,
+   "id": "c2b305921b9b00ae68f108baed5ebeb1b7e153f0"
   },
   {
    "title": "Hamburger Bahnhof — free first-Thursday evening",
