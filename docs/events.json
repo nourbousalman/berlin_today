@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-13T02:39:28.020690+00:00",
+ "generated_at": "2026-07-13T09:24:42.971780+00:00",
  "count": 64,
  "sources": {
   "cal:Berlin regulars": 8,
@@ -107,25 +107,6 @@
    "recurrence": null,
    "translated": false,
    "id": "b4eb413f6f470e9cccc7213386cf91387b92a586"
-  },
-  {
-   "title": "#beebetter Award 2025 for “Wild bee learning site in the neighborhood house at Körnerpark”",
-   "start": "2025-09-26T06:28:29+00:00",
-   "source": "rss:NBH Neukölln",
-   "url": "https://www.nbh-neukoelln.de/beebetter-award-2025-fuer-wildbienenlernort-im-nachbarschaftshaus-am-koernerpark/",
-   "end": null,
-   "venue": null,
-   "area": null,
-   "category": "community",
-   "is_free": null,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": "With a lot of commitment, the “Cool Kids” created a unique wild bee learning place in the neighborhood house at Körnerpark and have now been awarded.",
-   "recurring": true,
-   "recurrence": "Recurring",
-   "translated": true,
-   "id": "151d0d7887de8432244054df784260a8546d5f24"
   },
   {
    "title": "Sunday 12.10 – Backyard flea market in Rixdorf!",
@@ -463,7 +444,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "House of Poetry (Culture Brewery) &#160; What languages ​​does Berlin write in? Berlin-based author and translator Lucy Jones and her friend (and translator) Karen Witthuhn read from Lucy's manuscript of an autobiographical, as yet unpublished novel! And the g…",
+   "description": "House of Poetry (Culture Brewery) &#160; What languages ​​does Berlin write in? Berlin-based author and translator Lucy Jones and her friend (and translator) Karen Witthuhn read from Lucy's manuscript of an autobiographical, as yet unpublished novel! And the g...",
    "recurring": false,
    "recurrence": null,
    "translated": true,
@@ -634,7 +615,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "On Tuesday June 9th Our first argumentation training against anti-feminist and anti-queer slogans takes place. Anti-feminist narratives are widespread - often hidden in everyday sayings. In the seminar we strengthen attitude and language to combat anti-feminist...",
+   "description": "On Tuesday June 9th Our first argumentation training against anti-feminist and anti-queer slogans takes place. Anti-feminist narratives are widespread - often hidden in everyday sayings. In the seminar we strengthen attitude and language to combat anti-feminist…",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -786,7 +767,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "<p>No sign of a summer lull in the Berlin cultural calendar! July not only brings lots of sun, but above all also great festivals: quiet tones at Unpluggedival, orchestral sounds at Classic Open Air or absolute demolition at Lollapallooza. You can also...",
+   "description": "<p>No sign of a summer lull in the Berlin cultural calendar! July not only brings lots of sun, but above all also great festivals: quiet tones at Unpluggedival, orchestral sounds at Classic Open Air or absolute demolition at Lollapallooza. You can also…",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -945,6 +926,25 @@
    "id": "60d2314ffae162fa15f68c164b475c1746028ef1"
   },
   {
+   "title": "Cool kids in the KIKA show “PUR+”",
+   "start": "2026-07-12T06:12:23+00:00",
+   "source": "rss:NBH Neukölln",
+   "url": "https://www.nbh-neukoelln.de/coole-kids-bei-kika-pur/",
+   "end": null,
+   "venue": null,
+   "area": null,
+   "category": "community",
+   "is_free": null,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": "The cool kids from the neighborhood house at Körnerpark are guests in the PUR+ episode \"My city - fit for the climate?\"",
+   "recurring": true,
+   "recurrence": "Recurring",
+   "translated": true,
+   "id": "e2f8a5fd7b03ead1205b955779ade2bc0d3ce27d"
+  },
+  {
    "title": "Vernissage: New Contemporaries (free entry)",
    "start": "2026-07-12T18:00:00+02:00",
    "source": "cal:Demo",
@@ -1055,7 +1055,7 @@
    "description": "Spieletreff Berlin board game night, 30-40 players and ~150 games. Entry €5, drinks sold on site.",
    "recurring": true,
    "recurrence": "Weekly · Wed",
-   "translated": false,
+   "translated": true,
    "id": "232a344d6f2032a9bfa5ed6d53b73c5bcaa0bfde"
   },
   {
@@ -1192,7 +1192,7 @@
    "id": "c2b305921b9b00ae68f108baed5ebeb1b7e153f0"
   },
   {
-   "title": "Mauerpark Flohmarkt + Bearpit Karaoke",
+   "title": "Mauerpark flea market + Bearpit karaoke",
    "start": "2026-07-19T10:00:00+02:00",
    "source": "cal:Demo",
    "url": "",
@@ -1207,8 +1207,8 @@
    "description": "Sunday flea market. Free open-air karaoke in the amphitheatre from ~15:00.",
    "recurring": true,
    "recurrence": "Weekly · Sun",
-   "translated": false,
-   "id": "c3b8274d9350b2b3c07fa0028acb1112c432af8f"
+   "translated": true,
+   "id": "33cfaaab1a4bb60237c64bc792155f63b08c6490"
   },
   {
    "title": "Hamburger Bahnhof — free first-Thursday evening",
