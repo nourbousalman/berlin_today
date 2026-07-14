@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-14T02:23:33.307212+00:00",
+ "generated_at": "2026-07-14T08:02:03.561700+00:00",
  "count": 63,
  "sources": {
   "cal:Berlin regulars": 8,
@@ -1154,7 +1154,7 @@
    "id": "c2b305921b9b00ae68f108baed5ebeb1b7e153f0"
   },
   {
-   "title": "Mauerpark Flohmarkt + Bearpit Karaoke",
+   "title": "Mauerpark flea market + Bearpit karaoke",
    "start": "2026-07-19T10:00:00+02:00",
    "source": "cal:Demo",
    "url": "",
@@ -1169,8 +1169,8 @@
    "description": "Sunday flea market. Free open-air karaoke in the amphitheatre from ~15:00.",
    "recurring": true,
    "recurrence": "Weekly · Sun",
-   "translated": false,
-   "id": "c3b8274d9350b2b3c07fa0028acb1112c432af8f"
+   "translated": true,
+   "id": "33cfaaab1a4bb60237c64bc792155f63b08c6490"
   },
   {
    "title": "Sprachcafé — language exchange",
