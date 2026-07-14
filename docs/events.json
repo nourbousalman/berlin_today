@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-13T19:21:55.158733+00:00",
+ "generated_at": "2026-07-14T02:23:33.307212+00:00",
  "count": 63,
  "sources": {
   "cal:Berlin regulars": 8,
@@ -945,25 +945,6 @@
    "id": "e2f8a5fd7b03ead1205b955779ade2bc0d3ce27d"
   },
   {
-   "title": "Sprachcafé — language exchange",
-   "start": "2026-07-13T18:00:00+02:00",
-   "source": "cal:Demo",
-   "url": "",
-   "end": null,
-   "venue": "Denizen House, Köpenicker Str. 40",
-   "area": null,
-   "category": "community",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": "Language exchange, free of charge. All levels welcome.",
-   "recurring": true,
-   "recurrence": "Weekly · Mon",
-   "translated": true,
-   "id": "3899bd01a2bef3fda6a82bca490d1d3eecb3603f"
-  },
-  {
    "title": "Board game night — Schöneberg",
    "start": "2026-07-14T19:00:00+02:00",
    "source": "cal:Berlin regulars",
@@ -1173,7 +1154,7 @@
    "id": "c2b305921b9b00ae68f108baed5ebeb1b7e153f0"
   },
   {
-   "title": "Mauerpark flea market + Bearpit karaoke",
+   "title": "Mauerpark Flohmarkt + Bearpit Karaoke",
    "start": "2026-07-19T10:00:00+02:00",
    "source": "cal:Demo",
    "url": "",
@@ -1188,8 +1169,27 @@
    "description": "Sunday flea market. Free open-air karaoke in the amphitheatre from ~15:00.",
    "recurring": true,
    "recurrence": "Weekly · Sun",
+   "translated": false,
+   "id": "c3b8274d9350b2b3c07fa0028acb1112c432af8f"
+  },
+  {
+   "title": "Sprachcafé — language exchange",
+   "start": "2026-07-20T18:00:00+02:00",
+   "source": "cal:Demo",
+   "url": "",
+   "end": null,
+   "venue": "Denizen House, Köpenicker Str. 40",
+   "area": null,
+   "category": "community",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": "Language exchange, free of charge. All levels welcome.",
+   "recurring": true,
+   "recurrence": "Weekly · Mon",
    "translated": true,
-   "id": "33cfaaab1a4bb60237c64bc792155f63b08c6490"
+   "id": "fc715af7afb533bdec7ef8095c95d411c3872938"
   },
   {
    "title": "Hamburger Bahnhof — free first-Thursday evening",
