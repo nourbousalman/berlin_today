@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-14T13:40:26.208984+00:00",
+ "generated_at": "2026-07-14T19:18:27.695232+00:00",
  "count": 63,
  "sources": {
   "cal:Berlin regulars": 8,
@@ -280,7 +280,7 @@
    "id": "959aade98c2cd12b3732a4f14dab08c4bf9f988a"
   },
   {
-   "title": "Brecht House Underground - the multi-literary cellar revue #16: Marko Martin, Birgit Kreipe and Berit Jung",
+   "title": "Brecht House Underground - the multi-literary cellar revue #16: Marko Martin, Birgit Kreipe and Berit Jung.",
    "start": "2025-11-20T18:30:23+00:00",
    "source": "rss:Literarische Aktion",
    "url": "https://berliner-literarische-aktion.de/2025/11/20/brecht-haus-untergrund-die-multiliterarische-keller-revue-16-marko-martin-birgit-kreipe-und-berit-jung/",
@@ -330,7 +330,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "Animal Anatomical Theater &#160; Together with the Berlin Speaks Project! at Humboldt University we explore the current city map of Berlin's linguistic diversity: with Prof. Elisabeth Verhoeven and Nico Lehmann as well as the authors Mara Mahía (Spain/Berlin) and Nishan Dhakal (Ne...",
+   "description": "Tieranatomisches Theater &#160;",
    "recurring": false,
    "recurrence": null,
    "translated": true,
@@ -432,7 +432,7 @@
    "id": "ad3c94c7b9060fcdf8c268ad6806a8080db89110"
   },
   {
-   "title": "PARATAXE presentation with Lucy Jones and Bela Chekurishvili",
+   "title": "PARATAXE presentation with Lucy Jones and Bela Chekurishvili.",
    "start": "2026-04-24T17:30:59+00:00",
    "source": "rss:Literarische Aktion",
    "url": "https://berliner-literarische-aktion.de/2026/04/24/parataxe-presentation-mit-lucy-jones-und-bela-chekurishvili/",
@@ -444,7 +444,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "House of Poetry (Culture Brewery) &#160; What languages ​​does Berlin write in? Berlin-based author and translator Lucy Jones and her friend (and translator) Karen Witthuhn read from Lucy's manuscript of an autobiographical, as yet unpublished novel! And the g...",
+   "description": "House of Poetry (Culture Brewery) &#160;",
    "recurring": false,
    "recurrence": null,
    "translated": true,
@@ -470,7 +470,7 @@
    "id": "47907c8ad3180f6a06ab89ab6dfc6b5557e77142"
   },
   {
-   "title": "Brecht House Underground – the multi-literary cellar revue #17: Emma Braslavsky, Tomás Cohen & Christiane Rösinger",
+   "title": "Brecht House Underground – the multi-literary cellar revue #17: Emma Braslavsky, Tomás Cohen & Christiane Rösinger.",
    "start": "2026-04-30T17:30:00+00:00",
    "source": "rss:Literarische Aktion",
    "url": "https://berliner-literarische-aktion.de/2026/04/30/brecht-haus-untergrund-die-multiliterarische-keller-revue-17/",
@@ -482,7 +482,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "Brecht-Haus-Keller All information here Ticket sales here &#160; &#160;",
+   "description": "Brecht House Cellar &#160; &#160; &#160;",
    "recurring": false,
    "recurrence": null,
    "translated": true,
@@ -558,7 +558,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "Maschinenhaus (cultural brewery) More coming soon on stadtsprach.de",
+   "description": "Maschinenhaus (cultural brewery) &#160;",
    "recurring": false,
    "recurrence": null,
    "translated": true,
@@ -615,7 +615,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "On Tuesday June 9th Our first argumentation training against anti-feminist and anti-queer slogans takes place. Anti-feminist narratives are widespread - often hidden in everyday sayings. In the seminar we strengthen attitude and language to combat anti-feminist…",
+   "description": "On Tuesday June 9th Our first argumentation training against anti-feminist and anti-queer slogans takes place. Anti-feminist narratives are widespread - often hidden in everyday sayings. In the seminar we strengthen attitude and language to combat anti-feminist...",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -824,7 +824,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "Sun. July 5th to Sun. July 12th, nacelle program",
+   "description": "Sun. July 5th to Sun. July 12th. Engine house",
    "recurring": false,
    "recurrence": null,
    "translated": true,
@@ -843,7 +843,7 @@
    "price": "€5–25",
    "price_value": 5.0,
    "image": null,
-   "description": "<p>While many smaller cities have a maximum of one or two vegetarian options on the menu, you can hardly find a restaurant in Berlin that doesn't offer at least one vegan option, because Berlin is the Mecca for people who follow a vegan diet. Eg…",
+   "description": "<p>While many smaller cities have a maximum of one or two vegetarian options on the menu, you can hardly find a restaurant in Berlin that doesn't offer at least one vegan option, because Berlin is the Mecca for people who follow a vegan diet. Eg...",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -1017,7 +1017,7 @@
    "description": "Spieletreff Berlin board game night, 30-40 players and ~150 games. Entry €5, drinks sold on site.",
    "recurring": true,
    "recurrence": "Weekly · Wed",
-   "translated": false,
+   "translated": true,
    "id": "232a344d6f2032a9bfa5ed6d53b73c5bcaa0bfde"
   },
   {
