@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-14T19:18:27.695232+00:00",
+ "generated_at": "2026-07-15T02:21:20.077141+00:00",
  "count": 63,
  "sources": {
   "cal:Berlin regulars": 8,
@@ -375,7 +375,7 @@
    "id": "f3d064179a591a5db2b65d7ed0f5dfe3616a602f"
   },
   {
-   "title": "Gartenaktion",
+   "title": "Garden action",
    "start": "2026-03-31T12:48:58+00:00",
    "source": "rss:Rudi NBH",
    "url": "https://rudi-nachbarschaftshaus.de/gartenaktion/",
@@ -391,7 +391,7 @@
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
-   "id": "2a5d02e27466df6ecc828f509561394b29d686f9"
+   "id": "6b23a0b1016412a4013daef48603258330e46d1e"
   },
   {
    "title": "RegenRetter film and compost tutorial",
@@ -945,44 +945,6 @@
    "id": "e2f8a5fd7b03ead1205b955779ade2bc0d3ce27d"
   },
   {
-   "title": "Board game night — Schöneberg",
-   "start": "2026-07-14T19:00:00+02:00",
-   "source": "cal:Berlin regulars",
-   "url": "https://allaboutberlin.com/guides/board-games-in-berlin",
-   "end": null,
-   "venue": "Brettspielegruppe Schöneberg, Klixstraße 2, Schöneberg",
-   "area": null,
-   "category": "community",
-   "is_free": false,
-   "price": "€3",
-   "price_value": 3.0,
-   "image": null,
-   "description": "Weekly board game night, newcomers welcome. Many games on site. Entry €3, bring your own drinks.",
-   "recurring": true,
-   "recurrence": "Weekly · Tue",
-   "translated": true,
-   "id": "c159a33851b73a6ab2b2c498a2f660fda8387a46"
-  },
-  {
-   "title": "Swag Jam — hip-hop open jam",
-   "start": "2026-07-14T20:00:00+02:00",
-   "source": "cal:Demo",
-   "url": "",
-   "end": null,
-   "venue": "Badehaus, Revaler Str. 99, Friedrichshain",
-   "area": null,
-   "category": "music",
-   "is_free": null,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": "Hip-hop open jam with a house band; open stage after the set.",
-   "recurring": true,
-   "recurrence": "Weekly · Tue",
-   "translated": false,
-   "id": "8a6dc883fa99732cea25dff5a9e47fb2f8405833"
-  },
-  {
    "title": "Philharmonic lunch concert (free)",
    "start": "2026-07-15T13:00:00+02:00",
    "source": "cal:Demo",
@@ -1017,7 +979,7 @@
    "description": "Spieletreff Berlin board game night, 30-40 players and ~150 games. Entry €5, drinks sold on site.",
    "recurring": true,
    "recurrence": "Weekly · Wed",
-   "translated": true,
+   "translated": false,
    "id": "232a344d6f2032a9bfa5ed6d53b73c5bcaa0bfde"
   },
   {
@@ -1154,7 +1116,7 @@
    "id": "c2b305921b9b00ae68f108baed5ebeb1b7e153f0"
   },
   {
-   "title": "Mauerpark flea market + Bearpit karaoke",
+   "title": "Mauerpark Flohmarkt + Bearpit Karaoke",
    "start": "2026-07-19T10:00:00+02:00",
    "source": "cal:Demo",
    "url": "",
@@ -1169,8 +1131,8 @@
    "description": "Sunday flea market. Free open-air karaoke in the amphitheatre from ~15:00.",
    "recurring": true,
    "recurrence": "Weekly · Sun",
-   "translated": true,
-   "id": "33cfaaab1a4bb60237c64bc792155f63b08c6490"
+   "translated": false,
+   "id": "c3b8274d9350b2b3c07fa0028acb1112c432af8f"
   },
   {
    "title": "Sprachcafé — language exchange",
@@ -1190,6 +1152,44 @@
    "recurrence": "Weekly · Mon",
    "translated": true,
    "id": "fc715af7afb533bdec7ef8095c95d411c3872938"
+  },
+  {
+   "title": "Board game night — Schöneberg",
+   "start": "2026-07-21T19:00:00+02:00",
+   "source": "cal:Berlin regulars",
+   "url": "https://allaboutberlin.com/guides/board-games-in-berlin",
+   "end": null,
+   "venue": "Brettspielegruppe Schöneberg, Klixstraße 2, Schöneberg",
+   "area": null,
+   "category": "community",
+   "is_free": false,
+   "price": "€3",
+   "price_value": 3.0,
+   "image": null,
+   "description": "Weekly board game night, newcomers welcome. Many games on site. Entry €3, bring your own drinks.",
+   "recurring": true,
+   "recurrence": "Weekly · Tue",
+   "translated": true,
+   "id": "47e6b85776799fea524221a5b26201875255530d"
+  },
+  {
+   "title": "Swag Jam — hip-hop open jam",
+   "start": "2026-07-21T20:00:00+02:00",
+   "source": "cal:Demo",
+   "url": "",
+   "end": null,
+   "venue": "Badehaus, Revaler Str. 99, Friedrichshain",
+   "area": null,
+   "category": "music",
+   "is_free": null,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": "Hip-hop open jam with a house band; open stage after the set.",
+   "recurring": true,
+   "recurrence": "Weekly · Tue",
+   "translated": false,
+   "id": "34a9e9a80329864cabf39b4575379eec1c898fbb"
   },
   {
    "title": "Hamburger Bahnhof — free first-Thursday evening",
