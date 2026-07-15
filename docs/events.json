@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-15T13:41:38.018737+00:00",
+ "generated_at": "2026-07-15T19:08:44.449179+00:00",
  "count": 63,
  "sources": {
   "cal:Berlin regulars": 8,
@@ -375,7 +375,7 @@
    "id": "f3d064179a591a5db2b65d7ed0f5dfe3616a602f"
   },
   {
-   "title": "Garden action",
+   "title": "Gartenaktion",
    "start": "2026-03-31T12:48:58+00:00",
    "source": "rss:Rudi NBH",
    "url": "https://rudi-nachbarschaftshaus.de/gartenaktion/",
@@ -391,7 +391,7 @@
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
-   "id": "6b23a0b1016412a4013daef48603258330e46d1e"
+   "id": "2a5d02e27466df6ecc828f509561394b29d686f9"
   },
   {
    "title": "RegenRetter film and compost tutorial",
@@ -945,25 +945,6 @@
    "id": "e2f8a5fd7b03ead1205b955779ade2bc0d3ce27d"
   },
   {
-   "title": "Philharmonic lunch concert (free)",
-   "start": "2026-07-15T13:00:00+02:00",
-   "source": "cal:Demo",
-   "url": "",
-   "end": null,
-   "venue": "Philharmonie, Herbert-von-Karajan-Str. 1",
-   "area": null,
-   "category": "music",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": "Free lunchtime chamber concert. First-come; arrive early for a chip.",
-   "recurring": true,
-   "recurrence": "Weekly · Wed",
-   "translated": true,
-   "id": "db94bd94780ed2325c86f68f741a1fa748979d6b"
-  },
-  {
    "title": "Board game night — Spieletreff Berlin (Wedding)",
    "start": "2026-07-15T19:00:00+02:00",
    "source": "cal:Berlin regulars",
@@ -1190,6 +1171,25 @@
    "recurrence": "Weekly · Tue",
    "translated": false,
    "id": "34a9e9a80329864cabf39b4575379eec1c898fbb"
+  },
+  {
+   "title": "Philharmonic lunch concert (free)",
+   "start": "2026-07-22T13:00:00+02:00",
+   "source": "cal:Demo",
+   "url": "",
+   "end": null,
+   "venue": "Philharmonie, Herbert-von-Karajan-Str. 1",
+   "area": null,
+   "category": "music",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": "Free lunchtime chamber concert. First-come; arrive early for a chip.",
+   "recurring": true,
+   "recurrence": "Weekly · Wed",
+   "translated": true,
+   "id": "0a860a948ad41eefd3b1e607572e4bee10638a1d"
   },
   {
    "title": "Hamburger Bahnhof — free first-Thursday evening",
