@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-15T08:07:38.572660+00:00",
+ "generated_at": "2026-07-15T13:41:38.018737+00:00",
  "count": 63,
  "sources": {
   "cal:Berlin regulars": 8,
@@ -375,7 +375,7 @@
    "id": "f3d064179a591a5db2b65d7ed0f5dfe3616a602f"
   },
   {
-   "title": "Gartenaktion",
+   "title": "Garden action",
    "start": "2026-03-31T12:48:58+00:00",
    "source": "rss:Rudi NBH",
    "url": "https://rudi-nachbarschaftshaus.de/gartenaktion/",
@@ -391,7 +391,7 @@
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
-   "id": "2a5d02e27466df6ecc828f509561394b29d686f9"
+   "id": "6b23a0b1016412a4013daef48603258330e46d1e"
   },
   {
    "title": "RegenRetter film and compost tutorial",
@@ -615,7 +615,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "On Tuesday June 9th Our first argumentation training against anti-feminist and anti-queer slogans takes place. Anti-feminist narratives are widespread - often hidden in everyday sayings. In the seminar we strengthen attitude and language to combat anti-feminist…",
+   "description": "On Tuesday June 9th Our first argumentation training against anti-feminist and anti-queer slogans takes place. Anti-feminist narratives are widespread - often hidden in everyday sayings. In the seminar we strengthen attitude and language to combat anti-feminist...",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -786,7 +786,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "<p>July in Berlin tastes like the smell of barbecue, sparkling drinks and warm summer evenings with friends. There are a lot of enjoyable events waiting for you this month from Sicily and West Africa - whether you want to take part, feast or just be there, there are...",
+   "description": "<p>July in Berlin tastes like the smell of barbecue, sparkling drinks and warm summer evenings with friends. From Japan to Latin America, there are plenty of enjoyable events waiting for you in July - whether you want to take part, feast or just be there, there are lots of...",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -843,7 +843,7 @@
    "price": "€5–25",
    "price_value": 5.0,
    "image": null,
-   "description": "<p>While many smaller cities have a maximum of one or two vegetarian options on the menu, you can hardly find a restaurant in Berlin that doesn't offer at least one vegan option, because Berlin is the Mecca for people who follow a vegan diet. Eg…",
+   "description": "<p>While many smaller cities have a maximum of one or two vegetarian options on the menu, you can hardly find a restaurant in Berlin that doesn't offer at least one vegan option, because Berlin is the Mecca for people who follow a vegan diet. Eg...",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -862,7 +862,7 @@
    "price": null,
    "price_value": null,
    "image": null,
-   "description": "Grandmas for Future: \"Flower Power\" Emanuel Lasker School: \"Born in 1989 - Stories of Democracy for Young Europeans\" Exhibition period: June 29th - August 28th, 2026 Guided tour of the exhibition: Thursday, July 23rd, 2 p.m. This double exhibition combines two projects that...",
+   "description": "Grandmas for Future: \"Flower Power\" Emanuel Lasker School: \"Born in 1989 - Democracy Stories for Young Europeans\" Exhibition period: June 29th - August 28th, 2026 Guided tour of the exhibition: Thursday, July 23rd, 2 p.m. This double exhibition combines two projects that...",
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
@@ -979,7 +979,7 @@
    "description": "Spieletreff Berlin board game night, 30-40 players and ~150 games. Entry €5, drinks sold on site.",
    "recurring": true,
    "recurrence": "Weekly · Wed",
-   "translated": false,
+   "translated": true,
    "id": "232a344d6f2032a9bfa5ed6d53b73c5bcaa0bfde"
   },
   {
