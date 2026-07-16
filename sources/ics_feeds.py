@@ -9,36 +9,46 @@ own CATEGORIES property.
 from __future__ import annotations
 from datetime import datetime, date, timedelta, timezone
 from zoneinfo import ZoneInfo
+from concurrent.futures import ThreadPoolExecutor
 import requests
 from icalendar import Calendar
 from dateutil.rrule import rrulestr
 
-from .base import Event, normalise_category, to_iso, looks_recurring, looks_free, detect_price
+from .base import Event, normalise_category, to_iso, looks_recurring, resolve_free_price
 
 BERLIN = ZoneInfo("Europe/Berlin")
 
 
-def fetch(feeds: list[dict], horizon_days: int = 45) -> list[Event]:
+def fetch(feeds: list[dict], horizon_days: int = 45, max_workers: int = 16) -> list[Event]:
+    feeds = feeds or []
+    if not feeds:
+        return []
     now = datetime.now(timezone.utc)
     horizon = now + timedelta(days=horizon_days)
     out: list[Event] = []
-    for feed in feeds or []:
-        name = feed.get("name", "calendar")
-        url = feed.get("url", "")
-        default_cat = feed.get("category", "other")
-        is_free = feed.get("is_free")
-        force_recurring = bool(feed.get("recurring", False))
-        only_loc = (feed.get("only_location") or "").lower()
-        try:
-            raw = _load(url)
-            evs = _parse(raw, name, default_cat, is_free, force_recurring, now, horizon)
-            if only_loc:
-                evs = [e for e in evs
-                       if only_loc in (e.title + " " + (e.venue or "") + " " + (e.description or "")).lower()]
+    with ThreadPoolExecutor(max_workers=min(max_workers, len(feeds))) as ex:
+        for evs in ex.map(lambda f: _fetch_one(f, now, horizon), feeds):
             out.extend(evs)
-        except Exception as exc:                       # one bad feed must not sink the rest
-            print(f"  ! ICS feed '{name}' failed: {exc}")
     return out
+
+
+def _fetch_one(feed: dict, now, horizon) -> list[Event]:
+    name = feed.get("name", "calendar")
+    url = feed.get("url", "")
+    default_cat = feed.get("category", "other")
+    is_free = feed.get("is_free")
+    force_recurring = bool(feed.get("recurring", False))
+    only_loc = (feed.get("only_location") or "").lower()
+    try:
+        raw = _load(url)
+        evs = _parse(raw, name, default_cat, is_free, force_recurring, now, horizon)
+        if only_loc:
+            evs = [e for e in evs
+                   if only_loc in (e.title + " " + (e.venue or "") + " " + (e.description or "")).lower()]
+        return evs
+    except Exception as exc:                       # one bad feed must not sink the rest
+        print(f"  ! ICS feed '{name}' failed: {exc}")
+        return []
 
 
 def _load(url: str) -> bytes:
@@ -80,15 +90,7 @@ def _parse(raw, name, default_cat, is_free, force_recurring, now, horizon) -> li
 
         end_dt = _to_dt(comp.get("dtend"))
         cat_hint = _first_category(comp.get("categories"))
-        price_disp, price_val = detect_price(title, desc)
-        if is_free is True:
-            free, price_disp, price_val = True, None, None
-        elif is_free is False:
-            free = False
-        elif looks_free(title, desc, cat_hint):
-            free, price_disp, price_val = True, None, None
-        else:
-            free = False if price_val is not None else None
+        free, price_disp, price_val = resolve_free_price(f"{title} {desc} {cat_hint}", is_free)
         events.append(Event(
             title=title,
             start=to_iso(display_dt),
@@ -100,7 +102,7 @@ def _parse(raw, name, default_cat, is_free, force_recurring, now, horizon) -> li
             is_free=free,
             price=price_disp,
             price_value=price_val,
-            description=_clip(desc or None),
+            description=None,  # descriptions intentionally not surfaced
             recurring=recurring,
             recurrence=recurrence,
         ))
