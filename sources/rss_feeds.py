@@ -62,7 +62,7 @@ def _map(entry, name, default_cat, is_free, force_recurring) -> Event | None:
     desc = entry.get("summary") or ""
     tags = " ".join(t.get("term", "") for t in entry.get("tags", []))
 
-    recurring = force_recurring or looks_recurring(title, desc)
+    recurring = force_recurring  # RSS: no text-based recurrence (blog posts falsely match)
     free, price_disp, price_val = resolve_free_price(f"{title} {desc} {tags}", is_free)
 
     return Event(
