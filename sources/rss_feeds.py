@@ -4,36 +4,51 @@ Note: RSS is weaker than iCal for events — many feeds carry only a publish dat
 not the event's actual date/time. Use it for sources that publish structured
 event items; prefer iCal where a site offers both. Feeds can be flagged
 `recurring: true` to route their items to the Weekly-regulars section.
+
+Feeds are fetched concurrently (a thread pool) so a 122-feed run takes seconds,
+not minutes. Each feed still runs in its own try/except, so one broken feed only
+drops itself.
 """
 from __future__ import annotations
 from datetime import datetime, timezone
+from concurrent.futures import ThreadPoolExecutor
 import time
 import feedparser
 
-from .base import Event, normalise_category, to_iso, looks_recurring, looks_free, detect_price
+from .base import Event, normalise_category, to_iso, looks_recurring, resolve_free_price
 
 
-def fetch(feeds: list[dict], horizon_days: int = 45) -> list[Event]:
+def fetch(feeds: list[dict], horizon_days: int = 45, max_workers: int = 16) -> list[Event]:
+    feeds = feeds or []
+    if not feeds:
+        return []
     out: list[Event] = []
-    for feed in feeds or []:
-        name = feed.get("name", "feed")
-        url = feed.get("url", "")
-        default_cat = feed.get("category", "other")
-        is_free = feed.get("is_free")
-        force_recurring = bool(feed.get("recurring", False))
-        only_loc = (feed.get("only_location") or "").lower()
-        try:
-            parsed = feedparser.parse(url)
-            for entry in parsed.entries:
-                ev = _map(entry, name, default_cat, is_free, force_recurring)
-                if not ev:
-                    continue
-                if only_loc and only_loc not in (ev.title + " " + (ev.description or "")).lower():
-                    continue
-                out.append(ev)
-        except Exception as exc:
-            print(f"  ! RSS feed '{name}' failed: {exc}")
+    with ThreadPoolExecutor(max_workers=min(max_workers, len(feeds))) as ex:
+        for evs in ex.map(_fetch_one, feeds):
+            out.extend(evs)
     return out
+
+
+def _fetch_one(feed: dict) -> list[Event]:
+    name = feed.get("name", "feed")
+    url = feed.get("url", "")
+    default_cat = feed.get("category", "other")
+    is_free = feed.get("is_free")
+    force_recurring = bool(feed.get("recurring", False))
+    only_loc = (feed.get("only_location") or "").lower()
+    evs: list[Event] = []
+    try:
+        parsed = feedparser.parse(url)
+        for entry in parsed.entries:
+            ev = _map(entry, name, default_cat, is_free, force_recurring)
+            if not ev:
+                continue
+            if only_loc and only_loc not in (ev.title + " " + (ev.description or "")).lower():
+                continue
+            evs.append(ev)
+    except Exception as exc:
+        print(f"  ! RSS feed '{name}' failed: {exc}")
+    return evs
 
 
 def _map(entry, name, default_cat, is_free, force_recurring) -> Event | None:
@@ -48,15 +63,7 @@ def _map(entry, name, default_cat, is_free, force_recurring) -> Event | None:
     tags = " ".join(t.get("term", "") for t in entry.get("tags", []))
 
     recurring = force_recurring or looks_recurring(title, desc)
-    price_disp, price_val = detect_price(title, desc)
-    if is_free is True:
-        free, price_disp, price_val = True, None, None
-    elif is_free is False:
-        free = False
-    elif looks_free(title, desc, tags):
-        free, price_disp, price_val = True, None, None
-    else:
-        free = False if price_val is not None else None
+    free, price_disp, price_val = resolve_free_price(f"{title} {desc} {tags}", is_free)
 
     return Event(
         title=title,
@@ -67,7 +74,7 @@ def _map(entry, name, default_cat, is_free, force_recurring) -> Event | None:
         is_free=free,
         price=price_disp,
         price_value=price_val,
-        description=_clip(desc),
+        description=None,  # descriptions intentionally not surfaced
         recurring=recurring,
         recurrence="Recurring" if recurring else None,
     )
