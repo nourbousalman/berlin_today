@@ -28,7 +28,7 @@ import socket
 socket.setdefaulttimeout(45)  # one slow/hanging feed must not stall a 122-feed run
 
 from sources.base import Event, dedupe, berlin_status
-from sources import resident_advisor, ics_feeds, rss_feeds, html_scrapers, directory_feed
+from sources import resident_advisor, ics_feeds, rss_feeds, html_scrapers, directory_feed, price_probe
 from sources.translate import translate_events
 
 ROOT = Path(__file__).parent
@@ -144,8 +144,12 @@ def main() -> int:
     before_win = len(events)
     events = [e for e in events if _upcoming(e, now, window_days)]
     stale = before_win - len(events)
+    # Resolve unknown-price events by reading their page, then keep only events we
+    # can confirm are free or cheap — no "check price" left in the list.
+    pstats = price_probe.resolve_prices(events) if cfg.get("price_probe", True) else {}
     before = len(events)
-    events = [e for e in events if _within_budget(e, max_price)]
+    events = [e for e in events if _within_budget(e, max_price)]      # drops >max / ticketed-no-price
+    events = [e for e in events if e.is_free is not None]             # drops still-unknown price
     dropped = before - len(events)
     events.sort(key=lambda e: e.start)
 
@@ -176,7 +180,7 @@ def main() -> int:
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Wrote {len(events)} events ({n_rec} recurring, {len(events)-n_rec} one-off), "
           f"{len(always_free)} always-free, {len(manual_check)} manual-check "
-          f"→ {OUT.relative_to(ROOT)}  [dropped {dropped} over €{max_price:g}/ticketed, {non_berlin} non-Berlin, {stale} past/undated]")
+          f"→ {OUT.relative_to(ROOT)}  [dropped {dropped} paid/unknown, {non_berlin} non-Berlin, {stale} past/undated; price-probe: {pstats.get('freed',0)} freed / {pstats.get('ticketed',0)+pstats.get('unresolved',0)} dropped of {pstats.get('checked',0)}]")
     return 0
 
 
