@@ -6,78 +6,109 @@
 <title>Nour's Planner</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#EAE7DF;--paper-2:#E2DED4;--ink:#17160F;--muted:#7C776A;
-    --line:rgba(23,22,15,.16);--accent:#1B34E0;--accent-ink:#fff;
-    --disp:'Space Grotesk',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace;
-    --controls-h:190px;
+    --bg:#FBF7F1; --surface:#FFFFFF; --ink:#4B4757; --head:#39354A; --muted:#A29DAB;
+    --line:rgba(57,53,74,.10); --track:#F1ECE6; --accent:#7B84DB; --accent-soft:#EAEBFB;
+    --shadow:0 2px 10px rgba(60,50,80,.06),0 1px 3px rgba(60,50,80,.05);
+    --disp:'Fredoka',system-ui,sans-serif; --body:'Nunito',system-ui,sans-serif;
+    --controls-h:150px;
   }
   *{box-sizing:border-box}html,body{margin:0}
-  body{background:var(--paper);color:var(--ink);font-family:var(--disp);line-height:1.4;-webkit-font-smoothing:antialiased}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:500;line-height:1.45;-webkit-font-smoothing:antialiased}
   a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 
-  .mast{border-bottom:2px solid var(--ink);padding:22px clamp(16px,4vw,40px) 16px}
-  .mast h1{font-size:clamp(28px,6vw,52px);font-weight:700;letter-spacing:-.02em;margin:0;line-height:.98;text-transform:uppercase}
-  .mast h1 span{color:var(--accent)}
-  .mast .sub{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:8px;display:flex;gap:16px;flex-wrap:wrap;text-transform:uppercase;letter-spacing:.04em}
+  .cat-music{--c:#E1734E;--cb:#FCE6DD}
+  .cat-nightlife{--c:#9A72CF;--cb:#EDE4FB}
+  .cat-art{--c:#D66A9E;--cb:#FBE1EE}
+  .cat-sport{--c:#4FA377;--cb:#DDF0E4}
+  .cat-community{--c:#5A90CC;--cb:#DFEDFB}
+  .cat-market{--c:#C6912F;--cb:#FAECCF}
+  .cat-other{--c:#8C88A0;--cb:#ECEAF3}
 
-  .controls{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line);padding:12px clamp(16px,4vw,40px);display:flex;flex-direction:column;gap:10px}
-  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-  .lbl{font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-right:2px}
+  .mast{padding:26px clamp(16px,4vw,40px) 8px}
+  .mast h1{font-family:var(--disp);font-size:clamp(30px,6vw,52px);font-weight:600;letter-spacing:-.01em;margin:0;line-height:1;color:var(--head)}
+  .mast h1 .a{color:var(--accent)}
+  .mast .sub{font-size:13px;color:var(--muted);margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-weight:600}
 
-  button.chip,.seg button{font-family:var(--mono);font-size:12px;font-weight:500;background:transparent;color:var(--ink);border:1px solid var(--line);padding:6px 11px;cursor:pointer;text-transform:uppercase;letter-spacing:.03em;transition:background .12s,border-color .12s,color .12s}
-  button.chip:hover,.seg button:hover{border-color:var(--ink)}
-  button.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-  .seg{display:inline-flex;border:1px solid var(--ink)}
-  .seg button{border:0;border-right:1px solid var(--line)}
-  .seg button:last-child{border-right:0}
-  .seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
-  .mode-seg button{font-weight:700;padding:8px 16px;font-size:13px}
-  .search{font-family:var(--mono);font-size:13px;border:1px solid var(--line);background:var(--paper-2);padding:7px 11px;min-width:200px;flex:1;color:var(--ink)}
-  .search:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+  /* top-level tabs */
+  .tabs{display:flex;gap:6px;padding:6px clamp(16px,4vw,40px) 0;flex-wrap:wrap}
+  .tab{font-family:var(--disp);font-weight:500;font-size:15px;border:0;background:transparent;color:var(--muted);padding:9px 16px;border-radius:12px 12px 0 0;cursor:pointer;transition:color .15s,background .15s}
+  .tab:hover{color:var(--head)}
+  .tab[aria-selected="true"]{color:var(--head);background:var(--surface);box-shadow:0 -2px 8px rgba(60,50,80,.05)}
+  .tab .n{font-family:var(--body);font-size:12px;font-weight:700;color:var(--muted);margin-left:7px;background:var(--track);border-radius:999px;padding:1px 8px}
+  .tab[aria-selected="true"] .n{background:var(--accent-soft);color:var(--accent)}
 
-  main{padding:0 clamp(16px,4vw,40px) 40px;max-width:960px}
-  .day{position:sticky;top:var(--controls-h);z-index:2;background:var(--paper);padding:22px 0 8px;border-bottom:1px solid var(--ink);margin-top:14px;display:flex;align-items:baseline;gap:12px}
-  .day .dow{font-size:clamp(20px,4.5vw,30px);font-weight:700;text-transform:uppercase;letter-spacing:-.01em}
-  .day .date{font-family:var(--mono);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
-  .day .n{font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:auto}
+  .controls{position:sticky;top:0;z-index:5;background:rgba(251,247,241,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px clamp(16px,4vw,40px)}
+  .ctrl-top{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+  .group{display:flex;align-items:center;gap:8px}
+  .lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+  .seg{display:inline-flex;gap:2px;background:var(--track);border-radius:999px;padding:3px}
+  .seg button{font-family:var(--body);font-weight:700;font-size:13px;border:0;border-radius:999px;background:transparent;color:var(--ink);padding:6px 13px;cursor:pointer;transition:background .15s,color .15s}
+  .seg button:hover{color:var(--head)}
+  .seg button[aria-pressed="true"]{background:var(--surface);color:var(--head);box-shadow:var(--shadow)}
+  .recur-seg{background:var(--accent-soft)}
+  .recur-seg button[aria-pressed="true"]{background:var(--accent);color:#fff;box-shadow:none}
+  .searchwrap{flex:1;min-width:180px;display:flex}
+  .search{flex:1;font-family:var(--body);font-weight:600;font-size:14px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:9px 16px;color:var(--ink)}
+  .search::placeholder{color:var(--muted)}
+  .search:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
 
-  .ev{display:grid;grid-template-columns:96px 1fr auto;gap:16px;align-items:start;padding:14px 8px 14px 12px;border-bottom:1px solid var(--line);border-left:3px solid transparent;transition:background .12s,border-color .12s}
-  .ev:hover{background:var(--paper-2);border-left-color:var(--accent)}
-  .ev .time{font-family:var(--mono);font-size:13px;font-weight:600;padding-top:2px;white-space:nowrap}
-  .ev .time .to{color:var(--muted);font-weight:400;font-size:11px;display:block}
-  .ev .title{font-size:17px;font-weight:500;letter-spacing:-.01em}
-  .ev .meta{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.03em}
-  .ev .desc{font-size:13px;color:var(--muted);margin-top:6px;max-width:60ch}
+  .cats{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+  .chip{font-family:var(--body);font-weight:700;font-size:13px;border:0;border-radius:999px;padding:6px 13px;cursor:pointer;background:var(--cb,#eee);color:var(--c,#666);opacity:.85;transition:transform .1s,box-shadow .15s,opacity .15s}
+  .chip:hover{opacity:1;transform:translateY(-1px)}
+  .chip[aria-pressed="true"]{background:var(--c,#666);color:#fff;opacity:1;box-shadow:var(--shadow)}
+
+  main{padding:8px clamp(16px,4vw,40px) 40px;max-width:1000px}
+  .day{position:sticky;top:var(--controls-h);z-index:2;background:var(--bg);padding:20px 4px 8px;margin-top:10px;display:flex;align-items:baseline;gap:12px}
+  .day .dow{font-family:var(--disp);font-size:clamp(21px,4vw,30px);font-weight:600;color:var(--head)}
+  .day .date{font-size:13px;color:var(--muted);font-weight:700}
+  .day .n{margin-left:auto;font-size:12px;color:var(--muted);font-weight:700;background:var(--track);border-radius:999px;padding:2px 10px}
+
+  .ev{display:grid;grid-template-columns:88px 1fr auto;gap:16px;align-items:start;background:var(--surface);border-radius:16px;box-shadow:var(--shadow);border-left:5px solid var(--c,var(--accent));padding:14px 16px;margin-bottom:10px;transition:transform .12s,box-shadow .15s}
+  .ev:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(60,50,80,.10)}
+  .ev .time{font-family:var(--disp);font-size:15px;font-weight:500;color:var(--head);padding-top:1px;white-space:nowrap}
+  .ev .time .to{display:block;color:var(--muted);font-size:12px;font-weight:400}
+  .ev .title{font-size:17px;font-weight:700;color:var(--head);line-height:1.25}
+  .ev .meta{font-size:12.5px;color:var(--muted);margin-top:4px;font-weight:600}
+  .ev .desc{font-size:13.5px;color:var(--ink);margin-top:7px;max-width:64ch;opacity:.85}
   .ev .tags{display:flex;flex-direction:column;gap:6px;align-items:flex-end;text-align:right}
-  .tag{font-family:var(--mono);font-size:10px;letter-spacing:.08em;border:1px solid var(--line);padding:2px 6px;text-transform:uppercase;white-space:nowrap}
-  .tag.free{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
-  .tag.price{border-color:var(--ink);font-weight:600}
-  .tag.cadence{border-color:var(--ink)}
-  .tag.tr{border:0;color:var(--muted);padding:2px 0}
+  .tag{font-size:11px;font-weight:800;border-radius:999px;padding:3px 10px;white-space:nowrap;letter-spacing:.02em}
+  .cat-tag{background:var(--cb);color:var(--c)}
+  .tag.free{background:#D6EFDF;color:#358056}
+  .tag.price{background:#F0ECE6;color:#7C776C}
+  .tag.cadence{background:var(--track);color:var(--muted)}
+  .tag.kind{background:transparent;color:var(--muted);font-weight:700;border:1px solid var(--line);padding:2px 9px}
+  .tag.tr{background:transparent;color:var(--muted);font-weight:700;padding:3px 0}
 
-  .dir{padding:4px 0 8px}
-  .dir-item{display:block;padding:11px 8px 11px 12px;border-bottom:1px solid var(--line);border-left:3px solid transparent}
-  .dir-item:hover{background:var(--paper-2);border-left-color:var(--accent);text-decoration:none}
-  .dir-name{font-size:16px;font-weight:500;color:var(--accent)}
-  .dir-note{display:block;font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:3px;text-transform:none}
+  /* always-free + manual-check cards */
+  .card{display:block;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:13px 16px;margin-bottom:9px;border-left:5px solid var(--c,var(--accent));transition:transform .12s,box-shadow .15s}
+  .card:hover{text-decoration:none;transform:translateY(-2px);box-shadow:0 6px 18px rgba(60,50,80,.10)}
+  .card .row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .card .nm{font-family:var(--disp);font-size:16px;font-weight:500;color:var(--head)}
+  .card a.nm:hover{color:var(--accent)}
+  .card .sub2{display:block;font-size:12.5px;color:var(--muted);margin-top:4px;font-weight:600}
+  .badge{font-size:11px;font-weight:800;border-radius:999px;padding:2px 10px;letter-spacing:.02em}
+  .badge.open{background:#D6EFDF;color:#358056}
+  .badge.closed{background:#F6E1E1;color:#B4585B}
+  .badge.hrs{background:var(--track);color:var(--muted)}
+  .reason{background:var(--track);color:var(--muted);font-size:11px;font-weight:800;border-radius:999px;padding:2px 10px;white-space:nowrap}
 
-  .state{font-family:var(--mono);font-size:13px;color:var(--muted);padding:60px 4px;line-height:1.7;max-width:52ch}
-  .state b{color:var(--ink);display:block;font-size:15px;margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em}
-  code{background:var(--paper-2);padding:1px 5px;font-size:12px}
+  .state{font-size:14px;color:var(--muted);padding:50px 6px;line-height:1.7;max-width:56ch;font-weight:600}
+  .state b{display:block;font-family:var(--disp);color:var(--head);font-size:18px;font-weight:600;margin-bottom:6px}
+  code{background:var(--track);border-radius:6px;padding:1px 6px;font-size:12.5px;font-family:ui-monospace,monospace}
 
-  .sources{max-width:960px;margin:0 clamp(16px,4vw,40px);border-top:1px solid var(--line);padding:16px 0 60px}
-  .sources summary{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;cursor:pointer}
-  .src-grid{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:12px}
-  .src-item{font-family:var(--mono);font-size:11px;color:var(--ink)}
-  .src-item .z{color:#b23b3b}
-  .src-item .c{color:var(--muted)}
+  .sources{max-width:1000px;margin:0 clamp(16px,4vw,40px);border-top:1px solid var(--line);padding:16px 0 60px}
+  .sources summary{font-size:12px;color:var(--muted);cursor:pointer;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+  .src-grid{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:12px}
+  .src-item{font-size:12.5px;color:var(--ink);font-weight:600;background:var(--surface);border-radius:999px;padding:4px 12px;box-shadow:var(--shadow)}
+  .src-item .z{color:#D06868;font-weight:800}
+  .src-item .c{color:#4FA377;font-weight:800}
 
-  @media (max-width:560px){
-    .ev{grid-template-columns:1fr;gap:4px}
-    .ev .tags{flex-direction:row;align-items:center;text-align:left;margin-top:4px;flex-wrap:wrap}
+  @media (max-width:600px){
+    .ev{grid-template-columns:1fr;gap:5px}
+    .ev .tags{flex-direction:row;align-items:center;text-align:left;margin-top:6px;flex-wrap:wrap}
     .ev .time{padding-top:0}.ev .time .to{display:inline;margin-left:6px}
     .day{top:0}.controls{position:static}
   }
@@ -86,213 +117,228 @@
 </head>
 <body>
   <header class="mast">
-    <h1>Nour's <span>Planner</span></h1>
+    <h1>Nour's <span class="a">Planner</span></h1>
     <div class="sub"><span id="count">loading…</span><span id="updated"></span><span>Berlin · free &amp; almost-free</span></div>
   </header>
 
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Sections">
+    <button class="tab" data-tab="events"  role="tab" aria-selected="true">Events <span class="n" id="tabnEvents">·</span></button>
+    <button class="tab" data-tab="free"    role="tab" aria-selected="false">Always free <span class="n" id="tabnFree">·</span></button>
+    <button class="tab" data-tab="manual"  role="tab" aria-selected="false">Manual check <span class="n" id="tabnManual">·</span></button>
+  </nav>
+
   <section class="controls" id="controls" aria-label="Filters">
-    <div class="row" role="group" aria-label="View">
-      <span class="lbl">View</span>
-      <div class="seg mode-seg" id="modes">
-        <button data-mode="oneoff" aria-pressed="true">One-off</button>
-        <button data-mode="recurring" aria-pressed="false">Recurring</button>
-        <button data-mode="directory" aria-pressed="false">Directory</button>
+    <div class="ctrl-top">
+      <div class="group ev-only" role="group" aria-label="Type">
+        <span class="lbl">Type</span>
+        <div class="seg recur-seg" id="recur">
+          <button data-recur="all" aria-pressed="true">All</button>
+          <button data-recur="oneoff" aria-pressed="false">One-off</button>
+          <button data-recur="recurring" aria-pressed="false">Recurring</button>
+        </div>
+      </div>
+      <div class="group ev-only" id="whenRow" role="group" aria-label="When">
+        <span class="lbl">When</span>
+        <div class="seg" id="presets">
+          <button data-when="weekend" aria-pressed="true">This weekend</button>
+          <button data-when="today" aria-pressed="false">Today</button>
+          <button data-when="week" aria-pressed="false">7 days</button>
+          <button data-when="all" aria-pressed="false">All</button>
+        </div>
+      </div>
+      <div class="group ev-only" role="group" aria-label="Cost">
+        <span class="lbl">Cost</span>
+        <div class="seg" id="costs">
+          <button data-cost="any" aria-pressed="true">Any</button>
+          <button data-cost="free" aria-pressed="false">Free</button>
+          <button data-cost="5" aria-pressed="false">≤€5</button>
+        </div>
+      </div>
+      <div class="group ev-only" role="group" aria-label="Sort">
+        <span class="lbl">Sort</span>
+        <div class="seg" id="sorts">
+          <button data-sort="time" aria-pressed="true">Time</button>
+          <button data-sort="price" aria-pressed="false">Price</button>
+        </div>
+      </div>
+      <div class="searchwrap">
+        <input class="search" id="search" type="search" placeholder="Search…" aria-label="Search">
       </div>
     </div>
-    <div class="row filter-row" id="whenRow" role="group" aria-label="When">
-      <span class="lbl">When</span>
-      <div class="seg" id="presets">
-        <button data-preset="weekend" aria-pressed="true">This weekend</button>
-        <button data-preset="today" aria-pressed="false">Today</button>
-        <button data-preset="week" aria-pressed="false">7 days</button>
-        <button data-preset="all" aria-pressed="false">All</button>
-      </div>
-    </div>
-    <div class="row filter-row" id="cats" role="group" aria-label="Categories"><span class="lbl">What</span></div>
-    <div class="row filter-row">
-      <span class="lbl">Cost</span>
-      <div class="seg" id="costs">
-        <button data-cost="any" aria-pressed="true">Any</button>
-        <button data-cost="free" aria-pressed="false">Free</button>
-        <button data-cost="10" aria-pressed="false">≤€10</button>
-        <button data-cost="20" aria-pressed="false">≤€20</button>
-      </div>
-      <span class="lbl" style="margin-left:8px">Sort</span>
-      <div class="seg" id="sorts">
-        <button data-sort="time" aria-pressed="true">Time</button>
-        <button data-sort="price" aria-pressed="false">Price</button>
-      </div>
-    </div>
-    <div class="row filter-row">
-      <input class="search" id="search" type="search" placeholder="Search title or venue…" aria-label="Search">
-    </div>
+    <div class="cats cat-row" id="cats" role="group" aria-label="Categories"><span class="lbl">What</span></div>
   </section>
 
-  <main id="feed"><div class="state">Loading events…</div></main>
-  <details class="sources" id="sources" hidden><summary>Sources — what's loading</summary><div class="src-grid" id="srcGrid"></div></details>
+  <main id="feed"><div class="state">Loading…</div></main>
+  <details class="sources" id="sources" hidden><summary>Feed sources — what's loading</summary><div class="src-grid" id="srcGrid"></div></details>
 
 <script>
 const CATS=[["music","Music"],["nightlife","Nightlife"],["art","Art / film / talks"],["sport","Sport"],["community","Community"],["market","Markets"],["other","Other"]];
 const WEEKDAYS=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-const DIRECTORY=[
-  {group:"Listings & what's-on",items:[
-    {name:"gratis-in-berlin.de",url:"https://www.gratis-in-berlin.de/",note:"The dedicated free-events site + newsletter"},
-    {name:"Berlin.de — Events",url:"https://www.berlin.de/en/events/",note:"Official city listings"},
-    {name:"visitBerlin — Free",url:"https://www.visitberlin.de/en/events-free-berlin",note:"Curated free things to do"},
-    {name:"tip Berlin",url:"https://www.tip-berlin.de/",note:"City magazine, strong concert/party listings"},
-    {name:"The Berliner",url:"https://www.the-berliner.com/",note:"English-language culture guides"},
-    {name:"Resident Advisor — Berlin",url:"https://ra.co/events/de/berlin",note:"Clubs & electronic (already fed into this page)"},
-    {name:"Meetup — Berlin",url:"https://www.meetup.com/find/",note:"Community, language, hikes, boardgames"},
-    {name:"Luma — Berlin",url:"https://luma.com/berlin",note:"Tech / creative / community events"},
-    {name:"Rausgegangen — Berlin",url:"https://rausgegangen.de/en/berlin/",note:"Big event portal (this is where Ask Helmut moved)"},
-    {name:"Mit Vergnügen Berlin",url:"https://mitvergnuegen.com/",note:"City magazine; daily tips incl. free round-ups"},
-    {name:"iHeartBerlin",url:"https://www.iheartberlin.de/",note:"Art / nightlife / culture blog with weekly picks"},
-    {name:"Berlin.de — Gratis",url:"https://www.berlin.de/kultur-und-tickets/gratis/",note:"Official free-entry events & museums"},
-    {name:"QIEZ Berlin",url:"https://www.qiez.de/",note:"Neighbourhood events & free-sport guides"},
-    {name:"Reddit — r/berlin",url:"https://www.reddit.com/r/berlin/",note:"Locals post recurring free things & answer 'what's on'"},
-  ]},
-  {group:"Live music & jams",items:[
-    {name:"berlinersessions.de",url:"https://berlinersessions.de/",note:"70+ open mics & jams by weekday/district"},
-    {name:"berlin-sessions.com",url:"https://berlin-sessions.com/",note:"Jam directory by genre"},
-    {name:"Philharmonie Lunchkonzert",url:"https://www.berliner-philharmoniker.de/en/concerts/lunch-concerts/",note:"Free, Wed 13:00, Sep–Jun"},
-  ]},
-  {group:"Sport & outdoors",items:[
-    {name:"Sport im Park",url:"https://www.berlin.de/sen/inneres/sport/breitensport/sport-im-park/",note:"270+ free outdoor courses citywide"},
-    {name:"parkrun Germany",url:"https://www.parkrun.com.de/",note:"Free timed 5K, Saturdays"},
-    {name:"Running Clubs Berlin",url:"https://www.runningclubsberlin.de/",note:"Directory of free run crews"},
-    {name:"calisthenics-parks.com",url:"https://calisthenics-parks.com/regions/1-en-berlin-area",note:"Free outdoor gyms + communities"},
-  ]},
-  {group:"Community & language",items:[
-    {name:"Tandem app",url:"https://tandem.net/language-exchange/germany/berlin",note:"1-on-1 language partners"},
-    {name:"Meetup — Language exchange",url:"https://www.meetup.com/find/de--berlin/language-exchange/",note:"Sprachcafés & tandems"},
-  ]},
-  {group:"Art, markets & museums",items:[
-    {name:"Berlin Art Link",url:"https://www.berlinartlink.com/",note:"Contemporary art events & gallery openings, often free"},
-    {name:"Berlin.de — Flea markets",url:"https://www.berlin.de/en/shopping/markets/flea-markets/",note:"Master list; most are free Sundays"},
-    {name:"Staatliche Museen (SMB)",url:"https://www.smb.museum/en/home/",note:"Free under 18 daily; free 1st-Thu evening at Hamburger Bahnhof"},
-  ]},
-];
-const state={mode:"oneoff",preset:"weekend",cats:new Set(),cost:"any",sort:"time",q:""};
-let ALL=[];
+const state={tab:"events",when:"weekend",recur:"all",cats:new Set(),cost:"any",sort:"time",q:""};
+let DATA={events:[],always_free:[],manual_check:[]};
 
 const bDate=iso=>new Date(iso).toLocaleDateString("en-CA",{timeZone:"Europe/Berlin"});
 const bTime=iso=>new Date(iso).toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit",timeZone:"Europe/Berlin"});
 const bDow=iso=>new Date(iso).toLocaleDateString("en-GB",{weekday:"long",timeZone:"Europe/Berlin"});
 const bDateL=iso=>new Date(iso).toLocaleDateString("en-GB",{day:"2-digit",month:"short",timeZone:"Europe/Berlin"});
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const catLabel=cat=>(CATS.find(c=>c[0]===cat)||["","Other"])[1].split(" ")[0];
 
+/* ---- date range for one-off "When" ---- */
 function weekendRange(){const d=new Date(),day=d.getDay(),s=new Date(d);if(day===0)s.setDate(d.getDate()-2);else if(day===6)s.setDate(d.getDate()-1);else s.setDate(d.getDate()+(5-day));s.setHours(0,0,0,0);const e=new Date(s);e.setDate(s.getDate()+2);e.setHours(23,59,59,999);return[s,e];}
-function range(){const now=new Date();if(state.preset==="weekend")return weekendRange();if(state.preset==="today"){const s=new Date(now);s.setHours(0,0,0,0);const e=new Date(now);e.setHours(23,59,59,999);return[s,e];}if(state.preset==="week"){const s=new Date(now);s.setHours(0,0,0,0);const e=new Date(s);e.setDate(s.getDate()+7);return[s,e];}const s=new Date(now);s.setHours(0,0,0,0);return[s,new Date(8.64e15)];}
+function range(){const now=new Date();if(state.when==="weekend")return weekendRange();if(state.when==="today"){const s=new Date(now);s.setHours(0,0,0,0);const e=new Date(now);e.setHours(23,59,59,999);return[s,e];}if(state.when==="week"){const s=new Date(now);s.setHours(0,0,0,0);const e=new Date(s);e.setDate(s.getDate()+7);return[s,e];}const s=new Date(now);s.setHours(0,0,0,0);return[s,new Date(8.64e15)];}
 
-function passesFilters(ev){
-  if(state.cats.size&&!state.cats.has(ev.category))return false;
+/* ---- filters shared by events + always-free ---- */
+function catQ(o,hayParts){
+  if(state.cats.size&&!state.cats.has(o.category))return false;
+  if(state.q){const hay=hayParts.filter(Boolean).join(" ").toLowerCase();if(!hay.includes(state.q))return false;}
+  return true;
+}
+function passesEvent(ev){
+  if(!catQ(ev,[ev.title,ev.venue,ev.area]))return false;
   if(state.cost==="free"&&ev.is_free!==true)return false;
-  if(state.cost==="10"&&!(ev.is_free===true||(ev.price_value!=null&&ev.price_value<=10)))return false;
-  if(state.cost==="20"&&!(ev.is_free===true||(ev.price_value!=null&&ev.price_value<=20)))return false;
-  if(state.q){const hay=(ev.title+" "+(ev.venue||"")+" "+(ev.area||"")).toLowerCase();if(!hay.includes(state.q))return false;}
+  if(state.cost==="5"&&!(ev.is_free===true||(ev.price_value!=null&&ev.price_value<=5)))return false;
   return true;
 }
 const priceKey=ev=>ev.is_free===true?0:(ev.price_value!=null?ev.price_value:Infinity);
 
+/* ---- open-now from OSM opening_hours (pragmatic subset) ---- */
+const _DOWMAP={su:0,mo:1,tu:2,we:3,th:4,fr:5,sa:6};
+function berlinNow(){const p=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Berlin",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());const g=t=>p.find(x=>x.type===t).value;const dow=_DOWMAP[g("weekday").slice(0,2).toLowerCase()];let h=+g("hour");if(h===24)h=0;return{dow,mins:h*60+(+g("minute"))};}
+function openState(oh){
+  if(!oh)return null;
+  try{
+    const s=oh.trim();if(/^24\/7$/.test(s))return{cls:"open",text:"Open now"};
+    const{dow,mins}=berlinNow();let mentioned=false,openIntervals=[],offToday=false;
+    for(const rule of s.split(";")){
+      const m=rule.trim().match(/^([A-Za-z,\-\s]+?)\s+(.*)$/);if(!m)continue;
+      const days=new Set();
+      for(const part of m[1].split(",")){
+        const rng=part.trim().match(/^([A-Za-z]{2})(?:\s*-\s*([A-Za-z]{2}))?$/);if(!rng)continue;
+        const a=_DOWMAP[rng[1].toLowerCase()];if(a==null)continue;
+        if(rng[2]!=null){const b=_DOWMAP[rng[2].toLowerCase()];for(let d=a;;d=(d+1)%7){days.add(d);if(d===b)break;}}else days.add(a);
+      }
+      if(!days.has(dow))continue;mentioned=true;
+      const spec=m[2].trim();
+      if(/^off|closed$/i.test(spec)){offToday=true;continue;}
+      for(const tr of spec.split(",")){const t=tr.trim().match(/^(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})$/);if(!t)continue;openIntervals.push([(+t[1])*60+(+t[2]),(+t[3])*60+(+t[4])]);}
+    }
+    if(openIntervals.some(([a,b])=>mins>=a&&mins<b))return{cls:"open",text:"Open now"};
+    if(mentioned||offToday)return{cls:"closed",text:"Closed now"};
+    return null;
+  }catch(e){return null;}
+}
+
+/* ---- render dispatch ---- */
 function render(){
   const feed=document.getElementById("feed");
-  const dir=state.mode==="directory";
-  document.querySelectorAll(".filter-row").forEach(r=>r.style.display=dir?"none":"flex");
-  if(!dir)document.getElementById("whenRow").style.display=state.mode==="recurring"?"none":"flex";
-  feed.innerHTML = dir?renderDirectory() : (state.sort==="price"?renderFlat():renderGrouped());
+  const t=state.tab;
+  document.querySelectorAll(".ev-only").forEach(el=>el.style.display=(t==="events")?"flex":"none");
+  if(t==="events")document.getElementById("whenRow").style.display=(state.recur==="recurring")?"none":"flex";
+  document.querySelectorAll(".cat-row").forEach(el=>el.style.display=(t==="manual")?"none":"flex");
+  feed.innerHTML = t==="events"?renderEvents() : t==="free"?renderFree() : renderManual();
   requestAnimationFrame(()=>document.documentElement.style.setProperty("--controls-h",document.getElementById("controls").offsetHeight+"px"));
 }
 
-function pool(){
-  if(state.mode==="recurring")return ALL.filter(ev=>ev.recurring&&passesFilters(ev));
-  const[rangeStart,rangeEnd]=range();
-  return ALL.filter(ev=>!ev.recurring&&passesFilters(ev)&&(()=>{const t=new Date(ev.start);return t>=rangeStart&&t<=rangeEnd;})());
-}
+/* ---- EVENTS ---- */
+function oneoffPool(){const[a,b]=range();return DATA.events.filter(ev=>!ev.recurring&&passesEvent(ev)&&(()=>{const t=new Date(ev.start);return t>=a&&t<=b;})());}
+function recurringPool(){return DATA.events.filter(ev=>ev.recurring&&passesEvent(ev));}
 
-function renderGrouped(){
-  const rows=pool();
-  setCount(rows.length,state.mode==="recurring"?"recurring":"one-off");
-  if(!rows.length)return emptyState();
-  if(state.mode==="recurring"){
-    const wk={},other=[];
-    for(const ev of rows){(ev.recurrence||"").startsWith("Weekly")?((wk[bDow(ev.start)]||=[]).push(ev)):other.push(ev);}
-    let html="";
-    for(const n of WEEKDAYS){if(!wk[n])continue;wk[n].sort((a,b)=>bTime(a.start).localeCompare(bTime(b.start)));html+=`<div class="day"><span class="dow">Every ${n}</span><span class="n">${wk[n].length}</span></div>`;for(const ev of wk[n])html+=card(ev,{recurring:true});}
-    if(other.length){other.sort((a,b)=>new Date(a.start)-new Date(b.start));html+=`<div class="day"><span class="dow">Monthly &amp; occasional</span><span class="n">${other.length}</span></div>`;for(const ev of other)html+=card(ev,{recurring:true});}
-    return html;
-  }
+function renderEvents(){
+  let html="",shown=0;
+  if(state.recur!=="recurring"){const rows=oneoffPool();shown+=rows.length;html+=oneoffSection(rows);}
+  if(state.recur!=="oneoff"){const rows=recurringPool();shown+=rows.length;html+=recurringSection(rows,state.recur==="all");}
+  setCount(shown,"event"+(shown===1?"":"s"));
+  return shown?html:emptyEvents();
+}
+function oneoffSection(rows){
+  if(!rows.length)return "";
+  if(state.sort==="price"){rows=rows.slice().sort((a,b)=>priceKey(a)-priceKey(b)||new Date(a.start)-new Date(b.start));let h=`<div class="day"><span class="dow">By price</span><span class="date">low → high</span><span class="n">${rows.length}</span></div>`;for(const ev of rows)h+=card(ev,{recurring:false,showDate:true});return h;}
   const byDay={};for(const ev of rows)(byDay[bDate(ev.start)]||=[]).push(ev);
-  let html="";
-  for(const day of Object.keys(byDay).sort()){const list=byDay[day];html+=`<div class="day"><span class="dow">${bDow(list[0].start)}</span><span class="date">${bDateL(list[0].start)}</span><span class="n">${list.length}</span></div>`;for(const ev of list)html+=card(ev,{recurring:false});}
-  return html;
+  let h="";for(const day of Object.keys(byDay).sort()){const list=byDay[day];h+=`<div class="day"><span class="dow">${bDow(list[0].start)}</span><span class="date">${bDateL(list[0].start)}</span><span class="n">${list.length}</span></div>`;for(const ev of list)h+=card(ev,{recurring:false});}
+  return h;
 }
-
-function renderFlat(){
-  const recurring=state.mode==="recurring";
-  const rows=pool().sort((a,b)=>priceKey(a)-priceKey(b)||new Date(a.start)-new Date(b.start));
-  setCount(rows.length,recurring?"recurring":"one-off");
-  if(!rows.length)return emptyState();
-  let html=`<div class="day"><span class="dow">By price</span><span class="date">low → high</span><span class="n">${rows.length}</span></div>`;
-  for(const ev of rows)html+=card(ev,{recurring,showDate:true});
-  return html;
+function recurringSection(rows,withHeader){
+  if(!rows.length)return "";
+  const wk={},other=[];
+  for(const ev of rows){(ev.recurrence||"").startsWith("Weekly")?((wk[bDow(ev.start)]||=[]).push(ev)):other.push(ev);}
+  let h=withHeader?`<div class="day"><span class="dow">Weekly regulars</span><span class="n">${rows.length}</span></div>`:"";
+  for(const n of WEEKDAYS){if(!wk[n])continue;wk[n].sort((a,b)=>bTime(a.start).localeCompare(bTime(b.start)));h+=`<div class="day"><span class="dow">Every ${n}</span><span class="n">${wk[n].length}</span></div>`;for(const ev of wk[n])h+=card(ev,{recurring:true});}
+  if(other.length){other.sort((a,b)=>new Date(a.start)-new Date(b.start));h+=`<div class="day"><span class="dow">Monthly &amp; occasional</span><span class="n">${other.length}</span></div>`;for(const ev of other)h+=card(ev,{recurring:true});}
+  return h;
 }
-
 function card(ev,opts){
   const recurring=opts.recurring,showDate=opts.showDate;
-  const catLabel=(CATS.find(c=>c[0]===ev.category)||["","Other"])[1].split(" ")[0];
   const to=(!recurring&&ev.end)?`<span class="to">→ ${bTime(ev.end)}</span>`:"";
-  const title=ev.url?`<a href="${ev.url}" target="_blank" rel="noopener">${esc(ev.title)}</a>`:esc(ev.title);
+  const title=ev.url?`<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`:esc(ev.title);
   const lead=(showDate&&!recurring)?[bDow(ev.start).slice(0,3)+" "+bDateL(ev.start)]:[];
   const metaBits=[...lead,ev.venue,ev.area,ev.source.replace(/^cal:|^rss:|^web:/,"")].filter(Boolean).map(esc);
   const tr=ev.translated?`<span class="tag tr">↳ translated</span>`:"";
-  const desc=ev.description?`<div class="desc">${esc(ev.description)}${tr}</div>`:(tr?`<div class="desc">${tr}</div>`:"");
   const money=ev.is_free===true?`<span class="tag free">Free</span>`:(ev.price?`<span class="tag price">${esc(ev.price)}</span>`:"");
-  const cadence=recurring&&ev.recurrence?`<span class="tag cadence">${esc(ev.recurrence)}</span>`:"";
-  return `<article class="ev"><div class="time">${bTime(ev.start)}${to}</div><div><div class="title">${title}</div><div class="meta">${metaBits.join(" · ")}</div>${desc}</div><div class="tags"><span class="tag">${catLabel}</span>${cadence}${money}</div></article>`;
+  const kind=recurring?`<span class="tag cadence">${esc(ev.recurrence||"Recurring")}</span>`:`<span class="tag kind">one-off</span>`;
+  return `<article class="ev cat-${ev.category}"><div class="time">${bTime(ev.start)}${to}</div><div><div class="title">${title}</div><div class="meta">${metaBits.join(" · ")}</div></div><div class="tags"><span class="tag cat-tag">${catLabel(ev.category)}</span>${kind}${money}${tr}</div></article>`;
 }
 
-function renderDirectory(){
-  setCount(DIRECTORY.reduce((n,s)=>n+s.items.length,0),"curated");
-  let html="";
-  for(const sec of DIRECTORY){
-    html+=`<div class="day"><span class="dow">${esc(sec.group)}</span><span class="n">${sec.items.length}</span></div><div class="dir">`;
-    for(const it of sec.items)html+=`<a class="dir-item" href="${it.url}" target="_blank" rel="noopener"><span class="dir-name">${esc(it.name)}</span>${it.note?`<span class="dir-note">${esc(it.note)}</span>`:""}</a>`;
-    html+=`</div>`;
+/* ---- ALWAYS FREE ---- */
+function renderFree(){
+  const rows=DATA.always_free.filter(p=>catQ(p,[p.name,p.area,p.address]));
+  setCount(rows.length,"free place"+(rows.length===1?"":"s"));
+  if(!rows.length)return emptyFree();
+  let h="";
+  for(const p of rows){
+    const os=openState(p.opening_hours);
+    const badge=os?`<span class="badge ${os.cls}">${os.text}</span>`:(p.opening_hours?`<span class="badge hrs">${esc(p.opening_hours)}</span>`:`<span class="badge hrs">hours —</span>`);
+    const sub=[p.address,p.note].filter(Boolean).map(esc).join(" · ");
+    h+=`<div class="card cat-${p.category}"><div class="row"><a class="nm" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a><span class="tag cat-tag">${catLabel(p.category)}</span>${badge}</div>${sub?`<span class="sub2">${sub}</span>`:""}</div>`;
   }
-  return html;
+  return h;
 }
 
-function setCount(n,kind){document.getElementById("count").textContent=`${n} ${kind}${kind==="curated"?" sources":" event"+(n===1?"":"s")} shown`;}
-function emptyState(){
-  const b=state.cost!=="any"?" (or loosen the cost filter)":"";
-  return `<div class="state"><b>Nothing here</b>No events match these filters${b}. Widen the date range, clear a category, or add feeds in <code>config.yaml</code>. Check the Sources panel at the bottom to see what's loading.</div>`;
+/* ---- MANUAL CHECK ---- */
+function renderManual(){
+  const rows=DATA.manual_check.filter(m=>!state.q||(m.name+" "+m.group).toLowerCase().includes(state.q));
+  setCount(rows.length,"to check");
+  if(!rows.length)return emptyManual();
+  const byG={};for(const m of rows)(byG[m.group]||=[]).push(m);
+  let h="";
+  for(const g of Object.keys(byG)){
+    h+=`<div class="day"><span class="dow" style="font-size:20px">${esc(g)}</span><span class="n">${byG[g].length}</span></div>`;
+    for(const m of byG[g])h+=`<div class="card cat-other"><div class="row"><a class="nm" href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.name)}</a><span class="reason">${esc(m.reason)}</span></div></div>`;
+  }
+  return h;
 }
 
-function buildSeg(id,key,cb){document.getElementById(id).addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;state[key]=b.dataset[key];[...b.parentElement.children].forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false"));(cb||render)();});}
-function buildCats(){const box=document.getElementById("cats");for(const[id,label]of CATS){const b=document.createElement("button");b.className="chip";b.textContent=label;b.setAttribute("aria-pressed","false");b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.cats.delete(id),b.setAttribute("aria-pressed","false")):(state.cats.add(id),b.setAttribute("aria-pressed","true"));render();};box.appendChild(b);}}
+/* ---- misc ---- */
+function setCount(n,kind){document.getElementById("count").textContent=`${n} ${kind} shown`;}
+function setTabCounts(){document.getElementById("tabnEvents").textContent=DATA.events.length;document.getElementById("tabnFree").textContent=DATA.always_free.length;document.getElementById("tabnManual").textContent=DATA.manual_check.length;}
+function emptyEvents(){const b=state.cost!=="any"?" (or loosen the cost filter)":"";return `<div class="state"><b>Nothing here</b>No events match these filters${b}. Widen the date range or clear a category. New feeds appear here once the verified directory is imported.</div>`;}
+function emptyFree(){return `<div class="state"><b>No always-free places</b>Nothing matches this filter.</div>`;}
+function emptyManual(){return `<div class="state"><b>Manual-check worklist is empty</b>This fills once the verified directory is imported — it lists every source with no usable feed (or that's bot-walled / parked), so you can check those by hand.</div>`;}
+
+/* ---- controls ---- */
+function buildSeg(id,key){document.getElementById(id).addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;state[key]=b.dataset[key];[...b.parentElement.children].forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false"));render();});}
+function buildCats(){const box=document.getElementById("cats");for(const[id,label]of CATS){const b=document.createElement("button");b.className="chip cat-"+id;b.textContent=label;b.setAttribute("aria-pressed","false");b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.cats.delete(id),b.setAttribute("aria-pressed","false")):(state.cats.add(id),b.setAttribute("aria-pressed","true"));render();};box.appendChild(b);}}
 buildCats();
-buildSeg("modes","mode");buildSeg("presets","preset");buildSeg("costs","cost");buildSeg("sorts","sort");
+buildSeg("recur","recur");buildSeg("presets","when");buildSeg("costs","cost");buildSeg("sorts","sort");
+document.getElementById("tabs").addEventListener("click",e=>{const b=e.target.closest(".tab");if(!b)return;state.tab=b.dataset.tab;[...b.parentElement.children].forEach(x=>x.setAttribute("aria-selected",x===b?"true":"false"));render();});
 document.getElementById("search").addEventListener("input",e=>{state.q=e.target.value.trim().toLowerCase();render();});
 
 function showSources(sources){
   if(!sources)return;
   const grid=document.getElementById("srcGrid");
-  grid.innerHTML=Object.entries(sources).map(([k,v])=>{
-    const name=k.replace(/^cal:|^rss:/,"");
-    return `<span class="src-item">${esc(name)} <span class="${v===0?"z":"c"}">${v}</span></span>`;
-  }).join("");
+  grid.innerHTML=Object.entries(sources).map(([k,v])=>{const name=k.replace(/^cal:|^rss:/,"");return `<span class="src-item">${esc(name)} <span class="${v===0?"z":"c"}">${v}</span></span>`;}).join("");
   document.getElementById("sources").hidden=false;
 }
 
-fetch("events.json?_="+Date.now())
+fetch("data.json?_="+Date.now())
   .then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})
   .then(d=>{
-    ALL=d.events||[];
+    DATA={events:d.events||[],always_free:d.always_free||[],manual_check:d.manual_check||[]};
     if(d.generated_at){const ago=Math.round((Date.now()-new Date(d.generated_at))/36e5);document.getElementById("updated").textContent="updated "+(ago<1?"just now":ago+"h ago");}
-    render();showSources(d.sources);
+    setTabCounts();render();showSources(d.sources);
   })
   .catch(err=>{
-    document.getElementById("feed").innerHTML=`<div class="state"><b>Couldn't load events</b>events.json didn't load (${esc(err.message)}). Run <code>python aggregate.py</code>, or wait for the next scheduled update.</div>`;
+    document.getElementById("feed").innerHTML=`<div class="state"><b>Couldn't load data</b>data.json didn't load (${esc(err.message)}). Run <code>python aggregate.py</code>, or wait for the next scheduled update.</div>`;
     document.getElementById("count").textContent="—";
   });
 </script>
