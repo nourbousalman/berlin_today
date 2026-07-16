@@ -27,7 +27,7 @@ import yaml
 import socket
 socket.setdefaulttimeout(45)  # one slow/hanging feed must not stall a 122-feed run
 
-from sources.base import Event, dedupe
+from sources.base import Event, dedupe, berlin_status
 from sources import resident_advisor, ics_feeds, rss_feeds, html_scrapers, directory_feed
 from sources.translate import translate_events
 
@@ -117,6 +117,9 @@ def main() -> int:
     events = dedupe(events)
     events = translate_events(events, enabled=cfg.get("translate", True))
     events = [e for e in events if e.start]
+    before_geo = len(events)
+    events = [e for e in events if berlin_status(e.venue, e.title, e.area) != "other"]
+    non_berlin = before_geo - len(events)
     before = len(events)
     events = [e for e in events if _within_budget(e, max_price)]
     dropped = before - len(events)
@@ -149,7 +152,7 @@ def main() -> int:
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Wrote {len(events)} events ({n_rec} recurring, {len(events)-n_rec} one-off), "
           f"{len(always_free)} always-free, {len(manual_check)} manual-check "
-          f"→ {OUT.relative_to(ROOT)}  [dropped {dropped} over €{max_price:g}/ticketed]")
+          f"→ {OUT.relative_to(ROOT)}  [dropped {dropped} over €{max_price:g}/ticketed, {non_berlin} non-Berlin]")
     return 0
 
 
