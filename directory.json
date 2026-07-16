@@ -1,0 +1,3160 @@
+[
+ {
+  "id": 1,
+  "name": "gratis-in-berlin.de",
+  "url": "https://gratis-in-berlin.de",
+  "group": "Listings & aggregators (find free events)",
+  "note": "the dedicated free-events site + newsletter",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 2,
+  "name": "Berlin.de – Gratis",
+  "url": "https://berlin.de/kultur-und-tickets/gratis/",
+  "group": "Listings & aggregators (find free events)",
+  "note": "official free events & museums",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/kultur-und-tickets/gratis/rubric.rss"
+ },
+ {
+  "id": 3,
+  "name": "Berlin.de – Events",
+  "url": "https://berlin.de/en/events/",
+  "group": "Listings & aggregators (find free events)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/en/events/rubric.rss"
+ },
+ {
+  "id": 4,
+  "name": "visitBerlin – Free",
+  "url": "https://visitberlin.de/en/events-free-berlin",
+  "group": "Listings & aggregators (find free events)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 5,
+  "name": "tip Berlin",
+  "url": "https://tip-berlin.de",
+  "group": "Listings & aggregators (find free events)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.tip-berlin.de/feed/"
+ },
+ {
+  "id": 6,
+  "name": "The Berliner",
+  "url": "https://the-berliner.com",
+  "group": "Listings & aggregators (find free events)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 7,
+  "name": "Rausgegangen",
+  "url": "https://rausgegangen.de/en/berlin/",
+  "group": "Listings & aggregators (find free events)",
+  "note": "big portal, lots free",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 8,
+  "name": "Mit Vergnügen",
+  "url": "https://mitvergnuegen.com",
+  "group": "Listings & aggregators (find free events)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://mitvergnuegen.com/feed/"
+ },
+ {
+  "id": 9,
+  "name": "iHeartBerlin",
+  "url": "https://iheartberlin.de",
+  "group": "Listings & aggregators (find free events)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.iheartberlin.de/feed/"
+ },
+ {
+  "id": 10,
+  "name": "QIEZ",
+  "url": "https://qiez.de",
+  "group": "Listings & aggregators (find free events)",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 11,
+  "name": "Reddit r/berlin",
+  "url": "https://reddit.com/r/berlin",
+  "group": "Listings & aggregators (find free events)",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 12,
+  "name": "Meetup Berlin",
+  "url": "https://meetup.com/find/?location=de--berlin",
+  "group": "Listings & aggregators (find free events)",
+  "note": "",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 13,
+  "name": "Luma Berlin",
+  "url": "https://luma.com/berlin",
+  "group": "Listings & aggregators (find free events)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 14,
+  "name": "Resident Advisor",
+  "url": "https://ra.co/events/de/berlin",
+  "group": "Listings & aggregators (find free events)",
+  "note": "",
+  "yours": true,
+  "status": "blocked"
+ },
+ {
+  "id": 15,
+  "name": "Eventbrite (free filter)",
+  "url": "https://eventbrite.com",
+  "group": "Listings & aggregators (find free events)",
+  "note": "",
+  "yours": true,
+  "status": "blocked"
+ },
+ {
+  "id": 16,
+  "name": "CreativeMornings Berlin",
+  "url": "https://creativemornings.com/cities/ber",
+  "group": "Listings & aggregators (find free events)",
+  "note": "free monthly talks",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 17,
+  "name": "Tome Forró @ Atopia",
+  "url": "https://tomeforro.berlin",
+  "group": "Free & ultra-cheap regulars",
+  "note": "Wed dance, €5",
+  "yours": true,
+  "status": "broken"
+ },
+ {
+  "id": 18,
+  "name": "Sprachcafé Lighthouse",
+  "url": "https://lighthouseberlin.com",
+  "group": "Free & ultra-cheap regulars",
+  "note": "Thu, free language café",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 19,
+  "name": "Sip Happens!",
+  "url": "https://meetup.com/sip_happens_berlin",
+  "group": "Free & ultra-cheap regulars",
+  "note": "free Sat social",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 20,
+  "name": "SCDS Scottish dance",
+  "url": "https://scds-berlin.de",
+  "group": "Free & ultra-cheap regulars",
+  "note": "Fri, €3",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 21,
+  "name": "Berlin Board Gamers",
+  "url": "https://meetup.com/berlin-board-gamers",
+  "group": "Free & ultra-cheap regulars",
+  "note": "Thu/Fri, €3",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 22,
+  "name": "Spieletreff Berlin",
+  "url": "https://meetup.com/Spieletreffberlin",
+  "group": "Free & ultra-cheap regulars",
+  "note": "Wed board games, €5",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 23,
+  "name": "Board-games guide (all nights)",
+  "url": "https://allaboutberlin.com/guides/board-games-in-berlin",
+  "group": "Free & ultra-cheap regulars",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://allaboutberlin.com/newsletter/feed.rss"
+ },
+ {
+  "id": 24,
+  "name": "Philharmonie Lunchkonzert",
+  "url": "https://berliner-philharmoniker.de/en/concerts/lunch-concerts/",
+  "group": "Free & ultra-cheap regulars",
+  "note": "free, Wed 13:00",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 25,
+  "name": "parkrun Hasenheide",
+  "url": "https://parkrun.com.de",
+  "group": "Free & ultra-cheap regulars",
+  "note": "free 5K, Sat",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 26,
+  "name": "Stranger Chess",
+  "url": "https://strangerchess.com",
+  "group": "Free & ultra-cheap regulars",
+  "note": "free daily chess, 7pm–midnight",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 27,
+  "name": "Berliner Stadtteilzentren",
+  "url": "https://stadtteilzentren.de",
+  "group": "Community & neighbourhood houses (free programmes)",
+  "note": "umbrella for 40+ centres",
+  "yours": false,
+  "status": "live",
+  "rss": "https://stadtteilzentren.de/feed/"
+ },
+ {
+  "id": 28,
+  "name": "VskA Berlin",
+  "url": "https://vska.de/berlin",
+  "group": "Community & neighbourhood houses (free programmes)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://vska.de/feed/"
+ },
+ {
+  "id": 29,
+  "name": "Rudi Nachbarschaftshaus",
+  "url": "https://rudi-nachbarschaftshaus.de",
+  "group": "Community & neighbourhood houses (free programmes)",
+  "note": "",
+  "yours": true,
+  "status": "live",
+  "rss": "https://rudi-nachbarschaftshaus.de/feed/"
+ },
+ {
+  "id": 30,
+  "name": "NBH Neukölln",
+  "url": "https://nbh-neukoelln.de",
+  "group": "Community & neighbourhood houses (free programmes)",
+  "note": "",
+  "yours": true,
+  "status": "live",
+  "rss": "https://www.nbh-neukoelln.de/feed/"
+ },
+ {
+  "id": 31,
+  "name": "Mittelhof",
+  "url": "https://mittelhof.org",
+  "group": "Community & neighbourhood houses (free programmes)",
+  "note": "",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 32,
+  "name": "NBH Urbanstraße",
+  "url": "https://nachbarschaftshaus.de",
+  "group": "Community & neighbourhood houses (free programmes)",
+  "note": "",
+  "yours": true,
+  "status": "live",
+  "rss": "https://www.nachbarschaftshaus.de/feed/"
+ },
+ {
+  "id": 33,
+  "name": "NBH am Lietzensee / DRK",
+  "url": "https://drk-berlin-zentrum.de",
+  "group": "Community & neighbourhood houses (free programmes)",
+  "note": "",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 34,
+  "name": "Offenes Wohnzimmer",
+  "url": "https://offeneswohnzimmer.org",
+  "group": "Community & neighbourhood houses (free programmes)",
+  "note": "",
+  "yours": true,
+  "status": "live",
+  "rss": "https://offeneswohnzimmer.org/index.php/feed/"
+ },
+ {
+  "id": 35,
+  "name": "Pfefferwerk",
+  "url": "https://pfefferwerk.de",
+  "group": "Community & neighbourhood houses (free programmes)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.pfefferwerk.de/feed/"
+ },
+ {
+  "id": 36,
+  "name": "ufaFabrik",
+  "url": "https://ufafabrik.de",
+  "group": "Community & neighbourhood houses (free programmes)",
+  "note": "free festivals & culture farm",
+  "yours": false,
+  "status": "live",
+  "rss": "https://ufafabrik.de/rss.xml"
+ },
+ {
+  "id": 37,
+  "name": "Berliner Sessions",
+  "url": "https://berlinersessions.de",
+  "group": "Music, jams & venues",
+  "note": "70+ open mics/jams",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 38,
+  "name": "Berlin Sessions",
+  "url": "https://berlin-sessions.com",
+  "group": "Music, jams & venues",
+  "note": "jam directory",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 39,
+  "name": "visitBerlin jazz bars",
+  "url": "https://visitberlin.de/en/blog/11-jazz-bars-berlin",
+  "group": "Music, jams & venues",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 40,
+  "name": "A-Trane",
+  "url": "https://a-trane.de",
+  "group": "Music, jams & venues",
+  "note": "free late jam sessions",
+  "yours": false,
+  "status": "live",
+  "rss": "https://a-trane.de/feed/"
+ },
+ {
+  "id": 41,
+  "name": "b-flat",
+  "url": "https://b-flat-berlin.de",
+  "group": "Music, jams & venues",
+  "note": "free Wed jam",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 42,
+  "name": "Quasimodo",
+  "url": "https://quasimodo.de",
+  "group": "Music, jams & venues",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://quasimodo.de/feed/"
+ },
+ {
+  "id": 43,
+  "name": "Donau115",
+  "url": "https://donau115.de",
+  "group": "Music, jams & venues",
+  "note": "Two-Song-Tuesday open mic",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 44,
+  "name": "ZigZag Jazzclub",
+  "url": "https://www.zigzag-jazzclub.berlin/",
+  "group": "Music, jams & venues",
+  "note": "free/donation",
+  "yours": false,
+  "corrected": true,
+  "status": "live",
+  "rss": "https://www.zigzag-jazzclub.berlin/welcome-marquee?format=rss"
+ },
+ {
+  "id": 45,
+  "name": "SO36",
+  "url": "https://so36.de",
+  "group": "Music, jams & venues",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 46,
+  "name": "Lido",
+  "url": "https://lido-berlin.de",
+  "group": "Music, jams & venues",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 47,
+  "name": "Kesselhaus (Kulturbrauerei)",
+  "url": "https://kesselhaus-berlin.de",
+  "group": "Music, jams & venues",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 48,
+  "name": "Klunkerkranich",
+  "url": "https://klunkerkranich.org",
+  "group": "Music, jams & venues",
+  "note": "rooftop, often free entry",
+  "yours": false,
+  "status": "live",
+  "rss": "https://klunkerkranich.org/feed/"
+ },
+ {
+  "id": 49,
+  "name": "Silent Green",
+  "url": "https://silent-green.net",
+  "group": "Music, jams & venues",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 50,
+  "name": "YAAM",
+  "url": "https://yaam.de",
+  "group": "Music, jams & venues",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://yaam.de/feed/"
+ },
+ {
+  "id": 51,
+  "name": "://about blank",
+  "url": "https://aboutblank.li",
+  "group": "Clubs & nightlife spaces",
+  "note": "",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 52,
+  "name": "Holzmarkt",
+  "url": "https://holzmarkt.com",
+  "group": "Clubs & nightlife spaces",
+  "note": "",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 53,
+  "name": "Berghain",
+  "url": "https://berghain.berlin",
+  "group": "Clubs & nightlife spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 54,
+  "name": "SchwuZ",
+  "url": "https://schwuz.de",
+  "group": "Clubs & nightlife spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 55,
+  "name": "Südblock",
+  "url": "https://suedblock.org",
+  "group": "Clubs & nightlife spaces",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.suedblock.org/wp/feed/?doing_wp_cron=1783931356.1082439422607421875000"
+ },
+ {
+  "id": 56,
+  "name": "K-Fetisch",
+  "url": "https://instagram.com/k_fetisch",
+  "group": "Clubs & nightlife spaces",
+  "note": "",
+  "yours": true,
+  "status": "blocked"
+ },
+ {
+  "id": 57,
+  "name": "ida Nowhere",
+  "url": "https://instagram.com/ida_nowhere",
+  "group": "Clubs & nightlife spaces",
+  "note": "",
+  "yours": true,
+  "status": "blocked"
+ },
+ {
+  "id": 58,
+  "name": "knoise",
+  "url": "https://knoise.org",
+  "group": "Clubs & nightlife spaces",
+  "note": "free-ish film screenings Mon/Thu",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 59,
+  "name": "Stressfaktor",
+  "url": "https://stressfaktor.squat.net/termine",
+  "group": "Clubs & nightlife spaces",
+  "note": "DIY/free scene",
+  "yours": true,
+  "status": "blocked"
+ },
+ {
+  "id": 60,
+  "name": "Volksbühne",
+  "url": "https://volksbuehne.berlin",
+  "group": "Theatre, dance & performance",
+  "note": "",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 61,
+  "name": "Berliner Ensemble",
+  "url": "https://berliner-ensemble.de",
+  "group": "Theatre, dance & performance",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 62,
+  "name": "Deutsches Theater",
+  "url": "https://deutschestheater.de",
+  "group": "Theatre, dance & performance",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 63,
+  "name": "Schaubühne",
+  "url": "https://schaubuehne.de",
+  "group": "Theatre, dance & performance",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 64,
+  "name": "Maxim Gorki",
+  "url": "https://gorki.de",
+  "group": "Theatre, dance & performance",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.gorki.de/de/rss.xml"
+ },
+ {
+  "id": 65,
+  "name": "HAU Hebbel am Ufer",
+  "url": "https://hebbel-am-ufer.de",
+  "group": "Theatre, dance & performance",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 66,
+  "name": "Sophiensæle",
+  "url": "https://sophiensaele.com",
+  "group": "Theatre, dance & performance",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 67,
+  "name": "Radialsystem",
+  "url": "https://radialsystem.de",
+  "group": "Theatre, dance & performance",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 68,
+  "name": "Berlin.de Kinos",
+  "url": "https://berlin.de/kino/kinos/",
+  "group": "Cinemas (cheap; some free nights)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/kino/kinos/rubric.rss"
+ },
+ {
+  "id": 69,
+  "name": "Kino Babylon",
+  "url": "https://babylonberlin.eu",
+  "group": "Cinemas (cheap; some free nights)",
+  "note": "free Sat silent film",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 70,
+  "name": "Arsenal",
+  "url": "https://arsenal-berlin.de",
+  "group": "Cinemas (cheap; some free nights)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 71,
+  "name": "Wolf Kino",
+  "url": "https://wolfberlin.org",
+  "group": "Cinemas (cheap; some free nights)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 72,
+  "name": "fsk Kino",
+  "url": "https://fsk-kino.de",
+  "group": "Cinemas (cheap; some free nights)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://fsk-kino.peripherfilm.de/feed/"
+ },
+ {
+  "id": 73,
+  "name": "Moviemento",
+  "url": "https://moviemento.de",
+  "group": "Cinemas (cheap; some free nights)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://moviemento.de/feed/"
+ },
+ {
+  "id": 74,
+  "name": "Lichtblick Kino",
+  "url": "https://lichtblick-kino.org",
+  "group": "Cinemas (cheap; some free nights)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://lichtblick-kino.org/feed/"
+ },
+ {
+  "id": 75,
+  "name": "Staatliche Museen (SMB)",
+  "url": "https://smb.museum",
+  "group": "Museums, galleries & art",
+  "note": "free under 18; free 1st-Thu eve at Hamburger Bahnhof",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 76,
+  "name": "Humboldt Forum",
+  "url": "https://humboldtforum.org",
+  "group": "Museums, galleries & art",
+  "note": "lots free",
+  "yours": true,
+  "status": "live"
+ },
+ {
+  "id": 77,
+  "name": "Futurium",
+  "url": "https://futurium.de",
+  "group": "Museums, galleries & art",
+  "note": "free entry",
+  "yours": false,
+  "always_free": true,
+  "address": "Alexanderufer 2, 10117",
+  "opening_hours": "Mo,We,Fr-Su 10:00-18:00; Th 10:00-20:00; Tu off",
+  "status": "live"
+ },
+ {
+  "id": 78,
+  "name": "Topographie des Terrors",
+  "url": "https://topographie.de",
+  "group": "Museums, galleries & art",
+  "note": "free · outdoor exhibition open until dusk",
+  "yours": false,
+  "always_free": true,
+  "address": "Niederkirchnerstraße 8, 10963",
+  "opening_hours": "Mo-Su 10:00-20:00",
+  "status": "blocked"
+ },
+ {
+  "id": 79,
+  "name": "Haus der Kulturen der Welt",
+  "url": "https://hkw.de",
+  "group": "Museums, galleries & art",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 80,
+  "name": "KW Institute",
+  "url": "https://kw-berlin.de",
+  "group": "Museums, galleries & art",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 81,
+  "name": "Berlinische Galerie",
+  "url": "https://berlinischegalerie.de",
+  "group": "Museums, galleries & art",
+  "note": "€7 first-Wed",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 82,
+  "name": "C/O Berlin",
+  "url": "https://co-berlin.org",
+  "group": "Museums, galleries & art",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 83,
+  "name": "n.b.k.",
+  "url": "https://nbk.org",
+  "group": "Museums, galleries & art",
+  "note": "free exhibitions",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 84,
+  "name": "Berliner Festspiele",
+  "url": "https://berlinerfestspiele.de",
+  "group": "Museums, galleries & art",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 85,
+  "name": "Berlin Art Link",
+  "url": "https://berlinartlink.com",
+  "group": "Museums, galleries & art",
+  "note": "art openings, often free",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlinartlink.com/feed/"
+ },
+ {
+  "id": 86,
+  "name": "Berliner Literarische Aktion",
+  "url": "https://berliner-literarische-aktion.de",
+  "group": "Literature & talks",
+  "note": "",
+  "yours": true,
+  "status": "live",
+  "rss": "https://berliner-literarische-aktion.de/home/feed/"
+ },
+ {
+  "id": 87,
+  "name": "Literaturhaus Berlin",
+  "url": "https://literaturhaus-berlin.de",
+  "group": "Literature & talks",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 88,
+  "name": "Lettrétage",
+  "url": "https://lettretage.de",
+  "group": "Literature & talks",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 89,
+  "name": "LCB (Literarisches Colloquium)",
+  "url": "https://lcb.de",
+  "group": "Literature & talks",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 90,
+  "name": "Italian Cultural Institute",
+  "url": "https://iicberlino.esteri.it",
+  "group": "Cultural institutes",
+  "note": "",
+  "yours": true,
+  "status": "live",
+  "rss": "https://iicberlino.esteri.it/it/feed/"
+ },
+ {
+  "id": 91,
+  "name": "Institut français",
+  "url": "https://institutfrancais.de",
+  "group": "Cultural institutes",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.institutfrancais.de/de/rss.xml"
+ },
+ {
+  "id": 92,
+  "name": "Instituto Cervantes",
+  "url": "https://berlin.cervantes.es",
+  "group": "Cultural institutes",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 93,
+  "name": "Nordic Embassies (Felleshus)",
+  "url": "https://nordicembassies.org",
+  "group": "Cultural institutes",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.nordischebotschaften.org/feed/"
+ },
+ {
+  "id": 94,
+  "name": "Polish Institute",
+  "url": "https://instytutpolski.pl/berlin",
+  "group": "Cultural institutes",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 95,
+  "name": "Sport im Park",
+  "url": "https://berlin-bewegt-sich.berlin.de/angebote",
+  "group": "Sport & outdoors",
+  "note": "270+ free courses",
+  "yours": false,
+  "corrected": true,
+  "status": "live"
+ },
+ {
+  "id": 96,
+  "name": "Running Clubs Berlin",
+  "url": "https://runningclubsberlin.de",
+  "group": "Sport & outdoors",
+  "note": "free run crews",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 97,
+  "name": "calisthenics-parks.com",
+  "url": "https://calisthenics-parks.com",
+  "group": "Sport & outdoors",
+  "note": "free outdoor gyms",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 98,
+  "name": "ADFC Berlin",
+  "url": "https://adfc-berlin.de",
+  "group": "Sport & outdoors",
+  "note": "free group bike rides",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 99,
+  "name": "Berlin.de Flea markets",
+  "url": "https://berlin.de/en/shopping/markets/flea-markets/",
+  "group": "Markets, libraries & swaps",
+  "note": "free to browse (Mauerpark, Boxi, incl. Bearpit Karaoke)",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/en/shopping/markets/flea-markets/rubric.rss"
+ },
+ {
+  "id": 100,
+  "name": "Kleidertausch",
+  "url": "https://kleidertausch.de",
+  "group": "Markets, libraries & swaps",
+  "note": "free clothes-swap events",
+  "yours": true,
+  "status": "live",
+  "rss": "https://kleidertausch.de/feed/",
+  "ical": "https://kleidertausch.de/events/?ical=1"
+ },
+ {
+  "id": 101,
+  "name": "Museumsportal Berlin (index of all ~200 museums, free-entry filter)",
+  "url": "https://museumsportal-berlin.de",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 102,
+  "name": "Anti-Kriegs-Museum",
+  "url": "https://anti-kriegs-museum.de",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://anti-kriegs-museum.de/feed/"
+ },
+ {
+  "id": 103,
+  "name": "Gedenkstätte Berliner Mauer",
+  "url": "https://stiftung-berliner-mauer.de",
+  "group": "Free museums & memorials",
+  "note": "open-air memorial grounds daily 08:00–22:00",
+  "yours": false,
+  "always_free": true,
+  "address": "Bernauer Str. 119, 13355",
+  "opening_hours": "Tu-Su 10:00-18:00; Mo off",
+  "status": "live",
+  "rss": "https://www.stiftung-berliner-mauer.de/rss.xml"
+ },
+ {
+  "id": 104,
+  "name": "East Side Gallery",
+  "url": "https://eastsidegallery-berlin.de",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 105,
+  "name": "Haus der Wannsee-Konferenz",
+  "url": "https://ghwk.de",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "always_free": true,
+  "address": "Am Großen Wannsee 56–58, 14109",
+  "opening_hours": "Mo-Su 10:00-18:00",
+  "status": "live"
+ },
+ {
+  "id": 106,
+  "name": "Alliiertenmuseum",
+  "url": "https://alliiertenmuseum.de",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "always_free": true,
+  "address": "Clayallee 135, 14195",
+  "opening_hours": "Tu-Su 10:00-18:00; Mo off",
+  "status": "live",
+  "rss": "https://www.alliiertenmuseum.de/feed/"
+ },
+ {
+  "id": 107,
+  "name": "Museum Berlin-Karlshorst",
+  "url": "https://museum-karlshorst.de",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "always_free": true,
+  "address": "Zwieseler Str. 4, 10318",
+  "opening_hours": "Tu-Su 10:00-18:00; Mo off",
+  "status": "live"
+ },
+ {
+  "id": 108,
+  "name": "Gedenkstätte Deutscher Widerstand",
+  "url": "https://gdw-berlin.de",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "always_free": true,
+  "address": "Stauffenbergstraße 13–14, 10785",
+  "opening_hours": "Mo-We,Fr 09:00-18:00; Th 09:00-20:00; Sa,Su 10:00-18:00",
+  "status": "live"
+ },
+ {
+  "id": 109,
+  "name": "Urban Nation (street art)",
+  "url": "https://urban-nation.com",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "always_free": true,
+  "address": "Bülowstraße 7, 10783",
+  "opening_hours": "Tu,We 10:00-18:00; Th-Su 12:00-20:00; Mo off",
+  "status": "live"
+ },
+ {
+  "id": 110,
+  "name": "Deutsches Technikmuseum",
+  "url": "https://technikmuseum.berlin",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 111,
+  "name": "Bröhan-Museum",
+  "url": "https://broehan-museum.de",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 112,
+  "name": "Bauhaus-Archiv",
+  "url": "https://bauhaus.de",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 113,
+  "name": "Brücke-Museum",
+  "url": "https://bruecke-museum.de",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 114,
+  "name": "Georg Kolbe Museum",
+  "url": "https://georg-kolbe-museum.de",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://georg-kolbe-museum.de/feed/"
+ },
+ {
+  "id": 115,
+  "name": "ANOHA (Jewish Museum children's world)",
+  "url": "https://anoha.de",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://anoha.de/rss.xml"
+ },
+ {
+  "id": 116,
+  "name": "Museum Otto Weidt / Blindenwerkstatt",
+  "url": "https://museum-blindenwerkstatt.de",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 117,
+  "name": "Stasimuseum",
+  "url": "https://stasimuseum.de",
+  "group": "Free museums & memorials",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 118,
+  "name": "Frannz Club",
+  "url": "https://frannz.com",
+  "group": "More music venues & live-music spaces (several free jams / donation nights)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://frannz.eu/feed/"
+ },
+ {
+  "id": 119,
+  "name": "Privatclub",
+  "url": "https://privatclub-berlin.de",
+  "group": "More music venues & live-music spaces (several free jams / donation nights)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 120,
+  "name": "Urban Spree",
+  "url": "https://urbanspree.com",
+  "group": "More music venues & live-music spaces (several free jams / donation nights)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 121,
+  "name": "Musik & Frieden",
+  "url": "https://musikundfrieden.de",
+  "group": "More music venues & live-music spaces (several free jams / donation nights)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://hole-berlin.de/feed/"
+ },
+ {
+  "id": 122,
+  "name": "Schokoladen",
+  "url": "https://schokoladen-mitte.de",
+  "group": "More music venues & live-music spaces (several free jams / donation nights)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 123,
+  "name": "ausland (experimental)",
+  "url": "https://ausland-berlin.de",
+  "group": "More music venues & live-music spaces (several free jams / donation nights)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 124,
+  "name": "Panke",
+  "url": "https://pankeculture.com",
+  "group": "More music venues & live-music spaces (several free jams / donation nights)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.pankeculture.com/feed/"
+ },
+ {
+  "id": 125,
+  "name": "Loophole",
+  "url": "https://loophole.berlin",
+  "group": "More music venues & live-music spaces (several free jams / donation nights)",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 126,
+  "name": "Sameheads",
+  "url": "https://sameheads.com",
+  "group": "More music venues & live-music spaces (several free jams / donation nights)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 127,
+  "name": "Madame Claude",
+  "url": "https://madameclaude.de",
+  "group": "More music venues & live-music spaces (several free jams / donation nights)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://madameclaude.de/feed/"
+ },
+ {
+  "id": 128,
+  "name": "Kunstfabrik Schlot",
+  "url": "https://kunstfabrik-schlot.de",
+  "group": "More music venues & live-music spaces (several free jams / donation nights)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://kunstfabrik-schlot.de/feed/"
+ },
+ {
+  "id": 129,
+  "name": "Peppi Guggenheim",
+  "url": "https://peppi-guggenheim.de/",
+  "group": "More music venues & live-music spaces (several free jams / donation nights)",
+  "note": "",
+  "yours": false,
+  "corrected": true,
+  "status": "live",
+  "rss": "https://peppi-guggenheim.de/feed/"
+ },
+ {
+  "id": 130,
+  "name": "Sowieso",
+  "url": "https://sowiesoberlin.com/",
+  "group": "More music venues & live-music spaces (several free jams / donation nights)",
+  "note": "",
+  "yours": false,
+  "corrected": true,
+  "status": "blocked"
+ },
+ {
+  "id": 131,
+  "name": "Wild at Heart",
+  "url": "https://wildatheartberlin.de",
+  "group": "More music venues & live-music spaces (several free jams / donation nights)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 132,
+  "name": "Yorckschlösschen",
+  "url": "https://yorckschloesschen.de",
+  "group": "More music venues & live-music spaces (several free jams / donation nights)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 133,
+  "name": "Il Kino",
+  "url": "https://ilkino.de",
+  "group": "More cinemas (cheap; some free screenings)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 134,
+  "name": "b-ware! Ladenkino",
+  "url": "https://ladenkino.de",
+  "group": "More cinemas (cheap; some free screenings)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://ladenkino.de/feed/"
+ },
+ {
+  "id": 135,
+  "name": "Sputnik Kino",
+  "url": "https://sputnik-kino.com",
+  "group": "More cinemas (cheap; some free screenings)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://sputnik-kino.com/rss"
+ },
+ {
+  "id": 136,
+  "name": "Sinema Transtopia",
+  "url": "https://sinematranstopia.com",
+  "group": "More cinemas (cheap; some free screenings)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 137,
+  "name": "Zeughauskino (DHM)",
+  "url": "https://dhm.de/zeughauskino",
+  "group": "More cinemas (cheap; some free screenings)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 138,
+  "name": "Freiluftkino Kreuzberg",
+  "url": "https://freiluftkino-kreuzberg.de",
+  "group": "More cinemas (cheap; some free screenings)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 139,
+  "name": "Kino Central",
+  "url": "https://kino-central.de",
+  "group": "More cinemas (cheap; some free screenings)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://kino-central.de/feed/"
+ },
+ {
+  "id": 140,
+  "name": "Yorck Kinos (OV films)",
+  "url": "https://yorck.de",
+  "group": "More cinemas (cheap; some free screenings)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 141,
+  "name": "Deutsche Oper",
+  "url": "https://deutscheoperberlin.de",
+  "group": "More theatre, opera & performance",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 142,
+  "name": "Komische Oper",
+  "url": "https://komische-oper-berlin.de",
+  "group": "More theatre, opera & performance",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 143,
+  "name": "Staatsoper Unter den Linden",
+  "url": "https://staatsoper-berlin.de",
+  "group": "More theatre, opera & performance",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 144,
+  "name": "GRIPS Theater",
+  "url": "https://grips-theater.de",
+  "group": "More theatre, opera & performance",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 145,
+  "name": "English Theatre Berlin",
+  "url": "https://etberlin.de",
+  "group": "More theatre, opera & performance",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.etberlin.de/feed/"
+ },
+ {
+  "id": 146,
+  "name": "Ballhaus Ost",
+  "url": "https://ballhausost.de",
+  "group": "More theatre, opera & performance",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.ballhausost.de/feed/"
+ },
+ {
+  "id": 147,
+  "name": "Ballhaus Naunynstraße",
+  "url": "https://ballhausnaunynstrasse.de",
+  "group": "More theatre, opera & performance",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 148,
+  "name": "Neuköllner Oper",
+  "url": "https://neukoellneroper.de",
+  "group": "More theatre, opera & performance",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.neukoellneroper.de/feed/"
+ },
+ {
+  "id": 149,
+  "name": "Vaganten Bühne",
+  "url": "https://vaganten.de",
+  "group": "More theatre, opera & performance",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 150,
+  "name": "Renaissance-Theater",
+  "url": "https://renaissance-theater.de",
+  "group": "More theatre, opera & performance",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://renaissance-theater.de/feed/"
+ },
+ {
+  "id": 151,
+  "name": "Theater unterm Dach",
+  "url": "https://theateruntermdach-berlin.de",
+  "group": "More theatre, opera & performance",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 152,
+  "name": "Prime Time Theater",
+  "url": "https://primetimetheater.de",
+  "group": "More theatre, opera & performance",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.primetimetheater.de/blog-feed.xml"
+ },
+ {
+  "id": 153,
+  "name": "Give Something Back to Berlin",
+  "url": "https://gsbtb.org",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 154,
+  "name": "Über den Tellerrand",
+  "url": "https://ueberdentellerrand.org",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "ical": "https://ueberdentellerrand.org/events/?ical=1"
+ },
+ {
+  "id": 155,
+  "name": "querstadtein (social city tours)",
+  "url": "https://querstadtein.org",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://querstadtein.org/feed/"
+ },
+ {
+  "id": 156,
+  "name": "Refugio Berlin",
+  "url": "https://refugio.berlin",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 157,
+  "name": "Baytna Begegnungszentrum",
+  "url": "https://baytna-berlin.de",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 158,
+  "name": "Connections Café",
+  "url": "https://connectionslibrary.de",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.connectionslibrary.de/blog-feed.xml"
+ },
+ {
+  "id": 159,
+  "name": "Envision Berlin",
+  "url": "https://envisionberlin.com",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://envisionberlin.com/feed/"
+ },
+ {
+  "id": 160,
+  "name": "Regenbogenfabrik",
+  "url": "https://regenbogenfabrik.de",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 161,
+  "name": "Mehringhof",
+  "url": "https://mehringhof.de",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 162,
+  "name": "New Yorck im Bethanien",
+  "url": "https://newyorck.net",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 163,
+  "name": "Spielwiese (board-game café)",
+  "url": "https://spielwiese-berlin.de",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://edition-spielwiese.de/feed/"
+ },
+ {
+  "id": 164,
+  "name": "Trial & Error (free shop / repair)",
+  "url": "https://trial-error.org",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.trial-error.org/rss/blog"
+ },
+ {
+  "id": 165,
+  "name": "Nachbarschaftsheim Schöneberg",
+  "url": "https://nbhs.de",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 166,
+  "name": "KREATIVHAUS",
+  "url": "https://www.kreativhaus-berlin.de/",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "corrected": true,
+  "status": "live",
+  "rss": "https://www.kreativhaus-berlin.de/feed/"
+ },
+ {
+  "id": 167,
+  "name": "Moabiter Ratschlag / Stadtschloss Moabit",
+  "url": "https://moabiter-ratschlag.de",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 168,
+  "name": "Kiezspinne (Lichtenberg)",
+  "url": "https://kiezspinne.de",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.kiezspinne-fas.org/rss/blog"
+ },
+ {
+  "id": 169,
+  "name": "Kulturbrauerei (cultural complex)",
+  "url": "https://kulturbrauerei.de",
+  "group": "More community, social & neighbourhood spaces",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 170,
+  "name": "c-base",
+  "url": "https://c-base.org",
+  "group": "Maker/hacker spaces & free lectures/science",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 171,
+  "name": "xHain hack+makespace",
+  "url": "https://x-hain.de",
+  "group": "Maker/hacker spaces & free lectures/science",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://x-hain.de/de/index.xml"
+ },
+ {
+  "id": 172,
+  "name": "Chaos Computer Club Berlin",
+  "url": "https://berlin.ccc.de",
+  "group": "Maker/hacker spaces & free lectures/science",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://berlin.ccc.de/index.xml"
+ },
+ {
+  "id": 173,
+  "name": "Fab Lab Berlin",
+  "url": "https://fablab.berlin",
+  "group": "Maker/hacker spaces & free lectures/science",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 174,
+  "name": "Verbund Offener Werkstätten (open-workshop finder)",
+  "url": "https://offene-werkstaetten.org",
+  "group": "Maker/hacker spaces & free lectures/science",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://offene-werkstaetten.org/feed.rss"
+ },
+ {
+  "id": 175,
+  "name": "Urania Berlin (science/culture talks)",
+  "url": "https://urania.de",
+  "group": "Maker/hacker spaces & free lectures/science",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 176,
+  "name": "WZB Social Science Center (free talks)",
+  "url": "https://wzb.eu",
+  "group": "Maker/hacker spaces & free lectures/science",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 177,
+  "name": "Einstein Forum (free lectures)",
+  "url": "https://einsteinforum.de",
+  "group": "Maker/hacker spaces & free lectures/science",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.einsteinforum.de/feed/"
+ },
+ {
+  "id": 178,
+  "name": "Max Planck Harnack-Haus",
+  "url": "https://harnackhaus-berlin.mpg.de",
+  "group": "Maker/hacker spaces & free lectures/science",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 179,
+  "name": "Wissenschaftskolleg zu Berlin",
+  "url": "https://wiko-berlin.de",
+  "group": "Maker/hacker spaces & free lectures/science",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 180,
+  "name": "HU Berlin public lectures",
+  "url": "https://hu-berlin.de",
+  "group": "Maker/hacker spaces & free lectures/science",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 181,
+  "name": "Lange Nacht der Wissenschaften",
+  "url": "https://langenachtderwissenschaften.de",
+  "group": "Maker/hacker spaces & free lectures/science",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 182,
+  "name": "Czech Centre Berlin",
+  "url": "https://czechcentres.cz/en/berlin",
+  "group": "More cultural institutes & language",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 183,
+  "name": "Korean Cultural Center",
+  "url": "https://kulturkorea.org",
+  "group": "More cultural institutes & language",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 184,
+  "name": "Sprachcafé directory (Berlin)",
+  "url": "https://berlin.sprachcafe.org",
+  "group": "More cultural institutes & language",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://sprachtreffen.de/feed/rss/collection/Berlin",
+  "ical": "https://sprachtreffen.de/feed/ics/collection/Berlin"
+ },
+ {
+  "id": 185,
+  "name": "Berlin Hilft – Sprachcafés map",
+  "url": "https://berlin-hilft.com/sprachcafes",
+  "group": "More cultural institutes & language",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 186,
+  "name": "NABU Berlin",
+  "url": "https://berlin.nabu.de",
+  "group": "Nature, gardens & sustainability (free walks/events)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://berlin.nabu.de/rssfeed.php"
+ },
+ {
+  "id": 187,
+  "name": "BUND Berlin",
+  "url": "https://bund-berlin.de",
+  "group": "Nature, gardens & sustainability (free walks/events)",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 188,
+  "name": "Allmende-Kontor (community garden)",
+  "url": "https://allmende-kontor.de",
+  "group": "Nature, gardens & sustainability (free walks/events)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.allmende-kontor.de/feed/",
+  "ical": "https://nextcloud.allmende-kontor.org/remote.php/dav/public-calendars/BaksmLPiNwdNzj5j/?export"
+ },
+ {
+  "id": 189,
+  "name": "Grün Berlin (parks incl. Tempelhofer Feld)",
+  "url": "https://gruen-berlin.de",
+  "group": "Nature, gardens & sustainability (free walks/events)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 190,
+  "name": "Domäne Dahlem (free grounds & market)",
+  "url": "https://domaene-dahlem.de",
+  "group": "Nature, gardens & sustainability (free walks/events)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.domaene-dahlem.de/feed/"
+ },
+ {
+  "id": 191,
+  "name": "foodsharing Berlin",
+  "url": "https://foodsharing.de",
+  "group": "Nature, gardens & sustainability (free walks/events)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 192,
+  "name": "Fête de la Musique Berlin",
+  "url": "https://fetedelamusique.de",
+  "group": "Free festivals (annual) & other regulars",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.fetedelamusique.de/feed/"
+ },
+ {
+  "id": 193,
+  "name": "Karneval der Kulturen",
+  "url": "https://karneval-berlin.de",
+  "group": "Free festivals (annual) & other regulars",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://karneval-berlin.de/feed/"
+ },
+ {
+  "id": 194,
+  "name": "48 Stunden Neukölln",
+  "url": "https://48-stunden-neukoelln.de",
+  "group": "Free festivals (annual) & other regulars",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 195,
+  "name": "Berlin Art Week",
+  "url": "https://berlinartweek.de",
+  "group": "Free festivals (annual) & other regulars",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://berlinartweek.de/feed/"
+ },
+ {
+  "id": 196,
+  "name": "Gallery Weekend Berlin",
+  "url": "https://gallery-weekend-berlin.de",
+  "group": "Free festivals (annual) & other regulars",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 197,
+  "name": "Christopher Street Day (CSD)",
+  "url": "https://csd-berlin.de",
+  "group": "Free festivals (annual) & other regulars",
+  "note": "",
+  "yours": false,
+  "status": "broken"
+ },
+ {
+  "id": 198,
+  "name": "Festival of Lights",
+  "url": "https://festival-of-lights.de",
+  "group": "Free festivals (annual) & other regulars",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 199,
+  "name": "Reparatur-Initiativen (repair-café finder)",
+  "url": "https://reparatur-initiativen.de",
+  "group": "Free festivals (annual) & other regulars",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 200,
+  "name": "DAV Sektion Berlin (free hikes & talks)",
+  "url": "https://dav-berlin.de",
+  "group": "Free festivals (annual) & other regulars",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://dav-berlin.de/feed/"
+ },
+ {
+  "id": 201,
+  "name": "König Galerie",
+  "url": "https://koeniggalerie.com",
+  "group": "Galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 202,
+  "name": "Sprüth Magers",
+  "url": "https://spruethmagers.com",
+  "group": "Galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 203,
+  "name": "Esther Schipper",
+  "url": "https://estherschipper.com",
+  "group": "Galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.estherschipper.com/feed/"
+ },
+ {
+  "id": 204,
+  "name": "neugerriemschneider",
+  "url": "https://neugerriemschneider.com",
+  "group": "Galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.neugerriemschneider.com/feed/"
+ },
+ {
+  "id": 205,
+  "name": "Galerie Max Hetzler",
+  "url": "https://maxhetzler.com",
+  "group": "Galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 206,
+  "name": "Galerie Eigen + Art",
+  "url": "https://eigen-art.com",
+  "group": "Galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 207,
+  "name": "Contemporary Fine Arts",
+  "url": "https://cfa-berlin.com",
+  "group": "Galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://cfa-gallery.com/feed/"
+ },
+ {
+  "id": 208,
+  "name": "carlier | gebauer",
+  "url": "https://carliergebauer.com",
+  "group": "Galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 209,
+  "name": "KOW",
+  "url": "https://kow-berlin.com",
+  "group": "Galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 210,
+  "name": "Barbara Wien",
+  "url": "https://barbarawien.de",
+  "group": "Galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 211,
+  "name": "daadgalerie",
+  "url": "https://daadgalerie.de",
+  "group": "Galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 212,
+  "name": "Galerie Buchholz",
+  "url": "https://galeriebuchholz.de",
+  "group": "Galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 213,
+  "name": "Aedes Architecture Forum",
+  "url": "https://aedes-arc.de",
+  "group": "Galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 214,
+  "name": "Akademie der Künste",
+  "url": "https://adk.de",
+  "group": "Art & performance spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 215,
+  "name": "SAVVY Contemporary",
+  "url": "https://savvy-contemporary.com",
+  "group": "Art & performance spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 216,
+  "name": "ZK/U – Zentrum für Kunst und Urbanistik",
+  "url": "https://zku-berlin.org",
+  "group": "Art & performance spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 217,
+  "name": "Floating University",
+  "url": "https://floating-berlin.org",
+  "group": "Art & performance spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 218,
+  "name": "Uferstudios (dance)",
+  "url": "https://uferstudios.com",
+  "group": "Art & performance spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 219,
+  "name": "Dock 11 (dance)",
+  "url": "https://dock11-berlin.de",
+  "group": "Art & performance spaces",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 220,
+  "name": "ACUD MACHT NEU",
+  "url": "https://acudmachtneu.de",
+  "group": "Art & performance spaces",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://acudmachtneu.de/feed/"
+ },
+ {
+  "id": 221,
+  "name": "Haus der Statistik",
+  "url": "https://hausderstatistik.org",
+  "group": "Art & performance spaces",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://hausderstatistik.org/feed/"
+ },
+ {
+  "id": 222,
+  "name": "FHXB Friedrichshain-Kreuzberg Museum",
+  "url": "https://fhxb-museum.de",
+  "group": "District & local museums (mostly free)",
+  "note": "",
+  "yours": false,
+  "always_free": true,
+  "address": "Adalbertstraße 95A, 10999",
+  "opening_hours": "Tu-Th 12:00-18:00; Fr-Su 10:00-20:00; Mo off",
+  "status": "live"
+ },
+ {
+  "id": 223,
+  "name": "Museum Neukölln",
+  "url": "https://museum-neukoelln.de",
+  "group": "District & local museums (mostly free)",
+  "note": "",
+  "yours": false,
+  "always_free": true,
+  "address": "Alt-Britz 81, 12359",
+  "opening_hours": "Mo-Su 10:00-18:00",
+  "status": "live"
+ },
+ {
+  "id": 224,
+  "name": "Jugend Museum Schöneberg",
+  "url": "https://jugendmuseum.de",
+  "group": "District & local museums (mostly free)",
+  "note": "",
+  "yours": false,
+  "always_free": true,
+  "address": "Hauptstraße 40/42, 10827",
+  "opening_hours": "Sa-Th 14:00-18:00; Fr 09:00-14:00",
+  "status": "live",
+  "rss": "https://museen-tempelhof-schoeneberg.de/feed/"
+ },
+ {
+  "id": 225,
+  "name": "Gründerzeitmuseum Mahlsdorf",
+  "url": "https://gruenderzeitmuseum.de",
+  "group": "District & local museums (mostly free)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://gruenderzeitmuseum.de/feed/"
+ },
+ {
+  "id": 226,
+  "name": "Capitain Petzel",
+  "url": "https://capitainpetzel.de",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.capitainpetzel.de/feed/"
+ },
+ {
+  "id": 227,
+  "name": "BQ",
+  "url": "https://bqberlin.de/",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "corrected": true,
+  "status": "live"
+ },
+ {
+  "id": 228,
+  "name": "Galerie Neu",
+  "url": "https://galerieneu.net/",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "corrected": true,
+  "status": "live"
+ },
+ {
+  "id": 229,
+  "name": "Kewenig",
+  "url": "https://kewenig.com",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 230,
+  "name": "Galerie Judin",
+  "url": "https://galeriejudin.com",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 231,
+  "name": "Galerie Michael Janssen",
+  "url": "https://galeriemichaeljanssen.de",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 232,
+  "name": "Galerie Molitor",
+  "url": "https://galeriemolitor.com",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 233,
+  "name": "Galerie Gilla Lörcher",
+  "url": "https://galeriegillaloercher.de",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 234,
+  "name": "Dittrich & Schlechtriem",
+  "url": "https://dittrich-schlechtriem.com",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://dittrich-schlechtriem.com/feed/"
+ },
+ {
+  "id": 235,
+  "name": "DNA Galerie",
+  "url": "https://dna-galerie.de",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 236,
+  "name": "Hošek Contemporary",
+  "url": "https://hosekcontemporary.com",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 237,
+  "name": "ITALIC",
+  "url": "https://italic.de",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 238,
+  "name": "Jarmuschek + Partner",
+  "url": "https://jarmuschek.de",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.jarmuschek.de/work?format=rss"
+ },
+ {
+  "id": 239,
+  "name": "Neue Berliner Räume",
+  "url": "https://neueberlinerraeume.de",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 240,
+  "name": "New Fears",
+  "url": "https://newfears.net",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 241,
+  "name": "nGbK (neue Gesellschaft für bildende Kunst)",
+  "url": "https://ngbk.de",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 242,
+  "name": "Noah Klink",
+  "url": "https://noahklink.com",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 243,
+  "name": "NOME",
+  "url": "https://nomegallery.com",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://nomegallery.com/feed/"
+ },
+ {
+  "id": 244,
+  "name": "Office Impart",
+  "url": "https://officeimpart.com",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 245,
+  "name": "Directors Lounge",
+  "url": "https://directorslounge.net",
+  "group": "More galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://directorslounge.net/stories/feed/"
+ },
+ {
+  "id": 246,
+  "name": "Boros Foundation",
+  "url": "https://boros.de",
+  "group": "Art foundations & non-profit art spaces (free / free days)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.boros.de/feed/"
+ },
+ {
+  "id": 247,
+  "name": "Julia Stoschek Foundation",
+  "url": "https://jsc.art",
+  "group": "Art foundations & non-profit art spaces (free / free days)",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 248,
+  "name": "Schinkel Pavillon",
+  "url": "https://schinkelpavillon.de",
+  "group": "Art foundations & non-profit art spaces (free / free days)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 249,
+  "name": "Künstlerhaus Bethanien",
+  "url": "https://bethanien.de",
+  "group": "Art foundations & non-profit art spaces (free / free days)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 250,
+  "name": "Haus am Waldsee",
+  "url": "https://hausamwaldsee.de",
+  "group": "Art foundations & non-profit art spaces (free / free days)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 251,
+  "name": "Haus am Lützowplatz",
+  "url": "https://www.hal-berlin.de/",
+  "group": "Art foundations & non-profit art spaces (free / free days)",
+  "note": "",
+  "yours": false,
+  "corrected": true,
+  "always_free": true,
+  "address": "Lützowplatz 9, 10785",
+  "opening_hours": "Tu-Su 11:00-18:00; Mo off",
+  "status": "live",
+  "rss": "https://www.hal-berlin.de/feed/"
+ },
+ {
+  "id": 252,
+  "name": "Galerie Wedding (kommunale Galerie)",
+  "url": "https://galeriewedding.de",
+  "group": "Art foundations & non-profit art spaces (free / free days)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://galeriewedding.de/feed/"
+ },
+ {
+  "id": 253,
+  "name": "Direktorenhaus",
+  "url": "https://direktorenhaus.com",
+  "group": "Art foundations & non-profit art spaces (free / free days)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.direktorenhaus.com/feed/"
+ },
+ {
+  "id": 254,
+  "name": "Berlin.de – free-entry museum index",
+  "url": "https://berlin.de/museum/eintritt-frei/",
+  "group": "More museums & the master index",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/museum/eintritt-frei/rubric.rss"
+ },
+ {
+  "id": 255,
+  "name": "Stadtmuseum Berlin (Märkisches Museum, Ephraim-Palais, Nikolaikirche, Knoblauchhaus)",
+  "url": "https://stadtmuseum.de",
+  "group": "More museums & the master index",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 256,
+  "name": "Museum der Stille",
+  "url": "https://museum-der-stille.de",
+  "group": "More museums & the master index",
+  "note": "weekends only",
+  "yours": false,
+  "always_free": true,
+  "address": "Linienstraße 154A, 10115",
+  "opening_hours": "Sa,Su 14:00-19:00",
+  "status": "live",
+  "rss": "http://museum-der-stille.de/de/feed/"
+ },
+ {
+  "id": 257,
+  "name": "Industriesalon Schöneweide",
+  "url": "https://industriesalon.de",
+  "group": "More museums & the master index",
+  "note": "Apr–Sep 14–18; Oct–Mar Thu–Sun 13–17",
+  "yours": false,
+  "always_free": true,
+  "address": "Reinbeckstraße 10, 12459",
+  "opening_hours": "Th-Su 14:00-18:00",
+  "status": "live",
+  "rss": "https://www.industriesalon.de/feed/"
+ },
+ {
+  "id": 258,
+  "name": "Stabi Kulturwerk (Staatsbibliothek)",
+  "url": "https://staatsbibliothek-berlin.de",
+  "group": "More museums & the master index",
+  "note": "",
+  "yours": false,
+  "always_free": true,
+  "address": "Unter den Linden 8, 10117",
+  "opening_hours": "We 10:00-18:00; Th 10:00-20:00; Fr-Su 10:00-18:00; Mo,Tu off",
+  "status": "live"
+ },
+ {
+  "id": 259,
+  "name": "Museum Lichtenberg",
+  "url": "https://museum-lichtenberg.de",
+  "group": "More museums & the master index",
+  "note": "",
+  "yours": false,
+  "always_free": true,
+  "address": "Türrschmidtstraße 24, 10317",
+  "opening_hours": "Tu-Su 11:00-18:00; Mo off",
+  "status": "live"
+ },
+ {
+  "id": 260,
+  "name": "Kaiser-Wilhelm-Gedächtniskirche",
+  "url": "https://gedaechtniskirche-berlin.de",
+  "group": "Churches with free concerts",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 261,
+  "name": "St. Marienkirche",
+  "url": "https://marienkirche-berlin.de",
+  "group": "Churches with free concerts",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://marienkirche-berlin.de/feed/"
+ },
+ {
+  "id": 262,
+  "name": "Shakespeare and Sons",
+  "url": "https://shakespeareandsons.com",
+  "group": "Bookshops with free readings / quiz nights / book clubs",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 263,
+  "name": "Curious Fox",
+  "url": "https://curiousfox.de",
+  "group": "Bookshops with free readings / quiz nights / book clubs",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 264,
+  "name": "ocelot",
+  "url": "https://ocelot.de",
+  "group": "Bookshops with free readings / quiz nights / book clubs",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 265,
+  "name": "Another Country",
+  "url": "https://anothercountry.de",
+  "group": "Bookshops with free readings / quiz nights / book clubs",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 266,
+  "name": "Saint George's English Bookshop",
+  "url": "https://saintgeorgesbookshop.com",
+  "group": "Bookshops with free readings / quiz nights / book clubs",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 267,
+  "name": "Pro qm (art/urbanism, many events)",
+  "url": "https://pro-qm.de",
+  "group": "Bookshops with free readings / quiz nights / book clubs",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 268,
+  "name": "Bücherbogen am Savignyplatz",
+  "url": "https://buecherbogen.com",
+  "group": "Bookshops with free readings / quiz nights / book clubs",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 269,
+  "name": "Dussmann das KulturKaufhaus",
+  "url": "https://kulturkaufhaus.de",
+  "group": "Bookshops with free readings / quiz nights / book clubs",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 270,
+  "name": "She Said (feminist/queer)",
+  "url": "https://shesaid.de",
+  "group": "Bookshops with free readings / quiz nights / book clubs",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 271,
+  "name": "Die Buchkönigin",
+  "url": "https://buchkoenigin.de",
+  "group": "Bookshops with free readings / quiz nights / book clubs",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 272,
+  "name": "Berliner Büchertisch",
+  "url": "https://buechertisch.org",
+  "group": "Bookshops with free readings / quiz nights / book clubs",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 273,
+  "name": "Zabriskie (nature/culture)",
+  "url": "https://zabriskie.de",
+  "group": "Bookshops with free readings / quiz nights / book clubs",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 274,
+  "name": "Mundo Azul (children's)",
+  "url": "https://mundoazul.de",
+  "group": "Bookshops with free readings / quiz nights / book clubs",
+  "note": "",
+  "yours": false,
+  "status": "blocked"
+ },
+ {
+  "id": 275,
+  "name": "Hammett Krimibuchhandlung",
+  "url": "https://hammett-krimis.de",
+  "group": "Bookshops with free readings / quiz nights / book clubs",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 276,
+  "name": "Collegium Hungaricum Berlin (CHB)",
+  "url": "https://culture.hu/de/berlin",
+  "group": "Cultural institutes (verified)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 277,
+  "name": "Goethe-Institut Berlin (incl. \"Goethe-Institut in Exile\")",
+  "url": "https://goethe.de",
+  "group": "Cultural institutes (verified)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 278,
+  "name": "Freie Universität Berlin",
+  "url": "https://fu-berlin.de",
+  "group": "Universities — free public lectures & concerts",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 279,
+  "name": "Technische Universität Berlin",
+  "url": "https://tu.berlin",
+  "group": "Universities — free public lectures & concerts",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 280,
+  "name": "UdK Berlin (free student concerts, class evenings)",
+  "url": "https://udk-berlin.de",
+  "group": "Universities — free public lectures & concerts",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 281,
+  "name": "Bard College Berlin",
+  "url": "https://berlin.bard.edu",
+  "group": "Universities — free public lectures & concerts",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 282,
+  "name": "Hertie School",
+  "url": "https://hertie-school.org",
+  "group": "Universities — free public lectures & concerts",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 283,
+  "name": "ok!choir (unauditioned; monthly open drop-in \"Pop Up\")",
+  "url": "https://okchoir.com",
+  "group": "Open / free choirs",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 284,
+  "name": "SHE Choir Berlin (free, non-audition, FLINTA*)",
+  "url": "https://shechoir.com/berlin",
+  "group": "Open / free choirs",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 285,
+  "name": "Berliner Oratorien-Chor (open Wednesday rehearsal to try)",
+  "url": "https://berliner-oratorienchor.de",
+  "group": "Open / free choirs",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://berliner-oratorienchor.de/feed/"
+ },
+ {
+  "id": 286,
+  "name": "KINDL – Zentrum für zeitgenössische Kunst",
+  "url": "https://kindl-berlin.de",
+  "group": "Non-profit art spaces & Kunstvereine (free entry, free openings)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.kindl-berlin.de/kindl?format=rss"
+ },
+ {
+  "id": 287,
+  "name": "Kunstraum Kreuzberg/Bethanien",
+  "url": "https://kunstraumkreuzberg.de",
+  "group": "Non-profit art spaces & Kunstvereine (free entry, free openings)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://kunstraumkreuzberg.de/feed/"
+ },
+ {
+  "id": 288,
+  "name": "alpha nova & galerie futura",
+  "url": "https://alpha-nova-kulturwerkstatt.de",
+  "group": "Non-profit art spaces & Kunstvereine (free entry, free openings)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.galeriefutura.de/feed/"
+ },
+ {
+  "id": 289,
+  "name": "Art Laboratory Berlin",
+  "url": "https://artlaboratory-berlin.org",
+  "group": "Non-profit art spaces & Kunstvereine (free entry, free openings)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://artlaboratory-berlin.org/feed/"
+ },
+ {
+  "id": 290,
+  "name": "bi'bak",
+  "url": "https://bi-bak.de",
+  "group": "Non-profit art spaces & Kunstvereine (free entry, free openings)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://bi-bak.de/events-en.rss"
+ },
+ {
+  "id": 291,
+  "name": "Flutgraben e.V.",
+  "url": "https://flutgraben.org",
+  "group": "Non-profit art spaces & Kunstvereine (free entry, free openings)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 292,
+  "name": "Deutsches Architektur Zentrum (DAZ)",
+  "url": "https://daz.de",
+  "group": "Non-profit art spaces & Kunstvereine (free entry, free openings)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 293,
+  "name": "Berliner Künstlerprogramm des DAAD",
+  "url": "https://berliner-kuenstlerprogramm.de",
+  "group": "Non-profit art spaces & Kunstvereine (free entry, free openings)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 294,
+  "name": "Kunstverein Neukölln",
+  "url": "https://kunstverein-neukoelln.de",
+  "group": "Non-profit art spaces & Kunstvereine (free entry, free openings)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.kunstverein-neukoelln.de/feed/"
+ },
+ {
+  "id": 295,
+  "name": "Apartment Project",
+  "url": "https://berlin.apartmentproject.org",
+  "group": "Non-profit art spaces & Kunstvereine (free entry, free openings)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "http://berlin.apartmentproject.org/feed/"
+ },
+ {
+  "id": 296,
+  "name": "Galerie Thomas Schulte",
+  "url": "https://galeriethomasschulte.de",
+  "group": "Notable galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 297,
+  "name": "Galerie Isabella Bortolozzi",
+  "url": "https://bortolozzi.com",
+  "group": "Notable galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://bortolozzi.com/feed/"
+ },
+ {
+  "id": 298,
+  "name": "ChertLüdde",
+  "url": "https://chertluedde.com",
+  "group": "Notable galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://chertluedde.com/feed/"
+ },
+ {
+  "id": 299,
+  "name": "Galerie Crone",
+  "url": "https://galeriecrone.com",
+  "group": "Notable galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 300,
+  "name": "Kuckei + Kuckei",
+  "url": "https://kuckei-kuckei.de",
+  "group": "Notable galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 301,
+  "name": "KUNSTSAELE Berlin",
+  "url": "https://kunstsaele.de",
+  "group": "Notable galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 302,
+  "name": "BBA Gallery (artist-run, open calls)",
+  "url": "https://bba-gallery.com",
+  "group": "Notable galleries (free to enter)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 303,
+  "name": "RambaZamba Theater (inclusive, Kulturbrauerei)",
+  "url": "https://rambazamba-theater.de",
+  "group": "Independent culture venues with free/low-cost programmes",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 304,
+  "name": "Brotfabrik (Bühne · Kino · free gallery, Weißensee)",
+  "url": "https://brotfabrik-berlin.de",
+  "group": "Independent culture venues with free/low-cost programmes",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://brotfabrik-berlin.de/feed/",
+  "ical": "https://brotfabrik-berlin.de/veranstaltungen/?ical=1"
+ },
+ {
+  "id": 305,
+  "name": "bpigs",
+  "url": "https://bpigs.com",
+  "group": "Independent culture venues with free/low-cost programmes",
+  "note": "bpigs.com",
+  "yours": false,
+  "status": "live",
+  "rss": "https://bpigs.com/rss.xml"
+ },
+ {
+  "id": 306,
+  "name": "Berlin.de – Community Gardens (index)",
+  "url": "https://berlin.de/en/urban-gardening/community-gardens/",
+  "group": "Community gardens (free open-gardening days, workshops, lectures)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/en/urban-gardening/community-gardens/rubric.rss"
+ },
+ {
+  "id": 307,
+  "name": "Prinzessinnengarten Kollektiv",
+  "url": "https://prinzessinnengarten-kollektiv.net",
+  "group": "Community gardens (free open-gardening days, workshops, lectures)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://prinzessinnengarten-kollektiv.net/feed/",
+  "ical": "https://prinzessinnengarten-kollektiv.net/events/?ical=1"
+ },
+ {
+  "id": 308,
+  "name": "himmelbeet (Wedding)",
+  "url": "https://himmelbeet.de",
+  "group": "Community gardens (free open-gardening days, workshops, lectures)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://himmelbeet.de/share/himmelbeet-berlin-wedding.xml"
+ },
+ {
+  "id": 309,
+  "name": "Türkisch-Deutsches Umweltzentrum (BIO-Gärten)",
+  "url": "https://tdz-berlin.de",
+  "group": "Community gardens (free open-gardening days, workshops, lectures)",
+  "note": "",
+  "yours": false,
+  "status": "parked"
+ },
+ {
+  "id": 310,
+  "name": "Stadtbibliothek Mitte",
+  "url": "https://berlin.de/stadtbibliothek-mitte/",
+  "group": "District public-library systems (each runs a full free-events programme)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/stadtbibliothek-mitte/index.php/rss"
+ },
+ {
+  "id": 311,
+  "name": "Stadtbibliothek Friedrichshain-Kreuzberg (Bez.-Zentralbib. Pablo Neruda)",
+  "url": "https://berlin.de/stadtbibliothek-friedrichshain-kreuzberg/",
+  "group": "District public-library systems (each runs a full free-events programme)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/stadtbibliothek-friedrichshain-kreuzberg/index.php/rss"
+ },
+ {
+  "id": 312,
+  "name": "Stadtbibliothek Pankow",
+  "url": "https://berlin.de/stadtbibliothek-pankow/",
+  "group": "District public-library systems (each runs a full free-events programme)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/stadtbibliothek-pankow/index.php/rss"
+ },
+ {
+  "id": 313,
+  "name": "Stadtbibliothek Charlottenburg-Wilmersdorf",
+  "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/stadtbibliothek/",
+  "group": "District public-library systems (each runs a full free-events programme)",
+  "note": "",
+  "yours": false,
+  "corrected": true,
+  "status": "live",
+  "rss": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/stadtbibliothek/index.php/rss"
+ },
+ {
+  "id": 314,
+  "name": "Stadtbibliothek Neukölln (Helene-Nathan-Bibliothek)",
+  "url": "https://berlin.de/stadtbibliothek-neukoelln/",
+  "group": "District public-library systems (each runs a full free-events programme)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/stadtbibliothek-neukoelln/index.php/rss"
+ },
+ {
+  "id": 315,
+  "name": "Stadtbibliothek Tempelhof-Schöneberg",
+  "url": "https://berlin.de/stadtbibliothek-tempelhof-schoeneberg/",
+  "group": "District public-library systems (each runs a full free-events programme)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/stadtbibliothek-tempelhof-schoeneberg/index.php/rss"
+ },
+ {
+  "id": 316,
+  "name": "Stadtbibliothek Steglitz-Zehlendorf",
+  "url": "https://berlin.de/stadtbibliothek-steglitz-zehlendorf/",
+  "group": "District public-library systems (each runs a full free-events programme)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/stadtbibliothek-steglitz-zehlendorf/index.php/rss"
+ },
+ {
+  "id": 317,
+  "name": "Stadtbibliothek Lichtenberg",
+  "url": "https://berlin.de/stadtbibliothek-lichtenberg/",
+  "group": "District public-library systems (each runs a full free-events programme)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/stadtbibliothek-lichtenberg/index.php/rss"
+ },
+ {
+  "id": 318,
+  "name": "Stadtbibliothek Treptow-Köpenick",
+  "url": "https://berlin.de/stadtbibliothek-treptow-koepenick/",
+  "group": "District public-library systems (each runs a full free-events programme)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/stadtbibliothek-treptow-koepenick/index.php/rss"
+ },
+ {
+  "id": 319,
+  "name": "Stadtbibliothek Marzahn-Hellersdorf",
+  "url": "https://www.berlin.de/bibliotheken-mh/",
+  "group": "District public-library systems (each runs a full free-events programme)",
+  "note": "",
+  "yours": false,
+  "corrected": true,
+  "status": "live",
+  "rss": "https://www.berlin.de/bibliotheken-mh/index.php/rss"
+ },
+ {
+  "id": 320,
+  "name": "Stadtbibliothek Spandau",
+  "url": "https://berlin.de/stadtbibliothek-spandau/",
+  "group": "District public-library systems (each runs a full free-events programme)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/stadtbibliothek-spandau/index.php/rss"
+ },
+ {
+  "id": 321,
+  "name": "Stadtbibliothek Reinickendorf",
+  "url": "https://berlin.de/stadtbibliothek-reinickendorf/",
+  "group": "District public-library systems (each runs a full free-events programme)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://www.berlin.de/stadtbibliothek-reinickendorf/index.php/rss"
+ },
+ {
+  "id": 322,
+  "name": "Statthaus Böcklerpark (KMA e.V.)",
+  "url": "https://kma-ev.de",
+  "group": "Cultural centres (free programmes)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 323,
+  "name": "Wiesenburg (Wedding)",
+  "url": "https://diewiesenburg.berlin",
+  "group": "Cultural centres (free programmes)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://diewiesenburg.berlin/feed/"
+ },
+ {
+  "id": 324,
+  "name": "Sonntags-Club",
+  "url": "https://sonntags-club.de",
+  "group": "Queer & LGBTQ+ community / culture centres (free events, counselling, café)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 325,
+  "name": "Lesbenberatung Berlin",
+  "url": "https://lesbenberatung-berlin.de",
+  "group": "Queer & LGBTQ+ community / culture centres (free events, counselling, café)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://lesbenberatung-berlin.de/feed"
+ },
+ {
+  "id": 326,
+  "name": "Schwulenberatung Berlin",
+  "url": "https://schwulenberatungberlin.de",
+  "group": "Queer & LGBTQ+ community / culture centres (free events, counselling, café)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://schwulenberatungberlin.de/feed/"
+ },
+ {
+  "id": 327,
+  "name": "Mann-O-Meter",
+  "url": "https://mann-o-meter.de",
+  "group": "Queer & LGBTQ+ community / culture centres (free events, counselling, café)",
+  "note": "",
+  "yours": false,
+  "status": "live"
+ },
+ {
+  "id": 328,
+  "name": "RuT – Rad und Tat (lesbian culture)",
+  "url": "https://rut-berlin.de",
+  "group": "Queer & LGBTQ+ community / culture centres (free events, counselling, café)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://rut-berlin.de/feed/"
+ },
+ {
+  "id": 329,
+  "name": "LSVD Berlin-Brandenburg",
+  "url": "https://berlin.lsvd.de",
+  "group": "Queer & LGBTQ+ community / culture centres (free events, counselling, café)",
+  "note": "",
+  "yours": false,
+  "status": "live",
+  "rss": "https://lsvd.berlin/feed/",
+  "ical": "https://lsvd.berlin/events/?ical=1"
+ },
+ {
+  "id": 330,
+  "name": "Siegessäule (free queer city magazine + event calendar)",
+  "url": "https://www.siegessaeule.de/",
+  "group": "Queer & LGBTQ+ community / culture centres (free events, counselling, café)",
+  "note": "",
+  "yours": false,
+  "corrected": true,
+  "status": "live"
+ }
+]

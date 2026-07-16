@@ -42,12 +42,6 @@ ics_feeds:
     url: "manual.ics"
     category: "community"
 
-  # Bundled demo feed (a local file) so the pipeline produces output before you
-  # add real feeds. Delete this entry once you've added your own.
-  - name: "Demo"
-    url: "sample.ics"
-    category: "other"
-
   # ── Add real feeds below. Find them via a venue/org's "Subscribe / Add to
   #    calendar" link, or a public Google Calendar's "Public address in iCal format".
   # - name: "SO36"          # Kreuzberg venue

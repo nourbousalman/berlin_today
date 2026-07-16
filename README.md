@@ -15,7 +15,7 @@ data a few times a day and **GitHub Pages** serves the page.
 **Free/cheap only:** the aggregator drops anything over **€5** (set by `max_price` in config) and anything known to be paid without a stated price. Resident Advisor is **off** by default for this reason — it's paid clubs and its API doesn't expose prices, so every event came through as "ticketed" with no amount. Flip `resident_advisor.enabled` to `true` if you ever want paid nightlife back.
 
 ```
-sources ──► aggregate.py ──► docs/events.json ──► docs/index.html (the page)
+sources ──► aggregate.py ──► docs/data.json ──► docs/index.html (the page)
    ▲                                 ▲
 GitHub Action (cron, every 6h) ──────┘
 ```
@@ -87,7 +87,7 @@ thing going dark.
 
 ```bash
 pip install -r requirements.txt
-python aggregate.py            # writes docs/events.json
+python aggregate.py            # writes docs/data.json
 cd docs && python -m http.server 8000   # open http://localhost:8000
 ```
 
@@ -96,7 +96,7 @@ cd docs && python -m http.server 8000   # open http://localhost:8000
 ## Files
 
 ```
-aggregate.py            orchestrates all sources → docs/events.json
+aggregate.py            orchestrates all sources → docs/data.json
 config.yaml             your sources + settings (edit this)
 sources/
   base.py               Event schema, category mapping, de-dup
@@ -105,8 +105,8 @@ sources/
   rss_feeds.py          generic RSS/Atom ingester
   html_scrapers.py      optional, fragile, off by default
 docs/
-  index.html            the page (loads events.json, filters client-side)
-  events.json           generated data
+  index.html            the page (loads data.json, filters client-side)
+  data.json           generated data
 .github/workflows/update.yml   the scheduler
 sample.ics              demo calendar so the page isn't empty on day one
 ```

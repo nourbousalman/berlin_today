@@ -19,7 +19,6 @@
   body{background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:500;line-height:1.45;-webkit-font-smoothing:antialiased}
   a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 
-  /* soft, calm colour per category */
   .cat-music{--c:#E1734E;--cb:#FCE6DD}
   .cat-nightlife{--c:#9A72CF;--cb:#EDE4FB}
   .cat-art{--c:#D66A9E;--cb:#FBE1EE}
@@ -28,10 +27,18 @@
   .cat-market{--c:#C6912F;--cb:#FAECCF}
   .cat-other{--c:#8C88A0;--cb:#ECEAF3}
 
-  .mast{padding:26px clamp(16px,4vw,40px) 14px}
+  .mast{padding:26px clamp(16px,4vw,40px) 8px}
   .mast h1{font-family:var(--disp);font-size:clamp(30px,6vw,52px);font-weight:600;letter-spacing:-.01em;margin:0;line-height:1;color:var(--head)}
   .mast h1 .a{color:var(--accent)}
   .mast .sub{font-size:13px;color:var(--muted);margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-weight:600}
+
+  /* top-level tabs */
+  .tabs{display:flex;gap:6px;padding:6px clamp(16px,4vw,40px) 0;flex-wrap:wrap}
+  .tab{font-family:var(--disp);font-weight:500;font-size:15px;border:0;background:transparent;color:var(--muted);padding:9px 16px;border-radius:12px 12px 0 0;cursor:pointer;transition:color .15s,background .15s}
+  .tab:hover{color:var(--head)}
+  .tab[aria-selected="true"]{color:var(--head);background:var(--surface);box-shadow:0 -2px 8px rgba(60,50,80,.05)}
+  .tab .n{font-family:var(--body);font-size:12px;font-weight:700;color:var(--muted);margin-left:7px;background:var(--track);border-radius:999px;padding:1px 8px}
+  .tab[aria-selected="true"] .n{background:var(--accent-soft);color:var(--accent)}
 
   .controls{position:sticky;top:0;z-index:5;background:rgba(251,247,241,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px clamp(16px,4vw,40px)}
   .ctrl-top{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
@@ -41,8 +48,8 @@
   .seg button{font-family:var(--body);font-weight:700;font-size:13px;border:0;border-radius:999px;background:transparent;color:var(--ink);padding:6px 13px;cursor:pointer;transition:background .15s,color .15s}
   .seg button:hover{color:var(--head)}
   .seg button[aria-pressed="true"]{background:var(--surface);color:var(--head);box-shadow:var(--shadow)}
-  .mode-seg{background:var(--accent-soft)}
-  .mode-seg button[aria-pressed="true"]{background:var(--accent);color:#fff;box-shadow:none}
+  .recur-seg{background:var(--accent-soft)}
+  .recur-seg button[aria-pressed="true"]{background:var(--accent);color:#fff;box-shadow:none}
   .searchwrap{flex:1;min-width:180px;display:flex}
   .search{flex:1;font-family:var(--body);font-weight:600;font-size:14px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:9px 16px;color:var(--ink)}
   .search::placeholder{color:var(--muted)}
@@ -72,15 +79,23 @@
   .tag.free{background:#D6EFDF;color:#358056}
   .tag.price{background:#F0ECE6;color:#7C776C}
   .tag.cadence{background:var(--track);color:var(--muted)}
+  .tag.kind{background:transparent;color:var(--muted);font-weight:700;border:1px solid var(--line);padding:2px 9px}
   .tag.tr{background:transparent;color:var(--muted);font-weight:700;padding:3px 0}
 
-  .dir{margin-bottom:6px}
-  .dir-item{display:block;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:12px 16px;margin-bottom:8px;border-left:5px solid var(--accent);transition:transform .12s,box-shadow .15s}
-  .dir-item:hover{text-decoration:none;transform:translateY(-2px);box-shadow:0 6px 18px rgba(60,50,80,.10)}
-  .dir-name{font-family:var(--disp);font-size:16px;font-weight:500;color:var(--accent)}
-  .dir-note{display:block;font-size:12.5px;color:var(--muted);margin-top:3px;font-weight:600}
+  /* always-free + manual-check cards */
+  .card{display:block;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:13px 16px;margin-bottom:9px;border-left:5px solid var(--c,var(--accent));transition:transform .12s,box-shadow .15s}
+  .card:hover{text-decoration:none;transform:translateY(-2px);box-shadow:0 6px 18px rgba(60,50,80,.10)}
+  .card .row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .card .nm{font-family:var(--disp);font-size:16px;font-weight:500;color:var(--head)}
+  .card a.nm:hover{color:var(--accent)}
+  .card .sub2{display:block;font-size:12.5px;color:var(--muted);margin-top:4px;font-weight:600}
+  .badge{font-size:11px;font-weight:800;border-radius:999px;padding:2px 10px;letter-spacing:.02em}
+  .badge.open{background:#D6EFDF;color:#358056}
+  .badge.closed{background:#F6E1E1;color:#B4585B}
+  .badge.hrs{background:var(--track);color:var(--muted)}
+  .reason{background:var(--track);color:var(--muted);font-size:11px;font-weight:800;border-radius:999px;padding:2px 10px;white-space:nowrap}
 
-  .state{font-size:14px;color:var(--muted);padding:50px 6px;line-height:1.7;max-width:54ch;font-weight:600}
+  .state{font-size:14px;color:var(--muted);padding:50px 6px;line-height:1.7;max-width:56ch;font-weight:600}
   .state b{display:block;font-family:var(--disp);color:var(--head);font-size:18px;font-weight:600;margin-bottom:6px}
   code{background:var(--track);border-radius:6px;padding:1px 6px;font-size:12.5px;font-family:ui-monospace,monospace}
 
@@ -106,26 +121,32 @@
     <div class="sub"><span id="count">loading…</span><span id="updated"></span><span>Berlin · free &amp; almost-free</span></div>
   </header>
 
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Sections">
+    <button class="tab" data-tab="events"  role="tab" aria-selected="true">Events <span class="n" id="tabnEvents">·</span></button>
+    <button class="tab" data-tab="free"    role="tab" aria-selected="false">Always free <span class="n" id="tabnFree">·</span></button>
+    <button class="tab" data-tab="manual"  role="tab" aria-selected="false">Manual check <span class="n" id="tabnManual">·</span></button>
+  </nav>
+
   <section class="controls" id="controls" aria-label="Filters">
     <div class="ctrl-top">
-      <div class="group" role="group" aria-label="View">
-        <span class="lbl">View</span>
-        <div class="seg mode-seg" id="modes">
-          <button data-mode="oneoff" aria-pressed="true">One-off</button>
-          <button data-mode="recurring" aria-pressed="false">Recurring</button>
-          <button data-mode="directory" aria-pressed="false">Directory</button>
+      <div class="group ev-only" role="group" aria-label="Type">
+        <span class="lbl">Type</span>
+        <div class="seg recur-seg" id="recur">
+          <button data-recur="all" aria-pressed="true">All</button>
+          <button data-recur="oneoff" aria-pressed="false">One-off</button>
+          <button data-recur="recurring" aria-pressed="false">Recurring</button>
         </div>
       </div>
-      <div class="group filter-row" id="whenRow" role="group" aria-label="When">
+      <div class="group ev-only" id="whenRow" role="group" aria-label="When">
         <span class="lbl">When</span>
         <div class="seg" id="presets">
-          <button data-preset="weekend" aria-pressed="true">This weekend</button>
-          <button data-preset="today" aria-pressed="false">Today</button>
-          <button data-preset="week" aria-pressed="false">7 days</button>
-          <button data-preset="all" aria-pressed="false">All</button>
+          <button data-when="weekend" aria-pressed="true">This weekend</button>
+          <button data-when="today" aria-pressed="false">Today</button>
+          <button data-when="week" aria-pressed="false">7 days</button>
+          <button data-when="all" aria-pressed="false">All</button>
         </div>
       </div>
-      <div class="group filter-row" role="group" aria-label="Cost">
+      <div class="group ev-only" role="group" aria-label="Cost">
         <span class="lbl">Cost</span>
         <div class="seg" id="costs">
           <button data-cost="any" aria-pressed="true">Any</button>
@@ -133,289 +154,192 @@
           <button data-cost="5" aria-pressed="false">≤€5</button>
         </div>
       </div>
-      <div class="group filter-row" role="group" aria-label="Sort">
+      <div class="group ev-only" role="group" aria-label="Sort">
         <span class="lbl">Sort</span>
         <div class="seg" id="sorts">
           <button data-sort="time" aria-pressed="true">Time</button>
           <button data-sort="price" aria-pressed="false">Price</button>
         </div>
       </div>
-      <div class="searchwrap filter-row">
-        <input class="search" id="search" type="search" placeholder="Search title or venue…" aria-label="Search">
+      <div class="searchwrap">
+        <input class="search" id="search" type="search" placeholder="Search…" aria-label="Search">
       </div>
     </div>
-    <div class="cats filter-row" id="cats" role="group" aria-label="Categories"><span class="lbl">What</span></div>
+    <div class="cats cat-row" id="cats" role="group" aria-label="Categories"><span class="lbl">What</span></div>
   </section>
 
-  <main id="feed"><div class="state">Loading events…</div></main>
-  <details class="sources" id="sources" hidden><summary>Sources — what's loading</summary><div class="src-grid" id="srcGrid"></div></details>
+  <main id="feed"><div class="state">Loading…</div></main>
+  <details class="sources" id="sources" hidden><summary>Feed sources — what's loading</summary><div class="src-grid" id="srcGrid"></div></details>
 
 <script>
 const CATS=[["music","Music"],["nightlife","Nightlife"],["art","Art / film / talks"],["sport","Sport"],["community","Community"],["market","Markets"],["other","Other"]];
 const WEEKDAYS=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-const DIRECTORY=[
-  {group:"Listings & what's on",items:[
-    {name:"gratis-in-berlin.de",url:"https://www.gratis-in-berlin.de/",note:"The dedicated free-events site + newsletter"},
-    {name:"Berlin.de — Events",url:"https://www.berlin.de/en/events/",note:"Official city listings"},
-    {name:"Berlin.de — Gratis",url:"https://www.berlin.de/kultur-und-tickets/gratis/",note:"Official free-entry events & museums"},
-    {name:"visitBerlin — Free",url:"https://www.visitberlin.de/en/events-free-berlin",note:"Curated free things to do"},
-    {name:"tip Berlin",url:"https://www.tip-berlin.de/",note:"City magazine; strong concert/party listings"},
-    {name:"The Berliner",url:"https://www.the-berliner.com/",note:"English-language culture guides"},
-    {name:"Rausgegangen — Berlin",url:"https://rausgegangen.de/en/berlin/",note:"Big event portal (this is where Ask Helmut moved)"},
-    {name:"Mit Vergnügen Berlin",url:"https://mitvergnuegen.com/",note:"City magazine; daily tips incl. free round-ups"},
-    {name:"iHeartBerlin",url:"https://www.iheartberlin.de/",note:"Art / nightlife / culture blog with weekly picks"},
-    {name:"QIEZ Berlin",url:"https://www.qiez.de/",note:"Neighbourhood events & free-sport guides"},
-    {name:"Reddit — r/berlin",url:"https://www.reddit.com/r/berlin/",note:"Locals post recurring free things & answer what is on"},
-    {name:"Meetup — all Berlin events",url:"https://www.meetup.com/find/?location=de--berlin&source=EVENTS",note:"Every kind of meetup; many free"},
-    {name:"Luma — Berlin",url:"https://luma.com/berlin",note:"Tech / creative / community events"},
-    {name:"Resident Advisor — Berlin",url:"https://ra.co/events/de/berlin",note:"Clubs & electronic (already fed into this page)"},
-    {name:"Eventbrite — Berlin free",url:"https://www.eventbrite.com/d/germany--berlin/free--events/",note:"Free events filter"},
-    {name:"CreativeMornings Berlin",url:"https://creativemornings.com/cities/ber",note:"Free monthly breakfast talks"},
-    {name:"Songkick — Berlin",url:"https://www.songkick.com/metro-areas/28443-germany-berlin",note:"Concert calendar & alerts"},
-  ]},
-  {group:"Music venues",items:[
-    {name:"SO36",url:"https://so36.de/",note:"Legendary Kreuzberg punk/indie/queer venue"},
-    {name:"Lido",url:"https://www.lido-berlin.de/",note:"Kreuzberg indie/rock/electro"},
-    {name:"Astra Kulturhaus",url:"https://www.astra-berlin.de/",note:"Mid-size concerts, RAW site"},
-    {name:"Cassiopeia",url:"https://www.cassiopeia-berlin.de/",note:"RAW-site club & live stage"},
-    {name:"Kesselhaus (Kulturbrauerei)",url:"https://www.kesselhaus-berlin.de/",note:"Rock, pop, world music"},
-    {name:"Badehaus",url:"https://badehaus-berlin.com/",note:"RAW venue; home of the Tuesday Swag Jam"},
-    {name:"Klunkerkranich",url:"https://klunkerkranich.org/",note:"Rooftop bar, music & free-ish entry"},
-    {name:"Silent Green",url:"https://www.silent-green.net/",note:"Former crematorium; concerts, film, art"},
-    {name:"Gretchen",url:"https://gretchen-club.de/",note:"Electronic, hip-hop, bass"},
-    {name:"YAAM",url:"https://www.yaam.de/",note:"Riverside reggae/dancehall/afrobeat & culture"},
-    {name:"Heimathafen Neukölln",url:"https://www.heimathafen-neukoelln.de/",note:"Concerts, theatre, readings"},
-    {name:"Festsaal Kreuzberg",url:"https://festsaal-kreuzberg.de/",note:"Eclectic concerts & events"},
-    {name:"Konzerthaus Berlin",url:"https://www.konzerthaus.de/",note:"Classical; cheap tickets & some free events"},
-    {name:"Berliner Philharmonie",url:"https://www.berliner-philharmoniker.de/",note:"World-class classical"},
-    {name:"Philharmonie Lunchkonzert",url:"https://www.berliner-philharmoniker.de/en/concerts/lunch-concerts/",note:"FREE, Wed 13:00, Sep–Jun"},
-  ]},
-  {group:"Jazz & jam sessions",items:[
-    {name:"berlinersessions.de",url:"https://berlinersessions.de/",note:"70+ open mics & jams by weekday/district"},
-    {name:"berlin-sessions.com",url:"https://berlin-sessions.com/",note:"Jam directory by genre"},
-    {name:"visitBerlin — 11 jazz bars",url:"https://www.visitberlin.de/en/blog/11-jazz-bars-berlin",note:"Guide to the city's jazz clubs"},
-    {name:"A-Trane",url:"https://www.a-trane.de/",note:"Charlottenburg jazz; free late-night jam sessions"},
-    {name:"b-flat",url:"https://b-flat-berlin.de/",note:"Mitte jazz; free Wednesday jam"},
-    {name:"Quasimodo",url:"https://www.quasimodo.de/",note:"Historic City West jazz club"},
-    {name:"Donau115",url:"https://www.donau115.de/",note:"Neukölln jazz; Two-Song-Tuesday open mic"},
-    {name:"ZigZag Jazzclub",url:"https://zigzag-jazz.de/",note:"Friedenau; free/donation shows"},
-  ]},
-  {group:"Clubs & nightlife",items:[
-    {name:"://about blank",url:"https://aboutblank.li/",note:"Club & garden, political collective"},
-    {name:"Holzmarkt",url:"https://www.holzmarkt.com/",note:"Riverside village: club, events, community"},
-    {name:"Berghain / Panorama Bar",url:"https://www.berghain.berlin/",note:"The techno institution; also concerts (Kantine)"},
-    {name:"SchwuZ",url:"https://www.schwuz.de/",note:"Long-running queer club & events"},
-    {name:"Südblock",url:"https://suedblock.org/",note:"Queer/inclusive Kreuzberg venue & café"},
-    {name:"K-Fetisch (Instagram)",url:"https://www.instagram.com/k_fetisch/",note:"Neukölln bar/collective — no feed, follow here"},
-    {name:"ida Nowhere (Instagram)",url:"https://www.instagram.com/ida_nowhere/",note:"Art/queer space — no feed, follow here"},
-    {name:"knoise",url:"https://knoise.org/",note:"Underground/experimental music listings"},
-    {name:"Stressfaktor",url:"https://stressfaktor.squat.net/termine",note:"DIY/autonomous calendar (bot-walled; browse by hand)"},
-  ]},
-  {group:"Theatre & dance",items:[
-    {name:"Volksbühne",url:"https://www.volksbuehne.berlin/en",note:"Flagship experimental theatre"},
-    {name:"Berliner Ensemble",url:"https://www.berliner-ensemble.de/",note:"Brecht's house; big repertoire"},
-    {name:"Deutsches Theater",url:"https://www.deutschestheater.de/",note:"Major state theatre"},
-    {name:"Schaubühne",url:"https://www.schaubuehne.de/en/",note:"Internationally known ensemble theatre"},
-    {name:"Maxim Gorki Theater",url:"https://www.gorki.de/en",note:"Post-migrant, socially engaged theatre"},
-    {name:"HAU Hebbel am Ufer",url:"https://www.hebbel-am-ufer.de/en/",note:"Contemporary performance & dance"},
-    {name:"Sophiensæle",url:"https://www.sophiensaele.com/en",note:"Independent dance & performance"},
-    {name:"Radialsystem",url:"https://www.radialsystem.de/en/",note:"Dance, new music, cross-arts on the Spree"},
-    {name:"SCDS Berlin",url:"https://www.scds-berlin.de/indexe.html",note:"Dance society — see site for classes/events"},
-  ]},
-  {group:"Cinema",items:[
-    {name:"Berlin.de — Kinos",url:"https://www.berlin.de/kino/kinos/",note:"All Berlin cinemas + weekly programme"},
-    {name:"visitBerlin — Cinemas",url:"https://www.visitberlin.de/en/cinemas",note:"Arthouse & original-version guide"},
-    {name:"Kino Babylon",url:"http://babylonberlin.eu/",note:"Free Sat-midnight silent film w/ live organ"},
-    {name:"Arsenal",url:"https://www.arsenal-berlin.de/",note:"Cinematheque; retrospectives & experimental"},
-    {name:"Wolf Kino",url:"https://wolfberlin.org/",note:"Neukölln neighbourhood arthouse"},
-    {name:"fsk Kino",url:"https://www.fsk-kino.de/",note:"Independent originals with subtitles"},
-    {name:"Il Kino",url:"https://www.ilkino.de/",note:"Neukölln; OV films, café & bar"},
-    {name:"Moviemento",url:"https://www.moviemento.de/",note:"Germany's oldest cinema; 15+ festivals/yr"},
-    {name:"Lichtblick Kino",url:"https://www.lichtblick-kino.org/",note:"Tiny Verein-run cult cinema (Casablanca nights)"},
-    {name:"b-ware! Ladenkino",url:"https://www.ladenkino.de/",note:"Cosy Friedrichshain arthouse"},
-  ]},
-  {group:"Museums & galleries",items:[
-    {name:"Staatliche Museen (SMB)",url:"https://www.smb.museum/en/home/",note:"Free under 18 daily; free 1st-Thu eve at Hamburger Bahnhof"},
-    {name:"Humboldt Forum",url:"https://www.humboldtforum.org/en/",note:"Large free & paid programme in the palace"},
-    {name:"Berlinische Galerie",url:"https://www.berlinischegalerie.de/en/",note:"Modern art; flat €7 first-Wed"},
-    {name:"KW Institute",url:"https://www.kw-berlin.de/en/",note:"Contemporary art, Mitte"},
-    {name:"Berliner Festspiele",url:"https://www.berlinerfestspiele.de/en",note:"Theatertreffen, JazzFest, MaerzMusik, Gropius Bau"},
-    {name:"C/O Berlin",url:"https://co-berlin.org/en",note:"Photography museum, Amerika Haus"},
-    {name:"Futurium",url:"https://futurium.de/en",note:"Museum of futures — FREE entry + events"},
-    {name:"Topographie des Terrors",url:"https://www.topographie.de/en/",note:"Documentation centre — FREE, daily"},
-    {name:"Haus der Kulturen der Welt",url:"https://www.hkw.de/en",note:"World cultures: talks, music, film, art"},
-    {name:"n.b.k.",url:"https://www.nbk.org/en/",note:"Neuer Berliner Kunstverein — free exhibitions"},
-    {name:"Jüdisches Museum",url:"https://www.jmberlin.de/en",note:"Jewish history & culture"},
-    {name:"Deutsches Historisches Museum",url:"https://www.dhm.de/en/",note:"German history (main building under renovation)"},
-    {name:"Museum für Naturkunde",url:"https://www.museumfuernaturkunde.berlin/en",note:"Natural history; dinosaurs"},
-    {name:"Schwules Museum",url:"https://www.schwulesmuseum.de/?lang=en",note:"Queer history & art"},
-    {name:"Berlin Art Link",url:"https://www.berlinartlink.com/",note:"Contemporary art events & openings, often free"},
-  ]},
-  {group:"Community & neighbourhood",items:[
-    {name:"Berliner Stadtteilzentren",url:"https://stadtteilzentren.de/",note:"Umbrella site — 40+ neighbourhood centres citywide"},
-    {name:"VskA Berlin",url:"https://vska.de/berlin/",note:"Association of Berlin's community houses"},
-    {name:"Rudi Nachbarschaftshaus",url:"https://rudi-nachbarschaftshaus.de/angebot/",note:"Kreuzberg community programme"},
-    {name:"NBH Neukölln",url:"https://www.nbh-neukoelln.de/angebot/erwachsene/",note:"Neukölln community programme"},
-    {name:"Mittelhof",url:"https://www.mittelhof.org/angebote/alle-angebote/",note:"Steglitz-Zehlendorf community programme"},
-    {name:"NBH Urbanstraße",url:"https://www.nachbarschaftshaus.de/angebote/",note:"Kreuzberg community house"},
-    {name:"NBH am Lietzensee (DRK)",url:"https://www.drk-berlin-zentrum.de/angebote/nachbarschaftshaus-am-lietzensee/veranstaltungen.html",note:"Charlottenburg events"},
-    {name:"Offenes Wohnzimmer",url:"https://offeneswohnzimmer.org/index.php/veranstaltungen/",note:"Community living-room events"},
-    {name:"Pfefferwerk",url:"https://www.pfefferwerk.de/",note:"Prenzlauer Berg Stadtteilzentrum"},
-    {name:"KREATIVHAUS",url:"https://www.kreativhaus-tpz.de/",note:"Fischerinsel community & theatre centre"},
-    {name:"ufaFabrik",url:"https://www.ufafabrik.de/en/",note:"Tempelhof culture farm; free festivals"},
-    {name:"Moabiter Ratschlag / Stadtschloss",url:"https://www.moabiter-ratschlag.de/",note:"Moabit neighbourhood house"},
-  ]},
-  {group:"Literature & talks",items:[
-    {name:"Berliner Literarische Aktion",url:"https://berliner-literarische-aktion.de/termine/",note:"Readings & literary events"},
-    {name:"Literaturhaus Berlin",url:"https://literaturhaus-berlin.de/",note:"Readings, talks in a Charlottenburg villa"},
-    {name:"Lettrétage",url:"https://lettretage.de/",note:"Independent literature house, Kreuzberg"},
-    {name:"LCB",url:"https://lcb.de/",note:"Literarisches Colloquium; lakeside readings"},
-  ]},
-  {group:"Cultural institutes",items:[
-    {name:"Italian Cultural Institute",url:"https://iicberlino.esteri.it/it/",note:"Italian films, talks, concerts"},
-    {name:"Institut français",url:"https://www.institutfrancais.de/",note:"French film nights, talks, events"},
-    {name:"Instituto Cervantes",url:"https://berlin.cervantes.es/",note:"Spanish-language culture & film"},
-    {name:"Nordic Embassies (Felleshus)",url:"https://www.nordicembassies.org/",note:"Nordic exhibitions, concerts, talks"},
-    {name:"Polish Institute",url:"https://instytutpolski.pl/berlin/",note:"Polish culture events"},
-    {name:"Japan Foundation (JKI)",url:"https://www.jki.de/",note:"Japanese culture, film, talks"},
-  ]},
-  {group:"Sport & outdoors",items:[
-    {name:"Sport im Park",url:"https://www.berlin.de/sen/inneres/sport/breitensport/sport-im-park/",note:"270+ free outdoor courses citywide"},
-    {name:"parkrun Germany",url:"https://www.parkrun.com.de/",note:"Free timed 5K, Saturdays"},
-    {name:"Running Clubs Berlin",url:"https://www.runningclubsberlin.de/",note:"Directory of free run crews"},
-    {name:"calisthenics-parks.com",url:"https://calisthenics-parks.com/regions/1-en-berlin-area",note:"Free outdoor gyms + communities"},
-    {name:"ADFC Berlin",url:"https://adfc-berlin.de/",note:"Cycling club; group rides & tours"},
-    {name:"DAV Sektion Berlin",url:"https://www.dav-berlin.de/",note:"Alpine club; hikes, climbing, trips"},
-  ]},
-  {group:"Markets, libraries & language",items:[
-    {name:"Berlin.de — Flea markets",url:"https://www.berlin.de/en/shopping/markets/flea-markets/",note:"Master list; most are free Sundays"},
-    {name:"Markthalle Neun",url:"https://markthalleneun.de/",note:"Street Food Thursday & market events"},
-    {name:"Kleidertausch",url:"https://kleidertausch.de/events/",note:"Free clothes-swap events"},
-    {name:"ZLB (Central Library)",url:"https://www.zlb.de/",note:"Free events, workshops, workspace"},
-    {name:"VÖBB (all libraries)",url:"https://www.voebb.de/",note:"Every Berlin public library + events"},
-    {name:"Tandem — language exchange",url:"https://tandem.net/language-exchange/germany/berlin",note:"Find 1-on-1 language partners"},
-  ]},
-];
-const state={mode:"oneoff",preset:"weekend",cats:new Set(),cost:"any",sort:"time",q:""};
-let ALL=[];
+const state={tab:"events",when:"weekend",recur:"all",cats:new Set(),cost:"any",sort:"time",q:""};
+let DATA={events:[],always_free:[],manual_check:[]};
 
 const bDate=iso=>new Date(iso).toLocaleDateString("en-CA",{timeZone:"Europe/Berlin"});
 const bTime=iso=>new Date(iso).toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit",timeZone:"Europe/Berlin"});
 const bDow=iso=>new Date(iso).toLocaleDateString("en-GB",{weekday:"long",timeZone:"Europe/Berlin"});
 const bDateL=iso=>new Date(iso).toLocaleDateString("en-GB",{day:"2-digit",month:"short",timeZone:"Europe/Berlin"});
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const catLabel=cat=>(CATS.find(c=>c[0]===cat)||["","Other"])[1].split(" ")[0];
 
+/* ---- date range for one-off "When" ---- */
 function weekendRange(){const d=new Date(),day=d.getDay(),s=new Date(d);if(day===0)s.setDate(d.getDate()-2);else if(day===6)s.setDate(d.getDate()-1);else s.setDate(d.getDate()+(5-day));s.setHours(0,0,0,0);const e=new Date(s);e.setDate(s.getDate()+2);e.setHours(23,59,59,999);return[s,e];}
-function range(){const now=new Date();if(state.preset==="weekend")return weekendRange();if(state.preset==="today"){const s=new Date(now);s.setHours(0,0,0,0);const e=new Date(now);e.setHours(23,59,59,999);return[s,e];}if(state.preset==="week"){const s=new Date(now);s.setHours(0,0,0,0);const e=new Date(s);e.setDate(s.getDate()+7);return[s,e];}const s=new Date(now);s.setHours(0,0,0,0);return[s,new Date(8.64e15)];}
+function range(){const now=new Date();if(state.when==="weekend")return weekendRange();if(state.when==="today"){const s=new Date(now);s.setHours(0,0,0,0);const e=new Date(now);e.setHours(23,59,59,999);return[s,e];}if(state.when==="week"){const s=new Date(now);s.setHours(0,0,0,0);const e=new Date(s);e.setDate(s.getDate()+7);return[s,e];}const s=new Date(now);s.setHours(0,0,0,0);return[s,new Date(8.64e15)];}
 
-function passesFilters(ev){
-  if(state.cats.size&&!state.cats.has(ev.category))return false;
+/* ---- filters shared by events + always-free ---- */
+function catQ(o,hayParts){
+  if(state.cats.size&&!state.cats.has(o.category))return false;
+  if(state.q){const hay=hayParts.filter(Boolean).join(" ").toLowerCase();if(!hay.includes(state.q))return false;}
+  return true;
+}
+function passesEvent(ev){
+  if(!catQ(ev,[ev.title,ev.venue,ev.area]))return false;
   if(state.cost==="free"&&ev.is_free!==true)return false;
   if(state.cost==="5"&&!(ev.is_free===true||(ev.price_value!=null&&ev.price_value<=5)))return false;
-  if(state.q){const hay=(ev.title+" "+(ev.venue||"")+" "+(ev.area||"")).toLowerCase();if(!hay.includes(state.q))return false;}
   return true;
 }
 const priceKey=ev=>ev.is_free===true?0:(ev.price_value!=null?ev.price_value:Infinity);
 
+/* ---- open-now from OSM opening_hours (pragmatic subset) ---- */
+const _DOWMAP={su:0,mo:1,tu:2,we:3,th:4,fr:5,sa:6};
+function berlinNow(){const p=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Berlin",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());const g=t=>p.find(x=>x.type===t).value;const dow=_DOWMAP[g("weekday").slice(0,2).toLowerCase()];let h=+g("hour");if(h===24)h=0;return{dow,mins:h*60+(+g("minute"))};}
+function openState(oh){
+  if(!oh)return null;
+  try{
+    const s=oh.trim();if(/^24\/7$/.test(s))return{cls:"open",text:"Open now"};
+    const{dow,mins}=berlinNow();let mentioned=false,openIntervals=[],offToday=false;
+    for(const rule of s.split(";")){
+      const m=rule.trim().match(/^([A-Za-z,\-\s]+?)\s+(.*)$/);if(!m)continue;
+      const days=new Set();
+      for(const part of m[1].split(",")){
+        const rng=part.trim().match(/^([A-Za-z]{2})(?:\s*-\s*([A-Za-z]{2}))?$/);if(!rng)continue;
+        const a=_DOWMAP[rng[1].toLowerCase()];if(a==null)continue;
+        if(rng[2]!=null){const b=_DOWMAP[rng[2].toLowerCase()];for(let d=a;;d=(d+1)%7){days.add(d);if(d===b)break;}}else days.add(a);
+      }
+      if(!days.has(dow))continue;mentioned=true;
+      const spec=m[2].trim();
+      if(/^off|closed$/i.test(spec)){offToday=true;continue;}
+      for(const tr of spec.split(",")){const t=tr.trim().match(/^(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})$/);if(!t)continue;openIntervals.push([(+t[1])*60+(+t[2]),(+t[3])*60+(+t[4])]);}
+    }
+    if(openIntervals.some(([a,b])=>mins>=a&&mins<b))return{cls:"open",text:"Open now"};
+    if(mentioned||offToday)return{cls:"closed",text:"Closed now"};
+    return null;
+  }catch(e){return null;}
+}
+
+/* ---- render dispatch ---- */
 function render(){
   const feed=document.getElementById("feed");
-  const dir=state.mode==="directory";
-  document.querySelectorAll(".filter-row").forEach(r=>r.style.display=dir?"none":"flex");
-  if(!dir)document.getElementById("whenRow").style.display=state.mode==="recurring"?"none":"flex";
-  feed.innerHTML = dir?renderDirectory() : (state.sort==="price"?renderFlat():renderGrouped());
+  const t=state.tab;
+  document.querySelectorAll(".ev-only").forEach(el=>el.style.display=(t==="events")?"flex":"none");
+  if(t==="events")document.getElementById("whenRow").style.display=(state.recur==="recurring")?"none":"flex";
+  document.querySelectorAll(".cat-row").forEach(el=>el.style.display=(t==="manual")?"none":"flex");
+  feed.innerHTML = t==="events"?renderEvents() : t==="free"?renderFree() : renderManual();
   requestAnimationFrame(()=>document.documentElement.style.setProperty("--controls-h",document.getElementById("controls").offsetHeight+"px"));
 }
 
-function pool(){
-  if(state.mode==="recurring")return ALL.filter(ev=>ev.recurring&&passesFilters(ev));
-  const[rangeStart,rangeEnd]=range();
-  return ALL.filter(ev=>!ev.recurring&&passesFilters(ev)&&(()=>{const t=new Date(ev.start);return t>=rangeStart&&t<=rangeEnd;})());
-}
+/* ---- EVENTS ---- */
+function oneoffPool(){const[a,b]=range();return DATA.events.filter(ev=>!ev.recurring&&passesEvent(ev)&&(()=>{const t=new Date(ev.start);return t>=a&&t<=b;})());}
+function recurringPool(){return DATA.events.filter(ev=>ev.recurring&&passesEvent(ev));}
 
-function renderGrouped(){
-  const rows=pool();
-  setCount(rows.length,state.mode==="recurring"?"recurring":"one-off");
-  if(!rows.length)return emptyState();
-  if(state.mode==="recurring"){
-    const wk={},other=[];
-    for(const ev of rows){(ev.recurrence||"").startsWith("Weekly")?((wk[bDow(ev.start)]||=[]).push(ev)):other.push(ev);}
-    let html="";
-    for(const n of WEEKDAYS){if(!wk[n])continue;wk[n].sort((a,b)=>bTime(a.start).localeCompare(bTime(b.start)));html+=`<div class="day"><span class="dow">Every ${n}</span><span class="n">${wk[n].length}</span></div>`;for(const ev of wk[n])html+=card(ev,{recurring:true});}
-    if(other.length){other.sort((a,b)=>new Date(a.start)-new Date(b.start));html+=`<div class="day"><span class="dow">Monthly &amp; occasional</span><span class="n">${other.length}</span></div>`;for(const ev of other)html+=card(ev,{recurring:true});}
-    return html;
-  }
+function renderEvents(){
+  let html="",shown=0;
+  if(state.recur!=="recurring"){const rows=oneoffPool();shown+=rows.length;html+=oneoffSection(rows);}
+  if(state.recur!=="oneoff"){const rows=recurringPool();shown+=rows.length;html+=recurringSection(rows,state.recur==="all");}
+  setCount(shown,"event"+(shown===1?"":"s"));
+  return shown?html:emptyEvents();
+}
+function oneoffSection(rows){
+  if(!rows.length)return "";
+  if(state.sort==="price"){rows=rows.slice().sort((a,b)=>priceKey(a)-priceKey(b)||new Date(a.start)-new Date(b.start));let h=`<div class="day"><span class="dow">By price</span><span class="date">low → high</span><span class="n">${rows.length}</span></div>`;for(const ev of rows)h+=card(ev,{recurring:false,showDate:true});return h;}
   const byDay={};for(const ev of rows)(byDay[bDate(ev.start)]||=[]).push(ev);
-  let html="";
-  for(const day of Object.keys(byDay).sort()){const list=byDay[day];html+=`<div class="day"><span class="dow">${bDow(list[0].start)}</span><span class="date">${bDateL(list[0].start)}</span><span class="n">${list.length}</span></div>`;for(const ev of list)html+=card(ev,{recurring:false});}
-  return html;
+  let h="";for(const day of Object.keys(byDay).sort()){const list=byDay[day];h+=`<div class="day"><span class="dow">${bDow(list[0].start)}</span><span class="date">${bDateL(list[0].start)}</span><span class="n">${list.length}</span></div>`;for(const ev of list)h+=card(ev,{recurring:false});}
+  return h;
 }
-
-function renderFlat(){
-  const recurring=state.mode==="recurring";
-  const rows=pool().sort((a,b)=>priceKey(a)-priceKey(b)||new Date(a.start)-new Date(b.start));
-  setCount(rows.length,recurring?"recurring":"one-off");
-  if(!rows.length)return emptyState();
-  let html=`<div class="day"><span class="dow">By price</span><span class="date">low → high</span><span class="n">${rows.length}</span></div>`;
-  for(const ev of rows)html+=card(ev,{recurring,showDate:true});
-  return html;
+function recurringSection(rows,withHeader){
+  if(!rows.length)return "";
+  const wk={},other=[];
+  for(const ev of rows){(ev.recurrence||"").startsWith("Weekly")?((wk[bDow(ev.start)]||=[]).push(ev)):other.push(ev);}
+  let h=withHeader?`<div class="day"><span class="dow">Weekly regulars</span><span class="n">${rows.length}</span></div>`:"";
+  for(const n of WEEKDAYS){if(!wk[n])continue;wk[n].sort((a,b)=>bTime(a.start).localeCompare(bTime(b.start)));h+=`<div class="day"><span class="dow">Every ${n}</span><span class="n">${wk[n].length}</span></div>`;for(const ev of wk[n])h+=card(ev,{recurring:true});}
+  if(other.length){other.sort((a,b)=>new Date(a.start)-new Date(b.start));h+=`<div class="day"><span class="dow">Monthly &amp; occasional</span><span class="n">${other.length}</span></div>`;for(const ev of other)h+=card(ev,{recurring:true});}
+  return h;
 }
-
 function card(ev,opts){
   const recurring=opts.recurring,showDate=opts.showDate;
-  const catLabel=(CATS.find(c=>c[0]===ev.category)||["","Other"])[1].split(" ")[0];
   const to=(!recurring&&ev.end)?`<span class="to">→ ${bTime(ev.end)}</span>`:"";
-  const title=ev.url?`<a href="${ev.url}" target="_blank" rel="noopener">${esc(ev.title)}</a>`:esc(ev.title);
+  const title=ev.url?`<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`:esc(ev.title);
   const lead=(showDate&&!recurring)?[bDow(ev.start).slice(0,3)+" "+bDateL(ev.start)]:[];
   const metaBits=[...lead,ev.venue,ev.area,ev.source.replace(/^cal:|^rss:|^web:/,"")].filter(Boolean).map(esc);
   const tr=ev.translated?`<span class="tag tr">↳ translated</span>`:"";
   const desc=ev.description?`<div class="desc">${esc(ev.description)}${tr}</div>`:(tr?`<div class="desc">${tr}</div>`:"");
   const money=ev.is_free===true?`<span class="tag free">Free</span>`:(ev.price?`<span class="tag price">${esc(ev.price)}</span>`:"");
-  const cadence=recurring&&ev.recurrence?`<span class="tag cadence">${esc(ev.recurrence)}</span>`:"";
-  return `<article class="ev cat-${ev.category}"><div class="time">${bTime(ev.start)}${to}</div><div><div class="title">${title}</div><div class="meta">${metaBits.join(" · ")}</div>${desc}</div><div class="tags"><span class="tag cat-tag">${catLabel}</span>${cadence}${money}</div></article>`;
+  const kind=recurring?`<span class="tag cadence">${esc(ev.recurrence||"Recurring")}</span>`:`<span class="tag kind">one-off</span>`;
+  return `<article class="ev cat-${ev.category}"><div class="time">${bTime(ev.start)}${to}</div><div><div class="title">${title}</div><div class="meta">${metaBits.join(" · ")}</div>${desc}</div><div class="tags"><span class="tag cat-tag">${catLabel(ev.category)}</span>${kind}${money}</div></article>`;
 }
 
-function renderDirectory(){
-  setCount(DIRECTORY.reduce((n,s)=>n+s.items.length,0),"curated");
-  let html="";
-  for(const sec of DIRECTORY){
-    html+=`<div class="day"><span class="dow">${esc(sec.group)}</span><span class="n">${sec.items.length}</span></div><div class="dir">`;
-    for(const it of sec.items)html+=`<a class="dir-item" href="${it.url}" target="_blank" rel="noopener"><span class="dir-name">${esc(it.name)}</span>${it.note?`<span class="dir-note">${esc(it.note)}</span>`:""}</a>`;
-    html+=`</div>`;
+/* ---- ALWAYS FREE ---- */
+function renderFree(){
+  const rows=DATA.always_free.filter(p=>catQ(p,[p.name,p.area,p.address]));
+  setCount(rows.length,"free place"+(rows.length===1?"":"s"));
+  if(!rows.length)return emptyFree();
+  let h="";
+  for(const p of rows){
+    const os=openState(p.opening_hours);
+    const badge=os?`<span class="badge ${os.cls}">${os.text}</span>`:(p.opening_hours?`<span class="badge hrs">${esc(p.opening_hours)}</span>`:`<span class="badge hrs">hours —</span>`);
+    const sub=[p.address,p.note].filter(Boolean).map(esc).join(" · ");
+    h+=`<div class="card cat-${p.category}"><div class="row"><a class="nm" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a><span class="tag cat-tag">${catLabel(p.category)}</span>${badge}</div>${sub?`<span class="sub2">${sub}</span>`:""}</div>`;
   }
-  return html;
+  return h;
 }
 
-function setCount(n,kind){document.getElementById("count").textContent=`${n} ${kind}${kind==="curated"?" sources":" event"+(n===1?"":"s")} shown`;}
-function emptyState(){
-  const b=state.cost!=="any"?" (or loosen the cost filter)":"";
-  return `<div class="state"><b>Nothing here</b>No events match these filters${b}. Widen the date range, clear a category, or add feeds in <code>config.yaml</code>. Check the Sources panel at the bottom to see what's loading.</div>`;
+/* ---- MANUAL CHECK ---- */
+function renderManual(){
+  const rows=DATA.manual_check.filter(m=>!state.q||(m.name+" "+m.group).toLowerCase().includes(state.q));
+  setCount(rows.length,"to check");
+  if(!rows.length)return emptyManual();
+  const byG={};for(const m of rows)(byG[m.group]||=[]).push(m);
+  let h="";
+  for(const g of Object.keys(byG)){
+    h+=`<div class="day"><span class="dow" style="font-size:20px">${esc(g)}</span><span class="n">${byG[g].length}</span></div>`;
+    for(const m of byG[g])h+=`<div class="card cat-other"><div class="row"><a class="nm" href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.name)}</a><span class="reason">${esc(m.reason)}</span></div></div>`;
+  }
+  return h;
 }
 
-function buildSeg(id,key,cb){document.getElementById(id).addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;state[key]=b.dataset[key];[...b.parentElement.children].forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false"));(cb||render)();});}
+/* ---- misc ---- */
+function setCount(n,kind){document.getElementById("count").textContent=`${n} ${kind} shown`;}
+function setTabCounts(){document.getElementById("tabnEvents").textContent=DATA.events.length;document.getElementById("tabnFree").textContent=DATA.always_free.length;document.getElementById("tabnManual").textContent=DATA.manual_check.length;}
+function emptyEvents(){const b=state.cost!=="any"?" (or loosen the cost filter)":"";return `<div class="state"><b>Nothing here</b>No events match these filters${b}. Widen the date range or clear a category. New feeds appear here once the verified directory is imported.</div>`;}
+function emptyFree(){return `<div class="state"><b>No always-free places</b>Nothing matches this filter.</div>`;}
+function emptyManual(){return `<div class="state"><b>Manual-check worklist is empty</b>This fills once the verified directory is imported — it lists every source with no usable feed (or that's bot-walled / parked), so you can check those by hand.</div>`;}
+
+/* ---- controls ---- */
+function buildSeg(id,key){document.getElementById(id).addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;state[key]=b.dataset[key];[...b.parentElement.children].forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false"));render();});}
 function buildCats(){const box=document.getElementById("cats");for(const[id,label]of CATS){const b=document.createElement("button");b.className="chip cat-"+id;b.textContent=label;b.setAttribute("aria-pressed","false");b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.cats.delete(id),b.setAttribute("aria-pressed","false")):(state.cats.add(id),b.setAttribute("aria-pressed","true"));render();};box.appendChild(b);}}
 buildCats();
-buildSeg("modes","mode");buildSeg("presets","preset");buildSeg("costs","cost");buildSeg("sorts","sort");
+buildSeg("recur","recur");buildSeg("presets","when");buildSeg("costs","cost");buildSeg("sorts","sort");
+document.getElementById("tabs").addEventListener("click",e=>{const b=e.target.closest(".tab");if(!b)return;state.tab=b.dataset.tab;[...b.parentElement.children].forEach(x=>x.setAttribute("aria-selected",x===b?"true":"false"));render();});
 document.getElementById("search").addEventListener("input",e=>{state.q=e.target.value.trim().toLowerCase();render();});
 
 function showSources(sources){
   if(!sources)return;
   const grid=document.getElementById("srcGrid");
-  grid.innerHTML=Object.entries(sources).map(([k,v])=>{
-    const name=k.replace(/^cal:|^rss:/,"");
-    return `<span class="src-item">${esc(name)} <span class="${v===0?"z":"c"}">${v}</span></span>`;
-  }).join("");
+  grid.innerHTML=Object.entries(sources).map(([k,v])=>{const name=k.replace(/^cal:|^rss:/,"");return `<span class="src-item">${esc(name)} <span class="${v===0?"z":"c"}">${v}</span></span>`;}).join("");
   document.getElementById("sources").hidden=false;
 }
 
-fetch("events.json?_="+Date.now())
+fetch("data.json?_="+Date.now())
   .then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})
   .then(d=>{
-    ALL=d.events||[];
+    DATA={events:d.events||[],always_free:d.always_free||[],manual_check:d.manual_check||[]};
     if(d.generated_at){const ago=Math.round((Date.now()-new Date(d.generated_at))/36e5);document.getElementById("updated").textContent="updated "+(ago<1?"just now":ago+"h ago");}
-    render();showSources(d.sources);
+    setTabCounts();render();showSources(d.sources);
   })
   .catch(err=>{
-    document.getElementById("feed").innerHTML=`<div class="state"><b>Couldn't load events</b>events.json didn't load (${esc(err.message)}). Run <code>python aggregate.py</code>, or wait for the next scheduled update.</div>`;
+    document.getElementById("feed").innerHTML=`<div class="state"><b>Couldn't load data</b>data.json didn't load (${esc(err.message)}). Run <code>python aggregate.py</code>, or wait for the next scheduled update.</div>`;
     document.getElementById("count").textContent="—";
   });
 </script>

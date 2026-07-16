@@ -21,19 +21,19 @@ DTEND:20260709T000000
 RRULE:FREQ=WEEKLY;BYDAY=WE
 LOCATION:Atopia Kaffeehaus, Prenzlauer Allee 187, Prenzlauer Berg
 CATEGORIES:music
-URL:https://tomeforro.berlin/
-DESCRIPTION:Brazilian Forró dance party. 20:00 intro class, 21:00 party until midnight, all welcome. Entry €5.
+URL:https://socialdancing.de/locations/atopia
+DESCRIPTION:Brazilian Forró dance party. 20:00 intro class, 21:00 party until midnight, all welcome. Entry €5. NOTE: organiser site tomeforro.berlin is offline (domain expired); check socialdancing.de/locations/atopia or facebook.com/tome.forro.berlin for the current schedule.
 END:VEVENT
 BEGIN:VEVENT
 UID:manual-scottish-dance@berlin-events
 SUMMARY:Scottish country dancing (SCDS Berlin)
 DTSTART:20260703T193000
-DTEND:20260703T210000
+DTEND:20260703T214500
 RRULE:FREQ=WEEKLY;BYDAY=FR
-LOCATION:Berlin — see scds-berlin.de
+LOCATION:Droste-Hülshoff-Oberschule (old gym), Schönower Str. 8, Zehlendorf
 CATEGORIES:community
 URL:https://www.scds-berlin.de/indexe.html
-DESCRIPTION:Scottish country dancing, all levels welcome, no partner needed. Entry €3.
+DESCRIPTION:Scottish country dancing, all levels welcome, no partner needed. Entry €3. Fridays 19:30-21:45, during school term only (pauses in Berlin school holidays).
 END:VEVENT
 BEGIN:VEVENT
 UID:manual-sip-happens@berlin-events
