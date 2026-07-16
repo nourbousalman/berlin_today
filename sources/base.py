@@ -57,9 +57,16 @@ def looks_recurring(*hints: str) -> bool:
     return any(w in blob for w in _RECUR_KEYWORDS)
 
 
-# Words that clearly mean no-cost entry. Donation/PWYW deliberately excluded.
-_FREE_KEYWORDS = ["free entry", "free admission", "free ", "kostenlos", "gratis",
-                  "eintritt frei", "umsonst", "for free"]
+# Words that clearly mean no-cost entry.
+_FREE_KEYWORDS = ["free entry", "free admission", "free of charge", "free ", "for free",
+                  "no cover", "kostenlos", "kostenlose", "kostenfrei", "gratis",
+                  "eintritt frei", "freier eintritt", "bei freiem eintritt",
+                  "eintritt: frei", "umsonst", "ohne eintritt"]
+
+# Pay-what-you-want / donation → treated as free-or-cheap for this planner.
+_DONATION_KEYWORDS = ["donation", "pay what you", "pay-what-you", "pwyw",
+                      "auf spendenbasis", "spendenbasis", "gegen spende", "spende",
+                      "soli-beitrag", "soli "]
 
 
 def looks_free(*hints: str) -> bool:
@@ -67,9 +74,16 @@ def looks_free(*hints: str) -> bool:
     return any(w in blob for w in _FREE_KEYWORDS)
 
 
+def looks_donation(*hints: str) -> bool:
+    blob = " ".join(h for h in hints if h).lower()
+    return any(w in blob for w in _DONATION_KEYWORDS)
+
+
 import re as _re
 _PRICE_RE = _re.compile(
-    r'(?:€|eur\b|euro)\s?(\d{1,3}(?:[.,]\d{1,2})?)|(\d{1,3}(?:[.,]\d{1,2})?)\s?(?:€|eur\b|euro)', _re.I)
+    r'(?:€|eur\b|euro)\s?(\d{1,3}(?:[.,]\d{1,2})?)'      # € 5 / €5,50 / EUR 5
+    r'|(\d{1,3}(?:[.,]\d{1,2})?)\s?(?:€|eur\b|euro)'     # 5€ / 5,50 EUR
+    r'|(\d{1,3}),-{1,2}\s?(?:€|eur\b|euro)', _re.I)       # 5,- € / 5,-- EUR
 
 
 def detect_price(*hints: str):
@@ -77,7 +91,7 @@ def detect_price(*hints: str):
     text = " ".join(h for h in hints if h)
     vals = []
     for m in _PRICE_RE.finditer(text):
-        num = (m.group(1) or m.group(2) or "").replace(",", ".")
+        num = (m.group(1) or m.group(2) or m.group(3) or "").replace(",", ".")
         try:
             v = float(num)
             if 0 < v < 1000:
@@ -89,6 +103,58 @@ def detect_price(*hints: str):
     lo, hi = min(vals), max(vals)
     disp = f"€{lo:g}" if lo == hi else f"€{lo:g}–{hi:g}"
     return disp, lo
+
+
+def resolve_free_price(text: str, default_free):
+    """(is_free, price_display, price_value) from event text, using the source's
+    default only when the text is silent.
+    Precedence: explicit 'free' wording > donation/PWYW > explicit price > default."""
+    if looks_free(text):
+        return True, None, None
+    if looks_donation(text):
+        return True, "Donation", None
+    disp, val = detect_price(text)
+    if val is not None:
+        return (val <= 0), disp, val           # a stated positive price ⇒ not free
+    return default_free, None, None
+
+
+# Berlin postal codes span 10115–14199. Potsdam (14400+) and every other German
+# city fall outside that band, so a PLZ is the most reliable Berlin test.
+_BERLIN_DISTRICTS = ("berlin", "kreuzberg", "neukölln", "neukoelln", "friedrichshain",
+    "charlottenburg", "wilmersdorf", "schöneberg", "schoeneberg", "wedding", "moabit",
+    "prenzlauer berg", "pankow", "lichtenberg", "marzahn", "hellersdorf", "treptow",
+    "köpenick", "koepenick", "spandau", "reinickendorf", "steglitz", "zehlendorf",
+    "tempelhof", "tiergarten", "gesundbrunnen", "weißensee", "weissensee", "adlershof",
+    "mitte", "rummelsburg", "oberschöneweide", "kreuzberg")
+_OTHER_CITIES = ("hamburg", "münchen", "munich", "köln", "cologne", "frankfurt",
+    "stuttgart", "düsseldorf", "dortmund", "essen", "leipzig", "dresden", "hannover",
+    "hanover", "nürnberg", "nuremberg", "bremen", "bonn", "münster", "karlsruhe",
+    "mannheim", "wiesbaden", "kiel", "freiburg", "aachen", "mainz", "erfurt", "rostock",
+    "kassel", "heidelberg", "potsdam", "eberswalde", "germering", "wien", "vienna",
+    "zürich", "zurich", "graz", "linz", "salzburg", "innsbruck", "bielefeld", "wuppertal")
+_PLZ_RE = _re.compile(r"\b(\d{5})\b")
+
+
+def berlin_status(venue: str, *texts: str) -> str:
+    """'berlin' | 'other' | 'unknown'.
+
+    PLZ and other-city names are read from the address-like `venue` only (prose in
+    titles would false-match, e.g. German 'essen' = to eat). Berlin signals win, so
+    an event is dropped only when it positively points elsewhere; events with no
+    location text stay 'unknown' and are kept (the source is a Berlin venue)."""
+    v = venue or ""
+    vlow = v.lower()
+    blob = " ".join([v, *[t for t in texts if t]]).lower()
+    plz = [int(x) for x in _PLZ_RE.findall(v)]
+    berlin_word = ("berlin" in blob or
+                   any(_re.search(r"\b" + _re.escape(d) + r"\b", blob) for d in _BERLIN_DISTRICTS))
+    if any(10115 <= p <= 14199 for p in plz) or berlin_word:
+        return "berlin"
+    if any(p < 10115 or p > 14199 for p in plz) or \
+       any(_re.search(r"\b" + _re.escape(c) + r"\b", vlow) for c in _OTHER_CITIES):
+        return "other"
+    return "unknown"
 
 
 @dataclass
