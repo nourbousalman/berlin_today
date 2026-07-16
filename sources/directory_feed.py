@@ -52,29 +52,24 @@ def group_category(group: str) -> str:
 #   None  = unknown; decide purely from the event's own text
 # Explicit price/"free" wording in an event always overrides this default.
 _GROUP_FREE_RULES = [
-    # clearly ticketed → paid
+    # clearly ticketed → paid (dropped unless a price <= max_price is found)
     (("club", "nightlife"), False),
     (("opera", "theatre", "theater"), False),
-    # genuinely mixed → leave to the text
-    (("cinema", "kino"), None),
-    (("aggregator", "listings", "listing"), None),
-    (("independent culture venue",), None),
-    (("music, jams", "music venues", "live-music", "jams &"), None),
-    (("performance",), None),
-    # free-by-nature (community / civic / free-entry culture)
-    (("free", "kostenlos"), True),
+    # genuinely free-EVENT source types → free (civic / community / free programmes)
     (("librar",), True),
+    (("communit", "neighbourhood", "neighborhood"), True),
     (("garden",), True),
-    (("communit", "neighbourhood", "neighborhood", "social"), True),
-    (("queer", "lgbtq"), True),
-    (("maker", "hacker", "science"), True),
+    (("maker", "hacker"), True),
     (("choir",), True),
-    (("church",), True),
-    (("swap", "market", "flohmarkt", "flea"), True),
-    (("museum", "memorial"), True),
-    (("galler",), True),
-    (("kunstverein", "non-profit art", "foundation"), True),
-    (("cultural institute", "institute", "language"), True),
+    (("queer", "lgbtq"), True),
+    (("swap", "flohmarkt", "flea", "market"), True),
+    (("language", "sprachcaf"), True),
+    (("free festival",), True),
+    (("church",), True),   # "churches with free concerts"
+    # Everything else — art foundations, museums, galleries, cultural institutes,
+    # independent venues, cinemas, music venues — is left UNKNOWN. Free *entry* to
+    # a venue does not make its ticketed events free, so we do not assume it; the
+    # decision is made purely from the event's own text.
 ]
 
 
@@ -85,6 +80,17 @@ def group_free(group: str):
         if any(n in g for n in needles):
             return disp
     return None
+
+
+# Aggregators / listings / magazines are *indexes of* events, not venue calendars.
+# Their RSS is a stream of articles ("Win tickets to…", "Lollapalooza 2026"), so we
+# don't ingest them as events — they're routed to the manual-check tab to browse.
+_INDEX_GROUPS = ("listings", "aggregator", "master index")
+
+
+def is_index(group: str) -> bool:
+    g = (group or "").lower()
+    return any(n in g for n in _INDEX_GROUPS)
 
 
 def load_directory() -> list[dict]:
@@ -103,15 +109,18 @@ def build_feeds(directory: list[dict]) -> tuple[list[dict], list[dict]]:
     ics: list[dict] = []
     rss: list[dict] = []
     for e in directory:
+        if is_index(e.get("group", "")):
+            continue                       # aggregators are indexes, not event feeds
         cat = group_category(e.get("group", ""))
-        # community houses / libraries / gardens list standing offers -> recurring
-        recurring = cat == "community"
         free = e.get("free", group_free(e.get("group", "")))  # per-entry override, else group default
+        # NOTE: recurring is NOT forced by category anymore. An item is recurring
+        # only if it carries a real repeat rule (iCal RRULE) or its own text says
+        # so ("every Wednesday") — otherwise a one-off blog post would masquerade
+        # as a weekly regular.
         if e.get("ical"):
             ics.append({"name": e["name"], "url": e["ical"], "category": cat, "is_free": free})
         if e.get("rss"):
-            rss.append({"name": e["name"], "url": e["rss"],
-                        "category": cat, "recurring": recurring, "is_free": free})
+            rss.append({"name": e["name"], "url": e["rss"], "category": cat, "is_free": free})
     return ics, rss
 
 
@@ -149,9 +158,12 @@ def build_manual_check(directory: list[dict]) -> list[dict]:
     for e in directory:
         feed = bool(e.get("rss") or e.get("ical"))
         status = (e.get("status") or "").lower()
-        if feed and status not in _BLOCKED:
+        index = is_index(e.get("group", ""))
+        if feed and status not in _BLOCKED and not index:
             continue                       # auto-ingested and healthy -> not manual
-        if status == "parked":
+        if index:
+            reason = "listings/aggregator — browse directly"
+        elif status == "parked":
             reason = "parked / dead domain"
         elif status == "broken":
             reason = "reachable but broken"
