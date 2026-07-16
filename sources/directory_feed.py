@@ -46,6 +46,47 @@ def group_category(group: str) -> str:
     return "other"
 
 
+# group text (case-insensitive substring) -> free disposition. First match wins.
+#   True  = treat as free unless the event text states a price   (free-by-nature)
+#   False = treat as paid; kept only if a price <= max_price is found (drop expensive)
+#   None  = unknown; decide purely from the event's own text
+# Explicit price/"free" wording in an event always overrides this default.
+_GROUP_FREE_RULES = [
+    # clearly ticketed → paid
+    (("club", "nightlife"), False),
+    (("opera", "theatre", "theater"), False),
+    # genuinely mixed → leave to the text
+    (("cinema", "kino"), None),
+    (("aggregator", "listings", "listing"), None),
+    (("independent culture venue",), None),
+    (("music, jams", "music venues", "live-music", "jams &"), None),
+    (("performance",), None),
+    # free-by-nature (community / civic / free-entry culture)
+    (("free", "kostenlos"), True),
+    (("librar",), True),
+    (("garden",), True),
+    (("communit", "neighbourhood", "neighborhood", "social"), True),
+    (("queer", "lgbtq"), True),
+    (("maker", "hacker", "science"), True),
+    (("choir",), True),
+    (("church",), True),
+    (("swap", "market", "flohmarkt", "flea"), True),
+    (("museum", "memorial"), True),
+    (("galler",), True),
+    (("kunstverein", "non-profit art", "foundation"), True),
+    (("cultural institute", "institute", "language"), True),
+]
+
+
+def group_free(group: str):
+    """Free/paid/unknown default for a source, inferred from its directory group."""
+    g = (group or "").lower()
+    for needles, disp in _GROUP_FREE_RULES:
+        if any(n in g for n in needles):
+            return disp
+    return None
+
+
 def load_directory() -> list[dict]:
     if not DIRECTORY.exists():
         return []
@@ -65,11 +106,12 @@ def build_feeds(directory: list[dict]) -> tuple[list[dict], list[dict]]:
         cat = group_category(e.get("group", ""))
         # community houses / libraries / gardens list standing offers -> recurring
         recurring = cat == "community"
+        free = e.get("free", group_free(e.get("group", "")))  # per-entry override, else group default
         if e.get("ical"):
-            ics.append({"name": e["name"], "url": e["ical"], "category": cat})
+            ics.append({"name": e["name"], "url": e["ical"], "category": cat, "is_free": free})
         if e.get("rss"):
             rss.append({"name": e["name"], "url": e["rss"],
-                        "category": cat, "recurring": recurring})
+                        "category": cat, "recurring": recurring, "is_free": free})
     return ics, rss
 
 
