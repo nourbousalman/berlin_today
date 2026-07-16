@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-15T19:08:44.449179+00:00",
+ "generated_at": "2026-07-16T02:28:46.734243+00:00",
  "count": 63,
  "sources": {
   "cal:Berlin regulars": 8,
@@ -375,7 +375,7 @@
    "id": "f3d064179a591a5db2b65d7ed0f5dfe3616a602f"
   },
   {
-   "title": "Gartenaktion",
+   "title": "Garden action",
    "start": "2026-03-31T12:48:58+00:00",
    "source": "rss:Rudi NBH",
    "url": "https://rudi-nachbarschaftshaus.de/gartenaktion/",
@@ -391,7 +391,7 @@
    "recurring": true,
    "recurrence": "Recurring",
    "translated": true,
-   "id": "2a5d02e27466df6ecc828f509561394b29d686f9"
+   "id": "6b23a0b1016412a4013daef48603258330e46d1e"
   },
   {
    "title": "RegenRetter film and compost tutorial",
@@ -945,44 +945,6 @@
    "id": "e2f8a5fd7b03ead1205b955779ade2bc0d3ce27d"
   },
   {
-   "title": "Board game night — Spieletreff Berlin (Wedding)",
-   "start": "2026-07-15T19:00:00+02:00",
-   "source": "cal:Berlin regulars",
-   "url": "https://www.meetup.com/Spieletreffberlin/",
-   "end": null,
-   "venue": "Gemeindehaus, Nazarethkirchstr. 50, Wedding",
-   "area": null,
-   "category": "community",
-   "is_free": false,
-   "price": "€5",
-   "price_value": 5.0,
-   "image": null,
-   "description": "Spieletreff Berlin board game night, 30-40 players and ~150 games. Entry €5, drinks sold on site.",
-   "recurring": true,
-   "recurrence": "Weekly · Wed",
-   "translated": true,
-   "id": "232a344d6f2032a9bfa5ed6d53b73c5bcaa0bfde"
-  },
-  {
-   "title": "Forró de Quarta @ Atopia Kaffeehaus",
-   "start": "2026-07-15T20:00:00+02:00",
-   "source": "cal:Berlin regulars",
-   "url": "https://tomeforro.berlin/",
-   "end": null,
-   "venue": "Atopia Kaffeehaus, Prenzlauer Allee 187, Prenzlauer Berg",
-   "area": null,
-   "category": "music",
-   "is_free": false,
-   "price": "€5",
-   "price_value": 5.0,
-   "image": null,
-   "description": "Brazilian Forró dance party. 20:00 intro class, 21:00 party until midnight, all welcome. Entry €5.",
-   "recurring": true,
-   "recurrence": "Weekly · Wed",
-   "translated": false,
-   "id": "7d20dbfabd7a58b55d919e1bf69f4ac0cefdfb09"
-  },
-  {
    "title": "Sprachcafé Lighthouse — language & culture exchange",
    "start": "2026-07-16T17:00:00+02:00",
    "source": "cal:Berlin regulars",
@@ -1190,6 +1152,44 @@
    "recurrence": "Weekly · Wed",
    "translated": true,
    "id": "0a860a948ad41eefd3b1e607572e4bee10638a1d"
+  },
+  {
+   "title": "Board game night — Spieletreff Berlin (Wedding)",
+   "start": "2026-07-22T19:00:00+02:00",
+   "source": "cal:Berlin regulars",
+   "url": "https://www.meetup.com/Spieletreffberlin/",
+   "end": null,
+   "venue": "Gemeindehaus, Nazarethkirchstr. 50, Wedding",
+   "area": null,
+   "category": "community",
+   "is_free": false,
+   "price": "€5",
+   "price_value": 5.0,
+   "image": null,
+   "description": "Spieletreff Berlin board game night, 30-40 players and ~150 games. Entry €5, drinks sold on site.",
+   "recurring": true,
+   "recurrence": "Weekly · Wed",
+   "translated": false,
+   "id": "037e4dd02e880427f4bf7188fd47205b9d27376c"
+  },
+  {
+   "title": "Forró de Quarta @ Atopia Kaffeehaus",
+   "start": "2026-07-22T20:00:00+02:00",
+   "source": "cal:Berlin regulars",
+   "url": "https://tomeforro.berlin/",
+   "end": null,
+   "venue": "Atopia Kaffeehaus, Prenzlauer Allee 187, Prenzlauer Berg",
+   "area": null,
+   "category": "music",
+   "is_free": false,
+   "price": "€5",
+   "price_value": 5.0,
+   "image": null,
+   "description": "Brazilian Forró dance party. 20:00 intro class, 21:00 party until midnight, all welcome. Entry €5.",
+   "recurring": true,
+   "recurrence": "Weekly · Wed",
+   "translated": false,
+   "id": "6c2d391839772f5522f90e79312cb326f7600f75"
   },
   {
    "title": "Hamburger Bahnhof — free first-Thursday evening",
