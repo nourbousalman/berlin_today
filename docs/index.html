@@ -275,7 +275,7 @@ function card(ev,opts){
   const metaBits=[...lead,ev.venue,ev.area,ev.source.replace(/^cal:|^rss:|^web:/,"")].filter(Boolean).map(esc);
   const tr=ev.translated?`<span class="tag tr">↳ translated</span>`:"";
   const desc=ev.description?`<div class="desc">${esc(ev.description)}${tr}</div>`:(tr?`<div class="desc">${tr}</div>`:"");
-  const money=ev.is_free===true?`<span class="tag free">Free</span>`:(ev.price?`<span class="tag price">${esc(ev.price)}</span>`:"");
+  const money=ev.is_free===true?`<span class="tag free">Free</span>`:(ev.price?`<span class="tag price">${esc(ev.price)}</span>`:`<span class="tag price">check price</span>`);
   const kind=recurring?`<span class="tag cadence">${esc(ev.recurrence||"Recurring")}</span>`:`<span class="tag kind">one-off</span>`;
   return `<article class="ev cat-${ev.category}"><div class="time">${bTime(ev.start)}${to}</div><div><div class="title">${title}</div><div class="meta">${metaBits.join(" · ")}</div>${desc}</div><div class="tags"><span class="tag cat-tag">${catLabel(ev.category)}</span>${kind}${money}</div></article>`;
 }
