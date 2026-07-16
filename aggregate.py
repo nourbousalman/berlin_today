@@ -17,7 +17,7 @@ until then we fall back to the feeds listed in config.yaml, plus the local
 manual.ics / sample.ics, so the pipeline keeps working.
 """
 from __future__ import annotations
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import json
 import sys
@@ -106,6 +106,25 @@ def _within_budget(e, max_price: float) -> bool:
     return True
 
 
+def _upcoming(e, now, window_days: int) -> bool:
+    """Keep an event only if it is really happening soon.
+
+    One-off events must fall in [now - grace, now + window]; this drops the huge
+    tail of RSS *publish dates* from old blog posts. Genuine recurring standing
+    offers (an iCal repeat rule, or text like "every Wednesday") are kept
+    regardless of their often-arbitrary post date, since they show dateless in
+    the regulars section."""
+    if e.recurring:
+        return True
+    try:
+        dt = datetime.fromisoformat(e.start)
+    except (ValueError, TypeError):
+        return False
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return (now - timedelta(hours=18)) <= dt <= (now + timedelta(days=window_days))
+
+
 def main() -> int:
     print("Collecting Berlin events…")
     cfg = load_config()
@@ -120,6 +139,11 @@ def main() -> int:
     before_geo = len(events)
     events = [e for e in events if berlin_status(e.venue, e.title, e.area) != "other"]
     non_berlin = before_geo - len(events)
+    now = datetime.now(timezone.utc)
+    window_days = int(cfg.get("horizon_days", 60))
+    before_win = len(events)
+    events = [e for e in events if _upcoming(e, now, window_days)]
+    stale = before_win - len(events)
     before = len(events)
     events = [e for e in events if _within_budget(e, max_price)]
     dropped = before - len(events)
@@ -152,7 +176,7 @@ def main() -> int:
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Wrote {len(events)} events ({n_rec} recurring, {len(events)-n_rec} one-off), "
           f"{len(always_free)} always-free, {len(manual_check)} manual-check "
-          f"→ {OUT.relative_to(ROOT)}  [dropped {dropped} over €{max_price:g}/ticketed, {non_berlin} non-Berlin]")
+          f"→ {OUT.relative_to(ROOT)}  [dropped {dropped} over €{max_price:g}/ticketed, {non_berlin} non-Berlin, {stale} past/undated]")
     return 0
 
 
