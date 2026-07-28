@@ -132,27 +132,39 @@ _OTHER_CITIES = ("hamburg", "münchen", "munich", "köln", "cologne", "frankfurt
     "hanover", "nürnberg", "nuremberg", "bremen", "bonn", "münster", "karlsruhe",
     "mannheim", "wiesbaden", "kiel", "freiburg", "aachen", "mainz", "erfurt", "rostock",
     "kassel", "heidelberg", "potsdam", "eberswalde", "germering", "wien", "vienna",
-    "zürich", "zurich", "graz", "linz", "salzburg", "innsbruck", "bielefeld", "wuppertal")
+    "zürich", "zurich", "graz", "linz", "salzburg", "innsbruck", "bielefeld", "wuppertal",
+    "austria", "österreich", "oberösterreich", "schweiz", "switzerland", "nrw")
+# District names that in practice only exist in Berlin. "Mitte", "Tiergarten",
+# "Nord"/"Süd" are deliberately excluded — dozens of German cities have them.
+_BERLIN_DISTINCTIVE = ("kreuzberg", "neukölln", "neukoelln", "friedrichshain",
+    "prenzlauer berg", "charlottenburg", "wilmersdorf", "schöneberg", "schoeneberg",
+    "wedding", "moabit", "pankow", "lichtenberg", "marzahn", "hellersdorf", "treptow",
+    "köpenick", "koepenick", "spandau", "reinickendorf", "steglitz", "zehlendorf",
+    "tempelhof", "gesundbrunnen", "weißensee", "weissensee", "adlershof", "rummelsburg",
+    "britz", "buckow", "rudow", "wannsee", "grunewald", "lichterfelde", "mariendorf",
+    "lankwitz", "karlshorst", "oberschöneweide")
 _PLZ_RE = _re.compile(r"\b(\d{5})\b")
 
 
 def berlin_status(venue: str, *texts: str) -> str:
     """'berlin' | 'other' | 'unknown'.
 
-    PLZ and other-city names are read from the address-like `venue` only (prose in
-    titles would false-match, e.g. German 'essen' = to eat). Berlin signals win, so
-    an event is dropped only when it positively points elsewhere; events with no
-    location text stay 'unknown' and are kept (the source is a Berlin venue)."""
+    A German 5-digit postcode is DECISIVE and outranks every word. "Aachen-Mitte"
+    and "Rostock Mitte" contain a Berlin-sounding district name but sit at 52062
+    and 18055, so the postcode has to win. Only when no postcode is present do we
+    fall back to place names, and only distinctive ones ("Kreuzberg", never
+    "Mitte", which nearly every German city has). Bare "Berlin" counts but
+    "Berliner Straße" does not, since that street exists nationwide."""
     v = venue or ""
-    vlow = v.lower()
-    blob = " ".join([v, *[t for t in texts if t]]).lower()
     plz = [int(x) for x in _PLZ_RE.findall(v)]
-    berlin_word = ("berlin" in blob or
-                   any(_re.search(r"\b" + _re.escape(d) + r"\b", blob) for d in _BERLIN_DISTRICTS))
-    if any(10115 <= p <= 14199 for p in plz) or berlin_word:
+    if plz:                                     # decisive — no word can override it
+        return "berlin" if any(10115 <= p <= 14199 for p in plz) else "other"
+    blob = " ".join([v, *[t for t in texts if t]]).lower()
+    if _re.search(r"\bberlin\b(?!er\s+(?:str|allee|platz|weg|damm|ring))", blob):
         return "berlin"
-    if any(p < 10115 or p > 14199 for p in plz) or \
-       any(_re.search(r"\b" + _re.escape(c) + r"\b", vlow) for c in _OTHER_CITIES):
+    if any(_re.search(r"\b" + _re.escape(d) + r"\b", blob) for d in _BERLIN_DISTINCTIVE):
+        return "berlin"
+    if any(_re.search(r"\b" + _re.escape(c) + r"\b", blob) for c in _OTHER_CITIES):
         return "other"
     return "unknown"
 
@@ -257,7 +269,7 @@ _DISTRICT_WORDS = [
     ("kreuzberg", "Friedrichshain-Kreuzberg"), ("friedrichshain", "Friedrichshain-Kreuzberg"),
     ("neukölln", "Neukölln"), ("neukoelln", "Neukölln"), ("britz", "Neukölln"),
     ("prenzlauer", "Pankow"), ("pankow", "Pankow"), ("weißensee", "Pankow"),
-    ("wedding", "Mitte"), ("moabit", "Mitte"), ("tiergarten", "Mitte"), ("mitte", "Mitte"),
+    ("wedding", "Mitte"), ("moabit", "Mitte"),
     ("charlottenburg", "Charlottenburg-Wilmersdorf"), ("wilmersdorf", "Charlottenburg-Wilmersdorf"),
     ("schöneberg", "Tempelhof-Schöneberg"), ("tempelhof", "Tempelhof-Schöneberg"),
     ("steglitz", "Steglitz-Zehlendorf"), ("zehlendorf", "Steglitz-Zehlendorf"),
@@ -275,6 +287,8 @@ def berlin_district(*texts: str) -> str | None:
         d = _PLZ2DIST.get(int(m.group(1)))
         if d:
             return d
+    if _PLZ_RE.search(blob):        # a postcode was present but not a Berlin one
+        return None
     low = blob.lower()
     for word, dist in _DISTRICT_WORDS:
         if word in low:

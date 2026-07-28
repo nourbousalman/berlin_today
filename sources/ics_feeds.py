@@ -15,6 +15,7 @@ from icalendar import Calendar
 from dateutil.rrule import rrulestr
 
 from .base import Event, normalise_category, to_iso, looks_recurring, resolve_free_price
+from .verify import is_junk
 
 BERLIN = ZoneInfo("Europe/Berlin")
 
@@ -69,6 +70,8 @@ def _parse(raw, name, default_cat, is_free, force_recurring, now, horizon) -> li
         if start_dt is None:
             continue
         title = str(comp.get("summary") or "Untitled")
+        if is_junk(title):
+            continue
         desc = str(comp.get("description") or "")
         rrule = comp.get("rrule")
 

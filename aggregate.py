@@ -147,6 +147,61 @@ def _upcoming(e, now, window_days: int) -> bool:
     return (now - timedelta(hours=18)) <= dt <= (now + timedelta(days=window_days))
 
 
+def _collapse_repeats(events: list[Event]) -> list[Event]:
+    """One card per real event series.
+
+    A weekly repair café legitimately occurs 28 times in the window, but listing
+    it 28 times buries everything else. Group identical title+venue and, when a
+    series is long enough to be a pattern, keep a single entry describing the
+    cadence instead of every instance."""
+    groups: dict[tuple, list[Event]] = {}
+    for e in events:
+        key = (re.sub(r"\s+", " ", (e.title or "").strip().lower()),
+               re.sub(r"\s+", " ", (e.venue or "").strip().lower())[:60])
+        groups.setdefault(key, []).append(e)
+
+    out: list[Event] = []
+    for evs in groups.values():
+        if len(evs) < 3:
+            out.extend(evs)
+            continue
+        evs.sort(key=lambda e: e.start)
+        try:
+            days = [datetime.fromisoformat(e.start).date() for e in evs]
+        except ValueError:
+            out.extend(evs)
+            continue
+        gaps = [(days[i + 1] - days[i]).days for i in range(len(days) - 1)]
+        first = evs[0]
+        if all(g == 1 for g in gaps):                     # a continuous run (exhibition)
+            first.recurrence = f"Daily until {days[-1].strftime('%d %b')}"
+            out.append(first)
+            continue
+        common = Counter(g for g in gaps if g > 0).most_common(1)
+        common = common[0][0] if common else 0
+        label = {7: "Weekly", 14: "Every 2 weeks"}.get(common)
+        if label is None and 28 <= common <= 31:
+            label = "Monthly"
+        if label is None and len(evs) >= 5:
+            # Many series run on a fixed set of weekdays (a repair café open
+            # Wed-Sat), so the gaps alternate 1,1,1,3 and match no single period.
+            # Describe them by their weekdays instead of listing every instance.
+            dows = sorted({d.weekday() for d in days})
+            names = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+            if len(dows) <= 4:
+                label = "Weekly · " + ", ".join(names[i] for i in dows)
+            else:
+                label = f"{len(evs)}x upcoming"
+        if label is None:
+            out.extend(evs)                                # irregular -> keep as-is
+            continue
+        first.recurring = True
+        first.recurrence = (label if label.startswith("Weekly · ") and len(label) > 12
+                            else f"{label} · {len(evs)}x upcoming")
+        out.append(first)
+    return out
+
+
 def main() -> int:
     print("Collecting Berlin events…")
     cfg = load_config()
@@ -164,9 +219,31 @@ def main() -> int:
               if cfg.get("verify_dates", True) else {})
     before_verify = len(events)
     events = [e for e in events if e.date_source != "publish"]
+    # Defence in depth: a page-scraped start of exactly 00:00 means no time was
+    # really found (older cache entries predate the stricter rule in verify.py).
+    events = [e for e in events
+              if not (e.date_source == "page" and e.start[11:16] == "00:00")]
     unverified = before_verify - len(events)
     before_geo = len(events)
-    events = [e for e in events if berlin_status(e.venue, e.title, e.area) != "other"]
+    # Some feeds are nationwide directories (repair cafés, clothes swaps) that
+    # happen to include Berlin. For those, "not provably elsewhere" is not good
+    # enough — an event must positively resolve to Berlin. Detect them from the
+    # data rather than hard-coding names: if a source carries events with
+    # non-Berlin postcodes, it is national.
+    _status = {id(e): berlin_status(e.venue, e.title, e.area) for e in events}
+    per_source: dict[str, list[str]] = {}
+    for e in events:
+        per_source.setdefault(e.source, []).append(_status[id(e)])
+    national = {src for src, sts in per_source.items()
+                if sum(s == "other" for s in sts) >= max(2, 0.05 * len(sts))}
+    def _in_berlin(e) -> bool:
+        st = _status[id(e)]
+        if st == "other":
+            return False
+        if st == "unknown" and e.source in national:
+            return False              # national feed + no Berlin evidence -> drop
+        return True
+    events = [e for e in events if _in_berlin(e)]
     non_berlin = before_geo - len(events)
     now = datetime.now(timezone.utc)
     window_days = int(cfg.get("horizon_days", 60))
@@ -183,6 +260,9 @@ def main() -> int:
     for e in events:                       # tag each event with its Bezirk
         if not e.area:
             e.area = berlin_district(e.venue or "", e.title or "")
+    before_collapse = len(events)
+    events = _collapse_repeats(events)
+    collapsed = before_collapse - len(events)
     events.sort(key=lambda e: e.start)
 
     counts = Counter(e.source for e in events)
