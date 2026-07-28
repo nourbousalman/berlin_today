@@ -80,18 +80,22 @@ def _parse(raw, name, default_cat, is_free, force_recurring, now, horizon) -> li
             display_dt = nxt
             recurrence = _rrule_summary(rrule)
         else:
-            recurring = force_recurring or looks_recurring(title, desc)
+            # No RRULE => this is a single dated entry. Text like "jeden Dienstag"
+            # is NOT evidence of recurrence: it let ten-year-old entries keep a
+            # stale DTSTART and skip the window check. Only a real RRULE (above)
+            # or an explicit feed flag counts, and either way the date must be
+            # inside the collection window.
+            recurring = bool(force_recurring)
             display_dt = start_dt
             recurrence = "Recurring" if recurring else None
-            # One-off events must fall inside the collection window; recurring
-            # standing offers are kept regardless of an old start date.
-            if not recurring and not (now - timedelta(days=1) <= start_dt <= horizon):
+            if not (now - timedelta(days=1) <= start_dt <= horizon):
                 continue
 
         end_dt = _to_dt(comp.get("dtend"))
         cat_hint = _first_category(comp.get("categories"))
         free, price_disp, price_val = resolve_free_price(f"{title} {desc} {cat_hint}", is_free)
         events.append(Event(
+            date_source="ical",
             title=title,
             start=to_iso(display_dt),
             end=to_iso(end_dt) if (end_dt and not recurring) else None,

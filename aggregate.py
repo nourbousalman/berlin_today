@@ -20,6 +20,7 @@ from __future__ import annotations
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import json
+import re
 import sys
 from collections import Counter
 import yaml
@@ -27,8 +28,9 @@ import yaml
 import socket
 socket.setdefaulttimeout(45)  # one slow/hanging feed must not stall a 122-feed run
 
-from sources.base import Event, dedupe, berlin_status
-from sources import resident_advisor, ics_feeds, rss_feeds, html_scrapers, directory_feed, price_probe
+from sources.base import Event, dedupe, berlin_status, berlin_district
+from sources import (resident_advisor, ics_feeds, rss_feeds, html_scrapers,
+                     directory_feed, price_probe, site_extract, verify)
 from sources.translate import translate_events
 
 ROOT = Path(__file__).parent
@@ -55,7 +57,8 @@ def resolve_feeds(cfg: dict, directory: list[dict]) -> tuple[list[dict], list[di
     return ics, rss
 
 
-def collect(cfg: dict, ics_list: list[dict], rss_list: list[dict]) -> list[Event]:
+def collect(cfg: dict, ics_list: list[dict], rss_list: list[dict],
+            directory: list[dict] | None = None) -> list[Event]:
     horizon = int(cfg.get("horizon_days", 45))
     events: list[Event] = []
 
@@ -69,6 +72,12 @@ def collect(cfg: dict, ics_list: list[dict], rss_list: list[dict]) -> list[Event
 
     if (cfg.get("html_scrapers", {}) or {}).get("enabled"):
         events += _run("HTML scrapers", lambda: html_scrapers.fetch(horizon_days=horizon))
+
+    # Sites with no feed at all (the old "manual check" list): discover their
+    # programme page and extract events from the HTML.
+    if cfg.get("site_extract", True) and directory:
+        events += _run("site extraction", lambda: site_extract.fetch(
+            directory, cfg, directory_feed.group_category, directory_feed.group_free))
 
     return events
 
@@ -95,8 +104,21 @@ def _expected_sources(cfg: dict, ics_list: list[dict], rss_list: list[dict]) -> 
     return labels
 
 
+_RANGE = re.compile(r"€\s*(\d+(?:[.,]\d+)?)\s*[–-]\s*(\d+(?:[.,]\d+)?)")
+
+
 def _within_budget(e, max_price: float) -> bool:
-    """Keep free / cheap / unknown-price events; drop >max_price and known-paid-no-amount."""
+    """Keep free / cheap / unknown-price events; drop >max_price and known-paid-no-amount.
+
+    A price *range* must fit entirely under the cap. "€2–20" means the event can
+    cost €20, so it is not a ≤€5 event — publishing it on the low end would be
+    "from €2" pricing, which we don't do."""
+    m = _RANGE.search(e.price or "")
+    if m:
+        try:
+            return float(m.group(2).replace(",", ".")) <= max_price
+        except ValueError:
+            return False
     if e.price_value is not None:
         return e.price_value <= max_price
     if e.is_free is True:
@@ -114,8 +136,8 @@ def _upcoming(e, now, window_days: int) -> bool:
     offers (an iCal repeat rule, or text like "every Wednesday") are kept
     regardless of their often-arbitrary post date, since they show dateless in
     the regulars section."""
-    if e.recurring:
-        return True
+    # Recurring events carry the *next* occurrence computed from their RRULE, so
+    # they are date-checked like everything else. Nothing bypasses this.
     try:
         dt = datetime.fromisoformat(e.start)
     except (ValueError, TypeError):
@@ -132,10 +154,17 @@ def main() -> int:
     max_price = float(cfg.get("max_price", 5))
 
     ics_list, rss_list = resolve_feeds(cfg, directory)
-    events = collect(cfg, ics_list, rss_list)
+    events = collect(cfg, ics_list, rss_list, directory)
     events = dedupe(events)
     events = translate_events(events, enabled=cfg.get("translate", True))
     events = [e for e in events if e.start]
+    # An RSS publish timestamp is not an event time. Read the real datetime off
+    # each event's own page; anything we cannot verify is dropped below.
+    vstats = (verify.resolve_many(events, budget=int(cfg.get("verify_budget_per_run", 250)))
+              if cfg.get("verify_dates", True) else {})
+    before_verify = len(events)
+    events = [e for e in events if e.date_source != "publish"]
+    unverified = before_verify - len(events)
     before_geo = len(events)
     events = [e for e in events if berlin_status(e.venue, e.title, e.area) != "other"]
     non_berlin = before_geo - len(events)
@@ -151,6 +180,9 @@ def main() -> int:
     events = [e for e in events if _within_budget(e, max_price)]      # drops >max / ticketed-no-price
     events = [e for e in events if e.is_free is not None]             # drops still-unknown price
     dropped = before - len(events)
+    for e in events:                       # tag each event with its Bezirk
+        if not e.area:
+            e.area = berlin_district(e.venue or "", e.title or "")
     events.sort(key=lambda e: e.start)
 
     counts = Counter(e.source for e in events)
@@ -159,6 +191,10 @@ def main() -> int:
 
     always_free = directory_feed.build_always_free(directory)
     manual_check = directory_feed.build_manual_check(directory)
+    # A site that now yields events is no longer a "manual check" — drop it from
+    # that list so it shrinks as extraction coverage grows.
+    covered = {e.source.split(":", 1)[1] for e in events if e.source.startswith("web:")}
+    manual_check = [m for m in manual_check if m.get("name") not in covered]
 
     n_rec = sum(1 for e in events if e.recurring)
     payload = {

@@ -95,3 +95,12 @@ rss_feeds:
 # HTML scrapers — fragile, opt-in. See sources/html_scrapers.py before enabling.
 html_scrapers:
   enabled: false
+
+# --- extraction from feedless sites (the old "manual check" list) ---
+site_extract: true          # discover each site's programme page and extract events
+llm_budget_per_run: 35      # 4 runs/day x 35 = 140, under the free tier's 150/day cap
+llm_model: openai/gpt-4o-mini
+
+# --- date verification (never publish an RSS publish-timestamp as an event time) ---
+verify_dates: true
+verify_budget_per_run: 250   # new page fetches per run; cached URLs are free

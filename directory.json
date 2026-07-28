@@ -467,7 +467,8 @@
   "note": "",
   "yours": false,
   "status": "live",
-  "rss": "https://yaam.de/feed/"
+  "rss": "https://yaam.de/feed/",
+  "ical": "https://yaam.de/events/?ical=1"
  },
  {
   "id": 51,
@@ -485,7 +486,8 @@
   "group": "Clubs & nightlife spaces",
   "note": "",
   "yours": true,
-  "status": "live"
+  "status": "live",
+  "ical": "https://holzmarkt.com/events.ics"
  },
  {
   "id": 53,
@@ -1152,7 +1154,8 @@
   "note": "",
   "yours": false,
   "status": "live",
-  "rss": "https://hole-berlin.de/feed/"
+  "rss": "https://hole-berlin.de/feed/",
+  "ical": "https://musikundfrieden.de/events/?ical=1"
  },
  {
   "id": 122,
@@ -1295,7 +1298,8 @@
   "group": "More cinemas (cheap; some free screenings)",
   "note": "",
   "yours": false,
-  "status": "live"
+  "status": "live",
+  "ical": "https://sinematranstopia.com/calendar.ics"
  },
  {
   "id": 137,
@@ -1757,7 +1761,8 @@
   "group": "More cultural institutes & language",
   "note": "",
   "yours": false,
-  "status": "live"
+  "status": "live",
+  "ical": "https://berlin-hilft.com/sprachcafes/events/?ical=1"
  },
  {
   "id": 186,
@@ -1890,7 +1895,8 @@
   "group": "Free festivals (annual) & other regulars",
   "note": "",
   "yours": false,
-  "status": "live"
+  "status": "live",
+  "ical": "https://reparatur-initiativen.de/events.ics"
  },
  {
   "id": 200,
@@ -2347,7 +2353,8 @@
   "group": "Art foundations & non-profit art spaces (free / free days)",
   "note": "",
   "yours": false,
-  "status": "blocked"
+  "status": "blocked",
+  "ical": "https://jsc.art/events/?ical=1"
  },
  {
   "id": 248,
@@ -3134,7 +3141,8 @@
   "note": "",
   "yours": false,
   "status": "live",
-  "rss": "https://rut-berlin.de/feed/"
+  "rss": "https://rut-berlin.de/feed/",
+  "ical": "https://rut-berlin.de/events/?ical=1"
  },
  {
   "id": 329,

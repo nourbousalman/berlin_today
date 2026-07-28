@@ -77,14 +77,15 @@ def resolve_prices(events: list, max_workers: int = 16) -> dict:
 
     def work(url):
         try:
-            return url, _classify(_fetch_text(url))
+            return url, _classify(_fetch_text(url)), True
         except Exception:
-            return url, None
+            return url, None, False          # fetch failed -> do NOT cache, retry next run
 
     if todo:
         with ThreadPoolExecutor(max_workers=max_workers) as ex:
-            for url, res in ex.map(work, todo):
-                cache[url] = res            # cache misses (None) too, so we don't refetch
+            for url, res, fetched in ex.map(work, todo):
+                if fetched:
+                    cache[url] = res        # cache "no signal" too, so we don't refetch
     _save(cache)
 
     for e in targets:

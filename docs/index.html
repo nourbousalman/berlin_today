@@ -50,6 +50,8 @@
   .seg button[aria-pressed="true"]{background:var(--surface);color:var(--head);box-shadow:var(--shadow)}
   .recur-seg{background:var(--accent-soft)}
   .recur-seg button[aria-pressed="true"]{background:var(--accent);color:#fff;box-shadow:none}
+  .cal-btn{cursor:pointer;font-family:inherit;border:1px solid var(--line);background:var(--surface);color:var(--muted)}
+  .cal-btn:hover{border-color:var(--accent);color:var(--accent)}
   .searchwrap{flex:1;min-width:180px;display:flex}
   .search{flex:1;font-family:var(--body);font-weight:600;font-size:14px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:9px 16px;color:var(--ink)}
   .search::placeholder{color:var(--muted)}
@@ -166,6 +168,7 @@
       </div>
     </div>
     <div class="cats cat-row" id="cats" role="group" aria-label="Categories"><span class="lbl">What</span></div>
+    <div class="cats cat-row ev-only" id="districts" role="group" aria-label="Districts"><span class="lbl">Where</span></div>
   </section>
 
   <main id="feed"><div class="state">Loading…</div></main>
@@ -174,7 +177,7 @@
 <script>
 const CATS=[["music","Music"],["nightlife","Nightlife"],["art","Art / film / talks"],["sport","Sport"],["community","Community"],["market","Markets"],["other","Other"]];
 const WEEKDAYS=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-const state={tab:"events",when:"weekend",recur:"all",cats:new Set(),cost:"any",sort:"time",q:""};
+const state={tab:"events",when:"weekend",recur:"all",cats:new Set(),districts:new Set(),cost:"any",sort:"time",q:""};
 let DATA={events:[],always_free:[],manual_check:[]};
 
 const bDate=iso=>new Date(iso).toLocaleDateString("en-CA",{timeZone:"Europe/Berlin"});
@@ -196,6 +199,7 @@ function catQ(o,hayParts){
 }
 function passesEvent(ev){
   if(!catQ(ev,[ev.title,ev.venue,ev.area]))return false;
+  if(state.districts.size&&!state.districts.has(ev.area))return false;
   if(state.cost==="free"&&ev.is_free!==true)return false;
   if(state.cost==="5"&&!(ev.is_free===true||(ev.price_value!=null&&ev.price_value<=5)))return false;
   return true;
@@ -276,6 +280,7 @@ function card(ev,opts){
   const tr=ev.translated?`<span class="tag tr">↳ translated</span>`:"";
   const desc=ev.description?`<div class="desc">${esc(ev.description)}${tr}</div>`:(tr?`<div class="desc">${tr}</div>`:"");
   const money=ev.is_free===true?`<span class="tag free">Free</span>`:(ev.price?`<span class="tag price">${esc(ev.price)}</span>`:`<span class="tag price">check price</span>`);
+  const cal=recurring?"":`<button class="tag cal-btn" type="button" data-ics="${esc(ev.id||"")}" title="Add to calendar">+ Calendar</button>`;
   const kind=recurring?`<span class="tag cadence">${esc(ev.recurrence||"Recurring")}</span>`:`<span class="tag kind">one-off</span>`;
   return `<article class="ev cat-${ev.category}"><div class="time">${bTime(ev.start)}${to}</div><div><div class="title">${title}</div><div class="meta">${metaBits.join(" · ")}</div>${desc}</div><div class="tags"><span class="tag cat-tag">${catLabel(ev.category)}</span>${kind}${money}</div></article>`;
 }
@@ -318,6 +323,41 @@ function emptyManual(){return `<div class="state"><b>Manual-check worklist is em
 
 /* ---- controls ---- */
 function buildSeg(id,key){document.getElementById(id).addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;state[key]=b.dataset[key];[...b.parentElement.children].forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false"));render();});}
+function icsFor(ev){
+  const pad=n=>String(n).padStart(2,"0");
+  const fmt=d=>d.getUTCFullYear()+pad(d.getUTCMonth()+1)+pad(d.getUTCDate())+"T"+pad(d.getUTCHours())+pad(d.getUTCMinutes())+"00Z";
+  const st=new Date(ev.start);const en=ev.end?new Date(ev.end):new Date(st.getTime()+2*3600*1000);
+  const esc2=t=>String(t||"").replace(/([,;\\])/g,"\\$1").replace(/\n/g,"\\n");
+  return ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//berlin_today//EN","BEGIN:VEVENT",
+    "UID:"+(ev.id||Math.random().toString(36).slice(2))+"@berlin-today",
+    "DTSTAMP:"+fmt(new Date()),"DTSTART:"+fmt(st),"DTEND:"+fmt(en),
+    "SUMMARY:"+esc2(ev.title),
+    ev.venue?"LOCATION:"+esc2(ev.venue):"",
+    ev.url?"URL:"+esc2(ev.url):"",
+    "END:VEVENT","END:VCALENDAR"].filter(Boolean).join("\r\n");
+}
+document.addEventListener("click",e=>{
+  const b=e.target.closest(".cal-btn");if(!b)return;
+  const ev=DATA.events.find(x=>String(x.id)===b.dataset.ics);if(!ev)return;
+  const blob=new Blob([icsFor(ev)],{type:"text/calendar;charset=utf-8"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);
+  a.download=(ev.title||"event").replace(/[^\w-]+/g,"_").slice(0,48)+".ics";
+  document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+});
+function buildDistricts(){
+  const box=document.getElementById("districts");if(!box)return;
+  box.querySelectorAll("button").forEach(b=>b.remove());
+  const counts={};for(const ev of DATA.events)if(ev.area)counts[ev.area]=(counts[ev.area]||0)+1;
+  const names=Object.keys(counts).sort((a,b)=>counts[b]-counts[a]);
+  box.hidden=names.length===0;
+  for(const name of names){
+    const b=document.createElement("button");
+    b.className="chip";b.textContent=`${name} (${counts[name]})`;
+    b.setAttribute("aria-pressed",state.districts.has(name)?"true":"false");
+    b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.districts.delete(name),b.setAttribute("aria-pressed","false")):(state.districts.add(name),b.setAttribute("aria-pressed","true"));render();};
+    box.appendChild(b);
+  }
+}
 function buildCats(){const box=document.getElementById("cats");for(const[id,label]of CATS){const b=document.createElement("button");b.className="chip cat-"+id;b.textContent=label;b.setAttribute("aria-pressed","false");b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.cats.delete(id),b.setAttribute("aria-pressed","false")):(state.cats.add(id),b.setAttribute("aria-pressed","true"));render();};box.appendChild(b);}}
 buildCats();
 buildSeg("recur","recur");buildSeg("presets","when");buildSeg("costs","cost");buildSeg("sorts","sort");
@@ -336,7 +376,7 @@ fetch("data.json?_="+Date.now())
   .then(d=>{
     DATA={events:d.events||[],always_free:d.always_free||[],manual_check:d.manual_check||[]};
     if(d.generated_at){const ago=Math.round((Date.now()-new Date(d.generated_at))/36e5);document.getElementById("updated").textContent="updated "+(ago<1?"just now":ago+"h ago");}
-    setTabCounts();render();showSources(d.sources);
+    setTabCounts();buildDistricts();render();showSources(d.sources);
   })
   .catch(err=>{
     document.getElementById("feed").innerHTML=`<div class="state"><b>Couldn't load data</b>data.json didn't load (${esc(err.message)}). Run <code>python aggregate.py</code>, or wait for the next scheduled update.</div>`;

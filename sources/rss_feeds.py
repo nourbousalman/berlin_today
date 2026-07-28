@@ -16,6 +16,7 @@ import time
 import feedparser
 
 from .base import Event, normalise_category, to_iso, looks_recurring, resolve_free_price
+from .verify import is_junk
 
 
 def fetch(feeds: list[dict], horizon_days: int = 45, max_workers: int = 16) -> list[Event]:
@@ -53,7 +54,7 @@ def _fetch_one(feed: dict) -> list[Event]:
 
 def _map(entry, name, default_cat, is_free, force_recurring) -> Event | None:
     title = entry.get("title")
-    if not title:
+    if not title or is_junk(title):
         return None
     when = entry.get("published_parsed") or entry.get("updated_parsed")
     start = to_iso(datetime.fromtimestamp(time.mktime(when), tz=timezone.utc)) if when else None
@@ -66,6 +67,7 @@ def _map(entry, name, default_cat, is_free, force_recurring) -> Event | None:
     free, price_disp, price_val = resolve_free_price(f"{title} {desc} {tags}", is_free)
 
     return Event(
+        date_source="publish",   # RSS gives a publish time, NOT an event time
         title=title,
         start=start,
         source=f"rss:{name}",
