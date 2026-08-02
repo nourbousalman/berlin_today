@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-02T02:41:10.920047+00:00",
+ "generated_at": "2026-08-02T08:24:22.650623+00:00",
  "count": 155,
  "counts": {
   "events": 155,
@@ -50,7 +50,7 @@
   "rss:Italian Cultural Institute": 0,
   "rss:Institut français": 1,
   "rss:Nordic Embassies (Felleshus)": 0,
-  "rss:Berlin.de Flea markets": 0,
+  "rss:Berlin.de Flea markets": 1,
   "rss:Kleidertausch": 0,
   "rss:Anti-Kriegs-Museum": 0,
   "rss:Gedenkstätte Berliner Mauer": 7,
@@ -104,7 +104,7 @@
   "rss:Directors Lounge": 0,
   "rss:Boros Foundation": 0,
   "rss:Haus am Lützowplatz": 0,
-  "rss:Galerie Wedding (kommunale Galerie)": 1,
+  "rss:Galerie Wedding (kommunale Galerie)": 0,
   "rss:Direktorenhaus": 0,
   "rss:St. Marienkirche": 0,
   "rss:Berliner Oratorien-Chor (open Wednesday rehearsal to try)": 0,
@@ -127,7 +127,7 @@
   "rss:Stadtbibliothek Pankow": 1,
   "rss:Stadtbibliothek Charlottenburg-Wilmersdorf": 1,
   "rss:Stadtbibliothek Neukölln (Helene-Nathan-Bibliothek)": 0,
-  "rss:Stadtbibliothek Tempelhof-Schöneberg": 1,
+  "rss:Stadtbibliothek Tempelhof-Schöneberg": 2,
   "rss:Stadtbibliothek Steglitz-Zehlendorf": 0,
   "rss:Stadtbibliothek Lichtenberg": 0,
   "rss:Stadtbibliothek Treptow-Köpenick": 0,
@@ -202,7 +202,7 @@
    "id": "43f562ccad2b6320a64389873e750c71b1093a02"
   },
   {
-   "title": "Afternoon Walk+Coffee in Berlin: Alexanderplatz to Zoologischer 👣🚶🚶‍♀️☀️🥐☕🍪",
+   "title": "Afternoon Walk+Coffee in Berlin: Alexanderplatz to Zoologe 👣🚶🚶‍♀️☀️🥐☕🍪",
    "start": "2026-08-02T12:30:00.000Z",
    "source": "web:Meetup Berlin",
    "url": "https://www.meetup.com/berlin-walking-biking-meetup-group/events/315800481/",
@@ -217,9 +217,9 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": false,
+   "translated": true,
    "date_source": "jsonld",
-   "id": "de92c8967c7f0844bf203246de61349a24e0e4b3"
+   "id": "f06355f69d468eeb24b56a74b37d24d73e88d383"
   },
   {
    "title": "Repair Café in the German Museum of Technology",
@@ -320,6 +320,26 @@
    "translated": true,
    "date_source": "ical",
    "id": "630dccb74fc331fc43a02c462910faa553081abc"
+  },
+  {
+   "title": "Other current events",
+   "start": "2026-08-03T10:00:00+00:00",
+   "source": "rss:Stadtbibliothek Tempelhof-Schöneberg",
+   "url": "https://www.berlin.de/stadtbibliothek-tempelhof-schoeneberg/angebote/veranstaltungskalender/",
+   "end": null,
+   "venue": null,
+   "area": null,
+   "category": "community",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": true,
+   "date_source": "page",
+   "id": "76e7ed5e81c8f38597f08c951294007ddd5ae477"
   },
   {
    "title": "Language Café Neighborhood Floor (Berlin)",
@@ -542,26 +562,6 @@
    "id": "1dccf93a9248e1cedf88cf6f99e5e85cdb711a6c"
   },
   {
-   "title": "Monthly Meet Up",
-   "start": "2026-08-04T07:00:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/silicon-allee-events/events/314592852/",
-   "end": null,
-   "venue": "St. Oberholz | Oranienstrasse Oranienstraße 10-11, 10997, Berlin Berlin",
-   "area": "Friedrichshain-Kreuzberg",
-   "category": "other",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "date_source": "jsonld",
-   "id": "bd993bebd7762b6248cd9897fa83a9da3fe92b13"
-  },
-  {
    "title": "Sprachcafe Rigatoni (Berlin)",
    "start": "2026-08-04T08:00:00+00:00",
    "source": "cal:Sprachcafé directory (Berlin)",
@@ -762,7 +762,7 @@
    "id": "43b8cad880a7e0731c8bd897084fe3ac86522487"
   },
   {
-   "title": "Inklusive Soundwerkstatt",
+   "title": "Including sound workshop",
    "start": "2026-08-04T16:00:00+02:00",
    "source": "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)",
    "url": "https://brotfabrik-berlin.de/veranstaltung/inklusive-soundwerkstatt/2026-08-04/",
@@ -777,9 +777,9 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "id": "5ff617aa10966ec701fc0af0612ada6d0e9189cb"
+   "id": "5dbfdc3317dd1f9a6975c41385c7ea258366e3ad"
   },
   {
    "title": "Language café Friedrichshagen",
@@ -1000,6 +1000,26 @@
    "translated": true,
    "date_source": "ical",
    "id": "cb6a1fc974d8518e98cfd7c6f3206d1de6b2b4c1"
+  },
+  {
+   "title": "City Walk Berlin | 5.8. | & optional Blind Walk experience",
+   "start": "2026-08-05T15:15:00.000Z",
+   "source": "web:Meetup Berlin",
+   "url": "https://www.meetup.com/berlin-city-walks/events/311762001/",
+   "end": null,
+   "venue": "Paul-Lincke-Ufer 39/40 10999, Berlin Berlin",
+   "area": "Friedrichshain-Kreuzberg",
+   "category": "other",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "date_source": "jsonld",
+   "id": "58e0f98a105b48f9e32346343a15dee443da5b4e"
   },
   {
    "title": "Game Language Café of the GOOD MISSION (Berlin)",
@@ -1562,26 +1582,6 @@
    "id": "55cdfdc8eaf82d3ebbc7198a7e85eef448b05aad"
   },
   {
-   "title": "Sprachcafé goes Open Air! ☀️☕ (Niveau A1-A2)",
-   "start": "2026-08-07T11:30:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/internationales-sprachcafe-im-offenen-wohnzimmer/events/314857765/",
-   "end": null,
-   "venue": "Goethe-Institut Berlin Neue Schönhauser Straße 20, 10178 Berlin, Berlin Berlin",
-   "area": "Mitte",
-   "category": "other",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "date_source": "jsonld",
-   "id": "a0b8d1d3413a4b7a5bebd2a9de015f63eee77678"
-  },
-  {
    "title": "Sprachcafé FAIR.roott – Himmelbeet (Berlin)",
    "start": "2026-08-07T12:30:00+00:00",
    "source": "cal:Sprachcafé directory (Berlin)",
@@ -1737,7 +1737,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
    "id": "9e11235bc494eaa726bfe1c534247a0b53d8800d"
   },
@@ -1840,26 +1840,6 @@
    "translated": false,
    "date_source": "ical",
    "id": "6cb98020666215b9a5e970dfb256ae40a0534198"
-  },
-  {
-   "title": "Dialogue tour with Beatrice Moumdjian & Eylem Sengezer",
-   "start": "2026-08-09T07:07:00+00:00",
-   "source": "rss:Galerie Wedding (kommunale Galerie)",
-   "url": "https://galeriewedding.de/dialogische-fuehrung-mit-beatrice-moumdjian-eylem-sengezer/",
-   "end": null,
-   "venue": null,
-   "area": null,
-   "category": "art",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": true,
-   "date_source": "page",
-   "id": "6a6fab381072b4f204820fc649b970b720561a33"
   },
   {
    "title": "🪩 THE FUNKY BREAKFAST MARKT 🥐",
@@ -2657,9 +2637,29 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
    "id": "8db405f6c355eddf8224caef02bed29b912ec4a1"
+  },
+  {
+   "title": "Rooftop Flea Market Berlin",
+   "start": "2026-09-04",
+   "source": "rss:Berlin.de Flea markets",
+   "url": "https://www.berlin.de/en/shopping/markets/flea-markets/9138708-2983302-rooftop-flea-market-berlin.en.html",
+   "end": null,
+   "venue": null,
+   "area": null,
+   "category": "market",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "date_source": "jsonld",
+   "id": "fc856987130dfd6825b6e95faead533d4d1fefc2"
   },
   {
    "title": "wertstatt-Reparaturcafe",
@@ -3057,7 +3057,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
    "id": "5d604f3524971f654bc85d1450a84f98401ed6a5"
   },
@@ -3082,7 +3082,7 @@
    "id": "22038de5833f1fea509aae8304e7ea67b979cf11"
   },
   {
-   "title": "wertstatt-Reparaturcafe",
+   "title": "werstatt repair cafe",
    "start": "2026-09-19T11:00:00+02:00",
    "source": "cal:Reparatur-Initiativen (repair-café finder)",
    "url": "",
@@ -3097,9 +3097,9 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "id": "3b481006b3d0807cdefdd5e943d4ec804d23dcc3"
+   "id": "b95092c6a57544a4b16980430579e7e11b56fa30"
   },
   {
    "title": "MAELFØY",
