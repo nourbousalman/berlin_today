@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-08-03T09:43:50.780712+00:00",
- "count": 163,
+ "generated_at": "2026-08-03T14:37:51.321206+00:00",
+ "count": 161,
  "counts": {
-  "events": 163,
+  "events": 161,
   "recurring": 21,
-  "oneoff": 142,
+  "oneoff": 140,
   "always_free": 16,
   "manual_check": 207
  },
@@ -53,7 +53,7 @@
   "rss:Berlin.de Flea markets": 1,
   "rss:Kleidertausch": 0,
   "rss:Anti-Kriegs-Museum": 0,
-  "rss:Gedenkstätte Berliner Mauer": 7,
+  "rss:Gedenkstätte Berliner Mauer": 6,
   "rss:Alliiertenmuseum": 0,
   "rss:Georg Kolbe Museum": 0,
   "rss:ANOHA (Jewish Museum children's world)": 0,
@@ -1596,7 +1596,7 @@
    "image": null,
    "description": null,
    "recurring": true,
-   "recurrence": "Every 2 weeks · 4x upcoming",
+   "recurrence": "Every 2 weeks · 5x upcoming",
    "translated": true,
    "date_source": "ical",
    "id": "e13db11b9408783ca92b6af4389cb487024ec836"
@@ -2302,46 +2302,6 @@
    "id": "70705d9131b331fd44fa623fe50733caa5031bea"
   },
   {
-   "title": "Beer man without a beer man",
-   "start": "2026-08-15T18:00:00+00:00",
-   "source": "rss:Gedenkstätte Berliner Mauer",
-   "url": "https://www.stiftung-berliner-mauer.de/de/gedenkstaette-berliner-mauer/besuch/programm/biermann-ohne-biermann",
-   "end": null,
-   "venue": null,
-   "area": null,
-   "category": "art",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": true,
-   "date_source": "page",
-   "id": "fefb6dd4e5f2b6840a4818ae73b2303c56c524d0"
-  },
-  {
-   "title": "Sip Happens! Saturday Social @ Bata Bar [Outdoors] 🤩",
-   "start": "2026-08-15T18:00:00.000Z",
-   "source": "web:Sip Happens!",
-   "url": "https://www.meetup.com/sip_happens_berlin/events/315943546/",
-   "end": null,
-   "venue": "Bata Bar & Billiards am Alex Karl-Liebknecht-Str. 13, 10178 Berlin, DE, Berlin Berlin",
-   "area": "Mitte",
-   "category": "other",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "date_source": "jsonld",
-   "id": "661bf844ae6879f14e8637fcfb84d7366f7e7e94"
-  },
-  {
    "title": "Wild plants for the wild city",
    "start": "2026-08-16T14:00:00+02:00",
    "source": "cal:Prinzessinnengarten Kollektiv",
@@ -2497,7 +2457,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
    "id": "f1725de44d1df12ad6ce2762d155802245a2c453"
   },
@@ -2777,7 +2737,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
    "id": "8db405f6c355eddf8224caef02bed29b912ec4a1"
   },
@@ -3222,7 +3182,7 @@
    "id": "22038de5833f1fea509aae8304e7ea67b979cf11"
   },
   {
-   "title": "werstatt repair cafe",
+   "title": "wertstatt-Reparaturcafe",
    "start": "2026-09-19T11:00:00+02:00",
    "source": "cal:Reparatur-Initiativen (repair-café finder)",
    "url": "",
@@ -3237,9 +3197,9 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
-   "id": "b95092c6a57544a4b16980430579e7e11b56fa30"
+   "id": "3b481006b3d0807cdefdd5e943d4ec804d23dcc3"
   },
   {
    "title": "New city tour climate & migration",
