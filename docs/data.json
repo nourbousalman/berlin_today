@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-04T02:26:39.347304+00:00",
+ "generated_at": "2026-08-04T08:36:24.122312+00:00",
  "count": 157,
  "counts": {
   "events": 157,
@@ -125,7 +125,7 @@
   "rss:Stadtbibliothek Mitte": 0,
   "rss:Stadtbibliothek Friedrichshain-Kreuzberg (Bez.-Zentralbib. Pablo Neruda)": 0,
   "rss:Stadtbibliothek Pankow": 1,
-  "rss:Stadtbibliothek Charlottenburg-Wilmersdorf": 0,
+  "rss:Stadtbibliothek Charlottenburg-Wilmersdorf": 1,
   "rss:Stadtbibliothek Neukölln (Helene-Nathan-Bibliothek)": 0,
   "rss:Stadtbibliothek Tempelhof-Schöneberg": 2,
   "rss:Stadtbibliothek Steglitz-Zehlendorf": 0,
@@ -141,46 +141,6 @@
   "rss:LSVD Berlin-Brandenburg": 0
  },
  "events": [
-  {
-   "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
-   "start": "2026-08-04T06:45:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/business-netzwerken-berlin/events/315627677/",
-   "end": null,
-   "venue": "CI Space Bugenhagenstraße 9, 10551 Berlin, Berlin Berlin",
-   "area": "Mitte",
-   "category": "other",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": true,
-   "date_source": "jsonld",
-   "id": "8002f2cc55be52781abfec8808e9c19cc232743c"
-  },
-  {
-   "title": "Monthly Meet Up",
-   "start": "2026-08-04T07:00:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/silicon-allee-events/events/314592852/",
-   "end": null,
-   "venue": "St. Oberholz | Oranienstrasse Oranienstraße 10-11, 10997, Berlin Berlin",
-   "area": "Friedrichshain-Kreuzberg",
-   "category": "other",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "date_source": "jsonld",
-   "id": "bd993bebd7762b6248cd9897fa83a9da3fe92b13"
-  },
   {
    "title": "Sprachcafe Rigatoni (Berlin)",
    "start": "2026-08-04T08:00:00+00:00",
@@ -200,6 +160,26 @@
    "translated": true,
    "date_source": "ical",
    "id": "9ba838e46e7167ae42b30116efc21de2b43379fa"
+  },
+  {
+   "title": "Coworking at Gesundbrunnen",
+   "start": "2026-08-04T09:00:00.000Z",
+   "source": "web:Meetup Berlin",
+   "url": "https://www.meetup.com/berlin-coworking-club/events/315298008/",
+   "end": null,
+   "venue": "Moxy Berlin Humboldthain Park Hochstraße 2, 13357 Berlin, Berlin Berlin",
+   "area": "Mitte",
+   "category": "other",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "date_source": "jsonld",
+   "id": "7ab8129dbaed537f3ca6b9e49a417e5ddf7bb338"
   },
   {
    "title": "When sound and light go out",
@@ -382,7 +362,7 @@
    "id": "43b8cad880a7e0731c8bd897084fe3ac86522487"
   },
   {
-   "title": "Including sound workshop",
+   "title": "Inklusive Soundwerkstatt",
    "start": "2026-08-04T16:00:00+02:00",
    "source": "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)",
    "url": "https://brotfabrik-berlin.de/veranstaltung/inklusive-soundwerkstatt/2026-08-04/",
@@ -397,9 +377,9 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
-   "id": "5dbfdc3317dd1f9a6975c41385c7ea258366e3ad"
+   "id": "5ff617aa10966ec701fc0af0612ada6d0e9189cb"
   },
   {
    "title": "Language café Friedrichshagen",
@@ -600,6 +580,26 @@
    "translated": true,
    "date_source": "ical",
    "id": "69e0b350d7b7b100955303f5f1ea6ae4181b933d"
+  },
+  {
+   "title": "Reading afternoon",
+   "start": "2026-08-05T10:00:00+00:00",
+   "source": "rss:Stadtbibliothek Charlottenburg-Wilmersdorf",
+   "url": "https://www.berlin.de/land/kalender/?suchmaske&c=4",
+   "end": null,
+   "venue": null,
+   "area": null,
+   "category": "community",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": true,
+   "date_source": "page",
+   "id": "72a95d42bc208540af8a98819eaa4a28549b856e"
   },
   {
    "title": "Other current events",
@@ -2302,26 +2302,6 @@
    "id": "ac5f49d249c10b210142147621fe903b04a0d3aa"
   },
   {
-   "title": "Livre-échange | Grandir, vieillir - les âges se racontent",
-   "start": "2026-08-19T16:30:00+00:00",
-   "source": "rss:Institut français",
-   "url": "https://www.institutfrancais.de/de/hamburg/event/livre-echange-grandir-vieillir-les-ages-se-racontent-29048",
-   "end": null,
-   "venue": null,
-   "area": null,
-   "category": "community",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "date_source": "page",
-   "id": "e2d3205f8bd9b87c9651fb90db45c29473f02ed8"
-  },
-  {
    "title": "Playgroup for rainbow families in Kreuzberg",
    "start": "2026-08-20T15:30:00+02:00",
    "source": "cal:LSVD Berlin-Brandenburg",
@@ -2642,7 +2622,7 @@
    "id": "8db405f6c355eddf8224caef02bed29b912ec4a1"
   },
   {
-   "title": "wertstatt-Reparaturcafe",
+   "title": "werstatt repair cafe",
    "start": "2026-09-05T11:00:00+02:00",
    "source": "cal:Reparatur-Initiativen (repair-café finder)",
    "url": "",
@@ -2657,9 +2637,9 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "id": "c6cadced302e5b23f7cdf167c10d33e21d226f2e"
+   "id": "214beb3f98a06fb5103fc49ed9934f315a4c69e1"
   },
   {
    "title": "Repair Café Wedding",
@@ -2820,6 +2800,26 @@
    "translated": true,
    "date_source": "page",
    "id": "04d391e0cdcf4c79b3ef18a7c05e4a018e0c92c6"
+  },
+  {
+   "title": "Special traveling reading hour September 2026",
+   "start": "2026-09-09T16:30:00+00:00",
+   "source": "rss:Institut français",
+   "url": "https://www.institutfrancais.de/de/sachsen-anhalt/event/sonderwanderlesestunde-september-2026-29058",
+   "end": null,
+   "venue": null,
+   "area": null,
+   "category": "community",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": true,
+   "date_source": "page",
+   "id": "24262860ae2851160097eabb5e7b12df72324705"
   },
   {
    "title": "Under the Table",
