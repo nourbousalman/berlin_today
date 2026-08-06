@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-06T02:29:13.369404+00:00",
+ "generated_at": "2026-08-06T08:36:33.378555+00:00",
  "count": 165,
  "counts": {
   "events": 165,
@@ -127,7 +127,7 @@
   "rss:Stadtbibliothek Pankow": 2,
   "rss:Stadtbibliothek Charlottenburg-Wilmersdorf": 0,
   "rss:Stadtbibliothek Neukölln (Helene-Nathan-Bibliothek)": 0,
-  "rss:Stadtbibliothek Tempelhof-Schöneberg": 1,
+  "rss:Stadtbibliothek Tempelhof-Schöneberg": 2,
   "rss:Stadtbibliothek Steglitz-Zehlendorf": 0,
   "rss:Stadtbibliothek Lichtenberg": 0,
   "rss:Stadtbibliothek Treptow-Köpenick": 0,
@@ -402,6 +402,26 @@
    "id": "f3e94db9d78eb091101df49384742f37e279fb9e"
   },
   {
+   "title": "Game Creators Hangout",
+   "start": "2026-08-06T17:00:00.000Z",
+   "source": "web:Meetup Berlin",
+   "url": "https://www.meetup.com/game-developers-berlin/events/312106480/",
+   "end": null,
+   "venue": "12 Grad Aetherloge Frankfurter Allee 24, Berlin, al Berlin",
+   "area": null,
+   "category": "other",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "date_source": "jsonld",
+   "id": "6d3d6b4a1e68569eb8625776e1722bba9c080c19"
+  },
+  {
    "title": "Thursday Game Night in Friedrichshain",
    "start": "2026-08-06T17:00:00.000Z",
    "source": "web:Berlin Board Gamers",
@@ -562,6 +582,26 @@
    "id": "1dee95b3fbb85dbfbeb316154f4bdc28e0a77481"
   },
   {
+   "title": "Coworking at Hackescher Markt",
+   "start": "2026-08-07T09:00:00.000Z",
+   "source": "web:Meetup Berlin",
+   "url": "https://www.meetup.com/berlin-coworking-club/events/314699876/",
+   "end": null,
+   "venue": "Alexanderplatz Alexanderplatz, Berlin Berlin",
+   "area": null,
+   "category": "other",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": true,
+   "date_source": "jsonld",
+   "id": "e4c8b28c7711bd82b46487b60f71a472cc881e9c"
+  },
+  {
    "title": "Language Café Marienfelde (Berlin)",
    "start": "2026-08-07T10:00:00+00:00",
    "source": "cal:Sprachcafé directory (Berlin)",
@@ -580,6 +620,26 @@
    "translated": true,
    "date_source": "ical",
    "id": "55cdfdc8eaf82d3ebbc7198a7e85eef448b05aad"
+  },
+  {
+   "title": "Other current events",
+   "start": "2026-08-07T10:00:00+00:00",
+   "source": "rss:Stadtbibliothek Tempelhof-Schöneberg",
+   "url": "https://www.berlin.de/stadtbibliothek-tempelhof-schoeneberg/angebote/veranstaltungskalender/",
+   "end": null,
+   "venue": null,
+   "area": null,
+   "category": "community",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": true,
+   "date_source": "page",
+   "id": "dcc1978c4bbf39a0734fe18d412d340abb35ad08"
   },
   {
    "title": "Sprachcafé goes Open Air! ☀️☕ (Niveau A1-A2)",
@@ -802,26 +862,6 @@
    "id": "9488304cc00aa958f2ed6c1025c5993f408db8f7"
   },
   {
-   "title": "Hamburg + Fischbeker Heide ⚓🏘️ 🌿🌲 (2 Days Trip 🎉 from Berlin)",
-   "start": "2026-08-08T06:15:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/berlin-walking-biking-meetup-group/events/315841504/",
-   "end": null,
-   "venue": "Berlin Hbf Hauptbahnhof, Europaplatz 1, 10557 Berlin, Berlin Berlin",
-   "area": "Mitte",
-   "category": "other",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": true,
-   "date_source": "jsonld",
-   "id": "ea87babb13d07fec448b1014c21014353a0e142f"
-  },
-  {
    "title": "Repair Café Lichtenrade",
    "start": "2026-08-08T10:00:00+02:00",
    "source": "cal:Reparatur-Initiativen (repair-café finder)",
@@ -837,7 +877,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
    "id": "9e11235bc494eaa726bfe1c534247a0b53d8800d"
   },
@@ -1697,7 +1737,7 @@
    "description": null,
    "recurring": true,
    "recurrence": "Weekly · Wed",
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
    "id": "9daeb4a0285690e8090f42dda5402592066dea9e"
   },
@@ -1840,26 +1880,6 @@
    "translated": true,
    "date_source": "ical",
    "id": "8ebde183d7c4bd90894596da110f3b776f027e7c"
-  },
-  {
-   "title": "Founder Meet&Greet: In-Person Startup Networking Late Summer Edition!",
-   "start": "2026-08-13T17:00:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/berlin-startup-founder-101/events/315598531/",
-   "end": null,
-   "venue": "The Social Hub Berlin Alexanderstraße 40, Berlin, BE Berlin",
-   "area": null,
-   "category": "other",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "date_source": "jsonld",
-   "id": "5d3d20f89e5e8bad58425ef910edca980d720d8d"
   },
   {
    "title": "“Photographic views of the Wall” at the Brandenburg Gate",
@@ -2317,7 +2337,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
    "id": "f1725de44d1df12ad6ce2762d155802245a2c453"
   },
@@ -2360,26 +2380,6 @@
    "translated": false,
    "date_source": "page",
    "id": "a4f5ec9d7874811ebf27f6db6bf27e62de41829b"
-  },
-  {
-   "title": "Sprachcafé goes Open Air!☀️☕(Niveau B1-C1)",
-   "start": "2026-08-21T09:30:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/internationales-sprachcafe-im-offenen-wohnzimmer/events/314857756/",
-   "end": null,
-   "venue": "Goethe-Institut Berlin Neue Schönhauser Straße 20, 10178 Berlin, Berlin Berlin",
-   "area": "Mitte",
-   "category": "other",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "date_source": "jsonld",
-   "id": "d6848fd6924fa990cd0b821904bfcb25172bcfb4"
   },
   {
    "title": "Clothes swap",
@@ -3137,7 +3137,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
    "id": "5d604f3524971f654bc85d1450a84f98401ed6a5"
   },
