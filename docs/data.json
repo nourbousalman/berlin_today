@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-08-07T02:47:27.549324+00:00",
- "count": 164,
+ "generated_at": "2026-08-07T07:15:39.825573+00:00",
+ "count": 163,
  "counts": {
-  "events": 164,
+  "events": 163,
   "recurring": 23,
-  "oneoff": 141,
+  "oneoff": 140,
   "always_free": 16,
   "manual_check": 207
  },
@@ -2297,7 +2297,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
    "id": "f1725de44d1df12ad6ce2762d155802245a2c453"
   },
@@ -2380,26 +2380,6 @@
    "translated": false,
    "date_source": "page",
    "id": "a4f5ec9d7874811ebf27f6db6bf27e62de41829b"
-  },
-  {
-   "title": "Sprachcafé goes Open Air!☀️☕(Niveau B1-C1)",
-   "start": "2026-08-21T09:30:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/internationales-sprachcafe-im-offenen-wohnzimmer/events/314857756/",
-   "end": null,
-   "venue": "Goethe-Institut Berlin Neue Schönhauser Straße 20, 10178 Berlin, Berlin Berlin",
-   "area": "Mitte",
-   "category": "other",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "date_source": "jsonld",
-   "id": "d6848fd6924fa990cd0b821904bfcb25172bcfb4"
   },
   {
    "title": "Clothes swap",
@@ -3117,7 +3097,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
    "id": "5d604f3524971f654bc85d1450a84f98401ed6a5"
   },
