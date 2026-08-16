@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-08-16T06:39:07.243289+00:00",
- "count": 168,
+ "generated_at": "2026-08-16T12:37:46.064044+00:00",
+ "count": 165,
  "counts": {
-  "events": 168,
+  "events": 165,
   "recurring": 19,
-  "oneoff": 149,
+  "oneoff": 146,
   "always_free": 16,
   "manual_check": 207
  },
@@ -127,10 +127,10 @@
   "rss:Stadtbibliothek Pankow": 1,
   "rss:Stadtbibliothek Charlottenburg-Wilmersdorf": 0,
   "rss:Stadtbibliothek Neukölln (Helene-Nathan-Bibliothek)": 0,
-  "rss:Stadtbibliothek Tempelhof-Schöneberg": 1,
+  "rss:Stadtbibliothek Tempelhof-Schöneberg": 0,
   "rss:Stadtbibliothek Steglitz-Zehlendorf": 0,
   "rss:Stadtbibliothek Lichtenberg": 0,
-  "rss:Stadtbibliothek Treptow-Köpenick": 1,
+  "rss:Stadtbibliothek Treptow-Köpenick": 0,
   "rss:Stadtbibliothek Marzahn-Hellersdorf": 0,
   "rss:Stadtbibliothek Spandau": 0,
   "rss:Stadtbibliothek Reinickendorf": 0,
@@ -141,26 +141,6 @@
   "rss:LSVD Berlin-Brandenburg": 0
  },
  "events": [
-  {
-   "title": "Sunday Silent Reading @ W66 Café",
-   "start": "2026-08-16T08:30:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/silent-book-club-berlin-chapter/events/316070179/",
-   "end": null,
-   "venue": "Museum für Kommunikation Leipziger Straße 16, Berlin Berlin",
-   "area": null,
-   "category": "other",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "date_source": "jsonld",
-   "id": "722f1f752c752ea6317abde65831bc20a9bcee69"
-  },
   {
    "title": "Joachim Froese | The fleeting image",
    "start": "2026-08-16T11:00:00+02:00",
@@ -320,26 +300,6 @@
    "translated": true,
    "date_source": "ical",
    "id": "ac55b694606cfbbf88913ad5a0c71fdfb2b72337"
-  },
-  {
-   "title": "Other current events",
-   "start": "2026-08-17T11:00:00+00:00",
-   "source": "rss:Stadtbibliothek Tempelhof-Schöneberg",
-   "url": "https://www.berlin.de/stadtbibliothek-tempelhof-schoeneberg/angebote/veranstaltungskalender/",
-   "end": null,
-   "venue": null,
-   "area": null,
-   "category": "community",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": true,
-   "date_source": "page",
-   "id": "4d5d8511596baa5157b9ae7807aa876f458d825a"
   },
   {
    "title": "Language Café Neighborhood Floor (Berlin)",
@@ -704,7 +664,7 @@
   {
    "title": "Board Gaming Happens! @ Electric Social 🎲",
    "start": "2026-08-18T16:30:00.000Z",
-   "source": "web:Sip Happens!",
+   "source": "web:Meetup Berlin",
    "url": "https://www.meetup.com/sip_happens_berlin/events/315987860/",
    "end": null,
    "venue": "Electric Social Grunerstraße 13, 10179,, Berlin Berlin",
@@ -1117,7 +1077,7 @@
    "description": null,
    "recurring": true,
    "recurrence": "Weekly · Wed",
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
    "id": "4a5d1cd604884edeea634ca0c99b381022d7aeef"
   },
@@ -1337,7 +1297,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
    "id": "f1725de44d1df12ad6ce2762d155802245a2c453"
   },
@@ -2357,7 +2317,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
    "id": "8db405f6c355eddf8224caef02bed29b912ec4a1"
   },
@@ -2937,7 +2897,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
    "id": "5d604f3524971f654bc85d1450a84f98401ed6a5"
   },
@@ -3280,26 +3240,6 @@
    "translated": true,
    "date_source": "ical",
    "id": "9e255f2e602f44bb42302f9fc89384512a8414c1"
-  },
-  {
-   "title": "Onleihe",
-   "start": "2026-10-07T17:30:00+00:00",
-   "source": "rss:Stadtbibliothek Treptow-Köpenick",
-   "url": "https://voebb.onleihe.de/berlin/frontend/welcome,51-0-0-100-0-0-1-0-0-0-0.html",
-   "end": null,
-   "venue": null,
-   "area": null,
-   "category": "community",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": true,
-   "date_source": "page",
-   "id": "c7a33471c730afefe88d2cee544dbfe56fdc5cee"
   },
   {
    "title": "RepairCafé in the art of hairdressing",
