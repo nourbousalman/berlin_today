@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-08-21T01:14:28.680321+00:00",
- "count": 177,
+ "generated_at": "2026-08-21T06:44:38.910602+00:00",
+ "count": 179,
  "counts": {
-  "events": 177,
-  "recurring": 20,
-  "oneoff": 157,
+  "events": 179,
+  "recurring": 21,
+  "oneoff": 158,
   "always_free": 16,
   "manual_check": 207
  },
@@ -19,7 +19,7 @@
   "cal:Sprachcafé directory (Berlin)": 28,
   "cal:Berlin Hilft – Sprachcafés map": 0,
   "cal:Allmende-Kontor (community garden)": 1,
-  "cal:Reparatur-Initiativen (repair-café finder)": 62,
+  "cal:Reparatur-Initiativen (repair-café finder)": 60,
   "cal:Julia Stoschek Foundation": 0,
   "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)": 16,
   "cal:Prinzessinnengarten Kollektiv": 4,
@@ -123,9 +123,9 @@
   "rss:Prinzessinnengarten Kollektiv": 0,
   "rss:himmelbeet (Wedding)": 0,
   "rss:Stadtbibliothek Mitte": 0,
-  "rss:Stadtbibliothek Friedrichshain-Kreuzberg (Bez.-Zentralbib. Pablo Neruda)": 0,
+  "rss:Stadtbibliothek Friedrichshain-Kreuzberg (Bez.-Zentralbib. Pablo Neruda)": 1,
   "rss:Stadtbibliothek Pankow": 1,
-  "rss:Stadtbibliothek Charlottenburg-Wilmersdorf": 0,
+  "rss:Stadtbibliothek Charlottenburg-Wilmersdorf": 1,
   "rss:Stadtbibliothek Neukölln (Helene-Nathan-Bibliothek)": 0,
   "rss:Stadtbibliothek Tempelhof-Schöneberg": 1,
   "rss:Stadtbibliothek Steglitz-Zehlendorf": 0,
@@ -197,7 +197,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "jsonld",
    "id": "6fb46da7c1d170c9416357c8152751b73f684cd7"
   },
@@ -357,7 +357,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
    "id": "105804d506a2129042d8d244a695ac8b4e813699"
   },
@@ -440,6 +440,26 @@
    "translated": true,
    "date_source": "ical",
    "id": "0a1d3b5ebc8c34b6b2a0caea060bfe871804a7f3"
+  },
+  {
+   "title": "Friday Evening Drinks",
+   "start": "2026-08-21T17:30:00.000Z",
+   "source": "web:Meetup Berlin",
+   "url": "https://www.meetup.com/berlin-evening-socials/events/315418023/",
+   "end": null,
+   "venue": null,
+   "area": null,
+   "category": "other",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "date_source": "jsonld",
+   "id": "79c6971aa92ceefe0381969bf5478601a1addd6d"
   },
   {
    "title": "Board game night — Urbanstrasse neighborhood house",
@@ -602,6 +622,26 @@
    "id": "50f24675d3a592004d9dfc47093771086dcc15aa"
   },
   {
+   "title": "Reading afternoon",
+   "start": "2026-08-22T11:00:00+00:00",
+   "source": "rss:Stadtbibliothek Charlottenburg-Wilmersdorf",
+   "url": "https://www.berlin.de/land/kalender/?suchmaske&c=4",
+   "end": null,
+   "venue": null,
+   "area": null,
+   "category": "community",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": true,
+   "date_source": "page",
+   "id": "25d95b945079d1a367ad5ac32f0045a9978e3856"
+  },
+  {
    "title": "Language café “Frieda Süd” (Berlin)",
    "start": "2026-08-22T13:00:00+00:00",
    "source": "cal:Sprachcafé directory (Berlin)",
@@ -620,6 +660,26 @@
    "translated": true,
    "date_source": "ical",
    "id": "8e5c8f4f96126bb464a40fae0289611c2cda512f"
+  },
+  {
+   "title": "From now on: Pablo Neruda District Central Library open on Sundays!",
+   "start": "2026-08-22T13:00:00+00:00",
+   "source": "rss:Stadtbibliothek Friedrichshain-Kreuzberg (Bez.-Zentralbib. Pablo Neruda)",
+   "url": "https://www.berlin.de/stadtbibliothek-friedrichshain-kreuzberg/aktuelles/aktuelle-oeffnungszeiten/",
+   "end": null,
+   "venue": null,
+   "area": null,
+   "category": "community",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": true,
+   "date_source": "page",
+   "id": "9cb4461eb2d0d24a28c9117dc80e86d2aafe0e32"
   },
   {
    "title": "Cookies & Boardgames 2026",
@@ -742,7 +802,7 @@
    "id": "8fe768684d3cee5e833aebbb7ed6b7c84e0e78b4"
   },
   {
-   "title": "Kunstaktion | Bottled Futures",
+   "title": "Art action | Bottled Futures",
    "start": "2026-08-23T10:00:00+02:00",
    "source": "cal:Prinzessinnengarten Kollektiv",
    "url": "https://prinzessinnengarten-kollektiv.net/event/bottled-futures-kollektive-kunstaktion/",
@@ -757,9 +817,9 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "id": "39de3287fc0bd19d894c4767f806fa8b2fbfc2d2"
+   "id": "ed840283be5c8b0b086aeae63dc968c14e5b5a7d"
   },
   {
    "title": "Chicha Making Workshop",
@@ -880,6 +940,26 @@
    "translated": true,
    "date_source": "ical",
    "id": "2bd6accdb6a20645d731aa9a25e35d3de032f150"
+  },
+  {
+   "title": "Online Speed Dating | For UK Indian Singles (Ages 27 - 40)",
+   "start": "2026-08-23T17:00:00.000Z",
+   "source": "web:Meetup Berlin",
+   "url": "https://www.meetup.com/elite-rishtas-modern-indians-south-asians-singles-uk/events/315724953/",
+   "end": null,
+   "venue": null,
+   "area": null,
+   "category": "other",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "date_source": "jsonld",
+   "id": "59250da8d208298b53d854ed544f95873b14600d"
   },
   {
    "title": "Bitter feast",
@@ -1617,7 +1697,7 @@
    "description": null,
    "recurring": true,
    "recurrence": "Weekly · Wed",
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
    "id": "5858af6c56150c51ba6769ada7d0879d5a01c512"
   },
@@ -2335,8 +2415,8 @@
    "price_value": null,
    "image": null,
    "description": null,
-   "recurring": false,
-   "recurrence": null,
+   "recurring": true,
+   "recurrence": "Every 2 weeks · 3x upcoming",
    "translated": false,
    "date_source": "ical",
    "id": "c6cadced302e5b23f7cdf167c10d33e21d226f2e"
@@ -3102,26 +3182,6 @@
    "id": "698b3fd9cfe4486bba0e5d8c0c2167904f92a43f"
   },
   {
-   "title": "werstatt repair cafe",
-   "start": "2026-09-19T11:00:00+02:00",
-   "source": "cal:Reparatur-Initiativen (repair-café finder)",
-   "url": "",
-   "end": "2026-09-19T14:00:00+02:00",
-   "venue": "Senftenberger Ring 54 13435 Berlin",
-   "area": "Reinickendorf",
-   "category": "art",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": true,
-   "date_source": "ical",
-   "id": "b95092c6a57544a4b16980430579e7e11b56fa30"
-  },
-  {
    "title": "New city tour climate & migration",
    "start": "2026-09-19T14:00:00+00:00",
    "source": "rss:querstadtein (social city tours)",
@@ -3660,26 +3720,6 @@
    "translated": true,
    "date_source": "ical",
    "id": "70f7b23a5633646fec79e91afb7da222d25ee083"
-  },
-  {
-   "title": "wertstatt-Reparaturcafe",
-   "start": "2026-10-17T11:00:00+02:00",
-   "source": "cal:Reparatur-Initiativen (repair-café finder)",
-   "url": "",
-   "end": "2026-10-17T14:00:00+02:00",
-   "venue": "Senftenberger Ring 54 13435 Berlin",
-   "area": "Reinickendorf",
-   "category": "art",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "date_source": "ical",
-   "id": "b20c29823ce3f11ec4a40f2f1822404998756e72"
   }
  ],
  "always_free": [
