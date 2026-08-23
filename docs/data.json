@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-08-23T06:40:44.197337+00:00",
- "count": 164,
+ "generated_at": "2026-08-23T12:38:21.998469+00:00",
+ "count": 159,
  "counts": {
-  "events": 164,
+  "events": 159,
   "recurring": 21,
-  "oneoff": 143,
+  "oneoff": 138,
   "always_free": 16,
   "manual_check": 207
  },
@@ -18,8 +18,8 @@
   "cal:Über den Tellerrand": 4,
   "cal:Sprachcafé directory (Berlin)": 29,
   "cal:Berlin Hilft – Sprachcafés map": 0,
-  "cal:Allmende-Kontor (community garden)": 1,
-  "cal:Reparatur-Initiativen (repair-café finder)": 60,
+  "cal:Allmende-Kontor (community garden)": 0,
+  "cal:Reparatur-Initiativen (repair-café finder)": 58,
   "cal:Julia Stoschek Foundation": 0,
   "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)": 12,
   "cal:Prinzessinnengarten Kollektiv": 2,
@@ -130,7 +130,7 @@
   "rss:Stadtbibliothek Tempelhof-Schöneberg": 0,
   "rss:Stadtbibliothek Steglitz-Zehlendorf": 0,
   "rss:Stadtbibliothek Lichtenberg": 0,
-  "rss:Stadtbibliothek Treptow-Köpenick": 1,
+  "rss:Stadtbibliothek Treptow-Köpenick": 0,
   "rss:Stadtbibliothek Marzahn-Hellersdorf": 0,
   "rss:Stadtbibliothek Spandau": 0,
   "rss:Stadtbibliothek Reinickendorf": 0,
@@ -141,26 +141,6 @@
   "rss:LSVD Berlin-Brandenburg": 0
  },
  "events": [
-  {
-   "title": "Sunday Silent Reading @ MOKKA*MILCH",
-   "start": "2026-08-23T08:30:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/silent-book-club-berlin-chapter/events/316172586/",
-   "end": null,
-   "venue": "Mokka*Milch Karl-Marx-Allee 35, 10178 Berlin 10178 Berlin",
-   "area": "Mitte",
-   "category": "other",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "date_source": "jsonld",
-   "id": "298186209626d1f9e113590610baceeaeaebdb03"
-  },
   {
    "title": "Art action | Bottled Futures",
    "start": "2026-08-23T10:00:00+02:00",
@@ -642,7 +622,7 @@
    "id": "678061d99886c81a2788a57190e670cdfd2ed885"
   },
   {
-   "title": "Rote Lilly Sprachcafé",
+   "title": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
    "start": "2026-08-25T14:30:00+00:00",
    "source": "cal:Sprachcafé directory (Berlin)",
    "url": "https://sprachtreffen.de/event/rote-lilly-sprachcafe-1",
@@ -657,9 +637,9 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "id": "61575faf596f44e4b4bb110321a8a6f7670b4f65"
+   "id": "23368c989724643728d0398aafe3458004e2bc80"
   },
   {
    "title": "Language café in the Helene-Nathan-Bib. (Berlin)",
@@ -1177,7 +1157,7 @@
    "description": null,
    "recurring": true,
    "recurrence": "Weekly · Wed",
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
    "id": "5858af6c56150c51ba6769ada7d0879d5a01c512"
   },
@@ -1922,26 +1902,6 @@
    "id": "4264c59b7db28f29a57b0791f765e9a524534d7b"
   },
   {
-   "title": "General Organ Meeting",
-   "start": "2026-09-01T20:00:00+02:00",
-   "source": "cal:Allmende-Kontor (community garden)",
-   "url": "",
-   "end": null,
-   "venue": null,
-   "area": null,
-   "category": "community",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": true,
-   "recurrence": "Monthly · Tue",
-   "translated": true,
-   "date_source": "ical",
-   "id": "48bc6ceb4a377f0fe29a3062f19553e7ffb73cb5"
-  },
-  {
    "title": "Crafts for the rental demo",
    "start": "2026-09-03T16:00:00+00:00",
    "source": "rss:Rudi Nachbarschaftshaus",
@@ -2055,8 +2015,8 @@
    "price_value": null,
    "image": null,
    "description": null,
-   "recurring": false,
-   "recurrence": null,
+   "recurring": true,
+   "recurrence": "Every 2 weeks · 3x upcoming",
    "translated": false,
    "date_source": "ical",
    "id": "c6cadced302e5b23f7cdf167c10d33e21d226f2e"
@@ -2842,26 +2802,6 @@
    "id": "c53af8346356c91cb1394c3339af7c2663925226"
   },
   {
-   "title": "wertstatt-Reparaturcafe",
-   "start": "2026-09-19T11:00:00+02:00",
-   "source": "cal:Reparatur-Initiativen (repair-café finder)",
-   "url": "",
-   "end": "2026-09-19T14:00:00+02:00",
-   "venue": "Senftenberger Ring 54 13435 Berlin",
-   "area": "Reinickendorf",
-   "category": "art",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "date_source": "ical",
-   "id": "3b481006b3d0807cdefdd5e943d4ec804d23dcc3"
-  },
-  {
    "title": "New city tour climate & migration",
    "start": "2026-09-19T14:00:00+00:00",
    "source": "rss:querstadtein (social city tours)",
@@ -3162,26 +3102,6 @@
    "id": "9e255f2e602f44bb42302f9fc89384512a8414c1"
   },
   {
-   "title": "Onleihe",
-   "start": "2026-10-07T17:30:00+00:00",
-   "source": "rss:Stadtbibliothek Treptow-Köpenick",
-   "url": "https://voebb.onleihe.de/berlin/frontend/welcome,51-0-0-100-0-0-1-0-0-0-0.html",
-   "end": null,
-   "venue": null,
-   "area": null,
-   "category": "community",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": true,
-   "date_source": "page",
-   "id": "c7a33471c730afefe88d2cee544dbfe56fdc5cee"
-  },
-  {
    "title": "RepairCafé in the art of hairdressing",
    "start": "2026-10-08T18:00:00+02:00",
    "source": "cal:Reparatur-Initiativen (repair-café finder)",
@@ -3400,26 +3320,6 @@
    "translated": true,
    "date_source": "ical",
    "id": "70f7b23a5633646fec79e91afb7da222d25ee083"
-  },
-  {
-   "title": "werstatt repair cafe",
-   "start": "2026-10-17T11:00:00+02:00",
-   "source": "cal:Reparatur-Initiativen (repair-café finder)",
-   "url": "",
-   "end": "2026-10-17T14:00:00+02:00",
-   "venue": "Senftenberger Ring 54 13435 Berlin",
-   "area": "Reinickendorf",
-   "category": "art",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": true,
-   "date_source": "ical",
-   "id": "e79162fef29556e564540af1aa06760add34a4fe"
   }
  ],
  "always_free": [
