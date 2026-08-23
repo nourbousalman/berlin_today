@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-08-23T01:15:49.469681+00:00",
- "count": 159,
+ "generated_at": "2026-08-23T06:40:44.197337+00:00",
+ "count": 164,
  "counts": {
-  "events": 159,
-  "recurring": 22,
-  "oneoff": 137,
+  "events": 164,
+  "recurring": 21,
+  "oneoff": 143,
   "always_free": 16,
   "manual_check": 207
  },
@@ -15,11 +15,11 @@
   "cal:Kleidertausch": 2,
   "cal:Musik & Frieden": 0,
   "cal:Sinema Transtopia": 1,
-  "cal:Über den Tellerrand": 0,
+  "cal:Über den Tellerrand": 4,
   "cal:Sprachcafé directory (Berlin)": 29,
   "cal:Berlin Hilft – Sprachcafés map": 0,
   "cal:Allmende-Kontor (community garden)": 1,
-  "cal:Reparatur-Initiativen (repair-café finder)": 58,
+  "cal:Reparatur-Initiativen (repair-café finder)": 60,
   "cal:Julia Stoschek Foundation": 0,
   "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)": 12,
   "cal:Prinzessinnengarten Kollektiv": 2,
@@ -242,6 +242,26 @@
    "id": "bf9c282d516b2ea669925e265d30c4086b6f0bff"
   },
   {
+   "title": "Summer festival for affordable housing and a solidarity-based neighborhood",
+   "start": "2026-08-23T14:00:00+02:00",
+   "source": "cal:Über den Tellerrand",
+   "url": "https://ueberdentellerrand.org/veranstaltung/umwelt-und-gesundheitsfest-2026-2/",
+   "end": "2026-08-23T17:00:00+02:00",
+   "venue": "Gecekondu, Admiralstr.1/2, 10999 Kreuzrberg, Admiralstr.1/2, 10999 Kreuzrberg, Berlin, 10999, Germany",
+   "area": "Friedrichshain-Kreuzberg",
+   "category": "community",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": true,
+   "date_source": "ical",
+   "id": "8bfbe6432a2e42ef35cc2aee03e0fc9b53644c8b"
+  },
+  {
    "title": "Repair initiative at the Jungfernmühle",
    "start": "2026-08-23T14:00:00+02:00",
    "source": "cal:Reparatur-Initiativen (repair-café finder)",
@@ -260,6 +280,26 @@
    "translated": true,
    "date_source": "ical",
    "id": "e04e844c82e84bb75a6c4aab4a50cdbac8ca90ee"
+  },
+  {
+   "title": "Boardgames at Tales Untold - Board games at Tales Untold",
+   "start": "2026-08-23T14:00:00.000Z",
+   "source": "web:Meetup Berlin",
+   "url": "https://www.meetup.com/boardgames-at-kaffee-co/events/315932358/",
+   "end": null,
+   "venue": "Tales Untold Am Comeniuspl. 1, 10243, Berlin Berlin",
+   "area": "Friedrichshain-Kreuzberg",
+   "category": "other",
+   "is_free": false,
+   "price": "€5",
+   "price_value": 5.0,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": true,
+   "date_source": "jsonld",
+   "id": "3aa05761839a55fd36d2c51fbb24509e066878a2"
   },
   {
    "title": "Shardland",
@@ -722,7 +762,7 @@
    "id": "83e57faa771796b509a8d0c2d10e07cdb67459e2"
   },
   {
-   "title": "Including sound workshop",
+   "title": "Inklusive Soundwerkstatt",
    "start": "2026-08-25T16:00:00+02:00",
    "source": "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)",
    "url": "https://brotfabrik-berlin.de/veranstaltung/inklusive-soundwerkstatt/2026-08-25/",
@@ -737,9 +777,9 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
-   "id": "24c18b0e98e17817826adf9ffe751165909301b2"
+   "id": "753374988691403f290504daa79692690e90836d"
   },
   {
    "title": "Language café Friedrichshagen",
@@ -1362,6 +1402,26 @@
    "id": "d2b32fcd7dec4d718afe50fe99a1c54f43562f95"
   },
   {
+   "title": "🌿 Samenrollen workshop 🌿",
+   "start": "2026-08-27T17:00:00+02:00",
+   "source": "cal:Über den Tellerrand",
+   "url": "https://ueberdentellerrand.org/veranstaltung/%f0%9f%8c%bf-kreatives-zeichnen-in-der-natur-inselgarten-%e2%9c%8f%ef%b8%8f-2-2-2/",
+   "end": "2026-08-27T18:30:00+02:00",
+   "venue": "Inselgarten, Leberstraße 6, Hinter Bioinsel, Berlin, 10829, Germany",
+   "area": "Tempelhof-Schöneberg",
+   "category": "community",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "date_source": "ical",
+   "id": "137e06dfa2af0f3539284eb6f51858c708d7e7af"
+  },
+  {
    "title": "MEKKI Repair Café Steglitz",
    "start": "2026-08-27T17:00:00+02:00",
    "source": "cal:Reparatur-Initiativen (repair-café finder)",
@@ -1562,6 +1622,26 @@
    "id": "9faa419011109f37235aba5fb5a4d61d4f8f8571"
   },
   {
+   "title": "Cooking with friends",
+   "start": "2026-08-28T17:00:00+02:00",
+   "source": "cal:Über den Tellerrand",
+   "url": "https://ueberdentellerrand.org/veranstaltung/kochen-mit-freundinnen-2/",
+   "end": "2026-08-28T21:00:00+02:00",
+   "venue": "Über den Tellerrand Berlin, Roßbachstraße 6, Berlin, Berlin, 10829, Germany",
+   "area": "Tempelhof-Schöneberg",
+   "category": "community",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": true,
+   "date_source": "ical",
+   "id": "ca6d32f83f50cab04316a6676a13707a9decf311"
+  },
+  {
    "title": "Board game night — Urbanstrasse neighborhood house",
    "start": "2026-08-28T18:00:00+02:00",
    "source": "cal:Berlin regulars",
@@ -1660,26 +1740,6 @@
    "translated": true,
    "date_source": "ical",
    "id": "31e57b474f26474f5d43a1132fc80c7dfbdcf55f"
-  },
-  {
-   "title": "The Unteres Odertal National Park from Berlin 🌳🌳🌊🌊 16kms Hike",
-   "start": "2026-08-29T08:20:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/berlin-walking-biking-meetup-group/events/316142679/",
-   "end": null,
-   "venue": "Berlin Hbf Hauptbahnhof, Europaplatz 1, 10557 Berlin, Berlin Berlin",
-   "area": "Mitte",
-   "category": "other",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "date_source": "jsonld",
-   "id": "d69a44539b2f3250a340f1b60d42a1f1ebfb52ea"
   },
   {
    "title": "Language café “Frieda Süd” (Berlin)",
@@ -1817,7 +1877,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
    "id": "8db405f6c355eddf8224caef02bed29b912ec4a1"
   },
@@ -1840,6 +1900,26 @@
    "translated": false,
    "date_source": "jsonld",
    "id": "4de25442305539a821c9197ff1974abcc756b673"
+  },
+  {
+   "title": "Cooking with a neighborhood canteen",
+   "start": "2026-09-01T17:00:00+02:00",
+   "source": "cal:Über den Tellerrand",
+   "url": "https://ueberdentellerrand.org/veranstaltung/kochen-mit-kiezkantine-2/",
+   "end": "2026-09-01T20:00:00+02:00",
+   "venue": "Bilgisaray, Oranienstraße, 45, 10969, Germany",
+   "area": "Friedrichshain-Kreuzberg",
+   "category": "community",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": true,
+   "date_source": "ical",
+   "id": "4264c59b7db28f29a57b0791f765e9a524534d7b"
   },
   {
    "title": "General Organ Meeting",
@@ -1975,8 +2055,8 @@
    "price_value": null,
    "image": null,
    "description": null,
-   "recurring": true,
-   "recurrence": "Every 2 weeks · 3x upcoming",
+   "recurring": false,
+   "recurrence": null,
    "translated": false,
    "date_source": "ical",
    "id": "c6cadced302e5b23f7cdf167c10d33e21d226f2e"
@@ -2020,26 +2100,6 @@
    "translated": false,
    "date_source": "ical",
    "id": "c3c2f1dd4f177b80db93f2d1b12b86c0565cd8b6"
-  },
-  {
-   "title": "(Language: RU ) Bring a Game or Come & Play: Board Games Настольные Игры",
-   "start": "2026-09-05T14:30:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/board-game-lovers-berlin/events/315907252/",
-   "end": null,
-   "venue": "Protokoll Berlin Boxhagener Straße 110, 10245 Berlin, Germany, Berlin Berlin",
-   "area": "Friedrichshain-Kreuzberg",
-   "category": "other",
-   "is_free": false,
-   "price": "€5",
-   "price_value": 5.0,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "translated": false,
-   "date_source": "jsonld",
-   "id": "199d8e0ced53e8a0bd700ab6bedad1d9d483dcfe"
   },
   {
    "title": "Bright community workshop",
@@ -2357,7 +2417,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
    "id": "e5da9cbca6fa56b1b08d6800a59d25b48042fac3"
   },
@@ -2657,7 +2717,7 @@
    "description": null,
    "recurring": false,
    "recurrence": null,
-   "translated": true,
+   "translated": false,
    "date_source": "ical",
    "id": "5d604f3524971f654bc85d1450a84f98401ed6a5"
   },
@@ -2780,6 +2840,26 @@
    "translated": true,
    "date_source": "ical",
    "id": "c53af8346356c91cb1394c3339af7c2663925226"
+  },
+  {
+   "title": "wertstatt-Reparaturcafe",
+   "start": "2026-09-19T11:00:00+02:00",
+   "source": "cal:Reparatur-Initiativen (repair-café finder)",
+   "url": "",
+   "end": "2026-09-19T14:00:00+02:00",
+   "venue": "Senftenberger Ring 54 13435 Berlin",
+   "area": "Reinickendorf",
+   "category": "art",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": false,
+   "date_source": "ical",
+   "id": "3b481006b3d0807cdefdd5e943d4ec804d23dcc3"
   },
   {
    "title": "New city tour climate & migration",
@@ -3320,6 +3400,26 @@
    "translated": true,
    "date_source": "ical",
    "id": "70f7b23a5633646fec79e91afb7da222d25ee083"
+  },
+  {
+   "title": "werstatt repair cafe",
+   "start": "2026-10-17T11:00:00+02:00",
+   "source": "cal:Reparatur-Initiativen (repair-café finder)",
+   "url": "",
+   "end": "2026-10-17T14:00:00+02:00",
+   "venue": "Senftenberger Ring 54 13435 Berlin",
+   "area": "Reinickendorf",
+   "category": "art",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "translated": true,
+   "date_source": "ical",
+   "id": "e79162fef29556e564540af1aa06760add34a4fe"
   }
  ],
  "always_free": [
