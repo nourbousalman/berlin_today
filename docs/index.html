@@ -69,22 +69,27 @@
   .day .n{margin-left:auto;font-size:12px;color:var(--muted);font-weight:700;background:var(--track);border-radius:999px;padding:2px 10px}
 
   /* Cards flow into as many columns as the window allows. */
-  .evgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px;margin-bottom:6px}
-  .ev{display:flex;flex-direction:column;gap:7px;background:var(--surface);border-radius:14px;
-      box-shadow:var(--shadow);border-top:4px solid var(--c,var(--accent));padding:13px 15px 12px;
-      transition:transform .12s,box-shadow .15s;height:100%}
+  .evgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px;margin-bottom:6px}
+  .ev{background:var(--surface);border-radius:14px;box-shadow:var(--shadow);
+      border-left:5px solid var(--c,var(--accent));padding:13px 15px 11px;
+      display:flex;flex-direction:column;gap:9px;height:100%;
+      transition:transform .12s,box-shadow .15s}
   .ev:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(60,50,80,.10)}
-  /* line 1: when + what it costs — the two things you decide on */
-  .ev .topline{display:flex;align-items:center;justify-content:space-between;gap:10px}
-  .ev .time{font-family:var(--disp);font-size:15px;font-weight:700;color:var(--head);white-space:nowrap;
-            letter-spacing:.01em}
-  .ev .time .to{color:var(--muted);font-weight:500;font-size:13px}
-  .ev .title{font-size:16px;font-weight:700;color:var(--head);line-height:1.28}
-  .ev .where{font-size:12.5px;color:var(--muted);font-weight:600;line-height:1.45;
-             display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-  /* last line: labelled chips, left-aligned so they read as a row, not a stack */
-  .ev .tags{display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin-top:auto;padding-top:3px}
-  .ev .src{font-size:11px;color:var(--muted);font-weight:600;opacity:.75;
+  .ev .title{font-size:16px;font-weight:700;color:var(--head);line-height:1.3}
+  /* Every value carries its own label, so nothing is a mystery string. */
+  .ev .rows{display:grid;grid-template-columns:52px 1fr;gap:4px 10px;align-items:baseline;margin:0}
+  .ev .rows dt{font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+               color:var(--muted);opacity:.8}
+  .ev .rows dd{margin:0;font-size:13.5px;color:var(--head);font-weight:600;line-height:1.4}
+  .ev .rows dd.muted{color:var(--muted);font-weight:500;font-style:italic}
+  .ev .rows dd.free{color:#2F7D53;font-weight:700}
+  .ev .rows dd.paid{color:#9A6510;font-weight:700}
+  /* the dot ties the card's colour to the category it stands for */
+  .ev .dot{display:inline-block;width:9px;height:9px;border-radius:50%;
+           background:var(--c,var(--accent));margin-right:7px;vertical-align:middle}
+  .ev .foot{display:flex;align-items:center;justify-content:space-between;gap:8px;
+            margin-top:auto;padding-top:7px;border-top:1px solid var(--line)}
+  .ev .src{font-size:11px;color:var(--muted);font-weight:600;opacity:.8;
            white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .tag{font-size:11px;font-weight:800;border-radius:999px;padding:3px 10px;white-space:nowrap;letter-spacing:.02em}
   .cat-tag{background:var(--cb);color:var(--c)}
@@ -120,7 +125,8 @@
 
   @media (max-width:600px){
     .evgrid{grid-template-columns:1fr}
-    .ev{gap:6px}
+    .ev{gap:8px}
+    .ev .rows{grid-template-columns:50px 1fr}
     .ev .tags{flex-direction:row;align-items:center;text-align:left;margin-top:6px;flex-wrap:wrap}
     .ev .time{padding-top:0}.ev .time .to{display:inline;margin-left:6px}
     .day{top:0}.controls{position:static}
@@ -196,6 +202,7 @@ const bTime=iso=>new Date(iso).toLocaleTimeString("en-GB",{hour:"2-digit",minute
 const bDow=iso=>new Date(iso).toLocaleDateString("en-GB",{weekday:"long",timeZone:"Europe/Berlin"});
 const bDateL=iso=>new Date(iso).toLocaleDateString("en-GB",{day:"2-digit",month:"short",timeZone:"Europe/Berlin"});
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const catFull=cat=>(CATS.find(c=>c[0]===cat)||["","Other"])[1];
 const catLabel=cat=>(CATS.find(c=>c[0]===cat)||["","Other"])[1].split(" ")[0];
 
 /* ---- date range for one-off "When" ---- */
@@ -284,28 +291,35 @@ function recurringSection(rows,withHeader){
 }
 function card(ev,opts){
   const recurring=opts.recurring,showDate=opts.showDate;
-  const to=(!recurring&&ev.end)?` <span class="to">– ${bTime(ev.end)}</span>`:"";
   const allDay=(ev.date_source||"").endsWith("allday");
-  const when=recurring?esc(ev.recurrence||"Recurring")
-    :(allDay?(showDate?`${bDow(ev.start).slice(0,3)} ${bDateL(ev.start)} · All day`:"All day")
-            :(showDate?`${bDow(ev.start).slice(0,3)} ${bDateL(ev.start)}, ${bTime(ev.start)}${to}`
-                      :`${bTime(ev.start)}${to}`));
+  const to=(!recurring&&ev.end)?` – ${bTime(ev.end)}`:"";
+  const day=`${bDow(ev.start).slice(0,3)} ${bDateL(ev.start)}`;
+  // WHEN — always says in words what it is, never a bare code
+  const when=recurring?esc(ev.recurrence||"Repeats regularly")
+    :(allDay?(showDate?`${day} · All day`:"All day (no set time)")
+            :(showDate?`${day}, ${bTime(ev.start)}${to}`:`${bTime(ev.start)}${to}`));
   const title=ev.url?`<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`:esc(ev.title);
-  const money=ev.is_free===true?`<span class="tag free">Free</span>`
-    :(ev.price?`<span class="tag price">${esc(ev.price)}</span>`:`<span class="tag price">check price</span>`);
-  const where=[ev.venue,ev.area].filter(Boolean).map(esc).join(" · ");
-  const src=esc(ev.source.replace(/^cal:|^rss:|^web:/,""));
-  const tr=ev.translated?`<span class="tag tr">translated</span>`:"";
-  const kind=recurring?`<span class="tag cadence">${esc(ev.recurrence||"Recurring")}</span>`:"";
+  // WHERE — honest when the source didn't give one
+  const whereTxt=[ev.venue,ev.area].filter(Boolean).map(esc).join(" · ");
+  const where=whereTxt?`<dd>${whereTxt}</dd>`:`<dd class="muted">Not listed \u2014 see link</dd>`;
+  // COST
+  const cost=ev.is_free===true?`<dd class="free">Free</dd>`
+    :(ev.price?`<dd class="paid">${esc(ev.price)}</dd>`:`<dd class="muted">Check on the site</dd>`);
+  const type=`<dd><span class="dot"></span>${esc(catFull(ev.category))}${ev.translated?' <span class="tag tr">translated</span>':''}</dd>`;
+  const src=esc(ev.source.replace(/^cal:|^rss:|^web:|^gib:/,""));
   const cal=recurring?"":`<button class="tag cal-btn" type="button" data-ics="${esc(ev.id||"")}" title="Add to calendar">+ Calendar</button>`;
   return `<article class="ev cat-${ev.category}">
-    <div class="topline"><span class="time">${when}</span>${money}</div>
     <div class="title">${title}</div>
-    ${where?`<div class="where">${where}</div>`:""}
-    <div class="tags"><span class="tag cat-tag">${catLabel(ev.category)}</span>${kind}${tr}${cal}</div>
-    <div class="src">${src}</div>
+    <dl class="rows">
+      <dt>When</dt>${`<dd>${when}</dd>`}
+      <dt>Where</dt>${where}
+      <dt>Cost</dt>${cost}
+      <dt>Type</dt>${type}
+    </dl>
+    <div class="foot"><span class="src">${src}</span>${cal}</div>
   </article>`;
 }
+
 
 
 /* ---- ALWAYS FREE ---- */

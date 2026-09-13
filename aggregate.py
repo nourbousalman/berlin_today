@@ -182,14 +182,14 @@ def _collapse_repeats(events: list[Event]) -> list[Event]:
         gaps = [(days[i + 1] - days[i]).days for i in range(len(days) - 1)]
         first = evs[0]
         if all(g == 1 for g in gaps):                     # a continuous run (exhibition)
-            first.recurrence = f"Daily until {days[-1].strftime('%d %b')}"
+            first.recurrence = f"Every day until {days[-1].strftime('%d %b')}"
             out.append(first)
             continue
         common = Counter(g for g in gaps if g > 0).most_common(1)
         common = common[0][0] if common else 0
-        label = {7: "Weekly", 14: "Every 2 weeks"}.get(common)
+        label = {7: "Every week", 14: "Every 2 weeks"}.get(common)
         if label is None and 28 <= common <= 31:
-            label = "Monthly"
+            label = "Every month"
         if label is None and len(evs) >= 5:
             # Many series run on a fixed set of weekdays (a repair café open
             # Wed-Sat), so the gaps alternate 1,1,1,3 and match no single period.
@@ -197,15 +197,17 @@ def _collapse_repeats(events: list[Event]) -> list[Event]:
             dows = sorted({d.weekday() for d in days})
             names = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
             if len(dows) <= 4:
-                label = "Weekly · " + ", ".join(names[i] for i in dows)
+                label = "Every " + ", ".join(names[i] for i in dows)
             else:
-                label = f"{len(evs)}x upcoming"
+                label = f"{len(evs)} dates coming up"
         if label is None:
             out.extend(evs)                                # irregular -> keep as-is
             continue
         first.recurring = True
-        first.recurrence = (label if label.startswith("Weekly · ") and len(label) > 12
-                            else f"{label} · {len(evs)}x upcoming")
+        nxt = days[0].strftime("%d %b")
+        first.recurrence = (f"{label} — next on {nxt} ({len(evs)} more dates)"
+                            if not label.endswith("dates coming up")
+                            else f"{label} — next on {nxt}")
         out.append(first)
     return out
 
