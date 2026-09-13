@@ -285,9 +285,11 @@ function recurringSection(rows,withHeader){
 function card(ev,opts){
   const recurring=opts.recurring,showDate=opts.showDate;
   const to=(!recurring&&ev.end)?` <span class="to">– ${bTime(ev.end)}</span>`:"";
+  const allDay=(ev.date_source||"").endsWith("allday");
   const when=recurring?esc(ev.recurrence||"Recurring")
-    :(showDate?`${bDow(ev.start).slice(0,3)} ${bDateL(ev.start)}, ${bTime(ev.start)}${to}`
-              :`${bTime(ev.start)}${to}`);
+    :(allDay?(showDate?`${bDow(ev.start).slice(0,3)} ${bDateL(ev.start)} · All day`:"All day")
+            :(showDate?`${bDow(ev.start).slice(0,3)} ${bDateL(ev.start)}, ${bTime(ev.start)}${to}`
+                      :`${bTime(ev.start)}${to}`));
   const title=ev.url?`<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`:esc(ev.title);
   const money=ev.is_free===true?`<span class="tag free">Free</span>`
     :(ev.price?`<span class="tag price">${esc(ev.price)}</span>`:`<span class="tag price">check price</span>`);

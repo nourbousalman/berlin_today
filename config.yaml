@@ -104,3 +104,8 @@ llm_model: openai/gpt-4o-mini
 # --- date verification (never publish an RSS publish-timestamp as an event time) ---
 verify_dates: true
 verify_budget_per_run: 250   # new page fetches per run; cached URLs are free
+
+# --- gratis-in-berlin.de: curated day-by-day index of FREE Berlin events ---
+gratis_in_berlin: true
+gib_days: 45          # how many days ahead to pull (one page per day)
+gib_detail_budget: 250  # detail pages fetched per run for real times; cached forever

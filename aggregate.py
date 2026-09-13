@@ -30,7 +30,8 @@ socket.setdefaulttimeout(45)  # one slow/hanging feed must not stall a 122-feed 
 
 from sources.base import Event, dedupe, berlin_status, berlin_district
 from sources import (resident_advisor, ics_feeds, rss_feeds, html_scrapers,
-                     directory_feed, price_probe, site_extract, verify)
+                     directory_feed, price_probe, site_extract, verify,
+                     gratis_in_berlin)
 from sources.translate import translate_events
 
 ROOT = Path(__file__).parent
@@ -72,6 +73,13 @@ def collect(cfg: dict, ics_list: list[dict], rss_list: list[dict],
 
     if (cfg.get("html_scrapers", {}) or {}).get("enabled"):
         events += _run("HTML scrapers", lambda: html_scrapers.fetch(horizon_days=horizon))
+
+    # gratis-in-berlin.de: a curated, day-scoped index of free Berlin events.
+    # Its pages are organised by date, so the date is authoritative.
+    if cfg.get("gratis_in_berlin", True):
+        events += _run("gratis-in-berlin", lambda: gratis_in_berlin.fetch(
+            horizon_days=horizon,
+            max_days=int(cfg.get("gib_days", 45))))
 
     # Sites with no feed at all (the old "manual check" list): discover their
     # programme page and extract events from the HTML.
@@ -215,6 +223,9 @@ def main() -> int:
     events = [e for e in events if e.start]
     # An RSS publish timestamp is not an event time. Read the real datetime off
     # each event's own page; anything we cannot verify is dropped below.
+    if cfg.get("gratis_in_berlin", True):
+        _run("gratis-in-berlin detail", lambda: gratis_in_berlin.enrich(
+            events, budget=int(cfg.get("gib_detail_budget", 250))) and [])
     vstats = (verify.resolve_many(events, budget=int(cfg.get("verify_budget_per_run", 250)))
               if cfg.get("verify_dates", True) else {})
     before_verify = len(events)
@@ -223,6 +234,7 @@ def main() -> int:
     # really found (older cache entries predate the stricter rule in verify.py).
     events = [e for e in events
               if not (e.date_source == "page" and e.start[11:16] == "00:00")]
+    # A day-page all-day entry is genuinely all-day, not a fabricated midnight.
     unverified = before_verify - len(events)
     before_geo = len(events)
     # Some feeds are nationwide directories (repair cafés, clothes swaps) that
