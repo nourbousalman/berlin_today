@@ -17,6 +17,7 @@ all-day, which is honest rather than invented.
 from __future__ import annotations
 
 import re
+import time
 import ssl
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -127,7 +128,7 @@ def _day(day: datetime) -> list[Event]:
     return out
 
 
-def fetch(horizon_days: int = 60, max_workers: int = 8, max_days: int = 45) -> list[Event]:
+def fetch(horizon_days: int = 60, max_workers: int = 3, max_days: int = 45) -> list[Event]:
     today = datetime.now(timezone(timedelta(hours=2)))
     days = [today + timedelta(days=i) for i in range(min(horizon_days, max_days))]
     events: list[Event] = []
@@ -204,7 +205,7 @@ _DESC_END = (" von: ", "Mehr Infos im Internet", "Kommentar schreiben",
              "Weitere interessante Angebote")
 
 
-def enrich(events: list, budget: int = 250, max_workers: int = 12) -> dict:
+def enrich(events: list, budget: int = 250, max_workers: int = 3) -> dict:
     """Fill in real times/venues for day-page events, within a per-run budget."""
     try:
         cache = _json.loads(_DCACHE.read_text("utf-8"))
@@ -220,9 +221,13 @@ def enrich(events: list, budget: int = 250, max_workers: int = 12) -> dict:
         seen.add(e.url)
         todo.append(e.url)
 
+    # Be a polite guest: few connections and a pause. A burst of 10 parallel
+    # requests got us "503 Service Unavailable" from this site.
     def work(u):
         try:
-            return u, _detail(u), True
+            res = _detail(u)
+            time.sleep(0.4)
+            return u, res, res is not None      # a refused page is retried next run
         except Exception:
             return u, None, False
 
