@@ -187,7 +187,9 @@ def _parse(raw: str) -> list[dict]:
 
 # A summary that only admits there is nothing to say is worse than no summary.
 _FILLER = re.compile(r"no (further |more )?(details|information|description)|not (specified|stated|given)|"
-                     r"\bunclear\b|title only|listing (only|does not)|no more info", re.I)
+                     r"\bunclear\b|title only|listing (only|does not)|no more info|"
+                     r"^(a |an |the )?(listing|event|session|item|entry|programme|program) "
+                     r"(titled|called|named)\b|^listing\b", re.I)
 
 
 def _clean(d: dict, original: str) -> dict | None:
