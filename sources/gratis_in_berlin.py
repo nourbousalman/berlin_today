@@ -253,6 +253,13 @@ def _num(x: str) -> float:
     return float(x.replace(",", "."))
 
 
+# only wording that is about the event itself ("Kuchen sind nicht gratis" or
+# "Rodeln kostenpflichtig" is about extras, not the entry)
+_NOT_FREE = re.compile(r"not a free (?:show|event|gig|concert)|this (?:show|event) is not free|"
+                       r"keine kostenlose veranstaltung|kein gratis-?(?:konzert|event)", re.I)
+_EUR = re.compile(r"(\d{1,3}(?:[.,]\d{1,2})?)\s*(?:€|euro\b|eur\b)|€\s*(\d{1,3}(?:[.,]\d{1,2})?)", re.I)
+_FEE_EN = re.compile(r"(?:seats?|tickets?|entry|admission|entrance)\s*(?:are|is|costs?|:)?\s*"
+                     r"(?:€\s*(\d{1,3}(?:[.,]\d{1,2})?)|(\d{1,3}(?:[.,]\d{1,2})?)\s*(?:€|euro\b|eur\b))", re.I)
 _NOT_DONATION = re.compile(r"gespendet|aus spenden|blutspende|spendenlauf|unseren spenden|spendensammlung", re.I)
 
 
@@ -260,6 +267,21 @@ def _price_from_page(e, note, desc) -> None:
     txt = " ".join(x for x in (note, desc) if x)
     if not txt:
         return
+    if _NOT_FREE.search(txt):                 # "NOT A FREE SHOW. Seats are 10€"
+        m = _EUR.search(txt)
+        e.is_free = False
+        if m:
+            amt = m.group(1) or m.group(2)
+            e.price, e.price_value = f"€{amt}", _num(amt)
+        else:
+            e.price = None
+        return
+    en = _FEE_EN.search(txt)
+    if en and not _DONATION.search(txt[max(0, en.start() - 60):en.end() + 60]):
+        amt = en.group(1) or en.group(2)
+        if _num(amt) > 0:
+            e.is_free, e.price, e.price_value = False, f"€{amt}", _num(amt)
+            return
     if _DONATION.search(_NOT_DONATION.sub(" ", txt)):
         m = _SUGGEST.search(txt)
         if m:
