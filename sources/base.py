@@ -195,7 +195,13 @@ class Event:
     #   llm     - read off the event page by the extraction model
     # "publish" means the value is an RSS publish timestamp, i.e. NOT an event
     # time; such events must never be published.
-    date_source: str = "publish"        # True if title/description were auto-translated to English
+    date_source: str = "publish"        # where `start` came from (ical/jsonld/page/daypage…)
+    # set by sources/classify.py
+    title_orig: str | None = None       # original title when `title` was rewritten in English
+    kind: str | None = None             # exhibition / music / talk / … / support
+    audience: str | None = None         # everyone / kids / seniors / group / women / men
+    summary: str | None = None          # one plain line on what happens
+    classified_by: str | None = None    # "ai" or "rules"
 
     def key(self) -> str:
         """Stable identity for de-duplication (title + day + venue)."""

@@ -98,7 +98,7 @@ html_scrapers:
 
 # --- extraction from feedless sites (the old "manual check" list) ---
 site_extract: true          # discover each site's programme page and extract events
-llm_budget_per_run: 35      # 4 runs/day x 35 = 140, under the free tier's 150/day cap
+llm_budget_per_run: 15      # 4 runs/day x 15 = 60; leaves room for the classifier below
 llm_model: openai/gpt-4o-mini
 
 # --- date verification (never publish an RSS publish-timestamp as an event time) ---
@@ -109,3 +109,11 @@ verify_budget_per_run: 250   # new page fetches per run; cached URLs are free
 gratis_in_berlin: true
 gib_days: 45          # how many days ahead to pull (one page per day)
 gib_detail_budget: 250  # detail pages fetched per run for real times; cached forever
+
+# --- classification: English title, what it is, who it's for, one plain line ---
+# Uses GitHub Models (free in Actions). Each title is classified once and cached.
+classify: true
+classify_calls_per_run: 20      # 30 titles per call -> up to 600 new titles per run
+classify_batch: 30
+classify_models: ["openai/gpt-4.1-mini", "openai/gpt-4o-mini"]   # each has its own daily quota
+translate_budget_per_run: 400   # fallback translation for anything not yet classified

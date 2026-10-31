@@ -2,421 +2,438 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nour's Planner</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Berlin · free &amp; almost-free</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
+  /* One typeface, one accent. Colour is reserved for a single job: the small
+     dot that says which kind of event a card is. Everything else is paper,
+     ink and one hairline, so the page reads instead of shouting. */
   :root{
-    --bg:#FBF7F1; --surface:#FFFFFF; --ink:#4B4757; --head:#39354A; --muted:#A29DAB;
-    --line:rgba(57,53,74,.10); --track:#F1ECE6; --accent:#7B84DB; --accent-soft:#EAEBFB;
-    --shadow:0 2px 10px rgba(60,50,80,.06),0 1px 3px rgba(60,50,80,.05);
-    --disp:'Fredoka',system-ui,sans-serif; --body:'Nunito',system-ui,sans-serif;
-    --controls-h:150px;
+    --bg:#FAF8F5; --surface:#FFFFFF; --ink:#2B2B2E; --head:#1A1A1D;
+    --muted:#73707A; --line:#E7E3DC; --accent:#5A5FA8; --accent-soft:#ECEDF7;
+    --shadow:0 1px 2px rgba(30,25,40,.05);
+    --font:'Nunito',system-ui,-apple-system,sans-serif;
+    --controls-h:0px;
   }
-  *{box-sizing:border-box}html,body{margin:0}
-  body{background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:500;line-height:1.45;-webkit-font-smoothing:antialiased}
-  a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+  /* kind colours are set inline per dot (see KINDS in the script) */
 
-  .cat-music{--c:#E1734E;--cb:#FCE6DD}
-  .cat-nightlife{--c:#9A72CF;--cb:#EDE4FB}
-  .cat-art{--c:#D66A9E;--cb:#FBE1EE}
-  .cat-sport{--c:#4FA377;--cb:#DDF0E4}
-  .cat-community{--c:#5A90CC;--cb:#DFEDFB}
-  .cat-market{--c:#C6912F;--cb:#FAECCF}
-  .cat-other{--c:#8C88A0;--cb:#ECEAF3}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);
+       font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  a:hover{color:var(--accent)}
 
-  .mast{padding:26px clamp(16px,4vw,40px) 8px}
-  .mast h1{font-family:var(--disp);font-size:clamp(30px,6vw,52px);font-weight:600;letter-spacing:-.01em;margin:0;line-height:1;color:var(--head)}
-  .mast h1 .a{color:var(--accent)}
-  .mast .sub{font-size:13px;color:var(--muted);margin-top:8px;display:flex;gap:14px;flex-wrap:wrap;font-weight:600}
+  .mast{padding:26px clamp(16px,3vw,32px) 14px;max-width:1500px;margin:0 auto}
+  .mast h1{margin:0;font-size:21px;font-weight:800;letter-spacing:-.01em;color:var(--head)}
+  .mast .sub{margin-top:3px;font-size:13px;color:var(--muted);font-weight:600}
 
-  /* top-level tabs */
-  .tabs{display:flex;gap:6px;padding:6px clamp(16px,4vw,40px) 0;flex-wrap:wrap}
-  .tab{font-family:var(--disp);font-weight:500;font-size:15px;border:0;background:transparent;color:var(--muted);padding:9px 16px;border-radius:12px 12px 0 0;cursor:pointer;transition:color .15s,background .15s}
-  .tab:hover{color:var(--head)}
-  .tab[aria-selected="true"]{color:var(--head);background:var(--surface);box-shadow:0 -2px 8px rgba(60,50,80,.05)}
-  .tab .n{font-family:var(--body);font-size:12px;font-weight:700;color:var(--muted);margin-left:7px;background:var(--track);border-radius:999px;padding:1px 8px}
-  .tab[aria-selected="true"] .n{background:var(--accent-soft);color:var(--accent)}
+  /* ---- controls: tabs decide WHEN, chips decide WHAT. Nothing else. ---- */
+  .controls{position:sticky;top:0;z-index:5;background:var(--bg);
+            border-bottom:1px solid var(--line);padding:0 clamp(16px,3vw,32px) 12px}
+  .cwrap{max-width:1500px;margin:0 auto}
+  .tabs{display:flex;gap:4px;flex-wrap:wrap;padding-top:4px;align-items:center}
+  .tab{border:0;background:none;font:inherit;font-weight:700;font-size:14px;
+       color:var(--muted);padding:9px 14px;border-radius:9px;cursor:pointer;
+       display:flex;align-items:center;gap:7px}
+  .tab:hover{background:var(--accent-soft);color:var(--head)}
+  .tab[aria-selected="true"]{background:var(--head);color:#fff}
+  .tab .n{font-size:12px;font-weight:700;opacity:.65}
+  .tab[aria-selected="true"] .n{opacity:.8}
 
-  .controls{position:sticky;top:0;z-index:5;background:rgba(251,247,241,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px clamp(16px,4vw,40px)}
-  .ctrl-top{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
-  .group{display:flex;align-items:center;gap:8px}
-  .lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
-  .seg{display:inline-flex;gap:2px;background:var(--track);border-radius:999px;padding:3px}
-  .seg button{font-family:var(--body);font-weight:700;font-size:13px;border:0;border-radius:999px;background:transparent;color:var(--ink);padding:6px 13px;cursor:pointer;transition:background .15s,color .15s}
-  .seg button:hover{color:var(--head)}
-  .seg button[aria-pressed="true"]{background:var(--surface);color:var(--head);box-shadow:var(--shadow)}
-  .recur-seg{background:var(--accent-soft)}
-  .recur-seg button[aria-pressed="true"]{background:var(--accent);color:#fff;box-shadow:none}
-  .cal-btn{cursor:pointer;font-family:inherit;border:1px solid var(--line);background:var(--surface);color:var(--muted)}
-  .cal-btn:hover{border-color:var(--accent);color:var(--accent)}
-  .searchwrap{flex:1;min-width:180px;display:flex}
-  .search{flex:1;font-family:var(--body);font-weight:600;font-size:14px;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:9px 16px;color:var(--ink)}
-  .search::placeholder{color:var(--muted)}
-  .search:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+  .row2{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+  .chips{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+  .chip{border:1px solid var(--line);background:var(--surface);font:inherit;
+        font-weight:600;font-size:12.5px;color:var(--muted);border-radius:999px;
+        padding:4px 10px 4px 8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+  .chip:hover{border-color:var(--accent);color:var(--head)}
+  .chip[aria-pressed="true"]{border-color:var(--head);background:var(--head);color:#fff}
+  .chip .dot{width:8px;height:8px;border-radius:50%;background:var(--c,#999);flex:none}
+  .tabs .search{margin-left:auto;flex:0 1 300px}
+  .search{flex:1;min-width:170px;font:inherit;font-weight:600;font-size:14px;
+          border:1px solid var(--line);background:var(--surface);border-radius:9px;
+          padding:8px 13px;color:var(--ink)}
+  .search::placeholder{color:var(--muted);font-weight:500}
+  .search:focus{outline:none;border-color:var(--accent)}
 
-  .cats{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
-  .chip{font-family:var(--body);font-weight:700;font-size:13px;border:0;border-radius:999px;padding:6px 13px;cursor:pointer;background:var(--cb,#eee);color:var(--c,#666);opacity:.85;transition:transform .1s,box-shadow .15s,opacity .15s}
-  .chip:hover{opacity:1;transform:translateY(-1px)}
-  .chip[aria-pressed="true"]{background:var(--c,#666);color:#fff;opacity:1;box-shadow:var(--shadow)}
+  /* ---- feed ---- */
+  main{padding:4px clamp(16px,3vw,32px) 56px;max-width:1500px;margin:0 auto}
+  .lead{font-size:13.5px;color:var(--muted);font-weight:600;margin:16px 2px 2px}
+  .daybar{display:flex;align-items:baseline;gap:10px;margin:22px 2px 10px;
+          padding-bottom:7px;border-bottom:1px solid var(--line)}
+  .daybar .d1{font-size:16px;font-weight:800;color:var(--head)}
+  .daybar .d2{font-size:13px;color:var(--muted);font-weight:600}
+  .daybar .n{margin-left:auto;font-size:12px;color:var(--muted);font-weight:700}
 
-  main{padding:8px clamp(16px,3vw,32px) 40px;max-width:1680px;margin:0 auto}
-  .day{position:sticky;top:var(--controls-h);z-index:2;background:var(--bg);padding:20px 4px 8px;margin-top:10px;display:flex;align-items:baseline;gap:12px}
-  .day .dow{font-family:var(--disp);font-size:clamp(21px,4vw,30px);font-weight:600;color:var(--head)}
-  .day .date{font-size:13px;color:var(--muted);font-weight:700}
-  .day .n{margin-left:auto;font-size:12px;color:var(--muted);font-weight:700;background:var(--track);border-radius:999px;padding:2px 10px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:10px}
+  .ev{background:var(--surface);border:1px solid var(--line);border-radius:11px;
+      box-shadow:var(--shadow);padding:12px 14px 11px;display:flex;flex-direction:column;
+      gap:8px;height:100%}
+  .ev:hover{border-color:#D6D1C8}
+  .ev .title{font-size:15px;font-weight:700;color:var(--head);line-height:1.32}
+  .ev .title a{text-decoration:none}
+  /* one plain line on what actually happens — the answer to "what is this?" */
+  .ev .summary{font-size:13px;color:var(--muted);font-weight:600;line-height:1.4;margin-top:-3px}
+  .rows dd.who{color:#9A5B12;font-weight:700}
+  /* every value carries its label, so no string is a mystery */
+  .rows{display:grid;grid-template-columns:46px 1fr;gap:3px 10px;align-items:baseline;margin:0}
+  .rows dt{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+           color:var(--muted);opacity:.75}
+  .rows dd{margin:0;font-size:13px;color:var(--ink);font-weight:600;line-height:1.4}
+  .rows dd.soft{color:var(--muted);font-weight:500}
+  .rows dd.free{color:#2E7A52;font-weight:700}
+  .dot{display:inline-block;width:9px;height:9px;border-radius:50%;
+       background:var(--c,#999);margin-right:6px;vertical-align:baseline}
+  .foot{display:flex;align-items:center;justify-content:space-between;gap:8px;
+        margin-top:auto;padding-top:7px;border-top:1px solid var(--line)}
+  .src{font-size:11px;color:var(--muted);font-weight:600;white-space:nowrap;
+       overflow:hidden;text-overflow:ellipsis}
+  .cal{border:1px solid var(--line);background:none;font:inherit;font-size:11px;
+       font-weight:700;color:var(--muted);border-radius:7px;padding:3px 9px;cursor:pointer;flex:none}
+  .cal:hover{border-color:var(--accent);color:var(--accent)}
 
-  /* Cards flow into as many columns as the window allows. */
-  .evgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px;margin-bottom:6px}
-  .ev{background:var(--surface);border-radius:14px;box-shadow:var(--shadow);
-      border-left:5px solid var(--c,var(--accent));padding:13px 15px 11px;
-      display:flex;flex-direction:column;gap:9px;height:100%;
-      transition:transform .12s,box-shadow .15s}
-  .ev:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(60,50,80,.10)}
-  .ev .title{font-size:16px;font-weight:700;color:var(--head);line-height:1.3}
-  /* Every value carries its own label, so nothing is a mystery string. */
-  .ev .rows{display:grid;grid-template-columns:52px 1fr;gap:4px 10px;align-items:baseline;margin:0}
-  .ev .rows dt{font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
-               color:var(--muted);opacity:.8}
-  .ev .rows dd{margin:0;font-size:13.5px;color:var(--head);font-weight:600;line-height:1.4}
-  .ev .rows dd.muted{color:var(--muted);font-weight:500;font-style:italic}
-  .ev .rows dd.free{color:#2F7D53;font-weight:700}
-  .ev .rows dd.paid{color:#9A6510;font-weight:700}
-  /* the dot ties the card's colour to the category it stands for */
-  .ev .dot{display:inline-block;width:9px;height:9px;border-radius:50%;
-           background:var(--c,var(--accent));margin-right:7px;vertical-align:middle}
-  .ev .foot{display:flex;align-items:center;justify-content:space-between;gap:8px;
-            margin-top:auto;padding-top:7px;border-top:1px solid var(--line)}
-  .ev .src{font-size:11px;color:var(--muted);font-weight:600;opacity:.8;
-           white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .tag{font-size:11px;font-weight:800;border-radius:999px;padding:3px 10px;white-space:nowrap;letter-spacing:.02em}
-  .cat-tag{background:var(--cb);color:var(--c)}
-  .tag.free{background:#D6EFDF;color:#358056}
-  .tag.price{background:#F0ECE6;color:#7C776C}
-  .tag.cadence{background:var(--track);color:var(--muted)}
-  .tag.kind{background:transparent;color:var(--muted);font-weight:700;border:1px solid var(--line);padding:2px 9px}
-  .tag.tr{background:transparent;color:var(--muted);font-weight:700;padding:3px 0}
+  .more{margin:10px 0 2px;border:1px dashed var(--line);background:none;font:inherit;
+        font-weight:700;font-size:13px;color:var(--muted);border-radius:9px;
+        padding:9px 14px;cursor:pointer;width:100%}
+  .more:hover{border-color:var(--accent);color:var(--accent)}
 
-  /* always-free + manual-check cards */
-  .card{display:block;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:13px 16px;margin-bottom:9px;border-left:5px solid var(--c,var(--accent));transition:transform .12s,box-shadow .15s}
-  .card:hover{text-decoration:none;transform:translateY(-2px);box-shadow:0 6px 18px rgba(60,50,80,.10)}
-  .card .row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-  .card .nm{font-family:var(--disp);font-size:16px;font-weight:500;color:var(--head)}
-  .card a.nm:hover{color:var(--accent)}
-  .card .sub2{display:block;font-size:12.5px;color:var(--muted);margin-top:4px;font-weight:600}
-  .badge{font-size:11px;font-weight:800;border-radius:999px;padding:2px 10px;letter-spacing:.02em}
-  .badge.open{background:#D6EFDF;color:#358056}
-  .badge.closed{background:#F6E1E1;color:#B4585B}
-  .badge.hrs{background:var(--track);color:var(--muted)}
-  .reason{background:var(--track);color:var(--muted);font-size:11px;font-weight:800;border-radius:999px;padding:2px 10px;white-space:nowrap}
+  .badge{font-size:11px;font-weight:700;border-radius:999px;padding:2px 9px;
+         background:#F0EEE9;color:var(--muted)}
+  .badge.open{background:#E3F2E9;color:#2E7A52}
+  .badge.closed{background:#F3E7E7;color:#9A5151}
+  .place{background:var(--surface);border:1px solid var(--line);border-radius:11px;
+         padding:11px 14px;display:flex;flex-direction:column;gap:5px}
+  .place .pr{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .place .nm{font-size:15px;font-weight:700;color:var(--head);text-decoration:none}
+  .place .sub{font-size:12.5px;color:var(--muted);font-weight:500}
 
-  .state{font-size:14px;color:var(--muted);padding:50px 6px;line-height:1.7;max-width:56ch;font-weight:600}
-  .state b{display:block;font-family:var(--disp);color:var(--head);font-size:18px;font-weight:600;margin-bottom:6px}
-  code{background:var(--track);border-radius:6px;padding:1px 6px;font-size:12.5px;font-family:ui-monospace,monospace}
-
-  .sources{max-width:1680px;margin:0 clamp(16px,4vw,40px);border-top:1px solid var(--line);padding:16px 0 60px}
-  .sources summary{font-size:12px;color:var(--muted);cursor:pointer;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
-  .src-grid{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:12px}
-  .src-item{font-size:12.5px;color:var(--ink);font-weight:600;background:var(--surface);border-radius:999px;padding:4px 12px;box-shadow:var(--shadow)}
-  .src-item .z{color:#D06868;font-weight:800}
-  .src-item .c{color:#4FA377;font-weight:800}
-
-  @media (max-width:600px){
-    .evgrid{grid-template-columns:1fr}
-    .ev{gap:8px}
-    .ev .rows{grid-template-columns:50px 1fr}
-    .ev .tags{flex-direction:row;align-items:center;text-align:left;margin-top:6px;flex-wrap:wrap}
-    .ev .time{padding-top:0}.ev .time .to{display:inline;margin-left:6px}
-    .day{top:0}.controls{position:static}
+  /* the hidden-events switch: says what is hidden and how many, one click to show */
+  .hidebar{margin-top:9px;font-size:12.5px;color:var(--muted);font-weight:600}
+  .hidebar button{border:0;background:none;font:inherit;font-weight:700;color:var(--accent);
+                  cursor:pointer;padding:0 0 0 4px;text-decoration:underline}
+  .mgroup{margin:22px 2px 6px;font-size:14px;font-weight:800;color:var(--head)}
+  .mlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:6px 18px}
+  .mrow{font-size:13.5px;padding:5px 0;border-bottom:1px solid var(--line);
+        display:flex;justify-content:space-between;gap:10px}
+  .mrow a{font-weight:700;text-decoration:none;color:var(--head)}
+  .mrow .why{color:var(--muted);font-size:12px;font-weight:600;white-space:nowrap}
+  .state{font-size:14px;color:var(--muted);padding:44px 4px;max-width:52ch;font-weight:600}
+  .state b{display:block;color:var(--head);font-size:16px;margin-bottom:6px}
+  @media (max-width:620px){
+    .grid{grid-template-columns:1fr}
+    .controls{position:static}
   }
-  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
-  <header class="mast">
-    <h1>Nour's <span class="a">Planner</span></h1>
-    <div class="sub"><span id="count">loading…</span><span id="updated"></span><span>Berlin · free &amp; almost-free</span></div>
-  </header>
 
-  <nav class="tabs" id="tabs" role="tablist" aria-label="Sections">
-    <button class="tab" data-tab="events"  role="tab" aria-selected="true">Events <span class="n" id="tabnEvents">·</span></button>
-    <button class="tab" data-tab="free"    role="tab" aria-selected="false">Always free <span class="n" id="tabnFree">·</span></button>
-    <button class="tab" data-tab="manual"  role="tab" aria-selected="false">Manual check <span class="n" id="tabnManual">·</span></button>
-  </nav>
+<header class="mast">
+  <h1>Berlin · free &amp; almost-free</h1>
+  <div class="sub"><span id="count">…</span> · <span id="updated"></span></div>
+</header>
 
-  <section class="controls" id="controls" aria-label="Filters">
-    <div class="ctrl-top">
-      <div class="group ev-only" role="group" aria-label="Type">
-        <span class="lbl">Type</span>
-        <div class="seg recur-seg" id="recur">
-          <button data-recur="all" aria-pressed="true">All</button>
-          <button data-recur="oneoff" aria-pressed="false">One-off</button>
-          <button data-recur="recurring" aria-pressed="false">Recurring</button>
-        </div>
-      </div>
-      <div class="group ev-only" id="whenRow" role="group" aria-label="When">
-        <span class="lbl">When</span>
-        <div class="seg" id="presets">
-          <button data-when="weekend" aria-pressed="true">This weekend</button>
-          <button data-when="today" aria-pressed="false">Today</button>
-          <button data-when="week" aria-pressed="false">7 days</button>
-          <button data-when="all" aria-pressed="false">All</button>
-        </div>
-      </div>
-      <div class="group ev-only" role="group" aria-label="Cost">
-        <span class="lbl">Cost</span>
-        <div class="seg" id="costs">
-          <button data-cost="any" aria-pressed="true">Any</button>
-          <button data-cost="free" aria-pressed="false">Free</button>
-          <button data-cost="5" aria-pressed="false">≤€5</button>
-        </div>
-      </div>
-      <div class="group ev-only" role="group" aria-label="Sort">
-        <span class="lbl">Sort</span>
-        <div class="seg" id="sorts">
-          <button data-sort="time" aria-pressed="true">Time</button>
-          <button data-sort="price" aria-pressed="false">Price</button>
-        </div>
-      </div>
-      <div class="searchwrap">
-        <input class="search" id="search" type="search" placeholder="Search…" aria-label="Search">
-      </div>
+<section class="controls" id="controls">
+  <div class="cwrap">
+    <div class="tabs" id="tabs" role="tablist">
+      <button class="tab" role="tab" data-tab="today"   aria-selected="true">Today <span class="n" id="nToday"></span></button>
+      <button class="tab" role="tab" data-tab="week"    aria-selected="false">This week <span class="n" id="nWeek"></span></button>
+      <button class="tab" role="tab" data-tab="regular" aria-selected="false">Every week <span class="n" id="nReg"></span></button>
+      <button class="tab" role="tab" data-tab="free"    aria-selected="false">Always free <span class="n" id="nFree"></span></button>
+      <button class="tab" role="tab" data-tab="manual"  aria-selected="false">Manual check <span class="n" id="nManual"></span></button>
+      <input class="search" id="search" type="search" placeholder="Search…" aria-label="Search">
     </div>
-    <div class="cats cat-row" id="cats" role="group" aria-label="Categories"><span class="lbl">What</span></div>
-    <div class="cats cat-row ev-only" id="districts" role="group" aria-label="Districts"><span class="lbl">Where</span></div>
-  </section>
+    <div class="row2">
+      <div class="chips" id="cats"></div>
+    </div>
+    <div class="hidebar" id="hidebar"></div>
+  </div>
+</section>
 
-  <main id="feed"><div class="state">Loading…</div></main>
-  <details class="sources" id="sources" hidden><summary>Feed sources — what's loading</summary><div class="src-grid" id="srcGrid"></div></details>
+<main id="feed"><div class="state">Loading…</div></main>
 
 <script>
-const CATS=[["music","Music"],["nightlife","Nightlife"],["art","Art / film / talks"],["sport","Sport"],["community","Community"],["market","Markets"],["other","Other"]];
-const WEEKDAYS=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-const state={tab:"events",when:"weekend",recur:"all",cats:new Set(),districts:new Set(),cost:"any",sort:"time",q:""};
+/* What each event IS, in words a reader would use. The dot colour is the only
+   colour on a card, and it always means one of these. */
+const KINDS=[
+  ["exhibition","Exhibitions","#B2537F"], ["music","Music","#C2663F"],
+  ["talk","Talks & readings","#4A76A8"],  ["film","Film","#5A5FA8"],
+  ["theatre","Theatre & comedy","#8E5BA8"],["workshop","Workshops","#3C8360"],
+  ["tour","Guided tours","#7A8B3C"],      ["party","Parties","#7B5EA7"],
+  ["market","Markets & fairs","#A5781F"], ["festival","Festivals","#C24F5B"],
+  ["sport","Sport & outdoors","#2F8A87"], ["meetup","Meetups","#4E8BC4"],
+  ["support","Advice & support","#78757F"],["misc","Unsorted","#A09CA8"]];
+const KIND=Object.fromEntries(KINDS.map(([id,label,c])=>[id,{label,c}]));
+const kindOf=ev=>KIND[ev.kind]?ev.kind:"misc";
+const WHO={kids:"Kids & families",seniors:"Older people",group:"A specific group",
+           women:"Women only",men:"Men only"};
+
+/* Hidden by default (your choice): kids, older people, single-group events,
+   advice & support. One click shows them; nothing is deleted. */
+const HIDE_AUD=new Set(["kids","seniors","group"]);
+const HIDE_KIND=new Set(["support"]);
+const isHidden=ev=>HIDE_AUD.has(ev.audience)||HIDE_KIND.has(ev.kind);
+
+const DOW3=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+const DOWFULL=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const _DOWMAP={su:0,mo:1,tu:2,we:3,th:4,fr:5,sa:6};
+const PER_DAY=8;
+
+const state={tab:"today",kinds:new Set(),q:"",expanded:new Set(),showHidden:false};
 let DATA={events:[],always_free:[],manual_check:[]};
 
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const bDate=iso=>new Date(iso).toLocaleDateString("en-CA",{timeZone:"Europe/Berlin"});
 const bTime=iso=>new Date(iso).toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit",timeZone:"Europe/Berlin"});
-const bDow=iso=>new Date(iso).toLocaleDateString("en-GB",{weekday:"long",timeZone:"Europe/Berlin"});
 const bDateL=iso=>new Date(iso).toLocaleDateString("en-GB",{day:"2-digit",month:"short",timeZone:"Europe/Berlin"});
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const catFull=cat=>(CATS.find(c=>c[0]===cat)||["","Other"])[1];
-const catLabel=cat=>(CATS.find(c=>c[0]===cat)||["","Other"])[1].split(" ")[0];
+const todayISO=()=>new Date().toLocaleDateString("en-CA",{timeZone:"Europe/Berlin"});
 
-/* ---- date range for one-off "When" ---- */
-function weekendRange(){const d=new Date(),day=d.getDay(),s=new Date(d);if(day===0)s.setDate(d.getDate()-2);else if(day===6)s.setDate(d.getDate()-1);else s.setDate(d.getDate()+(5-day));s.setHours(0,0,0,0);const e=new Date(s);e.setDate(s.getDate()+2);e.setHours(23,59,59,999);return[s,e];}
-function range(){const now=new Date();if(state.when==="weekend")return weekendRange();if(state.when==="today"){const s=new Date(now);s.setHours(0,0,0,0);const e=new Date(now);e.setHours(23,59,59,999);return[s,e];}if(state.when==="week"){const s=new Date(now);s.setHours(0,0,0,0);const e=new Date(s);e.setDate(s.getDate()+7);return[s,e];}const s=new Date(now);s.setHours(0,0,0,0);return[s,new Date(8.64e15)];}
-
-/* ---- filters shared by events + always-free ---- */
-function catQ(o,hayParts){
-  if(state.cats.size&&!state.cats.has(o.category))return false;
-  if(state.q){const hay=hayParts.filter(Boolean).join(" ").toLowerCase();if(!hay.includes(state.q))return false;}
+function matches(ev,includeHidden){
+  if(!includeHidden&&isHidden(ev))return false;
+  if(state.kinds.size&&!state.kinds.has(kindOf(ev)))return false;
+  if(state.q){
+    const hay=[ev.title,ev.title_orig,ev.summary,ev.venue,ev.area,ev.source].filter(Boolean).join(" ").toLowerCase();
+    if(!hay.includes(state.q))return false;
+  }
   return true;
 }
-function passesEvent(ev){
-  if(!catQ(ev,[ev.title,ev.venue,ev.area]))return false;
-  if(state.districts.size&&!state.districts.has(ev.area))return false;
-  if(state.cost==="free"&&ev.is_free!==true)return false;
-  if(state.cost==="5"&&!(ev.is_free===true||(ev.price_value!=null&&ev.price_value<=5)))return false;
-  return true;
+function recurDows(ev){
+  const s=ev.recurrence||"";
+  const found=DOW3.map((d,i)=>s.includes(d)?i:-1).filter(i=>i>=0);
+  return found.length?found:[new Date(ev.start).getDay()];
 }
-const priceKey=ev=>ev.is_free===true?0:(ev.price_value!=null?ev.price_value:Infinity);
 
-/* ---- open-now from OSM opening_hours (pragmatic subset) ---- */
-const _DOWMAP={su:0,mo:1,tu:2,we:3,th:4,fr:5,sa:6};
-function berlinNow(){const p=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Berlin",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());const g=t=>p.find(x=>x.type===t).value;const dow=_DOWMAP[g("weekday").slice(0,2).toLowerCase()];let h=+g("hour");if(h===24)h=0;return{dow,mins:h*60+(+g("minute"))};}
+/* ---------------- card ---------------- */
+function card(ev,opts){
+  opts=opts||{};
+  const allDay=(ev.date_source||"").endsWith("allday");
+  const at=opts.when||ev.start;
+  const to=(!allDay&&!opts.when&&ev.end)?` – ${bTime(ev.end)}`:"";
+  const when=allDay?"All day (no set time)":`${bTime(at)}${to}`;
+  const whereTxt=[ev.venue,ev.area].filter(Boolean).map(esc).join(" · ");
+  const where=whereTxt?`<dd>${whereTxt}</dd>`:`<dd class="soft">Not listed — see link</dd>`;
+  const cost=ev.is_free===true?`<dd class="free">Free</dd>`
+            :(ev.price?`<dd>${esc(ev.price)}</dd>`:`<dd class="soft">Check on the site</dd>`);
+  const cad=ev.recurrence||"Regularly";
+  const repeats=(ev.recurring&&!(opts.inDayGroup&&/^Every week\b/.test(cad)))
+    ?`<dt>Repeats</dt><dd>${esc(cad)}</dd>`:"";
+  const who=(ev.audience&&ev.audience!=="everyone"&&WHO[ev.audience])
+    ?`<dt>Who</dt><dd class="who">${WHO[ev.audience]}</dd>`:"";
+  const k=KIND[kindOf(ev)];
+  const tip=ev.title_orig?` title="Original: ${esc(ev.title_orig)}"`:"";
+  const title=ev.url?`<a href="${esc(ev.url)}" target="_blank" rel="noopener"${tip}>${esc(ev.title)}</a>`
+                    :`<span${tip}>${esc(ev.title)}</span>`;
+  return `<article class="ev">
+    <div class="title">${title}</div>
+    ${ev.summary?`<div class="summary">${esc(ev.summary)}</div>`:""}
+    <dl class="rows">
+      <dt>When</dt><dd>${when}</dd>
+      ${repeats}
+      <dt>Where</dt>${where}
+      <dt>Cost</dt>${cost}
+      ${who}
+      <dt>Type</dt><dd><span class="dot" style="--c:${k.c}"></span>${esc(k.label)}</dd>
+    </dl>
+    <div class="foot">
+      <span class="src">${esc((ev.source||"").replace(/^cal:|^rss:|^web:|^gib:/,""))}</span>
+      <button class="cal" type="button" data-ics="${esc(ev.id||"")}">+ Calendar</button>
+    </div>
+  </article>`;
+}
+const grid=html=>`<div class="grid">${html}</div>`;
+function dayBlock(key,label,sub,list,inDayGroup){
+  const open=state.expanded.has(key);
+  const shown=open?list:list.slice(0,PER_DAY);
+  let h=`<div class="daybar"><span class="d1">${esc(label)}</span>`
+      +(sub?`<span class="d2">${esc(sub)}</span>`:"")+`<span class="n">${list.length}</span></div>`;
+  h+=grid(shown.map(ev=>card(ev,{inDayGroup})).join(""));
+  if(list.length>PER_DAY)
+    h+=`<button class="more" data-exp="${esc(key)}">${open?"Show fewer":`Show all ${list.length}`}</button>`;
+  return h;
+}
+
+/* ---------------- pools (one per tab) ---------------- */
+function weekWindow(){const a=new Date();a.setHours(0,0,0,0);const b=new Date(a);b.setDate(b.getDate()+7);b.setHours(23,59,59,999);return[a,b];}
+const POOLS={
+  today:inc=>{const iso=todayISO(),dow=new Date().getDay();
+    return {ones:DATA.events.filter(e=>!e.recurring&&matches(e,inc)&&bDate(e.start)===iso),
+            regs:DATA.events.filter(e=>e.recurring&&matches(e,inc)&&recurDows(e).includes(dow))};},
+  week:inc=>{const[a,b]=weekWindow();
+    return {ones:DATA.events.filter(e=>!e.recurring&&matches(e,inc)&&new Date(e.start)>=a&&new Date(e.start)<=b),regs:[]};},
+  regular:inc=>({ones:[],regs:DATA.events.filter(e=>e.recurring&&matches(e,inc))}),
+};
+const poolSize=(tab,inc)=>{const p=POOLS[tab](inc);return p.ones.length+p.regs.length;};
+
+/* ---------------- views ---------------- */
+function viewToday(){
+  const {ones,regs}=POOLS.today(state.showHidden), dow=new Date().getDay();
+  setCount(ones.length+regs.length,"on today");
+  if(!ones.length&&!regs.length)return empty("Nothing today","Nothing matches. Try another type, or look at This week.");
+  const byT=(a,b)=>a.start.localeCompare(b.start);
+  let h="";
+  if(ones.length)h+=dayBlock("t-one","On today","one-off",ones.sort(byT),false);
+  if(regs.length)h+=dayBlock("t-reg",`Every ${DOWFULL[dow]}`,"the regulars",regs.sort(byT),true);
+  return h;
+}
+function viewWeek(){
+  const {ones}=POOLS.week(state.showHidden);
+  setCount(ones.length,"in the next 7 days");
+  if(!ones.length)return empty("Nothing this week","No one-off events match.");
+  const byDay={};for(const e of ones)(byDay[bDate(e.start)]||=[]).push(e);
+  let h=`<div class="lead">One-off events only — the weekly regulars are under <b>Every week</b>.</div>`;
+  for(const day of Object.keys(byDay).sort()){
+    const list=byDay[day].sort((a,b)=>a.start.localeCompare(b.start));
+    h+=dayBlock("w-"+day,DOWFULL[new Date(list[0].start).getDay()],bDateL(list[0].start),list,false);
+  }
+  return h;
+}
+function viewRegular(){
+  const {regs}=POOLS.regular(state.showHidden);
+  setCount(regs.length,"weekly regulars");
+  if(!regs.length)return empty("No regulars","Nothing matches.");
+  const byDow={};for(const e of regs)for(const d of recurDows(e))(byDow[d]||=[]).push(e);
+  let h=`<div class="lead">Things that happen every week — the part you can plan around.</div>`;
+  for(let i=1;i<=7;i++){const d=i%7,list=byDow[d];if(!list||!list.length)continue;
+    list.sort((a,b)=>bTime(a.start).localeCompare(bTime(b.start)));
+    h+=dayBlock("r-"+d,`Every ${DOWFULL[d]}`,"",list,true);}
+  return h;
+}
+function viewFree(){
+  const rows=DATA.always_free.filter(p=>!state.q||[p.name,p.area,p.address,p.note].filter(Boolean).join(" ").toLowerCase().includes(state.q));
+  setCount(rows.length,"places free any time");
+  if(!rows.length)return empty("Nothing here","No places match.");
+  let h=`<div class="lead">Places you can walk into for nothing, no event needed.</div><div class="grid">`;
+  for(const p of rows){
+    const os=openState(p.opening_hours);
+    const badge=os?`<span class="badge ${os.cls}">${os.text}</span>`:"";
+    const sub=[p.address,p.note].filter(Boolean).map(esc).join(" · ");
+    h+=`<div class="place"><div class="pr"><a class="nm" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>${badge}</div>${sub?`<span class="sub">${sub}</span>`:""}</div>`;
+  }
+  return h+"</div>";
+}
+function viewManual(){
+  const rows=DATA.manual_check.filter(m=>!state.q||(m.name+" "+(m.group||"")).toLowerCase().includes(state.q));
+  setCount(rows.length,"sites to check by hand");
+  if(!rows.length)return empty("Nothing to check","No sites match.");
+  const byG={};for(const m of rows)(byG[m.group||"Other"]||=[]).push(m);
+  let h=`<div class="lead">Places with good programmes that the site can't read automatically yet — open their page to see what's on.</div>`;
+  for(const g of Object.keys(byG).sort()){
+    h+=`<div class="mgroup">${esc(g)}</div><div class="mlist">`;
+    for(const m of byG[g])h+=`<div class="mrow"><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.name)}</a><span class="why">${esc(m.reason||"")}</span></div>`;
+    h+="</div>";
+  }
+  return h;
+}
+
+/* the hidden-events line: always says exactly what is hidden, and how many */
+function hideBar(){
+  const bar=document.getElementById("hidebar");
+  if(!POOLS[state.tab]){bar.innerHTML="";return;}
+  const n=poolSize(state.tab,true)-poolSize(state.tab,false);
+  if(!n){bar.innerHTML="";return;}
+  bar.innerHTML=state.showHidden
+    ?`Showing everything, including ${n} for kids, specific groups and advice &amp; support. <button id="hidetoggle">Hide them again</button>`
+    :`${n} hidden: for kids, older people, specific groups, or advice &amp; support. <button id="hidetoggle">Show them</button>`;
+}
+
+const empty=(h,b)=>`<div class="state"><b>${esc(h)}</b>${esc(b)}</div>`;
+function setCount(n,kind){document.getElementById("count").textContent=`${n} ${kind}`;}
+function render(){
+  const v={today:viewToday,week:viewWeek,regular:viewRegular,free:viewFree,manual:viewManual}[state.tab];
+  document.getElementById("cats").style.display=POOLS[state.tab]?"flex":"none";
+  document.getElementById("feed").innerHTML=v();
+  hideBar();
+}
+
+/* ---------------- opening hours (OSM syntax subset) ---------------- */
+function berlinNow(){const p=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Berlin",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());
+  const g=t=>p.find(x=>x.type===t).value;const dow=_DOWMAP[g("weekday").slice(0,2).toLowerCase()];let h=+g("hour");if(h===24)h=0;return{dow,mins:h*60+(+g("minute"))};}
 function openState(oh){
   if(!oh)return null;
-  try{
-    const s=oh.trim();if(/^24\/7$/.test(s))return{cls:"open",text:"Open now"};
-    const{dow,mins}=berlinNow();let mentioned=false,openIntervals=[],offToday=false;
-    for(const rule of s.split(";")){
-      const m=rule.trim().match(/^([A-Za-z,\-\s]+?)\s+(.*)$/);if(!m)continue;
+  try{const s=oh.trim();if(/^24\/7$/.test(s))return{cls:"open",text:"Open now"};
+    const{dow,mins}=berlinNow();let mentioned=false,iv=[],off=false;
+    for(const rule of s.split(";")){const m=rule.trim().match(/^([A-Za-z,\-\s]+?)\s+(.*)$/);if(!m)continue;
       const days=new Set();
-      for(const part of m[1].split(",")){
-        const rng=part.trim().match(/^([A-Za-z]{2})(?:\s*-\s*([A-Za-z]{2}))?$/);if(!rng)continue;
-        const a=_DOWMAP[rng[1].toLowerCase()];if(a==null)continue;
-        if(rng[2]!=null){const b=_DOWMAP[rng[2].toLowerCase()];for(let d=a;;d=(d+1)%7){days.add(d);if(d===b)break;}}else days.add(a);
-      }
-      if(!days.has(dow))continue;mentioned=true;
-      const spec=m[2].trim();
-      if(/^off|closed$/i.test(spec)){offToday=true;continue;}
-      for(const tr of spec.split(",")){const t=tr.trim().match(/^(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})$/);if(!t)continue;openIntervals.push([(+t[1])*60+(+t[2]),(+t[3])*60+(+t[4])]);}
-    }
-    if(openIntervals.some(([a,b])=>mins>=a&&mins<b))return{cls:"open",text:"Open now"};
-    if(mentioned||offToday)return{cls:"closed",text:"Closed now"};
-    return null;
+      for(const part of m[1].split(",")){const r=part.trim().match(/^([A-Za-z]{2})(?:\s*-\s*([A-Za-z]{2}))?$/);if(!r)continue;
+        const a=_DOWMAP[r[1].toLowerCase()];if(a==null)continue;
+        if(r[2]!=null){const b=_DOWMAP[r[2].toLowerCase()];for(let d=a;;d=(d+1)%7){days.add(d);if(d===b)break;}}else days.add(a);}
+      if(!days.has(dow))continue;mentioned=true;const spec=m[2].trim();
+      if(/^off|closed$/i.test(spec)){off=true;continue;}
+      for(const tr of spec.split(",")){const t=tr.trim().match(/^(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})$/);if(!t)continue;iv.push([(+t[1])*60+(+t[2]),(+t[3])*60+(+t[4])]);}}
+    if(iv.some(([a,b])=>mins>=a&&mins<b))return{cls:"open",text:"Open now"};
+    if(mentioned||off)return{cls:"closed",text:"Closed now"};return null;
   }catch(e){return null;}
 }
 
-/* ---- render dispatch ---- */
-function render(){
-  const feed=document.getElementById("feed");
-  const t=state.tab;
-  document.querySelectorAll(".ev-only").forEach(el=>el.style.display=(t==="events")?"flex":"none");
-  if(t==="events")document.getElementById("whenRow").style.display=(state.recur==="recurring")?"none":"flex";
-  document.querySelectorAll(".cat-row").forEach(el=>el.style.display=(t==="manual")?"none":"flex");
-  feed.innerHTML = t==="events"?renderEvents() : t==="free"?renderFree() : renderManual();
-  requestAnimationFrame(()=>document.documentElement.style.setProperty("--controls-h",document.getElementById("controls").offsetHeight+"px"));
-}
-
-/* ---- EVENTS ---- */
-function oneoffPool(){const[a,b]=range();return DATA.events.filter(ev=>!ev.recurring&&passesEvent(ev)&&(()=>{const t=new Date(ev.start);return t>=a&&t<=b;})());}
-function recurringPool(){return DATA.events.filter(ev=>ev.recurring&&passesEvent(ev));}
-
-function renderEvents(){
-  let html="",shown=0;
-  if(state.recur!=="recurring"){const rows=oneoffPool();shown+=rows.length;html+=oneoffSection(rows);}
-  if(state.recur!=="oneoff"){const rows=recurringPool();shown+=rows.length;html+=recurringSection(rows,state.recur==="all");}
-  setCount(shown,"event"+(shown===1?"":"s"));
-  return shown?html:emptyEvents();
-}
-function oneoffSection(rows){
-  if(!rows.length)return "";
-  if(state.sort==="price"){rows=rows.slice().sort((a,b)=>priceKey(a)-priceKey(b)||new Date(a.start)-new Date(b.start));let h=`<div class="day"><span class="dow">By price</span><span class="date">low → high</span><span class="n">${rows.length}</span></div>`;h+=`<div class="evgrid">`;for(const ev of rows)h+=card(ev,{recurring:false,showDate:true});h+="</div>";return h;}
-  const byDay={};for(const ev of rows)(byDay[bDate(ev.start)]||=[]).push(ev);
-  let h="";for(const day of Object.keys(byDay).sort()){const list=byDay[day];h+=`<div class="day"><span class="dow">${bDow(list[0].start)}</span><span class="date">${bDateL(list[0].start)}</span><span class="n">${list.length}</span></div>`;h+=`<div class="evgrid">`;for(const ev of list)h+=card(ev,{recurring:false});h+="</div>";}
-  return h;
-}
-function recurringSection(rows,withHeader){
-  if(!rows.length)return "";
-  const wk={},other=[];
-  for(const ev of rows){(ev.recurrence||"").startsWith("Weekly")?((wk[bDow(ev.start)]||=[]).push(ev)):other.push(ev);}
-  let h=withHeader?`<div class="day"><span class="dow">Weekly regulars</span><span class="n">${rows.length}</span></div>`:"";
-  for(const n of WEEKDAYS){if(!wk[n])continue;wk[n].sort((a,b)=>bTime(a.start).localeCompare(bTime(b.start)));h+=`<div class="day"><span class="dow">Every ${n}</span><span class="n">${wk[n].length}</span></div><div class="evgrid">`;for(const ev of wk[n])h+=card(ev,{recurring:true});h+="</div>";}
-  if(other.length){other.sort((a,b)=>new Date(a.start)-new Date(b.start));h+=`<div class="day"><span class="dow">Monthly &amp; occasional</span><span class="n">${other.length}</span></div><div class="evgrid">`;for(const ev of other)h+=card(ev,{recurring:true});h+="</div>";}
-  return h;
-}
-function card(ev,opts){
-  const recurring=opts.recurring,showDate=opts.showDate;
-  const allDay=(ev.date_source||"").endsWith("allday");
-  const to=(!recurring&&ev.end)?` – ${bTime(ev.end)}`:"";
-  const day=`${bDow(ev.start).slice(0,3)} ${bDateL(ev.start)}`;
-  // WHEN — always says in words what it is, never a bare code
-  const when=recurring?esc(ev.recurrence||"Repeats regularly")
-    :(allDay?(showDate?`${day} · All day`:"All day (no set time)")
-            :(showDate?`${day}, ${bTime(ev.start)}${to}`:`${bTime(ev.start)}${to}`));
-  const title=ev.url?`<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`:esc(ev.title);
-  // WHERE — honest when the source didn't give one
-  const whereTxt=[ev.venue,ev.area].filter(Boolean).map(esc).join(" · ");
-  const where=whereTxt?`<dd>${whereTxt}</dd>`:`<dd class="muted">Not listed \u2014 see link</dd>`;
-  // COST
-  const cost=ev.is_free===true?`<dd class="free">Free</dd>`
-    :(ev.price?`<dd class="paid">${esc(ev.price)}</dd>`:`<dd class="muted">Check on the site</dd>`);
-  const type=`<dd><span class="dot"></span>${esc(catFull(ev.category))}${ev.translated?' <span class="tag tr">translated</span>':''}</dd>`;
-  const src=esc(ev.source.replace(/^cal:|^rss:|^web:|^gib:/,""));
-  const cal=recurring?"":`<button class="tag cal-btn" type="button" data-ics="${esc(ev.id||"")}" title="Add to calendar">+ Calendar</button>`;
-  return `<article class="ev cat-${ev.category}">
-    <div class="title">${title}</div>
-    <dl class="rows">
-      <dt>When</dt>${`<dd>${when}</dd>`}
-      <dt>Where</dt>${where}
-      <dt>Cost</dt>${cost}
-      <dt>Type</dt>${type}
-    </dl>
-    <div class="foot"><span class="src">${src}</span>${cal}</div>
-  </article>`;
-}
-
-
-
-/* ---- ALWAYS FREE ---- */
-function renderFree(){
-  const rows=DATA.always_free.filter(p=>catQ(p,[p.name,p.area,p.address]));
-  setCount(rows.length,"free place"+(rows.length===1?"":"s"));
-  if(!rows.length)return emptyFree();
-  let h="";
-  for(const p of rows){
-    const os=openState(p.opening_hours);
-    const badge=os?`<span class="badge ${os.cls}">${os.text}</span>`:(p.opening_hours?`<span class="badge hrs">${esc(p.opening_hours)}</span>`:`<span class="badge hrs">hours —</span>`);
-    const sub=[p.address,p.note].filter(Boolean).map(esc).join(" · ");
-    h+=`<div class="card cat-${p.category}"><div class="row"><a class="nm" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a><span class="tag cat-tag">${catLabel(p.category)}</span>${badge}</div>${sub?`<span class="sub2">${sub}</span>`:""}</div>`;
-  }
-  return h;
-}
-
-/* ---- MANUAL CHECK ---- */
-function renderManual(){
-  const rows=DATA.manual_check.filter(m=>!state.q||(m.name+" "+m.group).toLowerCase().includes(state.q));
-  setCount(rows.length,"to check");
-  if(!rows.length)return emptyManual();
-  const byG={};for(const m of rows)(byG[m.group]||=[]).push(m);
-  let h="";
-  for(const g of Object.keys(byG)){
-    h+=`<div class="day"><span class="dow" style="font-size:20px">${esc(g)}</span><span class="n">${byG[g].length}</span></div>`;
-    for(const m of byG[g])h+=`<div class="card cat-other"><div class="row"><a class="nm" href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.name)}</a><span class="reason">${esc(m.reason)}</span></div></div>`;
-  }
-  return h;
-}
-
-/* ---- misc ---- */
-function setCount(n,kind){document.getElementById("count").textContent=`${n} ${kind} shown`;}
-function setTabCounts(){document.getElementById("tabnEvents").textContent=DATA.events.length;document.getElementById("tabnFree").textContent=DATA.always_free.length;document.getElementById("tabnManual").textContent=DATA.manual_check.length;}
-function emptyEvents(){const b=state.cost!=="any"?" (or loosen the cost filter)":"";return `<div class="state"><b>Nothing here</b>No events match these filters${b}. Widen the date range or clear a category. New feeds appear here once the verified directory is imported.</div>`;}
-function emptyFree(){return `<div class="state"><b>No always-free places</b>Nothing matches this filter.</div>`;}
-function emptyManual(){return `<div class="state"><b>Manual-check worklist is empty</b>This fills once the verified directory is imported — it lists every source with no usable feed (or that's bot-walled / parked), so you can check those by hand.</div>`;}
-
-/* ---- controls ---- */
-function buildSeg(id,key){document.getElementById(id).addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;state[key]=b.dataset[key];[...b.parentElement.children].forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false"));render();});}
+/* ---------------- calendar export ---------------- */
 function icsFor(ev){
   const pad=n=>String(n).padStart(2,"0");
-  const fmt=d=>d.getUTCFullYear()+pad(d.getUTCMonth()+1)+pad(d.getUTCDate())+"T"+pad(d.getUTCHours())+pad(d.getUTCMinutes())+"00Z";
-  const st=new Date(ev.start);const en=ev.end?new Date(ev.end):new Date(st.getTime()+2*3600*1000);
-  const esc2=t=>String(t||"").replace(/([,;\\])/g,"\\$1").replace(/\n/g,"\\n");
+  const f=d=>d.getUTCFullYear()+pad(d.getUTCMonth()+1)+pad(d.getUTCDate())+"T"+pad(d.getUTCHours())+pad(d.getUTCMinutes())+"00Z";
+  const st=new Date(ev.start),en=ev.end?new Date(ev.end):new Date(st.getTime()+2*36e5);
+  const e2=t=>String(t||"").replace(/([,;\\])/g,"\\$1").replace(/\n/g,"\\n");
   return ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//berlin_today//EN","BEGIN:VEVENT",
-    "UID:"+(ev.id||Math.random().toString(36).slice(2))+"@berlin-today",
-    "DTSTAMP:"+fmt(new Date()),"DTSTART:"+fmt(st),"DTEND:"+fmt(en),
-    "SUMMARY:"+esc2(ev.title),
-    ev.venue?"LOCATION:"+esc2(ev.venue):"",
-    ev.url?"URL:"+esc2(ev.url):"",
-    "END:VEVENT","END:VCALENDAR"].filter(Boolean).join("\r\n");
+    "UID:"+(ev.id||Math.random().toString(36).slice(2))+"@berlin-today","DTSTAMP:"+f(new Date()),
+    "DTSTART:"+f(st),"DTEND:"+f(en),"SUMMARY:"+e2(ev.title),ev.summary?"DESCRIPTION:"+e2(ev.summary):"",
+    ev.venue?"LOCATION:"+e2(ev.venue):"",ev.url?"URL:"+e2(ev.url):"","END:VEVENT","END:VCALENDAR"].filter(Boolean).join("\r\n");
 }
 document.addEventListener("click",e=>{
-  const b=e.target.closest(".cal-btn");if(!b)return;
+  if(e.target.id==="hidetoggle"){state.showHidden=!state.showHidden;state.expanded.clear();
+    if(!state.showHidden)for(const k of HIDE_KIND)state.kinds.delete(k);
+    buildKindChips();render();tabCounts();return;}
+  const exp=e.target.closest("[data-exp]");
+  if(exp){const k=exp.dataset.exp;state.expanded.has(k)?state.expanded.delete(k):state.expanded.add(k);render();return;}
+  const b=e.target.closest(".cal");if(!b)return;
   const ev=DATA.events.find(x=>String(x.id)===b.dataset.ics);if(!ev)return;
-  const blob=new Blob([icsFor(ev)],{type:"text/calendar;charset=utf-8"});
-  const a=document.createElement("a");a.href=URL.createObjectURL(blob);
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([icsFor(ev)],{type:"text/calendar;charset=utf-8"}));
   a.download=(ev.title||"event").replace(/[^\w-]+/g,"_").slice(0,48)+".ics";
   document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),2000);
 });
-function buildDistricts(){
-  const box=document.getElementById("districts");if(!box)return;
-  box.querySelectorAll("button").forEach(b=>b.remove());
-  const counts={};for(const ev of DATA.events)if(ev.area)counts[ev.area]=(counts[ev.area]||0)+1;
-  const names=Object.keys(counts).sort((a,b)=>counts[b]-counts[a]);
-  box.hidden=names.length===0;
-  for(const name of names){
+
+/* ---------------- controls ---------------- */
+document.getElementById("tabs").addEventListener("click",e=>{
+  const b=e.target.closest(".tab");if(!b)return;
+  state.tab=b.dataset.tab;state.expanded.clear();
+  [...b.parentElement.children].forEach(x=>x.setAttribute("aria-selected",x===b?"true":"false"));
+  render();
+});
+function buildKindChips(){
+  const box=document.getElementById("cats");box.innerHTML="";
+  const present=new Set(DATA.events.map(kindOf));
+  for(const [id,label,c] of KINDS){
+    if(!present.has(id))continue;
+    if(HIDE_KIND.has(id)&&!state.showHidden)continue;
     const b=document.createElement("button");
-    b.className="chip";b.textContent=`${name} (${counts[name]})`;
-    b.setAttribute("aria-pressed",state.districts.has(name)?"true":"false");
-    b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.districts.delete(name),b.setAttribute("aria-pressed","false")):(state.districts.add(name),b.setAttribute("aria-pressed","true"));render();};
+    b.className="chip";b.setAttribute("aria-pressed",state.kinds.has(id)?"true":"false");
+    b.innerHTML=`<span class="dot" style="--c:${c}"></span>${esc(label)}`;
+    b.onclick=()=>{const on=b.getAttribute("aria-pressed")==="true";
+      on?state.kinds.delete(id):state.kinds.add(id);
+      b.setAttribute("aria-pressed",on?"false":"true");render();};
     box.appendChild(b);
   }
 }
-function buildCats(){const box=document.getElementById("cats");for(const[id,label]of CATS){const b=document.createElement("button");b.className="chip cat-"+id;b.textContent=label;b.setAttribute("aria-pressed","false");b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.cats.delete(id),b.setAttribute("aria-pressed","false")):(state.cats.add(id),b.setAttribute("aria-pressed","true"));render();};box.appendChild(b);}}
-buildCats();
-buildSeg("recur","recur");buildSeg("presets","when");buildSeg("costs","cost");buildSeg("sorts","sort");
-document.getElementById("tabs").addEventListener("click",e=>{const b=e.target.closest(".tab");if(!b)return;state.tab=b.dataset.tab;[...b.parentElement.children].forEach(x=>x.setAttribute("aria-selected",x===b?"true":"false"));render();});
 document.getElementById("search").addEventListener("input",e=>{state.q=e.target.value.trim().toLowerCase();render();});
 
-function showSources(sources){
-  if(!sources)return;
-  const grid=document.getElementById("srcGrid");
-  grid.innerHTML=Object.entries(sources).map(([k,v])=>{const name=k.replace(/^cal:|^rss:/,"");return `<span class="src-item">${esc(name)} <span class="${v===0?"z":"c"}">${v}</span></span>`;}).join("");
-  document.getElementById("sources").hidden=false;
+function tabCounts(){
+  const inc=state.showHidden;
+  document.getElementById("nToday").textContent=poolSize("today",inc);
+  document.getElementById("nWeek").textContent=poolSize("week",inc);
+  document.getElementById("nReg").textContent=poolSize("regular",inc);
+  document.getElementById("nFree").textContent=DATA.always_free.length;
+  document.getElementById("nManual").textContent=DATA.manual_check.length;
 }
 
 fetch("data.json?_="+Date.now())
   .then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})
   .then(d=>{
     DATA={events:d.events||[],always_free:d.always_free||[],manual_check:d.manual_check||[]};
-    if(d.generated_at){const ago=Math.round((Date.now()-new Date(d.generated_at))/36e5);document.getElementById("updated").textContent="updated "+(ago<1?"just now":ago+"h ago");}
-    setTabCounts();buildDistricts();render();showSources(d.sources);
+    if(d.generated_at){const ago=Math.round((Date.now()-new Date(d.generated_at))/36e5);
+      document.getElementById("updated").textContent="updated "+(ago<1?"just now":ago+"h ago");}
+    buildKindChips();tabCounts();render();
   })
   .catch(err=>{
-    document.getElementById("feed").innerHTML=`<div class="state"><b>Couldn't load data</b>data.json didn't load (${esc(err.message)}). Run <code>python aggregate.py</code>, or wait for the next scheduled update.</div>`;
+    document.getElementById("feed").innerHTML=`<div class="state"><b>Couldn't load data</b>data.json didn't load (${esc(err.message)}).</div>`;
     document.getElementById("count").textContent="—";
   });
 </script>

@@ -13,6 +13,10 @@ on:
       - manual.ics          # …and when you edit your hand-added events
 permissions:
   contents: write
+  models: read              # lets the built-in token use GitHub Models (free AI) — needed for classify + site extraction
+concurrency:
+  group: update-events      # never run two updates at once (they would fight over the push)
+  cancel-in-progress: false
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -24,15 +28,20 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Collect events
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python aggregate.py
       - name: Commit if changed
         run: |
           git config user.name "events-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add docs/data.json docs/.translation_cache.json docs/.price_cache.json
+          # data.json plus every cache file (.classify_cache.json, .gib_cache.json, …).
+          # Adding the folder means a cache that does not exist yet can't break the step.
+          git add docs/
           if git diff --cached --quiet; then
             echo "No changes."
           else
             git commit -m "Update events"
+            git pull --rebase --autostash || true
             git push
           fi

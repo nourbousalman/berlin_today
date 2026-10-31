@@ -14,6 +14,7 @@ Speed:
 """
 from __future__ import annotations
 import json
+import time
 import re
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -53,52 +54,73 @@ def _save_cache(cache: dict) -> None:
         pass
 
 
-def translate_events(events: list, enabled: bool = True, max_workers: int = 8) -> list:
+def translate_events(events: list, enabled: bool = True, max_workers: int = 2,
+                     budget: int = 400) -> list:
+    """Fallback translation for titles the classifier has not rewritten yet.
+
+    The free Google endpoint allows 5 requests per second. The old code ran 8 at
+    once, so almost every request was refused — silently, because errors were
+    swallowed. Now: few workers, a short pause, two retries with back-off, a
+    per-run budget (the cache carries the rest over to the next run), and the
+    number of failures is printed instead of hidden.
+    """
     if not enabled:
         return events
     cache = _load_cache()
     try:
         from deep_translator import GoogleTranslator
-        GoogleTranslator(source="auto", target="en")  # probe availability early
+        GoogleTranslator(source="auto", target="en")
     except Exception as exc:
         print(f"  ! translation unavailable ({exc}); leaving text as-is")
         return events
 
-    # 1) Collect the (event, attr, value) slots that are German, and the set of
-    #    unique values still missing from the cache.
     slots: list[tuple] = []
-    todo: set[str] = set()
+    todo: list[str] = []
+    seen: set[str] = set()
     for ev in events:
+        if getattr(ev, "translated", False):        # classifier already gave English
+            continue
         for attr in ("title", "description"):
             val = getattr(ev, attr, None)
             if not val or not _looks_german(val):
                 continue
             slots.append((ev, attr, val))
-            if val not in cache:
-                todo.add(val)
+            if val not in cache and val not in seen:
+                seen.add(val)
+                todo.append(val)
+    deferred = max(0, len(todo) - budget)
+    todo = todo[:budget]
 
-    # 2) Translate the unique missing strings concurrently.
     def _tr(s: str):
-        try:
-            return s, (GoogleTranslator(source="auto", target="en").translate(s[:4900]) or s)
-        except Exception:
-            return s, None
+        for attempt in range(3):
+            try:
+                out = GoogleTranslator(source="auto", target="en").translate(s[:4900])
+                time.sleep(0.5)          # Google allows 5 requests/second
+                return s, (out or s)
+            except Exception:
+                time.sleep(1.5 * (attempt + 1))
+        return s, None
 
-    new = 0
+    new = failed = 0
     if todo:
         with ThreadPoolExecutor(max_workers=max_workers) as ex:
-            for s, out in ex.map(_tr, list(todo)):
-                if out is not None:
+            for s, out in ex.map(_tr, todo):
+                if out is None:
+                    failed += 1
+                else:
                     cache[s] = out
                     new += 1
 
-    # 3) Apply cached translations back onto the events.
     for ev, attr, val in slots:
         if val in cache:
+            if attr == "title" and not getattr(ev, "title_orig", None):
+                ev.title_orig = val
             setattr(ev, attr, cache[val])
             ev.translated = True
 
     _save_cache(cache)
-    print(f"  ✓ translation: {new} new string(s) translated "
-          f"({len(slots)} German slots, {len(cache)} cached total)")
+    print(f"  ✓ translation: {new} new, {failed} failed, {deferred} left for next run "
+          f"({len(cache)} cached total)")
+    if failed and not new:
+        print("  !! every translation failed this run — the free endpoint is probably blocking us")
     return events

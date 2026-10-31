@@ -31,7 +31,7 @@ socket.setdefaulttimeout(45)  # one slow/hanging feed must not stall a 122-feed 
 from sources.base import Event, dedupe, berlin_status, berlin_district
 from sources import (resident_advisor, ics_feeds, rss_feeds, html_scrapers,
                      directory_feed, price_probe, site_extract, verify,
-                     gratis_in_berlin)
+                     gratis_in_berlin, classify)
 from sources.translate import translate_events
 
 ROOT = Path(__file__).parent
@@ -221,7 +221,6 @@ def main() -> int:
     ics_list, rss_list = resolve_feeds(cfg, directory)
     events = collect(cfg, ics_list, rss_list, directory)
     events = dedupe(events)
-    events = translate_events(events, enabled=cfg.get("translate", True))
     events = [e for e in events if e.start]
     # An RSS publish timestamp is not an event time. Read the real datetime off
     # each event's own page; anything we cannot verify is dropped below.
@@ -277,6 +276,16 @@ def main() -> int:
     before_collapse = len(events)
     events = _collapse_repeats(events)
     collapsed = before_collapse - len(events)
+
+    # Make every surviving event understandable: English title, what kind of
+    # thing it is, who it is for, one plain line. Runs last so the model only
+    # ever sees events that will actually be published.
+    cstats = classify.classify_events(events, cfg)
+    before_notice = len(events)
+    events = [e for e in events if e.kind != "notice"]       # job ads, notices: not events
+    notices = before_notice - len(events)
+    events = translate_events(events, enabled=cfg.get("translate", True),
+                              budget=int(cfg.get("translate_budget_per_run", 400)))
     events.sort(key=lambda e: e.start)
 
     counts = Counter(e.source for e in events)
@@ -310,7 +319,7 @@ def main() -> int:
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Wrote {len(events)} events ({n_rec} recurring, {len(events)-n_rec} one-off), "
           f"{len(always_free)} always-free, {len(manual_check)} manual-check "
-          f"→ {OUT.relative_to(ROOT)}  [dropped {dropped} paid/unknown, {non_berlin} non-Berlin, {stale} past/undated; price-probe: {pstats.get('freed',0)} freed / {pstats.get('ticketed',0)+pstats.get('unresolved',0)} dropped of {pstats.get('checked',0)}]")
+          f"→ {OUT.relative_to(ROOT)}  [dropped {dropped} paid/unknown, {non_berlin} non-Berlin, {stale} past/undated, {notices} not-events; price-probe: {pstats.get('freed',0)} freed / {pstats.get('ticketed',0)+pstats.get('unresolved',0)} dropped of {pstats.get('checked',0)}]")
     return 0
 
 
