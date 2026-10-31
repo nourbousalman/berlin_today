@@ -185,6 +185,11 @@ def _parse(raw: str) -> list[dict]:
     return [d for d in data if isinstance(d, dict)]
 
 
+# A summary that only admits there is nothing to say is worse than no summary.
+_FILLER = re.compile(r"no (further |more )?(details|information|description)|not (specified|stated|given)|"
+                     r"\bunclear\b|title only|listing (only|does not)|no more info", re.I)
+
+
 def _clean(d: dict, original: str) -> dict | None:
     kind = str(d.get("kind", "")).strip().lower()
     aud = str(d.get("audience", "")).strip().lower()
@@ -192,6 +197,8 @@ def _clean(d: dict, original: str) -> dict | None:
     summary = re.sub(r"\s+", " ", str(d.get("summary") or "")).strip()
     if kind not in KINDS or aud not in AUDIENCES or not title:
         return None
+    if _FILLER.search(summary) or summary.rstrip(".").lower() == title.lower():
+        summary = ""
     return {"title": title[:90] or original, "kind": kind, "audience": aud,
             "summary": summary[:140], "by": "ai"}
 
