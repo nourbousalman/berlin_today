@@ -450,9 +450,14 @@ def enrich(events: list, budget: int = 250, max_workers: int = 3) -> dict:
             mins = d.get("m", 0)
             if "eh" in d and mins and mins == d["eh"]:
                 mins = d.get("em", 0)          # "Anfangszeit 09:17" on a 09:00-17:00 page
+            end_h, end_m = d.get("eh"), d.get("em", 0)
+            if end_h is None and d["h"] < mins <= 23 and mins % 5:
+                # the site's editors often type an hour range into the minute field:
+                # "Anfangszeit 16:18" with "16 bis 18 Uhr" in the text means 16:00-18:00
+                end_h, end_m, mins = mins, 0, 0
             e.start = base.replace(hour=d["h"], minute=mins).isoformat()
-            if "eh" in d:
-                en = base.replace(hour=min(d["eh"], 23), minute=d.get("em", 0))
+            if end_h is not None:
+                en = base.replace(hour=min(end_h, 23), minute=end_m)
                 if en > datetime.fromisoformat(e.start):
                     e.end = en.isoformat()
             e.date_source = "daypage"
