@@ -282,8 +282,9 @@
 "title": "Deine Mudda Komedy Open Mic",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "A comedy open mic night called Deine Mudda.",
-"by": "ai"
+"summary": "Monthly comedy open mic at SaliGari Bar near Ostkreuz, where up-and-coming comedians try out their best jokes and strangest stories.",
+"by": "claude-task",
+"ctx": true
 },
 "Abendmusiken in Kaiser-Wilhelm-Gedächtnis-Kirche": {
 "title": "Evening Music at the Kaiser-Wilhelm-Gedächtnis-Kirche",
@@ -377,11 +378,12 @@
 "ctx": true
 },
 "Portugiesischer Lesekreis / Roda de leitura": {
-"title": "Portuguese Reading Circle",
+"title": "Portuguese Reading Circle / Roda de leitura",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "A Portuguese reading circle (Roda de leitura).",
-"by": "ai"
+"summary": "Monthly meeting at Bibliothek am Wasserturm to share impressions of a novel read in Portuguese. No registration needed.",
+"by": "claude-task",
+"ctx": true
 },
 "Vortragsreihe zum Thema Verselbstständigung von Gemeinschaftsgärten": {
 "title": "Talk Series: How Community Gardens Can Become Independent",
@@ -489,8 +491,9 @@
 "title": "Sober Jam Sessions",
 "kind": "music",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Drug- and alcohol-free jam session at Maggie for musicians of all levels and listeners; starts with a check-in round like a self-help group.",
+"by": "claude-task",
+"ctx": true
 },
 "Cookies & Boardgames 2026": {
 "title": "Cookies & Board Games Evening in Charlottenburg",
@@ -502,10 +505,11 @@
 },
 "I Write – Schreibclub/Writing Club": {
 "title": "I Write – Writing Club",
-"kind": "workshop",
+"kind": "meetup",
 "audience": "everyone",
-"summary": "A writing club called 'I Write'.",
-"by": "ai"
+"summary": "Relaxed writing club in the Heinrich-Schulz-Bibliothek: no pressure or prompts, just a quiet place to journal, work on a novel or write. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Sprachcafé im Sudan Club (Berlin) مقهى المخاطبة في النادي السوداني ببرلين": {
 "title": "Language Café at the Sudan Club",
@@ -724,8 +728,9 @@
 "title": "Chess at Mehringplatz",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "Chess at Mehringplatz on the 2nd and 4th Saturday of the month.",
-"by": "ai"
+"summary": "Play chess in or in front of the Kiezstube: a giant floor chess set and four classic boards. All levels and ages welcome, just drop by.",
+"by": "claude-task",
+"ctx": true
 },
 "Eisbaden kennenlernen 2026/27": {
 "title": "Try Ice Bathing: Introduction Sessions 2026/27",
@@ -751,11 +756,12 @@
 "ctx": true
 },
 "Yoga - Eine kleine Auszeit": {
-"title": "Yoga – A Little Time Out",
+"title": "Yoga: A Short Break",
 "kind": "sport",
 "audience": "everyone",
-"summary": "A yoga session at Achillesstraße 77.",
-"by": "ai"
+"summary": "Gentle yoga for adults at Stadtteilbibliothek Karow with soft movement, conscious breathing and relaxation. No experience needed. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Mitmachgarten für Familien": {
 "title": "Hands-On Garden for Families at Gleisdreieckpark",
@@ -809,8 +815,9 @@
 "title": "Neighbourhood Breakfast",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "A neighbourhood breakfast at Feldstr. 10.",
-"by": "ai"
+"summary": "Shared neighbourhood brunch; anyone who can't bring food along is just as welcome. Step-free access.",
+"by": "claude-task",
+"ctx": true
 },
 "Hula Hoop Fitness, Wuhlheide": {
 "title": "Hula Hoop Fitness, Wuhlheide",
@@ -912,8 +919,9 @@
 "title": "Open Chess Group at the Humboldt-Bibliothek",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "An open chess group on the 1st, 3rd and 5th Saturday at the Humboldt-Bibliothek.",
-"by": "ai"
+"summary": "New chess group at the Humboldt-Bibliothek for anyone interested, of any age. Just drop in, no registration needed.",
+"by": "claude-task",
+"ctx": true
 },
 "Flohmarkt auf dem Leopoldplatz": {
 "title": "Flea Market on Leopoldplatz",
@@ -932,25 +940,28 @@
 "ctx": true
 },
 "Flinta*-Schreibgruppe | Flinta* Writing Group": {
-"title": "FLINTA* Writing Group",
-"kind": "workshop",
+"title": "Flinta* Writing Group",
+"kind": "meetup",
 "audience": "women",
-"summary": "A writing group for FLINTA* people at Blücherplatz 1.",
-"by": "ai"
+"summary": "Bilingual 'Shut Up and Write' group for FLINTA* writers: say what you'll work on, write quietly for about 90 minutes, then a short wrap-up. No feedback rounds.",
+"by": "claude-task",
+"ctx": true
 },
 "Schreibwerkstatt für Jugendliche in der Bezirkszentralbibliothek „Mark Twain“": {
-"title": "Writing Workshop for Teenagers at the Mark Twain District Library",
+"title": "Writing Workshop for Teens at the Mark Twain Library",
 "kind": "workshop",
 "audience": "kids",
-"summary": "A writing workshop for teenagers at the Bezirkszentralbibliothek Mark Twain.",
-"by": "ai"
+"summary": "Monthly creative-writing workshop for students 12+ in Marzahn-Hellersdorf's central library: exercises, feedback, tips and chances to read your texts in public.",
+"by": "claude-task",
+"ctx": true
 },
 "Erzählzeit mit dem Kamishibai (10 & 11 Uhr)": {
-"title": "Story Time with the Kamishibai",
-"kind": "talk",
+"title": "Storytime with Kamishibai",
+"kind": "theatre",
 "audience": "kids",
-"summary": "A story time with the kamishibai.",
-"by": "ai"
+"summary": "Stories told with large picture cards in a kamishibai, a traditional Japanese storytelling theatre, at Anton-Saefkow-Bibliothek. For ages 3+ and families.",
+"by": "claude-task",
+"ctx": true
 },
 "Mitmachen: DnD Pen-&-Paper": {
 "title": "Join In: Dungeons & Dragons Pen-and-Paper Role-Play",
@@ -1965,11 +1976,12 @@
 "ctx": true
 },
 "Mietrechtsberatung": {
-"title": "Tenancy Law Advice",
+"title": "Tenant Law Advice in Neukölln",
 "kind": "support",
 "audience": "everyone",
-"summary": "Advice on tenancy law.",
-"by": "ai"
+"summary": "Solidarity-based tenant advice at Kiezladen Allee 154 for renters facing rising rents, landlord tactics and displacement. Bring all relevant documents.",
+"by": "claude-task",
+"ctx": true
 },
 "Bridge-Turnier": {
 "title": "Bridge tournament",
@@ -2526,11 +2538,12 @@
 "ctx": true
 },
 "Kurzfilm screening / shortfilm screening": {
-"title": "Short Film Screening",
+"title": "Short Film Screening at Filmrauschpalast",
 "kind": "film",
 "audience": "everyone",
-"summary": "A screening of short films.",
-"by": "ai"
+"summary": "Open monthly screening of short films up to 10 minutes at the Filmrauschpalast cinema, in English or with English subtitles. Donations welcome.",
+"by": "claude-task",
+"ctx": true
 },
 "Cosa Comedy: Open Mic Stand-Up Comedy": {
 "title": "Cosa Comedy: Open Mic Stand-Up Comedy",
@@ -3125,8 +3138,9 @@
 "title": "Time for Me: Movement and Relaxation for Family Carers",
 "kind": "sport",
 "audience": "group",
-"summary": "Movement and relaxation for family carers.",
-"by": "ai"
+"summary": "Group for people caring for relatives: simple exercises led by a trainer, then relaxation with Qi Gong and autogenic training to ease stress.",
+"by": "claude-task",
+"ctx": true
 },
 "Stricktreff für Anfänger*innen & Fortgeschrittene": {
 "title": "Knitting Circle for Beginners and Experienced Knitters",
@@ -4393,11 +4407,12 @@
 "ctx": true
 },
 "SPIELEABEND auf der Fischerinsel": {
-"title": "Games night on the Fischerinsel",
+"title": "Games Night on Fischerinsel",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "A games night on the Fischerinsel.",
-"by": "ai"
+"summary": "Neighbours Daniel and Joel host a games night for all ages and levels; bring a favourite game or play theirs. Held on the Kreativhaus café terrace.",
+"by": "claude-task",
+"ctx": true
 },
 "A House of Love and Prayer": {
 "title": "A House of Love and Prayer",
@@ -6099,11 +6114,12 @@
 "ctx": true
 },
 "»Das Deutsche Volk« – Interkulturkino": {
-"title": "»Das Deutsche Volk« - Intercultural Cinema",
+"title": "»Das Deutsche Volk« – Documentary on the Hanau Attack",
 "kind": "film",
 "audience": "everyone",
-"summary": "Das Deutsche Volk shown at the Intercultural Cinema.",
-"by": "ai"
+"summary": "Marcin Wierzchowski's documentary follows families and survivors of the 2020 racist attack in Hanau in their fight for truth and justice. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Pop Trio Ornamental Hermits support LaDark Trio im Dragoner Areal Kreuzberg": {
 "title": "Ornamental Hermits and LaDark Trio at Dragoner Areal, Kreuzberg",
@@ -6141,36 +6157,41 @@
 "title": "Star Trek Lecture in Wedding: 60 Years of Star Trek",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A lecture in Wedding on 60 years of Star Trek.",
-"by": "ai"
+"summary": "Star Trek expert Hubert Zitt gives his 'intergalactic lecture' at the BHT on the series' 60 years and its influence on humanity. Many fans come in costume.",
+"by": "claude-task",
+"ctx": true
 },
 "»A Dictator’s Home – Inside Enver Hoxha’s Vila 31« – Eastern Perspectives": {
-"title": "A Dictator's Home - Inside Enver Hoxha's Vila 31",
+"title": "A Dictator's Home: Philipp Funke on Enver Hoxha's Vila 31",
 "kind": "talk",
 "audience": "everyone",
-"summary": "An Eastern Perspectives event on Enver Hoxha's Vila 31.",
-"by": "ai"
+"summary": "Eastern Perspectives evening with architect and photographer Philipp Funke on his photo book of Albanian dictator Enver Hoxha's secret private home in Tirana.",
+"by": "claude-task",
+"ctx": true
 },
 "Werwolf-Spieleabend + Blood on the Clocktower in Lichtenberg": {
-"title": "Werewolf Game Night and Blood on the Clocktower in Lichtenberg",
+"title": "Werewolf Game Night + Blood on the Clocktower in Lichtenberg",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "A game night with Werewolf and Blood on the Clocktower in Lichtenberg.",
-"by": "ai"
+"summary": "Game night of Werewolf, where players try to unmask the werewolves, plus the newer Blood on the Clocktower. Beginners welcome; bring your own drinks.",
+"by": "claude-task",
+"ctx": true
 },
 "UNCOVER.Ostdeutsche Künstler:innen zwischen Zuschreibung und Sichtbarkeit": {
-"title": "UNCOVER: East German Artists Between Labelling and Visibility",
+"title": "UNCOVER. East German Artists between Attribution and Visibility",
 "kind": "exhibition",
 "audience": "everyone",
-"summary": "UNCOVER looks at East German artists between labelling and visibility.",
-"by": "ai"
+"summary": "Paintings, prints, installations and objects by six East German artists of three generations, asking why East German art is still often seen as merely regional.",
+"by": "claude-task",
+"ctx": true
 },
 "„Vielleicht wollte er gar nicht schweigen, er fand bloß die Worte nicht“ - Lesung und Gespräch mit Misha Schoeneberg": {
-"title": "Reading and Conversation With Misha Schoeneberg",
+"title": "Misha Schoeneberg Reads from His German-Jewish Family Story",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A reading and conversation with Misha Schoeneberg.",
-"by": "ai"
+"summary": "Kettkiez liest! at Bibliothek am Schäfersee: author and musician Misha Schoeneberg reads from his book about his father, an Auschwitz survivor, and his family.",
+"by": "claude-task",
+"ctx": true
 },
 "Deutsch-arabische Märchenstunde: “Onkel Mäuserich” - mit Dr. Yasser Eryani und Angelika Horn": {
 "title": "German-Arabic Fairy Tale Hour: “Onkel Mäuserich”",
@@ -6481,277 +6502,332 @@
 "ctx": true
 },
 "Gratis Yoga & Pilates, Stretch & Relax": {
-"title": "Free Yoga & Pilates, Stretch & Relax",
-"kind": "sport",
+"title": "Yoga & Pilates, Stretch & Relax in Mellenseepark",
+"kind": "notice",
 "audience": "everyone",
-"summary": "A free yoga and Pilates session called Stretch & Relax.",
-"by": "ai"
+"summary": "Outdoor yoga and Pilates with stretching and relaxation in Mellenseepark. No experience needed; come and go as you like. Bring a mat and warm clothes.",
+"by": "claude-task",
+"months": [
+5,
+6,
+7,
+8,
+9,
+10
+],
+"ctx": true
 },
 "vers/verse - poesie, spoken word,geschichten - open mic": {
-"title": "vers/verse – poetry, spoken word, stories – open mic",
+"title": "vers/verse – Poetry, Spoken Word and Stories Open Mic",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "An open mic for poetry, spoken word and stories.",
-"by": "ai"
+"summary": "Open mic for poetry, spoken word and stories; sign up on the night to perform. The venue has low-barrier access.",
+"by": "claude-task",
+"ctx": true
 },
 "Spieleabend \"Blood on the Clocktower\" in Schöneberg": {
-"title": "Game night: Blood on the Clocktower, Schöneberg",
+"title": "Games Night: Blood on the Clocktower in Schöneberg",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "A game night playing Blood on the Clocktower in Schöneberg.",
-"by": "ai"
+"summary": "A structured round of the game Blood on the Clocktower, focused on atmosphere and fair play; Werewolf or similar games if too few people come.",
+"by": "claude-task",
+"ctx": true
 },
 "Gladiatorentraining in Berlin/ Spandau": {
-"title": "Gladiator training in Berlin/Spandau",
+"title": "Gladiator Training in Spandau",
 "kind": "sport",
 "audience": "everyone",
-"summary": "A gladiator training session in Berlin/Spandau.",
-"by": "ai"
+"summary": "Berlin gladiator school GLADIATORES BEROLINENSES trains paired combat as fought in ancient Rome, as a sport. Trial sessions from age 16. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Bücherfrühstück in der Luise": {
-"title": "Book breakfast at the Luise",
+"title": "Book Breakfast at the Luise (Bibliothek am Luisenbad)",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "A book breakfast at the Luise.",
-"by": "ai"
+"summary": "Monthly breakfast at the Bibliothek am Luisenbad: talk about a changing book genre over coffee and rolls and swap reading tips. No registration, step-free.",
+"by": "claude-task",
+"ctx": true
 },
 "Tanz \"Bei Wilhelm\" (Bharatanatyam)": {
-"title": "Dance 'Bei Wilhelm' (Bharatanatyam)",
-"kind": "theatre",
+"title": "Bharatanatyam Indian Dance Class \"Bei Wilhelm\"",
+"kind": "sport",
 "audience": "everyone",
-"summary": "A Bharatanatyam dance event called 'Bei Wilhelm'.",
-"by": "ai"
+"summary": "Solo dance class in the hall of St. Wilhelm: to Indian rhythms, explore expressing emotions through the body in Bharatanatyam. No experience needed.",
+"by": "claude-task",
+"ctx": true
 },
 "Gerhilds Brücken-Mucke": {
-"title": "Gerhild's Bridge Music",
+"title": "Gerhilds Brücken-Mucke – Sing-Along Music on a Schöneberg Bridge",
 "kind": "music",
 "audience": "everyone",
-"summary": "A music event titled Gerhilds Brücken-Mucke.",
-"by": "ai"
+"summary": "Gerhild and her 'bridge musicians' play an hour of feel-good music of all styles on the Carl-Zuckmayer-Brücke; singing along is encouraged. Line-up varies.",
+"by": "claude-task",
+"ctx": true
 },
 "Textiles Upcycling - Aus alt mach neu!": {
-"title": "Textile Upcycling – Make Something New from Old!",
+"title": "Textile Upcycling: Old into New",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "A textile upcycling session on making something new from old items.",
-"by": "ai"
+"summary": "Sew and design with old clothes and fabric scraps, guided by an artist, in the Humboldt-Bibliothek makerspace. Ages 8+, no registration needed.",
+"by": "claude-task",
+"ctx": true
 },
 "„Babysingen“ (nach dänischem Erfolgsmodell) auch in Kreuzberg": {
-"title": "Baby Singing (Danish model), also in Kreuzberg",
+"title": "Baby Singing (Danish Model) at Heilig-Kreuz-Kirche, Kreuzberg",
 "kind": "music",
 "audience": "kids",
-"summary": "A baby singing session based on a Danish model, also offered in Kreuzberg.",
-"by": "ai"
+"summary": "Parents and babies up to 14 months sing, listen to music and explore sound and movement in the Heilig-Kreuz-Kirche, then share breakfast. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Open House – Raum für Begegnung und Austausch": {
-"title": "Open House – Space for Meeting and Exchange",
+"title": "Open House – Drop-In Space for Young People Aged 8–27",
 "kind": "meetup",
-"audience": "everyone",
-"summary": "An open house offering space for meeting and exchange.",
-"by": "ai"
+"audience": "kids",
+"summary": "Open youth space for ages 8–27: meet people, practise languages, study in the coworking space, cook together, or play table tennis and board games.",
+"by": "claude-task",
+"ctx": true
 },
 "Offene Musikstunde (Klavier)": {
-"title": "Open Music Hour (Piano)",
+"title": "Open Music Hour (Piano) for Ages 8–27",
 "kind": "music",
-"audience": "everyone",
-"summary": "An open music hour with piano.",
-"by": "ai"
+"audience": "kids",
+"summary": "Drop-in session to play piano with others of all levels: try out the instrument, rehearse pieces or improvise together, with no commitment.",
+"by": "claude-task",
+"ctx": true
 },
 "Spiele-Abend": {
-"title": "Game Night",
+"title": "Games Night at Kurt-Tucholsky-Bibliothek",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "A game night.",
-"by": "ai"
+"summary": "The library's games group plays classic and new board and card games; bring your favourites or try new ones together.",
+"by": "claude-task",
+"ctx": true
 },
 "KüFA": {
-"title": "KüFA",
+"title": "KüFA (Küche für Alle) – Communal Meal",
 "kind": "meetup",
-"audience": "everyone",
-"summary": "An event listed only as KüFA.",
-"by": "ai"
+"audience": "kids",
+"summary": "Short for 'Küche für Alle' (kitchen for all): a communal meal on a donation basis.",
+"by": "claude-task",
+"ctx": true
 },
 "The Epic Comedy Club Showcase: Stand up Comedy in Berlin (English-Speaking)": {
-"title": "The Epic Comedy Club Showcase: English Stand-up Comedy",
+"title": "The Epic Comedy Club Showcase: English Stand-Up Comedy",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "An English-speaking stand-up comedy showcase in Berlin.",
-"by": "ai"
+"summary": "English-language stand-up showcase with established and up-and-coming Berlin comedians doing tight sets of original material — no first-timers. Cash-only bar.",
+"by": "claude-task",
+"ctx": true
 },
 "Darkest Thoughts: Improv Stand Up in English": {
-"title": "Darkest Thoughts: Improv Stand-up in English",
+"title": "Darkest Thoughts: Improvised Stand-Up Comedy in English",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "An improvised stand-up comedy show in English.",
-"by": "ai"
+"summary": "Interactive English comedy show: the audience writes down topics, then Berlin comedians improvise stand-up on the spot based on those notes.",
+"by": "claude-task",
+"ctx": true
 },
 "Schachtreff": {
-"title": "Chess Meetup",
+"title": "Chess Meetup at the Mittelpunktbibliothek Schöneberg",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "A chess meetup.",
-"by": "ai"
+"summary": "Weekly chess meetup for all ages in the Schöneberg central library, for beginners and old hands alike. Boards and pieces provided; no sign-up needed.",
+"by": "claude-task",
+"ctx": true
 },
 "Nur Ein Open Mic (jeden 2. & 4. Freitag)": {
-"title": "Nur Ein Open Mic",
+"title": "Nur Ein Open Mic: Comedy Open Mic Night",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "An open mic on the 2nd and 4th Friday of each month.",
-"by": "ai"
+"summary": "Comedy open mic with 5–7 minute sets by newcomers and old hands; audience welcome, donations collected at the end. Come early, the list fills fast.",
+"by": "claude-task",
+"ctx": true
 },
 "Late Night Comedy Hour (Free English Comedy Show)": {
-"title": "Late Night Comedy Hour (Free English Comedy Show)",
+"title": "Late Night Comedy Hour – English Comedy Show",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "A free comedy show in English.",
-"by": "ai"
+"summary": "One-hour comedy show with five hand-picked comedians, plus music, sketches and topical bits.",
+"by": "claude-task",
+"ctx": true
 },
 "Smartphone-Sprechstunde": {
-"title": "Smartphone Consultation Hour",
+"title": "Smartphone Help Desk",
 "kind": "support",
 "audience": "everyone",
-"summary": "A consultation hour about smartphones.",
-"by": "ai"
+"summary": "One-to-one, 45-minute help with your smartphone from Gerd: updates, camera functions, special characters, autocorrect and more. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Kuscheltierübernachtung in der Stadtteilbibliothek Halemweg": {
-"title": "Stuffed-Animal Sleepover at Halemweg District Library",
-"kind": "meetup",
+"title": "Cuddly Toy Sleepover at the Halemweg Library",
+"kind": "workshop",
 "audience": "kids",
-"summary": "A sleepover for stuffed animals at the Halemweg district library.",
-"by": "ai"
+"summary": "Children leave their favourite cuddly toys overnight in the Halemweg branch library, then later hear what adventures the toys had there.",
+"by": "claude-task",
+"ctx": true
 },
 "Offener WerkRaum": {
-"title": "Open Workshop Space",
-"kind": "workshop",
-"audience": "everyone",
-"summary": "An open workshop space.",
-"by": "ai"
-},
-"Sport im Park Schöneberg 16:00-17:00 Fitnessgymnastik, 17:00-18:00 Gleichgewicht & Koordination": {
-"title": "Sport in the Park Schöneberg",
-"kind": "sport",
-"audience": "everyone",
-"summary": "Park sport in Schöneberg: fitness gymnastics, then balance and coordination.",
-"by": "ai"
-},
-"Papierwerkstatt / Paper Workshop": {
-"title": "Paper Workshop",
-"kind": "workshop",
-"audience": "everyone",
-"summary": "A paper workshop.",
-"by": "ai"
-},
-"Lichtwerk - Kreative Studiofotografie": {
-"title": "Lichtwerk – Creative Studio Photography",
-"kind": "workshop",
-"audience": "everyone",
-"summary": "A session on creative studio photography called Lichtwerk.",
-"by": "ai"
-},
-"Musikproduktion": {
-"title": "Music Production",
-"kind": "workshop",
-"audience": "everyone",
-"summary": "A session on music production.",
-"by": "ai"
-},
-"\"Die Woll-Lustigen\" - Offene Strick- und Häkelgruppe": {
-"title": "Die Woll-Lustigen – Open Knitting and Crochet Group",
-"kind": "workshop",
-"audience": "everyone",
-"summary": "An open group for knitting and crocheting.",
-"by": "ai"
-},
-"Party - Die Pop-Perlen der Tangoschlampe": {
-"title": "Party – The Pop Pearls of the Tangoschlampe",
-"kind": "party",
-"audience": "everyone",
-"summary": "A party featuring the Pop-Perlen of the Tangoschlampe.",
-"by": "ai"
-},
-"Workshops für Alle": {
-"title": "Workshops for Everyone",
-"kind": "workshop",
-"audience": "everyone",
-"summary": "Workshops open to everyone.",
-"by": "ai"
-},
-"Fit und Aktiv 50+": {
-"title": "Fit and Active 50+",
-"kind": "sport",
-"audience": "seniors",
-"summary": "A fit-and-active programme for people aged 50 and over.",
-"by": "ai"
-},
-"Spielend Deutsch lernen mit Kindern (3-6 Jahre) (FZ Fischerinsel)": {
-"title": "Learning German Through Play with Children (Ages 3–6)",
+"title": "Open WerkRaum – Robots, Soldering and VR for Kids and Teens",
 "kind": "workshop",
 "audience": "kids",
-"summary": "Playful German learning with children aged 3 to 6, at FZ Fischerinsel.",
-"by": "ai"
+"summary": "Kids and teens program robots, try soldering, play music on fruit and, from age 12, try VR headsets with the Horizontereignis team. No registration needed.",
+"by": "claude-task",
+"ctx": true
+},
+"Sport im Park Schöneberg 16:00-17:00 Fitnessgymnastik, 17:00-18:00 Gleichgewicht & Koordination": {
+"title": "Sport im Park Schöneberg: Fitness, Balance and Coordination",
+"kind": "notice",
+"audience": "everyone",
+"summary": "Outdoor classes in Rudolph-Wilde-Park: fitness exercises with music and dance moves, then balance and coordination. Part of the Senate's 'Sport im Park'.",
+"by": "claude-task",
+"months": [
+5,
+6,
+7,
+8,
+9,
+10
+],
+"ctx": true
+},
+"Papierwerkstatt / Paper Workshop": {
+"title": "Paper Workshop for Ages 8–27",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Open art workshop exploring paper: make imaginative objects and collages from different papers and cardboard, including found and discarded material.",
+"by": "claude-task",
+"ctx": true
+},
+"Lichtwerk - Kreative Studiofotografie": {
+"title": "Lichtwerk – Creative Studio Photography for Ages 16–27",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Youth photo studio: try studio photography for social media, fashion, portraits, job applications or product shots, and edit your pictures professionally.",
+"by": "claude-task",
+"ctx": true
+},
+"Musikproduktion": {
+"title": "Music Production for Ages 14–27",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Learn the basics of modern music production — producing, recording, mixing and mastering — and team up with other creatives. Bring your own laptop if you can.",
+"by": "claude-task",
+"ctx": true
+},
+"\"Die Woll-Lustigen\" - Offene Strick- und Häkelgruppe": {
+"title": "\"Die Woll-Lustigen\" – Open Knitting and Crochet Group",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Sociable knitting and crochet group at the Humboldt-Bibliothek for all ages: bring your own project, work on it together and chat.",
+"by": "claude-task",
+"ctx": true
+},
+"Party - Die Pop-Perlen der Tangoschlampe": {
+"title": "Women-Only Party: Die Pop-Perlen der Tangoschlampe",
+"kind": "party",
+"audience": "women",
+"summary": "Women-only dance party where DJ Andrea plays well-known and lesser-known pop, old and new, from around the world — always danceable.",
+"by": "claude-task",
+"ctx": true
+},
+"Workshops für Alle": {
+"title": "Workshops for All: Repair, Painting and Drawing",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Repair, painting and drawing workshops at Volkssolidarität Brunnentreff, run by curator Lily Fürstenow; take home what you make. Please register in advance.",
+"by": "claude-task",
+"ctx": true
+},
+"Fit und Aktiv 50+": {
+"title": "Fit und Aktiv 50+ – Simple Full-Body Workout",
+"kind": "sport",
+"audience": "seniors",
+"summary": "Simple full-body workout for people 50+ at Zukunftshaus Wedding: mobility, strength, balance, endurance and stretching. Beginners welcome; mats provided.",
+"by": "claude-task",
+"ctx": true
+},
+"Spielend Deutsch lernen mit Kindern (3-6 Jahre) (FZ Fischerinsel)": {
+"title": "Learning German through Play for Children Aged 3–6 (FZ Fischerinsel)",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Playful German learning for children aged 3 to 6, part of the project 'Sprache gemeinsam erleben' (experiencing language together).",
+"by": "claude-task",
+"ctx": true
 },
 "Erzählcafé im AWO \"Sirius-Treff\"": {
-"title": "Storytelling Café at the AWO 'Sirius-Treff'",
+"title": "Erzählcafé – Neighbourhood Chat Café at AWO \"Sirius-Treff\"",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "A storytelling café at the AWO Sirius-Treff.",
-"by": "ai"
+"summary": "Weekly café at the AWO meeting centre for getting to know neighbours in the Kosmosviertel: chat about whatever is on your mind over coffee, tea and biscuits.",
+"by": "claude-task",
+"ctx": true
 },
 "\"Tischlein deck dich\" im AWO \"Sirius-Treff\"": {
-"title": "'Tischlein deck dich' at the AWO 'Sirius-Treff'",
+"title": "\"Tischlein deck dich\" – Communal Lunch at AWO \"Sirius-Treff\"",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Cook and eat together at the AWO meeting centre: help chop vegetables and prepare the meal, or just come for a sociable lunch.",
+"by": "claude-task",
+"ctx": true
 },
 "Comedy for the Twisted Open Mic!": {
-"title": "Comedy for the Twisted Open Mic!",
+"title": "Comedy for the Twisted Open Mic",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "An open mic called Comedy for the Twisted.",
-"by": "ai"
+"summary": "Dark, bizarre and inappropriate stand-up comedy: an open mic with Tera, a changing line-up and a paid headliner.",
+"by": "claude-task",
+"ctx": true
 },
 "Psychologische Beratung": {
 "title": "Psychological Counselling",
 "kind": "support",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Private talk about anxiety, low mood, conflicts or worries with Aušra Decker, a non-medical psychotherapist and art therapist. Book a slot or drop in.",
+"by": "claude-task",
+"ctx": true
 },
 "Schreibwerkstatt in der Bibliothek Totschka": {
 "title": "Writing Workshop at Bibliothek Totschka",
-"kind": "workshop",
+"kind": "notice",
 "audience": "everyone",
-"summary": "A writing workshop at the library Totschka.",
-"by": "ai"
+"summary": "Ten-week course in the basics of literary writing — why we write, what about and how — including working with metaphor.",
+"by": "claude-task",
+"ctx": true
 },
 "RetroGaming mit dem Computerspielemuseum": {
 "title": "Retro Gaming with the Computerspielemuseum",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "A retro gaming session with the Computerspielemuseum.",
-"by": "ai"
+"summary": "Play on old game consoles with the Computer Games Museum in the WerkRaum of the district central library – nostalgia for older players, discovery for young.",
+"by": "claude-task",
+"ctx": true
 },
 "Spieltreff Kreuzberg-Süd (Urbanstr.)": {
-"title": "Games Meetup Kreuzberg-Süd (Urbanstr.)",
+"title": "Board Game Night Kreuzberg-Süd (Urbanstraße)",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "A games meetup in Kreuzberg-Süd on Urbanstraße.",
-"by": "ai"
+"summary": "Weekly board-game evening for adults 20+: current board, card and dice games such as Scythe and 6 nimmt are explained and played. Steep stairs; no pets.",
+"by": "claude-task",
+"ctx": true
 },
 "Mineralogische Sammlungen der TU": {
 "title": "Mineralogical Collections of the TU",
 "kind": "exhibition",
 "audience": "everyone",
-"summary": "Presents the mineralogical collections of the TU.",
-"by": "ai"
+"summary": "The TU's mineral collection on display: large museum pieces, minerals ordered by the Strunz system, and meteorites, the biggest weighing half a tonne.",
+"by": "claude-task",
+"ctx": true
 },
 "Jazzkitchen im Mastul": {
-"title": "Jazzkitchen at the Mastul",
+"title": "Jazzkitchen at Mastul",
 "kind": "music",
 "audience": "everyone",
-"summary": "A jazz event called Jazzkitchen at the Mastul.",
-"by": "ai"
+"summary": "New monthly jazz series at Mastul, billed as spicy, cheeky and different, led by saxophonist Charlotte Joerges.",
+"by": "claude-task",
+"ctx": true
 },
 "Sprachcafé Mercator (Berlin)": {
 "title": "Language Café Mercator at the Mercator School Family Centre",
@@ -6815,11 +6891,12 @@
 "by": "ai"
 },
 "Skat jeden Freitag um 18.00 Uhr": {
-"title": "Skat Every Friday",
+"title": "Skat Evening (German Card Game)",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "Skat card games every Friday at 18:00.",
-"by": "ai"
+"summary": "Weekly round of Skat, the German card game, played by Altenburg rules and not for money. Beginners and guests welcome; call Wolfgang if you want to join.",
+"by": "claude-task",
+"ctx": true
 },
 "Scottish country dancing (SCDS Berlin)": {
 "title": "Scottish Country Dancing with SCDS Berlin",
@@ -6837,151 +6914,182 @@
 "by": "ai"
 },
 "JuBi - Die JugendBildungsmesse Berlin": {
-"title": "JuBi – Berlin Youth Education Fair",
+"title": "JuBi – Youth Education Fair on Stays Abroad",
 "kind": "market",
 "audience": "kids",
-"summary": "A youth education fair in Berlin.",
-"by": "ai"
+"summary": "Exchange organisations present programmes and scholarships abroad: high school, au pair, work & travel, volunteering, internships, study and gap years.",
+"by": "claude-task",
+"ctx": true
 },
 "Die koreanische Teezeremonie ist zurück!": {
-"title": "The Korean Tea Ceremony Is Back!",
-"kind": "workshop",
-"audience": "everyone",
-"summary": "A Korean tea ceremony, announced as returning.",
-"by": "ai"
-},
-"Ostfrauen*Salon - Begegnungen, Kunst und Gespräche zur Berlin Freedom Week": {
-"title": "Ostfrauen*Salon: Encounters, Art and Talks, Berlin Freedom Week",
-"kind": "talk",
-"audience": "women",
-"summary": "A salon of encounters, art and conversations for Berlin Freedom Week.",
-"by": "ai"
-},
-"Schöneberger Art: Galerierundgang & offene Ateliers": {
-"title": "Schöneberger Art: Gallery Tour and Open Studios",
-"kind": "exhibition",
-"audience": "everyone",
-"summary": "A gallery tour and open studios in Schöneberg.",
-"by": "ai"
-},
-"Ein musikalischer Abend am Lagerfeuer - Gegen den Novemberblues": {
-"title": "A Musical Evening by the Campfire – Against the November Blues",
-"kind": "music",
-"audience": "everyone",
-"summary": "A musical evening around a campfire, billed as against the November blues.",
-"by": "ai"
-},
-"Skat lernen": {
-"title": "Learn Skat",
-"kind": "workshop",
-"audience": "everyone",
-"summary": "A session to learn the card game Skat.",
-"by": "ai"
-},
-"Ausstellungsbegleitung: Tränenpalast. Ort der deutschen Teilung": {
-"title": "Exhibition Guide: Tränenpalast. Place of German Division",
-"kind": "tour",
-"audience": "everyone",
-"summary": "Guided accompaniment through the exhibition Tränenpalast. Ort der deutschen Teilung.",
-"by": "ai"
-},
-"Friedensmeditation in der Tradition der Rosenkreuzer-AMORC": {
-"title": "Peace Meditation in the Rosicrucian AMORC Tradition",
+"title": "Korean Tea Ceremony with DodamDodam at Pangea-Haus",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "A peace meditation in the tradition of the Rosicrucian AMORC.",
-"by": "ai"
+"summary": "DodamDodam Korean school introduces tea culture at Pangea-Haus: Korean and Chinese tea ceremonies, aromatic teas, traditional tea ware and small treats.",
+"by": "claude-task",
+"ctx": true
 },
-"Workshop: Wir basteln Laternen mit euch!": {
-"title": "Workshop: Making Lanterns Together",
+"Ostfrauen*Salon - Begegnungen, Kunst und Gespräche zur Berlin Freedom Week": {
+"title": "Ostfrauen*Salon – Talks and Art for Berlin Freedom Week",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "At the former Stasi headquarters, anyone can join a long table to talk about East German lives, identity and change, with literature, art and podcasts.",
+"by": "claude-task",
+"ctx": true
+},
+"Schöneberger Art: Galerierundgang & offene Ateliers": {
+"title": "Schöneberger Art: Gallery Walk and Open Studios",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Studios, galleries and institutions across Schöneberg open their doors, including Kulturhaus Schöneberg's studios, Haus am Kleistpark and Haus am Lützowplatz.",
+"by": "claude-task",
+"ctx": true
+},
+"Ein musikalischer Abend am Lagerfeuer - Gegen den Novemberblues": {
+"title": "Campfire Music Evening against the November Blues",
+"kind": "music",
+"audience": "everyone",
+"summary": "Garden evening by the fire with bread baked on sticks and hot drinks, plus a live set by Berlin-based US songwriter Nate Bernardini (indie folk and blues).",
+"by": "claude-task",
+"ctx": true
+},
+"Skat lernen": {
+"title": "Learn to Play Skat",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "A workshop where lanterns are crafted with the participants.",
-"by": "ai"
+"summary": "Small beginners' session (max. six people) at Café Manstein in Schöneberg to learn Skat, the German card game; practice hours follow. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Ausstellungsbegleitung: Tränenpalast. Ort der deutschen Teilung": {
+"title": "Guided Tour of the Tränenpalast Exhibition on German Division",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Tour of the permanent exhibition in the former departure hall of the Friedrichstraße border crossing, on how Germany's division shaped people's lives.",
+"by": "claude-task",
+"ctx": true
+},
+"Friedensmeditation in der Tradition der Rosenkreuzer-AMORC": {
+"title": "Peace Meditation in the Rosicrucian Tradition (AMORC)",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Public evening by AMORC, a philosophical-mystical Rosicrucian society: talk on peace and human dignity, then a shared meditation for world and inner peace.",
+"by": "claude-task",
+"ctx": true
+},
+"Workshop: Wir basteln Laternen mit euch!": {
+"title": "Lantern-Making Workshop for Kids",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Make glowing lanterns to carry through the dark streets, with the neighbourhood centre WühlischVierzig in the Pablo Neruda library's WerkRaum. No registration.",
+"by": "claude-task",
+"ctx": true
 },
 "»Fraunhofer forscht Zukunft«": {
-"title": "Fraunhofer Researches the Future",
-"kind": "talk",
+"title": "»Fraunhofer forscht Zukunft« – Science Open Day at Fraunhofer-Forum",
+"kind": "exhibition",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Fraunhofer-Forum Berlin shows research: a 4D journey through the body, a surgery workshop in English, tyres from dandelions. Workshops: registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "\"Judiths Krise & Dafffke\" - Soli-Konzert im RegenbogenKino": {
 "title": "Judiths Krise & Dafffke – Benefit Concert at RegenbogenKino",
 "kind": "music",
 "audience": "everyone",
-"summary": "A benefit concert at the RegenbogenKino.",
-"by": "ai"
+"summary": "Benefit concert: a cappella choir Judiths Krise sings feminist, antifascist and satirical songs; young band DAFFFKE plays political rock, pop, ska and punk.",
+"by": "claude-task",
+"ctx": true
 },
 "Frauencafé (Tegel-Süd)": {
 "title": "Women's Café (Tegel-Süd)",
 "kind": "meetup",
 "audience": "women",
-"summary": "A women's café in Tegel-Süd.",
-"by": "ai"
+"summary": "Women's café with cake, live music by Blauer Trabant and a talk on changing perspective by social worker and theologian Jana Kontermann. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Licht und Schatten – Atmosphären zeichnen mit Chryz Allzeit": {
 "title": "Light and Shadow – Drawing Atmospheres with Chryz Allzeit",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "A drawing session on atmospheres with Chryz Allzeit.",
-"by": "ai"
+"summary": "Drawing class with charcoal, graphite and white chalk: learn light-and-dark techniques for moody, expressive pictures. Materials provided; no sign-up needed.",
+"by": "claude-task",
+"ctx": true
 },
 "Coding Lab | Luanti II": {
-"title": "Coding Lab: Luanti II",
-"kind": "workshop",
-"audience": "everyone",
-"summary": "A coding lab session titled Luanti II.",
-"by": "ai"
-},
-"Kreativer Workshop mit Marita Kelbl: Weder Mädchen noch Junge, sondern Maler!": {
-"title": "Workshop with Marita Kelbl: Neither Girl nor Boy, but Painter!",
+"title": "Coding Lab: Luanti II (Ages 10+)",
 "kind": "workshop",
 "audience": "kids",
-"summary": "A creative workshop with Marita Kelbl titled Neither girl nor boy, but painter!",
-"by": "ai"
+"summary": "Coding for ages 10+: look inside Luanti, an open-source Minecraft alternative, and make your own textures. Some Luanti basics needed. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Kreativer Workshop mit Marita Kelbl: Weder Mädchen noch Junge, sondern Maler!": {
+"title": "Art Workshop with Marita Kelbl: Neither Girl nor Boy, but Painter!",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Children's author Marita Kelbl reads a story while drawing it live; kids aged 6+ then create their own artwork, such as a self-portrait. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Stadtrundgang: Anarchismus in Friedrichshain bis 1933": {
-"title": "City Walk: Anarchism in Friedrichshain up to 1933",
+"title": "City Walk: Anarchism in Friedrichshain until 1933",
 "kind": "tour",
 "audience": "everyone",
-"summary": "A city walk on anarchism in Friedrichshain up to 1933.",
-"by": "ai"
+"summary": "Walking tour on anarchists active in Friedrichshain until 1933, from Theodor Plievier's tea room, visited by Nestor Makhno, to the Freie Arbeiter Union office.",
+"by": "claude-task",
+"ctx": true
 },
 "Öffentliche Führung: Jüdische Ärzte und Ärztinnen an der Charité – Vollkommene Integration?": {
 "title": "Public Tour: Jewish Doctors at the Charité – Complete Integration?",
 "kind": "tour",
 "audience": "everyone",
-"summary": "A public guided tour about Jewish doctors at the Charité.",
-"by": "ai"
+"summary": "Tour on Jewish doctors in Berlin university medicine: their chance of advancement after 1812, the antisemitic 'glass ceiling', and persecution under the Nazis.",
+"by": "claude-task",
+"ctx": true
 },
 "Aufbruch und Abbruch. Vom Runden Tisch zum Parlamentssaal im Palast der Republik": {
 "title": "Aufbruch und Abbruch: From the Round Table to the Palast der Republik",
 "kind": "talk",
 "audience": "everyone",
-"summary": "An event on the way from the Round Table to the parliament hall of the Palast.",
-"by": "ai"
+"summary": "On the 1989/90 democratic new start: the Central Round Table in Pankow and the Palast der Republik hall where the GDR's first freely elected parliament met.",
+"by": "claude-task",
+"ctx": true
 },
 "Yoga für alle im Stehen und im Sitzen": {
-"title": "Yoga for All, Standing and Seated",
+"title": "Yoga for Everyone, Standing and Seated",
 "kind": "sport",
 "audience": "everyone",
-"summary": "A yoga session for all, done standing and seated.",
-"by": "ai"
+"summary": "Yoga without a mat, standing or seated, with teacher Sabine Klein at the Anton-Saefkow-Bibliothek. Suits all abilities, beginners and older people. No sign-up.",
+"by": "claude-task",
+"ctx": true
 },
 "CleanUp-Battle Volkspark Hasenheide": {
-"title": "CleanUp Battle, Volkspark Hasenheide",
+"title": "Clean-Up Battle in Volkspark Hasenheide",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "A clean-up battle in Volkspark Hasenheide.",
-"by": "ai"
+"summary": "Litter-picking contest, Kreuzberg vs Neukölln: who collects more bottle caps and cigarette butts? For local pride and small prizes. Equipment provided.",
+"by": "claude-task",
+"ctx": true
 },
 "Antik und Design GroßFlohmart Trabrennbahn Karlshorst": {
-"title": "Antique and Design Flea Market, Trabrennbahn Karlshorst",
+"title": "Antik und Design Flea Market at Trabrennbahn Karlshorst",
 "kind": "market",
 "audience": "everyone",
-"summary": "A large antique and design flea market at the Trabrennbahn Karlshorst.",
-"by": "ai"
+"summary": "Big antiques and design flea market at the Karlshorst trotting track: hundreds of dealers from Germany and abroad sell old furniture, rarities and retro finds.",
+"by": "claude-task",
+"months": [
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11
+],
+"ctx": true
 },
 "BUND-Abfallschulung für Zero-Waste-Botschafter*innen": {
 "title": "BUND Waste Training for Zero-Waste Ambassadors",
@@ -6992,11 +7100,12 @@
 "ctx": true
 },
 "Digital-Zebra": {
-"title": "Digital-Zebra",
+"title": "Digital-Zebra – Digital Help Desk at the Library",
 "kind": "support",
 "audience": "everyone",
-"summary": "An event listed only as Digital-Zebra.",
-"by": "ai"
+"summary": "Drop-in help at the Mittelpunktbibliothek Schöneberg with getting online: set up email, fill in online forms, book appointments at citizens' offices or doctors.",
+"by": "claude-task",
+"ctx": true
 },
 "New city tour of homelessness and life on the streets": {
 "title": "New City Tour of Homelessness and Life on the Streets",
@@ -7024,106 +7133,121 @@
 "title": "Workshop: Deciphering Family Histories – Introduction to Sütterlin",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "An introduction to Sütterlin for deciphering family histories.",
-"by": "ai"
+"summary": "Learn to read Sütterlin, the old German handwriting, using letters and diaries of German refugees and expellees from the Documentation Centre. In German.",
+"by": "claude-task",
+"ctx": true
 },
 "Lyrik und Klangwelt: Paul Gerhardt": {
-"title": "Poetry and Soundscape: Paul Gerhardt",
-"kind": "music",
+"title": "Poetry and Sound: Paul Gerhardt",
+"kind": "talk",
 "audience": "everyone",
-"summary": "An event combining poetry and a sound world on Paul Gerhardt.",
-"by": "ai"
+"summary": "Poetry reading by Helga Reichel with romantic salon music by Adolf Terschak on flute and piano, in the parish hall of the church Zum Vaterhaus, Baumschulenweg.",
+"by": "claude-task",
+"ctx": true
 },
 "Kindertrödel in der Humboldt-Bibliothek - Mit Unterhaltungsprogramm und Kuchenverkauf": {
 "title": "Children's Flea Market at the Humboldt-Bibliothek",
 "kind": "market",
 "audience": "kids",
-"summary": "A children's flea market with an entertainment programme and cake sale.",
-"by": "ai"
+"summary": "Children's flea market with stalls of useful things, plus face painting, a picture-book screening and a cake sale. Bring your own cup and plate.",
+"by": "claude-task",
+"ctx": true
 },
 "Bilingualer Kiezspaziergang: Eine Brücke über den Atlantik – Die Städtepartnerschaft zwischen Friedrichshain-Kreuzberg und San Rafael del Sur (Nicaragua)": {
-"title": "Bilingual Neighbourhood Walk: A Bridge Across the Atlantic",
+"title": "Bilingual Walk: A Bridge across the Atlantic (Kreuzberg–Nicaragua)",
 "kind": "tour",
 "audience": "everyone",
-"summary": "A bilingual walk on the twinning of Friedrichshain-Kreuzberg and San Rafael del Sur.",
-"by": "ai"
+"summary": "Bilingual walk on Friedrichshain-Kreuzberg's twinning with San Rafael del Sur, Nicaragua, West Berlin's first with a Global South town. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Ausstellungsbegleitung: Skater & Rollbrettfahrer vor und nach dem Mauerfall": {
-"title": "Exhibition Guide: Skaters and Skateboarders Before and After the Wall",
+"title": "Guided Tour: Skateboarders before and after the Fall of the Wall",
 "kind": "tour",
 "audience": "everyone",
-"summary": "Guided visit to an exhibition on skaters and skateboarders around the fall of the Wall.",
-"by": "ai"
+"summary": "Tour of the photo and object exhibition on German skateboarding before and after the Wall fell, comparing West and East and how the GDR regime reacted.",
+"by": "claude-task",
+"ctx": true
 },
 "Inline-Skating in Neukölln": {
-"title": "Inline Skating in Neukölln",
+"title": "Inline Skating Open Day in Neukölln (TSC Berlin 1893)",
 "kind": "sport",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "TSC Berlin 1893's inline-skating section: try on skates, learn first steps, or test slalom courses, inline hockey and inline basketball. All ages welcome.",
+"by": "claude-task",
+"ctx": true
 },
 "\"Utopien & Sensationen\" - Magische Zaubershow im RegenbogenKino": {
-"title": "Utopien & Sensationen – Magic Show at RegenbogenKino",
+"title": "\"Utopien & Sensationen\" – Magic Show at RegenbogenKino",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "A magic show at the RegenbogenKino.",
-"by": "ai"
+"summary": "Political magic show by the trio Die Magische Aktion: street magic with illusions that 'shrink high rents' or 'make the AfD disappear'.",
+"by": "claude-task",
+"ctx": true
 },
 "Bezirkskonzert in Charlottenburg-Wilmersdorf: Chorkonzert der Reihe \"12 Bezirke - 12 Konzerte\"": {
-"title": "District Concert in Charlottenburg-Wilmersdorf: Choir Concert",
+"title": "Choir Concert in Wilmersdorf: \"12 Bezirke – 12 Konzerte\" Series",
 "kind": "music",
 "audience": "everyone",
-"summary": "A choir concert in the series 12 Bezirke - 12 Konzerte.",
-"by": "ai"
+"summary": "Varied church-choir concert in the Evangelische Auenkirche presenting the district's choral diversity, part of the series '12 districts – 12 concerts'.",
+"by": "claude-task",
+"ctx": true
 },
 "Landschaften des Wortes": {
-"title": "Landscapes of the Word",
+"title": "Landschaften des Wortes – Ulrike Almut Sandig & Grigory Semenchuk",
 "kind": "talk",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "German poet Ulrike Almut Sandig and Ukrainian poet-musician Grigory Semenchuk perform texts and songs, including her novel Im Orkan. In German and Ukrainian.",
+"by": "claude-task",
+"ctx": true
 },
 "Nähe und Weite - A-Capella-Chormusik und Lyrik | Der kleine Hammerchor": {
-"title": "Closeness and Distance – A Cappella Choir Music and Poetry",
+"title": "Nähe und Weite – A Cappella Concert by Der kleine Hammerchor",
 "kind": "music",
 "audience": "everyone",
-"summary": "A cappella choir music and poetry with Der kleine Hammerchor.",
-"by": "ai"
+"summary": "Der kleine Hammerchor sings classical a cappella music from the Renaissance to today (Tallis, Mendelssohn, Duruflé), interwoven with poems by Sarah Kirsch.",
+"by": "claude-task",
+"ctx": true
 },
 "Auf Tuchfühlung mit der Zukunft: Ein Mitmachtag im Zeichen der Wissenschaft": {
-"title": "In Touch with the Future: A Hands-On Day of Science",
-"kind": "workshop",
+"title": "Auf Tuchfühlung mit der Zukunft: Hands-On Science Day",
+"kind": "festival",
 "audience": "everyone",
-"summary": "A hands-on day themed around science.",
-"by": "ai"
+"summary": "Science day at the Futurium with lab stands, gaming stations and talks for kids and adults, from plants and insects to physicists' life at the South Pole.",
+"by": "claude-task",
+"ctx": true
 },
 "Tauschbörse": {
-"title": "Swap Meet",
+"title": "Swap Meet at Villa Donnersmarck",
 "kind": "market",
 "audience": "everyone",
-"summary": "A swap meet.",
-"by": "ai"
+"summary": "Swap instead of throwing away: bring books, clothes or odds and ends and take home things others brought. Register if you want to run your own swap stall.",
+"by": "claude-task",
+"ctx": true
 },
 "Sternstunde - Matinee": {
 "title": "Sternstunde – Matinee",
-"kind": "theatre",
+"kind": "music",
 "audience": "everyone",
-"summary": "A matinee event called Sternstunde.",
-"by": "ai"
+"summary": "",
+"by": "claude-task",
+"ctx": true
 },
 "Versteckt & Verschwunden Zwei Gefängnisse im ehemaligen Ost-Berlin – eine Erkundung": {
-"title": "Hidden & Vanished: Two Prisons in Former East Berlin",
+"title": "Hidden & Vanished: Two Former Prisons in East Berlin",
 "kind": "tour",
 "audience": "everyone",
-"summary": "An exploration of two prisons in former East Berlin.",
-"by": "ai"
+"summary": "Exploring two GDR-era prisons in central Berlin: the remand prison in Keibelstraße, hidden in an office building, and the vanished women's prison, Barnimstraße.",
+"by": "claude-task",
+"ctx": true
 },
 "Weddingmarkt - Open-Air-Designmarkt": {
 "title": "Weddingmarkt – Open-Air Design Market",
 "kind": "market",
 "audience": "everyone",
-"summary": "An open-air design market called Weddingmarkt.",
-"by": "ai"
+"summary": "Open-air market on Leopoldplatz selling only handmade goods: fashion, illustrations, ceramics, paintings, jewellery and photography.",
+"by": "claude-task",
+"ctx": true
 },
 "KI verstehen und einsetzen: Medienwerkstatt für demokratische Beteiligung": {
 "title": "Understanding and Using AI: Workshop for Democratic Participation",
@@ -7158,74 +7282,84 @@
 "ctx": true
 },
 "Der 9. November im Deutschen Historischen Museum Eintritt & Führungen frei": {
-"title": "Free Entry and Tours at the Deutsches Historisches Museum",
-"kind": "exhibition",
+"title": "9 November in German History – Deutsches Historisches Museum",
+"kind": "notice",
 "audience": "everyone",
-"summary": "Free entry and free guided tours on 9 November at the Deutsches Historisches Museum.",
-"by": "ai"
+"summary": "The museum marks 9 November in German history — the 1918 republic, 1923 Hitler putsch, 1938 pogroms and 1989 fall of the Wall — with tours in the Pei building.",
+"by": "claude-task",
+"ctx": true
 },
 "Beyond Lines: Tanzperformance zur Berlin Freedom Week (mehrere Uhrzeiten)": {
-"title": "Beyond Lines: Dance Performance for Berlin Freedom Week",
+"title": "Beyond Lines: Dance Performance at the Tränenpalast",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "A dance performance for Berlin Freedom Week, shown at several times.",
-"by": "ai"
+"summary": "LUNA PARK's dance piece in the Tränenpalast, a former border-crossing hall, about crossing borders: leaving home, waiting, fear and hope. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "DDRdirekt": {
-"title": "DDRdirekt",
-"kind": "talk",
+"title": "DDRdirekt – Reading and Performance of GDR Workers' Writing",
+"kind": "theatre",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "anna martha and Thomas Hartung perform poems and stories written in GDR factory writing circles — some loyal to the official line, some cautiously critical.",
+"by": "claude-task",
+"ctx": true
 },
 "Informationsveranstaltung - die Beratungsstelle für Menschen mit Behinderung": {
-"title": "Information Session: Advice Centre for People with Disabilities",
+"title": "Info Session: Advice Service for People with Disabilities",
 "kind": "support",
-"audience": "group",
-"summary": "An information session about the advice centre for people with disabilities.",
-"by": "ai"
+"audience": "everyone",
+"summary": "Mitte's advice service for people with disabilities, cancer or chronic illness explains how it helps, e.g. with applications and foundations. Please register.",
+"by": "claude-task",
+"ctx": true
 },
 "Bau- und Planungspraxis im Fokus: Impuls & Networking im VDI-Arbeitskreis Bautechnik": {
-"title": "Construction Practice: Input and Networking, VDI Working Group",
+"title": "VDI Construction Working Group: Talk and Networking",
 "kind": "meetup",
 "audience": "group",
-"summary": "An input session and networking in the VDI working group on building technology.",
-"by": "ai"
+"summary": "Monthly meeting of the VDI construction working group: a short talk on building and planning practice (ESG, sustainability, circular economy), then networking.",
+"by": "claude-task",
+"ctx": true
 },
 "Meet your Researcher: Was forscht man zu „Intervenierenden Künsten\"?": {
-"title": "Meet Your Researcher: Research on 'Intervening Arts'",
+"title": "Meet your Researcher: Research on \"Intervening Arts\"",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A session on what research on Intervenierende Künste involves.",
-"by": "ai"
+"summary": "Ask researchers of the 'Intervening Arts' research centre (FU Berlin and others) about e.g. forgery as fiction or improvisation. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Wasser ernten: Hands-On-Workshop zu Wasser und Wasserkreislaufdesign und dem Experimentieren mit Ton": {
-"title": "Harvesting Water: Hands-On Workshop on Water Cycle Design and Clay",
+"title": "Harvesting Water: Hands-On Clay Workshop on Water-Cycle Design",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "A hands-on workshop on water, water cycle design and experimenting with clay.",
-"by": "ai"
+"summary": "Starting from Dimitra Almpani-Lekka's rainwater-collecting ceramics, shown at the Humboldt Forum, shape your own small clay object. Please register.",
+"by": "claude-task",
+"ctx": true
 },
 "Gedenkstunde für die Toten der Revolution 1918/19": {
-"title": "Commemoration for the Dead of the 1918/19 Revolution",
+"title": "Memorial for the Dead of the 1918/19 Revolution",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A commemoration for those who died in the 1918/19 revolution.",
-"by": "ai"
+"summary": "Commemoration at the Friedhof der Märzgefallenen for the dead of the 1918/19 revolution, with speeches by Sigrid Klebba, Damiano Valgolio and Felicia Kompio.",
+"by": "claude-task",
+"ctx": true
 },
 "Zu warm für die DDR? – Queeres Leben zwischen Anpassung und Emanzipation - Vortrag von Peter Rausch | Queer Monday": {
-"title": "Too Warm for the GDR? Queer Life: Adaptation and Emancipation",
+"title": "Zu warm für die DDR? Queer Life in the GDR – Talk by Peter Rausch",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A talk by Peter Rausch on queer life, part of Queer Monday.",
-"by": "ai"
+"summary": "Queer Monday by Wolfdietrich-Schnurre-Bibliothek and Sonntagsclub: Peter Rausch traces lesbian, gay and queer life in the GDR decade by decade, with discussion.",
+"by": "claude-task",
+"ctx": true
 },
 "Artists Film International (AFI) 2026: A Kind of Power": {
 "title": "Artists Film International (AFI) 2026: A Kind of Power",
 "kind": "film",
 "audience": "everyone",
-"summary": "A film programme called A Kind of Power in Artists Film International 2026.",
-"by": "ai"
+"summary": "n.b.k. screens this year's Artists Film International: artists' films from four continents on how power shapes seeing, by Ann Oren, Mila Turajlić and others.",
+"by": "claude-task",
+"ctx": true
 },
 "ART Steglitz 2026 - Aktuelle Arbeiten - Teil 2 (Mo-Sa)": {
 "title": "ART Steglitz – Current Works, Part 2",
@@ -7244,116 +7378,141 @@
 "ctx": true
 },
 "Musikalisch-literarische Aufführung: Die Zivilisation": {
-"title": "Musical-Literary Performance: Die Zivilisation",
+"title": "Die Zivilisation – Music and Literature Performance",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "A performance combining music and literature, titled Die Zivilisation.",
-"by": "ai"
+"summary": "Music-and-text performance remembering Prague's Liberated Theatre (Osvobozené divadlo), Europe's leading antifascist avant-garde stage, banned in 1938.",
+"by": "claude-task",
+"ctx": true
 },
 "Zwischen Herkunft und neuem Zuhause Welche Spuren hinterlässt eine Ausreise?": {
-"title": "Between Origin and New Home: What Traces Does Emigration Leave?",
-"kind": "talk",
+"title": "Between Origin and New Home: Film, Installation and Reading",
+"kind": "film",
 "audience": "everyone",
-"summary": "An event on the traces left by emigration between origin and a new home.",
-"by": "ai"
+"summary": "Jola Wieczorek's film Die noch unbekannten Tage on her family's 1980s move from Poland to Austria, then an installation of objects and a performative reading.",
+"by": "claude-task",
+"ctx": true
 },
 "Web-Seminar: Nachhaltig, gesund und günstig einkaufen": {
-"title": "Web Seminar: Shopping Sustainably, Healthily and Cheaply",
+"title": "Webinar: Shopping Sustainably, Healthily and Cheaply",
 "kind": "talk",
 "audience": "everyone",
-"summary": "An online seminar on shopping sustainably, healthily and cheaply.",
-"by": "ai"
+"summary": "Online talk on eating healthily and sustainably, e.g. organic or fair-trade food, while easing your household budget as food prices rise. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Theater spielen (mehrere Termine)": {
-"title": "Playing Theatre",
+"title": "Acting Group at Nachbarschaftshaus Markus",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "Playing theatre, offered on several dates.",
-"by": "ai"
+"summary": "Try acting with others: invent new texts or re-enact known scenes and practise expressing ideas in words and gestures. Single sessions possible by arrangement.",
+"by": "claude-task",
+"ctx": true
 },
 "Ausstellung und geführter Rundgang „Denkmalpflege. Mehrwert als du denkst“": {
-"title": "Heritage Conservation: More Value Than You Think – Exhibition and Tour",
+"title": "Exhibition and Tour: „Denkmalpflege. Mehrwert als du denkst“",
 "kind": "exhibition",
 "audience": "everyone",
-"summary": "An exhibition and a guided tour on heritage conservation.",
-"by": "ai"
+"summary": "Berlin's monument-preservation office and Volkshochschule Tempelhof-Schöneberg show how historic monuments add value to city life; opening with a guided tour.",
+"by": "claude-task",
+"months": [
+11,
+12
+],
+"ctx": true
 },
 "„Review to the Roots“ - Erzählungen aus 65 Jahren Akkordeonliebe mit Musik": {
-"title": "Review to the Roots: 65 Years of Accordion Love in Stories and Music",
+"title": "„Review to the Roots“ – 65 Years of Accordion Love, Told with Music",
 "kind": "talk",
 "audience": "everyone",
-"summary": "Stories from 65 years of love for the accordion, told with music.",
-"by": "ai"
+"summary": "Monika Joos tells, with music, of 65 years with the accordion as an amateur who just loves playing. Part of Landesmusikrat Berlin's '600 Akkordeons' exhibition.",
+"by": "claude-task",
+"ctx": true
 },
 "Flüsse als Lebens- und Konflikträume | Rivers as places of life and conflict": {
 "title": "Rivers as Places of Life and Conflict",
 "kind": "talk",
 "audience": "everyone",
-"summary": "An event on rivers as places of life and conflict.",
-"by": "ai"
+"summary": "Artist collective FrauVonDa// and IGB researchers host a talk with sound and video art on the Oder, Spree and rivers in climate change. In German or English.",
+"by": "claude-task",
+"ctx": true
 },
 "Frollein Tuesday Treasures: Girly + Bibi": {
 "title": "Frollein Tuesday Treasures: Girly + Bibi",
 "kind": "music",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Intimate gig at Frollein Langner: the singer of girly and the pops plays stripped-back versions of the band's songs, plus trip-hop post-punk duo Bibi.",
+"by": "claude-task",
+"months": [
+10,
+11,
+12
+],
+"ctx": true
 },
 "Buchvorstellung und Diskussion: „Lesbische Selbstbehauptung in der DDR“": {
-"title": "Book Presentation and Discussion: Lesbian Self-Assertion in the GDR",
+"title": "Book Talk: Lesbian Self-Assertion in the GDR",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A book presentation and discussion on lesbian self-assertion in the GDR.",
-"by": "ai"
+"summary": "Author Dr. Teresa Tammer presents her book on Karin Dauenheimer, a lesbian feminist who helped spark the GDR lesbian movement, with Dauenheimer herself.",
+"by": "claude-task",
+"ctx": true
 },
 "Zivilcourage zeigen – sicher handeln im Alltag": {
-"title": "Showing Civil Courage – Acting Safely in Everyday Life",
+"title": "Civil Courage Training: Acting Safely in Everyday Life",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "An event on showing civil courage and acting safely in everyday life.",
-"by": "ai"
+"summary": "3-hour training with Chaska Stern on spotting danger and safely de-escalating when others are insulted or threatened. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Vorgemerkt. | Franziska Gänsler": {
-"title": "Vorgemerkt. – Franziska Gänsler",
+"title": "Vorgemerkt.: Franziska Gänsler Presents Her Favourite Library Picks",
 "kind": "talk",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Writer Franziska Gänsler talks with Luca Mael Milsch about the books and media from the ZLB library collection that inspire her.",
+"by": "claude-task",
+"ctx": true
 },
 "Upcycling-Workshop: Schmuck aus Kronleuchtern": {
 "title": "Upcycling Workshop: Jewellery from Chandeliers",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "An upcycling workshop on jewellery from chandeliers.",
-"by": "ai"
+"summary": "Take apart old crystal chandeliers and turn the glass and metal parts into necklaces, earrings or pendants. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Herbstlichter - Lampions bemalen mit Ercan Arslan": {
-"title": "Autumn Lights – Painting Lanterns with Ercan Arslan",
+"title": "Autumn Lights: Painting Lanterns with Ercan Arslan",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "Painting lanterns with Ercan Arslan.",
-"by": "ai"
+"summary": "Draw your own patterns on nylon lanterns, then add lighting and a holder to make a light object. Materials provided, no experience needed.",
+"by": "claude-task",
+"ctx": true
 },
 "Gespräch und Lesung mit Alice Hasters und Mohamed Amjahid": {
-"title": "Conversation and Reading with Alice Hasters and Mohamed Amjahid",
+"title": "Talk and Reading with Alice Hasters and Mohamed Amjahid",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A conversation and reading with Alice Hasters and Mohamed Amjahid.",
-"by": "ai"
+"summary": "Alice Hasters presents her new book 'Anti Opfer' on why society scorns vulnerability and how this links to rising authoritarianism, with Mohamed Amjahid.",
+"by": "claude-task",
+"ctx": true
 },
 "Das neue BND-Gesetz": {
-"title": "The New BND Law",
+"title": "The New BND Law: Reform of Germany's Intelligence Service",
 "kind": "talk",
 "audience": "everyone",
-"summary": "An event about the new BND law.",
-"by": "ai"
+"summary": "On the biggest reform in the history of Germany's foreign intelligence service (BND): new powers for sabotage, internet monitoring and AI data analysis.",
+"by": "claude-task",
+"ctx": true
 },
 "Das Berliner Puppentheater präsentiert: \"Der Grolltroll\"": {
-"title": "Berliner Puppentheater Presents: Der Grolltroll",
+"title": "Berliner Puppentheater: Der Grolltroll",
 "kind": "theatre",
 "audience": "kids",
-"summary": "A puppet theatre show, Der Grolltroll, by the Berliner Puppentheater.",
-"by": "ai"
+"summary": "Puppet show for ages 2+ at the Märkisches Viertel library about a troll whose plans keep failing and who must learn to handle his anger and his friends.",
+"by": "claude-task",
+"ctx": true
 },
 "Wanderausstellung \"600 Akkordeons. Eure Geschichten. Unser Berlin – Teil 6\"": {
 "title": "Exhibition: 600 Akkordeons. Eure Geschichten. Unser Berlin – Part 6",
@@ -7372,18 +7531,20 @@
 "ctx": true
 },
 "Filmvorführung | Bilder der Verbrecher - \"Ein Spezialist\" – der Eichmann-Prozess als Bild (Filmreihe)": {
-"title": "Film Screening: Ein Spezialist – The Eichmann Trial as Image",
+"title": "Film Screening: 'Ein Spezialist' – The Eichmann Trial on Film",
 "kind": "film",
 "audience": "everyone",
-"summary": "Screening of Ein Spezialist in the series Bilder der Verbrecher, on the Eichmann trial.",
-"by": "ai"
+"summary": "Documentary reconstructing the Eichmann trial, part of a Heinrich Böll Foundation series at the Regenbogenfabrik on how films portray Nazi perpetrators.",
+"by": "claude-task",
+"ctx": true
 },
 "Martinsumzüge und Laternenfeste am St. Martinstag (oder vorher)": {
-"title": "St Martin's Day Lantern Parades and Lantern Festivals",
+"title": "St Martin's Day Lantern Processions and Festivals",
 "kind": "festival",
 "audience": "kids",
-"summary": "Lantern parades and lantern festivals on St Martin's Day or before.",
-"by": "ai"
+"summary": "Round-up of St Martin's lantern processions across Berlin, e.g. a sung play and lantern walk at the Berliner Dom. List not yet fully updated for 2026.",
+"by": "claude-task",
+"ctx": true
 },
 "\"Bilder der Verbrecher\" – Filmische Blicke auf Täter im Nationalsozialismus | im RegenbogenKino": {
 "title": "'Bilder der Verbrecher': films on Nazi perpetrators, RegenbogenKino",
@@ -7394,109 +7555,124 @@
 "ctx": true
 },
 "Politiker erzählen Märchen!": {
-"title": "Politicians Tell Fairy Tales!",
+"title": "Politicians Tell Fairy Tales",
 "kind": "talk",
-"audience": "everyone",
-"summary": "Politicians tell fairy tales.",
-"by": "ai"
+"audience": "kids",
+"summary": "Politicians read fairy tales linked to their field to school classes, then take pupils' questions. School classes only; fully booked. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Grenzgeschichten. Filmzeugnisse zur Berliner Mauer (1961–1989)": {
-"title": "Border Stories: Film Records of the Berlin Wall",
+"title": "Border Stories: Archive Films on the Berlin Wall",
 "kind": "film",
 "audience": "everyone",
-"summary": "Film records of the Berlin Wall from 1961 to 1989.",
-"by": "ai"
+"summary": "Rarely shown Berlin State Archive footage of the Wall years until 1989, explained by historian Jens Schöne and others, followed by a panel discussion.",
+"by": "claude-task",
+"ctx": true
 },
 "MissVergnügen presents She Will Listen": {
 "title": "MissVergnügen Presents She Will Listen",
 "kind": "music",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Gig by Berlin dark-pop duo She Will Listen – hypnotic guitars, electronic beats and Lilian Maria's vocals – with DJ MissVergnügen, at Eschschloraque.",
+"by": "claude-task",
+"ctx": true
 },
 "Lesereihe: „Auf den Spuren vergessener Schriftstellerinnen“": {
-"title": "Reading Series: In the Footsteps of Forgotten Women Writers",
+"title": "Reading Series on Forgotten Women Writers: Annemarie Weber",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A reading series on forgotten women writers.",
-"by": "ai"
+"summary": "Reading on Berlin writer Annemarie Weber (born 1918), whose witty novel portrays 1960s West Berlin between marriage, student protest and smart receptions.",
+"by": "claude-task",
+"ctx": true
 },
 "Semtimde Yaşlanmak – sunulan hizmetler ve destek imkanları / Älterwerden in meinem Kiez – welche Angebote gibt es?": {
-"title": "Growing Older in My Neighbourhood – What Services Are There?",
+"title": "Growing Older in My Neighbourhood – What Support Is There?",
 "kind": "support",
 "audience": "seniors",
-"summary": "An information event on services and support for growing older in the local area.",
-"by": "ai"
+"summary": "Bilingual Turkish–German info and chat session on ageing well in Reinickendorf Ost: local care and support services introduce themselves, then Q&A.",
+"by": "claude-task",
+"ctx": true
 },
 "Eine Berliner Familiengeschichte von über 100 Jahren – Lesung und Gespräch mit der Zeitzeugin Irene Bindel": {
-"title": "A Berlin Family History of Over 100 Years: Reading with Irene Bindel",
+"title": "Reading and Talk with Witness Irene Bindel: A Berlin Family Story",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A reading and conversation with eyewitness Irene Bindel about a Berlin family history.",
-"by": "ai"
+"summary": "Irene Bindel, born 1938 to a Christian mother and a Jewish father, reads from her book on her family's fate under the Nazis and in the post-war years.",
+"by": "claude-task",
+"ctx": true
 },
 "Karneval der Tiere: Bilderbuchkino-Spezial zu den Berliner Märchentagen": {
-"title": "Carnival of the Animals: Picture-Book Cinema Special",
+"title": "Carnival of the Animals: Picture-Book Reading (Berlin Fairy Tale Days)",
 "kind": "talk",
 "audience": "kids",
-"summary": "A picture-book cinema special for the Berlin Fairy Tale Days.",
-"by": "ai"
+"summary": "Picture book shown on screen and read aloud: disguised animals give rhyming clues, and children guess who is who and pick the best costume.",
+"by": "claude-task",
+"ctx": true
 },
 "Posts, Reels, Stories – Fluchterfahrungen aus Jugoslawien im Netz": {
-"title": "Posts, Reels, Stories – Experiences of Fleeing Yugoslavia Online",
+"title": "Posts, Reels, Stories: Refugee Experiences from Yugoslavia Online",
 "kind": "talk",
 "audience": "everyone",
-"summary": "An event on experiences of fleeing Yugoslavia as they appear online.",
-"by": "ai"
+"summary": "Panel with influencer Fata Hasanović and journalist Krsto Lazarević on how social media spreads memories of flight from Yugoslavia – and disinformation.",
+"by": "claude-task",
+"ctx": true
 },
 "Segreti dopo le cinque": {
-"title": "Segreti dopo le cinque",
-"kind": "film",
+"title": "Segreti dopo le cinque: Stasi Records Archive Tour in Italian",
+"kind": "tour",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Italian-language tour at the former Stasi headquarters in Lichtenberg, now home to the Stasi Records Archive, on how the secret police worked.",
+"by": "claude-task",
+"ctx": true
 },
 "Einsamkeit überwinden: Wie Bibliotheken uns verbinden": {
 "title": "Overcoming Loneliness: How Libraries Connect Us",
 "kind": "talk",
 "audience": "everyone",
-"summary": "An event on overcoming loneliness and how libraries connect people.",
-"by": "ai"
+"summary": "Reading and panel with journalist Daniel Haas, federal minister Karin Prien and the German Library Association on loneliness. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "WahlheYmat Talks: Democracy for everyone": {
 "title": "WahlheYmat Talks: Democracy for Everyone",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A WahlheYmat Talks session titled Democracy for everyone.",
-"by": "ai"
+"summary": "Monthly discussion series on renewing democracy: a quarter of Berliners cannot vote, and guests from Polnischer Sozialrat and WahlheYmat ask what to do.",
+"by": "claude-task",
+"ctx": true
 },
 "Lichterfest in der Bibliothek am Wasserturm": {
-"title": "Festival of Lights at the Bibliothek am Wasserturm",
+"title": "Festival of Lights at Bibliothek am Wasserturm",
 "kind": "festival",
-"audience": "everyone",
-"summary": "A festival of lights at the Bibliothek am Wasserturm.",
-"by": "ai"
+"audience": "kids",
+"summary": "Lantern-making workshop for children aged 4+, then the Rumpelmärchen tell a story about fire combined with a real fire show.",
+"by": "claude-task",
+"ctx": true
 },
 "Die Lesereihe „Live bei Kleist“ präsentiert: Renate Zimmermann - „Bibliothekarin läuft“": {
-"title": "Live bei Kleist: Renate Zimmermann – Bibliothekarin läuft",
+"title": "Live bei Kleist Reading: Renate Zimmermann – 'Bibliothekarin läuft'",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A reading by Renate Zimmermann in the series Live bei Kleist.",
-"by": "ai"
+"summary": "Retired Marzahn-Hellersdorf librarian Renate Zimmermann talks about her project of walking every street in Berlin. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Puppentheater: „Der Cleopatra Express“": {
 "title": "Puppet Theatre: Der Cleopatra Express",
 "kind": "theatre",
-"audience": "kids",
-"summary": "A puppet theatre performance called Der Cleopatra Express.",
-"by": "ai"
+"audience": "everyone",
+"summary": "The Villa Donnersmarck art group performs its first self-written play with hand puppets they made themselves – a story full of surprising twists.",
+"by": "claude-task",
+"ctx": true
 },
 "Wild Wednesday w. \"Rock Elegante\" (Indie/Bln)": {
-"title": "Wild Wednesday with Rock Elegante (Indie/Berlin)",
+"title": "Wild Wednesday with Rock Elegante (Indie, Berlin)",
 "kind": "music",
 "audience": "everyone",
-"summary": "A Wild Wednesday event with Rock Elegante, listed as Indie/Bln.",
-"by": "ai"
+"summary": "Indie music night featuring Rock Elegante from Berlin. Ages 18+ only.",
+"by": "claude-task",
+"ctx": true
 },
 "Asylrechtsberatung / Asylum Law Advice (for LGBTIQ* Refugees)": {
 "title": "Asylum Law Advice for LGBTIQ* Refugees",
@@ -7510,57 +7686,65 @@
 "title": "Free Thursdays at KW",
 "kind": "exhibition",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Free entry and longer opening for the shows by Holly Herndon & Mat Dryhurst ('Starmirror') and Kazuko Miyamoto, with tours and music. No booking.",
+"by": "claude-task",
+"ctx": true
 },
 "Lesung: Petr Hanel „Du weisst nen Schei* über Sterne“": {
-"title": "Reading: Petr Hanel, Du weisst nen Schei* über Sterne",
+"title": "Reading: Petr Hanel – 'Du weisst nen Schei* über Sterne'",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A reading by Petr Hanel: Du weisst nen Schei* über Sterne.",
-"by": "ai"
+"summary": "Petr Hanel reads from his novel about 17-year-old Marky, caught between a crush, family debt and TikTok 'alpha' advice. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Freiheit braucht Öffentlichkeit - 40 Jahre Umwelt-Bibliothek": {
-"title": "Freedom Needs Publicity – 40 Years of the Umwelt-Bibliothek",
+"title": "Freedom Needs a Public: 40 Years of the Umwelt-Bibliothek",
 "kind": "talk",
 "audience": "everyone",
-"summary": "An event about 40 years of the Umwelt-Bibliothek.",
-"by": "ai"
+"summary": "Berlin Freedom Week event on the East Berlin Umwelt-Bibliothek, a key GDR opposition centre, with results of the youth podcast 'MIC Check: Demokratie!'.",
+"by": "claude-task",
+"ctx": true
 },
 "Öffentliche Führung durch das Bundesarchiv in Berlin-Lichterfelde": {
-"title": "Public Tour of the Bundesarchiv in Berlin-Lichterfelde",
+"title": "Public Tour of the Bundesarchiv (Federal Archives) in Lichterfelde",
 "kind": "tour",
 "audience": "everyone",
-"summary": "A public guided tour of the Bundesarchiv in Berlin-Lichterfelde.",
-"by": "ai"
+"summary": "Tour of a site that was a Prussian cadet school, Leibstandarte Adolf Hitler quarters and the US Army's Andrew Barracks before the Federal Archives moved in.",
+"by": "claude-task",
+"ctx": true
 },
 "Von der Bühne auf die Straße. Theater in der späten DDR.- Vortrag von Jutta Braun": {
-"title": "From the Stage to the Street: Theatre in the Late GDR",
+"title": "From Stage to Street: Theatre in the Late GDR – Talk by Jutta Braun",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A talk by Jutta Braun on theatre in the late GDR.",
-"by": "ai"
+"summary": "Historian Dr. Jutta Braun (ZZF Potsdam) shows how GDR theatres became a space for dissent and how theatre people backed the 1989 Peaceful Revolution.",
+"by": "claude-task",
+"ctx": true
 },
 "Meshcore Jedermannsfunk Workshop": {
-"title": "Meshcore Citizens' Band Radio Workshop",
+"title": "MeshCore Workshop: Build a Neighbourhood Radio Network",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "A Meshcore Jedermannsfunk (citizens' radio) workshop.",
-"by": "ai"
+"summary": "Build small radio repeaters together for a neighbourhood-run network that sends messages when internet or mobile service fails. No experience needed.",
+"by": "claude-task",
+"ctx": true
 },
 "Workshop: Natürliche Seife herstellen": {
 "title": "Workshop: Making Natural Soap",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "A workshop on making natural soap.",
-"by": "ai"
+"summary": "Learn cold-process soap making with plant oils, herbs, coffee grounds and essential oils, led by Kulturlabor Trial and Error. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Offene Kalligraphie-Werkstatt in Neukölln": {
 "title": "Open Calligraphy Workshop in Neukölln",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "An open calligraphy workshop in Neukölln.",
-"by": "ai"
+"summary": "Try calligraphy styles with Carla (@skribule): learn the basics and letter a card, quote or your name. No experience or registration needed; drop in.",
+"by": "claude-task",
+"ctx": true
 },
 "Game night": {
 "title": "Game Night",
@@ -7570,67 +7754,76 @@
 "by": "ai"
 },
 "Open Mike (Finale Literaturwettbewerb)": {
-"title": "Open Mike (Literature Competition Final)",
+"title": "open mike: Finals of the Young Literature Competition",
 "kind": "talk",
 "audience": "everyone",
-"summary": "The final of a literature competition called Open Mike.",
-"by": "ai"
+"summary": "International competition for young German-language prose and poetry: each finalist reads for 15 minutes to win over the jury, which then picks winners.",
+"by": "claude-task",
+"ctx": true
 },
 "Back to the Future: IMAGINE! x Kunst, Poesie, Gespräch": {
-"title": "Back to the Future: IMAGINE! x Art, Poetry, Conversation",
+"title": "Back to the Future: IMAGINE! – Art, Poetry and Conversation",
 "kind": "talk",
 "audience": "everyone",
-"summary": "An event combining art, poetry and conversation.",
-"by": "ai"
+"summary": "Evening of spoken word, an artist talk, a look into the studio and shared reflection on tensions and opposites. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Schöne Geschichten (nicht nur) für Kinder": {
-"title": "Lovely Stories (Not Only) for Children",
-"kind": "talk",
+"title": "Lovely Stories (Not Only) for Children: Storytelling Theatre",
+"kind": "theatre",
 "audience": "kids",
-"summary": "Stories for children, though not only for them.",
-"by": "ai"
+"summary": "Manuela Grabowski acts out stories with instruments, objects and soft toys and gets children involved; this month: cat Mitzie and dog Bello's adventures.",
+"by": "claude-task",
+"ctx": true
 },
 "Artist Talk und Kurzführung mit Annette Hauschild": {
 "title": "Artist Talk and Short Tour with Annette Hauschild",
 "kind": "talk",
 "audience": "everyone",
-"summary": "An artist talk and short tour with Annette Hauschild.",
-"by": "ai"
+"summary": "Talk with Annette Hauschild and a short tour of 'Ostgebiete / Ziemie Zachodnie', German and Polish photos on memory and change on both sides of the Oder.",
+"by": "claude-task",
+"ctx": true
 },
 "Lichterfest beim Stadtteilzentrum im Ribbeck-Haus": {
-"title": "Festival of Lights at the Ribbeck-Haus Neighbourhood Centre",
+"title": "Festival of Lights at the Stadtteilzentrum im Ribbeck-Haus",
 "kind": "festival",
-"audience": "everyone",
-"summary": "A festival of lights at the neighbourhood centre in the Ribbeck-Haus.",
-"by": "ai"
+"audience": "kids",
+"summary": "Neighbourhood festival of lights at the community centre to celebrate together and brighten the area as the days get darker. Step-free access.",
+"by": "claude-task",
+"ctx": true
 },
 "St. Martin - Laternenumzug (Tegel-Süd)": {
-"title": "St Martin Lantern Parade (Tegel-Süd)",
+"title": "St Martin's Lantern Procession (Tegel-Süd)",
 "kind": "festival",
 "audience": "kids",
-"summary": "A St Martin lantern parade in Tegel-Süd.",
-"by": "ai"
+"summary": "Family lantern walk by the Berliner Stadtmission congregation in Tegel: St Martin story, procession with brass band, then a campfire with warm drinks.",
+"by": "claude-task",
+"ctx": true
 },
 "Berlin schläft ein | Schlaflieder singen für Familien in der Jurte": {
-"title": "Berlin Falls Asleep: Singing Lullabies for Families in the Yurt",
+"title": "Berlin Falls Asleep: Lullaby Singing for Families in the Yurt",
 "kind": "music",
 "audience": "kids",
-"summary": "Singing lullabies for families in a yurt.",
-"by": "ai"
+"summary": "Parents and children sing well-known lullabies and learn new ones in different languages with singer and choir leader Bettina Stäbert. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Rauschen | Pop-Up-Ausstellung mit Musik in Friedenau": {
 "title": "Rauschen: Pop-Up Exhibition with Music in Friedenau",
 "kind": "exhibition",
 "audience": "everyone",
-"summary": "A pop-up exhibition with music in Friedenau.",
-"by": "ai"
+"summary": "Berlin artist Frieda Rausch shows painting, photography and furniture, set to music by producer Felix Finck. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "\"Matriarchale Filmtage\" - in der Regenbogenfabrik": {
 "title": "Matriarchal Film Days at the Regenbogenfabrik",
 "kind": "film",
 "audience": "everyone",
-"summary": "Film days titled Matriarchale Filmtage, at the Regenbogenfabrik.",
-"by": "ai"
+"summary": "First edition of a self-organised documentary weekend: German women filmmakers show and discuss their films on matriarchal communities worldwide.",
+"by": "claude-task",
+"ctx": true
 },
 "Eine andere Italienische Reise. Der Zweite Weltkrieg in Italien: Orte, Geschichte und Erinnerungen": {
 "title": "Another Italian Journey: WWII in Italy – Places, History and Memories",
@@ -7649,11 +7842,12 @@
 "ctx": true
 },
 "Weltmusiksalon „Der fliegende Teppich” #51 – „Berlin – Delhi Dialog der Klänge”": {
-"title": "World Music Salon 'The Flying Carpet' #51 – Berlin–Delhi",
+"title": "World Music Salon 'Der fliegende Teppich': Berlin–Delhi Dialogue",
 "kind": "music",
 "audience": "everyone",
-"summary": "A world music salon, number 51, on the Berlin–Delhi dialogue of sounds.",
-"by": "ai"
+"summary": "Duo Liquid Soul (Gert Anklam, sax; Beate Gatscha, handpan, voice) with Delhi drummer Pandit Radheshyam Sharma: jazz meets Indian percussion and song.",
+"by": "claude-task",
+"ctx": true
 },
 "Finnischer Weihnachtsmarkt bzw. Weihnachtsbasar in Kreuzberg": {
 "title": "Finnish Christmas Market at Finnland Zentrum, Kreuzberg",
@@ -7672,116 +7866,132 @@
 "ctx": true
 },
 "Feministisches Bilderbuchkino mit den Omas gegen Rechts": {
-"title": "Feminist Picture-Book Cinema with Omas gegen Rechts",
+"title": "Feminist Picture-Book Reading with Omas gegen Rechts",
 "kind": "talk",
 "audience": "kids",
-"summary": "A feminist picture-book cinema session with Omas gegen Rechts.",
-"by": "ai"
+"summary": "Picture books like 'Mein Körper gehört mir' shown and read aloud; then (grand)parents can learn about Omas gegen Rechts ('Grannies Against the Right').",
+"by": "claude-task",
+"ctx": true
 },
 "Kleidertauschparty in Schöneberg": {
 "title": "Clothes Swap Party in Schöneberg",
 "kind": "market",
 "audience": "everyone",
-"summary": "A clothes swap party in Schöneberg.",
-"by": "ai"
+"summary": "Bring up to 10 clean, intact autumn/winter pieces and swap them for new favourites, with music and punch. Take home about as many as you bring.",
+"by": "claude-task",
+"ctx": true
 },
 "Lesung: Psychiatrieerfahrungen im Elsass – Lebensgeschichten zwischen Strasbourg und Hadamar im NS": {
-"title": "Reading: Psychiatric Experiences in Alsace, Strasbourg to Hadamar",
+"title": "Reading: Psychiatric Experiences in Alsace under Nazism",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A reading of life stories between Strasbourg and Hadamar during the Nazi era.",
-"by": "ai"
+"summary": "GeDenkOrt.Charité hosts author Dr. Dr. Lea Münch, who traces five psychiatric patients' lives in Nazi-annexed Alsace, with discussion. Registration recommended.",
+"by": "claude-task",
+"ctx": true
 },
 "Deli Bayramı": {
-"title": "Deli Bayramı",
-"kind": "festival",
+"title": "Deli Bayramı: Play by Turgut Özakman",
+"kind": "theatre",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Theatre group Aacayip Tiyatro e.V. brings Turgut Özakman's 1987 play 'Deliler Bayramı' back to the stage, as some things have stayed strikingly similar.",
+"by": "claude-task",
+"ctx": true
 },
 "Literatursalon Emanzipation = Aufstieg?": {
-"title": "Literary Salon: Emancipation = Advancement?",
+"title": "Literary Salon: Emancipation = Upward Mobility?",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A literary salon on whether emancipation equals advancement.",
-"by": "ai"
+"summary": "Heinrich von der Haar Literaturstiftung salon with readings and talk on whether education frees us and how social background shapes our chances.",
+"by": "claude-task",
+"ctx": true
 },
 "Malinka Band": {
-"title": "Malinka Band",
+"title": "Malinka Band: Tango, Waltz, Swing and Klezmer",
 "kind": "music",
 "audience": "everyone",
-"summary": "An event with the Malinka Band.",
-"by": "ai"
+"summary": "The Malinka Band plays tango, waltz, swing, klezmer and more, mixed with anecdotes and stories from Odessa and elsewhere. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Einblick ins Geheime - Führung zum Stasi-Unterlagen-Archiv am historischen Ort": {
 "title": "Insight into the Secret: Tour of the Stasi Records Archive",
 "kind": "tour",
 "audience": "everyone",
-"summary": "A guided tour of the Stasi Records Archive at its historical site.",
-"by": "ai"
+"summary": "Guided tour at the former Stasi headquarters in Lichtenberg, where 111 km of files are stored, on how the secret police worked and what its files hold.",
+"by": "claude-task",
+"ctx": true
 },
 "Stimprovisation Workshop": {
-"title": "Voice Improvisation Workshop",
+"title": "Stim-provisation Workshop with Dr. Aby Watson",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "A workshop on voice improvisation (Stimprovisation).",
-"by": "ai"
+"summary": "Improvise with stimming – self-soothing movements and sounds – using body, objects and voice. Open to all, in English with sign language. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Herbstliche Pilzführung am Hahneberg": {
-"title": "Autumn Mushroom Tour at Hahneberg",
+"title": "Autumn Mushroom Walk at Hahneberg",
 "kind": "tour",
 "audience": "everyone",
-"summary": "A guided autumn mushroom walk at the Hahneberg.",
-"by": "ai"
+"summary": "Mushroom expert Tamara Pilz-Hunter shows the variety of fungi at Hahneberg, beyond the edible ones, and their role in nature and conservation.",
+"by": "claude-task",
+"ctx": true
 },
 "Frauen in der Zwangsarbeit": {
-"title": "Women in Forced Labour",
-"kind": "talk",
+"title": "Women in Forced Labour: Guided Tour",
+"kind": "tour",
 "audience": "everyone",
-"summary": "An event about women in forced labour.",
-"by": "ai"
+"summary": "Tour of the exhibitions 'Alltag Zwangsarbeit 1938-1945' and 'Baracke 13' on women in Nazi forced labour, who also faced sexual violence and forced abortions.",
+"by": "claude-task",
+"ctx": true
 },
 "Aspettando Puccini – Warten auf Puccini": {
-"title": "Aspettando Puccini – Waiting for Puccini",
+"title": "Aspettando Puccini: Tosca and Turandot in Short",
 "kind": "music",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Kammerchor Nikolassee and three soloists perform condensed versions of Puccini's operas 'Tosca' and 'Turandot', arranged by choir leader Vincent Andreas.",
+"by": "claude-task",
+"ctx": true
 },
 "Medienbasar": {
-"title": "Media Bazaar",
+"title": "Media Sale: Second-Hand Children's and Youth Books and Games",
 "kind": "market",
-"audience": "everyone",
-"summary": "A media bazaar.",
-"by": "ai"
+"audience": "kids",
+"summary": "ZLB library sells discarded children's books, comics, board and video games for a small minimum donation; proceeds go to its friends' association.",
+"by": "claude-task",
+"ctx": true
 },
 "Workshop mit Lucie Lučanská: Das Buch von den füng Sinnen": {
 "title": "Workshop with Lucie Lučanská: The Book of the Five Senses",
 "kind": "workshop",
-"audience": "everyone",
-"summary": "A workshop with Lucie Lučanská on The Book of the Five Senses.",
-"by": "ai"
+"audience": "kids",
+"summary": "For ages 6–12, max. 12 children: starts with a reading from 'Das Buch von den fünf Sinnen', which helps children focus on each sense. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Workshop \"Vision Board & Collagen-Technik\" mit Pia Hasenkamp": {
-"title": "Workshop: Vision Board and Collage Technique with Pia Hasenkamp",
+"title": "Vision Board and Collage Workshop with Pia Hasenkamp",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "A workshop on vision boards and collage technique with Pia Hasenkamp.",
-"by": "ai"
+"summary": "Art therapist Pia Hasenkamp introduces collage techniques; then cut, glue and arrange materials into a picture of your own goals and wishes.",
+"by": "claude-task",
+"ctx": true
 },
 "KinderUni Lichtenberg (KUL): Urlaubsdetektive gesucht!": {
-"title": "KinderUni Lichtenberg: Holiday Detectives Wanted!",
+"title": "Children's University Lichtenberg: Holiday Detectives Wanted!",
 "kind": "talk",
 "audience": "kids",
-"summary": "A KinderUni Lichtenberg session called Holiday Detectives Wanted!",
-"by": "ai"
+"summary": "Interactive lecture for children on tourism: why people travel and whether we can explore the world and protect it. Adults follow a live feed next door.",
+"by": "claude-task",
+"ctx": true
 },
 "Infotag Medizinstudium": {
-"title": "Medical Studies Information Day",
-"kind": "support",
+"title": "Info Day: Studying Medicine",
+"kind": "talk",
 "audience": "everyone",
-"summary": "An information day about studying medicine.",
-"by": "ai"
+"summary": "How medical school places are allocated, how to judge your chances and plan a strategy if you have not yet got a place. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Priceless Things (Mo-Sa 12-20 Uhr)": {
 "title": "Priceless Things at Neurotitan",
@@ -7818,30 +8028,34 @@
 "Wohnungskrise und Alter": {
 "title": "Housing Crisis and Old Age",
 "kind": "talk",
-"audience": "everyone",
-"summary": "An event on the housing crisis and old age.",
-"by": "ai"
+"audience": "seniors",
+"summary": "Teilhabe e.V. and the 'KlassenLos' book editors explain Berlin's housing market and options in old age, when single seniors spend 34% of pensions on rent.",
+"by": "claude-task",
+"ctx": true
 },
 "Phonoklub: DJ-Workshop": {
-"title": "Phonoklub: DJ Workshop",
+"title": "Phonoklub: DJ Workshop for Women, Non-Binary and Trans People",
 "kind": "workshop",
-"audience": "everyone",
-"summary": "A DJ workshop at Phonoklub.",
-"by": "ai"
+"audience": "women",
+"summary": "Get to know the equipment and try DJing with vinyl with Ena Lind of the Spoon collective. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Family Open Lab: Produktgestaltung & 3D-Druck — Drop-in-Workshop": {
-"title": "Family Open Lab: Product Design and 3D Printing Drop-in Workshop",
+"title": "Family Open Lab: Product Design and 3D Printing (Drop-In)",
 "kind": "workshop",
 "audience": "kids",
-"summary": "A drop-in workshop on product design and 3D printing for families.",
-"by": "ai"
+"summary": "Drop-in workshop on 3D printing from design to finished object: create your own designs in TinkerCad with help from mentors. No experience needed.",
+"by": "claude-task",
+"ctx": true
 },
 "Öffentliche Führung „Inhaftiert am Alexanderplatz“": {
-"title": "Public Tour: Imprisoned at Alexanderplatz",
+"title": "Public Tour: 'Imprisoned at Alexanderplatz'",
 "kind": "tour",
 "audience": "everyone",
-"summary": "A public guided tour titled Imprisoned at Alexanderplatz.",
-"by": "ai"
+"summary": "Tour of the former GDR remand prison in Keibelstraße at Alexanderplatz, run by the People's Police and a symbol of state repression. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Workshop für Queers im und ums Wochenbett mit Doula Julia": {
 "title": "Postpartum Preparation Workshop for Queer People with Doula Julia",
@@ -8243,85 +8457,97 @@
 "title": "Zero Waste Future Festival",
 "kind": "festival",
 "audience": "everyone",
-"summary": "A festival called Zero Waste Future Festival.",
-"by": "ai"
+"summary": "Berlin's waste company BSR turns its NochMall second-hand store in Reinickendorf into a workshop on repair, reuse and upcycling, with a repair café.",
+"by": "claude-task",
+"ctx": true
 },
 "\"Adar Ensemble\" - Konzert im RegenbogenKino": {
-"title": "Adar Ensemble – Concert at RegenbogenKino",
+"title": "Adar Ensemble: Concert at RegenbogenKino",
 "kind": "music",
 "audience": "everyone",
-"summary": "A concert by the Adar Ensemble at the RegenbogenKino.",
-"by": "ai"
+"summary": "The Adar Ensemble blends traditional Kurdish music with blues, rock and various folk traditions.",
+"by": "claude-task",
+"ctx": true
 },
 "Art of Pakhawaj": {
-"title": "Art of Pakhawaj",
+"title": "Art of Pakhawaj: Indian Concert Evening",
 "kind": "music",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "János Gerzson opens on the rare Indian string instrument sursingar, then Delhi master Pandit Radheshyam Sharma plays the pakhawaj, an ancient drum.",
+"by": "claude-task",
+"ctx": true
 },
 "La Boum – Party (MerciPalais)": {
-"title": "La Boum Party (MerciPalais)",
+"title": "La Boum: Farewell Party at MerciPalais",
 "kind": "party",
 "audience": "everyone",
-"summary": "A party called La Boum (MerciPalais).",
-"by": "ai"
+"summary": "A last get-together at MerciPalais with two DJ sets: Haschi Spice with Italo disco, house and indie dance, then SACID with deeper electronic club music.",
+"by": "claude-task",
+"ctx": true
 },
 "Berlin sagt Danke - Eintritt frei & Aktionen für Ehrenamtliche": {
-"title": "Berlin Says Thank You – Free Entry and Activities for Volunteers",
+"title": "Berlin Says Thank You: Free Entry for Volunteers",
 "kind": "festival",
 "audience": "group",
-"summary": "Free entry and activities for volunteers.",
-"by": "ai"
+"summary": "City-wide thank-you day for volunteers: many Berlin cultural and leisure venues offer people who volunteer free entry and special activities.",
+"by": "claude-task",
+"ctx": true
 },
 "Galaabend der „Fidelen Rixdorfer“": {
-"title": "Gala Evening of the Fidelen Rixdorfer",
+"title": "Gala Evening of the 'Fidelen Rixdorfer' Carnival Club",
 "kind": "party",
 "audience": "everyone",
-"summary": "A gala evening of the Fidelen Rixdorfer.",
-"by": "ai"
+"summary": "Start of the new carnival season with guard and show dances, singing, a visit from Berlin's carnival prince couple, and dancing with DJ Micha.",
+"by": "claude-task",
+"ctx": true
 },
 "Einladung zur Buchvorstellung": {
-"title": "Invitation to a Book Presentation",
+"title": "Book Presentation by Steglitz Publisher Dreiviertelhaus",
 "kind": "talk",
 "audience": "everyone",
-"summary": "An invitation to a book presentation.",
-"by": "ai"
+"summary": "Dreiviertelhaus presents new books, incl. Christian Simon's guide to the Bierpinsel tower and Bettina Strang's undertaker stories. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Konzert - Ich wollt, dass ich daheime wär - Motetten aus 7 Jahrhunderten": {
-"title": "Ich wollt, dass ich daheime wär – Motets from Seven Centuries",
+"title": "Concert: 'Ich wollt, dass ich daheime wär' – Motets from 7 Centuries",
 "kind": "music",
 "audience": "everyone",
-"summary": "A concert of motets from seven centuries.",
-"by": "ai"
+"summary": "The Albus Ensemble sings motets from the 14th century to today on comfort and eternity, named after a motet by Hugo Distler.",
+"by": "claude-task",
+"ctx": true
 },
 "Zwangsarbeit und Arbeitsausbeutung im Nationalsozialismus und heute": {
-"title": "Forced Labour and Labour Exploitation: Nazi Era and Today",
-"kind": "talk",
+"title": "Forced Labour and Labour Exploitation under Nazism and Today",
+"kind": "notice",
 "audience": "everyone",
-"summary": "An event on forced labour and labour exploitation under National Socialism and today.",
-"by": "ai"
+"summary": "Workshop on Nazi forced labour – about 13 million people in the Reich – and on labour exploitation in some German industries today. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Bastel-Workshop „3D-Bilderrahmen“": {
 "title": "Craft Workshop: 3D Picture Frames",
 "kind": "workshop",
-"audience": "everyone",
-"summary": "A craft workshop on making 3D picture frames.",
-"by": "ai"
+"audience": "kids",
+"summary": "Open craft workshop with Asja Bonitz: make a 3D frame for a favourite photo or as a gift. Materials provided; ages 5+, younger with an adult. No registration.",
+"by": "claude-task",
+"ctx": true
 },
 "KinderUni Lichtenberg (KUL): Das Geheimnis der Demokratie": {
-"title": "KinderUni Lichtenberg: The Secret of Democracy",
+"title": "Children's University Lichtenberg: The Secret of Democracy",
 "kind": "talk",
 "audience": "kids",
-"summary": "A KinderUni Lichtenberg session called The Secret of Democracy.",
-"by": "ai"
+"summary": "Lecture for children on why and how we vote, seen through the eyes of puzzled aliens watching elections. Adults follow a live feed next door.",
+"by": "claude-task",
+"ctx": true
 },
 "Kunstschau in 10715 Bln": {
-"title": "Art Show in 10715 Berlin",
+"title": "Kunstschau: Open Studios at the Kreativfabrik",
 "kind": "exhibition",
 "audience": "everyone",
-"summary": "An art show in postcode 10715 in Berlin.",
-"by": "ai"
+"summary": "Open studios at the Kreativfabrik artists' house on Babelsberger Straße: 20 studios on 5 floors show new work.",
+"by": "claude-task",
+"ctx": true
 },
 "QueerZ Festival": {
 "title": "QueerZ Festival",
@@ -8350,36 +8576,41 @@
 "title": "Listening to: Dance Music",
 "kind": "music",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Series where composers present reworked versions of scores they wrote for dance pieces as listening sessions, with talks on composing and collaboration.",
+"by": "claude-task",
+"ctx": true
 },
 "Albus Ensemble - Ich wollt, dass ich daheime wär - Motetten aus 7 Jahrhunderten": {
-"title": "Albus Ensemble – Motets from Seven Centuries",
+"title": "Albus Ensemble: 'Ich wollt, dass ich daheime wär' – Motets",
 "kind": "music",
 "audience": "everyone",
-"summary": "A concert by the Albus Ensemble of motets from seven centuries.",
-"by": "ai"
+"summary": "The Albus Ensemble sings motets from the 14th century to today on comfort and eternity, named after a motet by Hugo Distler.",
+"by": "claude-task",
+"ctx": true
 },
 "Papierstromkreise | Minecraft": {
-"title": "Paper Circuits | Minecraft",
+"title": "Paper Circuits: Minecraft Torches",
 "kind": "workshop",
-"audience": "kids",
-"summary": "A session on paper circuits and Minecraft.",
-"by": "ai"
+"audience": "everyone",
+"summary": "Make Minecraft-style paper torches and learn simple electric circuits with conductive tape; take them home. Ages 8+, adults welcome. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Kunstkurs für Kinder": {
-"title": "Art Course for Children",
+"title": "Art Class for Children: Painting Reindeer",
 "kind": "workshop",
 "audience": "kids",
-"summary": "An art course for children.",
-"by": "ai"
+"summary": "Children aged 8+ paint their own reindeer in acrylics, in cooperation with Pia Affeld. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Konzert mit SingSisySing": {
-"title": "Concert with SingSisySing",
+"title": "Sing-Along Concert with SingSisySing",
 "kind": "music",
 "audience": "everyone",
-"summary": "A concert with SingSisySing.",
-"by": "ai"
+"summary": "Sing-along at the piano from Neukölln: Mika and Hanna lead everyone through hits together – no singing skills or lyrics knowledge needed.",
+"by": "claude-task",
+"ctx": true
 },
 "Every Day Is Like Sunday?": {
 "title": "Every Day Is Like Sunday? – Party at Privatclub Berlin",
@@ -8398,25 +8629,28 @@
 "ctx": true
 },
 "Workshop für Eltern: „Stress? Nicht jetzt! Impulse für mehr Gelassenheit im Alltag“": {
-"title": "Workshop for Parents: Stress? Not Now! Calm in Everyday Life",
+"title": "Workshop for Parents: Less Stress, More Calm in Everyday Life",
 "kind": "workshop",
 "audience": "group",
-"summary": "A workshop for parents with ideas for more calm in everyday life.",
-"by": "ai"
+"summary": "Learn simple methods to pause and stay calmer in stressful family moments, explore inner patterns and try exercises on the spot. No registration needed.",
+"by": "claude-task",
+"ctx": true
 },
 "Workshop für Frauen: Kerzen gießen mit Wachsresten": {
 "title": "Workshop for Women: Casting Candles from Leftover Wax",
 "kind": "workshop",
 "audience": "women",
-"summary": "A workshop for women on casting candles from leftover wax.",
-"by": "ai"
+"summary": "Melt old wax, prepare wicks and cast new candles with no waste; bring leftovers or use theirs. For women of all cultures, part of 'Klimaschutz integriert'.",
+"by": "claude-task",
+"ctx": true
 },
 "Lucia Weihnachtsmarkt in der Kulturbrauerei Berlin (täglich)": {
-"title": "Lucia Christmas Market at Kulturbrauerei Berlin",
+"title": "Lucia Christmas Market at the Kulturbrauerei",
 "kind": "market",
 "audience": "everyone",
-"summary": "A Christmas market at the Kulturbrauerei, listed as daily.",
-"by": "ai"
+"summary": "Scandinavian-themed Christmas market in the 19th-century Kulturbrauerei brewery complex; families by day, a meeting place for friends in the evening.",
+"by": "claude-task",
+"ctx": true
 },
 "Tanzlinden birthday": {
 "title": "Tanzlinden Birthday",
@@ -8426,144 +8660,173 @@
 "by": "ai"
 },
 "Tag gegen Gewalt an Frauen - Stark im Alltag: meine Arbeit, mein Geld, meine Entscheidungen": {
-"title": "Day Against Violence Against Women: My Work, My Money, My Decisions",
+"title": "Strong in Everyday Life: My Work, My Money, My Decisions",
 "kind": "support",
-"audience": "everyone",
-"summary": "An event for the day against violence against women: work, money, decisions.",
-"by": "ai"
+"audience": "group",
+"summary": "The Hellenic Community of Berlin and DaMigra's MigrAcess project hold a session for migrant women on financial independence, careers and support.",
+"by": "claude-task",
+"ctx": true
 },
 "Infostand zu häuslicher Gewalt im LIO Einkaufszentrum": {
 "title": "Information Stand on Domestic Violence at LIO Shopping Centre",
 "kind": "support",
 "audience": "everyone",
-"summary": "An information stand on domestic violence at the LIO shopping centre.",
-"by": "ai"
+"summary": "Counsellors from Interkulturelle Initiative, the police victim-protection officer and WEISSER RING inform about prevention and help for girls and women.",
+"by": "claude-task",
+"ctx": true
 },
 "Lesung: Stephan Lohse „Das Knistern im All“": {
-"title": "Reading: Stephan Lohse, Das Knistern im All",
+"title": "Reading: Stephan Lohse – “Das Knistern im All”",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A reading with Stephan Lohse featuring Das Knistern im All.",
-"by": "ai"
+"summary": "Actor and author Stephan Lohse reads from his coming-of-age novel about mental health, first love and friendship. Registration requested.",
+"by": "claude-task",
+"ctx": true
 },
 "Lesung mit Erol Kaya": {
 "title": "Reading with Erol Kaya",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A reading with Erol Kaya.",
-"by": "ai"
+"summary": "Erol Kaya reads from his book “Erinnerung” (Memory): humorous stories from his everyday life and its ups and downs.",
+"by": "claude-task",
+"ctx": true
 },
 "Ronja von Rönne in Lesung und Gespräch zu „Alles Liebe“ mit Josephine Apraku": {
-"title": "Ronja von Rönne: Reading and Conversation on Alles Liebe",
+"title": "Ronja von Rönne Reads “Alles Liebe”, with Josephine Apraku",
 "kind": "talk",
 "audience": "everyone",
-"summary": "Ronja von Rönne in reading and conversation on Alles Liebe with Josephine Apraku.",
-"by": "ai"
+"summary": "Ronja von Rönne reads from her new novel “Alles Liebe”, a mosaic of women's lives about love and truth, and discusses it with Josephine Apraku.",
+"by": "claude-task",
+"ctx": true
 },
 "Frollein Tuesday Treasures : Tyll + Julius Krebs (Alternative Folk + Indie Folk)": {
-"title": "Frollein Tuesday Treasures: Tyll and Julius Krebs",
+"title": "Frollein Tuesday Treasures: Tyll + Julius Krebs (Folk)",
 "kind": "music",
 "audience": "everyone",
-"summary": "Frollein Tuesday Treasures with Tyll and Julius Krebs, alternative and indie folk.",
-"by": "ai"
+"summary": "Intimate weekly gig series at Frollein: Leipzig folk musician Tyll (Til Waldhier) plays solo, plus singer-songwriter Julius Krebs from Kiel.",
+"by": "claude-task",
+"months": [
+10,
+11,
+12
+],
+"ctx": true
 },
 "Schreibwerkstatt in der Pop-Up Else: Kreatives Schreiben für Kinder": {
 "title": "Writing Workshop at Pop-Up Else: Creative Writing for Children",
 "kind": "workshop",
 "audience": "kids",
-"summary": "A creative writing workshop for children at Pop-Up Else.",
-"by": "ai"
+"summary": "Author Verena Teke helps children take their first steps in creative writing: playing with words, inventing characters and starting their own story.",
+"by": "claude-task",
+"ctx": true
 },
 "Buchvorstellung und Diskussion: „Selbstregulierung des Herzens“": {
-"title": "Book Presentation and Discussion: Self-Regulation of the Heart",
+"title": "Book Presentation and Discussion: “Selbstregulierung des Herzens”",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A book presentation and discussion on the self-regulation of the heart.",
-"by": "ai"
+"summary": "Peggy Mädler reads from and discusses her novel about life in East Germany and after reunification, centred on a cybernetics believer and an artist.",
+"by": "claude-task",
+"ctx": true
 },
 "Proudr LGBTIQ+ After Work": {
 "title": "Proudr LGBTIQ+ After Work",
 "kind": "meetup",
-"audience": "group",
-"summary": "An LGBTIQ+ after-work event with Proudr.",
-"by": "ai"
+"audience": "everyone",
+"summary": "Relaxed after-work networking evening for LGBTIQ+ people and allies, from students to seasoned professionals, focused on exchange and empowerment.",
+"by": "claude-task",
+"ctx": true
 },
 "Führung in der St. Marienkirche mit Olaf Albrecht": {
-"title": "Tour of St. Marienkirche with Olaf Albrecht",
+"title": "Guided Tour of St. Marienkirche with Olaf Albrecht",
 "kind": "tour",
 "audience": "everyone",
-"summary": "A guided tour of the St. Marienkirche with Olaf Albrecht.",
-"by": "ai"
+"summary": "Tour of Berlin's oldest active church: its building history, works by Andreas Schlüter and Christian Bernhard Rode, and the Berlin Dance of Death.",
+"by": "claude-task",
+"ctx": true
 },
 "Moritatenzelt – Märchen aus aller Welt": {
-"title": "Moritatenzelt – Fairy Tales from Around the World",
+"title": "Moritatenzelt: Fairy Tales from Around the World",
 "kind": "theatre",
 "audience": "kids",
-"summary": "Fairy tales from around the world in the Moritatenzelt.",
-"by": "ai"
+"summary": "Neukölln's fairy-tale tent: traditional tales from many countries told in their original language, with large illustrations, gestures and expressions.",
+"by": "claude-task",
+"months": [
+11,
+12
+],
+"ctx": true
 },
 "Fahnenhissung gegen Gewalt an Frauen Rathaus Zehlendorf": {
 "title": "Flag Raising Against Violence Against Women at Rathaus Zehlendorf",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "A flag-raising against violence against women at the Zehlendorf town hall.",
-"by": "ai"
+"summary": "District officials, police and local campaigners raise the flag against violence against women at the town hall; the public is invited to stand with them.",
+"by": "claude-task",
+"ctx": true
 },
 "Tag gegen Gewalt an Frauen - Aktionstag in der Hellenischen Gemeinde zu Berlin": {
-"title": "Day Against Violence Against Women: Action Day, Hellenic Community",
-"kind": "support",
+"title": "Day of Action Against Violence Against Women, Hellenic Community",
+"kind": "workshop",
 "audience": "everyone",
-"summary": "An action day at the Hellenic Community of Berlin against violence against women.",
-"by": "ai"
+"summary": "Hellenic Community of Berlin programme: introduction and discussion, a workshop on relationship red and green flags, a ceramics workshop and a documentary.",
+"by": "claude-task",
+"ctx": true
 },
 "Frauenfrühstück zum Thema Häusliche Gewalt": {
-"title": "Women's Breakfast on Domestic Violence",
-"kind": "meetup",
-"audience": "women",
-"summary": "A women's breakfast on the theme of domestic violence.",
-"by": "ai"
+"title": "Women's Breakfast on Domestic Violence for Refugee Women",
+"kind": "support",
+"audience": "group",
+"summary": "BENN Hindenburgdamm and Interkulturelle Initiative host a breakfast for refugee women with information on domestic violence in Persian and Arabic.",
+"by": "claude-task",
+"ctx": true
 },
 "Protestprojekt Rote Schuhe": {
-"title": "Protest Project Red Shoes",
+"title": "Red Shoes Protest Project Against Femicide",
 "kind": "exhibition",
 "audience": "everyone",
-"summary": "A protest project called Red Shoes.",
-"by": "ai"
+"summary": "After Elina Chauvet's “Zapatos Rojos”: red shoes, names of women murdered in Germany, candles and a silent exhibition on their fates; tea and cake.",
+"by": "claude-task",
+"ctx": true
 },
 "MissVergnügen presents Alien-Ghost": {
 "title": "MissVergnügen presents Alien-Ghost",
-"kind": "party",
+"kind": "music",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Berlin duo Alien-Ghost (Rara Perform-Art and Daniel Coletti) play dark new wave and electro mixed with performance art at the Eschschloraque.",
+"by": "claude-task",
+"ctx": true
 },
 "Anders geFragt: Ist KI für den Menschen da?": {
 "title": "Anders geFragt: Is AI There for People?",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A session asking whether AI is there for people.",
-"by": "ai"
+"summary": "Prof. Petra Anders talks with AI researchers Prof. Ute Schmid and Dr. Katharina Weitz about human-centred, explainable AI; the audience can join in.",
+"by": "claude-task",
+"ctx": true
 },
 "After Hours Tour": {
-"title": "After Hours Tour",
+"title": "After Hours Tour of the Former Stasi Headquarters",
 "kind": "tour",
 "audience": "everyone",
-"summary": "A tour called After Hours Tour.",
-"by": "ai"
+"summary": "Tour of the former Stasi headquarters in Lichtenberg, which now houses the Stasi Records Archive with 111 km of files kept by the GDR secret police.",
+"by": "claude-task",
+"ctx": true
 },
 "„Falsche Originale: Grete Ring und der van-Gogh-Skandal“ mit der Autorin Nicole Bröhan": {
-"title": "False Originals: Grete Ring and the van Gogh Scandal – Nicole Bröhan",
+"title": "Nicole Bröhan: “Falsche Originale” – Grete Ring & the Van Gogh Scandal",
 "kind": "talk",
 "audience": "everyone",
-"summary": "An event with author Nicole Bröhan on Grete Ring and the van Gogh scandal.",
-"by": "ai"
+"summary": "Author Nicole Bröhan presents her book on art dealer Grete Ring and the late-1920s Berlin scandal over doubtful Van Gogh paintings. Registration requested.",
+"by": "claude-task",
+"ctx": true
 },
 "Wild Wednesday w. \"Circolo Vizioso\" (Punk/Bln)": {
-"title": "Wild Wednesday with Circolo Vizioso (Punk, Berlin)",
+"title": "Wild Wednesday with “Circolo Vizioso” (Punk, Berlin)",
 "kind": "music",
 "audience": "everyone",
-"summary": "A Wild Wednesday night with Circolo Vizioso, punk from Berlin.",
-"by": "ai"
+"summary": "Live punk from Berlin band Circolo Vizioso. Ages 18+ only.",
+"by": "claude-task",
+"ctx": true
 },
 "DIY Heiminseminations-Vortrag vom queeren Hebammen*kollektiv Cocoon": {
 "title": "DIY home insemination talk by queer midwives' collective Cocoon",
@@ -8574,130 +8837,148 @@
 "ctx": true
 },
 "Freundinnen der Revolution": {
-"title": "Women Friends of the Revolution",
-"kind": "talk",
+"title": "“Freundinnen der Revolution”: Film and Discussion",
+"kind": "film",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Screening of Karl Heinz Lotz's documentary with Neues Forum founders Irena Kukutz, Katja Havemann and Bärbel Bohley, followed by a discussion.",
+"by": "claude-task",
+"ctx": true
 },
 "Fröhlicher Chorzauber beim Lucia Weihnachtsmarkt in der Kulturbrauerei": {
-"title": "Cheerful Choir Magic at the Lucia Christmas Market, Kulturbrauerei",
+"title": "Choir Sing-Along at the Lucia Christmas Market, Kulturbrauerei",
 "kind": "music",
 "audience": "everyone",
-"summary": "A cheerful choir performance at the Lucia Christmas Market in the Kulturbrauerei.",
-"by": "ai"
+"summary": "Changing choirs lead Christmas singing in the Frannz winter beer garden and everyone joins in; this time Berlin choir Spirited (jazz, pop, soul).",
+"by": "claude-task",
+"ctx": true
 },
 "Workshop Fake News": {
-"title": "Fake News Workshop",
+"title": "Workshop: Spotting Fake News (in Easy Language)",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "A workshop on fake news.",
-"by": "ai"
+"summary": "Learn in easy language how to spot fake news and check information, practising with pictures, short videos, phones and computers. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Keller Mic - Open Mic Berlin in Prenzlauer Berg": {
-"title": "Keller Mic – Open Mic Berlin in Prenzlauer Berg",
+"title": "Keller Mic: Stand-up Comedy Open Mic in Prenzlauer Berg",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "An open mic in Prenzlauer Berg called Keller Mic.",
-"by": "ai"
+"summary": "Raw, unpolished stand-up open mic in a basement, where newcomers and experienced comedians try out material. Not wheelchair accessible.",
+"by": "claude-task",
+"ctx": true
 },
 "Lesung mit Unda Hörner: Frauen am Bauhaus Dessau. Von Anni Albers bis Gunta Stölzl": {
 "title": "Reading with Unda Hörner: Women at the Bauhaus Dessau",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A reading with Unda Hörner on women at the Bauhaus Dessau, Anni Albers to Gunta Stölzl.",
-"by": "ai"
+"summary": "Unda Hörner tells the lives of women at the Bauhaus in Dessau, from photographers Lucia Moholy-Nagy and Gertrud Arndt to Anni Albers and Gunta Stölzl.",
+"by": "claude-task",
+"ctx": true
 },
 "Open Lab Abend: Futures Prototyping": {
 "title": "Open Lab Evening: Futures Prototyping",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "An open lab evening on futures prototyping.",
-"by": "ai"
+"summary": "Learn how speculative design and objects from imagined futures make alternative futures tangible, with a focus on how people and machines relate.",
+"by": "claude-task",
+"ctx": true
 },
 "»Das Traumschiff« Lesung zum Thema Träumen": {
-"title": "Das Traumschiff: Reading on the Theme of Dreaming",
+"title": "“Das Traumschiff”: Reading About Dreams",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A reading on the theme of dreaming, titled Das Traumschiff.",
-"by": "ai"
+"summary": "Three authors read from their personal dream diaries and from texts born of dreams, at the Literaturhaus Lettrétage.",
+"by": "claude-task",
+"ctx": true
 },
 "Assaf Levitin \"Doppelpass. Mein Leben als Spagat zwischen Israel und Deutschland\"": {
-"title": "Assaf Levitin: Doppelpass – My Life Balancing Israel and Germany",
-"kind": "talk",
+"title": "Assaf Levitin: “Doppelpass” – A Life Between Israel and Germany",
+"kind": "music",
 "audience": "everyone",
-"summary": "Assaf Levitin on his life as a balancing act between Israel and Germany.",
-"by": "ai"
+"summary": "Assaf Levitin, who lived half his life in Israel and half in Germany, shares how he sees both homes, their beauty and their problems. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Charlottenwalk - Galerienrundgang Charlottenburg - Wilmersdorf": {
-"title": "Charlottenwalk – Gallery Walk Charlottenburg-Wilmersdorf",
+"title": "Charlottenwalk: Gallery Walk in Charlottenburg-Wilmersdorf",
 "kind": "exhibition",
 "audience": "everyone",
-"summary": "A gallery walk through Charlottenburg and Wilmersdorf.",
-"by": "ai"
+"summary": "Gallery walk: a number of galleries across Charlottenburg-Wilmersdorf open their doors to art lovers.",
+"by": "claude-task",
+"ctx": true
 },
 "Hörspiel-Treffen Berlin Prenzlauer Berg (Unkomplizierter Stammtisch)": {
-"title": "Radio Play Meetup, Prenzlauer Berg (Casual Regulars' Table)",
+"title": "Audio Drama Fans' Meetup in Prenzlauer Berg",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "A casual regulars' table meetup for radio plays in Prenzlauer Berg.",
-"by": "ai"
+"summary": "Casual regular meetup for fans of audio dramas, from childhood classics to new and niche releases: chat, share tips, discover new stories.",
+"by": "claude-task",
+"ctx": true
 },
 "Bubales- jüdisches Puppentheater „Shlomos Chanukka-Wunderlampe“": {
-"title": "Bubales Jewish Puppet Theatre: Shlomo's Hanukkah Magic Lamp",
+"title": "Bubales Jewish Puppet Theatre: “Shlomos Chanukka-Wunderlampe”",
 "kind": "theatre",
 "audience": "kids",
-"summary": "A Jewish puppet theatre show, Shlomo's Hanukkah Magic Lamp, by Bubales.",
-"by": "ai"
+"summary": "Puppet show about Hanukkah: Shlomo's magic lamp releases three spirits who tell the story and customs of the festival, with music and humour. Ages 5+.",
+"by": "claude-task",
+"ctx": true
 },
 "Peppi Guggenheim Exil Musikprogramm: Raumschiff Jazz": {
 "title": "Peppi Guggenheim Exil Music Programme: Raumschiff Jazz",
 "kind": "music",
 "audience": "everyone",
-"summary": "A Peppi Guggenheim Exil music programme event with Raumschiff Jazz.",
-"by": "ai"
+"summary": "Saxophonist Reiner Hess's band Raumschiff Jazz plays energetic urban grooves mixing jazz, groove and space at Little Stage Bar Neukölln. Ages 18+.",
+"by": "claude-task",
+"ctx": true
 },
 "Adventsbasteln": {
-"title": "Advent Crafting",
+"title": "Advent Crafting in Gropiusstadt",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "An Advent crafting session.",
-"by": "ai"
+"summary": "Advent crafts with Ilse at the Gemeinschaftshaus Gropiusstadt, part of the “Lebendige Gropiusstadt” project; materials mostly provided. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Selbstverteidigung für Frauen* mit und ohne Behinderung": {
-"title": "Self-Defence for Women With and Without Disabilities",
+"title": "Self-Defence for Women* With and Without Disabilities",
 "kind": "sport",
 "audience": "women",
-"summary": "A self-defence session for women with and without disabilities.",
-"by": "ai"
+"summary": "Trainer Jule Brasch teaches simple ways to protect yourself: setting limits, breaking free, saying no, getting help; can be done seated. Registration required.",
+"by": "claude-task",
+"ctx": true
 },
 "Nothin But A Pinch' Finissage / Everyone's obsessed with ___ until it comes to fixing it! / Mixed Media Fotografien von Talissa Mehringer": {
-"title": "Nothin But A Pinch' Finissage – Photographs by Talissa Mehringer",
+"title": "Finissage: “Nothin' But A Pinch” – Photographs by Talissa Mehringer",
 "kind": "exhibition",
 "audience": "everyone",
-"summary": "Closing event for mixed media photographs by Talissa Mehringer.",
-"by": "ai"
+"summary": "Closing event for mixed-media photos and collages critiquing a medical system that disregards women's pain, at Klub Freier Fotografen Berlin.",
+"by": "claude-task",
+"ctx": true
 },
 "Kabarett Korsett": {
-"title": "Kabarett Korsett",
+"title": "Kabarett Korsett: Final Show of the Adult Education Cabaret Course",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "A cabaret show by Kabarett Korsett.",
-"by": "ai"
+"summary": "The adult education centre's cabaret course, running for over 30 years, shows its new programme directed by Dorothee Wendt, with piano. Booking requested.",
+"by": "claude-task",
+"ctx": true
 },
 "\"Immer heiter... immer weiter\"! Kabarett Korsett": {
-"title": "Always Cheerful... Keep Going! Kabarett Korsett",
+"title": "Kabarett Korsett: “Immer heiter... immer weiter”",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "A Kabarett Korsett show titled Always Cheerful... Keep Going!",
-"by": "ai"
+"summary": "The women of Kabarett Korsett present a new satirical cabaret on world politics, crumbling bridges, red tape and the hunt for flats and tradespeople.",
+"by": "claude-task",
+"ctx": true
 },
 "KinderUni Lichtenberg (KUL): Platz da!": {
-"title": "KinderUni Lichtenberg: Make Way!",
+"title": "Children's University Lichtenberg: “Platz da!” – Sharing the City",
 "kind": "talk",
 "audience": "kids",
-"summary": "A KinderUni Lichtenberg session called Make Way!",
-"by": "ai"
+"summary": "Lecture for children on how drivers, cyclists, pedestrians, kids and dogs share streets and parks, and how children can get their fair share of space.",
+"by": "claude-task",
+"ctx": true
 },
 "TESTING GROUNDS": {
 "title": "TESTING GROUNDS: Disruption Network Lab conference",
@@ -8708,60 +8989,68 @@
 "ctx": true
 },
 "Segâh’tan Nihâvend’e – Makamların Ruhu": {
-"title": "From Segâh to Nihâvend – The Spirit of the Makams",
+"title": "Segâh’tan Nihâvend’e – Makamların Ruhu: Classical Turkish Music",
 "kind": "music",
 "audience": "everyone",
-"summary": "A music event on the spirit of the makams, from Segâh to Nihâvend.",
-"by": "ai"
+"summary": "Concert by the Berliner Ensemble für klassische türkische Musik, travelling through makams (traditional Turkish modes) in vocal and instrumental pieces.",
+"by": "claude-task",
+"ctx": true
 },
 "Salzburger Rauhnächte - Lesung mit Jenna Theiss": {
-"title": "Salzburg Midwinter Nights (Rauhnächte) – Reading with Jenna Theiss",
+"title": "Reading with Jenna Theiss: “Salzburger Rauhnächte”",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A reading with Jenna Theiss on the Salzburg Rauhnächte.",
-"by": "ai"
+"summary": "Reading from the crime novel: a detective finds a woman's body after spotting a mysterious 13th masked Percht figure at a ritual parade. Booking requested.",
+"by": "claude-task",
+"ctx": true
 },
 "Informationsvortrag \"Es gibt kein Unheilbar!\" - Ein Weg zur Gesundheit von Körper und Seele": {
-"title": "Talk: There Is No Incurable – A Path to Health of Body and Soul",
+"title": "Bruno Gröning Talk: “Es gibt kein Unheilbar!” (Nothing Is Incurable)",
 "kind": "talk",
 "audience": "everyone",
-"summary": "An information talk on a path to health of body and soul.",
-"by": "ai"
+"summary": "Introductory talk on the “spiritual healing” teachings of Bruno Gröning, which the organisers say can heal chronic illness and addiction.",
+"by": "claude-task",
+"ctx": true
 },
 "Weihnachtssingen mit dem Fliegenden Märchenorchester beim Lucia Weihnachtsmarkt": {
-"title": "Christmas Singing with the Flying Fairy-Tale Orchestra",
+"title": "Christmas Sing-Along with the Fliegende Märchenorchester",
 "kind": "music",
-"audience": "everyone",
-"summary": "Christmas singing with the Fliegendes Märchenorchester at the Lucia Christmas Market.",
-"by": "ai"
+"audience": "kids",
+"summary": "Children's show at the Lucia Christmas Market: the orchestra plans a perfect Christmas party, discovering songs and customs of other cultures with the kids.",
+"by": "claude-task",
+"ctx": true
 },
 "Besinnliche Stunde mit Teezeremonie": {
-"title": "Contemplative Hour with Tea Ceremony",
-"kind": "meetup",
+"title": "Contemplative Hour with Tea Ceremony (AMORC Rosicrucians)",
+"kind": "talk",
 "audience": "everyone",
-"summary": "A contemplative hour with a tea ceremony.",
-"by": "ai"
+"summary": "The AMORC Rosicrucians, a philosophical-mystical association, present contemplative poems, songs and stories to reflect on; guests welcome.",
+"by": "claude-task",
+"ctx": true
 },
 "Einblick ins Geheime": {
-"title": "Insight into the Secret",
+"title": "Einblick ins Geheime: Inside the Former Stasi Headquarters",
 "kind": "tour",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "A look inside the former Stasi headquarters in Lichtenberg, now home to the Stasi Records Archive with 111 km of files the secret police kept on people.",
+"by": "claude-task",
+"ctx": true
 },
 "Gitarrenzauber – Die Gitarrenfamilie stellt sich vor": {
-"title": "Guitar Magic – The Guitar Family Introduces Itself",
-"kind": "music",
-"audience": "everyone",
-"summary": "A guitar event in which the guitar family introduces itself.",
-"by": "ai"
+"title": "Gitarrenzauber: Meet the Guitar Family",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Children try out guitars, ukuleles and banjos and discover the world of string instruments, ending with group drumming. Ages 3+, no registration needed.",
+"by": "claude-task",
+"ctx": true
 },
 "KinderUni Lichtenberg (KUL): Musik, Krach und Knall": {
-"title": "KinderUni Lichtenberg: Music, Noise and Bang",
+"title": "Children's University Lichtenberg: Music, Noise and Bangs",
 "kind": "talk",
 "audience": "kids",
-"summary": "A KinderUni Lichtenberg session called Music, Noise and Bang.",
-"by": "ai"
+"summary": "Lecture for children on sound with many experiments: making sound visible, floating objects on sound waves and showing what shouting can destroy.",
+"by": "claude-task",
+"ctx": true
 },
 "Khaos im Kiez": {
 "title": "Khaos im Kiez – Chaos Computer Club Berlin",
@@ -8780,326 +9069,380 @@
 "ctx": true
 },
 "Inselkino: Sehnsucht in Sangerhausen": {
-"title": "Inselkino: Sehnsucht in Sangerhausen",
+"title": "Inselkino: “Sehnsucht in Sangerhausen”",
 "kind": "film",
 "audience": "everyone",
-"summary": "A screening of Sehnsucht in Sangerhausen at Inselkino.",
-"by": "ai"
+"summary": "Migration and refugee stories series: Julian Radlmaier's film about an East German waitress and an Iranian YouTuber who meet in a small town.",
+"by": "claude-task",
+"ctx": true
 },
 "Weihnachtssingen mit dem Fliegenden Märchenorchester beim Lucia Weihnachtsmarkt in der Kulturbrauerei": {
-"title": "Christmas Singing with the Flying Fairy-Tale Orchestra, Lucia Market",
+"title": "Christmas Sing-Along with the Fliegende Märchenorchester",
 "kind": "music",
-"audience": "everyone",
-"summary": "Christmas singing with the Fliegendes Märchenorchester at the Lucia Christmas Market.",
-"by": "ai"
+"audience": "kids",
+"summary": "Children's show at the Lucia Christmas Market: the orchestra plans a perfect Christmas party, discovering songs and customs of other cultures with the kids.",
+"by": "claude-task",
+"ctx": true
 },
 "\"Immer heiter... immer weiter\"!": {
-"title": "Always Cheerful... Keep Going!",
+"title": "Kabarett Korsett: “Immer heiter... immer weiter”",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "The women of Kabarett Korsett present a new satirical cabaret on world politics, crumbling bridges, red tape and the hunt for flats and tradespeople.",
+"by": "claude-task",
+"ctx": true
 },
 "Coca Cola Truck Tour 2026: Coke Trucks Streckenroute 2026 wieder in Berlin?": {
-"title": "Coca Cola Truck Tour: Coke Trucks Route Back in Berlin?",
+"title": "Coca Cola Truck Tour: Will the Christmas Trucks Stop in Berlin?",
 "kind": "notice",
 "audience": "everyone",
-"summary": "A news item asking whether the Coke Trucks route returns to Berlin.",
-"by": "ai"
+"summary": "Not a confirmed event: a note that the Coca-Cola Christmas truck tour might stop in Berlin again; the listed date is only a guess.",
+"by": "claude-task",
+"ctx": true
 },
 "Frollein Tuesday Treasures: Gözde + Joku": {
-"title": "Frollein Tuesday Treasures: Gözde and Joku",
+"title": "Frollein Tuesday Treasures: Gözde + Joku",
 "kind": "music",
 "audience": "everyone",
-"summary": "Frollein Tuesday Treasures with Gözde and Joku.",
-"by": "ai"
+"summary": "Intimate gig at Frollein: Berlin songwriter Gözde Berberoğlu blends Turkish heritage with folk, jazz and blues; Joku makes home-produced indie.",
+"by": "claude-task",
+"ctx": true
 },
 "Ruwe/Valenske (bekannt aus der Berliner Distel) präsentieren: 2026 – es war ja nicht alles gut": {
-"title": "Ruwe/Valenske Present: 2026 – Not Everything Was Good",
+"title": "Ruwe/Valenske (Berliner Distel): “2026 – es war ja nicht alles gut”",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "Ruwe/Valenske, known from the Berliner Distel, present 2026 – not everything was good.",
-"by": "ai"
+"summary": "Cabaret duo Henning Ruwe and Martin Valenske, known from the Berliner Distel, give a sharp satirical review of the year in politics and world events.",
+"by": "claude-task",
+"ctx": true
 },
 "Xenon Kino: \"Kein Land für Niemand\" - Öffentlicher Film- und Diskussionsabend": {
-"title": "Xenon Kino: Kein Land für Niemand – Film and Discussion Evening",
+"title": "Xenon Kino: “Kein Land für Niemand” – Film and Discussion",
 "kind": "film",
 "audience": "everyone",
-"summary": "A public film and discussion evening with Kein Land für Niemand at Xenon Kino.",
-"by": "ai"
+"summary": "Documentary on the shift in European and German asylum policy, shown by Tempelhof-Schöneberg district with filmmaker Max Ahrens. Registration requested.",
+"by": "claude-task",
+"ctx": true
 },
 "Andersens Koffertheater mit „Des Kaisers neue Kleider“": {
-"title": "Andersen's Suitcase Theatre: The Emperor's New Clothes",
+"title": "Andersens Koffertheater: “Des Kaisers neue Kleider”",
 "kind": "theatre",
-"audience": "kids",
-"summary": "Andersens Koffertheater presents The Emperor's New Clothes.",
-"by": "ai"
+"audience": "everyone",
+"summary": "Suitcase theatre version of the fairy tale “The Emperor's New Clothes”, about an emperor fooled by a tailor's magic fabric. Registration requested.",
+"by": "claude-task",
+"ctx": true
 },
 "Wild Wednesday w. \"American Imbiss Oase\" (Folk-Country-Indie/Bln)": {
-"title": "Wild Wednesday with American Imbiss Oase (Folk-Country-Indie)",
+"title": "Wild Wednesday with “American Imbiss Oase” (Folk/Country/Indie)",
 "kind": "music",
 "audience": "everyone",
-"summary": "A Wild Wednesday night with American Imbiss Oase, folk-country-indie from Berlin.",
-"by": "ai"
+"summary": "Live folk, country and indie from Berlin band American Imbiss Oase. Ages 18+ only.",
+"by": "claude-task",
+"ctx": true
 },
 "Corporate Concerts": {
-"title": "Corporate Concerts",
+"title": "Corporate Concerts: Chamber Music at UdK Berlin",
 "kind": "music",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "UdK Berlin concert series where students from different classes play chamber music, from trios to octets, each piece introduced briefly.",
+"by": "claude-task",
+"ctx": true
 },
 "Operation ICE-Storm. Germans to the Front": {
-"title": "Operation ICE-Storm. Germans to the Front",
-"kind": "talk",
-"audience": "everyone",
-"summary": "",
-"by": "ai"
-},
-"Open Lab Abend: Lasercutter — Future Tools Series": {
-"title": "Open Lab Evening: Laser Cutter – Future Tools Series",
-"kind": "workshop",
-"audience": "everyone",
-"summary": "An open lab evening on laser cutters, part of the Future Tools Series.",
-"by": "ai"
-},
-"Orgelexpedition: Louis Vierne – Tod in Notre Dame": {
-"title": "Organ Expedition: Louis Vierne – Death in Notre Dame",
-"kind": "music",
-"audience": "everyone",
-"summary": "An organ expedition on Louis Vierne and his death in Notre Dame.",
-"by": "ai"
-},
-"Stummfilm mit Live-Musik \"Sam sobi Robinzon\" (\"Sein eigener Robinson\") (1929)": {
-"title": "Silent Film with Live Music: Sam sobi Robinzon (His Own Robinson)",
+"title": "Film: “Operation ICE-Storm. Germans to the Front!”",
 "kind": "film",
 "audience": "everyone",
-"summary": "A 1929 silent film, Sam sobi Robinzon, shown with live music.",
-"by": "ai"
+"summary": "Screening of Mike Spike Froidl's dystopian satirical feature film, under the banner “Make Amerika Go Away”; billed as both frightening and funny.",
+"by": "claude-task",
+"ctx": true
+},
+"Open Lab Abend: Lasercutter — Future Tools Series": {
+"title": "Open Lab Evening: Laser Cutter (Future Tools Series)",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Get to know the laser cutter with your own small project: preparing designs, cutting, engraving and choosing materials.",
+"by": "claude-task",
+"ctx": true
+},
+"Orgelexpedition: Louis Vierne – Tod in Notre Dame": {
+"title": "Organ Expedition: Louis Vierne – “Tod in Notre Dame”",
+"kind": "music",
+"audience": "everyone",
+"summary": "Organ programme on Louis Vierne with Marcel Andreas Ober, Maximilian Schnaus and Marienkirche organist Xaver Schult.",
+"by": "claude-task",
+"ctx": true
+},
+"Stummfilm mit Live-Musik \"Sam sobi Robinzon\" (\"Sein eigener Robinson\") (1929)": {
+"title": "Silent Film with Live Music: “Sam sobi Robinzon” (His Own Robinson)",
+"kind": "film",
+"audience": "everyone",
+"summary": "Restored, long-lost Ukrainian children's film by Lazar Frenkel: bookworm Vasia lives out Robinson Crusoe adventures. German subtitles, live music.",
+"by": "claude-task",
+"ctx": true
 },
 "Peppi Guggenheim Exil Musikprogramm: Fräulein Luise": {
 "title": "Peppi Guggenheim Exil Music Programme: Fräulein Luise",
 "kind": "music",
 "audience": "everyone",
-"summary": "A Peppi Guggenheim Exil music programme event with Fräulein Luise.",
-"by": "ai"
+"summary": "Young Zurich band Fräulein Luise play story-driven indie pop and rock, sung mostly in German and Swiss dialect, at Little Stage Bar Neukölln. Ages 18+.",
+"by": "claude-task",
+"ctx": true
 },
 "Vitalität für Körper, Gemüt und Seele - Praktische Schritte für ein erfülltes Leben": {
-"title": "Vitality for Body, Mind and Soul: Practical Steps for a Full Life",
+"title": "Vitality for Body, Mind and Soul: Practical Steps to a Fulfilled Life",
 "kind": "talk",
 "audience": "everyone",
-"summary": "An event on practical steps for vitality of body, mind and soul.",
-"by": "ai"
+"summary": "Session on how body, mind and soul interact, with tastings of energy-giving foods, nutrition tips and personal goals. Ages 18+, not step-free.",
+"by": "claude-task",
+"ctx": true
 },
 "Hennigsdorfer Weihnachtsmarkt 2026: Tradition & Handwerk": {
-"title": "Hennigsdorf Christmas Market: Tradition and Craftsmanship",
+"title": "Hennigsdorf Christmas Market: Tradition and Crafts",
 "kind": "market",
 "audience": "everyone",
-"summary": "A Christmas market in Hennigsdorf with tradition and handicraft.",
-"by": "ai"
+"summary": "Christmas market on Hennigsdorf's Postplatz, just outside Berlin, with handmade ceramics, jewellery and woodwork from regional makers and no fairground rides.",
+"by": "claude-task",
+"ctx": true
 },
 "Was bleibt sichtbar?": {
-"title": "What Remains Visible?",
-"kind": "exhibition",
+"title": "Was bleibt sichtbar? Closing Talk on the UNCOVER Exhibition",
+"kind": "talk",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "To close “UNCOVER”, an exhibition on East German artists, its team talks with the audience about artists' biographies and what remains visible.",
+"by": "claude-task",
+"ctx": true
 },
 "„Nussknacker & Co“": {
-"title": "Nutcracker & Co",
-"kind": "theatre",
+"title": "“Nussknacker & Co”: Accordion Orchestra Christmas Concert",
+"kind": "music",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Akkordeon-Orchester Berlin plays the Nutcracker story; the Wilmersdorfer Kammerchor sings Advent music by Mendelssohn, Batten, Miškinis and others.",
+"by": "claude-task",
+"ctx": true
 },
 "Improtheater Abschlusspräsentation": {
-"title": "Improv Theatre Final Presentation",
+"title": "Improv Theatre: Final Show of a Women's Adult Education Course",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "A final presentation of improvisation theatre.",
-"by": "ai"
+"summary": "Women from an adult education improv course perform spontaneous scenes with Roland Lutz on piano; the audience is drawn in. Booking requested.",
+"by": "claude-task",
+"ctx": true
 },
 "Friedensmeditation in der Tradition der AMORC-Rosenkreuzer": {
-"title": "Peace Meditation in the Tradition of the AMORC Rosicrucians",
-"kind": "workshop",
+"title": "Peace Meditation in the AMORC Rosicrucian Tradition",
+"kind": "meetup",
 "audience": "everyone",
-"summary": "A peace meditation in the tradition of the AMORC Rosicrucians.",
-"by": "ai"
+"summary": "The AMORC Rosicrucians, a philosophical-mystical association, invite guests to share ideas on peace and human dignity and meditate together for peace.",
+"by": "claude-task",
+"ctx": true
 },
 "Die Innenräume der Klänge - Joachim Gies": {
-"title": "The Interior Spaces of Sounds – Joachim Gies",
+"title": "Joachim Gies: “Die Innenräume der Klänge” (Saxophone Solo)",
 "kind": "music",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Meditative solo programme by Joachim Gies: saxophone overtones combined with singing bowls, gongs and a water-filled aquaphone. Booking requested.",
+"by": "claude-task",
+"ctx": true
 },
 "Tulips am Weltbodentag": {
-"title": "Tulips on World Soil Day",
-"kind": "music",
-"audience": "everyone",
-"summary": "",
-"by": "ai"
-},
-"Kindertheater beim Lucia Weihnachtsmarkt in der Kulturbrauerei": {
-"title": "Children's Theatre at the Lucia Christmas Market, Kulturbrauerei",
-"kind": "theatre",
-"audience": "kids",
-"summary": "Children's theatre at the Lucia Christmas Market in the Kulturbrauerei.",
-"by": "ai"
-},
-"Gala Porras-Kim. Total Loss Ghost (DI-SO)": {
-"title": "Gala Porras-Kim. Total Loss Ghost",
-"kind": "exhibition",
-"audience": "everyone",
-"summary": "Total Loss Ghost by Gala Porras-Kim, listed for Tuesday to Sunday.",
-"by": "ai"
-},
-"The Zapruder Effect. Four Investigations (DO-SO)": {
-"title": "The Zapruder Effect. Four Investigations",
-"kind": "exhibition",
-"audience": "everyone",
-"summary": "The Zapruder Effect. Four Investigations, listed for Thursday to Sunday.",
-"by": "ai"
-},
-"Punk & Rock`n`Roll Flohmarkt": {
-"title": "Punk and Rock'n'Roll Flea Market",
-"kind": "market",
-"audience": "everyone",
-"summary": "A flea market for punk and rock'n'roll.",
-"by": "ai"
-},
-"Frollein Tuesday Treasures": {
-"title": "Frollein Tuesday Treasures",
-"kind": "music",
-"audience": "everyone",
-"summary": "",
-"by": "ai"
-},
-"Stepan Bandera": {
-"title": "Stepan Bandera",
-"kind": "talk",
-"audience": "everyone",
-"summary": "",
-"by": "ai"
-},
-"Theorie & Gesellschaft: Vortragsreihe von Prof. Andreas Reckwitz an der Humboldt-Universität zu Berlin": {
-"title": "Theory and Society: Lecture Series by Prof. Andreas Reckwitz",
-"kind": "talk",
-"audience": "everyone",
-"summary": "A lecture series by Prof. Andreas Reckwitz at Humboldt-Universität zu Berlin.",
-"by": "ai"
-},
-"Berlinale Spotlight – Forum: Chronos – Fluss der Zeit": {
-"title": "Berlinale Spotlight – Forum: Chronos – Fluss der Zeit",
-"kind": "film",
-"audience": "everyone",
-"summary": "A Berlinale Spotlight screening of Chronos – Fluss der Zeit (Forum).",
-"by": "ai"
-},
-"Wild Wednesday w. \"Ghost Moon Echo\" (Indie/Bln)": {
-"title": "Wild Wednesday with Ghost Moon Echo (Indie, Berlin)",
-"kind": "music",
-"audience": "everyone",
-"summary": "A Wild Wednesday night with Ghost Moon Echo, indie from Berlin.",
-"by": "ai"
-},
-"Karrieretag Berlin": {
-"title": "Career Day Berlin",
-"kind": "market",
-"audience": "everyone",
-"summary": "A career day in Berlin.",
-"by": "ai"
-},
-"Mythische Selbstporträts – Mixed-Media-Kurs mit Nina Plášková": {
-"title": "Mythical Self-Portraits – Mixed-Media Course with Nina Plášková",
+"title": "Tulips on World Soil Day: Planting Flower Bulbs",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "A mixed-media course on mythical self-portraits with Nina Plášková.",
-"by": "ai"
+"summary": "50,000+ bottle caps collected at Café Hasenschänke were turned into flower bulbs; dig them in as early spring food for bees and other pollinators.",
+"by": "claude-task",
+"ctx": true
+},
+"Kindertheater beim Lucia Weihnachtsmarkt in der Kulturbrauerei": {
+"title": "Children's Theatre: “Das tapfere Schneiderlein” at Lucia Market",
+"kind": "theatre",
+"audience": "kids",
+"summary": "A surprising new take on the tale of the brave little tailor, the seven flies and the giants, in the Alte Kantine at the Lucia Christmas Market. Ages 3+.",
+"by": "claude-task",
+"ctx": true
+},
+"Gala Porras-Kim. Total Loss Ghost (DI-SO)": {
+"title": "Gala Porras-Kim: Total Loss Ghost",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "n.b.k. shows Gala Porras-Kim's first solo exhibition in Germany, on how museums collect, classify, conserve and display objects.",
+"by": "claude-task",
+"ctx": true
+},
+"The Zapruder Effect. Four Investigations (DO-SO)": {
+"title": "The Zapruder Effect: Four Investigations",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "n.b.k. Video-Forum show: four films by Emmanuel Licha, Miles Rufelds, Susan Schuppli and Sanaz Sohrabi that use archives to reveal hidden realities.",
+"by": "claude-task",
+"ctx": true
+},
+"Punk & Rock`n`Roll Flohmarkt": {
+"title": "Punk & Rock'n'Roll Flea Market",
+"kind": "market",
+"audience": "everyone",
+"summary": "",
+"by": "claude-task",
+"ctx": true
+},
+"Frollein Tuesday Treasures": {
+"title": "Frollein Tuesday Treasures: Blues Night with Fred and Thom",
+"kind": "music",
+"audience": "everyone",
+"summary": "Blues night at Frollein: simple, sober songs of heartbreak, addiction and wine-soaked melancholy by Berlin musicians Fred and Thom.",
+"by": "claude-task",
+"ctx": true
+},
+"Stepan Bandera": {
+"title": "Stepan Bandera: A Cult Figure with Present-Day Impact",
+"kind": "talk",
+"audience": "everyone",
+"summary": "On Ukrainian nationalist Stepan Bandera, demonised by Russian propaganda and celebrated as a hero in Ukraine, and why the dispute matters today.",
+"by": "claude-task",
+"ctx": true
+},
+"Theorie & Gesellschaft: Vortragsreihe von Prof. Andreas Reckwitz an der Humboldt-Universität zu Berlin": {
+"title": "Theorie & Gesellschaft: Andreas Reckwitz Lecture Series at HU Berlin",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Humboldt-Universität lecture series on the social and cultural effects of AI: how language models change thinking and writing, and how to critique them.",
+"by": "claude-task",
+"months": [
+1,
+2,
+3,
+10,
+11,
+12
+],
+"ctx": true
+},
+"Berlinale Spotlight – Forum: Chronos – Fluss der Zeit": {
+"title": "Berlinale Spotlight – Forum: “Chronos – Fluss der Zeit”",
+"kind": "film",
+"audience": "everyone",
+"summary": "Volker Koepp's film explores the region between the Baltic and Black Sea along the Memel, Dniester and Prut, guided by Johannes Bobrowski's poems.",
+"by": "claude-task",
+"ctx": true
+},
+"Wild Wednesday w. \"Ghost Moon Echo\" (Indie/Bln)": {
+"title": "Wild Wednesday with “Ghost Moon Echo” (Indie, Berlin)",
+"kind": "music",
+"audience": "everyone",
+"summary": "Live indie music from Berlin band Ghost Moon Echo. Ages 18+ only.",
+"by": "claude-task",
+"ctx": true
+},
+"Karrieretag Berlin": {
+"title": "Karrieretag Berlin: Job Fair at Estrel Berlin",
+"kind": "market",
+"audience": "everyone",
+"summary": "Job fair where professionals, school leavers, graduates and career changers meet company HR staff, with CV checks, career coaching and job-search tips.",
+"by": "claude-task",
+"ctx": true
+},
+"Mythische Selbstporträts – Mixed-Media-Kurs mit Nina Plášková": {
+"title": "Mythical Self-Portraits: Mixed-Media Course with Nina Plášková",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Collage, drawing and painting course: turn your own photos, texts and found objects into layered personal images. Materials provided, no experience needed.",
+"by": "claude-task",
+"ctx": true
 },
 "Open Lab Abend: Routen in die Robotik — Ausprobieren, programmieren, Forschung entdecken": {
 "title": "Open Lab Evening: Routes into Robotics",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "An open lab evening to try out, program and discover research in robotics.",
-"by": "ai"
+"summary": "Explore current robotics research and uses, learn why people build robots, try out how robotics works yourself and discuss what robots should do.",
+"by": "claude-task",
+"ctx": true
 },
 "Artist Talk und Kurzführung mit Karolina Gembara": {
 "title": "Artist Talk and Short Tour with Karolina Gembara",
 "kind": "talk",
 "audience": "everyone",
-"summary": "An artist talk and short tour with Karolina Gembara.",
-"by": "ai"
+"summary": "Artist Karolina Gembara on the photo exhibition “Ostgebiete / Ziemie Zachodnie”, where German and Polish photographers explore memory on both sides of the Oder.",
+"by": "claude-task",
+"ctx": true
 },
 "Klavierabend im Buddhistischen Tor Berlin": {
-"title": "Piano Evening at Buddhistisches Tor Berlin",
+"title": "Piano Recital at Buddhistisches Tor Berlin",
 "kind": "music",
 "audience": "everyone",
-"summary": "A piano evening at the Buddhistisches Tor Berlin.",
-"by": "ai"
+"summary": "Darya Dadykina plays “Sea, Storm and Night”: Beethoven's “Tempest” sonata, Szymanowski's Métopes and Medtner's “Night Wind” sonata. No registration needed.",
+"by": "claude-task",
+"ctx": true
 },
 "Afro-Christmas Konzert": {
-"title": "Afro-Christmas Concert",
+"title": "Afro-Christmas Gospel Concert",
 "kind": "music",
 "audience": "everyone",
-"summary": "An Afro-Christmas concert.",
-"by": "ai"
+"summary": "LIGHT e.V.'s gospel Christmas concert: live Afro band and African rhythms, the Nativity story acted on stage, solo acts, dance and children's performances.",
+"by": "claude-task",
+"ctx": true
 },
 "Tierische Symbolik – Skulpturen aus Speckstein mit Nina Plášková": {
-"title": "Animal Symbolism – Soapstone Sculptures with Nina Plášková",
+"title": "Animal Symbolism: Soapstone Sculptures with Nina Plášková",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "A course on soapstone sculptures with Nina Plášková.",
-"by": "ai"
+"summary": "Learn basic soapstone carving (rasping, sanding, polishing) while shaping your own animal forms as symbols. Materials provided; English on request.",
+"by": "claude-task",
+"ctx": true
 },
 "Alle auf einen Streich!": {
-"title": "All at One Blow!",
-"kind": "theatre",
-"audience": "everyone",
-"summary": "",
-"by": "ai"
+"title": "Alle auf einen Streich! Children Try Out String Instruments",
+"kind": "workshop",
+"audience": "kids",
+"summary": "The Klingende Mobil brings string instruments for children to try, asking why the double bass sounds so low; ends with group drumming. Ages 3+.",
+"by": "claude-task",
+"ctx": true
 },
 "Berlin Chili Fest: Spicy Wings Edition & Spicy Christmas Market": {
-"title": "Berlin Chili Fest: Spicy Wings Edition and Spicy Christmas Market",
+"title": "Berlin Chili Fest: Spicy Wings Edition & Spicy Christmas Market",
 "kind": "festival",
 "audience": "everyone",
-"summary": "A chili festival, Spicy Wings Edition, with a Spicy Christmas Market.",
-"by": "ai"
+"summary": "Indoor chili weekend: hot sauces from 30 artisan makers, food with vegan and vegetarian options, local beers and cocktails. Kids and dogs welcome.",
+"by": "claude-task",
+"ctx": true
 },
 "Comic Workshop: Geschichte(n) zeichnen - „OSTGEBIETE / ZIEMIE ZACHODNIE. Eine deutsch-polnische Spurensuche“": {
-"title": "Comic Workshop: Drawing Stories – OSTGEBIETE / ZIEMIE ZACHODNIE",
+"title": "Comic Workshop: Drawing (Hi)stories – Ostgebiete / Ziemie Zachodnie",
 "kind": "workshop",
 "audience": "everyone",
-"summary": "A comic workshop linked to OSTGEBIETE / ZIEMIE ZACHODNIE, a German-Polish search.",
-"by": "ai"
+"summary": "After a tour of a German-Polish photo exhibition on flight, loss and new beginnings, draw comics about your impressions; bring an old family photo if you like.",
+"by": "claude-task",
+"ctx": true
 },
 "Luciafest – feierlicher Umzug und Allsång in den Höfen der Kulturbrauerei": {
-"title": "Lucia Festival: Procession and Singalong in the Kulturbrauerei",
-"kind": "festival",
-"audience": "everyone",
-"summary": "A festive procession and singalong in the courtyards of the Kulturbrauerei.",
-"by": "ai"
-},
-"Die eigene Familiengeschichte mit Blick auf mögliche NS-Beteiligung erforschen": {
-"title": "Researching Your Family History for Possible Nazi Involvement",
-"kind": "workshop",
-"audience": "everyone",
-"summary": "A session on researching one's own family history for possible Nazi involvement.",
-"by": "ai"
-},
-"Adventskonzert \"Warten auf Weihnachten\"": {
-"title": "Advent Concert: Waiting for Christmas",
+"title": "Luciafest: Procession and Allsång Sing-Along at the Kulturbrauerei",
 "kind": "music",
 "audience": "everyone",
-"summary": "An Advent concert titled Waiting for Christmas.",
-"by": "ai"
+"summary": "Santa Lucia and the star children walk in procession through the Kulturbrauerei courtyards; the Luciakör leads a sing-along of Scandinavian Christmas songs.",
+"by": "claude-task",
+"ctx": true
+},
+"Die eigene Familiengeschichte mit Blick auf mögliche NS-Beteiligung erforschen": {
+"title": "Researching Your Family History for Possible Nazi-Era Involvement",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Introductory workshop on researching relatives' possible role in Nazi forced labour or other Nazi crimes, and talking to family about it. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Adventskonzert \"Warten auf Weihnachten\"": {
+"title": "Advent Concert “Warten auf Weihnachten”",
+"kind": "music",
+"audience": "everyone",
+"summary": "The Frauenschola St. Bonifatius and Instrumentalensemble Kreuzberg, led by Stefano Barberino, perform Christmas songs from the Middle Ages to today.",
+"by": "claude-task",
+"ctx": true
 },
 "Das Weihnachtshäuschen": {
-"title": "The Little Christmas House",
-"kind": "market",
+"title": "Das Weihnachtshäuschen: Family Advent Afternoon",
+"kind": "festival",
 "audience": "everyone",
-"summary": "",
-"by": "ai"
+"summary": "Gift stalls, gingerbread-heart decorating, brass music by the Berliner Blechbläsertrio, carol singing and treats; step-free. Registration requested.",
+"by": "claude-task",
+"ctx": true
 },
 "Schach und Snacks ♟️☕": {
 "title": "Chess and Snacks",
@@ -9558,12 +9901,12 @@
 "ctx": true
 },
 "Lesung & Gespräch mit Merit Niemeitz: „Footnotes of Fairytales“ & „Footnotes of Forever“": {
-"title": "Merit Niemeitz: “Footnotes of Fairytales” & “Footnotes of Forever”",
+"title": "Reading with Merit Niemeitz: “Footnotes of Fairytales” & “Forever”",
 "kind": "talk",
 "audience": "everyone",
-"summary": "A reading followed by a conversation, in which Merit Niemeitz presents “Footnotes of Fairytales” and “Footnotes of Forever”.",
+"summary": "Merit Niemeitz reads from her new-adult series “Oxford Academics” about two rival PhD students at Oxford, then talks. Ages 16+. Registration requested.",
 "by": "claude-task",
-"ctx": false
+"ctx": true
 },
 "250 Sips Later: The Sip Happens Halloween Special 🧟‍♂️": {
 "title": "250 Sips Later: Sip Happens Halloween Special",
@@ -9766,12 +10109,12 @@
 "ctx": true
 },
 "Spieleabend": {
-"title": "Game Night",
+"title": "Games Night: Detective Theme",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "Game night: people get together to play games.",
+"summary": "Monthly themed games night, ages 16+. This month: detectives, with a guided round of Blood on the Clocktower, Cluedo Conspiracy and simple card games.",
 "by": "claude-task",
-"ctx": false
+"ctx": true
 },
 "Führung": {
 "title": "Guided Tour of the Two Exhibitions with Lucian Loebner",
@@ -9810,6 +10153,46 @@
 "kind": "talk",
 "audience": "everyone",
 "summary": "Event by the Berlin chapter of the Chaos Computer Club.",
+"by": "claude-task",
+"ctx": true
+},
+"A Class(y) Lecture by Elly Clarke": {
+"title": "A Class(y) Lecture by Elly Clarke: Performance on Belonging",
+"kind": "notice",
+"audience": "everyone",
+"summary": "Elly Clarke's performance: a self-reflective story about belonging and not belonging, and how ancestry can be both obstacle and privilege.",
+"by": "claude-task",
+"ctx": true
+},
+"New Commons – Lagos/Berlin": {
+"title": "New Commons – Lagos/Berlin",
+"kind": "notice",
+"audience": "everyone",
+"summary": "Exhibition by Antoinette Yetunde Oni, Dane Komljen and Katrin Winkler, curated by Solvej Helweg Ovesen, linking Lagos and Berlin (Soft Solidarity programme).",
+"by": "claude-task",
+"ctx": true
+},
+"\"Jetzt ist Sense!\" - die Salonreihe über die Endlichkeit unseres Lebens": {
+"title": "'Jetzt ist Sense!' – Salon Series on the End of Life",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Salon evening of literature, music, conversation and information about death and dying, to break the silence and help plan a self-determined farewell.",
+"by": "claude-task",
+"ctx": true
+},
+"Datengarten": {
+"title": "Datengarten – Chaos Computer Club Berlin",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Event run by the Berlin branch of the Chaos Computer Club (CCC), the hacker association's local chapter.",
+"by": "claude-task",
+"ctx": true
+},
+"Von fremden Geschmäcken": {
+"title": "Von fremden Geschmäcken: School Project at Galerie Wedding",
+"kind": "notice",
+"audience": "kids",
+"summary": "Galerie Wedding education project for school classes, linked to Dafna Maimon's exhibition “Orient Express”.",
 "by": "claude-task",
 "ctx": true
 }
