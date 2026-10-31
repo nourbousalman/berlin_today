@@ -22,6 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main           # start from the latest main, not the (possibly stale) commit that triggered the run
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -43,6 +45,7 @@ jobs:
             echo "No changes."
           else
             git commit -m "Update events"
-            git pull --rebase --autostash || true
+            # generated files only: if another run got there first, keep this run's fresh output
+            git pull --rebase -X theirs origin main
             git push
           fi
