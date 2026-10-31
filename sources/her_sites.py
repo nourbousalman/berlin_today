@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import html as _html
 import re
+import time
 import urllib.request
 from datetime import date, datetime
 from zoneinfo import ZoneInfo
@@ -24,9 +25,21 @@ BERLIN = ZoneInfo("Europe/Berlin")
 _UA = {"User-Agent": "Mozilla/5.0 (berlin_today; free-events list)"}
 
 
-def _get(url: str, timeout: int = 20) -> str:
-    req = urllib.request.Request(url, headers=_UA)
-    return urllib.request.urlopen(req, timeout=timeout).read().decode("utf-8", "ignore")
+def _get(url: str, timeout: int = 45) -> str:
+    last = None
+    for attempt in range(2):                 # one retry: a slow first answer is common
+        try:
+            req = urllib.request.Request(url, headers=_UA)
+            return urllib.request.urlopen(req, timeout=timeout).read().decode("utf-8", "ignore")
+        except Exception as exc:
+            last = exc
+            time.sleep(3)
+    raise last
+
+
+def _why_empty(page: str) -> str:
+    t = re.search(r"<title>(.*?)</title>", page, re.S | re.I)
+    return f"page {len(page)} bytes, title {(_text(t.group(1)) if t else '?')[:60]!r}"
 
 
 def _text(fragment: str) -> str:
@@ -82,6 +95,8 @@ def knoise(today: date | None = None) -> list[Event]:
                           "Film screening listed on knoise.org, the calendar of a venue called K.")
         ev.price_unlisted = True          # keep it, and say the price is not listed
         out.append(ev)
+    if not out:
+        print(f"    ! knoise: no film nights found ({_why_empty(page)})")
     return out
 
 
@@ -115,6 +130,8 @@ def philharmonie_lunch() -> list[Event]:
         ev.detail_text = ("Free lunchtime concert, about 40–50 minutes, no seats, first come first served. "
                           + (f"Performers: {who}. " if who else "") + (what if what else ""))
         out.append(ev)
+    if not out:
+        print(f"    ! Philharmonie: no concerts found ({_why_empty(page)})")
     return out
 
 
