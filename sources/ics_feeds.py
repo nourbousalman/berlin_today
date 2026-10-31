@@ -102,7 +102,9 @@ def _parse(raw, name, default_cat, is_free, force_recurring, now, horizon) -> li
             title=title,
             start=to_iso(display_dt),
             end=to_iso(end_dt) if (end_dt and not recurring) else None,
-            venue=str(comp.get("location")) if comp.get("location") else None,
+            # some calendars (Luma) put a web link where the place should be
+            venue=(str(comp.get("location")) if comp.get("location")
+                   and not str(comp.get("location")).startswith("http") else None),
             source=f"cal:{name}",
             url=str(comp.get("url")) if comp.get("url") else "",
             category=normalise_category(cat_hint, default_cat, title),

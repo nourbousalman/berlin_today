@@ -1,0 +1,91 @@
+{
+  "_about": "Nour's own list — places and regulars she knows first-hand. The 'My week' tab is built from this file. match.sources = substrings of an event's source; match.titles = regular expressions on its English or original title. An item with no match is shown as a link only.",
+  "week": [
+    {"day": 1, "items": [
+      {"label": "knoise film", "url": "https://knoise.org",
+       "note": "Their calendar can't be read automatically — check knoise.org"}
+    ]},
+    {"day": 2, "items": [
+      {"label": "Board games", "match": {"titles": ["board ?game", "brettspiel", "spieleabend", "spieletreff", "boardgam"]}}
+    ]},
+    {"day": 3, "items": [
+      {"label": "Forró", "match": {"titles": ["forr[oó]"]}},
+      {"label": "Chess", "url": "https://strangerchess.com",
+       "note": "StrangerChess: free drop-in every day at LUZII, Schönhauser Allee 174",
+       "match": {"titles": ["\\bchess\\b", "\\bschach"]}},
+      {"label": "Jazz", "match": {"titles": ["\\bjazz"]}}
+    ]},
+    {"day": 4, "items": [
+      {"label": "Sprachcafé", "match": {"titles": ["sprachcaf", "language caf"]}},
+      {"label": "Board games", "match": {"titles": ["board ?game", "brettspiel", "spieleabend", "spieletreff", "boardgam"]}},
+      {"label": "knoise film", "url": "https://knoise.org",
+       "note": "Their calendar can't be read automatically — check knoise.org"}
+    ]},
+    {"day": 5, "items": [
+      {"label": "Board games", "match": {"titles": ["board ?game", "brettspiel", "spieleabend", "spieletreff", "boardgam"]}},
+      {"label": "Scottish dance", "url": "https://scds-berlin.de", "match": {"titles": ["scottish", "\\bscds\\b"]}}
+    ]},
+    {"day": 6, "items": [
+      {"label": "Sip Happens", "url": "https://www.meetup.com/sip_happens_berlin/",
+       "match": {"sources": ["Sip Happens"], "titles": ["sip happens"]}}
+    ]},
+    {"day": 0, "items": [
+      {"label": "Bike training"},
+      {"label": "Museums", "tab": "free",
+       "note": "The free Museum Sunday ended in December 2024 — see Always free for places that are free every day"},
+      {"label": "Silent reading", "url": "https://luma.com/calendar/cal-060zyNsMu2akAlC",
+       "match": {"sources": ["Silent Reading Club"], "titles": ["silent reading"]}}
+    ]}
+  ],
+  "groups": [
+    {"name": "Political", "items": [
+      {"label": "Stressfaktor", "url": "https://stressfaktor.squat.net/termine",
+       "note": "Blocks automated reading on purpose — open it yourself"},
+      {"label": "Occupied buildings + squats"},
+      {"label": "K-Fetisch", "url": "https://instagram.com/k_fetisch"}
+    ]},
+    {"name": "Music", "items": [
+      {"label": "BAMF Berlin (+ other Telegram groups)"},
+      {"label": "Philharmonie (classical)", "url": "https://www.berliner-philharmoniker.de/en/concerts/lunch-concerts/",
+       "note": "Free lunchtime concerts"}
+    ]},
+    {"name": "Social", "items": [
+      {"label": "Berlin local socials (+ WhatsApp groups)"}
+    ]},
+    {"name": "Apps", "items": [
+      {"label": "Meetup", "url": "https://www.meetup.com/find/?location=de--berlin",
+       "match": {"sources": ["Meetup", "Sip Happens", "Berlin Board Gamers"]}},
+      {"label": "Rausgegangen", "url": "https://rausgegangen.de/en/berlin/", "match": {"sources": ["Rausgegangen"]}}
+    ]},
+    {"name": "Events", "items": [
+      {"label": "RA guide", "url": "https://ra.co/events/de/berlin"},
+      {"label": "Eventbrite (free events)", "url": "https://www.eventbrite.de/d/germany--berlin/free--events/"},
+      {"label": "GoOut", "url": "https://goout.net/en/berlin/events/"}
+    ]},
+    {"name": "Bars & spots with events", "items": [
+      {"label": "Atopia", "match": {"titles": ["atopia"], "venues": ["atopia"]}},
+      {"label": "Markthalle"},
+      {"label": "Holzmarkt", "url": "https://holzmarkt.com", "match": {"sources": ["Holzmarkt"], "venues": ["holzmarkt"]}},
+      {"label": "://about blank", "url": "https://aboutblank.li", "match": {"sources": ["about blank"]}},
+      {"label": "RuDi", "match": {"sources": ["Rudi"], "venues": ["rudi"]}},
+      {"label": "Humboldt Forum", "url": "https://humboldtforum.org", "match": {"venues": ["humboldt forum"], "titles": ["humboldt forum"]}}
+    ]},
+    {"name": "General interest", "items": [
+      {"label": "Hikes", "match": {"titles": ["\\bhike", "wanderung", "\\bwandern"]}},
+      {"label": "Comedy shows", "match": {"titles": ["comedy", "stand.?up", "open mic"]}},
+      {"label": "Board games", "match": {"titles": ["board ?game", "brettspiel", "spieleabend", "spieletreff", "boardgam"]}},
+      {"label": "NGOs"},
+      {"label": "Museums", "tab": "free"},
+      {"label": "Istituto Italiano di Cultura", "url": "https://iicberlino.esteri.it", "match": {"sources": ["Italian Cultural Institute"]}},
+      {"label": "Institut français", "match": {"sources": ["Institut français"]}},
+      {"label": "berlin.de", "url": "https://www.berlin.de/en/events/", "match": {"sources": ["Berlin.de"]}},
+      {"label": "Library walls"}
+    ]},
+    {"name": "Dance", "items": [
+      {"label": "Urban Sports classes", "url": "https://urbansportsclub.com/en"},
+      {"label": "Atopia forró", "match": {"titles": ["forr[oó]"]}},
+      {"label": "Scottish folk dance", "url": "https://scds-berlin.de", "match": {"titles": ["scottish", "\\bscds\\b"]}},
+      {"label": "Albanian folk dance"}
+    ]}
+  ]
+}

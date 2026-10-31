@@ -110,6 +110,30 @@
   .place .nm{font-size:15px;font-weight:700;color:var(--head);text-decoration:none}
   .place .sub{font-size:12.5px;color:var(--muted);font-weight:500}
 
+  /* My week: her own list, day by day, with what is actually on */
+  .mday{margin:20px 2px 4px;padding-bottom:6px;border-bottom:1px solid var(--line);
+        display:flex;gap:10px;align-items:baseline}
+  .mday .d1{font-size:16px;font-weight:800;color:var(--head)}
+  .mday .d2{font-size:13px;color:var(--muted);font-weight:600}
+  .mitem{display:grid;grid-template-columns:170px 1fr;gap:4px 16px;padding:8px 2px;
+         border-bottom:1px dashed var(--line)}
+  .mitem .lab{font-weight:800;color:var(--head);font-size:14px}
+  .mitem .lab a{text-decoration:none}
+  .mitem .lab .nt{display:block;font-weight:600;font-size:12px;color:var(--muted);margin-top:2px}
+  .mev{font-size:13.5px;line-height:1.45;padding:1px 0}
+  .mev .t{font-weight:700;color:var(--head);display:inline-block;min-width:44px}
+  .mev a{text-decoration:none;font-weight:700;color:var(--head)}
+  .mev a:hover{color:var(--accent)}
+  .mev .v{color:var(--muted);font-weight:600}
+  .mev.none{color:var(--muted);font-style:italic}
+  .mgrp{margin-top:6px}
+  .mlinks{display:flex;flex-wrap:wrap;gap:6px 8px;margin:6px 0 4px}
+  .mlink{border:1px solid var(--line);background:var(--surface);border-radius:9px;
+         padding:5px 10px;font-size:13px;font-weight:700;color:var(--head);text-decoration:none}
+  .mlink .c{color:#2E7A52;font-weight:700;margin-left:4px}
+  .mlink.plain{color:var(--muted);font-weight:600;border-style:dashed}
+  .star{font-size:11px;font-weight:800;color:#9A6510;white-space:nowrap}
+  @media (max-width:620px){.mitem{grid-template-columns:1fr}}
   /* the hidden-events switch: says what is hidden and how many, one click to show */
   .hidebar{margin-top:9px;font-size:12.5px;color:var(--muted);font-weight:600}
   .hidebar button{border:0;background:none;font:inherit;font-weight:700;color:var(--accent);
@@ -138,7 +162,8 @@
 <section class="controls" id="controls">
   <div class="cwrap">
     <div class="tabs" id="tabs" role="tablist">
-      <button class="tab" role="tab" data-tab="today"   aria-selected="true">Today <span class="n" id="nToday"></span></button>
+      <button class="tab" role="tab" data-tab="mine"    aria-selected="true">My week <span class="n" id="nMine"></span></button>
+      <button class="tab" role="tab" data-tab="today"   aria-selected="false">Today <span class="n" id="nToday"></span></button>
       <button class="tab" role="tab" data-tab="week"    aria-selected="false">This week <span class="n" id="nWeek"></span></button>
       <button class="tab" role="tab" data-tab="regular" aria-selected="false">Every week <span class="n" id="nReg"></span></button>
       <button class="tab" role="tab" data-tab="free"    aria-selected="false">Always free <span class="n" id="nFree"></span></button>
@@ -181,8 +206,9 @@ const DOWFULL=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satu
 const _DOWMAP={su:0,mo:1,tu:2,we:3,th:4,fr:5,sa:6};
 const PER_DAY=8;
 
-const state={tab:"today",kinds:new Set(),q:"",expanded:new Set(),showHidden:false};
+const state={tab:"mine",kinds:new Set(),q:"",expanded:new Set(),showHidden:false};
 let DATA={events:[],always_free:[],manual_check:[]};
+let MY=null;            // docs/my_list.json — her own list
 
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const bDate=iso=>new Date(iso).toLocaleDateString("en-CA",{timeZone:"Europe/Berlin"});
@@ -238,7 +264,7 @@ function card(ev,opts){
       <dt>Type</dt><dd><span class="dot" style="--c:${k.c}"></span>${esc(k.label)}</dd>
     </dl>
     <div class="foot">
-      <span class="src">${esc((ev.source||"").replace(/^cal:|^rss:|^web:|^gib:/,""))}</span>
+      <span class="src">${onList(ev)?'<span class="star">★ On your list</span> · ':""}${esc((ev.source||"").replace(/^cal:|^rss:|^web:|^gib:/,""))}</span>
       <button class="cal" type="button" data-ics="${esc(ev.id||"")}">+ Calendar</button>
     </div>
   </article>`;
@@ -266,6 +292,105 @@ const POOLS={
   regular:inc=>({ones:[],regs:DATA.events.filter(e=>e.recurring&&matches(e,inc))}),
 };
 const poolSize=(tab,inc)=>{const p=POOLS[tab](inc);return p.ones.length+p.regs.length;};
+
+/* ---------------- her own list (docs/my_list.json) ---------------- */
+function compileItem(it){
+  const m=it.match||{};
+  it._src=(m.sources||[]).map(x=>x.toLowerCase());
+  it._tit=(m.titles||[]).map(x=>new RegExp(x,"i"));
+  it._ven=(m.venues||[]).map(x=>x.toLowerCase());
+  return it;
+}
+function itemMatches(it,ev){
+  if(!it._src)compileItem(it);
+  const src=(ev.source||"").toLowerCase();
+  if(it._src.some(x=>src.includes(x)))return true;
+  const t=`${ev.title||""} ${ev.title_orig||""}`;
+  if(it._tit.some(r=>r.test(t)))return true;
+  const v=(ev.venue||"").toLowerCase();
+  return it._ven.some(x=>v.includes(x));
+}
+let _listItems=null;
+function listItems(){
+  if(_listItems)return _listItems;
+  _listItems=[];
+  if(MY){for(const d of MY.week||[])_listItems.push(...d.items);for(const g of MY.groups||[])_listItems.push(...g.items);}
+  _listItems=_listItems.filter(it=>it.match).map(compileItem);
+  return _listItems;
+}
+const onList=ev=>listItems().some(it=>itemMatches(it,ev));
+function occursOn(ev,iso,dow){
+  return ev.recurring?recurDows(ev).includes(dow):bDate(ev.start)===iso;
+}
+function berlinDay(offset){
+  const d=new Date(Date.now()+offset*864e5);
+  const iso=d.toLocaleDateString("en-CA",{timeZone:"Europe/Berlin"});
+  const dow=new Date(iso+"T12:00:00").getDay();
+  return {iso,dow,label:DOWFULL[dow],short:new Date(iso+"T12:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"short"})};
+}
+function itemLabel(it){
+  const name=it.url?`<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.label)}</a>`
+           :(it.tab?`<a href="#" data-gotab="${esc(it.tab)}">${esc(it.label)}</a>`:esc(it.label));
+  return `<div class="lab">${name}${it.note?`<span class="nt">${esc(it.note)}</span>`:""}</div>`;
+}
+function evLine(ev,dow){
+  const allDay=(ev.date_source||"").endsWith("allday");
+  const t=allDay?"all day":bTime(ev.start);
+  const title=ev.url?`<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`:esc(ev.title);
+  const cost=ev.is_free===true?"free":(ev.price||"");
+  const bits=[ev.venue,cost].filter(Boolean).map(esc).join(" · ");
+  return `<div class="mev"><span class="t">${esc(t)}</span> ${title}${bits?` <span class="v">· ${bits}</span>`:""}</div>`;
+}
+function mineCount(){
+  if(!MY)return 0; let n=0;
+  for(let o=0;o<7;o++){const d=berlinDay(o);const w=(MY.week||[]).find(x=>x.day===d.dow);if(!w)continue;
+    for(const it of w.items){if(!it.match)continue;
+      n+=DATA.events.filter(ev=>!isHidden(ev)&&itemMatches(compileItem(it),ev)&&occursOn(ev,d.iso,d.dow)).length;}}
+  return n;
+}
+function viewMine(){
+  if(!MY)return empty("Your list didn't load","docs/my_list.json is missing.");
+  let shown=0;
+  let h=`<div class="lead">Your own list — the things you know first-hand. Under each one: what is actually on, day by day, for the next 7 days.</div>`;
+  for(let o=0;o<7;o++){
+    const d=berlinDay(o);
+    const w=(MY.week||[]).find(x=>x.day===d.dow);
+    if(!w||!w.items.length)continue;
+    h+=`<div class="mday"><span class="d1">${o===0?"Today":o===1?"Tomorrow":d.label}</span><span class="d2">${o<2?d.label+", ":""}${d.short}</span></div>`;
+    for(const it of w.items){
+      let rows="";
+      if(it.match){
+        const seenT=new Set();
+        const evs=DATA.events.filter(ev=>!isHidden(ev)&&itemMatches(compileItem(it),ev)&&occursOn(ev,d.iso,d.dow))
+                             .sort((a,b)=>bTime(a.start).localeCompare(bTime(b.start)))
+                             .filter(ev=>{const k=(ev.title||"").toLowerCase();if(seenT.has(k))return false;seenT.add(k);return true;});
+        shown+=evs.length;
+        rows=evs.slice(0,5).map(ev=>evLine(ev,d.dow)).join("");
+        if(evs.length>5)rows+=`<div class="mev none">+ ${evs.length-5} more — search “${esc(it.label)}”</div>`;
+        if(!evs.length)rows=`<div class="mev none">Nothing found for this day${it.url?" — check their page":""}</div>`;
+      }else{
+        rows=`<div class="mev none">${it.tab?`Free every day — <a href="#" data-gotab="${esc(it.tab)}">see Always free</a>`
+              :it.url?"Not readable automatically — open the link":"No link yet"}</div>`;
+      }
+      h+=`<div class="mitem">${itemLabel(it)}<div>${rows}</div></div>`;
+    }
+  }
+  // her sources, grouped as she wrote them, with how many upcoming events the site has from each
+  h+=`<div class="daybar"><span class="d1">Your sources</span></div>`;
+  for(const g of MY.groups||[]){
+    h+=`<div class="mgrp"><div class="mgroup">${esc(g.name)}</div><div class="mlinks">`;
+    for(const it of g.items){
+      const n=it.match?DATA.events.filter(ev=>!isHidden(ev)&&itemMatches(compileItem(it),ev)).length:0;
+      const c=n?`<span class="c">${n} on the site</span>`:"";
+      h+=it.url?`<a class="mlink" href="${esc(it.url)}" target="_blank" rel="noopener" title="${esc(it.note||"")}">${esc(it.label)}${c}</a>`
+            :it.tab?`<a class="mlink" href="#" data-gotab="${esc(it.tab)}">${esc(it.label)}${c}</a>`
+            :`<span class="mlink${n?"":" plain"}">${esc(it.label)}${c}</span>`;
+    }
+    h+=`</div></div>`;
+  }
+  setCount(shown,"from your list this week");
+  return h;
+}
 
 /* ---------------- views ---------------- */
 function viewToday(){
@@ -342,7 +467,7 @@ function hideBar(){
 const empty=(h,b)=>`<div class="state"><b>${esc(h)}</b>${esc(b)}</div>`;
 function setCount(n,kind){document.getElementById("count").textContent=`${n} ${kind}`;}
 function render(){
-  const v={today:viewToday,week:viewWeek,regular:viewRegular,free:viewFree,manual:viewManual}[state.tab];
+  const v={mine:viewMine,today:viewToday,week:viewWeek,regular:viewRegular,free:viewFree,manual:viewManual}[state.tab];
   document.getElementById("cats").style.display=POOLS[state.tab]?"flex":"none";
   document.getElementById("feed").innerHTML=v();
   hideBar();
@@ -380,6 +505,8 @@ function icsFor(ev){
     ev.venue?"LOCATION:"+e2(ev.venue):"",ev.url?"URL:"+e2(ev.url):"","END:VEVENT","END:VCALENDAR"].filter(Boolean).join("\r\n");
 }
 document.addEventListener("click",e=>{
+  const gt=e.target.closest("[data-gotab]");
+  if(gt){e.preventDefault();const b=document.querySelector(`.tab[data-tab="${gt.dataset.gotab}"]`);if(b)b.click();return;}
   if(e.target.id==="hidetoggle"){state.showHidden=!state.showHidden;state.expanded.clear();
     if(!state.showHidden)for(const k of HIDE_KIND)state.kinds.delete(k);
     buildKindChips();render();tabCounts();return;}
@@ -419,6 +546,7 @@ document.getElementById("search").addEventListener("input",e=>{state.q=e.target.
 
 function tabCounts(){
   const inc=state.showHidden;
+  document.getElementById("nMine").textContent=mineCount();
   document.getElementById("nToday").textContent=poolSize("today",inc);
   document.getElementById("nWeek").textContent=poolSize("week",inc);
   document.getElementById("nReg").textContent=poolSize("regular",inc);
@@ -426,7 +554,8 @@ function tabCounts(){
   document.getElementById("nManual").textContent=DATA.manual_check.length;
 }
 
-fetch("data.json?_="+Date.now())
+fetch("my_list.json?_="+Date.now()).then(r=>r.ok?r.json():null).then(j=>{MY=j;_listItems=null;}).catch(()=>{})
+ .then(()=>fetch("data.json?_="+Date.now()))
   .then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})
   .then(d=>{
     DATA={events:d.events||[],always_free:d.always_free||[],manual_check:d.manual_check||[]};

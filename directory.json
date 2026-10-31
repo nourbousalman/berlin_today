@@ -173,7 +173,8 @@
   "group": "Free & ultra-cheap regulars",
   "note": "free Sat social",
   "yours": true,
-  "status": "live"
+  "status": "live",
+  "ical": "https://www.meetup.com/sip_happens_berlin/events/ical/"
  },
  {
   "id": 20,
@@ -191,7 +192,8 @@
   "group": "Free & ultra-cheap regulars",
   "note": "Thu/Fri, €3",
   "yours": true,
-  "status": "live"
+  "status": "live",
+  "ical": "https://www.meetup.com/berlin-board-gamers/events/ical/"
  },
  {
   "id": 22,
@@ -3164,5 +3166,15 @@
   "yours": false,
   "corrected": true,
   "status": "live"
+ },
+ {
+  "id": 331,
+  "name": "Silent Reading Club",
+  "url": "https://luma.com/calendar/cal-060zyNsMu2akAlC",
+  "group": "Free & ultra-cheap regulars",
+  "note": "Sunday silent reading (Bode Museum, Monbijou Park, S41 Ringbahn…)",
+  "yours": true,
+  "status": "live",
+  "ical": "https://api.lu.ma/ics/get?entity=calendar&id=cal-060zyNsMu2akAlC"
  }
 ]

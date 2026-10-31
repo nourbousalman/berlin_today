@@ -36,17 +36,6 @@ URL:https://www.scds-berlin.de/indexe.html
 DESCRIPTION:Scottish country dancing, all levels welcome, no partner needed. Entry €3. Fridays 19:30-21:45, during school term only (pauses in Berlin school holidays).
 END:VEVENT
 BEGIN:VEVENT
-UID:manual-sip-happens@berlin-events
-SUMMARY:Sip Happens! Saturday Social
-DTSTART:20260704T190000
-DTEND:20260704T220000
-RRULE:FREQ=WEEKLY;BYDAY=SA
-LOCATION:Rotating bar — see Meetup
-CATEGORIES:community
-URL:https://www.meetup.com/sip_happens_berlin/
-DESCRIPTION:Free Saturday social — meet new people at one of Berlin's bars. Venue and start time vary weekly, check Meetup or Telegram (t.me/siphappens_berlin). Free (buy a drink to support the venue).
-END:VEVENT
-BEGIN:VEVENT
 UID:manual-boardgames-tue@berlin-events
 SUMMARY:Board game night — Schöneberg
 DTSTART:20260707T190000
