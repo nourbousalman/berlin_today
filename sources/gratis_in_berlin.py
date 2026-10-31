@@ -425,7 +425,10 @@ def enrich(events: list, budget: int = 250, max_workers: int = 3) -> dict:
         # never use them; the page is re-read and the real time filled in then
         if "h" in d and d.get("v", 0) >= 3:
             base = datetime.fromisoformat(e.start).astimezone(BERLIN)
-            e.start = base.replace(hour=d["h"], minute=d.get("m", 0)).isoformat()
+            mins = d.get("m", 0)
+            if "eh" in d and mins and mins == d["eh"]:
+                mins = d.get("em", 0)          # "Anfangszeit 09:17" on a 09:00-17:00 page
+            e.start = base.replace(hour=d["h"], minute=mins).isoformat()
             if "eh" in d:
                 en = base.replace(hour=min(d["eh"], 23), minute=d.get("em", 0))
                 if en > datetime.fromisoformat(e.start):

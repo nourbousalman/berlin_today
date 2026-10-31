@@ -239,6 +239,11 @@ def main() -> int:
     ics_list, rss_list = resolve_feeds(cfg, directory)
     events = collect(cfg, ics_list, rss_list, directory)
     events = dedupe(events)
+    # The Philharmonie's own dates (sources/her_sites.py) replace gratis-in-berlin's
+    # copy of the same weekly series, whose text is out of date ("get a seat").
+    if any(e.source == "web:Philharmonie lunch concerts" for e in events):
+        events = [e for e in events if not (e.source.startswith("gib:")
+                  and (e.title or "").lower().startswith("philharmonie lunchkonzert"))]
     events = [e for e in events if e.start]
     # An RSS publish timestamp is not an event time. Read the real datetime off
     # each event's own page; anything we cannot verify is dropped below.

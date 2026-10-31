@@ -127,8 +127,10 @@ def philharmonie_lunch() -> list[Event]:
                    source="web:Philharmonie lunch concerts", url=PHIL,
                    venue=venue + ", Herbert-von-Karajan-Str. 1", category="music",
                    is_free=True, price="Free", date_source="page")
-        ev.detail_text = ("Free lunchtime concert, about 40–50 minutes, no seats, first come first served. "
-                          + (f"Performers: {who}. " if who else "") + (what if what else ""))
+        # one label covers the whole weekly series, so keep this week's performers out of it
+        ev.detail_text = ("Free lunchtime chamber-music concert in the Philharmonie foyer, about 40–50 minutes, "
+                          "different musicians each week; catering available. Standing only, first come first served.")
+        ev.performers = who
         out.append(ev)
     if not out:
         print(f"    ! Philharmonie: no concerts found ({_why_empty(page)})")

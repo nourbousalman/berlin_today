@@ -9718,10 +9718,10 @@
 "ctx": true
 },
 "Lunch concert at the Philharmonie": {
-"title": "Lunchtime Concert at the Philharmonie: Berliner Luftblech",
+"title": "Free lunch concert at the Philharmonie",
 "kind": "music",
 "audience": "everyone",
-"summary": "Brass ensemble Berliner Luftblech plays traditional pieces and works by Ewald, McKee, Kompanek and Johann Strauß jr. No seats; first come, first served.",
+"summary": "Free chamber-music concert of about 40–50 minutes in the Philharmonie foyer, different musicians each week; catering available. Standing only.",
 "by": "claude-task",
 "ctx": true
 },
