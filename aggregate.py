@@ -27,11 +27,16 @@ import yaml
 
 import socket
 socket.setdefaulttimeout(45)  # one slow/hanging feed must not stall a 122-feed run
+try:                          # GitHub runners have no IPv6 route; some hosts (api.lu.ma)
+    import urllib3.util.connection as _u3c   # answer IPv6 first -> "Network is unreachable"
+    _u3c.HAS_IPV6 = False
+except Exception:
+    pass
 
 from sources.base import Event, dedupe, berlin_status, berlin_district
 from sources import (resident_advisor, ics_feeds, rss_feeds, html_scrapers,
                      directory_feed, price_probe, site_extract, verify,
-                     gratis_in_berlin, classify)
+                     gratis_in_berlin, classify, her_sites)
 from sources.translate import translate_events
 
 ROOT = Path(__file__).parent
@@ -80,6 +85,11 @@ def collect(cfg: dict, ics_list: list[dict], rss_list: list[dict],
         events += _run("gratis-in-berlin", lambda: gratis_in_berlin.fetch(
             horizon_days=horizon,
             max_days=int(cfg.get("gib_days", 45))))
+
+    # Places on Nour's own list with a simple page but no feed (knoise film
+    # nights, Philharmonie lunch concerts): read with small dedicated readers.
+    if cfg.get("her_sites", True):
+        events += _run("her own places", her_sites.fetch)
 
     # Sites with no feed at all (the old "manual check" list): discover their
     # programme page and extract events from the HTML.
@@ -181,6 +191,13 @@ def _collapse_repeats(events: list[Event]) -> list[Event]:
             continue
         gaps = [(days[i + 1] - days[i]).days for i in range(len(days) - 1)]
         first = evs[0]
+        if first.recurrence and first.recurrence.startswith("Every "):
+            # the source already states the rule ("Every 2nd Monday of the month")
+            first.recurring = True
+            first.recurrence = f"{first.recurrence} — next on {days[0].strftime('%d %b')}"
+            first.dates = sorted({d.isoformat() for d in days})
+            out.append(first)
+            continue
         if all(g == 1 for g in gaps):                     # a continuous run (exhibition)
             first.recurrence = f"Every day until {days[-1].strftime('%d %b')}"
             out.append(first)
@@ -204,6 +221,7 @@ def _collapse_repeats(events: list[Event]) -> list[Event]:
             out.extend(evs)                                # irregular -> keep as-is
             continue
         first.recurring = True
+        first.dates = sorted({d.isoformat() for d in days})   # so a monthly series shows only on its days
         nxt = days[0].strftime("%d %b")
         first.recurrence = (f"{label} — next on {nxt} ({len(evs)} more dates)"
                             if not label.endswith("dates coming up")
@@ -268,7 +286,9 @@ def main() -> int:
     pstats = price_probe.resolve_prices(events) if cfg.get("price_probe", True) else {}
     before = len(events)
     events = [e for e in events if _within_budget(e, max_price)]      # drops >max / ticketed-no-price
-    events = [e for e in events if e.is_free is not None]             # drops still-unknown price
+    # drops still-unknown price — except places on her own list whose page simply
+    # never states a price: those stay, and the card says "not listed".
+    events = [e for e in events if e.is_free is not None or getattr(e, "price_unlisted", False)]
     dropped = before - len(events)
     for e in events:                       # tag each event with its Bezirk
         if not e.area:

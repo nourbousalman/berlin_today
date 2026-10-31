@@ -33,6 +33,7 @@ jobs:
         env:
           # optional: if this secret is ever added, labelling also runs inside each update
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PYTHONDONTWRITEBYTECODE: "1"   # no .pyc files left behind to block the commit step
         run: python aggregate.py
       - name: Commit if changed
         run: |
@@ -46,6 +47,6 @@ jobs:
           else
             git commit -m "Update events"
             # generated files only: if another run got there first, keep this run's fresh output
-            git pull --rebase -X theirs origin main
+            git pull --rebase --autostash -X theirs origin main
             git push
           fi

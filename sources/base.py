@@ -186,6 +186,7 @@ class Event:
     description: str | None = None
     recurring: bool = False         # True = repeats on a schedule (weekly/monthly regular)
     recurrence: str | None = None   # human-readable cadence, e.g. "Weekly · Wed"
+    dates: list | None = None       # every real date of a collapsed series (YYYY-MM-DD)
     translated: bool = False
     # Provenance of `start`. Only these are real event datetimes read from a
     # source that states when the event happens:

@@ -110,30 +110,23 @@
   .place .nm{font-size:15px;font-weight:700;color:var(--head);text-decoration:none}
   .place .sub{font-size:12.5px;color:var(--muted);font-weight:500}
 
-  /* My week: her own list, day by day, with what is actually on */
-  .mday{margin:20px 2px 4px;padding-bottom:6px;border-bottom:1px solid var(--line);
-        display:flex;gap:10px;align-items:baseline}
-  .mday .d1{font-size:16px;font-weight:800;color:var(--head)}
-  .mday .d2{font-size:13px;color:var(--muted);font-weight:600}
-  .mitem{display:grid;grid-template-columns:170px 1fr;gap:4px 16px;padding:8px 2px;
-         border-bottom:1px dashed var(--line)}
-  .mitem .lab{font-weight:800;color:var(--head);font-size:14px}
-  .mitem .lab a{text-decoration:none}
-  .mitem .lab .nt{display:block;font-weight:600;font-size:12px;color:var(--muted);margin-top:2px}
-  .mev{font-size:13.5px;line-height:1.45;padding:1px 0}
-  .mev .t{font-weight:700;color:var(--head);display:inline-block;min-width:44px}
-  .mev a{text-decoration:none;font-weight:700;color:var(--head)}
-  .mev a:hover{color:var(--accent)}
-  .mev .v{color:var(--muted);font-weight:600}
-  .mev.none{color:var(--muted);font-style:italic}
-  .mgrp{margin-top:6px}
-  .mlinks{display:flex;flex-wrap:wrap;gap:6px 8px;margin:6px 0 4px}
-  .mlink{border:1px solid var(--line);background:var(--surface);border-radius:9px;
-         padding:5px 10px;font-size:13px;font-weight:700;color:var(--head);text-decoration:none}
-  .mlink .c{color:#2E7A52;font-weight:700;margin-left:4px}
-  .mlink.plain{color:var(--muted);font-weight:600;border-style:dashed}
+  /* her own list, shown inside the normal tabs */
   .star{font-size:11px;font-weight:800;color:#9A6510;white-space:nowrap}
-  @media (max-width:620px){.mitem{grid-template-columns:1fr}}
+  .ev.mine{border-color:#E6D3AE;background:#FFFDF8}
+  .rows dd.miss{color:#9A6510;font-weight:700}
+  .rows dd .nx{display:block}
+  .rows dd .nx a{text-decoration:none;font-weight:700;color:var(--head)}
+  .rows dd .nx a:hover{color:var(--accent)}
+  .rows dd .nx .v{color:var(--muted);font-weight:600}
+  .mrow.my{align-items:baseline}
+  .mrow.my>a,.mrow.my>.nm2{flex:none;max-width:48%}
+  .mrow .mr{flex:1;min-width:0;text-align:right;display:flex;flex-direction:column;gap:1px}
+  .mrow .mr .why{white-space:normal}
+  .mrow .why.ok{color:#2E7A52}
+  .mrow .why.miss{color:#9A6510}
+  .mrow .nm2{font-weight:700;color:var(--head)}
+  .sect{margin:26px 2px 0;font-size:16px;font-weight:800;color:var(--head);
+        padding-bottom:7px;border-bottom:1px solid var(--line)}
   /* the hidden-events switch: says what is hidden and how many, one click to show */
   .hidebar{margin-top:9px;font-size:12.5px;color:var(--muted);font-weight:600}
   .hidebar button{border:0;background:none;font:inherit;font-weight:700;color:var(--accent);
@@ -162,8 +155,7 @@
 <section class="controls" id="controls">
   <div class="cwrap">
     <div class="tabs" id="tabs" role="tablist">
-      <button class="tab" role="tab" data-tab="mine"    aria-selected="true">My week <span class="n" id="nMine"></span></button>
-      <button class="tab" role="tab" data-tab="today"   aria-selected="false">Today <span class="n" id="nToday"></span></button>
+      <button class="tab" role="tab" data-tab="today"   aria-selected="true">Today <span class="n" id="nToday"></span></button>
       <button class="tab" role="tab" data-tab="week"    aria-selected="false">This week <span class="n" id="nWeek"></span></button>
       <button class="tab" role="tab" data-tab="regular" aria-selected="false">Every week <span class="n" id="nReg"></span></button>
       <button class="tab" role="tab" data-tab="free"    aria-selected="false">Always free <span class="n" id="nFree"></span></button>
@@ -206,7 +198,7 @@ const DOWFULL=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satu
 const _DOWMAP={su:0,mo:1,tu:2,we:3,th:4,fr:5,sa:6};
 const PER_DAY=8;
 
-const state={tab:"mine",kinds:new Set(),q:"",expanded:new Set(),showHidden:false};
+const state={tab:"today",kinds:new Set(),q:"",expanded:new Set(),showHidden:false};
 let DATA={events:[],always_free:[],manual_check:[]};
 let MY=null;            // docs/my_list.json — her own list
 
@@ -236,14 +228,15 @@ function card(ev,opts){
   opts=opts||{};
   const allDay=(ev.date_source||"").endsWith("allday");
   const at=opts.when||ev.start;
-  const to=(!allDay&&!opts.when&&ev.end)?` – ${bTime(ev.end)}`:"";
-  const when=allDay?"All day (no set time)":`${bTime(at)}${to}`;
+  const to=(!allDay&&!opts.when&&!ev._moved&&ev.end)?` – ${bTime(ev.end)}`:"";
+  const when=allDay?(ev.date_source==="daypage-allday"?"Time not listed — see link":"All day")
+                  :`${bTime(at)}${to}`;
   const whereTxt=[ev.venue,ev.area].filter(Boolean).map(esc).join(" · ");
   const where=whereTxt?`<dd>${whereTxt}</dd>`:`<dd class="soft">Not listed — see link</dd>`;
-  const cost=ev.is_free===true?`<dd class="free">Free</dd>`
+  const cost=ev.is_free===true?`<dd class="free">${ev.price&&/donat|spende/i.test(ev.price)?esc(ev.price):"Free"}</dd>`
             :(ev.price?`<dd>${esc(ev.price)}</dd>`:`<dd class="soft">Check on the site</dd>`);
   const cad=ev.recurrence||"Regularly";
-  const repeats=(ev.recurring&&!(opts.inDayGroup&&/^Every week\b/.test(cad)))
+  const repeats=((ev.recurring||ev.recurrence)&&!(opts.inDayGroup&&/^Every week\b/.test(cad)))
     ?`<dt>Repeats</dt><dd>${esc(cad)}</dd>`:"";
   const who=(ev.audience&&ev.audience!=="everyone"&&WHO[ev.audience])
     ?`<dt>Who</dt><dd class="who">${WHO[ev.audience]}</dd>`:"";
@@ -264,32 +257,50 @@ function card(ev,opts){
       <dt>Type</dt><dd><span class="dot" style="--c:${k.c}"></span>${esc(k.label)}</dd>
     </dl>
     <div class="foot">
-      <span class="src">${onList(ev)?'<span class="star">★ On your list</span> · ':""}${esc((ev.source||"").replace(/^cal:|^rss:|^web:|^gib:/,""))}</span>
-      <button class="cal" type="button" data-ics="${esc(ev.id||"")}">+ Calendar</button>
+      <span class="src">${listMatch(ev)?`<span class="star">★ Your list: ${esc(listMatch(ev).label)}</span> · `:""}${esc((ev.source||"").replace(/^cal:|^rss:|^web:|^gib:/,""))}</span>
+      <button class="cal" type="button" data-ics="${esc(ev.id||"")}"${ev._moved?` data-when="${esc(ev.start)}"`:""}>+ Calendar</button>
     </div>
   </article>`;
 }
 const grid=html=>`<div class="grid">${html}</div>`;
-function dayBlock(key,label,sub,list,inDayGroup){
+function dayBlock(key,label,sub,list,inDayGroup,extra){
+  extra=extra||[];
   const open=state.expanded.has(key);
-  const shown=open?list:list.slice(0,PER_DAY);
+  const shown=open?list:list.slice(0,Math.max(0,PER_DAY-extra.length));
+  const total=list.length+extra.length;
   let h=`<div class="daybar"><span class="d1">${esc(label)}</span>`
-      +(sub?`<span class="d2">${esc(sub)}</span>`:"")+`<span class="n">${list.length}</span></div>`;
-  h+=grid(shown.map(ev=>card(ev,{inDayGroup})).join(""));
-  if(list.length>PER_DAY)
-    h+=`<button class="more" data-exp="${esc(key)}">${open?"Show fewer":`Show all ${list.length}`}</button>`;
+      +(sub?`<span class="d2">${esc(sub)}</span>`:"")+`<span class="n">${total}</span></div>`;
+  h+=grid(extra.join("")+shown.map(ev=>card(ev,{inDayGroup})).join(""));
+  if(total>PER_DAY)
+    h+=`<button class="more" data-exp="${esc(key)}">${open?"Show fewer":`Show all ${total}`}</button>`;
   return h;
 }
 
-/* ---------------- pools (one per tab) ---------------- */
+/* ---------------- pools (one per tab) ----------------
+   "Every week" holds only true weekly regulars. Anything else that repeats
+   (every 2 weeks, 2nd Monday of the month, yearly) is shown as a dated event on
+   each of its real dates, so it never appears on a day it doesn't happen. */
 function weekWindow(){const a=new Date();a.setHours(0,0,0,0);const b=new Date(a);b.setDate(b.getDate()+7);b.setHours(23,59,59,999);return[a,b];}
+const WEEKLY=/^(Every week\b|Weekly\b|Every (Mon|Tue|Wed|Thu|Fri|Sat|Sun)(, (Mon|Tue|Wed|Thu|Fri|Sat|Sun))*( —|$))/;
+const isWeekly=ev=>!!ev.recurring&&WEEKLY.test(ev.recurrence||"");
+const datesOf=ev=>(ev.dates&&ev.dates.length)?ev.dates:[bDate(ev.start)];
+function dated(inc){
+  const out=[];
+  for(const e of DATA.events){
+    if(isWeekly(e)||!matches(e,inc))continue;
+    for(const iso of datesOf(e))
+      out.push(iso===bDate(e.start)?e:Object.assign({},e,{start:iso+e.start.slice(10),_moved:true,_orig:e}));
+  }
+  return out;
+}
 const POOLS={
   today:inc=>{const iso=todayISO(),dow=new Date().getDay();
-    return {ones:DATA.events.filter(e=>!e.recurring&&matches(e,inc)&&bDate(e.start)===iso),
-            regs:DATA.events.filter(e=>e.recurring&&matches(e,inc)&&recurDows(e).includes(dow))};},
+    return {ones:dated(inc).filter(e=>bDate(e.start)===iso),
+            regs:DATA.events.filter(e=>isWeekly(e)&&matches(e,inc)&&recurDows(e).includes(dow)
+                                     &&(!e.dates||e.dates.includes(iso)))};},  // e.g. no lunch concert in the Christmas break
   week:inc=>{const[a,b]=weekWindow();
-    return {ones:DATA.events.filter(e=>!e.recurring&&matches(e,inc)&&new Date(e.start)>=a&&new Date(e.start)<=b),regs:[]};},
-  regular:inc=>({ones:[],regs:DATA.events.filter(e=>e.recurring&&matches(e,inc))}),
+    return {ones:dated(inc).filter(e=>new Date(e.start)>=a&&new Date(e.start)<=b),regs:[]};},
+  regular:inc=>({ones:[],regs:DATA.events.filter(e=>isWeekly(e)&&matches(e,inc))}),
 };
 const poolSize=(tab,inc)=>{const p=POOLS[tab](inc);return p.ones.length+p.regs.length;};
 
@@ -318,7 +329,13 @@ function listItems(){
   _listItems=_listItems.filter(it=>it.match).map(compileItem);
   return _listItems;
 }
-const onList=ev=>listItems().some(it=>itemMatches(it,ev));
+const _lm=new WeakMap();
+function listMatch(ev){            // which of her items this event belongs to (cached)
+  const key=ev._orig||ev;
+  if(_lm.has(key))return _lm.get(key);
+  const it=listItems().find(it=>itemMatches(it,ev))||null;_lm.set(key,it);return it;
+}
+const onList=ev=>!!listMatch(ev);
 function occursOn(ev,iso,dow){
   return ev.recurring?recurDows(ev).includes(dow):bDate(ev.start)===iso;
 }
@@ -328,79 +345,82 @@ function berlinDay(offset){
   const dow=new Date(iso+"T12:00:00").getDay();
   return {iso,dow,label:DOWFULL[dow],short:new Date(iso+"T12:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"short"})};
 }
-function itemLabel(it){
-  const name=it.url?`<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.label)}</a>`
-           :(it.tab?`<a href="#" data-gotab="${esc(it.tab)}">${esc(it.label)}</a>`:esc(it.label));
-  return `<div class="lab">${name}${it.note?`<span class="nt">${esc(it.note)}</span>`:""}</div>`;
+/* Her weekly items, shown on their own day in Today and Every week. An item
+   gets its own card only when no weekly event already stands for it that day
+   (those carry the ★ instead). Anything her list does not say is shown as
+   Missing, never guessed. */
+const MISSING="Missing";
+function weekItems(dow){const w=(MY&&MY.week||[]).find(x=>x.day===dow);return w?w.items:[];}
+function nextDates(it,dow,limit){
+  if(!it.match)return {list:[],anyDay:false};
+  const now=Date.now(),seen=new Set();
+  const all=dated(true).filter(ev=>!isHidden(ev)&&itemMatches(compileItem(it),ev)&&new Date(ev.start).getTime()>now-3*36e5)
+    .sort((a,b)=>a.start.localeCompare(b.start))
+    .filter(ev=>{const k=ev.title+ev.start;if(seen.has(k))return false;seen.add(k);return true;});
+  const onDay=all.filter(ev=>new Date(ev.start).getDay()===dow);
+  return onDay.length?{list:onDay.slice(0,limit),anyDay:false}:{list:all.slice(0,limit),anyDay:true};
 }
-function evLine(ev,dow){
-  const allDay=(ev.date_source||"").endsWith("allday");
-  const t=allDay?"all day":bTime(ev.start);
-  const title=ev.url?`<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`:esc(ev.title);
-  const cost=ev.is_free===true?"free":(ev.price||"");
-  const bits=[ev.venue,cost].filter(Boolean).map(esc).join(" · ");
-  return `<div class="mev"><span class="t">${esc(t)}</span> ${title}${bits?` <span class="v">· ${bits}</span>`:""}</div>`;
+function coveredByRegular(it,dow){
+  return !!it.match&&DATA.events.some(ev=>isWeekly(ev)&&!isHidden(ev)&&recurDows(ev).includes(dow)&&itemMatches(compileItem(it),ev));
 }
-function mineCount(){
-  if(!MY)return 0; let n=0;
-  for(let o=0;o<7;o++){const d=berlinDay(o);const w=(MY.week||[]).find(x=>x.day===d.dow);if(!w)continue;
-    for(const it of w.items){if(!it.match)continue;
-      n+=DATA.events.filter(ev=>!isHidden(ev)&&itemMatches(compileItem(it),ev)&&occursOn(ev,d.iso,d.dow)).length;}}
-  return n;
+function listCard(it,dow,todayISO){
+  const name=it.url?`<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.label)}</a>`:esc(it.label);
+  const miss=t=>`<dd class="miss">${esc(t)}</dd>`;
+  const got=nextDates(it,dow,3);
+  const nx=got.list.filter(ev=>!todayISO||bDate(ev.start)!==todayISO);
+  const day=DOWFULL[dow];
+  // with real dates below, each date carries its own place and price
+  const when=it.when?`<dd>${esc(it.when)}</dd>`
+            :nx.length?(got.anyDay?miss(`Nothing found on a ${day} — other dates below`):`<dd>${day}s — dates below</dd>`)
+            :miss(`${day} — time ${MISSING.toLowerCase()}`);
+  const where=it.where?(it.tab?`<dd><a href="#" data-gotab="${esc(it.tab)}">${esc(it.where)}</a></dd>`:`<dd>${esc(it.where)}</dd>`)
+             :(it.where_missing?miss(it.where_missing):nx.length?"":miss(MISSING));
+  const cost=it.cost?`<dd>${esc(it.cost)}</dd>`:it.tab?`<dd class="free">Free</dd>`
+            :(it.cost_missing?miss(it.cost_missing):nx.length?"":miss(MISSING));
+  const link=(it.url||it.tab||nx.length)?"":`<dt>Link</dt>${miss(MISSING)}`;
+  const next=nx.length?`<dt>${got.anyDay?"Other days":"Next"}</dt><dd>${nx.map(ev=>{
+      const allDay=(ev.date_source||"").endsWith("allday");
+      const t=`${DOW3[new Date(ev.start).getDay()]} ${bDateL(ev.start)}${allDay?"":", "+bTime(ev.start)}`;
+      const ti=ev.url?`<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`:esc(ev.title);
+      const cost=ev.is_free===true?(ev.price&&/donat/i.test(ev.price)?ev.price:"free"):(/not listed/i.test(ev.price||"")?"":(ev.price||""));
+      const bits=[ev.venue,cost].filter(Boolean).map(esc).join(" · ");
+      return `<span class="nx">${esc(t)} · ${ti}${bits?` <span class="v">· ${bits}</span>`:""}</span>`;}).join("")}</dd>`:"";
+  return `<article class="ev mine">
+    <div class="title">${name}</div>
+    ${it.about?`<div class="summary">${esc(it.about)}</div>`:""}
+    <dl class="rows"><dt>When</dt>${when}${where?`<dt>Where</dt>${where}`:""}${cost?`<dt>Cost</dt>${cost}`:""}${link}${next}</dl>
+    <div class="foot"><span class="src"><span class="star">★ From your list</span></span></div>
+  </article>`;
 }
-function viewMine(){
-  if(!MY)return empty("Your list didn't load","docs/my_list.json is missing.");
-  let shown=0;
-  let h=`<div class="lead">Your own list — the things you know first-hand. Under each one: what is actually on, day by day, for the next 7 days.</div>`;
-  for(let o=0;o<7;o++){
-    const d=berlinDay(o);
-    const w=(MY.week||[]).find(x=>x.day===d.dow);
-    if(!w||!w.items.length)continue;
-    h+=`<div class="mday"><span class="d1">${o===0?"Today":o===1?"Tomorrow":d.label}</span><span class="d2">${o<2?d.label+", ":""}${d.short}</span></div>`;
-    for(const it of w.items){
-      let rows="";
-      if(it.match){
-        const seenT=new Set();
-        const evs=DATA.events.filter(ev=>!isHidden(ev)&&itemMatches(compileItem(it),ev)&&occursOn(ev,d.iso,d.dow))
-                             .sort((a,b)=>bTime(a.start).localeCompare(bTime(b.start)))
-                             .filter(ev=>{const k=(ev.title||"").toLowerCase();if(seenT.has(k))return false;seenT.add(k);return true;});
-        shown+=evs.length;
-        rows=evs.slice(0,5).map(ev=>evLine(ev,d.dow)).join("");
-        if(evs.length>5)rows+=`<div class="mev none">+ ${evs.length-5} more — search “${esc(it.label)}”</div>`;
-        if(!evs.length)rows=`<div class="mev none">Nothing found for this day${it.url?" — check their page":""}</div>`;
-      }else{
-        rows=`<div class="mev none">${it.tab?`Free every day — <a href="#" data-gotab="${esc(it.tab)}">see Always free</a>`
-              :it.url?"Not readable automatically — open the link":"No link yet"}</div>`;
-      }
-      h+=`<div class="mitem">${itemLabel(it)}<div>${rows}</div></div>`;
-    }
-  }
-  // her sources, grouped as she wrote them, with how many upcoming events the site has from each
-  h+=`<div class="daybar"><span class="d1">Your sources</span></div>`;
-  for(const g of MY.groups||[]){
-    h+=`<div class="mgrp"><div class="mgroup">${esc(g.name)}</div><div class="mlinks">`;
-    for(const it of g.items){
-      const n=it.match?DATA.events.filter(ev=>!isHidden(ev)&&itemMatches(compileItem(it),ev)).length:0;
-      const c=n?`<span class="c">${n} on the site</span>`:"";
-      h+=it.url?`<a class="mlink" href="${esc(it.url)}" target="_blank" rel="noopener" title="${esc(it.note||"")}">${esc(it.label)}${c}</a>`
-            :it.tab?`<a class="mlink" href="#" data-gotab="${esc(it.tab)}">${esc(it.label)}${c}</a>`
-            :`<span class="mlink${n?"":" plain"}">${esc(it.label)}${c}</span>`;
-    }
-    h+=`</div></div>`;
-  }
-  setCount(shown,"from your list this week");
-  return h;
+/* cards for her items on a weekday; in Today, skip items already on today's list */
+function listCardsFor(dow,todayISO){
+  if(state.kinds.size)return [];                  // a type filter is on: show only events
+  return weekItems(dow).filter(it=>{
+    if(state.q&&!(it.label+" "+(it.about||"")).toLowerCase().includes(state.q))return false;
+    if(coveredByRegular(it,dow))return false;
+    if(todayISO&&it.match&&dated(true).some(ev=>!isHidden(ev)&&bDate(ev.start)===todayISO&&itemMatches(compileItem(it),ev)))return false;
+    return true;
+  }).map(it=>listCard(it,dow,todayISO));
 }
+/* her events first, then by time */
+/* order: what your list names for that weekday, then other matches from your list, then the rest */
+function listRank(ev,dow){
+  if(!listMatch(ev))return 0;
+  const d=dow==null?new Date(ev.start).getDay():dow;
+  return weekItems(d).some(it=>it.match&&itemMatches(compileItem(it),ev))?2:1;
+}
+const mineFirst=(cmp,dow)=>(a,b)=>(listRank(b,dow)-listRank(a,dow))||cmp(a,b);
 
 /* ---------------- views ---------------- */
 function viewToday(){
-  const {ones,regs}=POOLS.today(state.showHidden), dow=new Date().getDay();
+  const {ones,regs}=POOLS.today(state.showHidden), dow=new Date().getDay(), iso=todayISO();
+  const mine=listCardsFor(dow,iso);
   setCount(ones.length+regs.length,"on today");
-  if(!ones.length&&!regs.length)return empty("Nothing today","Nothing matches. Try another type, or look at This week.");
+  if(!ones.length&&!regs.length&&!mine.length)return empty("Nothing today","Nothing matches. Try another type, or look at This week.");
   const byT=(a,b)=>a.start.localeCompare(b.start);
   let h="";
-  if(ones.length)h+=dayBlock("t-one","On today","one-off",ones.sort(byT),false);
-  if(regs.length)h+=dayBlock("t-reg",`Every ${DOWFULL[dow]}`,"the regulars",regs.sort(byT),true);
+  if(ones.length)h+=dayBlock("t-one","On today","one-off",ones.sort(mineFirst(byT,dow)),false);
+  if(regs.length||mine.length)h+=dayBlock("t-reg",`Every ${DOWFULL[dow]}`,"the regulars",regs.sort(mineFirst(byT,dow)),true,mine);
   return h;
 }
 function viewWeek(){
@@ -408,29 +428,37 @@ function viewWeek(){
   setCount(ones.length,"in the next 7 days");
   if(!ones.length)return empty("Nothing this week","No one-off events match.");
   const byDay={};for(const e of ones)(byDay[bDate(e.start)]||=[]).push(e);
-  let h=`<div class="lead">One-off events only — the weekly regulars are under <b>Every week</b>.</div>`;
+  let h=`<div class="lead">One-off events only — the weekly regulars are under <b>Every week</b>. ★ = from your list, shown first.</div>`;
   for(const day of Object.keys(byDay).sort()){
-    const list=byDay[day].sort((a,b)=>a.start.localeCompare(b.start));
+    const list=byDay[day].sort(mineFirst((a,b)=>a.start.localeCompare(b.start)));
     h+=dayBlock("w-"+day,DOWFULL[new Date(list[0].start).getDay()],bDateL(list[0].start),list,false);
   }
   return h;
 }
-function viewRegular(){
+function regularsByDow(){
   const {regs}=POOLS.regular(state.showHidden);
-  setCount(regs.length,"weekly regulars");
-  if(!regs.length)return empty("No regulars","Nothing matches.");
   const byDow={};for(const e of regs)for(const d of recurDows(e))(byDow[d]||=[]).push(e);
-  let h=`<div class="lead">Things that happen every week — the part you can plan around.</div>`;
-  for(let i=1;i<=7;i++){const d=i%7,list=byDow[d];if(!list||!list.length)continue;
-    list.sort((a,b)=>bTime(a.start).localeCompare(bTime(b.start)));
-    h+=dayBlock("r-"+d,`Every ${DOWFULL[d]}`,"",list,true);}
+  return {regs,byDow};
+}
+function viewRegular(){
+  const {regs,byDow}=regularsByDow();
+  let mineN=0;
+  let h=`<div class="lead">Things that happen every week — the part you can plan around. ★ = from your list, shown first.</div>`;
+  for(let i=1;i<=7;i++){const d=i%7,list=byDow[d]||[];const mine=listCardsFor(d,null);mineN+=mine.length;
+    if(!list.length&&!mine.length)continue;
+    list.sort(mineFirst((a,b)=>bTime(a.start).localeCompare(bTime(b.start)),d));
+    h+=dayBlock("r-"+d,`Every ${DOWFULL[d]}`,"",list,true,mine);}
+  setCount(regs.length,"weekly regulars"+(mineN?` + ${mineN} from your list`:""));
+  if(!regs.length&&!mineN)return empty("No regulars","Nothing matches.");
   return h;
 }
 function viewFree(){
   const rows=DATA.always_free.filter(p=>!state.q||[p.name,p.area,p.address,p.note].filter(Boolean).join(" ").toLowerCase().includes(state.q));
   setCount(rows.length,"places free any time");
   if(!rows.length)return empty("Nothing here","No places match.");
-  let h=`<div class="lead">Places you can walk into for nothing, no event needed.</div><div class="grid">`;
+  const museums=(MY&&MY.week||[]).flatMap(w=>w.items).find(it=>it.tab==="free"&&it.about);
+  let h=`<div class="lead">Places you can walk into for nothing, no event needed.`
+       +(museums?` <span class="star">★ Museums are on your list</span> — ${esc(museums.about)}`:"")+`</div><div class="grid">`;
   for(const p of rows){
     const os=openState(p.opening_hours);
     const badge=os?`<span class="badge ${os.cls}">${os.text}</span>`:"";
@@ -439,12 +467,43 @@ function viewFree(){
   }
   return h+"</div>";
 }
+/* her sources, as she grouped them, with what the site has from each — or what is missing */
+function mySourceRows(){
+  const out=[];
+  for(const g of (MY&&MY.groups)||[]){
+    const items=g.items.filter(it=>!state.q||(it.label+" "+(it.note||"")+" "+g.name).toLowerCase().includes(state.q));
+    if(items.length)out.push([g.name,items]);
+  }
+  return out;
+}
+function myRow(it){
+  const n=it.match?DATA.events.filter(ev=>!isHidden(ev)&&itemMatches(compileItem(it),ev)).length:0;
+  const name=it.url?`<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.label)}</a>`
+           :it.tab?`<a href="#" data-gotab="${esc(it.tab)}">${esc(it.label)}</a>`:`<span class="nm2">${esc(it.label)}</span>`;
+  const bits=[];
+  if(n)bits.push(`<span class="why ok">${n} event${n>1?"s":""} on the site</span>`);
+  if(it.note)bits.push(`<span class="why">${esc(it.note)}</span>`);
+  else if(it.tab==="free")bits.push(`<span class="why">Free every day — see Always free</span>`);
+  if(!it.url&&!it.tab&&!it.match)bits.push(`<span class="why miss">Link missing</span>`);
+  else if(!n&&!it.note&&it.match)bits.push(`<span class="why">Nothing on the site right now${it.url?" — open the link":""}</span>`);
+  return `<div class="mrow my">${name}<span class="mr">${bits.join("")}</span></div>`;
+}
+const myItemCount=()=>((MY&&MY.groups)||[]).reduce((n,g)=>n+g.items.length,0);
 function viewManual(){
   const rows=DATA.manual_check.filter(m=>!state.q||(m.name+" "+(m.group||"")).toLowerCase().includes(state.q));
-  setCount(rows.length,"sites to check by hand");
-  if(!rows.length)return empty("Nothing to check","No sites match.");
-  const byG={};for(const m of rows)(byG[m.group||"Other"]||=[]).push(m);
+  const mine=mySourceRows();
+  const nMine=mine.reduce((n,[,it])=>n+it.length,0);
+  setCount(rows.length+nMine,"sites to check by hand");
+  if(!rows.length&&!nMine)return empty("Nothing to check","No sites match.");
   let h=`<div class="lead">Places with good programmes that the site can't read automatically yet — open their page to see what's on.</div>`;
+  if(nMine){
+    h+=`<div class="sect"><span class="star">★</span> Your list</div>`;
+    for(const [g,items] of mine){
+      h+=`<div class="mgroup">${esc(g)}</div><div class="mlist">`+items.map(myRow).join("")+`</div>`;
+    }
+    if(rows.length)h+=`<div class="sect">More places to check</div>`;
+  }
+  const byG={};for(const m of rows)(byG[m.group||"Other"]||=[]).push(m);
   for(const g of Object.keys(byG).sort()){
     h+=`<div class="mgroup">${esc(g)}</div><div class="mlist">`;
     for(const m of byG[g])h+=`<div class="mrow"><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.name)}</a><span class="why">${esc(m.reason||"")}</span></div>`;
@@ -467,7 +526,7 @@ function hideBar(){
 const empty=(h,b)=>`<div class="state"><b>${esc(h)}</b>${esc(b)}</div>`;
 function setCount(n,kind){document.getElementById("count").textContent=`${n} ${kind}`;}
 function render(){
-  const v={mine:viewMine,today:viewToday,week:viewWeek,regular:viewRegular,free:viewFree,manual:viewManual}[state.tab];
+  const v={today:viewToday,week:viewWeek,regular:viewRegular,free:viewFree,manual:viewManual}[state.tab];
   document.getElementById("cats").style.display=POOLS[state.tab]?"flex":"none";
   document.getElementById("feed").innerHTML=v();
   hideBar();
@@ -513,7 +572,8 @@ document.addEventListener("click",e=>{
   const exp=e.target.closest("[data-exp]");
   if(exp){const k=exp.dataset.exp;state.expanded.has(k)?state.expanded.delete(k):state.expanded.add(k);render();return;}
   const b=e.target.closest(".cal");if(!b)return;
-  const ev=DATA.events.find(x=>String(x.id)===b.dataset.ics);if(!ev)return;
+  const ev0=DATA.events.find(x=>String(x.id)===b.dataset.ics);if(!ev0)return;
+  const ev=b.dataset.when?Object.assign({},ev0,{start:b.dataset.when,end:null}):ev0;
   const a=document.createElement("a");
   a.href=URL.createObjectURL(new Blob([icsFor(ev)],{type:"text/calendar;charset=utf-8"}));
   a.download=(ev.title||"event").replace(/[^\w-]+/g,"_").slice(0,48)+".ics";
@@ -546,12 +606,12 @@ document.getElementById("search").addEventListener("input",e=>{state.q=e.target.
 
 function tabCounts(){
   const inc=state.showHidden;
-  document.getElementById("nMine").textContent=mineCount();
   document.getElementById("nToday").textContent=poolSize("today",inc);
   document.getElementById("nWeek").textContent=poolSize("week",inc);
-  document.getElementById("nReg").textContent=poolSize("regular",inc);
+  let mineN=0;for(let d=0;d<7;d++)mineN+=listCardsFor(d,null).length;
+  document.getElementById("nReg").textContent=poolSize("regular",inc)+mineN;
   document.getElementById("nFree").textContent=DATA.always_free.length;
-  document.getElementById("nManual").textContent=DATA.manual_check.length;
+  document.getElementById("nManual").textContent=DATA.manual_check.length+myItemCount();
 }
 
 fetch("my_list.json?_="+Date.now()).then(r=>r.ok?r.json():null).then(j=>{MY=j;_listItems=null;}).catch(()=>{})

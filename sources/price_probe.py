@@ -42,16 +42,30 @@ def _save(cache: dict) -> None:
         pass
 
 
+# Machine-readable "this is free" that event platforms put in their page data
+# (Luma: "ticket_info":{"price":null,"is_free":true}; schema.org: isAccessibleForFree).
+_STRUCT_FREE = re.compile(r'"ticket_info"\s*:\s*\{[^{}]*"is_free"\s*:\s*true'
+                          r'|"isAccessibleForFree"\s*:\s*(?:true|"true")', re.I)
+_STRUCT_PAID = re.compile(r'"ticket_info"\s*:\s*\{[^{}]*"is_free"\s*:\s*false', re.I)
+FREE_MARK = "\u2063structured-free\u2063"
+PAID_MARK = "\u2063structured-paid\u2063"
+
+
 def _fetch_text(url: str) -> str:
     req = urllib.request.Request(
         url, headers={"User-Agent": "Mozilla/5.0 (compatible; berlin-events/1.0)"})
     html = urllib.request.urlopen(req, timeout=12, context=_CTX).read().decode("utf-8", "ignore")
+    mark = FREE_MARK if _STRUCT_FREE.search(html) else (PAID_MARK if _STRUCT_PAID.search(html) else "")
     html = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", html, flags=re.S | re.I)
-    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html))[:200000]
+    return mark + re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html))[:200000]
 
 
 def _classify(text: str):
     """Return {is_free, price, price_value} or None if the page gives no signal."""
+    if text.startswith(FREE_MARK):
+        return {"is_free": True, "price": None, "price_value": None}
+    if text.startswith(PAID_MARK):
+        return {"is_free": False, "price": None, "price_value": None}
     if looks_free(text):
         return {"is_free": True, "price": None, "price_value": None}
     if looks_donation(text):
@@ -67,7 +81,8 @@ def _classify(text: str):
 def resolve_prices(events: list, max_workers: int = 16) -> dict:
     """Fetch pages for is_free=None events and fill in what the page reveals.
     Mutates events in place; returns stats."""
-    targets = [e for e in events if e.is_free is None and (e.url or "").startswith("http")]
+    targets = [e for e in events if e.is_free is None and not getattr(e, "price_unlisted", False)
+               and (e.url or "").startswith("http")]
     stats = {"checked": len(targets), "freed": 0, "priced": 0, "ticketed": 0, "unresolved": 0}
     if not targets:
         return stats

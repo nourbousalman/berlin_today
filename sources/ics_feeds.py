@@ -106,7 +106,9 @@ def _parse(raw, name, default_cat, is_free, force_recurring, now, horizon) -> li
             venue=(str(comp.get("location")) if comp.get("location")
                    and not str(comp.get("location")).startswith("http") else None),
             source=f"cal:{name}",
-            url=str(comp.get("url")) if comp.get("url") else "",
+            # no URL field (Luma): use the event link the description gives
+            url=(str(comp.get("url")) if comp.get("url") else
+                 (_re_link.search(desc or "").group(0) if _re_link.search(desc or "") else "")),
             category=normalise_category(cat_hint, default_cat, title),
             is_free=free,
             price=price_disp,
@@ -120,6 +122,7 @@ def _parse(raw, name, default_cat, is_free, force_recurring, now, horizon) -> li
     return events
 
 
+_re_link = __import__("re").compile(r"https?://[^\s<>\"\\]+")
 _DOW = {"MO": "Mon", "TU": "Tue", "WE": "Wed", "TH": "Thu", "FR": "Fri", "SA": "Sat", "SU": "Sun"}
 _ORD = {1: "1st", 2: "2nd", 3: "3rd", 4: "4th", 5: "5th", -1: "last"}
 
