@@ -17,11 +17,16 @@ all-day, which is honest rather than invented.
 from __future__ import annotations
 
 import re
+from pathlib import Path
+import json
 import time
 import ssl
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
+
+BERLIN = ZoneInfo("Europe/Berlin")   # not a fixed +02:00: winter time is +01:00
 
 from .base import Event, normalise_category
 
@@ -95,7 +100,7 @@ def _day(day: datetime) -> list[Event]:
     url = f"{BASE}/kalender/tagestipps/{day.year}-{day.month}-{day.day}"
     html = _get(url)
     if not html:
-        return []
+        return None                       # refused or unreachable -> caller may reuse last good copy
     out, seen = [], set()
     for href, raw_title in _ITEM.findall(html):
         title = _clean(raw_title)
@@ -128,14 +133,46 @@ def _day(day: datetime) -> list[Event]:
     return out
 
 
+_DAYS = Path(__file__).resolve().parent.parent / "docs" / ".gib_days.json"
+
+
 def fetch(horizon_days: int = 60, max_workers: int = 3, max_days: int = 45) -> list[Event]:
-    today = datetime.now(timezone(timedelta(hours=2)))
+    """One page per day. If the site refuses a day page, reuse that day's events
+    from the last successful read, so a temporary refusal never empties the site."""
+    import dataclasses
+    today = datetime.now(BERLIN).replace(hour=0, minute=0, second=0, microsecond=0)
     days = [today + timedelta(days=i) for i in range(min(horizon_days, max_days))]
+    try:
+        last = json.loads(_DAYS.read_text("utf-8"))
+    except Exception:
+        last = {}
+    fields = {f.name for f in dataclasses.fields(Event)}
     events: list[Event] = []
+    fresh = reused = lost = 0
+    keep = {}
     with ThreadPoolExecutor(max_workers=max_workers) as ex:
-        for evs in ex.map(_day, days):
+        for day, evs in zip(days, ex.map(_day, days)):
+            key = day.strftime("%Y-%m-%d")
+            if evs is None:
+                if last.get(key):
+                    events.extend(Event(**{k: v for k, v in c.items() if k in fields}) for c in last[key])
+                    keep[key] = last[key]
+                    reused += 1
+                else:
+                    lost += 1
+                continue
+            fresh += 1
             events.extend(evs)
-    print(f"  ✓ gratis-in-berlin: {len(events)} free events across {len(days)} days")
+            keep[key] = [dataclasses.asdict(e) for e in evs]
+            time.sleep(0.3)
+    try:
+        _DAYS.write_text(json.dumps(keep, ensure_ascii=False), "utf-8")
+    except Exception:
+        pass
+    print(f"  ✓ gratis-in-berlin: {len(events)} free events across {len(days)} days "
+          f"({fresh} days read, {reused} refused but reused from last read, {lost} refused with no copy)")
+    if reused or lost:
+        print("  !! gratis-in-berlin refused some pages — fetching gently; it usually recovers")
     return events
 
 
@@ -231,11 +268,20 @@ def enrich(events: list, budget: int = 250, max_workers: int = 3) -> dict:
         except Exception:
             return u, None, False
 
+    refused = 0
     if todo:
         with ThreadPoolExecutor(max_workers=max_workers) as ex:
-            for u, res, ok in ex.map(work, todo):
-                if ok:
-                    cache[u] = res or {}
+            # in small chunks, so we can stop as soon as the site starts refusing
+            for i in range(0, len(todo), 9):
+                got = 0
+                for u, res, ok in ex.map(work, todo[i:i + 9]):
+                    if ok:
+                        cache[u] = res or {}
+                        got += 1
+                refused += 9 - got if got < 9 else 0
+                if got == 0:
+                    print("  !! gratis-in-berlin is refusing event pages — stopping early, will retry next run")
+                    break
     try:
         _DCACHE.parent.mkdir(parents=True, exist_ok=True)
         _DCACHE.write_text(_json.dumps(cache, ensure_ascii=False), "utf-8")
@@ -254,7 +300,7 @@ def enrich(events: list, budget: int = 250, max_workers: int = 3) -> dict:
         if d.get("venue") and not e.venue:
             e.venue = d["venue"]
         if "h" in d:
-            base = datetime.fromisoformat(e.start)
+            base = datetime.fromisoformat(e.start).astimezone(BERLIN)
             e.start = base.replace(hour=d["h"], minute=d.get("m", 0)).isoformat()
             if "eh" in d:
                 en = base.replace(hour=min(d["eh"], 23), minute=d.get("em", 0))
