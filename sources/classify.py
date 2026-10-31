@@ -209,7 +209,8 @@ def _clean(d: dict, original: str) -> dict | None:
 _R = lambda p: re.compile(p, re.I)
 _RULE_NOTICE = _R(r"stellenausschreibung|stellenangebot|\bbewerbung|fellowship|open call|"
                   r"ausschreibung|ab sofort|neue öffnungszeiten|geschlossen|employee for|"
-                  r"wir suchen|mitarbeiter\*?in")
+                  r"wir suchen|mitarbeiter\*?in|aktuelle veranstaltungen|current events|"
+                  r"^error \d{3}|server error")
 _RULE_AUD = [
     ("kids", _R(r"kinder|\bkids?\b|\bkita\b|famili|\bfamily|jugend|\bteens?\b|\bbaby|"
                 r"kleinkind|grundschul|schulklass|\d+\s*-?\s*bis\s*\d+\s*-?jährig|ab \d+ jahren|"
