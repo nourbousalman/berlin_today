@@ -309,7 +309,8 @@ def main() -> int:
             print(f"  ! descriptions skipped ({type(exc).__name__}: {exc})")
     cstats = classify.classify_events(events, cfg)
     before_notice = len(events)
-    events = [e for e in events if e.kind != "notice"]       # job ads, notices: not events
+    events = [e for e in events if e.kind != "notice"       # job ads, notices: not events
+              and not getattr(e, "out_of_season", False)]    # "May–October only" listings in winter
     notices = before_notice - len(events)
     events = translate_events(events, enabled=cfg.get("translate", True),
                               budget=int(cfg.get("translate_budget_per_run", 400)))

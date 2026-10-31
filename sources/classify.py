@@ -31,6 +31,7 @@ from __future__ import annotations
 import json
 import os
 import re
+from datetime import datetime
 import ssl
 import time
 import urllib.error
@@ -191,8 +192,14 @@ def _clean(d: dict, original: str) -> dict | None:
         return None
     if _FILLER.search(summary) or summary.rstrip(".").lower() == title.lower():
         summary = ""
-    return {"title": title[:90] or original, "kind": kind, "audience": aud,
-            "summary": summary[:180], "by": "ai"}
+    out = {"title": title[:90] or original, "kind": kind, "audience": aud,
+           "summary": summary[:180], "by": "ai"}
+    # optional: the listing's own text says it only runs in some months
+    # ("1.5.–31.10.", "Sommerangebot") — outside them it is not happening
+    months = d.get("months")
+    if isinstance(months, list) and months and all(isinstance(m, int) and 1 <= m <= 12 for m in months):
+        out["months"] = sorted(set(months))
+    return out
 
 
 # ------------------------------------------------------------------ rules
@@ -352,6 +359,12 @@ def classify_events(events: list, cfg: dict) -> dict:
             e.title = res["title"]
             e.translated = True
         e.category = e.kind                # one taxonomy everywhere
+        if res.get("months"):
+            try:
+                if datetime.fromisoformat(e.start).month not in res["months"]:
+                    e.out_of_season = True      # dropped by the aggregator
+            except ValueError:
+                pass
 
     backend = "Anthropic API" if os.environ.get("ANTHROPIC_API_KEY") else "daily Claude task"
     print(f"  · classify: labeller={backend} calls={stats['calls']} new={stats['new_ai']} "
