@@ -102,13 +102,26 @@ def translate_events(events: list, enabled: bool = True, max_workers: int = 2,
         return s, None
 
     new = failed = 0
-    if todo:
+    # Google refuses GitHub's runners outright. Probe a few strings first; if
+    # every one is refused, stop instead of spending many minutes on retries.
+    probe, rest = todo[:6], todo[6:]
+    for text in probe:
+        _, out = _tr(text)
+        if out is None:
+            failed += 1
+        else:
+            cache[text] = out
+            new += 1
+    if new == 0 and probe:
+        deferred += len(rest)
+        rest = []
+    if rest:
         with ThreadPoolExecutor(max_workers=max_workers) as ex:
-            for s, out in ex.map(_tr, todo):
+            for text, out in ex.map(_tr, rest):
                 if out is None:
                     failed += 1
                 else:
-                    cache[s] = out
+                    cache[text] = out
                     new += 1
 
     for ev, attr, val in slots:

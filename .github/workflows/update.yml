@@ -11,9 +11,9 @@ on:
       - sources/**
       - directory.json      # rebuild immediately when you change the directory
       - manual.ics          # …and when you edit your hand-added events
+      - docs/.classify_cache.json   # the daily labelling task pushed new labels -> rebuild
 permissions:
   contents: write
-  models: read              # lets the built-in token use GitHub Models (free AI) — needed for classify + site extraction
 concurrency:
   group: update-events      # never run two updates at once (they would fight over the push)
   cancel-in-progress: false
@@ -29,7 +29,8 @@ jobs:
         run: pip install -r requirements.txt
       - name: Collect events
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # optional: if this secret is ever added, labelling also runs inside each update
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python aggregate.py
       - name: Commit if changed
         run: |

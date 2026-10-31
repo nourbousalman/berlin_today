@@ -17,9 +17,9 @@ an adult one. This module answers four questions per event:
 call for applications); the aggregator drops those.
 
 How:
-  * Titles are sent in batches to a small language model — GitHub Models (free
-    inside GitHub Actions via GITHUB_TOKEN with `permissions: models: read`), or
-    the Anthropic API if ANTHROPIC_API_KEY is set.
+  * Titles are labelled by a language model: in the pipeline itself if an
+    ANTHROPIC_API_KEY secret is set, otherwise by a daily Claude task that reads
+    docs/needs_labels.json and merges its answers with tools/apply_labels.py.
   * Results are cached by title in docs/.classify_cache.json, so each title is
     classified once, ever. Steady-state runs only send the few new titles.
   * Anything the model has not covered yet (no backend, quota used up, error)
@@ -44,7 +44,6 @@ KINDS = ("exhibition", "music", "talk", "film", "theatre", "workshop", "tour",
          "party", "market", "festival", "sport", "meetup", "support", "notice")
 AUDIENCES = ("everyone", "kids", "seniors", "group", "women", "men")
 
-_GH_URL = "https://models.github.ai/inference/chat/completions"
 _ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 
 _PROMPT = """You label listings for a website of free events in Berlin. Readers are adults \
@@ -146,38 +145,22 @@ def _post(url: str, payload: dict, headers: dict, timeout: int = 120) -> dict:
 
 
 def _call(prompt: str, models: list[str]) -> tuple[str, str]:
-    """Return (response_text, model_used). Tries models in order on 'unknown model'."""
-    key = os.environ.get("ANTHROPIC_API_KEY")
-    if key:
-        model = os.environ.get("ANTHROPIC_MODEL", "claude-haiku-4-5-20251001")
-        data = _post(_ANTHROPIC_URL, {"model": model, "max_tokens": 4000,
-                                      "messages": [{"role": "user", "content": prompt}]},
-                     {"x-api-key": key, "anthropic-version": "2023-06-01"})
-        return "".join(b.get("text", "") for b in data.get("content", [])), model
+    """Return (response_text, model_used) from the Anthropic API.
 
-    token = os.environ.get("GITHUB_TOKEN")
-    if not token:
-        raise RuntimeError("no backend: GITHUB_TOKEN not set (workflow needs "
-                           "`permissions: models: read` and env GITHUB_TOKEN)")
-    last = None
-    for model in models:
-        try:
-            data = _post(_GH_URL, {"model": model, "temperature": 0, "max_tokens": 4000,
-                                   "messages": [{"role": "user", "content": prompt}]},
-                         {"Authorization": f"Bearer {token}",
-                          "Accept": "application/vnd.github+json"})
-            return (data.get("choices") or [{}])[0].get("message", {}).get("content", ""), model
-        except QuotaExhausted:
-            last = "quota"
-            continue                       # each model has its own daily quota
-        except RuntimeError as e:
-            last = str(e)
-            if re.search(r"HTTP (400|404)", last) and "model" in last.lower():
-                continue                   # model id not available -> try next
-            raise
-    if last == "quota":
-        raise QuotaExhausted("daily quota used up on all configured models")
-    raise RuntimeError(last or "no model answered")
+    GitHub Models (the free inference that used to be available inside GitHub
+    Actions) was retired on 30 July 2026, so the only in-pipeline backend is an
+    Anthropic API key. Without one, titles are labelled by the daily Claude task
+    instead (see tools/LABELLING.md), and keyword guesses fill the gap.
+    """
+    key = os.environ.get("ANTHROPIC_API_KEY")
+    if not key:
+        raise RuntimeError("no in-pipeline AI backend (ANTHROPIC_API_KEY not set); "
+                           "new titles are exported to docs/needs_labels.json for the daily task")
+    model = os.environ.get("ANTHROPIC_MODEL", "claude-haiku-5-5")
+    data = _post(_ANTHROPIC_URL, {"model": model, "max_tokens": 4000,
+                                  "messages": [{"role": "user", "content": prompt}]},
+                 {"x-api-key": key, "anthropic-version": "2023-06-01"})
+    return "".join(b.get("text", "") for b in data.get("content", [])), model
 
 
 def _parse(raw: str) -> list[dict]:
@@ -282,7 +265,7 @@ def classify_events(events: list, cfg: dict) -> dict:
     batch_size = int(cfg.get("classify_batch", 15))
     budget = int(cfg.get("classify_calls_per_run", 20))
     models = cfg.get("classify_models") or ["openai/gpt-4.1-mini", "openai/gpt-4o-mini"]
-    enabled = cfg.get("classify", True)
+    enabled = cfg.get("classify", True) and bool(os.environ.get("ANTHROPIC_API_KEY"))
 
     # A title classified without its description is redone once a description
     # exists — that is what turns "Adenauer on the Cloud" into an explanation.
@@ -296,7 +279,8 @@ def classify_events(events: list, cfg: dict) -> dict:
             seen.add(k)
             todo.append((k, (e.venue or "")[:60], getattr(e, "site_category", None), about[:500]))
 
-    stats = {"cached": 0, "new_ai": 0, "rules": 0, "calls": 0, "model": None, "error": None}
+    stats = {"cached": 0, "new_ai": 0, "rules": 0, "calls": 0, "model": None, "error": None,
+             "pending": 0}
     if enabled and todo:
         for start in range(0, len(todo), batch_size):
             if stats["calls"] >= budget:
@@ -331,11 +315,31 @@ def classify_events(events: list, cfg: dict) -> dict:
             time.sleep(0.5)
         _save(cache)
 
+    # Everything the model has not labelled yet (or labelled from the title alone
+    # while a description now exists) goes to docs/needs_labels.json, with the
+    # event's own page text, for the daily labelling task.
+    pending = {}
+    for e in events:
+        k = _key(e.title)
+        about = (getattr(e, "detail_text", None) or "").strip()
+        hit = cache.get(k)
+        if k and (hit is None or (about and not hit.get("ctx"))) and k not in pending:
+            pending[k] = {"key": k, "venue": (e.venue or "")[:80],
+                          "site_category": getattr(e, "site_category", None),
+                          "about": about[:700], "date": (e.start or "")[:10]}
+    try:
+        (_CACHE.parent / "needs_labels.json").write_text(
+            json.dumps(sorted(pending.values(), key=lambda x: x["date"]),
+                       ensure_ascii=False, indent=0), "utf-8")
+    except Exception:
+        pass
+    stats["pending"] = len(pending)
+
     for e in events:
         k = _key(e.title)
         res = cache.get(k)
         if res:
-            stats["cached"] += 1 if res.get("by") == "ai" else 0
+            stats["cached"] += 1 if res.get("by") != "rules" else 0
         else:
             res = rules(e.title, getattr(e, "category", None))
             stats["rules"] += 1
@@ -349,10 +353,10 @@ def classify_events(events: list, cfg: dict) -> dict:
             e.translated = True
         e.category = e.kind                # one taxonomy everywhere
 
-    backend = ("Anthropic" if os.environ.get("ANTHROPIC_API_KEY")
-               else "GitHub Models" if os.environ.get("GITHUB_TOKEN") else "NONE")
-    print(f"  · classify: backend={backend} model={stats['model']} calls={stats['calls']} "
-          f"new={stats['new_ai']} from-cache={stats['cached']} keyword-guess={stats['rules']}")
+    backend = "Anthropic API" if os.environ.get("ANTHROPIC_API_KEY") else "daily Claude task"
+    print(f"  · classify: labeller={backend} calls={stats['calls']} new={stats['new_ai']} "
+          f"labelled={stats['cached']} keyword-guess={stats['rules']} "
+          f"waiting-for-labels={stats['pending']} (docs/needs_labels.json)")
     if stats["error"]:
         print(f"  !! classify stopped early: {stats['error'][:240]}")
     return stats

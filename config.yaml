@@ -108,12 +108,12 @@ verify_budget_per_run: 250   # new page fetches per run; cached URLs are free
 # --- gratis-in-berlin.de: curated day-by-day index of FREE Berlin events ---
 gratis_in_berlin: true
 gib_days: 45          # how many days ahead to pull (one page per day)
-gib_detail_budget: 250  # detail pages fetched per run for real times; cached forever
+gib_detail_budget: 600  # event pages read per run (time, venue, description); cached
 
-# --- classification: English title, what it is, who it's for, one plain line ---
-# Uses GitHub Models (free in Actions). Each title is classified once and cached.
+# --- classification: English title, what it is, who it's for, an explanation ---
+# GitHub Models was retired on 30 July 2026. Labels now come from the daily Claude
+# task (tools/LABELLING.md) or, if an ANTHROPIC_API_KEY secret is set, from here.
 classify: true
 classify_calls_per_run: 30      # 15 listings per call -> up to 450 per run
 classify_batch: 15             # listings per call (each now carries its description)
-classify_models: ["openai/gpt-4.1-mini", "openai/gpt-4o-mini"]   # each has its own daily quota
 translate_budget_per_run: 400   # fallback translation for anything not yet classified

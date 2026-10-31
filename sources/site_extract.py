@@ -16,10 +16,9 @@ Cost control:
   • `llm_budget_per_run` caps model calls per run. Sites are processed
     least-recently-checked first, so the whole directory is covered in rotation.
 
-Inference backend (auto-detected, in order):
-  • GITHUB_TOKEN  → GitHub Models, free inside GitHub Actions. Requires
-    `permissions: models: read` in the workflow. No API key to manage.
-  • ANTHROPIC_API_KEY → used instead if present (no per-day cap, larger context).
+Inference backend: only ANTHROPIC_API_KEY. GitHub Models, the free option that
+used to run inside GitHub Actions, was retired on 30 July 2026, so without a key
+the LLM tier is skipped and only the free schema.org tier runs.
 """
 from __future__ import annotations
 
@@ -315,7 +314,7 @@ def fetch(directory: list[dict], cfg: dict, group_category, group_free) -> list[
     cache = _load_cache()
     budget = int(cfg.get("llm_budget_per_run", 40))
     model = cfg.get("llm_model", "openai/gpt-4o-mini")
-    have_backend = bool(os.environ.get("GITHUB_TOKEN") or os.environ.get("ANTHROPIC_API_KEY"))
+    have_backend = bool(os.environ.get("ANTHROPIC_API_KEY"))   # GitHub Models retired 30 Jul 2026
 
     # least-recently-checked first, so the directory is covered in rotation
     sites.sort(key=lambda e: cache.get(str(e.get("id", e["name"])), {}).get("checked", ""))
