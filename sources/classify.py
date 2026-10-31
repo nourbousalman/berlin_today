@@ -125,7 +125,12 @@ def _post(url: str, payload: dict, headers: dict, timeout: int = 120) -> dict:
                                  headers={"Content-Type": "application/json", **headers})
     try:
         with urllib.request.urlopen(req, timeout=timeout, context=_CTX) as r:
-            return json.loads(r.read().decode("utf-8", "ignore"))
+            body = r.read().decode("utf-8", "ignore")
+        try:
+            return json.loads(body)
+        except ValueError:
+            raise RuntimeError(f"service answered with non-JSON (HTTP {r.status}): "
+                               f"{body[:160]!r}")
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", "ignore")[:300]
         if e.code == 429:
