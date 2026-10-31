@@ -36,7 +36,7 @@ except Exception:
 from sources.base import Event, dedupe, berlin_status, berlin_district
 from sources import (resident_advisor, ics_feeds, rss_feeds, html_scrapers,
                      directory_feed, price_probe, site_extract, verify,
-                     gratis_in_berlin, classify, her_sites)
+                     gratis_in_berlin, classify, her_sites, describe)
 from sources.translate import translate_events
 
 ROOT = Path(__file__).parent
@@ -300,6 +300,13 @@ def main() -> int:
     # Make every surviving event understandable: English title, what kind of
     # thing it is, who it is for, one plain line. Runs last so the model only
     # ever sees events that will actually be published.
+    # Events that arrived with no description get their own page's summary, so
+    # the labeller can say what they are ("Adenauer on the Cloud" -> cartoons).
+    if cfg.get("describe", True):
+        try:
+            describe.fill(events, budget=int(cfg.get("describe_budget_per_run", 80)))
+        except Exception as exc:
+            print(f"  ! descriptions skipped ({type(exc).__name__}: {exc})")
     cstats = classify.classify_events(events, cfg)
     before_notice = len(events)
     events = [e for e in events if e.kind != "notice"]       # job ads, notices: not events

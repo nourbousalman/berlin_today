@@ -98,6 +98,8 @@ html_scrapers:
 
 # --- extraction from feedless sites (the old "manual check" list) ---
 site_extract: true          # discover each site's programme page and extract events
+describe: true              # read the page of events that came without a description
+describe_budget_per_run: 80 # pages per run; results cached in docs/.desc_cache.json
 her_sites: true             # knoise film nights + Philharmonie lunch concerts (sources/her_sites.py)
 llm_budget_per_run: 15      # 4 runs/day x 15 = 60; leaves room for the classifier below
 llm_model: openai/gpt-4o-mini
