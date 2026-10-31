@@ -171,7 +171,37 @@ def _detail(url: str):
         r"\s*\d{1,3}[a-z]?(?:[^\w]{0,4}1[0-4]\d{3})?)", text[:4000])
     if addr:
         out["venue"] = addr.group(1).strip()[:90]
+    # The event description: everything after "Kategorie: <category>" up to the
+    # author line. This is what lets a reader understand an insider title like
+    # "Adenauer auf der Wolke" (an exhibition of 47 cartoonists' drawings).
+    k = text.find("Kategorie:")
+    if k != -1:
+        rest = text[k + len("Kategorie:"):].strip()
+        cat = next((c for c in _GIB_CATS if rest.startswith(c)), None)
+        body = rest[len(cat):].strip() if cat else rest
+        ends = [i for i in (body.find(m) for m in _DESC_END) if i != -1]
+        out["cat"] = cat
+        out["desc"] = body[:min(ends) if ends else len(body)].strip()[:900]
+    # "Einschränkung" is the site's field for conditions: opening hours,
+    # registration required, age limits.
+    m = re.search(r"Einschränkung:\s*(.{3,200}?)(?=\s+(?:Montag|Dienstag|Mittwoch|Donnerstag|"
+                  r"Freitag|Samstag|Sonntag|Jeden|Anfangszeit|Kategorie)\b)", text)
+    if m:
+        out["note"] = m.group(1).strip()
+    out["v"] = 2
     return out
+
+
+# gratis-in-berlin's own categories, longest first so "Kinder & Jugendliche"
+# wins over a shorter prefix.
+_GIB_CATS = sorted(["Special Sightseeing", "Tolle Touren", "Festivals", "Aussichtspunkte",
+    "Feuerwerk", "Kino", "Museen", "Kunst", "Lesungen & Hörspiele", "Public Viewing",
+    "Comedy & Theater", "Kleinkunst", "International", "Musik", "Wissen live",
+    "Leute treffen", "Kinder & Jugendliche", "Wellness", "Schatztruhe", "Strandbars",
+    "Outdoor", "Spiele", "Sport", "Partys", "Tanzkurse", "'Mehr' als gratis, aber genial"],
+    key=len, reverse=True)
+_DESC_END = (" von: ", "Mehr Infos im Internet", "Kommentar schreiben",
+             "Weitere interessante Angebote")
 
 
 def enrich(events: list, budget: int = 250, max_workers: int = 12) -> dict:
@@ -183,7 +213,7 @@ def enrich(events: list, budget: int = 250, max_workers: int = 12) -> dict:
     targets = [e for e in events if e.source.startswith("gib:") and (e.url or "").startswith("http")]
     todo, seen = [], set()
     for e in targets:
-        if e.url in cache or e.url in seen:
+        if (e.url in cache and cache[e.url].get("v") == 2) or e.url in seen:
             continue
         if len(todo) >= budget:
             break
@@ -212,6 +242,10 @@ def enrich(events: list, budget: int = 250, max_workers: int = 12) -> dict:
         d = cache.get(e.url)
         if not d:
             continue
+        if d.get("desc") or d.get("note"):
+            e.detail_text = " ".join(x for x in (d.get("note"), d.get("desc")) if x)
+        if d.get("cat"):
+            e.site_category = d["cat"]
         if d.get("venue") and not e.venue:
             e.venue = d["venue"]
         if "h" in d:

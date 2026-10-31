@@ -77,6 +77,7 @@
   /* one plain line on what actually happens — the answer to "what is this?" */
   .ev .summary{font-size:13px;color:var(--muted);font-weight:600;line-height:1.4;margin-top:-3px}
   .rows dd.who{color:#9A5B12;font-weight:700}
+  .ev .summary.nodesc{font-style:italic;font-weight:500;opacity:.75}
   /* every value carries its label, so no string is a mystery */
   .rows{display:grid;grid-template-columns:46px 1fr;gap:3px 10px;align-items:baseline;margin:0}
   .rows dt{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
@@ -226,7 +227,8 @@ function card(ev,opts){
                     :`<span${tip}>${esc(ev.title)}</span>`;
   return `<article class="ev">
     <div class="title">${title}</div>
-    ${ev.summary?`<div class="summary">${esc(ev.summary)}</div>`:""}
+    ${ev.summary?`<div class="summary">${esc(ev.summary)}</div>`
+                :`<div class="summary nodesc">No description available — open the link</div>`}
     <dl class="rows">
       <dt>When</dt><dd>${when}</dd>
       ${repeats}

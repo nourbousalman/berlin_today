@@ -97,7 +97,7 @@ def _parse(raw, name, default_cat, is_free, force_recurring, now, horizon) -> li
         end_dt = _to_dt(comp.get("dtend"))
         cat_hint = _first_category(comp.get("categories"))
         free, price_disp, price_val = resolve_free_price(f"{title} {desc} {cat_hint}", is_free)
-        events.append(Event(
+        ev = (Event(
             date_source="ical",
             title=title,
             start=to_iso(display_dt),
@@ -113,6 +113,8 @@ def _parse(raw, name, default_cat, is_free, force_recurring, now, horizon) -> li
             recurring=recurring,
             recurrence=recurrence,
         ))
+        ev.detail_text = _clip(desc, 900) if desc else None
+        events.append(ev)
     return events
 
 

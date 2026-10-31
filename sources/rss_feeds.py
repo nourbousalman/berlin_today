@@ -12,6 +12,7 @@ drops itself.
 from __future__ import annotations
 from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor
+import re
 import time
 import feedparser
 
@@ -66,7 +67,7 @@ def _map(entry, name, default_cat, is_free, force_recurring) -> Event | None:
     recurring = force_recurring  # RSS: no text-based recurrence (blog posts falsely match)
     free, price_disp, price_val = resolve_free_price(f"{title} {desc} {tags}", is_free)
 
-    return Event(
+    ev = Event(
         date_source="publish",   # RSS gives a publish time, NOT an event time
         title=title,
         start=start,
@@ -80,6 +81,8 @@ def _map(entry, name, default_cat, is_free, force_recurring) -> Event | None:
         recurring=recurring,
         recurrence="Recurring" if recurring else None,
     )
+    ev.detail_text = _clip(re.sub(r'<[^>]+>', ' ', desc), 900) if desc else None
+    return ev
 
 
 def _clip(text, limit=280):

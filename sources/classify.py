@@ -58,9 +58,13 @@ For EACH numbered listing return one JSON object with these keys:
   "kind":     exactly one of: exhibition, music, talk, film, theatre, workshop, tour,
               party, market, festival, sport, meetup, support, notice
   "audience": exactly one of: everyone, kids, seniors, group, women, men
-  "summary":  one plain English sentence, at most 90 characters, saying what actually
-              happens. Use ONLY information in the listing. Do not invent details,
-              do not praise, do not guess at things the listing does not say.
+  "summary":  one or two short plain-English sentences, at most 160 characters, that
+              tell a reader what this actually is and what happens there — the thing
+              they would need to decide whether to go. When a description is given,
+              base the summary on it (who is behind it, what you see or do). If it says
+              registration is required, end with "Registration required."
+              Use ONLY information in the listing. Do not invent details, do not praise.
+              If the listing gives nothing beyond its title, return "" for summary.
 
 Meaning of "kind":
   exhibition = art or museum exhibition, open studios, installation
@@ -88,6 +92,9 @@ Meaning of "audience":
              (e.g. refugees, new parents, carers, a profession, members only)
   women    = women only (including women/FLINTA-only events)
   men      = men only
+
+Each listing may include "about:" — the event's own description, often in German.
+Translate and condense it; never copy it at length.
 
 Return ONLY a JSON array, nothing else.
 
@@ -202,7 +209,7 @@ def _clean(d: dict, original: str) -> dict | None:
     if _FILLER.search(summary) or summary.rstrip(".").lower() == title.lower():
         summary = ""
     return {"title": title[:90] or original, "kind": kind, "audience": aud,
-            "summary": summary[:140], "by": "ai"}
+            "summary": summary[:180], "by": "ai"}
 
 
 # ------------------------------------------------------------------ rules
@@ -272,17 +279,22 @@ def rules(title: str, old_category: str | None = None) -> dict:
 def classify_events(events: list, cfg: dict) -> dict:
     """Annotate events in place. Returns stats for the run log."""
     cache = _load()
-    batch_size = int(cfg.get("classify_batch", 30))
+    batch_size = int(cfg.get("classify_batch", 15))
     budget = int(cfg.get("classify_calls_per_run", 20))
     models = cfg.get("classify_models") or ["openai/gpt-4.1-mini", "openai/gpt-4o-mini"]
     enabled = cfg.get("classify", True)
 
+    # A title classified without its description is redone once a description
+    # exists — that is what turns "Adenauer on the Cloud" into an explanation.
     todo, seen = [], set()
     for e in events:
         k = _key(e.title)
-        if k and k not in cache and k not in seen:
+        about = (getattr(e, "detail_text", None) or "").strip()
+        hit = cache.get(k)
+        stale = hit is not None and about and not hit.get("ctx")
+        if k and (hit is None or stale) and k not in seen:
             seen.add(k)
-            todo.append((k, (e.venue or "")[:60]))
+            todo.append((k, (e.venue or "")[:60], getattr(e, "site_category", None), about[:500]))
 
     stats = {"cached": 0, "new_ai": 0, "rules": 0, "calls": 0, "model": None, "error": None}
     if enabled and todo:
@@ -290,8 +302,10 @@ def classify_events(events: list, cfg: dict) -> dict:
             if stats["calls"] >= budget:
                 break
             chunk = todo[start:start + batch_size]
-            listing = "\n".join(f"{i + 1}. {t}" + (f"  | venue: {v}" if v else "")
-                                for i, (t, v) in enumerate(chunk))
+            listing = "\n".join(
+                f"{i + 1}. {t}" + (f"  | venue: {v}" if v else "")
+                + (f"  | site category: {c}" if c else "") + (f"\n   about: {a}" if a else "")
+                for i, (t, v, c, a) in enumerate(chunk))
             try:
                 raw, model = _call(_PROMPT.format(listings=listing), models)
                 stats["calls"] += 1
@@ -311,6 +325,7 @@ def classify_events(events: list, cfg: dict) -> dict:
                     title = chunk[idx][0]
                     clean = _clean(d, title)
                     if clean:
+                        clean["ctx"] = bool(chunk[idx][3])
                         cache[title] = clean
                         stats["new_ai"] += 1
             time.sleep(0.5)

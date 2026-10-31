@@ -113,7 +113,7 @@ gib_detail_budget: 250  # detail pages fetched per run for real times; cached fo
 # --- classification: English title, what it is, who it's for, one plain line ---
 # Uses GitHub Models (free in Actions). Each title is classified once and cached.
 classify: true
-classify_calls_per_run: 20      # 30 titles per call -> up to 600 new titles per run
-classify_batch: 30
+classify_calls_per_run: 30      # 15 listings per call -> up to 450 per run
+classify_batch: 15             # listings per call (each now carries its description)
 classify_models: ["openai/gpt-4.1-mini", "openai/gpt-4o-mini"]   # each has its own daily quota
 translate_budget_per_run: 400   # fallback translation for anything not yet classified
