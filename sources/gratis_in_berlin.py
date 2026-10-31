@@ -312,6 +312,9 @@ def _detail(url: str):
         out["h"], out["m"] = int(st.group(1)), int(st.group(2))
         rng = _TIME_RANGE.search(head)
         if rng and int(rng.group(1)) == out["h"]:
+            # the page's own hours ("09:00-17:00 Uhr") win over an odd start field
+            # ("Anfangszeit: 09:17" on a 9-to-17 exhibition)
+            out["m"] = int(rng.group(2) or 0)
             out["eh"], out["em"] = int(rng.group(3)), int(rng.group(4) or 0)
     else:
         hh, mm, end = _times(head)
