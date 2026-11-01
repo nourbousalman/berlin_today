@@ -5761,11 +5761,12 @@
 "ctx": true
 },
 "Expats in Berlin English Comedy at Art City People": {
-"title": "Expats in Berlin English Comedy at Art City People",
+"title": "Expats in Berlin: English Comedy at Art City People",
 "kind": "theatre",
 "audience": "everyone",
-"summary": "English-language comedy for expats in Berlin at Art City People.",
-"by": "ai"
+"summary": "English stand-up show with Patrick Moore where comics from abroad share stories of (not) adapting to Berlin. Pre-show mixer.",
+"by": "claude-task",
+"ctx": true
 },
 "Präventiv gegen Betrug": {
 "title": "Fraud prevention: police information stand",
@@ -10193,6 +10194,318 @@
 "kind": "notice",
 "audience": "kids",
 "summary": "Galerie Wedding education project for school classes, linked to Dafna Maimon's exhibition “Orient Express”.",
+"by": "claude-task",
+"ctx": true
+},
+"Somatic Experience | Embodied Listening with Plants": {
+"title": "Somatic Experience: Embodied Listening with Plants",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Beyond Death presents eco-somatic practices for listening to plants with the whole body and all the senses.",
+"by": "claude-task",
+"ctx": true
+},
+"Film im K(P) '2 automnes 3 hivers' Fr 2013": {
+"title": "Film at K: 2 Automnes 3 Hivers (France, 2013)",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of the film 2 Automnes 3 Hivers at K, a venue listed on knoise.org.",
+"by": "claude-task",
+"ctx": true
+},
+"Film im K(P) ' Stranger than Fiction' USA 2006": {
+"title": "Film at K: Stranger than Fiction (USA, 2006)",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of the film Stranger than Fiction at K, a venue listed on knoise.org.",
+"by": "claude-task",
+"ctx": true
+},
+"Sunday Silent Reading @ Bode Museum": {
+"title": "Sunday Silent Reading at Bode-Museum",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Silent Reading Club: a cosy gathering of book lovers who read together in company. Bring any book.",
+"by": "claude-task",
+"ctx": true
+},
+"Knitting Circle The Wobbley Line": {
+"title": "Knitting Circle The Wobbley Line",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Monthly knitting circle at studio nagelneu for all abilities; bring your knits and pattern questions. Tea and biscuits, ~€5 suggested donation.",
+"by": "claude-task",
+"ctx": true
+},
+"Film im K(P) ' The Conversation' USA1974": {
+"title": "Film at K: The Conversation (USA, 1974)",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of the film The Conversation at K, a venue listed on knoise.org.",
+"by": "claude-task",
+"ctx": true
+},
+"Film im K(P) ' The Parallax View' USA 1974": {
+"title": "Film at K: The Parallax View (USA, 1974)",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of the film The Parallax View at K, a venue listed on knoise.org.",
+"by": "claude-task",
+"ctx": true
+},
+"Film im K(P) 'Loro' It 2018": {
+"title": "Film at K: Loro (Italy, 2018)",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of the film Loro at K, a venue listed on knoise.org.",
+"by": "claude-task",
+"ctx": true
+},
+"Film im K(P)'Election' USA 1999": {
+"title": "Film at K: Election (USA, 1999)",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of the film Election at K, a venue listed on knoise.org.",
+"by": "claude-task",
+"ctx": true
+},
+"City Walk Berlin | 3.11. | & optional Blind Walk experience": {
+"title": "City Walk Berlin with Optional Blind Walk Experience",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Berlin city walk by urbanjoy with an optional blind walk; you may only join after messaging the organisers first. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Monthly Meet Up": {
+"title": "Monthly Meetup at St. Oberholz",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Monthly meetup every first Tuesday at St. Oberholz to pause, connect and exchange ideas.",
+"by": "claude-task",
+"ctx": true
+},
+"Thursday Game Night in Friedrichshain": {
+"title": "Thursday Game Night in Friedrichshain",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Berlin Board Gamers' weekly game night at RuDi's with around 50 games, from core to party games; you can bring your own.",
+"by": "claude-task",
+"ctx": true
+},
+"Marta Dzido: Die Frauen der Solidarność": {
+"title": "Marta Dzido: The Women of Solidarność",
+"kind": "film",
+"audience": "everyone",
+"summary": "Polish documentary by Marta Dzido and Piotr Śliwowski on the little-told story of the women in the Solidarność movement. Subtitled.",
+"by": "claude-task",
+"ctx": true
+},
+"Bridge Markland: Krug in the Box": {
+"title": "Bridge Markland: Krug in the Box",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Bridge Markland turns Kleist's The Broken Jug into a pop-music courtroom show with hand puppets: one woman, 7 roles, 9 puppets. Ages 12+.",
+"by": "claude-task",
+"ctx": true
+},
+"Marta Dzido: Frauen der ersten Stunde": {
+"title": "Marta Dzido: Women of the First Hour",
+"kind": "film",
+"audience": "everyone",
+"summary": "Docudrama by Marta Dzido and Piotr Śliwowski about the Polish women who fought for the vote and gender equality. Subtitled.",
+"by": "claude-task",
+"ctx": true
+},
+"Film im K(P) 'Shrek' USA 2001": {
+"title": "Film at K: Shrek (USA, 2001)",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of the film Shrek at K, a venue listed on knoise.org.",
+"by": "claude-task",
+"ctx": true
+},
+"Einar Schleef – Ich habe kein Deutschland gefunden": {
+"title": "Einar Schleef – I Found No Germany",
+"kind": "film",
+"audience": "everyone",
+"summary": "Documentary by Sandra Prechtel on Einar Schleef, theatre maker, writer, photographer and painter who chronicled German history.",
+"by": "claude-task",
+"ctx": true
+},
+"Holofiction": {
+"title": "Holofiction",
+"kind": "film",
+"audience": "everyone",
+"summary": "Michal Kosakowski's documentary, cut from over 3,000 film clips, shows how cinema has staged the Holocaust. No dialogue.",
+"by": "claude-task",
+"ctx": true
+},
+"Lachyoga in Lichtenberg": {
+"title": "Laughter Yoga in Lichtenberg",
+"kind": "sport",
+"audience": "everyone",
+"summary": "Free laughter yoga every Saturday morning by the pond in Stadtpark Lichtenberg: laugh, move and breathe together. No experience needed.",
+"by": "claude-task",
+"ctx": true
+},
+"Community Kochen mit Queer Home*": {
+"title": "Community Cooking with Queer Home*",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Cooking get-together with Queer Home*, an advice centre for queer homeless people, at studio nagelneu.",
+"by": "claude-task",
+"ctx": true
+},
+"Film im K(P)'Garagenblues'": {
+"title": "Film at K: Garagenblues",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of Garagenkinoblues, mitgefangen, mitgehangen at K, a venue listed on knoise.org.",
+"by": "claude-task",
+"ctx": true
+},
+"COOK, EAT UND DEUTSCH SPRECHEN": {
+"title": "Cook, Eat and Speak German",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Practise speaking German at any level while cooking a meal from one participant's culture and sharing stories about the food.",
+"by": "claude-task",
+"ctx": true
+},
+"Talk & Play #58": {
+"title": "Talk & Play #58",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Event at the University of Europe for Applied Sciences; you can also apply to present in the showcase. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Law Shifters Workshops": {
+"title": "Law Shifters Workshops",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Law Shifters workshops on writing laws at Galerie Wedding. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"German for Newcomers | Law Shifters": {
+"title": "German for Newcomers | Law Shifters",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Exhibition, film and book presentation by Stine Marie Jacobsen at Galerie Wedding, part of POW (Post-Otherness-Wedding).",
+"by": "claude-task",
+"ctx": true
+},
+"Film im K(P) ' Motorcycle Diaries'": {
+"title": "Film at K: The Motorcycle Diaries",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of the film Motorcycle Diaries at K, a venue listed on knoise.org.",
+"by": "claude-task",
+"ctx": true
+},
+"Tour | Haunted by the ghosts of progress": {
+"title": "Tour | Haunted by the Ghosts of Progress",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Beyond Death presents a tour of 'lost futures' asking whether our ideas of prosperity and progress led to today's crises.",
+"by": "claude-task",
+"ctx": true
+},
+"Film im K(P) 'Close-Knit'": {
+"title": "Film at K: Close-Knit",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of the film Close-Knit at K, a venue listed on knoise.org.",
+"by": "claude-task",
+"ctx": true
+},
+"Film im K(P) 'Straw Dogs'": {
+"title": "Film at K: Straw Dogs",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of the film Straw Dogs at K, a venue listed on knoise.org.",
+"by": "claude-task",
+"ctx": true
+},
+"Film im K(P) 'Stage Fright'": {
+"title": "Film at K: Stage Fright",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of the film Stage Fright at K, a venue listed on knoise.org.",
+"by": "claude-task",
+"ctx": true
+},
+"Feministischer Literaturclub": {
+"title": "Feminist Literature Club",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Monthly group at studio nagelneu to discuss feminist texts and perspectives. No prior knowledge needed.",
+"by": "claude-task",
+"ctx": true
+},
+"Film im K(P) 'Jimmy and Stiggs'": {
+"title": "Film at K: Jimmy and Stiggs",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of the film Jimmy and Stiggs at K, a venue listed on knoise.org.",
+"by": "claude-task",
+"ctx": true
+},
+"Workshop | Traurig wegen Bäumen. Trauer und Widerstand um ökologische Verluste": {
+"title": "Workshop | Sad About Trees: Grief and Resistance over Ecological Loss",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Beyond Death's three-hour workshop uses artistic methods to explore grief and comfort in the face of ecological crises. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Film im K(P) 'Shepherds and Butchers'": {
+"title": "Film at K: Shepherds and Butchers",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of the film Shepherds and Butchers at K, a venue listed on knoise.org.",
+"by": "claude-task",
+"ctx": true
+},
+"Datengarten 25": {
+"title": "Datengarten 25",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Event by the Berlin branch of the Chaos Computer Club (CCC).",
+"by": "claude-task",
+"ctx": true
+},
+"Educationprogramm": {
+"title": "Education Programme",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Free workshop for school classes at Galerie Wedding with art educator Daniela Herr, with Jugend im Museum e.V.",
+"by": "claude-task",
+"ctx": true
+},
+"Das GAZ Hybrid": {
+"title": "Das GAZ Hybrid",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "",
+"by": "claude-task",
+"ctx": false
+},
+"Programm für Schulen": {
+"title": "Programme for Schools",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Free morning workshop 'Tropical Island' for pupils in grades 1–13 with art educator Daniela Herr and Jugend im Museum. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Ausstellungseröffnung": {
+"title": "Exhibition Opening",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Opening of Sol Calero's exhibition Oficina Del Ciudadano at Galerie Wedding, curated as part of POW.",
 "by": "claude-task",
 "ctx": true
 }
