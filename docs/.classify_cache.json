@@ -10486,12 +10486,12 @@
 "ctx": true
 },
 "Das GAZ Hybrid": {
-"title": "Das GAZ Hybrid",
-"kind": "exhibition",
+"title": "The GAZ Hybrid: What Does the New Defence Centre Bring?",
+"kind": "talk",
 "audience": "everyone",
-"summary": "",
+"summary": "On the GAZ Hybrid, the new centre set up by the BMI and hosted by the BfV to counter espionage, sabotage, disinformation and other hybrid threats.",
 "by": "claude-task",
-"ctx": false
+"ctx": true
 },
 "Programm für Schulen": {
 "title": "Programme for Schools",
@@ -10506,6 +10506,102 @@
 "kind": "exhibition",
 "audience": "everyone",
 "summary": "Opening of Sol Calero's exhibition Oficina Del Ciudadano at Galerie Wedding, curated as part of POW.",
+"by": "claude-task",
+"ctx": true
+},
+"Digital Café für alle - Thema: Emails": {
+"title": "Digital Café for Everyone: Emails",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Helene-Nathan-Bibliothek's fortnightly digital café for beginners, over coffee and biscuits. This time: input and exchange on emails.",
+"by": "claude-task",
+"ctx": true
+},
+"No Dope But Dope - die Sober Cypher": {
+"title": "No Dope But Dope – the Sober Cypher",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Alcohol- and drug-free rap open mic at Mavi in Kreuzberg. Freestyle or written, rap or singing, any language and skill level; or just listen.",
+"by": "claude-task",
+"ctx": true
+},
+"Beginner Bodyweight Strength & Calisthenics (FREE)": {
+"title": "Beginner Bodyweight Strength & Calisthenics",
+"kind": "sport",
+"audience": "everyone",
+"summary": "Free beginner-friendly outdoor bodyweight workout in a calisthenics park, to get stronger, improve fitness and meet new people.",
+"by": "claude-task",
+"ctx": true
+},
+"Spieltreff in Kreuzberg (Nachbarschaftshaus Urban)": {
+"title": "Board Game Meetup in Kreuzberg (Nachbarschaftshaus Urban)",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Berlin Board Gamers play board and card games, casual or core. Bring your own or pick from about 150 on site. RSVP requested; €3 entry.",
+"by": "claude-task",
+"ctx": true
+},
+"Die Blutgräfin": {
+"title": "The Blood Countess",
+"kind": "film",
+"audience": "everyone",
+"summary": "Ulrike Ottinger's 2026 feature: the vampire Blood Countess (Isabelle Huppert) resurfaces in today's Vienna, hunting a book that can destroy all evil.",
+"by": "claude-task",
+"ctx": true
+},
+"Inklusiver Modegestaltungs-Kurs": {
+"title": "Inclusive Fashion Design Course",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Weekly inclusive fashion design course with Stefanie Schulz, from the first idea to your first garment.",
+"by": "claude-task",
+"ctx": true
+},
+"Karlshorster WEIHNACHTSMARKT auf der Trabrennbahn": {
+"title": "Karlshorst Christmas Market at the Trabrennbahn",
+"kind": "market",
+"audience": "everyone",
+"summary": "Christmas market behind the Trabrennbahn Karlshorst grandstand: traders' stalls, food, mulled wine, fire bowls, kids' activities and festive music.",
+"by": "claude-task",
+"ctx": true
+},
+"PRISMA -Spielwaren&Kunstraum auf Weihnachtmärkten 2026": {
+"title": "PRISMA -Spielwaren&Kunstraum at Christmas Markets 2026",
+"kind": "market",
+"audience": "everyone",
+"summary": "PRISMA toy and art shop has a stall at the Karlshorst Christmas market at the Trabrennbahn, with traders, food, mulled wine and kids' activities.",
+"by": "claude-task",
+"ctx": true
+},
+"Karlshorster Weihnachtsmarkt auf der Trabrennbahn": {
+"title": "Karlshorst Christmas Market at the Trabrennbahn",
+"kind": "market",
+"audience": "everyone",
+"summary": "Christmas market behind the Trabrennbahn Karlshorst grandstand: traders' stalls, food, mulled wine, fire bowls, kids' activities and festive music.",
+"by": "claude-task",
+"ctx": true
+},
+"Prisma -Spielwaren&Kunstraum auf Weihnachtmärkten 2026": {
+"title": "Prisma -Spielwaren&Kunstraum at Christmas Markets 2026",
+"kind": "market",
+"audience": "everyone",
+"summary": "PRISMA toy and art shop has a stall at the Karlshorster Adventszauber at St. Marien church: crafts, handicrafts, juggling and activities for all ages.",
+"by": "claude-task",
+"ctx": true
+},
+"Prisma -Spielwaren&Kunstraum- beim Karlshorster Adventszauber 2026": {
+"title": "Prisma -Spielwaren&Kunstraum- at Karlshorster Adventszauber 2026",
+"kind": "market",
+"audience": "everyone",
+"summary": "Small Christmas market at St. Marien church with crafts, handicrafts, juggling and activities for all ages; PRISMA toy and art shop has a stall.",
+"by": "claude-task",
+"ctx": true
+},
+"Wild Wednesday w. \"Muff Case\" (70s Prog-Rock/Bln)": {
+"title": "Wild Wednesday with Muff Case (70s Prog-Rock, Berlin)",
+"kind": "music",
+"audience": "everyone",
+"summary": "70s prog-rock from Berlin band Muff Case. Ages 18+.",
 "by": "claude-task",
 "ctx": true
 }
