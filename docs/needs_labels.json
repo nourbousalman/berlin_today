@@ -1,5 +1,12 @@
 [
 {
+"key": "Digital Café für alle - Thema: Emails",
+"venue": "",
+"site_category": "Wissen live",
+"about": "Sie haben Lust das Internet zu erkunden oder sich mit Smartphone, Apps oder Laptop besser vertraut zu machen? Möchten Sie mehr zum Thema Online-Sicherheit erfahren, wie Sie mehr Kontrolle über Ihre Daten bekommen oder einfach wie man seine Bilder bearbeiten kann? Dann sind Sie bei uns genau richtig! Die Helene-Nathan-Bibliothek veranstaltet alle zwei Wochen ein Digital Café zu verschiedenen Themen. Wir treffen uns in entspannter Atmosphäre bei Kaffee, Tee und Keksen. Unser Digital Café ist für Einsteiger*innen geeignet. Kommen Sie einfach vorbei!Es erwartet Sie ein ausführlicher Input und Austausch zum jeweiligen Thema. Dieses Mal heißt es: \"Dat schick ick dir mal.\"Was gibt es in meinem Emai",
+"date": "2026-11-02"
+},
+{
 "key": "No Dope But Dope - die Sober Cypher",
 "venue": "",
 "site_category": "Musik",
@@ -58,15 +65,15 @@
 {
 "key": "Prisma -Spielwaren&Kunstraum auf Weihnachtmärkten 2026",
 "venue": "",
-"site_category": null,
-"about": "",
+"site_category": "Outdoor",
+"about": "Der Eintritt ist frei. Ihr findet PRISMA -Spielwaren&Kunstraum- auch in diesem Jahr mit einem Stand auf dem KARLSHORSTER ADVENTSZAUBER auf dem Gelände der Kirche St. Marien in der Gundelfinger Straße 37.In diesem Jahr wird es am 2. Advents-Wochenende wieder richtig gemütlich: Zum zweiten Mal findet der Karlshorster Adventszauber statt.Am 04. und 05. Dezember, jeweils von 16:00 bis 21:00 Uhr, verwandelt sich das Gelände rund um die Kirche St. Marien in der Gundelfinger Straße 37 in ein kleines stimmungsvolles Weihnachtsmärktchen.Euch erwarten unter anderem Bastelangebote, Kunsthandwerk, Jonglage und viele liebevoll gestaltete Aktionen für Groß und Klein. Für das leibliche Wohl wird natürlich ",
 "date": "2026-12-04"
 },
 {
 "key": "Prisma -Spielwaren&Kunstraum- beim Karlshorster Adventszauber 2026",
 "venue": "",
-"site_category": null,
-"about": "",
+"site_category": "Outdoor",
+"about": "Der Eintritt ist frei. Ihr findet PRISMA -Spielwaren&Kunstraum- auch in diesem Jahr mit einem Stand auf dem KARLSHORSTER ADVENTSZAUBER auf dem Gelände der Kirche St. Marien in der Gundelfinger Straße 37.In diesem Jahr wird es am 2. Advents-Wochenende wieder richtig gemütlich: Zum zweiten Mal findet der Karlshorster Adventszauber statt.Am 04. und 05. Dezember, jeweils von 16:00 bis 21:00 Uhr, verwandelt sich das Gelände rund um die Kirche St. Marien in der Gundelfinger Straße 37 in ein kleines stimmungsvolles Weihnachtsmärktchen.Euch erwarten unter anderem Bastelangebote, Kunsthandwerk, Jonglage und viele liebevoll gestaltete Aktionen für Groß und Klein. Für das leibliche Wohl wird natürlich ",
 "date": "2026-12-05"
 },
 {
@@ -75,5 +82,12 @@
 "site_category": "Wissen live",
 "about": "Was bringt uns das neue Abwehrzentrum?Die zentralen Aufgaben des vom BMI neu eingerichteten und vom BfV gehosteten GAZ Hybrid sollen sein, Spionage, Sabotage, Desinformation, Proliferation, transnationale Repression, Staatsterrorismus und weitere Formen hybrider Bedrohungen zu bekämpfen. Deutschland ist vor allem aufgrund seiner Rolle als wichtiger Unterstützer der von Russland angegriffenen Ukraine seit einigen Jahren verstärkt im Visier russischer Nachrichtendienste. Auch China gilt im Bereich hybrider Bedrohungen gegen Deutschland als gefährlicher Akteur, zudem auch Iran vor dem Hintergrund der zugespitzten militärischen Konfrontation mit den USA, Israel und deren Unterstützern.Die im GAZ",
 "date": "2026-12-15"
+},
+{
+"key": "Wild Wednesday w. \"Muff Case\" (70s Prog-Rock/Bln)",
+"venue": "",
+"site_category": "Musik",
+"about": "ab 18 Jahren 70s Prog-Rock",
+"date": "2026-12-16"
 }
 ]
