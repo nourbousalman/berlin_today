@@ -10604,5 +10604,245 @@
 "summary": "70s prog-rock from Berlin band Muff Case. Ages 18+.",
 "by": "claude-task",
 "ctx": true
+},
+"Eye Contact Experience Berlin Kreuzberg | 3.11. | 18:30-20:30": {
+"title": "Eye Contact Experience Berlin Kreuzberg",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "",
+"by": "claude-task",
+"ctx": true
+},
+"Sprachcafe Haselhorst Spandau (Berlin)": {
+"title": "Language Café Haselhorst Spandau",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Practise German and meet people in a relaxed setting, joined by Haselhorst's neighbourhood mothers who help with everyday questions.",
+"by": "claude-task",
+"ctx": true
+},
+"04.11. 19:30 Uhr – SUPPORT LOCAL MUSIC NIGHT (KINO EDITION) (OV)": {
+"title": "Support Local Music Night (Cinema Edition)",
+"kind": "film",
+"audience": "everyone",
+"summary": "Monthly screening of local music videos at Sputnik cinema, now completely free with no ticket needed.",
+"by": "claude-task",
+"ctx": true
+},
+"Studio 9. Der Tag mit Jakob Augstein. Deutschlandfunk Kultur – live aus dem Humboldt Forum": {
+"title": "Studio 9 with Jakob Augstein, live from the Humboldt Forum",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Live Deutschlandfunk Kultur radio show with journalist Jakob Augstein, publisher of Der Freitag and co-host of the podcast \"Augstein und Blome\".",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin": {
+"title": "Clothing and Book Swap",
+"kind": "market",
+"audience": "everyone",
+"summary": "Swap clothes for women and men (no underwear or shoes), plus a small book swap and coffee or tea in a seating corner. Donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"UNCOVER. Ostdeutsche Künstler:innen zwischen Zuschreibung und Sichtbarkeit": {
+"title": "UNCOVER: East German Artists Between Attribution and Visibility",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Works by six East German artists from three generations, born 1939–1992, asking why East German art is still often seen as only regional.",
+"by": "claude-task",
+"ctx": true
+},
+"\"Replicat, Vicious Victorious & Lautlos\" - Konzert im RegenbogenKino": {
+"title": "Replicat, Vicious Victorious & Lautlos – Concert at RegenbogenKino",
+"kind": "music",
+"audience": "everyone",
+"summary": "Rock and metal night with Berlin bands Replicat (heavy prog, alternative metal) and Vicious Victorious, plus Lautlos. Donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"»BANKSY. Straße und Mythos« – Buchvorstellung mit Ulrich Blanché im Rahmen der Filmreihe »Galerie Straße – Street-Art Revisited«": {
+"title": "BANKSY. Straße und Mythos – Book Presentation with Ulrich Blanché",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Street-art expert Ulrich Blanché presents his biography of Banksy (Reclam, 2026), as part of a street-art film series at Brotfabrik cinema.",
+"by": "claude-task",
+"ctx": true
+},
+"Jazz am Helmholzplatz präsentiert: Hot Tropical Nights: Quinteto Radames Gnattali.": {
+"title": "Jazz am Helmholzplatz: Hot Tropical Nights – Quinteto Radames Gnattali",
+"kind": "music",
+"audience": "everyone",
+"summary": "A quintet with guitar, accordion, piano, bass and drums honours Brazilian composer Radamés Gnattali, who blended choro, samba, jazz and classical music.",
+"by": "claude-task",
+"ctx": true
+},
+"BERLIN’S BIGGEST JAM SESSION – ALL NIGHT LONG – CLUB EDITION": {
+"title": "Berlin's Biggest Jam Session – All Night Long – Club Edition",
+"kind": "music",
+"audience": "everyone",
+"summary": "A club night with live music instead of DJs: a full night of spontaneous jam sessions at DNA Club.",
+"by": "claude-task",
+"ctx": true
+},
+"schöneberger art - galerierundgang und offene ateliers": {
+"title": "Schöneberger Art – Gallery Walk and Open Studios",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "18th annual gallery walk and open studios showing Schöneberg's freelance art scene, organised by the volunteer-run Schöneberger Art e.V.",
+"by": "claude-task",
+"ctx": true
+},
+"Afternoon Walk + Coffee in Berlin: Ostkreuz to Potsdamer Platz👣🚶🚶‍♀️🍂🥐☕🍪": {
+"title": "Afternoon Walk and Coffee: Ostkreuz to Potsdamer Platz",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Group walk from Ostkreuz to Potsdamer Platz with coffee. A €1 cash donation per person is required on site.",
+"by": "claude-task",
+"ctx": true
+},
+"Inline-Skating in Neukölln - Tag der offenen Tür": {
+"title": "Inline Skating in Neukölln – Open Day",
+"kind": "sport",
+"audience": "everyone",
+"summary": "TSC Berlin 1893's inline-skating section brings skates to try, shows first steps and offers slalom, inline hockey and basketball. All ages.",
+"by": "claude-task",
+"ctx": true
+},
+"„Die U-Boote“ – Untergetauchte Juden im Hansaviertel und Moabit": {
+"title": "The \"U-Boote\": Jews in Hiding in Hansaviertel and Moabit",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Two-hour guided walk with Nirit Ben-Joseph about Jews who hid from Nazi deportation in Berlin in 1941–45 and those who helped them. No registration.",
+"by": "claude-task",
+"ctx": true
+},
+"Zentralviehhof": {
+"title": "Zentralviehhof Tour",
+"kind": "tour",
+"audience": "everyone",
+"summary": "1.5-hour tour of the old cattle-yard site, the Velodrom and the mutton auction hall, ending at Storkower Straße station. Donations in the hat.",
+"by": "claude-task",
+"ctx": true
+},
+"Lachend durch den grauen November - mit Lachyoga auf dem Tempelhofer Feld": {
+"title": "Laughing Through Grey November – Laughter Yoga on Tempelhofer Feld",
+"kind": "sport",
+"audience": "everyone",
+"summary": "Learn playful techniques to laugh for no reason, the laughter yoga method of Dr Madan Kataria, outdoors on Tempelhofer Feld. Donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Queeres Familiencafé in Reinickendorf": {
+"title": "Queer Family Café in Reinickendorf",
+"kind": "meetup",
+"audience": "group",
+"summary": "A space for queer families and queers wishing for children to meet and talk, with coffee, snacks and a big room for kids to play.",
+"by": "claude-task",
+"ctx": true
+},
+"Sip Happens! Saturday Social @ Straßenbräu 🍻": {
+"title": "Sip Happens! Saturday Social at Straßenbräu",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Social meetup to meet new people over drinks, whether you're new to Berlin, visiting or long settled. Most people come alone. Card payment only.",
+"by": "claude-task",
+"ctx": true
+},
+"Regenbogenfamilienbrunch in Moabit": {
+"title": "Rainbow Families Brunch in Moabit",
+"kind": "meetup",
+"audience": "group",
+"summary": "Brunch with the Regenbogenfamilienzentrum to meet other rainbow families from Moabit, with drinks, rolls and spreads. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Lesung \"Vergesst uns nicht! - Geschichten aus Afghanistan\"": {
+"title": "Reading: \"Vergesst uns nicht! – Geschichten aus Afghanistan\"",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Reading in German and Farsi of Afghan women's life stories, collected by Julia Augustin and Ahmad Hamid Wahidy. Part of the CrossKultur Festival.",
+"by": "claude-task",
+"ctx": true
+},
+"\"Spieleabend\" - im RegenbogenCafé": {
+"title": "Game Night at RegenbogenCafé",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Monthly game night with card and board games like Skat or Ludo, plus a community dinner beforehand. Some games provided; bring your favourite.",
+"by": "claude-task",
+"ctx": true
+},
+"Tschechien erlesen: Kristina Hamplová liest aus \"Lover/Fighter\"": {
+"title": "Reading Czechia: Kristina Hamplová Reads from \"Lover/Fighter\"",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Young Czech author Kristina Hamplová presents her debut novel with translator Kathrin Janka: growing up in a harsh world, with tender, comic moments.",
+"by": "claude-task",
+"ctx": true
+},
+"Workshop: Ukrainische Weihnachtsspinne": {
+"title": "Workshop: Ukrainian Christmas Spider",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Make the traditional Ukrainian straw-and-thread \"spider\" ornament: first for families with kids 6+, then for all 12+. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Karlshorster Adventszauber 2026 mit 'Prisma Spielwaren & Kunstraum'": {
+"title": "Karlshorst Advent Magic 2026 with Prisma Spielwaren & Kunstraum",
+"kind": "market",
+"audience": "everyone",
+"summary": "Small Christmas market at St. Marien church with crafts, juggling and activities for all ages; toy shop and art space Prisma has a stall.",
+"by": "claude-task",
+"ctx": true
+},
+"Keloğlan und die verzauberte Schüssel // Keloğlan ve Sihirli Çanak": {
+"title": "Keloğlan and the Enchanted Bowl – Picture-Book Cinema in Turkish",
+"kind": "talk",
+"audience": "kids",
+"summary": "Hakan Dağıstanlı tells the Turkish folk tale of Keloğlan and a magic bowl as picture-book cinema in Turkish, for children aged 4–8.",
+"by": "claude-task",
+"ctx": true
+},
+"Miriam Davoudvandi: \"Das können wir uns nicht leisten\"": {
+"title": "Miriam Davoudvandi: \"Das können wir uns nicht leisten\"",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Miriam Davoudvandi reads from her book about what it means to be poor in Germany, drawing on her own experience of shame and social climbing.",
+"by": "claude-task",
+"ctx": true
+},
+"\"Intelligenzen\": Kooperativer Comic-Workshop zu den Themen Demokratie und KI": {
+"title": "\"Intelligenzen\": Collaborative Comic Workshop on Democracy and AI",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "With Berlin comic artist Elke Renate Steiner, participants plan and draw a joint comic about democracy and AI. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Rainer Mühlhoff: \"Künstliche Intelligenz und der neue Faschismus\"": {
+"title": "Rainer Mühlhoff: \"Künstliche Intelligenz und der neue Faschismus\"",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Rainer Mühlhoff reads from his book on AI and the new fascism and talks with Julia Grass about AI, AGI and the worldview behind them.",
+"by": "claude-task",
+"ctx": true
+},
+"Open Lab Abend: Human Centered Design": {
+"title": "Open Lab Evening: Human Centered Design",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Workshop introducing Human Centered Design: explore different perspectives and build first prototypes for more climate-friendly farming.",
+"by": "claude-task",
+"ctx": true
+},
+"Komplexe Psychosoziale Versorgung Geflüchteter in Berlin": {
+"title": "Comprehensive Psychosocial Care for Refugees in Berlin",
+"kind": "notice",
+"audience": "group",
+"summary": "XENION, Zentrum ÜBERLEBEN and Schwulenberatung Berlin are jointly developing psychosocial care for refugees who survived war and persecution.",
+"by": "claude-task",
+"ctx": true
 }
 }
