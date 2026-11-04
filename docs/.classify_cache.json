@@ -10844,5 +10844,277 @@
 "summary": "XENION, Zentrum ÜBERLEBEN and Schwulenberatung Berlin are jointly developing psychosocial care for refugees who survived war and persecution.",
 "by": "claude-task",
 "ctx": true
+},
+"Experimental Electronic Music Performance at 'Nothin But a Pinch Exhibition'": {
+"title": "Experimental Electronic Music at the 'Nothin But a Pinch' Exhibition",
+"kind": "music",
+"audience": "everyone",
+"summary": "Gamid Ibadullayev (clarinet, flute) and Talissa Mehringer (electronics) play alongside her photo and collage show at Klub Freier Fotografen.",
+"by": "claude-task",
+"ctx": true
+},
+"„Wissen zwischen Büchern“ in der Humboldt-Bibliothek (einzelne Termine)": {
+"title": "\"Knowledge Between Books\" at the Humboldt Library",
+"kind": "talk",
+"audience": "everyone",
+"summary": "During Berlin Science Week, researchers talk about science in public libraries, with quizzes, workshops and discussions.",
+"by": "claude-task",
+"ctx": true
+},
+"Where Life Feels Different (Mi - Sa)": {
+"title": "Where Life Feels Different",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Photo exhibition documenting a gradual immersion in Kolkata, India, moving ever closer to people, their gestures and daily routines.",
+"by": "claude-task",
+"ctx": true
+},
+"Plastic Fantastic (Di & Fr)": {
+"title": "Plastic Fantastic",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Exhibition on plastic pollution: 23 artists show objects, video, installation, performance and painting.",
+"by": "claude-task",
+"ctx": true
+},
+"Wednesday Social or Julia's Salon - Social Butterfly Club 🦋": {
+"title": "Wednesday Social or Julia's Salon – Social Butterfly Club",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Weekly Wednesday meetup at Jatz Bar for drinks, conversation and new connections. Everyone welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Workshop: Sinnliche Aktivierungen – \"Düfte und Gerüche verschiedener Esskulturen\"": {
+"title": "Workshop: Scents and Smells of Different Food Cultures",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Intercultural workshop on aromas from world cuisines; turn scent memories into drawings, texts or collages. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Uncover. Ostdeutsche Künstler:innen zwischen Zuschreibung und Sichtbarkeit": {
+"title": "Uncover. East German Artists Between Attribution and Visibility",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Works by six East German artists born 1939–1992, asking why East German art is often seen only regionally. With 3D show and podcasts.",
+"by": "claude-task",
+"ctx": true
+},
+"\"Wie schmeckts euch am besten?\" - Das Regenbogen-Bohnen-Rennen im RegenbogenCafé": {
+"title": "\"How Do You Like It Best?\" – Rainbow Bean Race at RegenbogenCafé",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Taste three coffee beans, including two Zapatista ones, and help choose the café's future coffee. With coffee and waffles.",
+"by": "claude-task",
+"ctx": true
+},
+"Führung | Stimmen. Ein Ausstellungsexperiment zwischen Demokratiegeschichte und Gegenwart": {
+"title": "Tour: Voices – An Exhibition Experiment on Democracy, Past and Present",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Volunteer curators guide you through the exhibition at the Friedhof der Märzgefallenen and share project background. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin's biggest Jam Session - all night long Club Edition": {
+"title": "Berlin's Biggest Jam Session – All Night Long Club Edition",
+"kind": "music",
+"audience": "everyone",
+"summary": "A club night with live music and spontaneous jam sessions all night at DNA. CLUB.",
+"by": "claude-task",
+"ctx": true
+},
+"schöneberger art": {
+"title": "Schöneberger Art",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Open studios and gallery tour in Schöneberg.",
+"by": "claude-task",
+"ctx": true
+},
+"Social Chemistry - Meet, mix, experiment. 🧪🧬🥰": {
+"title": "Social Chemistry – Meet, Mix, Experiment",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Social meetup at Kodex Bierhaus billed as a \"lab in a bar\".",
+"by": "claude-task",
+"ctx": true
+},
+"Banksy - Exit Through the Gift Shop": {
+"title": "Banksy – Exit Through the Gift Shop",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening (original with subtitles) of Banksy's 2010 film about Thierry Guetta's attempt to track down the street artist.",
+"by": "claude-task",
+"ctx": true
+},
+"sonntagssalon": {
+"title": "Sunday Salon",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Theatrical moments of life, told with foam strips, by sandy sanne. Admission only until 7 pm; donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Ciné-club in Alt-Treptow : Le Secret des Mésanges": {
+"title": "Ciné-club in Alt-Treptow: Le Secret des Mésanges",
+"kind": "film",
+"audience": "kids",
+"summary": "French-language ciné-club shows a paper-cut animated film for families, suited to children aged 6 and up.",
+"by": "claude-task",
+"ctx": true
+},
+"erinnern – erzählen – zuhören": {
+"title": "Remember – Tell – Listen",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Slow outdoor storytelling walk of about 3.5 km on the theme \"turning points\", starting at U Freie Universität (Thielplatz).",
+"by": "claude-task",
+"ctx": true
+},
+"Showcase: Darlene Naponse – Witness: Arctic Indigenous Voices": {
+"title": "Showcase: Darlene Naponse – Witness: Arctic Indigenous Voices",
+"kind": "film",
+"audience": "everyone",
+"summary": "Three early shorts and excerpts from AKI trace Darlene Naponse's Anishinaabe, land-based community filmmaking.",
+"by": "claude-task",
+"ctx": true
+},
+"Fishbowl: Handling of AI in Documentary Films – To Whom Does Reality Belong?": {
+"title": "Fishbowl: AI in Documentary Films – To Whom Does Reality Belong?",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Discussion on labelling AI images and voices, AI avatars for anonymity, and how festivals should handle AI-made documentaries.",
+"by": "claude-task",
+"ctx": true
+},
+"Roundtables: Short Film Distribution and Sales": {
+"title": "Roundtables: Short Film Distribution and Sales",
+"kind": "talk",
+"audience": "group",
+"summary": "Filmmakers rotate between expert tables on festival strategy, sales and acquisition for short films, and swap tips.",
+"by": "claude-task",
+"ctx": true
+},
+"In Conversation with Talal Afifi: What Can a Militant Image Do? Sudan, Political Cinema and the Conditions of Visibility": {
+"title": "In Conversation with Talal Afifi: What Can a Militant Image Do?",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Sudanese curator and producer Talal Afifi on what militant cinema can mean today. With Sudan Film Factory, at Roter Salon, Volksbühne.",
+"by": "claude-task",
+"ctx": true
+},
+"Case Study: Passing Through a Cloud of Mist – Filming in Haiti with Wilmarc Val": {
+"title": "Case Study: Passing Through a Cloud of Mist – Filming in Haiti",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Wilmarc Val, who grew up in France, on making films in crisis-hit Haiti, his family history, faith and identity.",
+"by": "claude-task",
+"ctx": true
+},
+"Workshop: Curating Films – Women in Revolution in West Asia": {
+"title": "Workshop: Curating Films – Women in Revolution in West Asia",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "A step-by-step look at how a film programme is curated, drawing on the FOCUS programme Revolutionary Women of West Asia.",
+"by": "claude-task",
+"ctx": true
+},
+"Sip Happens! Saturday Social @ Straßenbräu Ausschank 2 🍻": {
+"title": "Sip Happens! Saturday Social at Straßenbräu Ausschank 2",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Social meetup to meet new people over drinks; most come alone. Wheelchair accessible, card payment only, no food.",
+"by": "claude-task",
+"ctx": true
+},
+"Case Study: Representation of Forced Displacement in Film": {
+"title": "Case Study: Representation of Forced Displacement in Film",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Panel on how cinema can depict Mediterranean flight and forced displacement without instrumentalising suffering.",
+"by": "claude-task",
+"ctx": true
+},
+"Case Study: Desire on Screen – Not Without Disability with Lotte Sweeney & Maiah Stewardson": {
+"title": "Case Study: Desire on Screen – Not Without Disability",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Using the Australian short The Knight, a look at discrimination-conscious work with disabled actors on desire and intimacy.",
+"by": "claude-task",
+"ctx": true
+},
+"Kinderdisco / Familiendisco im Haus der Kulturen der Welt (mehrere Termine)": {
+"title": "Kids' Disco / Family Disco at Haus der Kulturen der Welt",
+"kind": "party",
+"audience": "kids",
+"summary": "HKW's kids' disco with DJs and a glittering space to dance for children of all ages and their families. Parents supervise.",
+"by": "claude-task",
+"ctx": true
+},
+"AI Series: Max Planck Institute - Jonas Geiping": {
+"title": "AI Series: Max Planck Institute – Jonas Geiping",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Talk by Jonas Geiping, research group leader at the Max Planck Institute for Intelligent Systems.",
+"by": "claude-task",
+"ctx": true
+},
+"\"Gemeinsam für Morgen\" - Liederabend im RegenbogenCafé": {
+"title": "\"Together for Tomorrow\" – Singing Evening at RegenbogenCafé",
+"kind": "music",
+"audience": "everyone",
+"summary": "Sing-along of protest and international songs led by Vinni from Cologne on guitar. Food and drinks; donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Mitmach-Aktion „Trueke*-Markt\": Mitmachen, Austausch und gemeinsames Lernen": {
+"title": "\"Trueke Market\": Swap, Share and Learn Together",
+"kind": "market",
+"audience": "everyone",
+"summary": "Swap used items, share food memories at recipe speed-dating, make greeting cards; open desk and open mic. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Totensonntag & Tag des Krematoriums mit u.a. (Archtitektur)führungen im Krematorium Treptow": {
+"title": "Sunday of the Dead & Crematorium Day at Krematorium Treptow",
+"kind": "festival",
+"audience": "everyone",
+"summary": "Krematorium Treptow opens with architecture tours, talks, readings, theatre and music for the Day of the Crematorium.",
+"by": "claude-task",
+"ctx": true
+},
+"Kinonachmittag in der Hansabibliothek: Until we talk (mit Filmgespräch)": {
+"title": "Film Afternoon at Hansabibliothek: Until we talk (with Discussion)",
+"kind": "film",
+"audience": "everyone",
+"summary": "Film on the friendship of Rami Elhanan and Bassam Aramin, then a talk with director Florian Mebes and Vered Berman.",
+"by": "claude-task",
+"ctx": true
+},
+"Tanz & Bewegung 60+ mit Mariana Hilgert": {
+"title": "Dance & Movement 60+ with Mariana Hilgert",
+"kind": "sport",
+"audience": "seniors",
+"summary": "Playful 90-minute dance class at Hansabibliothek for people 60+, no partner or experience needed. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Infoveranstaltung DUO Mentoring für Azubis": {
+"title": "Info Session: DUO Mentoring for Apprentices",
+"kind": "support",
+"audience": "everyone",
+"summary": "Online info session on DUO, pairing Berlin apprentices with working or retired mentors who meet them 2–4 times a month.",
+"by": "claude-task",
+"ctx": true
+},
+"Jazz in der Alten Feuerwache | Easy Goin'": {
+"title": "Jazz at Alte Feuerwache | Easy Goin'",
+"kind": "music",
+"audience": "everyone",
+"summary": "Concert and jam by Easy Goin', an international Berlin band founded in 1997: jazz classics, bossa nova, Afro, reggae and more.",
+"by": "claude-task",
+"ctx": true
 }
 }
