@@ -1,19 +1,5 @@
 [
 {
-"key": "„Wissen zwischen Büchern“ in der Humboldt-Bibliothek (einzelne Termine)",
-"venue": "Karolinenstr. 19 13507",
-"site_category": "Wissen live",
-"about": "Bei “Wissen zwischen Büchern” sprechen Forschende über Themen aus der Wissenschaft, die bewegen: in der Stadt, im Kiez, in der Bibliothek. Ob Quiz zum Sonnensystem, Workshop zur Zukunft der KI oder Diskussion über altersfreundliche Städte: Während der Berlin Science Week lädt “Wissen zwischen Büchern” vom 01.-10.11.2026 in die Berliner Öffentlichen Bibliotheken zu Veranstaltungen zum Mitreden, Nachfragen und Weiterdenken ein.https://www.wissen-zwischen-buechern.de/Unser Programm:„ME+BeFallen“ – Ausstellung mit Audio-Arbeiten„ME+BeFallen” ist eine literarisch-akustische Arbeit über den Zerfall und die Transformation eines oberfränkischen Fichtenwaldes, die aus fünf Perspektiven erzählt wird: ",
-"date": "2026-11-03"
-},
-{
-"key": "Plastic Fantastic (Di & Fr)",
-"venue": "Leuschnerdamm 19 10999",
-"site_category": "Kunst",
-"about": "Ergänzung Redaktion: Dienstags und freitags 17 bis 20 Uhr und nach Vereinbarung Plastic FantasticExhibition: 23 October – 4 December 2026Nanoplastics in our brains, plastic in the Arctic. Our practical, durable helper is everywhere, and production volumes are rising. As a product of the fossil-fuel industry, plastic pollutes nature as waste and through its breakdown products, while nano- and microplastics enter our bodies. Recycling does not work. We must reduce plastic volumes worldwide and switch to safe materials.What does this mean for people, and what can we do? Who is actively working against the problem?Artists23 artists present objects, video, installation, performance, and painting:",
-"date": "2026-11-03"
-},
-{
 "key": "Experimental Electronic Music Performance at 'Nothin But a Pinch Exhibition'",
 "venue": "Lützowplatz 17 10785",
 "site_category": "Musik",
@@ -21,10 +7,24 @@
 "date": "2026-11-04"
 },
 {
+"key": "„Wissen zwischen Büchern“ in der Humboldt-Bibliothek (einzelne Termine)",
+"venue": "Karolinenstr. 19 13507",
+"site_category": "Wissen live",
+"about": "Bei “Wissen zwischen Büchern” sprechen Forschende über Themen aus der Wissenschaft, die bewegen: in der Stadt, im Kiez, in der Bibliothek. Ob Quiz zum Sonnensystem, Workshop zur Zukunft der KI oder Diskussion über altersfreundliche Städte: Während der Berlin Science Week lädt “Wissen zwischen Büchern” vom 01.-10.11.2026 in die Berliner Öffentlichen Bibliotheken zu Veranstaltungen zum Mitreden, Nachfragen und Weiterdenken ein.https://www.wissen-zwischen-buechern.de/Unser Programm:„ME+BeFallen“ – Ausstellung mit Audio-Arbeiten„ME+BeFallen” ist eine literarisch-akustische Arbeit über den Zerfall und die Transformation eines oberfränkischen Fichtenwaldes, die aus fünf Perspektiven erzählt wird: ",
+"date": "2026-11-04"
+},
+{
 "key": "Where Life Feels Different (Mi - Sa)",
 "venue": "",
 "site_category": "Kunst",
 "about": "Mi-Sa 12.00 - 18.00 Uhr \"Where Life Feels Differen” ist eine fotografische Reise durch Kolkata (Indien) und dokumentiert das allmähliche Eintauchen in eine Stadt, die zunächst fremd und überwältigend erschien.Was mit vorsichtiger Beobachtung und Zurückhaltung begann, entwickelte sich nach und nach zu einer wesentlich persönlicheren und unmittelbareren Form der Dokumentation. Mit der Zeit rückte die Arbeit näher an die Menschen, ihre Gesten und alltäglichen Routinen heran und machte inmitten des visuellen Chaos der Stadt Momente von Intensität, Verletzlichkeit und menschlicher Nähe sichtbar.Das Projekt erzählt dabei ebenso sehr von der Erfahrung, sich auf einen Ort einzulassen, wie von dem Or",
+"date": "2026-11-04"
+},
+{
+"key": "Plastic Fantastic (Di & Fr)",
+"venue": "Leuschnerdamm 19 10999",
+"site_category": "Kunst",
+"about": "Ergänzung Redaktion: Dienstags und freitags 17 bis 20 Uhr und nach Vereinbarung Plastic FantasticExhibition: 23 October – 4 December 2026Nanoplastics in our brains, plastic in the Arctic. Our practical, durable helper is everywhere, and production volumes are rising. As a product of the fossil-fuel industry, plastic pollutes nature as waste and through its breakdown products, while nano- and microplastics enter our bodies. Recycling does not work. We must reduce plastic volumes worldwide and switch to safe materials.What does this mean for people, and what can we do? Who is actively working against the problem?Artists23 artists present objects, video, installation, performance, and painting:",
 "date": "2026-11-04"
 },
 {
@@ -215,6 +215,13 @@
 "site_category": "Kino",
 "about": "Filmgespräch im Anschluss mit Regisseur Florian Mebes und Vered Berman vom Verein „Parents Circle Friends Deutschland e. V.“Moderation: Gesa UferAls Rami Elhanans 14-jährige Tochter in Jerusalem bei einem palästinensischen Selbstmordanschlag ums Leben kommt, beginnt für ihn eine lange Phase des Ringens um Antworten. In dieser Zeit lernt er den Palästinenser Bassam Aramin kennen. Zwischen beiden entwickelt sich eine ungewöhnliche Freundschaft. Jahre später trifft auch Bassam ein schwerer Schlag: Seine 10-jährige Tochter wird von einem israelischen Grenzpolizisten erschossen. Für Rami stellt sich die Frage, wie sein Freund mit einem solchen Verlust weiterleben kann. Und ob der gemeinsame Weg, ",
 "date": "2026-11-22"
+},
+{
+"key": "Tanz & Bewegung 60+ mit Mariana Hilgert",
+"venue": "",
+"site_category": "Sport",
+"about": "Der Kurs findet in der Hansabibliothek statt und dauert 1,5 Stunden.Bitte meldet euch an unter www.offen-fuer-kultur.de.Ob mit oder ohne Tanzerfahrung – in diesem Tanzkurs stehen Freude, Lebendigkeit und spielerische Bewegung im Mittelpunkt. Zu abwechslungsreicher Musik trainieren wir Koordination, Rhythmusgefühl und Beweglichkeit, ganz ohne Leistungsdruck. Gemeinsam entdecken und kombinieren wir Tanzschritte, stärken unsere Ausdruckskraft und bleiben kreativ in Bewegung. Ein Kurs für alle ab 60 Jahren, die Körper und Geist mit Leichtigkeit und Spaß in Schwung bringen möchten! Keine Tanzpartner:innen notwendig. Keine Vorkenntnisse erforderlich.Die Veranstaltung ist kostenfrei.Infos zu Marian",
+"date": "2026-11-29"
 },
 {
 "key": "Infoveranstaltung DUO Mentoring für Azubis",
