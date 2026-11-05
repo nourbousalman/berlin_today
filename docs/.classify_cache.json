@@ -11116,5 +11116,197 @@
 "summary": "Concert and jam by Easy Goin', an international Berlin band founded in 1997: jazz classics, bossa nova, Afro, reggae and more.",
 "by": "claude-task",
 "ctx": true
+},
+"Runter vom Sofa, rein in die Action: Zero-Waste-Aktionswochen": {
+"title": "Zero Waste Action Weeks: Get Off the Sofa and Join In",
+"kind": "festival",
+"audience": "everyone",
+"summary": "A calendar of Zero Waste Action Weeks events, from upcycling workshops, repair cafés and zero-waste cooking classes to clothes swaps and exhibitions.",
+"by": "claude-task",
+"ctx": true
+},
+"Freitag, 6.11: Kiez-Spaziergang “Gastarbeiterinnen und Böhminnen”": {
+"title": "Neighbourhood Walk: Women Guest Workers and Bohemian Women",
+"kind": "tour",
+"audience": "everyone",
+"summary": "A historical neighbourhood walk with Gül and Hanadi, hosted by the Mobile Stadtteilarbeit.",
+"by": "claude-task",
+"ctx": true
+},
+"Zirkus zum Mitmachen – Workshop mit Eleni Orfanou": {
+"title": "Join-In Circus Workshop with Eleni Orfanou",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Children and teens try juggling, diabolos, swing ribbons and clowning with Eleni; no experience needed. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Gedenkveranstaltung zum 9. November: Filmvorführung von „Des Vaters Schweigen“ („The Father’s Silence“) & Gespräch & Musik": {
+"title": "9 November Remembrance: “The Father’s Silence” Screening, Talk & Music",
+"kind": "film",
+"audience": "everyone",
+"summary": "Short documentary about Sylvia Salomon learning her father survived the Holocaust, with a talk by director and protagonist and live music.",
+"by": "claude-task",
+"ctx": true
+},
+"Freedom Film Festival": {
+"title": "Freedom Film Festival",
+"kind": "film",
+"audience": "everyone",
+"summary": "Part of Berlin Freedom Week: a day of film screenings at the Colosseum in Prenzlauer Berg, including Killing Anna and Hope is a Word.",
+"by": "claude-task",
+"ctx": true
+},
+"»Origami Herbstblätter« – Workshop": {
+"title": "Origami Autumn Leaves Workshop",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Learn to fold autumn origami leaves into a picture to take home; materials provided, limited to 8 people. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"»Berlin trifft Kirgistan – Ricki und Marta treffen Uplift« – Info und Crowdfunding": {
+"title": "Berlin Meets Kyrgyzstan: Ricki and Marta Meet Uplift – Info Evening",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Stories about the charity Uplift – Aufwind e.V. in Kyrgyzstan, with founder Maren Ernst and volunteers on their 2026 trips and a children's chair project.",
+"by": "claude-task",
+"ctx": true
+},
+"»Offene Bühne Rezitation« – Rezitationsabend": {
+"title": "Open Stage for Recitation – Poetry Recitation Evening",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Freunde der Rezitation present poems from Goethe to Kaléko; come to listen, or sign up in advance to recite your own favourite poem.",
+"by": "claude-task",
+"ctx": true
+},
+"Märchenabend unter dem Motto „Zauberflöte und Sternenharfe – Musik in Märchen und Geschichten“": {
+"title": "Fairy Tale Evening: “Magic Flute and Star Harp – Music in Fairy Tales”",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Doris Rauschert tells fairy tales about the magic of music, with Christof Schill on guitar; part of the 37th Berliner Märchentage.",
+"by": "claude-task",
+"ctx": true
+},
+"»Ablabuda – Kaukasus und Titikaka. Durch Musik verbunden« – Konzert": {
+"title": "Ablabuda – Caucasus and Titicaca, Connected by Music – Concert",
+"kind": "music",
+"audience": "everyone",
+"summary": "Duo Ablabuda: Manana Klein sings Georgian folk and Tbilisi city songs, while David Beyer adds Andean folk instruments and Latin American rhythms.",
+"by": "claude-task",
+"ctx": true
+},
+"»HUJ:C #3 – SALON: PERSONAL NARRATIVES« – Kreativer Austausch": {
+"title": "HUJ:C #3 – SALON: PERSONAL NARRATIVES – Creative Exchange",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Open dialogue salon by HUJ:C e.V. on personal stories; bring art, literature, music or film to share. In German and English. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"»Gemeinsam gärtnern, Gemeinschaft stärken!« – Gartenaktionstag": {
+"title": "Garden Together, Build Community – Garden Action Day",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Neighbours tidy the Ulme35 garden for winter and plant flower bulbs, ending with warm soup; tools and guidance provided.",
+"by": "claude-task",
+"ctx": true
+},
+"musikalischer Beitragsabend und Konzert - Livestream": {
+"title": "Stegreif Family Contribution Evening and Concert – Livestream",
+"kind": "music",
+"audience": "everyone",
+"summary": "Stegreif, an improvising orchestra playing without conductor or sheet music, performs before its Family fundraising evening at Gutshof Schloss Britz.",
+"by": "claude-task",
+"ctx": true
+},
+"Poetischer Proberaum #Special Edition": {
+"title": "Poetischer Proberaum – Special Edition",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Open reading stage for texts of all kinds, marking its first anniversary; no sign-up, just tell the hosts on the night if you want to read.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin Tech & creative industry Afterwork (English/German) (Free Welcome-Shot)": {
+"title": "Berlin Tech & Creative Industry Afterwork (English/German)",
+"kind": "meetup",
+"audience": "group",
+"summary": "Informal afterwork networking for people in Berlin's tech and creative industries, without formal agendas or slide decks.",
+"by": "claude-task",
+"ctx": true
+},
+"Kleidertauschparty - Herbsttheater trifft Winterglanz": {
+"title": "Clothes Swap Party – Autumn Theatre Meets Winter Sparkle",
+"kind": "market",
+"audience": "everyone",
+"summary": "Bring about 5 clean, good-condition seasonal clothes or accessories and take what fits; everyone welcome, even with nothing to give.",
+"by": "claude-task",
+"ctx": true
+},
+"SASPERELLA La Sirène__Sound Ritual Concert": {
+"title": "SASPERELLA La Sirène – Sound Ritual Concert",
+"kind": "music",
+"audience": "everyone",
+"summary": "Shamanic-inspired singer and music therapist SASPERELLA creates atmospheric soundscapes with her voice and instruments from many cultures.",
+"by": "claude-task",
+"ctx": true
+},
+"Kimchi Festival": {
+"title": "Kimchi Festival",
+"kind": "festival",
+"audience": "everyone",
+"summary": "Berlin Kimchi Festival at Pangea-Haus with Korean food and culture; the workshop has limited places and needs online registration.",
+"by": "claude-task",
+"ctx": true
+},
+"Herbstblues? Nicht mit den queer Cronies!": {
+"title": "Autumn Blues? Not with the Queer Cronies!",
+"kind": "music",
+"audience": "everyone",
+"summary": "The Queer Cronies, a gay man and a lesbian woman with ukuleles, vocals and washboard, play own songs and covers at Zum Goldenen Handwerk.",
+"by": "claude-task",
+"ctx": true
+},
+"Ausstellung \"Im Dazwischen\" im Spreepark Art Space (Mi - So)": {
+"title": "Exhibition “Im Dazwischen” at Spreepark Art Space",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Artists incl. raumlaborberlin and Nadin Reschke explore Spreepark's phase between lost place and its transformation into a park for art and nature.",
+"by": "claude-task",
+"ctx": true
+},
+"Wintermarkt in der frachtkante am 1. Advent-Wochenende": {
+"title": "Winter Market at frachtkante on the First Advent Weekend",
+"kind": "market",
+"audience": "everyone",
+"summary": "Second winter market with stalls of handmade goods, warm drinks, winter food, live music, DJs and workshops for all ages.",
+"by": "claude-task",
+"ctx": true
+},
+"Von Klassik zum Klarin film - Konzert, Marin Limić-piano": {
+"title": "From Classical to Klarin Film – Concert with Marin Limić, Piano",
+"kind": "music",
+"audience": "everyone",
+"summary": "Marin Limić plays Debussy, Livadić and Chopin, then piano arrangements from his second CD Klarin Film.",
+"by": "claude-task",
+"ctx": true
+},
+"Weihnachtsmarkt im Paul Gerhardt Stift": {
+"title": "Christmas Market at Paul Gerhardt Stift",
+"kind": "market",
+"audience": "everyone",
+"summary": "The fifth Christmas market on the Stift grounds, with a festive programme for friends and families.",
+"by": "claude-task",
+"ctx": true
+},
+"Swinging Christmas Time 2026": {
+"title": "Swinging Christmas Time",
+"kind": "music",
+"audience": "everyone",
+"summary": "Christmas show for dancing with Simone, her band and the Quadrophoniker, playing American swing and country Christmas evergreens.",
+"by": "claude-task",
+"ctx": true
 }
 }
