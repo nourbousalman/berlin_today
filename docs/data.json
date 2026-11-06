@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T05:15:42.534095+00:00",
+ "generated_at": "2026-11-06T06:45:39.907326+00:00",
  "count": 1256,
  "counts": {
   "events": 1256,
@@ -431,7 +431,7 @@
    "id": "38a25654b695f5b0996e6b629f2a18995de841a6"
   },
   {
-   "title": "07.11. 18:00 Uhr – LT KINO 2026: FEMALE SHORTS (OmeU)",
+   "title": "LT KINO 2026: Female Shorts (OmeU)",
    "start": "2026-11-06T07:11:00+00:00",
    "source": "rss:Sputnik Kino",
    "url": "https://sputnik-kino.com/film/60088",
@@ -447,14 +447,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "page",
-   "title_orig": null,
+   "title_orig": "07.11. 18:00 Uhr – LT KINO 2026: FEMALE SHORTS (OmeU)",
    "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "c78dcb80391d45d7a9899986b00f6da17b4a367c"
+   "summary": "Screening of short films, among them City Above, Hologram and Spa, in original language with English subtitles.",
+   "classified_by": "claude-task",
+   "id": "0761303a34a4d2b8ca8134b000f84e9150eaf242"
   },
   {
    "title": "Language Café Mercator at the Mercator School Family Centre",
@@ -481,6 +481,32 @@
    "summary": "For German learners who have done a course and want more speaking practice: conversation, playful grammar, reading and writing. Small children welcome.",
    "classified_by": "claude-task",
    "id": "8160810d951d6e73a004b816ed464baec54918d6"
+  },
+  {
+   "title": "Morning Meditation",
+   "start": "2026-11-06T08:30:00.000Z",
+   "source": "web:Meetup Berlin",
+   "url": "https://www.meetup.com/inner-space-covent-garden/events/316898664/",
+   "end": null,
+   "venue": null,
+   "area": null,
+   "category": "sport",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "dates": null,
+   "translated": false,
+   "date_source": "jsonld",
+   "title_orig": null,
+   "kind": "sport",
+   "audience": "everyone",
+   "summary": null,
+   "classified_by": "rules",
+   "id": "48df0059ccbcf0e24d8d671224b277c53d39728f"
   },
   {
    "title": "\"Adenauer auf der Wolke\": Cartoon Exhibition",
@@ -812,7 +838,7 @@
    "end": null,
    "venue": "Alexanderplatz Mitte, 10178 Berlin, Germany, Berlin, BE Berlin",
    "area": "Mitte",
-   "category": "misc",
+   "category": "meetup",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -824,10 +850,10 @@
    "translated": false,
    "date_source": "jsonld",
    "title_orig": null,
-   "kind": "misc",
+   "kind": "meetup",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Coworking meetup for freelancers and remote workers who would rather work with others than alone or at home.",
+   "classified_by": "claude-task",
    "id": "b8f807b9a6765396a1e3d236ac9c5294975a539c"
   },
   {
@@ -1893,7 +1919,7 @@
    "id": "d1f76222807c0518d186c0835fd5698b6a834c61"
   },
   {
-   "title": "Kleidertausch in M24",
+   "title": "Clothing Swap at M24",
    "start": "2026-11-06T16:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082042-kleidertausch-in-m24",
@@ -1909,14 +1935,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Kleidertausch in M24",
    "kind": "market",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "aadf657cf21c57b4d75d3182e3a150194e7d6dbd"
+   "summary": "Clothing swap at the youth club M24: bring clothes you no longer wear and refresh your style. Free entry until 7 pm.",
+   "classified_by": "claude-task",
+   "id": "ec6eb9bad71ebf9162f13915629ebe940ddfcdbc"
   },
   {
    "title": "German-Arabic Fairy Tale Hour: “Onkel Mäuserich”",
@@ -2871,7 +2897,7 @@
    "id": "da416c271f35865d3ea711544c1190e14bd24a1d"
   },
   {
-   "title": "Ausstellung: Inari Raaterova: Collapse",
+   "title": "Exhibition: Inari Raaterova: Collapse",
    "start": "2026-11-06T18:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2081942-vernissage-18-21-uhr-inari-raaterova-collapse",
@@ -2887,14 +2913,14 @@
    "recurring": false,
    "recurrence": "Every day until 14 Nov",
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Ausstellung: Inari Raaterova: Collapse",
    "kind": "exhibition",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "e9baf12696af5fba3f172b19327af8c86003ddef"
+   "summary": "Solo show at Galerie Pleiku of monochrome, hand-printed works on canvas made from found images, fruit nets and plastics.",
+   "classified_by": "claude-task",
+   "id": "61bf898c06df8884be906edaec9a4316671d11e2"
   },
   {
    "title": "Exhibition: Artists Against the Bomb",
@@ -3144,7 +3170,7 @@
    "end": null,
    "venue": "Atopia Kaffeehaus Prenzlauer Allee 187, Berlin, BE Berlin",
    "area": "Pankow",
-   "category": "misc",
+   "category": "meetup",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -3156,10 +3182,10 @@
    "translated": false,
    "date_source": "jsonld",
    "title_orig": null,
-   "kind": "misc",
+   "kind": "meetup",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Social drinks on Friday evening at bar Atopia. Cash only, no smoking inside.",
+   "classified_by": "claude-task",
    "id": "46619593003282a2fb365a74b4be072e15b43dfc"
   },
   {
@@ -4394,7 +4420,7 @@
    "id": "88b9763fe164858e9f5281cef5c08bed5fcd853f"
   },
   {
-   "title": "historischer Rundgang durch Klein-Wendenschloß",
+   "title": "Historical Walk through Klein-Wendenschloß",
    "start": "2026-11-07T11:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082045-historischer-rundgang-durch-klein-wendenschloss",
@@ -4410,14 +4436,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "historischer Rundgang durch Klein-Wendenschloß",
    "kind": "tour",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "12080299df12d29201b5cb04ee564b84529eaf35"
+   "summary": "Guided walk to historic sites in Wendenschloss, led by Dr. Uta Mitsching-Viertel.",
+   "classified_by": "claude-task",
+   "id": "95825fa916ee8a307b1fd68b0d24f91792cbc1ba"
   },
   {
    "title": "Hula Hoop Fitness, Wuhlheide",
@@ -4781,32 +4807,6 @@
    "summary": "New chess group at the Humboldt-Bibliothek for anyone interested, of any age. Just drop in, no registration needed.",
    "classified_by": "claude-task",
    "id": "97b42a8ede9d235776f563563ac70efdfdd82d75"
-  },
-  {
-   "title": "Afternoon Walk and Coffee: Ostkreuz to Potsdamer Platz",
-   "start": "2026-11-07T13:30:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/berlin-walking-biking-meetup-group/events/317128070/",
-   "end": null,
-   "venue": "Ostkreuz Friedrichshain-Kreuzberg, 10245 Berlin, Germany, Berlin, BE Berlin",
-   "area": "Friedrichshain-Kreuzberg",
-   "category": "meetup",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "dates": null,
-   "translated": true,
-   "date_source": "jsonld",
-   "title_orig": "Afternoon Walk + Coffee in Berlin: Ostkreuz to Potsdamer Platz👣🚶🚶‍♀️🍂🥐☕🍪",
-   "kind": "meetup",
-   "audience": "everyone",
-   "summary": "Group walk from Ostkreuz to Potsdamer Platz with coffee. A €1 cash donation per person is required on site.",
-   "classified_by": "claude-task",
-   "id": "45224f368ba2e77a156f80f53a251126cd5e98b8"
   },
   {
    "title": "Language Café at Frieda Süd (Bauhütte Kreuzberg)",
@@ -5647,14 +5647,14 @@
    "id": "9e6065b2896208057cf720a6f806fb22cf75df67"
   },
   {
-   "title": "Kein Mensch ist eine Insel",
+   "title": "No One Is an Island",
    "start": "2026-11-07T18:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082046-kein-mensch-ist-eine-insel",
    "end": null,
    "venue": null,
    "area": null,
-   "category": "misc",
+   "category": "talk",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -5663,14 +5663,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Kein Mensch ist eine Insel",
+   "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "593dfbf5937afbbe97049021942688521bb98671"
+   "summary": "Evening of art, music and stories on belonging, neighbourhood and isolation; guests are invited to share their own thoughts.",
+   "classified_by": "claude-task",
+   "id": "db4b70004d51b4e963e30363766ec613e24b8152"
   },
   {
    "title": "Peace Meditation in the Rosicrucian Tradition (AMORC)",
@@ -6241,7 +6241,7 @@
    "id": "62d5d126a13b42a0f25c5e4255bac14357eb183f"
   },
   {
-   "title": "Pop-up-Flohmarkt im Zenner (indoor)",
+   "title": "Pop-up Flea Market at Zenner (Indoor)",
    "start": "2026-11-08T11:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082038-pop-up-flohmarkt-im-zenner-indoor",
@@ -6257,17 +6257,17 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Pop-up-Flohmarkt im Zenner (indoor)",
    "kind": "market",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "77b0930f6ec104c0ef7c90678f41e6fcb8b980e0"
+   "summary": "Second-hand fashion, vintage, crafts, design objects, jewellery and a vinyl market, with DJs, food and drinks.",
+   "classified_by": "claude-task",
+   "id": "250c99f6c61bf5256541eb552696d30a920a9a0d"
   },
   {
-   "title": "Flohmarkt im FAF Kino",
+   "title": "Flea Market at FAF Cinema",
    "start": "2026-11-08T11:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2076651-flohmarkt-im-faf-kino",
@@ -6283,14 +6283,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Flohmarkt im FAF Kino",
    "kind": "market",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "36bb7446058a95726369c8a1f9ffadc8aa3743e1"
+   "summary": "Monthly flea market in the summer garden of the Filmtheater am Friedrichshain, with coffee and cake for a donation to charity.",
+   "classified_by": "claude-task",
+   "id": "5631bb37d91ed03e7960189d3e1ab09f45a53c8e"
   },
   {
    "title": "Join-In Circus Workshop with Eleni Orfanou",
@@ -6687,7 +6687,7 @@
    "id": "9c8eadf1023331483cd95dc71ae6083602c262d6"
   },
   {
-   "title": "Berlin-Tempelhof",
+   "title": "Clothing Swap \"All Gender & All Sizes\" at ufaFabrik",
    "start": "2026-11-08T12:00:00+01:00",
    "source": "cal:Kleidertausch",
    "url": "https://kleidertausch.de/event/berlin-2/",
@@ -6708,9 +6708,9 @@
    "title_orig": "Berlin-Tempelhof",
    "kind": "market",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "51a08251273cd06c773a09a5ba4c8ba6a831a8f1"
+   "summary": "Bring up to 15 clean, wearable items, browse and take what you like; take unswapped items home again. No children's clothing.",
+   "classified_by": "claude-task",
+   "id": "dad20da319950ca45b4bc43a951189b53649920e"
   },
   {
    "title": "Laughing Through Grey November – Laughter Yoga on Tempelhofer Feld",
@@ -13501,14 +13501,14 @@
    "id": "38e4a3405125cc09b10b8939209fec5234574cfb"
   },
   {
-   "title": "Warum Kunst? (mehrere Termine)",
+   "title": "Warum Kunst? (Why Art?) – Talk Series at UdK Berlin",
    "start": "2026-11-10T18:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082041-warum-kunst-mehrere-termine",
    "end": null,
    "venue": "Fasanenstraße 1b 10623",
    "area": "Charlottenburg-Wilmersdorf",
-   "category": "exhibition",
+   "category": "talk",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -13517,14 +13517,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "exhibition",
+   "title_orig": "Warum Kunst? (mehrere Termine)",
+   "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "87a344d2e559a3d6a51684bee99d1c62d13c8661"
+   "summary": "Public talk series at the Universität der Künste Berlin on why art and art education still matter today.",
+   "classified_by": "claude-task",
+   "id": "add6b3ca65ba09d51ff05b68230f9eeee0968b6f"
   },
   {
    "title": "Between Origin and New Home: Film, Installation and Reading",
@@ -16851,7 +16851,7 @@
    "id": "9a7c6a1bb7ca38942a2b7e0d0aef85f37a9a925b"
   },
   {
-   "title": "Kreativ Treff",
+   "title": "Creative Meetup",
    "start": "2026-11-11T17:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082043-kreativ-treff",
@@ -16874,14 +16874,14 @@
     "2026-12-09",
     "2026-12-16"
    ],
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Kreativ Treff",
    "kind": "meetup",
-   "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "cccfc6d02af855b9854f3b4720980626a0ff02f2"
+   "audience": "kids",
+   "summary": "Free meetup for young people aged 12 to 27 at M24: be creative, meet people and switch off.",
+   "classified_by": "claude-task",
+   "id": "84df80e0dc7a78d5747c143dcbc309253cc6a918"
   },
   {
    "title": "Repair Instead of Throwing Away: Woodwork Repair Course",
@@ -18493,14 +18493,14 @@
    "id": "82ab072f6ed48325cf098cd94f21a60b55809514"
   },
   {
-   "title": "Einladung zur Pilzwanderung",
+   "title": "Mushroom Walk with Polnischer Sozialrat e.V.",
    "start": "2026-11-12T10:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082039-einladung-zur-pilzwanderung",
    "end": null,
    "venue": null,
    "area": null,
-   "category": "sport",
+   "category": "tour",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -18509,14 +18509,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "sport",
+   "title_orig": "Einladung zur Pilzwanderung",
+   "kind": "tour",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "ad696a5c3287a89ccc28278173d82a9907ad2da9"
+   "summary": "Mushroom-picking walk from Halbe station with an expert, then a shared lunch, bringing together people from Poland and Berlin. Registration required.",
+   "classified_by": "claude-task",
+   "id": "84fd023ff85d7b560c5feeecc81ee7451e9d7a19"
   },
   {
    "title": "Family Breakfast at the Kindervilla",
@@ -20811,7 +20811,7 @@
    "end": null,
    "venue": "KERB Food Hall Potsdamer Platz 2, Berlin Berlin",
    "area": null,
-   "category": "misc",
+   "category": "meetup",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -20823,10 +20823,10 @@
    "translated": false,
    "date_source": "jsonld",
    "title_orig": null,
-   "kind": "misc",
+   "kind": "meetup",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Meetup for people looking for a co-founder or support with their next step, or who just have a question.",
+   "classified_by": "claude-task",
    "id": "5800c6f60e2be899e050c14505dabb58e2a625d3"
   },
   {
@@ -21210,14 +21210,14 @@
    "id": "7ecd38ed4fd52c1c042f848b2b225ed763f80b8f"
   },
   {
-   "title": "Verteilung geretteter Lebensmittel",
+   "title": "Distribution of Rescued Food",
    "start": "2026-11-12T19:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2062279-verteilung-geretteter-lebensmittel",
    "end": null,
    "venue": null,
    "area": null,
-   "category": "misc",
+   "category": "support",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -21233,14 +21233,14 @@
     "2026-12-10",
     "2026-12-17"
    ],
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Verteilung geretteter Lebensmittel",
+   "kind": "support",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "f868a5925490644521ce6dde53dfb60c7b5f0b8f"
+   "summary": "Weekly free hand-out of rescued food, usually fruit, vegetables, baked goods and meals, at the KINDL site in Neukölln. Bring bags and containers.",
+   "classified_by": "claude-task",
+   "id": "08d89810bc1ad8c848e35ef4b054e6304335b00f"
   },
   {
    "title": "Meet New People: Open Table in Wrangelkiez",
@@ -21993,7 +21993,7 @@
    "id": "a815207e072b9ea9910188997d2e75cebf08f52d"
   },
   {
-   "title": "Weihnachtsmarkt auf dem Breitscheidplatz an Gedächtniskirche (täglich außer 15.11., 22.11, 24.12.)",
+   "title": "Christmas Market at Breitscheidplatz by the Gedächtniskirche",
    "start": "2026-11-13T00:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2012628-weihnachtsmarkt-auf-dem-breitscheidplatz-an-gedaechtniskirche-taeglich-ausser-15-11-22-11-24-12",
@@ -22009,14 +22009,14 @@
    "recurring": false,
    "recurrence": "Every day until 20 Dec",
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Weihnachtsmarkt auf dem Breitscheidplatz an Gedächtniskirche (täglich außer 15.11., 22.11, 24.12.)",
    "kind": "market",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "5cd0fed46ceb2d9058b7eba9e78513c1baa993f4"
+   "summary": "One of the largest Christmas markets, with stalls, crafts, gifts, mulled wine, grilled sausages and Christmas music, until early January.",
+   "classified_by": "claude-task",
+   "id": "fc87041f4f05ee3bb615d14311947b9caa944570"
   },
   {
    "title": "Another Italian Journey: WWII in Italy – Places, History and Memories",
@@ -23092,7 +23092,7 @@
    "end": null,
    "venue": null,
    "area": null,
-   "category": "misc",
+   "category": "talk",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -23104,10 +23104,10 @@
    "translated": false,
    "date_source": "daypage",
    "title_orig": null,
-   "kind": "misc",
-   "audience": "women",
-   "summary": null,
-   "classified_by": "rules",
+   "kind": "talk",
+   "audience": "everyone",
+   "summary": "An Amnesty group and Venezuela experts discuss women in Venezuelan prisons and wider human rights abuses, starting from the case of Emirlendris Benítez.",
+   "classified_by": "claude-task",
    "id": "5a6f7eacdd15edc353fda55286a5e7baa6c11550"
   },
   {
@@ -23189,14 +23189,14 @@
    "id": "cca2fc5d112e26cf2d2b42d8a6193e07f3f5d452"
   },
   {
-   "title": "»HUJ:C #3 – Salon: Personal Narratives« – Kreativer Austausch",
+   "title": "HUJ:C #3 – Salon: Personal Narratives – Creative Exchange",
    "start": "2026-11-14T16:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082032-huj-c-3-salon-personal-narratives-kreativer-austausch",
    "end": null,
    "venue": "Ulmenallee 35 14050",
    "area": "Charlottenburg-Wilmersdorf",
-   "category": "market",
+   "category": "talk",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -23205,14 +23205,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "market",
+   "title_orig": "»HUJ:C #3 – Salon: Personal Narratives« – Kreativer Austausch",
+   "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "5a256250fb04f70dbee211f9e0e6e839be2cbd47"
+   "summary": "Open dialogue salon by HUJ:C e.V.: bring art, literature, music or film on personal narratives to share. German and English. Registration required.",
+   "classified_by": "claude-task",
+   "id": "ec614f77c03a0614d1effcf4ddb4979cdb38670e"
   },
   {
    "title": "Reading: Psychiatric Experiences in Alsace under Nazism",
@@ -24733,7 +24733,7 @@
    "id": "1009060cf4baba38e233dd58016e2235aaa7a220"
   },
   {
-   "title": "Stand-up-Comedy im Yaam Berlin – Yaa Man Urban Comedy (1. & 3. Di)",
+   "title": "Stand-up Comedy at YAAM Berlin – Yaa Man Urban Comedy",
    "start": "2026-11-17T19:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082044-stand-up-comedy-im-yaam-berlin-yaa-man-urban-comedy-1-3-di",
@@ -24749,14 +24749,14 @@
    "recurring": false,
    "recurrence": "Every 3rd Tuesday of the month",
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Stand-up-Comedy im Yaam Berlin – Yaa Man Urban Comedy (1. & 3. Di)",
    "kind": "theatre",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "61d9b7c4bd049dfc03ba32897e134dd7aea25d91"
+   "summary": "Stand-up by emerging and seasoned Berlin comedians, hosted by Nano & Dragan, plus a pub quiz, African and Caribbean food and drinks.",
+   "classified_by": "claude-task",
+   "id": "33d1f2e4808fee1a202870e702806fff9a065c44"
   },
   {
    "title": "Rühmchen – Open Reading Stage at Periplaneta Literaturcafé",
@@ -26709,7 +26709,7 @@
    "id": "a7b71d7fb0d6352e3eb16c32755e9fb312d1d602"
   },
   {
-   "title": "Sasperella La Sirène__Sound Ritual Concert",
+   "title": "Sasperella La Sirène – Sound Ritual Concert",
    "start": "2026-11-21T20:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082027-sasperella-la-sirene-sound-ritual-concert",
@@ -26725,13 +26725,13 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Sasperella La Sirène__Sound Ritual Concert",
    "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "A shamanic-inspired singer and music therapist creates soundscapes with her voice and instruments from many cultures. Entry by donation.",
+   "classified_by": "claude-task",
    "id": "4bcd65126792175d1e9a9b5d2fd68663b5934532"
   },
   {
@@ -30046,14 +30046,14 @@
    "id": "bedb2f6b283e7072e4864abcd82148c8284460bb"
   },
   {
-   "title": "Freiheit auf der Strecke",
+   "title": "Book Talk: Freiheit auf der Strecke",
    "start": "2026-12-01T18:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082037-freiheit-auf-der-strecke",
    "end": null,
    "venue": "Normannenstraße 21a 10365",
    "area": "Lichtenberg",
-   "category": "misc",
+   "category": "talk",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -30062,14 +30062,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Freiheit auf der Strecke",
+   "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "f34764cd6aa13ad8291df47e2aa59903a6984bcd"
+   "summary": "Dr. Tobias Wunschik presents his book on the Sachsenring motorcycle races and the political struggle around them with police, Stasi and SED in the GDR.",
+   "classified_by": "claude-task",
+   "id": "8a767cac4649ebc358010b7a3bfb6c88b7debe80"
   },
   {
    "title": "Frollein Tuesday Treasures: Gözde + Joku",
@@ -31242,14 +31242,14 @@
    "id": "06a90c720e8ca447c5d70966e7f58fe49c5c6fe9"
   },
   {
-   "title": "SCHMETTERLINGE SÜDBRLN - 2026-12-04 19:00",
+   "title": "SCHMETTERLINGE SÜDBRLN",
    "start": "2026-12-04T19:00:00+00:00",
    "source": "rss:ufaFabrik",
    "url": "https://ufafabrik.de/node/41081",
    "end": null,
    "venue": null,
    "area": null,
-   "category": "misc",
+   "category": "music",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -31258,14 +31258,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "page",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "SCHMETTERLINGE SÜDBRLN - 2026-12-04 19:00",
+   "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "01eadca7743a2e91d82a258f4013a14943d1354c"
+   "summary": "",
+   "classified_by": "claude-task",
+   "id": "c9900415b99bba7ea1562119c20c71d586b71b40"
   },
   {
    "title": "Women-Only Party: Die Pop-Perlen der Tangoschlampe",
@@ -34726,7 +34726,7 @@
    "id": "5256e7385ec44e0c8b841b0382c40149869f624d"
   },
   {
-   "title": "Stand-up-Comedy im Yaam Berlin – Yaa Man Urban Comedy (1. & 3. Di)",
+   "title": "Stand-up Comedy at YAAM Berlin – Yaa Man Urban Comedy",
    "start": "2026-12-15T19:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082044-stand-up-comedy-im-yaam-berlin-yaa-man-urban-comedy-1-3-di",
@@ -34742,14 +34742,14 @@
    "recurring": false,
    "recurrence": "Every 3rd Tuesday of the month",
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Stand-up-Comedy im Yaam Berlin – Yaa Man Urban Comedy (1. & 3. Di)",
    "kind": "theatre",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "475e2ba22689b7e56f3d281576cf65c20297c140"
+   "summary": "Stand-up by emerging and seasoned Berlin comedians, hosted by Nano & Dragan, plus a pub quiz, African and Caribbean food and drinks.",
+   "classified_by": "claude-task",
+   "id": "af1689bdd246366065cb0919f9047077d8c01a45"
   },
   {
    "title": "Rühmchen – Open Reading Stage at Periplaneta Literaturcafé",
@@ -35532,7 +35532,7 @@
    "id": "c565a271e3adb4395bed214df36b9b62bb51b0f2"
   },
   {
-   "title": "Weihnachtsbasteln",
+   "title": "Christmas Crafts for Kids",
    "start": "2026-12-20T12:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2077823-weihnachtsbasteln",
@@ -35548,14 +35548,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Weihnachtsbasteln",
    "kind": "workshop",
-   "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "315d0828e941dd01cb6b36faf444f3abef139634"
+   "audience": "kids",
+   "summary": "Christmas craft trail where children make decorations or small gifts with natural wood, paint, glitter and painting stations.",
+   "classified_by": "claude-task",
+   "id": "1a3ad8ec480e11e9b3b8bf9ad7b519a8ec7e69d6"
   },
   {
    "title": "Animal Symbolism: Soapstone Sculptures with Nina Plášková",
