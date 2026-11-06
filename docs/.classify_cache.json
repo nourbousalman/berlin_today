@@ -11308,5 +11308,189 @@
 "summary": "Christmas show for dancing with Simone, her band and the Quadrophoniker, playing American swing and country Christmas evergreens.",
 "by": "claude-task",
 "ctx": true
+},
+"07.11. 18:00 Uhr – LT KINO 2026: FEMALE SHORTS (OmeU)": {
+"title": "LT KINO 2026: Female Shorts (OmeU)",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of short films, among them City Above, Hologram and Spa, in original language with English subtitles.",
+"by": "claude-task",
+"ctx": true
+},
+"Kleidertausch in M24": {
+"title": "Clothing Swap at M24",
+"kind": "market",
+"audience": "everyone",
+"summary": "Clothing swap at the youth club M24: bring clothes you no longer wear and refresh your style. Free entry until 7 pm.",
+"by": "claude-task",
+"ctx": true
+},
+"Ausstellung: Inari Raaterova: Collapse": {
+"title": "Exhibition: Inari Raaterova: Collapse",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Solo show at Galerie Pleiku of monochrome, hand-printed works on canvas made from found images, fruit nets and plastics.",
+"by": "claude-task",
+"ctx": true
+},
+"Let's meet at Atopia": {
+"title": "Let's meet at Atopia",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Social drinks on Friday evening at bar Atopia. Cash only, no smoking inside.",
+"by": "claude-task",
+"ctx": true
+},
+"Coworking at Alexanderplatz": {
+"title": "Coworking at Alexanderplatz",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Coworking meetup for freelancers and remote workers who would rather work with others than alone or at home.",
+"by": "claude-task",
+"ctx": true
+},
+"Kein Mensch ist eine Insel": {
+"title": "No One Is an Island",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Evening of art, music and stories on belonging, neighbourhood and isolation; guests are invited to share their own thoughts.",
+"by": "claude-task",
+"ctx": true
+},
+"historischer Rundgang durch Klein-Wendenschloß": {
+"title": "Historical Walk through Klein-Wendenschloß",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Guided walk to historic sites in Wendenschloss, led by Dr. Uta Mitsching-Viertel.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin-Tempelhof": {
+"title": "Clothing Swap \"All Gender & All Sizes\" at ufaFabrik",
+"kind": "market",
+"audience": "everyone",
+"summary": "Bring up to 15 clean, wearable items, browse and take what you like; take unswapped items home again. No children's clothing.",
+"by": "claude-task",
+"ctx": true
+},
+"Pop-up-Flohmarkt im Zenner (indoor)": {
+"title": "Pop-up Flea Market at Zenner (Indoor)",
+"kind": "market",
+"audience": "everyone",
+"summary": "Second-hand fashion, vintage, crafts, design objects, jewellery and a vinyl market, with DJs, food and drinks.",
+"by": "claude-task",
+"ctx": true
+},
+"Flohmarkt im FAF Kino": {
+"title": "Flea Market at FAF Cinema",
+"kind": "market",
+"audience": "everyone",
+"summary": "Monthly flea market in the summer garden of the Filmtheater am Friedrichshain, with coffee and cake for a donation to charity.",
+"by": "claude-task",
+"ctx": true
+},
+"Warum Kunst? (mehrere Termine)": {
+"title": "Warum Kunst? (Why Art?) – Talk Series at UdK Berlin",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Public talk series at the Universität der Künste Berlin on why art and art education still matter today.",
+"by": "claude-task",
+"ctx": true
+},
+"Kreativ Treff": {
+"title": "Creative Meetup",
+"kind": "meetup",
+"audience": "kids",
+"summary": "Free meetup for young people aged 12 to 27 at M24: be creative, meet people and switch off.",
+"by": "claude-task",
+"ctx": true
+},
+"Einladung zur Pilzwanderung": {
+"title": "Mushroom Walk with Polnischer Sozialrat e.V.",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Mushroom-picking walk from Halbe station with an expert, then a shared lunch, bringing together people from Poland and Berlin. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Verteilung geretteter Lebensmittel": {
+"title": "Distribution of Rescued Food",
+"kind": "support",
+"audience": "everyone",
+"summary": "Weekly free hand-out of rescued food, usually fruit, vegetables, baked goods and meals, at the KINDL site in Neukölln. Bring bags and containers.",
+"by": "claude-task",
+"ctx": true
+},
+"Founder Meet&Greet & Cofounder Search: Cozy Edition!": {
+"title": "Founder Meet&Greet & Cofounder Search: Cozy Edition!",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Meetup for people looking for a co-founder or support with their next step, or who just have a question.",
+"by": "claude-task",
+"ctx": true
+},
+"Weihnachtsmarkt auf dem Breitscheidplatz an Gedächtniskirche (täglich außer 15.11., 22.11, 24.12.)": {
+"title": "Christmas Market at Breitscheidplatz by the Gedächtniskirche",
+"kind": "market",
+"audience": "everyone",
+"summary": "One of the largest Christmas markets, with stalls, crafts, gifts, mulled wine, grilled sausages and Christmas music, until early January.",
+"by": "claude-task",
+"ctx": true
+},
+"»HUJ:C #3 – Salon: Personal Narratives« – Kreativer Austausch": {
+"title": "HUJ:C #3 – Salon: Personal Narratives – Creative Exchange",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Open dialogue salon by HUJ:C e.V.: bring art, literature, music or film on personal narratives to share. German and English. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Venezuela: Women in Prison and wider Human Rights Violations": {
+"title": "Venezuela: Women in Prison and wider Human Rights Violations",
+"kind": "talk",
+"audience": "everyone",
+"summary": "An Amnesty group and Venezuela experts discuss women in Venezuelan prisons and wider human rights abuses, starting from the case of Emirlendris Benítez.",
+"by": "claude-task",
+"ctx": true
+},
+"Stand-up-Comedy im Yaam Berlin – Yaa Man Urban Comedy (1. & 3. Di)": {
+"title": "Stand-up Comedy at YAAM Berlin – Yaa Man Urban Comedy",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Stand-up by emerging and seasoned Berlin comedians, hosted by Nano & Dragan, plus a pub quiz, African and Caribbean food and drinks.",
+"by": "claude-task",
+"ctx": true
+},
+"Sasperella La Sirène__Sound Ritual Concert": {
+"title": "Sasperella La Sirène – Sound Ritual Concert",
+"kind": "music",
+"audience": "everyone",
+"summary": "A shamanic-inspired singer and music therapist creates soundscapes with her voice and instruments from many cultures. Entry by donation.",
+"by": "claude-task",
+"ctx": true
+},
+"Freiheit auf der Strecke": {
+"title": "Book Talk: Freiheit auf der Strecke",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Dr. Tobias Wunschik presents his book on the Sachsenring motorcycle races and the political struggle around them with police, Stasi and SED in the GDR.",
+"by": "claude-task",
+"ctx": true
+},
+"SCHMETTERLINGE SÜDBRLN - 2026-12-04 19:00": {
+"title": "SCHMETTERLINGE SÜDBRLN",
+"kind": "music",
+"audience": "everyone",
+"summary": "",
+"by": "claude-task",
+"ctx": true
+},
+"Weihnachtsbasteln": {
+"title": "Christmas Crafts for Kids",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Christmas craft trail where children make decorations or small gifts with natural wood, paint, glitter and painting stations.",
+"by": "claude-task",
+"ctx": true
 }
 }
