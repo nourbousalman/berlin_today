@@ -2,16 +2,37 @@
 {
 "key": "Shabby Comedy Earlyshow! Stand up im “Mad Monkey Room” ! Prenzlauer Berg direkt Ubhf Eberswalderstr! 18:30 Uhr",
 "venue": "",
-"site_category": null,
-"about": "",
+"site_category": "Comedy & Theater",
+"about": "Eintritt frei (Spende erwünscht! Vorschlag: pro Person 10€) ★ RESERVIERUNGEN ★+++ IHR BRAUCHT NICHT ZU RESERVIEREN, IHR KÖNNT EINFACH SPONTAN VORBEIKOMMEN +++Wer lieber auf Nummer sicher gehen will, der kann gerne den Link zu Eventbrite nutzen, um sich dort sichere Plätze zu reservierenSHABBY COMEDY (18:30 Uhr):Mad Monkey RoomDanziger Straße 1gleich am U-Bahnhof Eberswalder Straße.(U2, Tram M10, und M1)Einlass: 18:00 UhrBeginn: 18:30 UhrDer EINTRITT ist FREI(Spende am Ausgang erwünscht: Vorschlag: pro Person 10€)Präsentiert wird euch die Show von PHILIPP UCKEL",
 "date": "2026-11-06"
 },
 {
 "key": "Shabby Comedy Lateshow! Stand up im \"Mad Monkey Room\"! In Prenzl Berg direkt Ubhf Eberswalderstr. 22:30 Uhr",
+"venue": "Eberswalderstr. 22",
+"site_category": "Comedy & Theater",
+"about": "Eintritt frei (Spende erwünscht! Vorschlag: pro Person 10€) Eintritt ab 18 Jahre ★ RESERVIERUNGEN ★+++ IHR BRAUCHT NICHT ZU RESERVIEREN, IHR KÖNNT EINFACH SPONTAN VORBEIKOMMEN +++Wer lieber auf Nummer sicher gehen will, der kann gerne den Link zu Eventbrite nutzen, um sich dort sichere Plätze zu reservieren.SHABBY COMEDY LATESHOW (22:30 Uhr):Mad Monkey RoomDanziger Straße 1gleich am U-Bahnhof Eberswalder Straße.(U2, Tram M10, und M1)Einlass: 22:00 UhrBeginn: 22:30 Uhr Eintritt ab 18 Jahre Der EINTRITT ist FREI. (Spende am Ausgang erwünscht: Vorschlag: pro Person 10€)",
+"date": "2026-11-06"
+},
+{
+"key": "Lust auf Inline-Skaten - Tag der offenen Tür in Neukölln",
+"venue": "",
+"site_category": "Leute treffen",
+"about": "freier Eintritt Wir bringen Skates zum Anprobieren mit, zeigen erste Schritte und geben Tipps.Wer schon sicher genug fahren kann, kann unsere Slalom-Parcours testen odersich im Inline-Hockey oder Inline-Basketball ausprobieren. Mitmachen könnenalle – egal welchen Alters. Alle Infos auf www.tsc-berlin.de/inline-skatingin der (unteren) Halle der Otto-Hahn-SchuleHaarlemer Str. 21, 12359 Berlin/Neukölln.",
+"date": "2026-11-08"
+},
+{
+"key": "Einer von Euch sein. von Susi Claus und Astrid Endruweit",
+"venue": "BÜHNE Brotfabrik, Cali­ga­ri­platz 1, Berlin, Berlin, 13086",
+"site_category": null,
+"about": "10.11. | 20 Uhr | Eintritt gegen Spende: Richtwert 5€ Kindheit und Jugend 1933 bis 45 zwischen Mitmachen, Verweigern und Deportation Figurentheater für Jugendliche ab 13 Jahren und Erwachsene Eine Produktion von Susi Claus und Astrid Endruweit „Und da wurde mir plötzlich die Gedankenlosigkeit meiner ganzen Bemerkung klar. Der Kurt war Jude, er konnte gar nicht einer von uns sein.“ Bis zu diesem Tag sind Kinder zusammen auf die Schule gegangen, waren beste Freunde. Nun jedoch gibt es da einen Unterschied. Das sind die einen und das sind die anderen. „…und auf einmal mußte man morgens, wenn man in die Schule kam, nicht mehr „guten Morgen“ sondern „Heil Hitler“ sagen.“ Und dann war da das Gebet",
+"date": "2026-11-10"
+},
+{
+"key": "Tourenbericht Obernberg",
 "venue": "",
 "site_category": null,
-"about": "",
-"date": "2026-11-06"
+"about": "Ein Bericht über eine Gruppenfahrt nach Obernberg im Februar 2026 Der Beitrag Tourenbericht Obernberg erschien zuerst auf DAV Berlin .",
+"date": "2026-11-10"
 },
 {
 "key": "Die Geister Niederschlesiens",
@@ -19,6 +40,13 @@
 "site_category": "Wissen live",
 "about": "Deutsche Inschriften an Häusern, zurückgelassene Bücher, eine Zuckerdose auf dem Küchentisch: Für Leszek Koczanowicz gehörten die Spuren der früheren Bewohner Niederschlesiens zum Alltag seiner Kindheit. Er wuchs in Legnica (deutsch: Liegnitz) auf, wo Menschen nach Krieg, Grenzverschiebung und Vertreibung ein neues Leben begannen. Die deutsche Vergangenheit blieb in den Dingen sichtbar. Über die Erlebnisse der Neuangekommenen wurde dagegen oft geschwiegen.Wie wächst man in einer solchen Umgebung auf? Was bedeutet es, in den Häusern anderer zu leben? Und wann wird ein fremder Ort zum Zuhause?Im Gespräch mit der Schriftstellerin Karolina Kuszyk verbindet der Philosoph und Kulturwissenschaftler",
 "date": "2026-11-12"
+},
+{
+"key": "Sprachcafé☕(Niveau B1-C1)",
+"venue": "Olof-Palme-Zentrum Demminer Str. 28, 13355 Berlin, Germany, Berlin, BE Berlin",
+"site_category": null,
+"about": "Du möchtest dein Deutsch (Niveau **B1 bis C1**) in entspannter Atmosphäre üben und neue Leute kennenlernen? Dann komm zu unserem regelmäßigen Sprachcafé!",
+"date": "2026-11-13"
 },
 {
 "key": "„A Man of No Importance“ .Theater ganz ohne Worte – aber voller Humor!",
@@ -42,7 +70,7 @@
 "date": "2026-11-19"
 },
 {
-"key": "MIXTAPE 1984",
+"key": "MIXTAPE &#8217;84",
 "venue": "Privatclub Berlin Skalitzer Straße 85-86 10997 Berlin",
 "site_category": null,
 "about": "Konzert am Samstag, 21. November 2026 um 23:00 Uhr im Privatclub Berlin",
@@ -61,6 +89,20 @@
 "site_category": "Wissen live",
 "about": "Umgestaltet, umgedeutet oder dem Verfall überlassen: Deutsche Denkmäler nahmen nach 1945 in den neuen polnischen Westgebieten ganz unterschiedliche Wege. Wie gingen die Menschen vor Ort mit diesen Hinterlassenschaften um? Was passte zum Neuanfang, was blieb fremd, und was änderte sich mit der Zeit?In seinem Fotoprojekt „Denkmalforschung“ untersucht Wojtek Sienkiewicz Denkmäler in niederschlesischen Dörfern. Im Gespräch mit der Kulturwissenschaftlerin Karolina Ćwiek-Rogalska geht er der Frage nach, wie lokale Initiativen, politische Vorgaben und alltägliche Entscheidungen ineinandergreifen. Die Denkmäler erzählen von Aneignung und Vernachlässigung, von Erinnerungspolitik und einem Umgang mit ",
 "date": "2026-11-26"
+},
+{
+"key": "Szenische Lesung mit Felix Isenbügel \"Die Weihnachtsgeschichte\" von Dickens",
+"venue": "Lützowstraße 27 10785",
+"site_category": "Kinder & Jugendliche",
+"about": "In der „Weihnachtsgeschichte“ von Charles Dickens geht es um Ebenezer Scrooge, einen alten, verbitterten, knausrigen Mann, der sich weder um seine Mitmenschen, noch um seinen Angestellten oder seine Familie kümmert. Nachdem er die Spendensammler, seinen Mitarbeiter und seinen Neffen vor den Kopf gestoßen hat, erhält Scrooge am Abend Besuch vom Geist seines ehemaligen Partners, der schon seit einigen Jahren verstorben ist. Dieser kündigt ihm den Besuch von drei weiteren Geistern an. Diese zeigen ihm seine Vergangenheit in Einsamkeit, die Gegenwart mit dem kranken Jungen Tim und die Zukunft, einer trostlosen Welt ohne ihn. Geläutert durch die Besuche der drei Weihnachtsgeister möchte Scrooge n",
+"date": "2026-11-27"
+},
+{
+"key": "Industrie-Fabrik-Arbeit",
+"venue": "Fasanenstraße 29 10719",
+"site_category": "Kunst",
+"about": "Künstler: Ria Picco-Rückert, Gerd Arntz, Bert Mallad, Vera Singer, Augustin Tschinkel, Lea Grundig, Sigurd Wendland VERNISSAGE mit Empfang um 18 Uhr am Freitag, 27. Nov. 2026, Fasanenstr.29, 10719 Berlin.Die Industrie-Malerei zeigt die Transformation der Natur durch die Schwerindustrie. Obwohl die Fabriken und Anlagen für jedermann sichtbar waren, durften nur ausgewählte Künstler in die Werkhallen, – jene Höhlen der Industriezeit mit ihren riesigen Öfen, Gießhallen und Hüttenbahnen. Die abgebildeten Figuren in der Industrie-Kunst sind fast durchweg Arbeiter, Männer im Anzug werden kaum gezeigt. Denn nicht die Elite, nicht die Gesellschaft treiben das Geschehen an, sondern nur die Technik in ",
+"date": "2026-11-27"
 },
 {
 "key": "Der Schatz – Eine böhmische Familiengeschichte",
