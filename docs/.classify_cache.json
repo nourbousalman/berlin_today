@@ -11492,5 +11492,133 @@
 "summary": "Christmas craft trail where children make decorations or small gifts with natural wood, paint, glitter and painting stations.",
 "by": "claude-task",
 "ctx": true
+},
+"08.11. 14:00 Uhr – LT KINO 2026: CINEMA BRUNCH (OV)": {
+"title": "LT KINO 2026: Cinema Brunch (OV)",
+"kind": "film",
+"audience": "everyone",
+"summary": "",
+"by": "claude-task",
+"ctx": true
+},
+"Lust auf Inline-Skaten - Tag der offenen Tür in Neukölln": {
+"title": "Try Inline Skating – Open Day in Neukölln",
+"kind": "sport",
+"audience": "everyone",
+"summary": "Try on skates, learn first steps and get tips; confident skaters can try a slalom course, inline hockey or inline basketball. All ages.",
+"by": "claude-task",
+"ctx": true
+},
+"Einer von Euch sein. von Susi Claus und Astrid Endruweit": {
+"title": "Einer von Euch sein by Susi Claus and Astrid Endruweit",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Puppet theatre about childhood and youth 1933–45, between joining in, refusing and deportation. For ages 13+ and adults.",
+"by": "claude-task",
+"ctx": true
+},
+"Tourenbericht Obernberg": {
+"title": "Tour Report: Obernberg",
+"kind": "notice",
+"audience": "everyone",
+"summary": "A DAV Berlin report on a group trip to Obernberg in February 2026.",
+"by": "claude-task",
+"ctx": true
+},
+"Die Geister Niederschlesiens": {
+"title": "The Ghosts of Lower Silesia",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Philosopher Leszek Koczanowicz, who grew up in Legnica among traces of its German past, in conversation with writer Karolina Kuszyk.",
+"by": "claude-task",
+"ctx": true
+},
+"Sprachcafé☕(Niveau B1-C1)": {
+"title": "Language Café (German B1–C1)",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Regular language café to practise German at B1–C1 level in a relaxed atmosphere and meet new people.",
+"by": "claude-task",
+"ctx": true
+},
+"„A Man of No Importance“ .Theater ganz ohne Worte – aber voller Humor!": {
+"title": "\"A Man of No Importance\" – Wordless Comedy Theatre",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "London ensemble Scrambled Egg plays a wordless slapstick spy parody about an MI6 cleaner who dreams of being an agent. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Arabisches Café - المقهى": {
+"title": "Arabic Café",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Arabic speakers from the neighbourhood meet at Kiezladen WaMa for Arabic coffee and a chat; others welcome too. A language café follows.",
+"by": "claude-task",
+"ctx": true
+},
+"SchlossKultur – Kultur im Schloss – Winterspecial - in der Ingeborg-Drewitz-Bibliothek": {
+"title": "SchlossKultur – Winter Special at Ingeborg-Drewitz-Bibliothek",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Crafts, upcycling, collage, singing and music-making offered by Steglitz-Zehlendorf's library, music school, youth art school and adult education centre.",
+"by": "claude-task",
+"ctx": true
+},
+"MIXTAPE &#8217;84": {
+"title": "MIXTAPE '84",
+"kind": "music",
+"audience": "everyone",
+"summary": "A concert at Privatclub Berlin.",
+"by": "claude-task",
+"ctx": true
+},
+"\"Las AbreCaminos\" - Südamerikanische Märchen & Lieder im RegenbogenKino": {
+"title": "\"Las AbreCaminos\" – South American Tales & Songs at RegenbogenKino",
+"kind": "theatre",
+"audience": "kids",
+"summary": "Quena Tapia and Johanna Wollin tell South American tales with song and instruments, in German and Spanish. For ages 11+ and adults; 60 minutes.",
+"by": "claude-task",
+"ctx": true
+},
+"Wessen Denkmäler? Deutsche Spuren in den polnischen Westgebieten": {
+"title": "Whose Monuments? German Traces in Poland's Western Territories",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Wojtek Sienkiewicz presents his photo project on German monuments in Lower Silesian villages after 1945, with Karolina Ćwiek-Rogalska.",
+"by": "claude-task",
+"ctx": true
+},
+"Szenische Lesung mit Felix Isenbügel \"Die Weihnachtsgeschichte\" von Dickens": {
+"title": "Staged Reading with Felix Isenbügel: Dickens' \"A Christmas Carol\"",
+"kind": "talk",
+"audience": "kids",
+"summary": "Felix Isenbügel gives a staged reading of Dickens' story of the miser Ebenezer Scrooge, who is visited by three Christmas ghosts.",
+"by": "claude-task",
+"ctx": true
+},
+"Industrie-Fabrik-Arbeit": {
+"title": "Industry – Factory – Work",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Industrial painting by artists incl. Gerd Arntz, Lea Grundig and Sigurd Wendland, showing factories and workers. Opening with reception.",
+"by": "claude-task",
+"ctx": true
+},
+"Der Schatz – Eine böhmische Familiengeschichte": {
+"title": "The Treasure – A Bohemian Family Story",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Historian Philipp Ther presents \"Mein Schatz\", in which family documents reveal how deeply his family was entangled in Nazism.",
+"by": "claude-task",
+"ctx": true
+},
+"Bundesweiter Kurzfilmtag an verschiedenen Orten": {
+"title": "Nationwide Short Film Day at Various Venues",
+"kind": "film",
+"audience": "everyone",
+"summary": "On the longest night, short films are shown at many places in Berlin; some are free, e.g. in libraries and the Documentation Centre for Displacement.",
+"by": "claude-task",
+"ctx": true
 }
 }
