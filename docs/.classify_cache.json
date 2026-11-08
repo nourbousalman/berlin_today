@@ -11620,5 +11620,157 @@
 "summary": "On the longest night, short films are shown at many places in Berlin; some are free, e.g. in libraries and the Documentation Centre for Displacement.",
 "by": "claude-task",
 "ctx": true
+},
+"Tanzschule KELLER - Tag der offenen Tür": {
+"title": "Tanzschule KELLER – Open Day",
+"kind": "sport",
+"audience": "everyone",
+"summary": "Free dance workshops for beginners, shows by dance groups, then a dance party for all in the atrium. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Stand Up Comedy in Moabit — Comoday — Heine Bar": {
+"title": "Stand-Up Comedy in Moabit – Comoday at Heine Bar",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Moabit's longest-running stand-up show: hosts Paul Langer and Marco Schmalfett present six Berlin comedians every Sunday.",
+"by": "claude-task",
+"ctx": true
+},
+"Sunday Silent Reading Afternoon Session@ MOKKA*MILCH": {
+"title": "Sunday Silent Reading Afternoon at MOKKA*MILCH",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "A silent reading session at MOKKA*MILCH on a winter Sunday afternoon.",
+"by": "claude-task",
+"ctx": true
+},
+"Online Single Christian's Speed Dating(Ages 27-45)": {
+"title": "Online Speed Dating for Single Christians (Ages 27-45)",
+"kind": "meetup",
+"audience": "group",
+"summary": "Online-only virtual speed dating for single Christians aged 27-45, aimed at people in the UK and around the world.",
+"by": "claude-task",
+"ctx": true
+},
+"Duo Lakin und Swantje Lichtenstein": {
+"title": "Duo Lakin and Swantje Lichtenstein",
+"kind": "music",
+"audience": "everyone",
+"summary": "Neslihan Schmidt (piano, synthesizer) and Korhan Erel (electronics) play prepared piano with live electronics that respond to its sound.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin-Friedenau": {
+"title": "Clothes Swap in Friedenau",
+"kind": "market",
+"audience": "everyone",
+"summary": "Bring up to 10 clean, intact clothes and take what you like; adults' and children's clothing. Everyone welcome, even without items.",
+"by": "claude-task",
+"ctx": true
+},
+"Helene Weigel – Revoltionärin im Rampenlicht": {
+"title": "Helene Weigel – Revolutionary in the Spotlight",
+"kind": "film",
+"audience": "everyone",
+"summary": "Documentary by Maria Wischnewski on actress Helene Weigel, Bertolt Brecht's partner and later head of the Berliner Ensemble.",
+"by": "claude-task",
+"ctx": true
+},
+"Under Berlin Film Festival (UBFF) 2026 | Programme #1 | Run River!": {
+"title": "Under Berlin Film Festival 2026: Programme #1 – Run River!",
+"kind": "film",
+"audience": "everyone",
+"summary": "Short films with English subtitles, incl. Run River! (Russia, 2025) and Mamie (Spain, 2024), stories of family and farewells.",
+"by": "claude-task",
+"ctx": true
+},
+"»Jüdisches Weißensee« – Jüdische Geschichte(n) in der Gegenwartsliteratur. Lesung & Gespräch mit Marina Frenk, Slata Roschal, Britta Wauer & Alexander Estis": {
+"title": "Jewish Weißensee: Jewish History in Contemporary Literature",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Reading and talk with Marina Frenk, Slata Roschal, Britta Wauer and Alexander Estis on Weißensee's Jewish history in literature and film.",
+"by": "claude-task",
+"ctx": true
+},
+"Workshop: Demokratie stärken – Haltung zeigen, Argumente finden": {
+"title": "Workshop: Strengthening Democracy – Taking a Stand, Finding Arguments",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Interactive workshop on defending democratic values, spotting populist narratives and civil courage, with group exercises. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Helga Schubert: Wenn die Demokratie verlorengeht - Vom Gesetz der Diktatur": {
+"title": "Helga Schubert: When Democracy Is Lost – On the Law of Dictatorship",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Conversation with writer and psychologist Helga Schubert about her book Judasfrauen on legal crimes and denunciation under Nazism.",
+"by": "claude-task",
+"ctx": true
+},
+"Weihnachtspostkarten erstellen - Aquarellmal-Workshop mit Iryna Razin": {
+"title": "Making Christmas Cards – Watercolour Workshop with Iryna Razin",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Ukrainian artist Iryna Razin teaches beginners and advanced painters watercolour to design personal Christmas cards. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Perlen Europäischer Klassik u. a. mit dem ehem. Solocellisten der Berliner Symphoniker": {
+"title": "Gems of European Classical Music – Duo Hans Rabus & Peter Kuhz",
+"kind": "music",
+"audience": "everyone",
+"summary": "Cellist Hans Rabus (ex-Berliner Symphoniker) and guitarist Peter Kuhz play Renaissance, Baroque, Impressionist and Spanish works.",
+"by": "claude-task",
+"ctx": true
+},
+"Wie wollen wir miteinander leben? Eine Einladung zum Dialog": {
+"title": "How Do We Want to Live Together? An Invitation to Dialogue",
+"kind": "talk",
+"audience": "everyone",
+"summary": "An open conversation on issues like war, migration, racism, climate and democracy, aiming to listen and disagree without putting others down.",
+"by": "claude-task",
+"ctx": true
+},
+"20 Jahre Moving Home Ensemble": {
+"title": "20 Years of the Moving Home Ensemble",
+"kind": "music",
+"audience": "everyone",
+"summary": "Anniversary concert of the Berlin saxophone orchestra founded by Cornelia Ottinger: Bach, Shostakovich, tangos and jazz arrangements.",
+"by": "claude-task",
+"ctx": true
+},
+"Villa Zauber – Familien-Weihnachtsmarkt der Schwartzschen Villa in Steglitz": {
+"title": "Villa Zauber – Family Christmas Market at Schwartzsche Villa",
+"kind": "market",
+"audience": "kids",
+"summary": "Family Christmas market in the villa garden with live music, crafts from the Mosaik workshops, kids' crafting and St Nicholas on 6 December.",
+"by": "claude-task",
+"ctx": true
+},
+"OPUS - Einladung zur Matinee": {
+"title": "OPUS – Matinee Concert",
+"kind": "music",
+"audience": "everyone",
+"summary": "Folk, classical and Christmas songs led by Katharina Löwe, with ensemble FRAU VOX and the Opus music school's children's choir and duos.",
+"by": "claude-task",
+"ctx": true
+},
+"Wintergeschichten zum Zuhören": {
+"title": "Winter Stories to Listen To",
+"kind": "talk",
+"audience": "everyone",
+"summary": "A cosy morning of fairy tales and winter stories read aloud, with tea and biscuits and no Christmas bustle.",
+"by": "claude-task",
+"ctx": true
+},
+"The Very Best Time - Weihnachtskonzert": {
+"title": "The Very Best Time – Christmas Concert",
+"kind": "music",
+"audience": "everyone",
+"summary": "The St. Konrad Gospelchor performs a festive mix of gospel, soulful pop songs and spirituals at its Christmas concerts.",
+"by": "claude-task",
+"ctx": true
 }
 }
