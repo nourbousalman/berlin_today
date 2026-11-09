@@ -11772,5 +11772,109 @@
 "summary": "The St. Konrad Gospelchor performs a festive mix of gospel, soulful pop songs and spirituals at its Christmas concerts.",
 "by": "claude-task",
 "ctx": true
+},
+"Workshop für Alles (mehrere Termine)": {
+"title": "Workshop for Everything – Open Art Group",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Weekly open art group for adults led by James: sketchbooks, mixed media, drawing, printing, watercolour, collage. All levels; English welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Board Game Night @ Nachbarschftsheim Schöneberg - Friedenau": {
+"title": "Board Game Night at Nachbarschaftsheim Schöneberg - Friedenau",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Berlin Board Gamers play modern card and board games every other Wednesday. Bring your own games or play what's there.",
+"by": "claude-task",
+"ctx": true
+},
+"Jazz-Jam-Session Wittenauer Jazzscheune muss leider vorläufig pausieren": {
+"title": "Jazz Jam Session at Wittenauer Jazzscheune Paused for Now",
+"kind": "notice",
+"audience": "everyone",
+"summary": "The free jazz jam session at Wittenauer Jazzscheune, where professionals and young talent play, is paused for the time being.",
+"by": "claude-task",
+"ctx": true
+},
+"Under Berlin Film Festival (UBFF) 2026 | Programme #2": {
+"title": "Under Berlin Film Festival (UBFF) – Programme #2",
+"kind": "film",
+"audience": "everyone",
+"summary": "Short films at KINO Brotfabrik, including Brief Masquerade (Mexico) and Salman Wants to Go (Türkiye), about a Senegalese refugee.",
+"by": "claude-task",
+"ctx": true
+},
+"Der offene Freitagstheatertreff für Jedermann": {
+"title": "Open Friday Theatre Group for Everyone",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Monthly drop-in theatre group with theatre educator Beatrice Ellinger: beginners and experienced players turn relevant topics into scenes.",
+"by": "claude-task",
+"ctx": true
+},
+"Optische Schreie – Die Geschichte des Aachener Wandmalers Klaus Paier": {
+"title": "Optical Screams – The Story of Aachen Muralist Klaus Paier",
+"kind": "film",
+"audience": "everyone",
+"summary": "Documentary by Lovorka Perić-Hassler on Klaus Paier, a pioneer of street art in Germany who saw mural painting as political art.",
+"by": "claude-task",
+"ctx": true
+},
+"Glückslesung am Freitag, den 13.": {
+"title": "Lucky Reading on Friday the 13th",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Berlin author Alexandra Lüthen reads from her books, including the love story 'Ela', at Thomas-Dehler-Bibliothek. Wine and juice served.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin-Pankow": {
+"title": "Keep it in the Loop! – Clothes Swap in Pankow",
+"kind": "market",
+"audience": "everyone",
+"summary": "Free clothes swap party at C*Space: bring up to 10 items of clothing, accessories, bags or shoes. Snacks and drinks provided.",
+"by": "claude-task",
+"ctx": true
+},
+"Afternoon Walk+Coffee in Berlin: Charlottenburg->Alexanderplatz 👣🚶🚶‍♀️🍂🥐☕🍪": {
+"title": "Afternoon Walk and Coffee: Charlottenburg to Alexanderplatz",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Group walk from Charlottenburg to Alexanderplatz with coffee. A €1 cash donation per person is required on site.",
+"by": "claude-task",
+"ctx": true
+},
+"Studio 9. Der Tag mit Raul Krauthausen. Deutschlandfunk Kultur – live aus dem Humboldt Forum": {
+"title": "Deutschlandfunk Kultur Studio 9 Live with Raul Krauthausen",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Live radio show at the Humboldt Forum with activist and author Raúl Krauthausen, who campaigns for inclusion and disability rights.",
+"by": "claude-task",
+"ctx": true
+},
+"\"How to Win Friends & Influence People\" - AI empowered learning": {
+"title": "\"How to Win Friends & Influence People\" – AI-Empowered Learning",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Online workshop reviewing Dale Carnegie's lessons with a modern twist.",
+"by": "claude-task",
+"ctx": true
+},
+"Geld. Macht. Liebe. Krimiabend in der Dietrich-Bonhoeffer-Bibliothek": {
+"title": "Money. Power. Love. Crime Evening at Dietrich-Bonhoeffer-Bibliothek",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Authors from Mörderische Schwestern present their crime story anthology 'Verbrechen mit Stil'. Donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Kleinster Weihnachtsmarkt in Kreuzberg": {
+"title": "Smallest Christmas Market in Kreuzberg",
+"kind": "market",
+"audience": "everyone",
+"summary": "Mosaik-Berlin opens its workshop courtyard for one day: handmade crafts as gifts, mulled wine and grilled food.",
+"by": "claude-task",
+"ctx": true
 }
 }
