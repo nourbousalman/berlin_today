@@ -11876,5 +11876,213 @@
 "summary": "Mosaik-Berlin opens its workshop courtyard for one day: handmade crafts as gifts, mulled wine and grilled food.",
 "by": "claude-task",
 "ctx": true
+},
+"LGBT Winterdays & Christmas Avenue in Schöneberg (täglich außer 15. & 22.11.)": {
+"title": "LGBT Winterdays & Christmas Avenue in Schöneberg",
+"kind": "festival",
+"audience": "everyone",
+"summary": "Festive lights, a daily stage programme and food, with Christmas karaoke on Fridays. Becomes Christmas Avenue after Totensonntag.",
+"by": "claude-task",
+"ctx": true
+},
+"Lea Streisand trifft Anja Reich der Livepodcast": {
+"title": "Lea Streisand Meets Anja Reich: Live Podcast",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Lea Streisand and journalist Anja Reich talk on stage about superstition, ghost stories and whether it takes courage to interview a murderer.",
+"by": "claude-task",
+"ctx": true
+},
+"Under Berlin Film Festival (UBFF) 2026 | Programme #3": {
+"title": "Under Berlin Film Festival (UBFF) 2026: Programme #3",
+"kind": "film",
+"audience": "everyone",
+"summary": "Two films: the short 'A Perfect Maryam' (Iran/USA) and 'The Travelers' (Cameroon/Spain), about migrants waiting at the Morocco–Spain border.",
+"by": "claude-task",
+"ctx": true
+},
+"Der Mühlenkiez": {
+"title": "Mühlenkiez Neighbourhood Walk",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Donation-based walk starting at Storkower / Greifswalder Str. and looping back to the start. Minimum two participants.",
+"by": "claude-task",
+"ctx": true
+},
+"Kiezspaziergang in den Winskiez": {
+"title": "Neighbourhood Walk Through the Winskiez",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Donation-based walk of about 1.5 hours, in German only, from Marienburger Str. / Prenzlauer Allee and back. Minimum two participants.",
+"by": "claude-task",
+"ctx": true
+},
+"\"Café ¡No Pasarán! - im RegenbogenCafé": {
+"title": "Café ¡No Pasarán! at RegenbogenCafé",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Open café with coffee, cake and discussion for people standing up to right-wing tendencies. This time: a short input on knitting against fascism.",
+"by": "claude-task",
+"ctx": true
+},
+"4D-Textilien durch Additive Fertigung: Wenn Materialien ihre Form verändern": {
+"title": "4D Textiles via Additive Manufacturing: Materials That Change Shape",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Online VDI talk by Hannah Charlotte Kelbel on 3D-printed textiles made with smart materials that change shape in response to outside influences.",
+"by": "claude-task",
+"ctx": true
+},
+"Kiezpoeten – Poetry Slam": {
+"title": "Kiezpoeten – Poetry Slam",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Four slam poets perform their own texts, funny and thoughtful, on the library stage. Registration requested.",
+"by": "claude-task",
+"ctx": true
+},
+"#Logoskop neunundvierzig. Dichtung und Wissenschaft mit Alex Burkhard und Alicia Osiik": {
+"title": "#Logoskop 49: Poetry and Science with Alex Burkhard and Alicia Osiik",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Slam poets Alex Burkhard and Alicia Osiik walk through the Humboldt Labor exhibition 'On Water', commenting on it with live texts.",
+"by": "claude-task",
+"ctx": true
+},
+"Mitmach-Aktion „Trueke*-Markt\": Mitmachen, Austauschen und gemeinsam Lernen": {
+"title": "Join-In Trueke Market: Swap, Share and Learn Together",
+"kind": "market",
+"audience": "everyone",
+"summary": "Swap well-kept items, share food memories at recipe speed-dating, make greeting cards, with open desk and open mic. Registration requested.",
+"by": "claude-task",
+"ctx": true
+},
+"\"Gospel of Revolution\" - Filmvorführung mit anschließender Diskussion im RegenbogenKino": {
+"title": "'Gospel of Revolution': Screening and Discussion at RegenbogenKino",
+"kind": "film",
+"audience": "everyone",
+"summary": "Film screening, then a discussion on churches and (anti-)imperialism, from Latin American liberation theology to today's evangelical right.",
+"by": "claude-task",
+"ctx": true
+},
+"Buchvorstellung \"Berlin in Geschichte und Gegenwart\" - Landesarchiv Berlin": {
+"title": "Book Launch: 'Berlin in Geschichte und Gegenwart', Landesarchiv Berlin",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Three authors present their articles in the Landesarchiv's Berlin history yearbook, then a reception and a look into the stacks. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Die Königsdisziplin des Grauwasserrecyclings: 20 Jahre erfolgreich im Betrieb – wie geht's weiter?": {
+"title": "The Supreme Discipline of Greywater Recycling: 20 Years in Operation",
+"kind": "talk",
+"audience": "everyone",
+"summary": "VDI talk by Erwin Nolde on greywater recycling running in Block 6 for 20 years and retrofitting it in existing buildings. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Die Kaderakte Markus Wolf \"Männer ohne Gesicht?\" – Geheimdienstchefs im Kalten Krieg": {
+"title": "Markus Wolf's Personnel File: Spy Chiefs in the Cold War",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Wolfgang Krieger and Daniela Münkel discuss how secret services arose, chose staff and acted in the Cold War, starting from Markus Wolf's file.",
+"by": "claude-task",
+"ctx": true
+},
+"Geheim nach 5 Feierabendführung in der Ausstellung „Einblick ins Geheime\"": {
+"title": "After-Work Tour of the Exhibition 'Einblick ins Geheime'",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Evening tour of the exhibition at the former Stasi headquarters, now the Stasi Records Archive, on how the Stasi secured the SED's rule.",
+"by": "claude-task",
+"ctx": true
+},
+"Unterwegs: Comic-Lesung und Lesekonzert von Thilo Krapp und Jörg Walter aus \"Die Zeitmaschine\" im INTEGRAL Begegnungszentrum": {
+"title": "Comic Reading and Concert: 'Die Zeitmaschine' by Thilo Krapp",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Thilo Krapp reads from his graphic novel 'Die Zeitmaschine' while Jörg Walter plays his own music on a historic harmonium.",
+"by": "claude-task",
+"ctx": true
+},
+"Winterfest 2026 auf der Fischerinsel": {
+"title": "Winter Festival on Fischerinsel",
+"kind": "festival",
+"audience": "everyone",
+"summary": "Afternoon party for all generations with food, drinks, music, dance, theatre and an exhibition; stage acts include a choir and line dancing.",
+"by": "claude-task",
+"ctx": true
+},
+"Peppi Guggenheim Exil Musikprogramm: Andreas Günther Quartett": {
+"title": "Peppi Guggenheim Exil Music Programme: Andreas Günther Quartett",
+"kind": "music",
+"audience": "everyone",
+"summary": "Modern jazz quartet led by pianist Andreas Günther plays original compositions at Little Stage Bar Neukölln. Ages 18+.",
+"by": "claude-task",
+"ctx": true
+},
+"Die Mitarbeiter der Staatssicherheit": {
+"title": "The Stasi's Employees: Tour of the Permanent Exhibition",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Tour of the exhibition 'Einblick ins Geheime' on how the Stasi was organised and who its official and unofficial employees were.",
+"by": "claude-task",
+"ctx": true
+},
+"Lichtfest": {
+"title": "Festival of Light",
+"kind": "festival",
+"audience": "everyone",
+"summary": "Rosicrucian year-end celebration with a ceremony of light marking the 'return of light' in the longest nights. Guests welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Wintermarkt mit Picturebooks Berlin": {
+"title": "Winter Market with Picturebooks Berlin",
+"kind": "market",
+"audience": "everyone",
+"summary": "Artists' group Picturebooks Berlin sells picture books, illustrations, prints, ceramics and small art objects in the Pablo Neruda library.",
+"by": "claude-task",
+"ctx": true
+},
+"Adventslesung \"Spekulatius rettet das Fest\" mit Autor Tobias Goldfarb": {
+"title": "Advent Reading: 'Spekulatius rettet das Fest' with Tobias Goldfarb",
+"kind": "talk",
+"audience": "kids",
+"summary": "Author Tobias Goldfarb reads his story about the little Christmas dragon Spekulatius, who helps Mats and Matilda save Advent.",
+"by": "claude-task",
+"ctx": true
+},
+"berlin african book club (monthly)": {
+"title": "Berlin African Book Club",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Monthly book club at One More Chapter. This month: 'Blackass' by Igoni Barrett (Nigeria), a satire about a Lagos man who turns white.",
+"by": "claude-task",
+"ctx": true
+},
+"Weihnachtssingen in der Bibliothek": {
+"title": "Christmas Carol Singing in the Library",
+"kind": "music",
+"audience": "everyone",
+"summary": "Sing-along with musical accompaniment: first for families with small children, then for everyone aged 10 and up. No registration needed.",
+"by": "claude-task",
+"ctx": true
+},
+"Orgelmusik an Heiligabend": {
+"title": "Organ Music on Christmas Eve",
+"kind": "music",
+"audience": "everyone",
+"summary": "Festive organ music by Marienorganist Xaver Schult in St. Marienkirche, with Sabine Graul reading the Christmas story.",
+"by": "claude-task",
+"ctx": true
+},
+"Weihnachten 2026 Berlin: Veranstaltungen, Events, Weihnachtsmärkte für Weihnachtszeit 2026": {
+"title": "Christmas in Berlin: Events and Christmas Markets",
+"kind": "notice",
+"audience": "everyone",
+"summary": "Overview of tips for Christmas in Berlin: carol singing, concerts, Christmas markets, nativity plays, parties and more.",
+"by": "claude-task",
+"ctx": true
 }
 }
