@@ -1,24 +1,38 @@
 [
 {
-"key": "'Beste' Comedy Stand-Up 19 Uhr in der 'Beste' Bar im Wedding direkt am Leopoldplatz",
-"venue": "Willdenowstraße 12a 13353",
-"site_category": "Comedy & Theater",
-"about": "Spende erwünscht Bei unserem Open Mic erwarten euch jede Woche die besten Comedians Berlins, spannende Newcomer und erfahrene Profis, die neues Material ausprobieren. Die Mischung ist jedes Mal anders – aber eins ist sicher: Es wird richtig lustig. Deswegen ist die Show auch immer fast ausverkauft. Sichert euch noch schnell die letzten Plätze.Durch den Abend führt Christoph Krachten, die mit Spontanität, Selbstironie und einem guten Gespür für Situationskomik für eine entspannte Atmosphäre sorgt. Zudem garniert er den Abend mit seinen verrückten Erlebnissen als YouTube-Daddy, als der er einen legendären Ruf genießt.Einlass ab 19:00 Uhr, Showstart ist um 19:30 Uhr.BESTE BarWilldenowstraße 12a",
-"date": "2026-11-09"
+"key": "LGBT Winterdays & Christmas Avenue in Schöneberg (täglich außer 15. & 22.11.)",
+"venue": "Nollendorfplatz 107",
+"site_category": "Festivals",
+"about": "Festliche Beleuchtung, tägliches Bühnenprogramm und Kulinarisches, erst als LGBT WinterdaysEin Highlight ist das Weihnachts-Karaoke freitags von 19 bis 21 UhrUnd nach Totensonntag als Christmas Avenue: Öffnungszeiten: Montag bis Donnerstag 16 bis 22 Uhr, Freitag bis Sonntag 15 bis 22 Uhr",
+"date": "2026-11-10"
 },
 {
-"key": "New in Berlin Meetup – Social Butterfly Club 🦋",
-"venue": "Bar bOx Oranienburger Str. 65, 10117 Berlin, Germany, Berlin, BE Berlin",
+"key": "Lea Streisand trifft Anja Reich der Livepodcast",
+"venue": "BÜHNE Brotfabrik, Cali­ga­ri­platz 1, Berlin, Berlin, 13086",
 "site_category": null,
-"about": "Join us for a relaxed Monday evening, whether you’re new in Berlin or simply looking to meet open-minded people. Want to stay connected after the meetup?",
-"date": "2026-11-09"
+"about": "13.11.26 | 20 Uhr Am Freitag, den 13. November trifft sich Lea Streisand mit Anja Reich auf der Bühne der Brotfabrik. Sie reden über Aberglauben und Gruselgeschichten. Und ob es Überwindung kostet, einen Mörder zu interviewen. Anja Reich ist Journalistin, deshalb schreibt sie keine Romane, sondern Memoiren, aber nicht ihre eigenen – wie eitle Schriftsteller*innen das immer machen – sondern die von anderen, die nicht mehr da sind und deshalb selber keine Worte mehr finden können. Zuletzt erschien „Simone“ (Aufbau, 2023) die Geschichte einer Jugendfreundin, ein nachdenkliches Buch über Kindheit in der DDR und die Wendezeit in Berlin, über Freundschaft und Erwachsenwerden, mit sorgfältigen Rech",
+"date": "2026-11-13"
 },
 {
-"key": "Lasst uns treffen und Deutsch sprechen",
-"venue": "KERB Food Hall Potsdamer Str. 2, 10785 Berlin, Berlin Berlin",
+"key": "Under Berlin Film Festival (UBFF) 2026 | Programme #3",
+"venue": "KINO Brotfabrik, Cali­ga­ri­platz 1, Berlin, Berlin, 13086, Germany",
 "site_category": null,
-"about": "💬 Lust, dein Deutsch zu verbessern, interessante Gespräche zu führen und neue Menschen kennenzulernen? Dann bist du in unserem Sprachcafé genau richtig! E",
-"date": "2026-11-09"
+"about": "13.11., 21:15 Uhr A Perfect Maryam Iran / United States, 2025, 13 min, Dir.: Solmaz Etemadzadeh, Ara Torosian When Maryam defies her father’s rules, her younger sister Mina watches closely. In a home built on shame and appearances, Mina’s final act of rebellion reveals both her wound and her strength. The Travelers Cameroon / Spain, 2025, 60 min, Dir.: David Bingong On the border between Morocco and Spain, we wait impatiently for the “boza” — to cross to Europe. One failed attempt after another, we survive, and I, the “Artist”, must keep the flame of hope alive for the whole group. A camera and a couple of songs: that is how we made this film. Under Berlin Film Festival (UBFF) 2026 | 12–14 N",
+"date": "2026-11-13"
+},
+{
+"key": "Der Mühlenkiez",
+"venue": "",
+"site_category": "Special Sightseeing",
+"about": "Spende in den Hut Es geht ab Storkower / Greifswalder Str. - es gibt eine kleine Runde zum Ausgangspunkt zurückMindestteilnehmerzahl für die Tour: zwei Personen",
+"date": "2026-11-14"
+},
+{
+"key": "Kiezspaziergang in den Winskiez",
+"venue": "",
+"site_category": "Tolle Touren",
+"about": "Spende in den Hut Mindestteilnehmerzahl: zwei Personen - Tour nur auf deutsch Treffpunkt: Marienburger Str. / Prenzlauer Allee am McPaper Dauer: ca. anderthalb Stunden Die Tour führt in/durch den Winskiez zum Ausgangspunkt zurück.Mindestteilnehmerzahl: zwei Personen pro Tour",
+"date": "2026-11-15"
 },
 {
 "key": "\"Café ¡No Pasarán! - im RegenbogenCafé",
@@ -119,6 +133,13 @@
 "date": "2026-12-07"
 },
 {
+"key": "Lichtfest",
+"venue": "Westphalweg 30 12109",
+"site_category": "Schatztruhe",
+"about": "Das Lichtfest ist das Rosenkreuzer-Fest zum Jahresausklang mit Lichtzeremonie.Die Zeit naht wieder, in der die Nächte am längsten sind und die Natur sich zur Ruhe zurückgezogen hat. Dies ist auch die Periode des Jahres, in der die Rosenkreuzer nach alter Tradition der \"Wiederkehr des Lichtes\" gedenken und dies in einer feierlichen und die Seelenkräfte stärkenden Zeremonie zum Ausdruck bringen.Gäste sind herzlich willkommen.Einlass: ab 17.30 Uhr",
+"date": "2026-12-12"
+},
+{
 "key": "Wintermarkt mit Picturebooks Berlin",
 "venue": "",
 "site_category": "Kunst",
@@ -145,5 +166,19 @@
 "site_category": "Musik",
 "about": "Lasst uns gemeinsam das Weihnachtsfest einsingen – Jung und Alt mit Kind und Kegel! Ihr müsst keine Noten lesen können. Es genügt Lust am Singen zu haben. Die musikalische Begleitung übernehmen wir. Bringt aber gern auch eure Instrumente mit! Gibt es ein Lied, das wir unbedingt gemeinsam singen sollten? Dann postet Euren Wunsch unter diesem Link.23. Dezember 202617:00 –17:30 Uhr: Familiensingen mit kleinen Kindern17:45 –18:15 Uhr: Weihnachtssingen für alle ab 10 Jahren - Werkraum der Bezirkszentralbibliothek Pablo Neruda- Eintritt frei- Ohne Voranmeldung",
 "date": "2026-12-23"
+},
+{
+"key": "Orgelmusik an Heiligabend",
+"venue": "",
+"site_category": "Musik",
+"about": "Sabine Graul (Lesung der Weihnachtsgeschichte), Marienorganist Xaver SchultWenn es am Heiligen Abend langsam wieder ruhig wird, kehrt auch in der St. Marienkirche eine besondere Atmosphäre ein. Da lohnt sich der Besuch der Orgelmusik noch einmal mehr!Hören Sie die vertraute Weihnachtsgeschichte sowie besinnliche und festliche Orgelmusik.",
+"date": "2026-12-24"
+},
+{
+"key": "Weihnachten 2026 Berlin: Veranstaltungen, Events, Weihnachtsmärkte für Weihnachtszeit 2026",
+"venue": "",
+"site_category": "Festivals",
+"about": "Berlin Weihnachten 2026 - Veranstaltungen und Tips: Bei unseren Tips für Heiligabend in Berlin finden sich ein Weihnachtssingen vorm Rathaus, weihnachtliches Turmblasen, Konzerte unterschiedlicher Musikrichtungen, Weihnachtsmärkte, ... Krippenspiel, Partys, ...Bei unseren Tips zum 1. Weihnachsfeiertag 2026 in Berlin warten noch mehr Weihnachtsmärkte, Bach im Hansaviertel, Musik in Kirchen, normalerweise Open Air Kino mit 'Feuerzangenbowle festliche Beleuchtungen, Konzerte in Europas wohl größtem Glockenspiel, ...Bei unseren Veranstaltungen am 2. Weihnachsfeiertag in Berlin finden sch u.a. Witziges wie ein Gänsebraten-Verdauungslauf durch den Grunewald und Klassisches wie Weihnachtsbeleuchtun",
+"date": "2026-12-24"
 }
 ]
