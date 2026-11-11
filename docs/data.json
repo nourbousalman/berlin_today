@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-11T04:50:53.002258+00:00",
- "count": 1206,
+ "generated_at": "2026-11-11T06:45:09.434857+00:00",
+ "count": 1205,
  "counts": {
-  "events": 1206,
+  "events": 1205,
   "recurring": 398,
-  "oneoff": 808,
+  "oneoff": 807,
   "always_free": 16,
   "manual_check": 207
  },
@@ -256,7 +256,7 @@
    "end": null,
    "venue": null,
    "area": null,
-   "category": "misc",
+   "category": "festival",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -268,10 +268,10 @@
    "translated": false,
    "date_source": "daypage",
    "title_orig": null,
-   "kind": "misc",
+   "kind": "festival",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Programme marking 36 years since the fall of the Wall: tours, workshops, films, readings, discussions and events for children.",
+   "classified_by": "claude-task",
    "id": "57169525090c335093b980a17eb2c197cf8aaca8"
   },
   {
@@ -3542,6 +3542,32 @@
    "id": "80734e4749a99d297e2352259e788f599ced8794"
   },
   {
+   "title": "German Sprachcafé at Denizen! All levels A1 - C1!",
+   "start": "2026-11-11T17:00:00.000Z",
+   "source": "web:Meetup Berlin",
+   "url": "https://www.meetup.com/berlinlinguahub/events/317088703/",
+   "end": null,
+   "venue": "Denizen Köpenicker Str. 40, Berlin, BE Berlin",
+   "area": "Treptow-Köpenick",
+   "category": "meetup",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "dates": null,
+   "translated": false,
+   "date_source": "jsonld",
+   "title_orig": null,
+   "kind": "meetup",
+   "audience": "everyone",
+   "summary": null,
+   "classified_by": "rules",
+   "id": "66c1196b058dffebf05de71d194de02e8d7b89f5"
+  },
+  {
    "title": "Language Café for Young People at Königstadt Youth Centre",
    "start": "2026-11-11T17:30:00+00:00",
    "source": "cal:Sprachcafé directory (Berlin)",
@@ -3745,14 +3771,14 @@
    "id": "f11b032e54d90466a89fbb37cc3ef5e12679e9b0"
   },
   {
-   "title": "u.a. Tango | Tabaré Leyton, Sänger Damián DAlessandro, Gitarre",
+   "title": "Tango with Tabaré Leyton and Damián DAlessandro",
    "start": "2026-11-11T18:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082103-u-a-tango-tabare-leyton-saenger-damian-dalessandro-gitarre",
    "end": null,
    "venue": "Windscheidstr. 19 10627",
    "area": "Charlottenburg-Wilmersdorf",
-   "category": "sport",
+   "category": "music",
    "is_free": true,
    "price": "Free — donation welcome",
    "price_value": null,
@@ -3761,14 +3787,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "sport",
+   "title_orig": "u.a. Tango | Tabaré Leyton, Sänger Damián DAlessandro, Gitarre",
+   "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "b184146322b2c9f5dcbbbd0f2c556c1c589328b3"
+   "summary": "Uruguayan singer Tabaré Leyton and Argentine guitarist Damián DAlessandro play South American music. Donation-funded.",
+   "classified_by": "claude-task",
+   "id": "241c28886b2e22428d47c9f9284111892a512f2a"
   },
   {
    "title": "Border Stories: Archive Films on the Berlin Wall",
@@ -4261,14 +4287,14 @@
    "id": "ca57c45afcf7f9b6308c43110875602518cd82a2"
   },
   {
-   "title": "Pizza Talks Marinehaus meets Makkaroni Akademie | 18:30 - 20:30 Uhr",
-   "start": "2026-11-11T18:30:00+01:00",
-   "source": "gib:gratis-in-berlin",
-   "url": "https://www.gratis-in-berlin.de/kalender/item/2040799-uli-richter-sonderpraesentation",
-   "end": "2026-11-11T20:30:00+01:00",
-   "venue": null,
-   "area": null,
-   "category": "misc",
+   "title": "Lantern Parade & Wednesday Social or Julia's Salon - Social Butterfly Club 🦋",
+   "start": "2026-11-11T18:00:00.000Z",
+   "source": "web:Meetup Berlin",
+   "url": "https://www.meetup.com/social-butterfly-radar/events/316794556/",
+   "end": null,
+   "venue": "Uferstudios GmbH Uferstraße 23, 13357 Berlin, Germany, Berlin, BE Berlin",
+   "area": "Mitte",
+   "category": "meetup",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -4278,13 +4304,39 @@
    "recurrence": null,
    "dates": null,
    "translated": false,
-   "date_source": "daypage",
+   "date_source": "jsonld",
    "title_orig": null,
-   "kind": "misc",
+   "kind": "meetup",
    "audience": "everyone",
    "summary": null,
    "classified_by": "rules",
-   "id": "67ac7b87789982e094340d8b917ec838691a90a6"
+   "id": "1ecff8119132750f99e6ac63b15babb66f49024e"
+  },
+  {
+   "title": "Pizza Talks: Marinehaus meets Makkaroni Akademie",
+   "start": "2026-11-11T18:30:00+01:00",
+   "source": "gib:gratis-in-berlin",
+   "url": "https://www.gratis-in-berlin.de/kalender/item/2040799-uli-richter-sonderpraesentation",
+   "end": "2026-11-11T20:30:00+01:00",
+   "venue": null,
+   "area": null,
+   "category": "talk",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "dates": null,
+   "translated": true,
+   "date_source": "daypage",
+   "title_orig": "Pizza Talks Marinehaus meets Makkaroni Akademie | 18:30 - 20:30 Uhr",
+   "kind": "talk",
+   "audience": "everyone",
+   "summary": "A talk on \"guest workers\" and expats: who counts as a migrant or an expat in Berlin, and how their experiences differ or connect.",
+   "classified_by": "claude-task",
+   "id": "9a103196477d8294e6af2f5ab66cace96c3a590c"
   },
   {
    "title": "Posts, Reels, Stories: Refugee Experiences from Yugoslavia Online",
@@ -4537,7 +4589,7 @@
    "id": "cdd6de3ffd2ff7477679c03f44f00a3c12442284"
   },
   {
-   "title": "Genesis Fusion – Konzert & digitale Kunst",
+   "title": "Genesis Fusion – Concert and Digital Art",
    "start": "2026-11-11T19:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082101-genesis-fusion-konzert-digitale-kunst",
@@ -4553,14 +4605,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Genesis Fusion – Konzert & digitale Kunst",
    "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "369f6173b48db44d35b4c16315f2f71cf1ea3435"
+   "summary": "An international interfaith concert with oriental sounds and digital art on the creation story, by Kahal Adass Jisroel e.V. Registration required.",
+   "classified_by": "claude-task",
+   "id": "604fa85cd58154982cda7a08741ca6502701a44b"
   },
   {
    "title": "'Bilder der Verbrecher': films on Nazi perpetrators, RegenbogenKino",
@@ -5925,7 +5977,7 @@
    "id": "e2d271342bd8b1e7c95d45f4d22d7c5d56910c38"
   },
   {
-   "title": "12.11. 19:45 Uhr – THE MAD DOG OF EUROPE (OmU)",
+   "title": "The Mad Dog of Europe (original with subtitles)",
    "start": "2026-11-12T13:11:00+00:00",
    "source": "rss:Sputnik Kino",
    "url": "https://sputnik-kino.com/film/66680",
@@ -5941,14 +5993,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "page",
-   "title_orig": null,
+   "title_orig": "12.11. 19:45 Uhr – THE MAD DOG OF EUROPE (OmU)",
    "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "cd5d9490cd0a2b74335af4b319bea3242cd0c7db"
+   "summary": "Screening based on Herman J. Mankiewicz's 1932 anti-Nazi script about a German-Jewish family, shelved by Hollywood studios.",
+   "classified_by": "claude-task",
+   "id": "eb79ae080a7500489666be6a7ddd49ccc1f7e0bd"
   },
   {
    "title": "Language Café at Rudi Nachbarschaftshaus",
@@ -5977,7 +6029,7 @@
    "id": "b65a3f55488a07dbbf0504a78e227807480af26e"
   },
   {
-   "title": "Spaziergang für Alle - Bäume im Winter in der Stadt erleben",
+   "title": "Walk for Everyone – Experiencing Trees in Winter in the City",
    "start": "2026-11-12T14:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082102-spaziergang-fuer-alle-baeume-im-winter-in-der-stadt-erleben",
@@ -5993,14 +6045,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Spaziergang für Alle - Bäume im Winter in der Stadt erleben",
    "kind": "tour",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "711eb18ff6243e013118250364375ff6fff9e8ea"
+   "summary": "A walk to trees around Mehringplatz, also suitable for people with limited mobility, followed by tea and coffee. Please let them know you're coming.",
+   "classified_by": "claude-task",
+   "id": "99e0f1bed3d176c6c78060104ecadae45fa89191"
   },
   {
    "title": "Jobmobil: Career Advice for People up to 27",
@@ -7686,32 +7738,6 @@
    "id": "9eb557f27e61c3804a519cc01430841d3470e380"
   },
   {
-   "title": "Sip Up & Discover Wine at Balance Weinbar",
-   "start": "2026-11-12T17:30:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/sip_happens_berlin/events/317180553/",
-   "end": null,
-   "venue": "Balance Wein bar Petersburger Pl. 1, 10249 Berlin, Germany, Berlin, BE Berlin",
-   "area": "Friedrichshain-Kreuzberg",
-   "category": "meetup",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "dates": null,
-   "translated": true,
-   "date_source": "jsonld",
-   "title_orig": "Sip up & Discover Wine",
-   "kind": "meetup",
-   "audience": "everyone",
-   "summary": "Sip Happens! social at Balance Weinbar in Friedrichshain: taste three wines and meet new people over good conversation.",
-   "classified_by": "claude-task",
-   "id": "c38d4ac900e5e57d61b7528e78f047d6bdf96b9b"
-  },
-  {
    "title": "From Stage to Street: Theatre in the Late GDR – Talk by Jutta Braun",
    "start": "2026-11-12T18:00:00+01:00",
    "source": "gib:gratis-in-berlin",
@@ -8884,7 +8910,7 @@
    "id": "7eedf4c7e503ef90a1e47a6b619211af535c84cf"
   },
   {
-   "title": "Jazz4free@ZoscH ::: Jazzformation Just Friends",
+   "title": "Jazz4free at ZoscH: Jazzformation Just Friends",
    "start": "2026-11-12T20:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2012698-jazz4free",
@@ -8900,14 +8926,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Jazz4free@ZoscH ::: Jazzformation Just Friends",
    "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "37833e0483ea29d0f5b40a2df42089a9b949e678"
+   "summary": "Small-band jazz in ZoscH's vaulted cellar: standards plus film, musical and operetta tunes in late-1940s/early-1950s style. Smoking allowed.",
+   "classified_by": "claude-task",
+   "id": "904bb1d6572e65a3229843f4c9d0eda5dfcd2588"
   },
   {
    "title": "In Conversation with Talal Afifi: What Can a Militant Image Do?",
@@ -12739,14 +12765,14 @@
    "id": "b33f038b9c59b75971526e686190c32327139b7f"
   },
   {
-   "title": "Textil Crafternoon",
+   "title": "Textile Crafternoon",
    "start": "2026-11-14T12:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082098-textil-crafternoon",
    "end": null,
    "venue": "Braunschweigerstr. 80 12055",
    "area": "Neukölln",
-   "category": "misc",
+   "category": "workshop",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -12755,14 +12781,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Textil Crafternoon",
+   "kind": "workshop",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "f6fa835c36bc61649e88d4eb962de4b355d92998"
+   "summary": "Community afternoon on mending clothes: visible mending and patches, darning, machine repairs and textile printing, with tips and materials.",
+   "classified_by": "claude-task",
+   "id": "3978c90d81642296f795e0902c5ca5fd0a8d7cb8"
   },
   {
    "title": "Finnish Christmas Market at Finnland Zentrum, Kreuzberg",
@@ -12939,7 +12965,7 @@
    "id": "08d11fd990060737cab69e30abdf58017eda1c32"
   },
   {
-   "title": "Berlin Museum: Ephraim-Palais | Kreativ-Angebot für Familien: Bildwerkstatt | 13 - 16 Uhr",
+   "title": "Berlin Museum: Ephraim-Palais – Family Picture Workshop",
    "start": "2026-11-14T13:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2072273-museum-ephraim-palais-eine-kleine-foto-ausstellung-selbst-gestalten",
@@ -12955,14 +12981,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Berlin Museum: Ephraim-Palais | Kreativ-Angebot für Familien: Bildwerkstatt | 13 - 16 Uhr",
    "kind": "workshop",
    "audience": "kids",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "46656dcbbb6187a0cefa7a406aea30518e963a89"
+   "summary": "Families with children from 3 go on a photo safari in the museum and Nikolaiviertel, then print and decorate their photos by hand.",
+   "classified_by": "claude-task",
+   "id": "78f92b4c0ff6b0da8c848f023c4f2382b450e676"
   },
   {
    "title": "Garden Together, Build Community – Garden Action Day",
@@ -13669,7 +13695,7 @@
    "id": "281a0ab044e6bfa3dc6dfb9c86cb7593aa4e743a"
   },
   {
-   "title": "Dein Mitmachmärchen mit den Improvisionären",
+   "title": "Your Join-In Fairy Tale with Die Improvisionäre",
    "start": "2026-11-14T16:00:00+01:00",
    "source": "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)",
    "url": "https://brotfabrik-berlin.de/veranstaltung/dein-mitmachmaerchen-mit-den-improvisionaeren-3/",
@@ -13685,14 +13711,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
+   "title_orig": "Dein Mitmachmärchen mit den Improvisionären",
    "kind": "theatre",
    "audience": "kids",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "4bc800050964e5a783755cdd42fa8255f223c152"
+   "summary": "An improvised adventure for children aged 4 and up to watch and join in, creating a brand-new fairy tale together.",
+   "classified_by": "claude-task",
+   "id": "3d306cbc7a9b264d17671026c3dd2ae69b3a50c3"
   },
   {
    "title": "HUJ:C #3 – Salon: Personal Narratives – Creative Exchange",
@@ -13721,7 +13747,7 @@
    "id": "ec614f77c03a0614d1effcf4ddb4979cdb38670e"
   },
   {
-   "title": "Under Berlin Film Festival (UBFF) 2026 | Programme #4",
+   "title": "Under Berlin Film Festival (UBFF) 2026 – Programme #4",
    "start": "2026-11-14T17:00:00+01:00",
    "source": "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)",
    "url": "https://brotfabrik-berlin.de/veranstaltung/under-berlin-film-festival-ubff-2026-programme-4/",
@@ -13737,13 +13763,13 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
+   "title_orig": "Under Berlin Film Festival (UBFF) 2026 | Programme #4",
    "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Festival screening programme of independent films, including the Italian short Mamma by Mike Montagna.",
+   "classified_by": "claude-task",
    "id": "01930c5a5ec5df64bb3cbcf0cbcc1fe20ffc4bf9"
   },
   {
@@ -13773,14 +13799,14 @@
    "id": "23fa272a014b6a24b85af984f0b0c930fab79c4a"
   },
   {
-   "title": "Bridgerton-Abend im Knoblauchhaus",
+   "title": "Bridgerton Evening at the Knoblauchhaus",
    "start": "2026-11-14T18:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2075805-bridgerton-abend-im-museum-knoblauchhaus",
    "end": null,
    "venue": "Poststraße 23 10178",
    "area": "Mitte",
-   "category": "misc",
+   "category": "talk",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -13789,14 +13815,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Bridgerton-Abend im Knoblauchhaus",
+   "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "31a587128fcd54b4324d385dc9d110baee1b0129"
+   "summary": "Watch a Bridgerton episode while historian Dr. Hannah Lotte Lund separates fact from fiction on 19th-century parties; flute and oboe music.",
+   "classified_by": "claude-task",
+   "id": "b0eeca866345459071d3c1925675402762d3a15b"
   },
   {
    "title": "Priceless Things at Neurotitan",
@@ -13858,7 +13884,7 @@
    "id": "df73aedae063e756d3c284b4e2fe953f85a4d4f8"
   },
   {
-   "title": "Under Berlin Film Festival (UBFF) 2026 | Programme #5",
+   "title": "Under Berlin Film Festival (UBFF) 2026 – Programme #5",
    "start": "2026-11-14T19:00:00+01:00",
    "source": "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)",
    "url": "https://brotfabrik-berlin.de/veranstaltung/under-berlin-film-festival-ubff-2026-programme-5/",
@@ -13874,13 +13900,13 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
+   "title_orig": "Under Berlin Film Festival (UBFF) 2026 | Programme #5",
    "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Festival screening programme of short films, including the Mexican stop-motion collage 1 Journey through the City.",
+   "classified_by": "claude-task",
    "id": "3b4c84d648654ab9629dcda52ecdc99fb71421bb"
   },
   {
@@ -13910,14 +13936,14 @@
    "id": "bc18f872a64e079256255176dbfd3278ba63d7b0"
   },
   {
-   "title": "Aktzeichnen - Life Model Drawing",
+   "title": "Life Model Drawing",
    "start": "2026-11-14T19:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2057526-aktzeichnen-life-model-drawing",
    "end": null,
    "venue": "Wühlischstr. 42 10245",
    "area": "Friedrichshain-Kreuzberg",
-   "category": "misc",
+   "category": "workshop",
    "is_free": true,
    "price": "Free — donation welcome",
    "price_value": null,
@@ -13926,14 +13952,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Aktzeichnen - Life Model Drawing",
+   "kind": "workshop",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "a4ab5ca0ba13f42fc6533c3624e409cfdaa4e3fa"
+   "summary": "Guided life drawing group with changing models and poses from 1 to 20 minutes. Bring your own drawing materials. Donations welcome.",
+   "classified_by": "claude-task",
+   "id": "4b856b42243d4274de91223c061da1dc25e23ede"
   },
   {
    "title": "Helga Schubert: When Democracy Is Lost – On the Law of Dictatorship",
@@ -14158,7 +14184,7 @@
    "id": "d36b6ab77704703620b36fcc8a76756f83c50749"
   },
   {
-   "title": "Die Improvisionäre spielen PULP FICTION ",
+   "title": "Die Improvisionäre Play PULP FICTION",
    "start": "2026-11-14T20:00:00+01:00",
    "source": "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)",
    "url": "https://brotfabrik-berlin.de/veranstaltung/die-improvisionaere-spielen-pulp-fiction/",
@@ -14174,14 +14200,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
+   "title_orig": "Die Improvisionäre spielen PULP FICTION ",
    "kind": "theatre",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "2a92f362240b4281a066dec1a4c1218a80584ab1"
+   "summary": "Improv comedy show inventing a new story as if Quentin Tarantino had a very strange dream; the audience steers the twists.",
+   "classified_by": "claude-task",
+   "id": "6b09a432206c05977adad6c07d0b98891649dacf"
   },
   {
    "title": "Deli Bayramı: Play by Turgut Özakman",
@@ -14210,7 +14236,7 @@
    "id": "eaa94681a9295a192bb85cfe8c66e41da13dcbe3"
   },
   {
-   "title": "Stand-Up Comedy Show — Die GöRE - Comedyclub in Friedrichshain",
+   "title": "Stand-Up Comedy Show at Die GöRE, Friedrichshain",
    "start": "2026-11-14T20:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2077739-stand-up-comedy-show-die-goere-comedyclub-in-friedrichshain",
@@ -14226,17 +14252,17 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Stand-Up Comedy Show — Die GöRE - Comedyclub in Friedrichshain",
    "kind": "theatre",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "919f7a424aba02e2f6ecc9a3a12dc4d898062551"
+   "summary": "Weekly Berlin stand-up comedy show in a small Friedrichshain club. Limited free tickets; please reserve via the link. Donations welcome.",
+   "classified_by": "claude-task",
+   "id": "7f4a100d6f54d0e03a169adb2923b5736bd9f85f"
   },
   {
-   "title": "Under Berlin Film Festival (UBFF) 2026 | Programme #6",
+   "title": "Under Berlin Film Festival (UBFF) 2026 – Programme #6",
    "start": "2026-11-14T21:00:00+01:00",
    "source": "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)",
    "url": "https://brotfabrik-berlin.de/veranstaltung/under-berlin-film-festival-ubff-2026-programme-6/",
@@ -14252,13 +14278,13 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
+   "title_orig": "Under Berlin Film Festival (UBFF) 2026 | Programme #6",
    "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Festival screening of shorts and the feature Lovers in the Sky, about two trans cooks working on cargo ships in the Peruvian Amazon.",
+   "classified_by": "claude-task",
    "id": "c31f701a9b0f3356cb08a3f26a688ece5885be26"
   },
   {
@@ -15067,32 +15093,6 @@
    "summary": "Skat card game group playing by Altenburg rules, without money; beginners, experienced players and guests welcome. Call Wolfgang if interested.",
    "classified_by": "claude-task",
    "id": "921edeb56a8ce05c9ede77f42d1fa0298aa2a657"
-  },
-  {
-   "title": "Afternoon Walk and Coffee: Charlottenburg to Alexanderplatz",
-   "start": "2026-11-15T13:00:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/berlin-walking-biking-meetup-group/events/317288436/",
-   "end": null,
-   "venue": "Charlottenburg Charlottenburg-Wilmersdorf, 10627 Berlin, Germany, Berlin, BE Berlin",
-   "area": "Charlottenburg-Wilmersdorf",
-   "category": "meetup",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "dates": null,
-   "translated": true,
-   "date_source": "jsonld",
-   "title_orig": "Afternoon Walk+Coffee in Berlin: Charlottenburg->Alexanderplatz 👣🚶🚶‍♀️🍂🥐☕🍪",
-   "kind": "meetup",
-   "audience": "everyone",
-   "summary": "Group walk from Charlottenburg to Alexanderplatz with coffee. A €1 cash donation per person is required on site.",
-   "classified_by": "claude-task",
-   "id": "3e611f32d4dcbd4c623207dd8f13ed2ed0e0d43f"
   },
   {
    "title": "Arne Semsrott – Gegenmacht: Die Zivilgesellschaft schlägt zurück",
@@ -16388,7 +16388,7 @@
    "id": "9b45aabb2a3aa92ef675100c92c4d5e935effa90"
   },
   {
-   "title": "Historischer Weihnachtsmarkt auf RAW Gelände (montags frei)",
+   "title": "Historical Christmas Market at RAW Gelände",
    "start": "2026-11-16T15:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2034073-historischer-weihnachtsmarkt-auf-raw-gelaende-taeglich-bis-22-12-montags-frei",
@@ -16404,14 +16404,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Historischer Weihnachtsmarkt auf RAW Gelände (montags frei)",
    "kind": "market",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "056ec1f656f8da3a62723d290d31c7aab0f66f3b"
+   "summary": "Medieval-style Christmas market with torches, fire pits and stalls of potters, smiths and woodcarvers. Free on Mondays, with fairy tales.",
+   "classified_by": "claude-task",
+   "id": "5ea2d3e84073bd5f9a6d139c5274892c96071304"
   },
   {
    "title": "Inclusive sport in the park: exercise and meeting people outdoors",
@@ -20913,7 +20913,7 @@
    "id": "76a748bf7e7e4b867519e987ab93daa7b2f9feae"
   },
   {
-   "title": "Filmklub - Cinema Surprise",
+   "title": "Film Club – Cinema Surprise",
    "start": "2026-11-17T19:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2059201-filmklub-cinema-surprise",
@@ -20929,17 +20929,17 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Filmklub - Cinema Surprise",
    "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "33b893fe27b5a0bec54da3e63510bc252082dfa7"
+   "summary": "Free screening of selected film gems and classics, with affordable drinks.",
+   "classified_by": "claude-task",
+   "id": "c9314c77ab40b4dff63554f4afc22c100a2ffb40"
   },
   {
-   "title": "\"Schattenleben\" - Comiclesung und Gespräch in der Bibliothek Schöneberg",
+   "title": "\"Schattenleben\" – Comic Reading and Talk",
    "start": "2026-11-17T19:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082105-schattenleben-comiclesung-und-gespraech-in-der-bibliothek-schoeneberg",
@@ -20955,14 +20955,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "\"Schattenleben\" - Comiclesung und Gespräch in der Bibliothek Schöneberg",
    "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "a9789c1ff8cd6976df0b8d2f1b661575db2d29cd"
+   "summary": "Reading of a comic reportage about people living without papers in Germany, with artist Lisa Frühbeis and Brienne; hosted by Prof. Stefanie Kron.",
+   "classified_by": "claude-task",
+   "id": "292084656d22f0de7bf99b13724c0d9ad852bf87"
   },
   {
    "title": "Poetry Slam in Lichtenberg",
@@ -21128,7 +21128,7 @@
    "id": "4fcdf7c17b058587050c868e2f8fec0b69a03c07"
   },
   {
-   "title": "Improv! — Long-Form Improv Comedy | GöRE Comedy Club— Friedrichshain",
+   "title": "Improv! – Long-Form Improv Comedy at Die GöRE",
    "start": "2026-11-17T20:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2081515-improv-long-form-improv-comedy-goere-comedy-club-friedrichshain",
@@ -21144,14 +21144,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Improv! — Long-Form Improv Comedy | GöRE Comedy Club— Friedrichshain",
    "kind": "theatre",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "9e548def82fca497f27702a0c4cad14c753d61b0"
+   "summary": "Weekly unscripted show where established and up-and-coming Berlin improv teams invent sketches on the spot.",
+   "classified_by": "claude-task",
+   "id": "cac869147e6bde760dcd381456a78ddc3dbed49c"
   },
   {
    "title": "Testbild: Open Screening",
@@ -22298,32 +22298,6 @@
    "id": "b443022361ed39f277bd2837854b61bcb0ebe5e0"
   },
   {
-   "title": "\"How to Win Friends & Influence People\" – AI-Empowered Learning",
-   "start": "2026-11-19T19:00:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/happy-healthy-wise-london-uk/events/317170277/",
-   "end": null,
-   "venue": null,
-   "area": null,
-   "category": "workshop",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "dates": null,
-   "translated": true,
-   "date_source": "jsonld",
-   "title_orig": "\"How to Win Friends & Influence People\" - AI empowered learning",
-   "kind": "workshop",
-   "audience": "everyone",
-   "summary": "Online workshop reviewing Dale Carnegie's lessons with a modern twist.",
-   "classified_by": "claude-task",
-   "id": "75482846564181b9b60709ac4ac1940a7416ef2e"
-  },
-  {
    "title": "Watt'n Bingo?! Bingo Night",
    "start": "2026-11-19T19:19:00+01:00",
    "source": "gib:gratis-in-berlin",
@@ -22350,7 +22324,7 @@
    "id": "ea2097c91a529232c5d8840a684229d47d3c7b65"
   },
   {
-   "title": "Jazz4free im ZoscH ::: Insaiter Jazz Trio",
+   "title": "Jazz4free at ZoscH: Insaiter Jazz Trio",
    "start": "2026-11-19T20:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2012697-jazz4free",
@@ -22366,14 +22340,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Jazz4free im ZoscH ::: Insaiter Jazz Trio",
    "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "f8aa53c697c601d9c79a4bf0652967ab2c6e11bd"
+   "summary": "Small-band jazz at ZoscH with the Insaiter Jazz Trio. Pay what you want.",
+   "classified_by": "claude-task",
+   "id": "3647562b597d2a3388ecf85cc328ae254c8c79be"
   },
   {
    "title": "Jazz at the Alte Feuerwache: Lionel Haas Trio",
@@ -22662,14 +22636,14 @@
    "id": "b92e969a9b32c40c929d16986c66a5a5bc951ee9"
   },
   {
-   "title": "artbook.berlin2026 Messe für Künstlerbücher + Editionen",
+   "title": "artbook.berlin2026 – Artists' Books and Editions Fair",
    "start": "2026-11-20T18:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082110-artbook-berlin2026-messe-fuer-kuenstlerbuecher-editionen",
    "end": null,
    "venue": "Mariannenplatz 2 10997",
    "area": "Friedrichshain-Kreuzberg",
-   "category": "misc",
+   "category": "market",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -22678,14 +22652,14 @@
    "recurring": false,
    "recurrence": "Every day until 22 Nov",
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "artbook.berlin2026 Messe für Künstlerbücher + Editionen",
+   "kind": "market",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "472e4aef01528e5145517b6c00c73b3b37eda75a"
+   "summary": "Exhibition and fair where 120 printers, book artists, graphic artists and writers show their latest work, plus readings and talks.",
+   "classified_by": "claude-task",
+   "id": "2fe4489d61b4b44e3cb3b7c0abd4ec95e29dc327"
   },
   {
    "title": "Between Generations: East German artists in conversation",
@@ -23416,7 +23390,7 @@
    "id": "a7b71d7fb0d6352e3eb16c32755e9fb312d1d602"
   },
   {
-   "title": "Sip Happens! Saturday Social @ Electric Social ⚡️",
+   "title": "Sip Happens! Saturday Social at Electric Social",
    "start": "2026-11-21T20:00:00+01:00",
    "source": "cal:Sip Happens!",
    "url": "https://www.meetup.com/sip_happens_berlin/events/317367950/",
@@ -23432,14 +23406,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
+   "title_orig": "Sip Happens! Saturday Social @ Electric Social ⚡️",
    "kind": "meetup",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "12163b38f56b803a16cd5983bcde796f1d432d62"
+   "summary": "A large social meetup for meeting new people over conversation and drinks; most come alone. Newcomers, visitors and locals welcome.",
+   "classified_by": "claude-task",
+   "id": "a3628c67a24117ae31541ee1ac924cbf775ba909"
   },
   {
    "title": "Sasperella La Sirène – Sound Ritual Concert",
@@ -24169,12 +24143,12 @@
    "title_orig": null,
    "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Des Esels Ohr: a reading stage in a living-room setting with Vanessa Karré, Kirsten Fuchs and others plus guests, sometimes with video or music.",
+   "classified_by": "claude-task",
    "id": "c3d26e3c254f12136c40cbbfa6d6d66c7f03d7ba"
   },
   {
-   "title": "MITTE BITTE - Open Mic",
+   "title": "MITTE BITTE – Comedy Open Mic",
    "start": "2026-11-23T20:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082107-mitte-bitte-open-mic",
@@ -24190,14 +24164,14 @@
    "recurring": false,
    "recurrence": "Every 4th Monday of the month",
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "MITTE BITTE - Open Mic",
    "kind": "theatre",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "6056644719ec106b8af769a10000fdd0795f077b"
+   "summary": "German-language comedy open mic at Z-Bar where newcomers and established comedians test new material, hosted by Rüdiger Rudolph.",
+   "classified_by": "claude-task",
+   "id": "e4f55d96d737d97b9e41468651805c7ee617aef9"
   },
   {
    "title": "Moritatenzelt: Fairy Tales from Around the World",
@@ -24641,8 +24615,8 @@
    "title_orig": null,
    "kind": "exhibition",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Exhibition opening of a collaborative artwork on Berlin since the fall of the Wall, held as a live episode of the podcast \"Ostwärts\".",
+   "classified_by": "claude-task",
    "id": "c3f8a01213f828d554ec8e816ef45ee32e5ff388"
   },
   {
@@ -25374,14 +25348,14 @@
    "id": "707a93e47eb31e27ec4a1918deef9342c2efa299"
   },
   {
-   "title": "Demokratie in 60 Sekunden - Preisverleihung",
+   "title": "Democracy in 60 Seconds – Award Ceremony",
    "start": "2026-11-26T17:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082104-demokratie-in-60-sekunden-preisverleihung",
    "end": null,
    "venue": "Mauerstraße 83",
    "area": null,
-   "category": "misc",
+   "category": "talk",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -25390,14 +25364,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
-   "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "715edcd3d643ef9959febddd2728525725e39d3e"
+   "title_orig": "Demokratie in 60 Sekunden - Preisverleihung",
+   "kind": "talk",
+   "audience": "kids",
+   "summary": "Deutsche Gesellschaft e. V. honours the best of 320 one-minute videos by school students on what democracy means to them.",
+   "classified_by": "claude-task",
+   "id": "1ce707f41dedba4e053aef32d1dc17255d300b50"
   },
   {
    "title": "Open Lab Evening: Futures Prototyping",
@@ -26497,7 +26471,7 @@
    "id": "e1cd27598d23e28a342b34c0e43496da9000246d"
   },
   {
-   "title": "Berlin Museum: Ephraim-Palais | Familien-Workshop: Druckwerkstatt | 13 - 16 Uhr",
+   "title": "Berlin Museum: Ephraim-Palais – Family Printing Workshop",
    "start": "2026-11-28T13:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2076309-flauschig-kantig-rau-haptische-berlin-postkarten",
@@ -26513,14 +26487,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Berlin Museum: Ephraim-Palais | Familien-Workshop: Druckwerkstatt | 13 - 16 Uhr",
    "kind": "workshop",
    "audience": "kids",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "c740a3b44d443cdb3e685455839126a52d86fb74"
+   "summary": "Families with children from 3 make colourful linocut prints in the museum lab, with materials provided and tips from artists.",
+   "classified_by": "claude-task",
+   "id": "c66952c760479e2658abf0a8282d7b1f159c4199"
   },
   {
    "title": "Kiez[Kunst]Markt 2026",
@@ -26544,8 +26518,8 @@
    "title_orig": null,
    "kind": "market",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Neighbourhood Advent market with crafts, free workshops for making small gifts, warm drinks, snacks and a stage programme.",
+   "classified_by": "claude-task",
    "id": "3b0421d1025fd3ce1c53660879fac6c9a6423b8f"
   },
   {
@@ -26934,8 +26908,8 @@
    "title_orig": null,
    "kind": "market",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Neighbourhood Advent market with crafts, free workshops for making small gifts, warm drinks, snacks and a stage programme.",
+   "classified_by": "claude-task",
    "id": "198bb5d0d4ac0a117144eb100f09f398096fb078"
   },
   {
@@ -28759,7 +28733,7 @@
    "id": "738ee5291ab4286db08e07394eb1916a107b4696"
   },
   {
-   "title": "Unterwegs: Comic-Lesung und Lesekonzert von Thilo Krapp und Jörg Walter aus \"Die Zeitmaschine\" im Integral Begegnungszentrum",
+   "title": "Comic Reading and Concert: \"Die Zeitmaschine\" by Thilo Krapp",
    "start": "2026-12-04T17:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082094-unterwegs-comic-lesung-und-lesekonzert-von-thilo-krapp-und-joerg-walter-aus-die-zeitmaschine-im-integral-begegnungszentrum",
@@ -28775,14 +28749,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Unterwegs: Comic-Lesung und Lesekonzert von Thilo Krapp und Jörg Walter aus \"Die Zeitmaschine\" im Integral Begegnungszentrum",
    "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "f6adbdc2805f5dfbaef69adb724fb22585408d3c"
+   "summary": "Thilo Krapp reads from his graphic novel \"Die Zeitmaschine\", with Jörg Walter playing original music on a historic harmonium.",
+   "classified_by": "claude-task",
+   "id": "c73d8016a92fc3bab6a90966a48188c35961d3d9"
   },
   {
    "title": "Amy's Book Club: reading and debating",
@@ -28837,14 +28811,14 @@
    "id": "06a90c720e8ca447c5d70966e7f58fe49c5c6fe9"
   },
   {
-   "title": "Freitags Varieté - Klein aber fein",
+   "title": "Friday Variety – Small but Fine",
    "start": "2026-12-04T20:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2064643-freitags-variete-klein-aber-fein",
    "end": null,
    "venue": "Wühlischstr. 42 10245",
    "area": "Friedrichshain-Kreuzberg",
-   "category": "misc",
+   "category": "theatre",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -28853,14 +28827,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Freitags Varieté - Klein aber fein",
+   "kind": "theatre",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "95e2a75330e06eeb9cfc0b25aaab705536a29264"
+   "summary": "Open stage for any act up to 7 minutes – music, poetry, science, magic – or just come and watch the show.",
+   "classified_by": "claude-task",
+   "id": "9ca6f0929ddfbc6c313d910dd2dce0c6c86ec39f"
   },
   {
    "title": "Peppi Guggenheim Exil Music Programme: Fräulein Luise",
@@ -29071,7 +29045,7 @@
    "id": "c32f2536c4545aee325df785dd53df89806a12a2"
   },
   {
-   "title": "Berlin Museum: Ephraim-Palais | Kreativ-Angebot für Familien: Bildwerkstatt | 13 - 16 Uhr",
+   "title": "Berlin Museum: Ephraim-Palais – Family Picture Workshop",
    "start": "2026-12-05T13:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2073125-museum-ephraim-palais-kreativ-angebot-fuer-familien-fotowerkstatt-11-17-uhr",
@@ -29087,14 +29061,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Berlin Museum: Ephraim-Palais | Kreativ-Angebot für Familien: Bildwerkstatt | 13 - 16 Uhr",
    "kind": "workshop",
    "audience": "kids",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "00ab5c0ffc40213689a014262e23fc874b3ef86f"
+   "summary": "Families with children from 3 go on a photo safari in the museum and Nikolaiviertel, then print and decorate their photos by hand.",
+   "classified_by": "claude-task",
+   "id": "f55210c4da2b7d19da11df6fa6dc508f1ca8b846"
   },
   {
    "title": "Open Chess Group at the Humboldt-Bibliothek",
@@ -29950,8 +29924,8 @@
    "title_orig": null,
    "kind": "theatre",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Monthly comedy open mic where newcomers and well-known comedians try out new jokes, hosted by Markus Schmidt.",
+   "classified_by": "claude-task",
    "id": "90fa39c5cebec2b58f93c4525264b4104553b8ef"
   },
   {
@@ -31541,7 +31515,7 @@
    "id": "bf435f33f2d729e4ad26a835082c6e538ddbdd4e"
   },
   {
-   "title": "Berlin Museum: Ephraim-Palais | Familien-Workshop: Schreibwerkstatt | 13 - 16 Uhr",
+   "title": "Berlin Museum: Ephraim-Palais – Family Writing Workshop",
    "start": "2026-12-12T13:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2072833-bunte-baenderwerkstatt",
@@ -31557,14 +31531,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Berlin Museum: Ephraim-Palais | Familien-Workshop: Schreibwerkstatt | 13 - 16 Uhr",
    "kind": "workshop",
    "audience": "kids",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "2c33947b43c45cd6bb7b6fdb6f0bbdfe24e6a76d"
+   "summary": "Families try writing like 120 years ago with wax tablets, quills and ink, creating their own texts and calligraphy.",
+   "classified_by": "claude-task",
+   "id": "d3c456d70e7c7f1f3837fe44bccdde3bb8ce8cd1"
   },
   {
    "title": "Animal Symbolism: Soapstone Sculptures with Nina Plášková",
@@ -31697,7 +31671,7 @@
    "id": "16952c53b20657c844b04366812dd38b2822d18b"
   },
   {
-   "title": "Weihnachtliches Familienkonzert im Klingenden Museum im Rahmen des Instruments des Jahres",
+   "title": "Christmas Family Concert at the Klingendes Museum",
    "start": "2026-12-12T15:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082114-weihnachtliches-familienkonzert-im-klingenden-museum-im-rahmen-des-instruments-des-jahres",
@@ -31713,14 +31687,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Weihnachtliches Familienkonzert im Klingenden Museum im Rahmen des Instruments des Jahres",
    "kind": "music",
    "audience": "kids",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "7616227a42283ca8d4cc938293ab0cd67e758292"
+   "summary": "Duo Chablis lead a folk sing-, dance- and play-along with accordion and hurdy-gurdy; try accordions afterwards. Ages 4+. Registration required.",
+   "classified_by": "claude-task",
+   "id": "70fab29f93c44ecaa47c199f6c985459b5ef3fd0"
   },
   {
    "title": "Advent Reading: 'Spekulatius rettet das Fest' with Tobias Goldfarb",
@@ -33179,7 +33153,7 @@
    "id": "987e62f5ed0f1e767e74b7c8fc07dbbc924630a3"
   },
   {
-   "title": "Berlin Museum | Eröffnung: Überleben im Grunewald | 16 - 18 Uhr",
+   "title": "Berlin Museum Opening: Surviving in the Grunewald",
    "start": "2026-12-17T16:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2042613-museum-verbindet-was-ist-typisch-berlin-maerkisches-museum",
@@ -33195,14 +33169,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Berlin Museum | Eröffnung: Überleben im Grunewald | 16 - 18 Uhr",
    "kind": "exhibition",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "dcda03ed1023a7b8559c4fdc62a465e8a840617c"
+   "summary": "Students of Goethe-Gymnasium present a project on the nearly forgotten Berlin painter and poet Fritz Ascher (1893–1970).",
+   "classified_by": "claude-task",
+   "id": "0f4272b08d9017e02ee590705f9b893eaf53cb71"
   },
   {
    "title": "Chess for everyone, Wolfdietrich-Schnurre-Bibliothek",
@@ -33439,7 +33413,7 @@
    "id": "afc804392f371d03a09286ba15835165c2f529fa"
   },
   {
-   "title": "Berlin Museum: Ephraim-Palais | Familien-Workshop: Druckwerkstatt | 13 - 16 Uhr",
+   "title": "Berlin Museum: Ephraim-Palais – Family Printing Workshop",
    "start": "2026-12-19T13:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2075807-museum-ephraim-palais-familien-workshop-fotowerkstatt",
@@ -33455,14 +33429,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Berlin Museum: Ephraim-Palais | Familien-Workshop: Druckwerkstatt | 13 - 16 Uhr",
    "kind": "workshop",
    "audience": "kids",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "04193d2b20fb5ecc5a48376e9994f240f68fd65e"
+   "summary": "Families with children from 3 make colourful linocut prints in the museum lab, with materials provided and tips from artists.",
+   "classified_by": "claude-task",
+   "id": "37b6ab9c5e0494f951ce1884d0323f3bd423e3f9"
   },
   {
    "title": "Animal Symbolism: Soapstone Sculptures with Nina Plášková",
@@ -34245,14 +34219,14 @@
    "id": "9e996e6337cd60e1f0ec2b7f69c13b5ba526abd5"
   },
   {
-   "title": "LOVE - Eine Weihnachtskantate am 25. Dezember 2026",
+   "title": "LOVE – A Christmas Cantata",
    "start": "2026-12-25T11:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2081871-love-eine-weihnachtskantate-am-25-dezember-2026",
    "end": null,
    "venue": "Tannenbergallee 6 14055",
    "area": "Charlottenburg-Wilmersdorf",
-   "category": "misc",
+   "category": "music",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -34261,14 +34235,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "LOVE - Eine Weihnachtskantate am 25. Dezember 2026",
+   "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "be443fb66da00b8cdc48920b73f31d7099cc04b8"
+   "summary": "Christmas Day cantata service with the B♮ Praise Band: Christmas music, gospel, a sermon and prayers, then mulled wine and punch.",
+   "classified_by": "claude-task",
+   "id": "c9ead33f2b477ca2037c3e7cbf3d6fd41597632c"
   },
   {
    "title": "Phantastische SpielWelten: games café, Egon-Erwin-Kisch-Bibliothek",
@@ -34474,8 +34448,8 @@
    "title_orig": null,
    "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Concert at Privatclub Berlin.",
+   "classified_by": "claude-task",
    "id": "ed34cf4bdbf2324c8558213720509a379665533b"
   }
  ],
