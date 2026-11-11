@@ -12084,5 +12084,309 @@
 "summary": "Overview of tips for Christmas in Berlin: carol singing, concerts, Christmas markets, nativity plays, parties and more.",
 "by": "claude-task",
 "ctx": true
+},
+"Genesis Fusion – Konzert & digitale Kunst": {
+"title": "Genesis Fusion – Concert and Digital Art",
+"kind": "music",
+"audience": "everyone",
+"summary": "An international interfaith concert with oriental sounds and digital art on the creation story, by Kahal Adass Jisroel e.V. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"u.a. Tango | Tabaré Leyton, Sänger Damián DAlessandro, Gitarre": {
+"title": "Tango with Tabaré Leyton and Damián DAlessandro",
+"kind": "music",
+"audience": "everyone",
+"summary": "Uruguayan singer Tabaré Leyton and Argentine guitarist Damián DAlessandro play South American music. Donation-funded.",
+"by": "claude-task",
+"ctx": true
+},
+"Pizza Talks Marinehaus meets Makkaroni Akademie | 18:30 - 20:30 Uhr": {
+"title": "Pizza Talks: Marinehaus meets Makkaroni Akademie",
+"kind": "talk",
+"audience": "everyone",
+"summary": "A talk on \"guest workers\" and expats: who counts as a migrant or an expat in Berlin, and how their experiences differ or connect.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin Freedom Week": {
+"title": "Berlin Freedom Week",
+"kind": "festival",
+"audience": "everyone",
+"summary": "Programme marking 36 years since the fall of the Wall: tours, workshops, films, readings, discussions and events for children.",
+"by": "claude-task",
+"ctx": true
+},
+"12.11. 19:45 Uhr – THE MAD DOG OF EUROPE (OmU)": {
+"title": "The Mad Dog of Europe (original with subtitles)",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening based on Herman J. Mankiewicz's 1932 anti-Nazi script about a German-Jewish family, shelved by Hollywood studios.",
+"by": "claude-task",
+"ctx": true
+},
+"Spaziergang für Alle - Bäume im Winter in der Stadt erleben": {
+"title": "Walk for Everyone – Experiencing Trees in Winter in the City",
+"kind": "tour",
+"audience": "everyone",
+"summary": "A walk to trees around Mehringplatz, also suitable for people with limited mobility, followed by tea and coffee. Please let them know you're coming.",
+"by": "claude-task",
+"ctx": true
+},
+"Jazz4free@ZoscH ::: Jazzformation Just Friends": {
+"title": "Jazz4free at ZoscH: Jazzformation Just Friends",
+"kind": "music",
+"audience": "everyone",
+"summary": "Small-band jazz in ZoscH's vaulted cellar: standards plus film, musical and operetta tunes in late-1940s/early-1950s style. Smoking allowed.",
+"by": "claude-task",
+"ctx": true
+},
+"Dein Mitmachmärchen mit den Improvisionären": {
+"title": "Your Join-In Fairy Tale with Die Improvisionäre",
+"kind": "theatre",
+"audience": "kids",
+"summary": "An improvised adventure for children aged 4 and up to watch and join in, creating a brand-new fairy tale together.",
+"by": "claude-task",
+"ctx": true
+},
+"Under Berlin Film Festival (UBFF) 2026 | Programme #4": {
+"title": "Under Berlin Film Festival (UBFF) 2026 – Programme #4",
+"kind": "film",
+"audience": "everyone",
+"summary": "Festival screening programme of independent films, including the Italian short Mamma by Mike Montagna.",
+"by": "claude-task",
+"ctx": true
+},
+"Under Berlin Film Festival (UBFF) 2026 | Programme #5": {
+"title": "Under Berlin Film Festival (UBFF) 2026 – Programme #5",
+"kind": "film",
+"audience": "everyone",
+"summary": "Festival screening programme of short films, including the Mexican stop-motion collage 1 Journey through the City.",
+"by": "claude-task",
+"ctx": true
+},
+"Die Improvisionäre spielen PULP FICTION": {
+"title": "Die Improvisionäre Play PULP FICTION",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Improv comedy show inventing a new story as if Quentin Tarantino had a very strange dream; the audience steers the twists.",
+"by": "claude-task",
+"ctx": true
+},
+"Under Berlin Film Festival (UBFF) 2026 | Programme #6": {
+"title": "Under Berlin Film Festival (UBFF) 2026 – Programme #6",
+"kind": "film",
+"audience": "everyone",
+"summary": "Festival screening of shorts and the feature Lovers in the Sky, about two trans cooks working on cargo ships in the Peruvian Amazon.",
+"by": "claude-task",
+"ctx": true
+},
+"Textil Crafternoon": {
+"title": "Textile Crafternoon",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Community afternoon on mending clothes: visible mending and patches, darning, machine repairs and textile printing, with tips and materials.",
+"by": "claude-task",
+"ctx": true
+},
+"Aktzeichnen - Life Model Drawing": {
+"title": "Life Model Drawing",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Guided life drawing group with changing models and poses from 1 to 20 minutes. Bring your own drawing materials. Donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Bridgerton-Abend im Knoblauchhaus": {
+"title": "Bridgerton Evening at the Knoblauchhaus",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Watch a Bridgerton episode while historian Dr. Hannah Lotte Lund separates fact from fiction on 19th-century parties; flute and oboe music.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin Museum: Ephraim-Palais | Kreativ-Angebot für Familien: Bildwerkstatt | 13 - 16 Uhr": {
+"title": "Berlin Museum: Ephraim-Palais – Family Picture Workshop",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Families with children from 3 go on a photo safari in the museum and Nikolaiviertel, then print and decorate their photos by hand.",
+"by": "claude-task",
+"ctx": true
+},
+"Stand-Up Comedy Show — Die GöRE - Comedyclub in Friedrichshain": {
+"title": "Stand-Up Comedy Show at Die GöRE, Friedrichshain",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Weekly Berlin stand-up comedy show in a small Friedrichshain club. Limited free tickets; please reserve via the link. Donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Historischer Weihnachtsmarkt auf RAW Gelände (montags frei)": {
+"title": "Historical Christmas Market at RAW Gelände",
+"kind": "market",
+"audience": "everyone",
+"summary": "Medieval-style Christmas market with torches, fire pits and stalls of potters, smiths and woodcarvers. Free on Mondays, with fairy tales.",
+"by": "claude-task",
+"ctx": true
+},
+"Filmklub - Cinema Surprise": {
+"title": "Film Club – Cinema Surprise",
+"kind": "film",
+"audience": "everyone",
+"summary": "Free screening of selected film gems and classics, with affordable drinks.",
+"by": "claude-task",
+"ctx": true
+},
+"\"Schattenleben\" - Comiclesung und Gespräch in der Bibliothek Schöneberg": {
+"title": "\"Schattenleben\" – Comic Reading and Talk",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Reading of a comic reportage about people living without papers in Germany, with artist Lisa Frühbeis and Brienne; hosted by Prof. Stefanie Kron.",
+"by": "claude-task",
+"ctx": true
+},
+"Improv! — Long-Form Improv Comedy | GöRE Comedy Club— Friedrichshain": {
+"title": "Improv! – Long-Form Improv Comedy at Die GöRE",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Weekly unscripted show where established and up-and-coming Berlin improv teams invent sketches on the spot.",
+"by": "claude-task",
+"ctx": true
+},
+"Jazz4free im ZoscH ::: Insaiter Jazz Trio": {
+"title": "Jazz4free at ZoscH: Insaiter Jazz Trio",
+"kind": "music",
+"audience": "everyone",
+"summary": "Small-band jazz at ZoscH with the Insaiter Jazz Trio. Pay what you want.",
+"by": "claude-task",
+"ctx": true
+},
+"artbook.berlin2026 Messe für Künstlerbücher + Editionen": {
+"title": "artbook.berlin2026 – Artists' Books and Editions Fair",
+"kind": "market",
+"audience": "everyone",
+"summary": "Exhibition and fair where 120 printers, book artists, graphic artists and writers show their latest work, plus readings and talks.",
+"by": "claude-task",
+"ctx": true
+},
+"Sip Happens! Saturday Social @ Electric Social ⚡️": {
+"title": "Sip Happens! Saturday Social at Electric Social",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "A large social meetup for meeting new people over conversation and drinks; most come alone. Newcomers, visitors and locals welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Lesebühne DEO": {
+"title": "Lesebühne DEO",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Des Esels Ohr: a reading stage in a living-room setting with Vanessa Karré, Kirsten Fuchs and others plus guests, sometimes with video or music.",
+"by": "claude-task",
+"ctx": true
+},
+"MITTE BITTE - Open Mic": {
+"title": "MITTE BITTE – Comedy Open Mic",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "German-language comedy open mic at Z-Bar where newcomers and established comedians test new material, hosted by Rüdiger Rudolph.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin / Identity / Home": {
+"title": "Berlin / Identity / Home",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Exhibition opening of a collaborative artwork on Berlin since the fall of the Wall, held as a live episode of the podcast \"Ostwärts\".",
+"by": "claude-task",
+"ctx": true
+},
+"Demokratie in 60 Sekunden - Preisverleihung": {
+"title": "Democracy in 60 Seconds – Award Ceremony",
+"kind": "talk",
+"audience": "kids",
+"summary": "Deutsche Gesellschaft e. V. honours the best of 320 one-minute videos by school students on what democracy means to them.",
+"by": "claude-task",
+"ctx": true
+},
+"Kiez[Kunst]Markt 2026": {
+"title": "Kiez[Kunst]Markt 2026",
+"kind": "market",
+"audience": "everyone",
+"summary": "Neighbourhood Advent market with crafts, free workshops for making small gifts, warm drinks, snacks and a stage programme.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin Museum: Ephraim-Palais | Familien-Workshop: Druckwerkstatt | 13 - 16 Uhr": {
+"title": "Berlin Museum: Ephraim-Palais – Family Printing Workshop",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Families with children from 3 make colourful linocut prints in the museum lab, with materials provided and tips from artists.",
+"by": "claude-task",
+"ctx": true
+},
+"Freitags Varieté - Klein aber fein": {
+"title": "Friday Variety – Small but Fine",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Open stage for any act up to 7 minutes – music, poetry, science, magic – or just come and watch the show.",
+"by": "claude-task",
+"ctx": true
+},
+"Unterwegs: Comic-Lesung und Lesekonzert von Thilo Krapp und Jörg Walter aus \"Die Zeitmaschine\" im Integral Begegnungszentrum": {
+"title": "Comic Reading and Concert: \"Die Zeitmaschine\" by Thilo Krapp",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Thilo Krapp reads from his graphic novel \"Die Zeitmaschine\", with Jörg Walter playing original music on a historic harmonium.",
+"by": "claude-task",
+"ctx": true
+},
+"Süßmaus Comedy": {
+"title": "Süßmaus Comedy",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Monthly comedy open mic where newcomers and well-known comedians try out new jokes, hosted by Markus Schmidt.",
+"by": "claude-task",
+"ctx": true
+},
+"Weihnachtliches Familienkonzert im Klingenden Museum im Rahmen des Instruments des Jahres": {
+"title": "Christmas Family Concert at the Klingendes Museum",
+"kind": "music",
+"audience": "kids",
+"summary": "Duo Chablis lead a folk sing-, dance- and play-along with accordion and hurdy-gurdy; try accordions afterwards. Ages 4+. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin Museum: Ephraim-Palais | Familien-Workshop: Schreibwerkstatt | 13 - 16 Uhr": {
+"title": "Berlin Museum: Ephraim-Palais – Family Writing Workshop",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Families try writing like 120 years ago with wax tablets, quills and ink, creating their own texts and calligraphy.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin Museum | Eröffnung: Überleben im Grunewald | 16 - 18 Uhr": {
+"title": "Berlin Museum Opening: Surviving in the Grunewald",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Students of Goethe-Gymnasium present a project on the nearly forgotten Berlin painter and poet Fritz Ascher (1893–1970).",
+"by": "claude-task",
+"ctx": true
+},
+"LOVE - Eine Weihnachtskantate am 25. Dezember 2026": {
+"title": "LOVE – A Christmas Cantata",
+"kind": "music",
+"audience": "everyone",
+"summary": "Christmas Day cantata service with the B♮ Praise Band: Christmas music, gospel, a sermon and prayers, then mulled wine and punch.",
+"by": "claude-task",
+"ctx": true
+},
+"El Funko + Hiddit!": {
+"title": "El Funko + Hiddit!",
+"kind": "music",
+"audience": "everyone",
+"summary": "Concert at Privatclub Berlin.",
+"by": "claude-task",
+"ctx": true
 }
 }
