@@ -12388,5 +12388,181 @@
 "summary": "Concert at Privatclub Berlin.",
 "by": "claude-task",
 "ctx": true
+},
+"13.11. 18:00 Uhr – THE MAD DOG OF EUROPE (OmU)": {
+"title": "The Mad Dog of Europe (original with subtitles)",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening linked to Herman J. Mankiewicz's 1932 anti-Nazi script about a German-Jewish family, which Hollywood studios shelved.",
+"by": "claude-task",
+"ctx": true
+},
+"ArtSalon | Winona Lin | Ludwigrasche | Jörg Rasche = Klavier": {
+"title": "ArtSalon: Winona Lin, Ludwigrasche, Jörg Rasche on Piano",
+"kind": "music",
+"audience": "everyone",
+"summary": "ArtSalon concert with Winona Lin, Ludwigrasche and Jörg Rasche on piano. The series is funded entirely by donations.",
+"by": "claude-task",
+"ctx": true
+},
+"ZeroWaste Weihnachten": {
+"title": "Zero Waste Christmas",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Berliner Stadtreinigung workshop space in the Gropius Passagen: make Christmas gifts and decorations from used materials and get waste advice.",
+"by": "claude-task",
+"ctx": true
+},
+"Lasst uns treffen und Deutsch sprechen": {
+"title": "Let's Meet and Speak German",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Language café to practise your German, have good conversations and meet new people.",
+"by": "claude-task",
+"ctx": true
+},
+"Impro Comedy": {
+"title": "Improv Comedy",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Improv theatre show where the actors create spontaneous comic scenes from audience suggestions. Free entry, donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Shabby Comedy Earlyshow! Stand up im “Mad Monkey Room” ! Prenzlauer Berg direkt Ubhf Eberswalderstr! 18:30 Uhr": {
+"title": "Shabby Comedy Early Show: Stand-up at Mad Monkey Room",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Stand-up comedy show presented by Philipp Uckel at Mad Monkey Room, Danziger Straße 1. No reservation needed; donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Shabby Comedy! Stand up im Comedy Club \"Mad Monkey Room\" ! Prenzlauer Berg direkt Ubhf Eberswalderstr. 20 Uhr": {
+"title": "Shabby Comedy: Stand-up at Mad Monkey Room, Prenzlauer Berg",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Stand-up comedy show presented by Philipp Uckel at Mad Monkey Room, Danziger Straße 1. No reservation needed; donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Shabby Comedy Lateshow! Stand up im \"Mad Monkey Room\"! In Prenzl Berg direkt Ubhf Eberswalderstr. 22:30 Uhr": {
+"title": "Shabby Comedy Late Show: Stand-up at Mad Monkey Room",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Late stand-up comedy show at Mad Monkey Room, Danziger Straße 1. Ages 18+. No reservation needed; donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Patientenforum im St. Marien-Krankenhaus Berlin: Herz aus dem Takt - Vorhofflimmern erkennen und handeln": {
+"title": "Patient Forum at St. Marien-Krankenhaus Berlin: Atrial Fibrillation",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Patient forum at St. Marien-Krankenhaus Berlin on recognising atrial fibrillation and what to do about it. No registration needed.",
+"by": "claude-task",
+"ctx": true
+},
+"Drei Märchen. Drei Frauen. Drei Wege. – Ein Leseabend mit Dea Mariposa": {
+"title": "Three Fairy Tales. Three Women. Three Paths – Dea Mariposa Reading",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Fairy-tale reading at Molly Buchladen & Café, followed by conversation; signed books on sale. Limited to 20 places. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"STOCKENDER BETRIEB": {
+"title": "Stalled Operation: Climbing Performance with Tamara Rettenmund",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Climbing game of acrobatics and cooperation: dancer Tamara Rettenmund revives her old Spreepark attraction in the exhibition IM DAZWISCHEN.",
+"by": "claude-task",
+"ctx": true
+},
+"Führung rund ums Eierhäuschen mit Helena Ommert (ENG)": {
+"title": "Tour Around the Eierhäuschen with Helena Ommert (in English)",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Introductory tour of the history and architecture of the Eierhäuschen and Spreepark. The park itself is closed for construction.",
+"by": "claude-task",
+"ctx": true
+},
+"Künstler*innenführung durch die Ausstellung IM DAZWISCHEN": {
+"title": "Artists' Tour of the Exhibition IM DAZWISCHEN",
+"kind": "tour",
+"audience": "everyone",
+"summary": "The exhibition's artists and Spreepark Art Space artistic director Katja Aßmann guide you through IM DAZWISCHEN. In German, no registration.",
+"by": "claude-task",
+"ctx": true
+},
+"Wie Bilder laufen lernten": {
+"title": "How Pictures Learned to Move",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Drop-in workshop for children and adults with Merle Richter on the beginnings of moving pictures, starting from Spreepark's former Cinema 2000.",
+"by": "claude-task",
+"ctx": true
+},
+"Führung rund ums Eierhäuschen mit Helena Ommert (DE)": {
+"title": "Tour Around the Eierhäuschen with Helena Ommert (in German)",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Introductory tour of the history and architecture of the Eierhäuschen and Spreepark. The park itself is closed for construction.",
+"by": "claude-task",
+"ctx": true
+},
+"Adventskränze basteln": {
+"title": "Making Advent Wreaths",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Make Advent wreaths at Rudi Nachbarschaftshaus with Ostkreuz Kiez für Alle; materials provided, bring pliers if you have some. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Lesung mit Katrin Aimee über Diskriminierungen und Widerstände": {
+"title": "Reading with Katrin Aimee on Discrimination and Resistance",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Katrin Aimee reads from her book Unüberhörbar about being deaf, ableism and structural discrimination, and the changes needed.",
+"by": "claude-task",
+"ctx": true
+},
+"Weihnachtsbasar des Förderkreises Eine Welt im Auswärtigen Amt e.V.": {
+"title": "Christmas Bazaar of Förderkreis Eine Welt im Auswärtigen Amt e.V.",
+"kind": "market",
+"audience": "everyone",
+"summary": "Annual bazaar at the Federal Foreign Office selling donated items from abroad; all proceeds go to small aid projects in developing countries.",
+"by": "claude-task",
+"ctx": true
+},
+"Aber bitte mit Schlager! - Dieter alias The Cock": {
+"title": "Aber bitte mit Schlager! – Dieter alias The Cock",
+"kind": "music",
+"audience": "everyone",
+"summary": "Dieter alias The Cock plays German Schlager, ballads and rock evergreens from the 1950s to 1970s on guitar at Kings Pub in Spandau.",
+"by": "claude-task",
+"ctx": true
+},
+"Gemeinsam Erinnern. 80 Jahre nach der Vertreibung": {
+"title": "Remembering Together: 80 Years After the Expulsion",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Event on the 1946 expulsion of Germans from Central and Eastern Europe and how Germans and Czechs remember it differently.",
+"by": "claude-task",
+"ctx": true
+},
+"Live Rock Karaoke @ Little Stage mit der Band BarFly": {
+"title": "Live Rock Karaoke at Little Stage with the Band BarFly",
+"kind": "music",
+"audience": "everyone",
+"summary": "Pick a rock song and sing it on stage, backed by the live band BarFly instead of a playback track. Ages 18+.",
+"by": "claude-task",
+"ctx": true
+},
+"Gruß von einem Unbekannten (Adventslesung mit Sebastian Zett)": {
+"title": "Greetings from a Stranger (Advent Reading with Sebastian Zett)",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Actor Sebastian Zett reads Christmas stories, classics and modern city fairy tales, with music. Free entry, donations welcome.",
+"by": "claude-task",
+"ctx": true
 }
 }
