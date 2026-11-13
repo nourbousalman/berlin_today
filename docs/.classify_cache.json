@@ -12564,5 +12564,245 @@
 "summary": "Actor Sebastian Zett reads Christmas stories, classics and modern city fairy tales, with music. Free entry, donations welcome.",
 "by": "claude-task",
 "ctx": true
+},
+"14.11. 14:30 Uhr – THE MAD DOG OF EUROPE (OmU)": {
+"title": "The Mad Dog of Europe (original with subtitles)",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening on The Mad Dog of Europe, an anti-Nazi film project written in 1932 by Herman J. Mankiewicz and shelved by Hollywood studios.",
+"by": "claude-task",
+"ctx": true
+},
+"🔥 HEISSA 🔥 HOLZMARKT WINTERFESTIVAL 2026": {
+"title": "Heissa Holzmarkt Winter Festival",
+"kind": "festival",
+"audience": "everyone",
+"summary": "Winter festival at Holzmarkt, Wed–Sun, with culture, dance, music, mulled wine and food. Entry contribution of €2–3.",
+"by": "claude-task",
+"ctx": true
+},
+"Vernissage zur Ausstellung Art Steglitz 2026": {
+"title": "Art Steglitz 2026: Exhibition Opening",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Opening of part 3 of Art Steglitz: over 40 artists of Kunst.Raum.Steglitz e.V. show current work, with music by Matija Krznaric.",
+"by": "claude-task",
+"ctx": true
+},
+"Aussttellung Art Steglitz 2026 (Mi-So)": {
+"title": "Art Steglitz 2026 Exhibition",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Over 40 artists of Kunst.Raum.Steglitz e.V. show current work at Galerie Creative Game, Wed–Sun 13:00–17:00.",
+"by": "claude-task",
+"ctx": true
+},
+"Coworking at Hackescher Markt": {
+"title": "Coworking at Hackescher Markt",
+"kind": "meetup",
+"audience": "group",
+"summary": "Coworking meetup for freelancers and remote workers who would rather not work alone or at home.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin-Schöneberg": {
+"title": "Clothes Swap at BUND Berlin, Schöneberg",
+"kind": "market",
+"audience": "everyone",
+"summary": "Clothes swap: bring up to 10 clean, intact autumn/winter items and swap them for others, with music and punch.",
+"by": "claude-task",
+"ctx": true
+},
+"🍜Asian Background Social: Lounge Asia Meetup (Easy English) @ Berlin 6:00pm": {
+"title": "Asian Background Social: Lounge Asia Meetup (Easy English)",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Relaxed social night to make international friends and practise English; you can come alone.",
+"by": "claude-task",
+"ctx": true
+},
+"Stipendium Istanbul–Berlin: Open Studio mit İhsan Oturmak": {
+"title": "Istanbul–Berlin Fellowship: Open Studio with İhsan Oturmak",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Open studio of İhsan Oturmak at Kunstquartier Bethanien, with a talk with Erden Kosova in Turkish with English translation.",
+"by": "claude-task",
+"ctx": true
+},
+"»Makramee Armbänder« – Workshop": {
+"title": "Macramé Bracelet Workshop",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Learn a macramé knotting technique and make a bracelet to take home. Materials provided; limited to 8 people. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Lesen für ALLE - Literarische Begegnungen zum Bundesweiten Vorlesetag in der Ingeborg-Drewitz-Bibliothek in Steglitz": {
+"title": "Reading for ALL: Read-Aloud Day at Ingeborg-Drewitz-Bibliothek",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Literary event at the Steglitz library for the national Read-Aloud Day (Bundesweiter Vorlesetag).",
+"by": "claude-task",
+"ctx": true
+},
+"»3. Erzählsalon mit 7 & ein Streich und Gästen« – Erzählabend mit Musik": {
+"title": "3rd Storytelling Salon with 7 & ein Streich and Guests",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Storytelling evening by the group 7 & ein Streich, part of the Berliner Märchentage, with two guest musicians.",
+"by": "claude-task",
+"ctx": true
+},
+"Kiezfest Novemberlicht Pankow": {
+"title": "Novemberlicht Neighbourhood Festival Pankow",
+"kind": "festival",
+"audience": "everyone",
+"summary": "Autumn street fair with craft stalls, stick bread over a fire, lantern making for kids, fairy tales, a fire show and mulled wine.",
+"by": "claude-task",
+"ctx": true
+},
+"MerciPalais: Abschiedswochenende im PalaisPopulaire": {
+"title": "MerciPalais: Farewell Weekend at PalaisPopulaire",
+"kind": "festival",
+"audience": "everyone",
+"summary": "Farewell weekend at PalaisPopulaire with talks, poetry, live music, art tours and a programme for children and families.",
+"by": "claude-task",
+"ctx": true
+},
+"FRAUEN SEHEN - Künstlerinnengespräch": {
+"title": "FRAUEN SEHEN: Talk with the Artists",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Annika Lau, Rena Zulauf and Patrizia Laeri talk with the artists about female identity, gender roles and the power of images. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"»Musikalischer Abend mit 6 Celli« – Konzert": {
+"title": "Musical Evening with 6 Cellos",
+"kind": "music",
+"audience": "everyone",
+"summary": "Six cellists from the Cello.Orchester.Berlin play David Popper's Requiem arranged for six cellos, plus other works.",
+"by": "claude-task",
+"ctx": true
+},
+"Stockender Betrieb": {
+"title": "Stockender Betrieb: Climbing Performance with Tamara Rettenmund",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Dancer Tamara Rettenmund revives her climbing attraction within the SPREEPERISKOP installation in the exhibition IM DAZWISCHEN.",
+"by": "claude-task",
+"ctx": true
+},
+"Musikalisch-literarische Aufführung: Ade Kamerad": {
+"title": "Ade Kamerad: Musical-Literary Performance",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Musical-literary performance remembering the 1938 ban of the antifascist Liberated Theatre in Prague. Donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"»Vannys kleine Jamsession« – Jamsession": {
+"title": "Vanny's Little Jam Session",
+"kind": "music",
+"audience": "everyone",
+"summary": "Acoustic jam session in a living-room setting hosted by Vanny; bring your own instrument or just listen. No cover songs.",
+"by": "claude-task",
+"ctx": true
+},
+"41. Black International Cinema Berlin 2026": {
+"title": "41st Black International Cinema Berlin",
+"kind": "film",
+"audience": "everyone",
+"summary": "Three days of independent film, art and intercultural exchange in the Marlene-Dietrich-Kinosaal at Rathaus Schöneberg.",
+"by": "claude-task",
+"ctx": true
+},
+"Financial Security for Freelancers": {
+"title": "Financial Security for Freelancers",
+"kind": "talk",
+"audience": "group",
+"summary": "On combining freelancing in Germany with financial security, including health insurance.",
+"by": "claude-task",
+"ctx": true
+},
+"Hybride Grenzstrukturen / Hybrid Border Structures / Hybrydowe Struktury Graniczne": {
+"title": "Hybrid Border Structures",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Day programme in German and Polish, including a workshop by Katharina Blumberg-Stankiewicz and Alina Kokoschka.",
+"by": "claude-task",
+"ctx": true
+},
+"Adventsbasar der Albert Schweitzer Stiftung – Wohnen & Betreuen „Das Miteinander zählt“": {
+"title": "Advent Bazaar of the Albert Schweitzer Stiftung – Wohnen & Betreuen",
+"kind": "market",
+"audience": "everyone",
+"summary": "Advent bazaar with the inclusive choir InTakt, children from the Kita Spatzenburg and a Christmas magic show by Jan Gerken.",
+"by": "claude-task",
+"ctx": true
+},
+"Lubunya.berlin.action": {
+"title": "Lubunya.berlin.action: Short Films and Talk",
+"kind": "film",
+"audience": "everyone",
+"summary": "Three Turkish short films with English subtitles on masculinity, memory and queer kinship, then a talk with Deniz Şimşek and Aykan Safoğlu.",
+"by": "claude-task",
+"ctx": true
+},
+"Gazino Neukölln": {
+"title": "Gazino Neukölln at HANE Salon",
+"kind": "music",
+"audience": "everyone",
+"summary": "Berlin band of four women and non-binary people playing new takes and mash-ups of Arabesque and pop hits, mostly from Turkey.",
+"by": "claude-task",
+"ctx": true
+},
+"Winter Bazaar": {
+"title": "Winter Bazaar",
+"kind": "market",
+"audience": "everyone",
+"summary": "Stalls with clothing, accessories and gifts, plus food and drinks; Lubunya.berlin.action has a solidarity and donation stand.",
+"by": "claude-task",
+"ctx": true
+},
+"Gesellschaftliche Veränderungen / Social Changes / Przemiany Społeczne": {
+"title": "Social Changes",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Day programme in German, English and Polish, including a workshop by Joanna Cotreanti on her father's photographs from Poland.",
+"by": "claude-task",
+"ctx": true
+},
+"Nachbarschafts-Frühstück": {
+"title": "Neighbourhood Breakfast",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Relaxed breakfast to meet neighbours, run by Bürgertreff \"Gemeinsam im Kiez leben\". Donations welcome. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Komische Oper for free: Fatma & Fatoş Ein musikalischer Nachmittag über starke Frauen": {
+"title": "Komische Oper: Fatma & Fatoş – A Musical Afternoon About Strong Women",
+"kind": "music",
+"audience": "everyone",
+"summary": "OPERNDOLMUŞ, an ensemble of the KOMISCHE OPER Berlin, brings an afternoon of opera, singing and stories to Mariendorf. For all ages.",
+"by": "claude-task",
+"ctx": true
+},
+"Dafna Maimon": {
+"title": "Dafna Maimon: Orient Express",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Orient Express, an exhibition by Dafna Maimon curated by Solvej Helweg Ovesen and Bonaventure Soh Bejeng Ndikung.",
+"by": "claude-task",
+"ctx": true
+},
+"Rundgang durch die Ausstellung mit Dafna Maimon": {
+"title": "Tour of the Exhibition with Dafna Maimon",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Tour of Dafna Maimon's exhibition Orient Express with the artist herself.",
+"by": "claude-task",
+"ctx": true
 }
 }
