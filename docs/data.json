@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-13T05:13:11.910281+00:00",
- "count": 1190,
+ "generated_at": "2026-11-13T06:46:30.609338+00:00",
+ "count": 1188,
  "counts": {
-  "events": 1190,
+  "events": 1188,
   "recurring": 397,
-  "oneoff": 793,
+  "oneoff": 791,
   "always_free": 16,
   "manual_check": 207
  },
@@ -171,7 +171,7 @@
    "id": "eb79ae080a7500489666be6a7ddd49ccc1f7e0bd"
   },
   {
-   "title": "14.11. 14:30 Uhr – THE MAD DOG OF EUROPE (OmU)",
+   "title": "The Mad Dog of Europe (original with subtitles)",
    "start": "2026-11-12T13:11:00+00:00",
    "source": "rss:Sputnik Kino",
    "url": "https://sputnik-kino.com/film/66680",
@@ -187,14 +187,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "page",
-   "title_orig": null,
+   "title_orig": "14.11. 14:30 Uhr – THE MAD DOG OF EUROPE (OmU)",
    "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "a35bea4862cb681a13fa30f45f3546d1569d6980"
+   "summary": "Screening on The Mad Dog of Europe, an anti-Nazi film project written in 1932 by Herman J. Mankiewicz and shelved by Hollywood studios.",
+   "classified_by": "claude-task",
+   "id": "eb79ae080a7500489666be6a7ddd49ccc1f7e0bd"
   },
   {
    "title": "Law Shifters Workshops",
@@ -1020,7 +1020,7 @@
    "end": null,
    "venue": "Alexanderplatz Alexanderplatz, Berlin Berlin",
    "area": null,
-   "category": "market",
+   "category": "meetup",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -1029,13 +1029,13 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "jsonld",
-   "title_orig": null,
-   "kind": "market",
-   "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "title_orig": "Coworking at Hackescher Markt",
+   "kind": "meetup",
+   "audience": "group",
+   "summary": "Coworking meetup for freelancers and remote workers who would rather not work alone or at home.",
+   "classified_by": "claude-task",
    "id": "1873aafeaa2dd24973085258eaf326d67b00346e"
   },
   {
@@ -1971,7 +1971,7 @@
    "id": "7481269b7b0511057d55d14a25869be0062b53b8"
   },
   {
-   "title": "🔥 HEISSA 🔥 HOLZMARKT WINTERFESTIVAL 2026",
+   "title": "Heissa Holzmarkt Winter Festival",
    "start": "2026-11-13T16:00:00+01:00",
    "source": "cal:Holzmarkt",
    "url": "https://www.holzmarkt.com/veranstaltung/heissa-holzmarkt-winterfestival-2026-2",
@@ -1987,14 +1987,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
+   "title_orig": "🔥 HEISSA 🔥 HOLZMARKT WINTERFESTIVAL 2026",
    "kind": "festival",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "45563cb2e8998558caf8d5b05a210fcea47388f7"
+   "summary": "Winter festival at Holzmarkt, Wed–Sun, with culture, dance, music, mulled wine and food. Entry contribution of €2–3.",
+   "classified_by": "claude-task",
+   "id": "3b81b20e4823f2f2362c27e9879c3a035af04a40"
   },
   {
    "title": "Lovely Stories (Not Only) for Children: Storytelling Theatre",
@@ -3188,7 +3188,7 @@
    "id": "d45a4f8f751f815a1f16c5159e9647f185994193"
   },
   {
-   "title": "Vernissage zur Ausstellung Art Steglitz 2026",
+   "title": "Art Steglitz 2026: Exhibition Opening",
    "start": "2026-11-13T19:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082141-vernissage-zur-ausstellung-art-steglitz-2026",
@@ -3204,14 +3204,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Vernissage zur Ausstellung Art Steglitz 2026",
    "kind": "exhibition",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "2f124188406f8e6f327c0731cd61cf3fd275e7f2"
+   "summary": "Opening of part 3 of Art Steglitz: over 40 artists of Kunst.Raum.Steglitz e.V. show current work, with music by Matija Krznaric.",
+   "classified_by": "claude-task",
+   "id": "1953864501dff8886e01319ff674e2649eaee106"
   },
   {
    "title": "Improv Comedy",
@@ -3240,7 +3240,7 @@
    "id": "09c9cf6494986f7a1f714c2202d7f84b1569bbd2"
   },
   {
-   "title": "Aussttellung Art Steglitz 2026 (Mi-So)",
+   "title": "Art Steglitz 2026 Exhibition",
    "start": "2026-11-13T19:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082142-aussttellung-art-steglitz-2026-mi-so",
@@ -3256,14 +3256,14 @@
    "recurring": false,
    "recurrence": "Every day until 27 Nov",
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Aussttellung Art Steglitz 2026 (Mi-So)",
    "kind": "exhibition",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "76279dc8d10fd6f9ce517249e24a4e9a82d003e3"
+   "summary": "Over 40 artists of Kunst.Raum.Steglitz e.V. show current work at Galerie Creative Game, Wed–Sun 13:00–17:00.",
+   "classified_by": "claude-task",
+   "id": "3fc7690b4a37de7fdeae41a820a22414076b644a"
   },
   {
    "title": "Enchanting Colour: Collection De Gambs & Marta Djourina",
@@ -4634,7 +4634,7 @@
    "id": "2410b5d20c6645bedcee4a761f478337f039c314"
   },
   {
-   "title": "🔥 HEISSA 🔥 HOLZMARKT WINTERFESTIVAL 2026",
+   "title": "Heissa Holzmarkt Winter Festival",
    "start": "2026-11-14T12:00:00+01:00",
    "source": "cal:Holzmarkt",
    "url": "https://www.holzmarkt.com/veranstaltung/heissa-holzmarkt-winterfestival-2026-0",
@@ -4650,14 +4650,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
+   "title_orig": "🔥 HEISSA 🔥 HOLZMARKT WINTERFESTIVAL 2026",
    "kind": "festival",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "b1953bfda2f1c0a32bb7e70c28ac8928620013a3"
+   "summary": "Winter festival at Holzmarkt, Wed–Sun, with culture, dance, music, mulled wine and food. Entry contribution of €2–3.",
+   "classified_by": "claude-task",
+   "id": "b33f038b9c59b75971526e686190c32327139b7f"
   },
   {
    "title": "Textile Crafternoon",
@@ -5441,7 +5441,7 @@
    "id": "83478fd6a507baab85f08a89f2f9c53180463982"
   },
   {
-   "title": "Berlin-Schöneberg",
+   "title": "Clothes Swap at BUND Berlin, Schöneberg",
    "start": "2026-11-14T15:00:00+01:00",
    "source": "cal:Kleidertausch",
    "url": "https://kleidertausch.de/event/berlin-schoeneberg/",
@@ -5462,9 +5462,9 @@
    "title_orig": "Berlin-Schöneberg",
    "kind": "market",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "323cee00e9350dbaf4a22ba1b139bb74df96b237"
+   "summary": "Clothes swap: bring up to 10 clean, intact autumn/winter items and swap them for others, with music and punch.",
+   "classified_by": "claude-task",
+   "id": "8df1cfbe617a5133e7abfac99167ca5f68c22032"
   },
   {
    "title": "Venezuela: Women in Prison and wider Human Rights Violations",
@@ -6155,32 +6155,6 @@
    "summary": "Open dance group GovendaKÎ teaches dances from Kurdistan's regions and their meaning, for beginners and advanced, young and old. Bring trainers.",
    "classified_by": "claude-task",
    "id": "76bed2f9962ac457cd35fdfb97f7777129855c7c"
-  },
-  {
-   "title": "Sip Happens! Saturday Social at Straßenbräu Ausschank 2",
-   "start": "2026-11-14T19:00:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/sip_happens_berlin/events/317253225/",
-   "end": null,
-   "venue": "Straßenbräu Ausschank 2 Görlitzer Str. 52, 10997 Berlin, Germany, Berlin, BE Berlin",
-   "area": "Friedrichshain-Kreuzberg",
-   "category": "meetup",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "dates": null,
-   "translated": true,
-   "date_source": "jsonld",
-   "title_orig": "Sip Happens! Saturday Social @ Straßenbräu Ausschank 2 🍻",
-   "kind": "meetup",
-   "audience": "everyone",
-   "summary": "Social meetup to meet new people over drinks; most come alone. Wheelchair accessible, card payment only, no food.",
-   "classified_by": "claude-task",
-   "id": "759a72eecbb9824e917c9b4052158a17d19b3e35"
   },
   {
    "title": "Sip Happens! Saturday Social at Straßenbräu Ausschank 2",
@@ -7607,7 +7581,7 @@
    "id": "586e6c103f9ffa90c321c368263721a6888647e9"
   },
   {
-   "title": "🍜Asian Background Social: Lounge Asia Meetup (Easy English) @ Berlin 6:00pm",
+   "title": "Asian Background Social: Lounge Asia Meetup (Easy English)",
    "start": "2026-11-15T17:00:00.000Z",
    "source": "web:Meetup Berlin",
    "url": "https://www.meetup.com/loungeasiaeurope/events/317014977/",
@@ -7623,14 +7597,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "jsonld",
-   "title_orig": null,
+   "title_orig": "🍜Asian Background Social: Lounge Asia Meetup (Easy English) @ Berlin 6:00pm",
    "kind": "meetup",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "5b62d0446e871903a3183945bf0924c8087f6268"
+   "summary": "Relaxed social night to make international friends and practise English; you can come alone.",
+   "classified_by": "claude-task",
+   "id": "c6a51353a66c33f3be0be72440819cf2a20ad09f"
   },
   {
    "title": "After Party Comedy: stand-up in English at The Wall",
@@ -15290,7 +15264,7 @@
    "id": "fd0601c277ad069b5a0db12c9b6170aa4cb5857a"
   },
   {
-   "title": "🔥 HEISSA 🔥 HOLZMARKT WINTERFESTIVAL 2026",
+   "title": "Heissa Holzmarkt Winter Festival",
    "start": "2026-11-18T16:00:00+01:00",
    "source": "cal:Holzmarkt",
    "url": "https://www.holzmarkt.com/veranstaltung/heissa-holzmarkt-winterfestival-2026-4",
@@ -15306,14 +15280,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
+   "title_orig": "🔥 HEISSA 🔥 HOLZMARKT WINTERFESTIVAL 2026",
    "kind": "festival",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "9f8d8cdc8690e90bc76665aceae81f80297560fb"
+   "summary": "Winter festival at Holzmarkt, Wed–Sun, with culture, dance, music, mulled wine and food. Entry contribution of €2–3.",
+   "classified_by": "claude-task",
+   "id": "7d450c27dc220a20dae5ab775f3408369795c228"
   },
   {
    "title": "Leseknirpse – The Hands-On Library for Families",
@@ -18798,7 +18772,7 @@
    "id": "e6b31e62962bf626648f3588561497d0fa3a0428"
   },
   {
-   "title": "»Makramee Armbänder« – Workshop",
+   "title": "Macramé Bracelet Workshop",
    "start": "2026-11-19T17:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082131-makramee-armbaender-workshop",
@@ -18814,14 +18788,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "»Makramee Armbänder« – Workshop",
    "kind": "workshop",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "d1e97bf70446c8ed6a4e8c4e25b722e6e3893acb"
+   "summary": "Learn a macramé knotting technique and make a bracelet to take home. Materials provided; limited to 8 people. Registration required.",
+   "classified_by": "claude-task",
+   "id": "8c5ad23bec9f3c91c63d7956124c6959344e42f9"
   },
   {
    "title": "Cooking Workshop: A Culinary Journey to Peru",
@@ -19251,7 +19225,7 @@
    "id": "e81650987e0468ec7386ed87b5a682f8129e27ef"
   },
   {
-   "title": "Stipendium Istanbul–Berlin: Open Studio mit İhsan Oturmak",
+   "title": "Istanbul–Berlin Fellowship: Open Studio with İhsan Oturmak",
    "start": "2026-11-19T18:00:00+00:00",
    "source": "rss:Kunstraum Kreuzberg/Bethanien",
    "url": "https://kunstraumkreuzberg.de/2026/11/12/stipendium-istanbul-berlin-open-studio-mit-ihsan-oturmak/",
@@ -19267,14 +19241,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "page",
-   "title_orig": null,
+   "title_orig": "Stipendium Istanbul–Berlin: Open Studio mit İhsan Oturmak",
    "kind": "exhibition",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "92d92a28a1ab5b36f3a559d08ad38c83e830eb88"
+   "summary": "Open studio of İhsan Oturmak at Kunstquartier Bethanien, with a talk with Erden Kosova in Turkish with English translation.",
+   "classified_by": "claude-task",
+   "id": "bf71cf9de1ed2531d4c58a9f8b482ad42581a0d0"
   },
   {
    "title": "Meet-Up Carousel for Queer Co-Parenting, Schöneberg",
@@ -20853,14 +20827,14 @@
    "id": "3cf398866c3537ad7dfc1fcc3999b42ab6a2963e"
   },
   {
-   "title": "Lesen für ALLE - Literarische Begegnungen zum Bundesweiten Vorlesetag in der Ingeborg-Drewitz-Bibliothek in Steglitz",
+   "title": "Reading for ALL: Read-Aloud Day at Ingeborg-Drewitz-Bibliothek",
    "start": "2026-11-20T16:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082137-lesen-fuer-alle-literarische-begegnungen-zum-bundesweiten-vorlesetag-in-der-ingeborg-drewitz-bibliothek-in-steglitz",
    "end": null,
    "venue": "Grunewaldstraße 3 12165",
    "area": "Steglitz-Zehlendorf",
-   "category": "misc",
+   "category": "talk",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -20869,14 +20843,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Lesen für ALLE - Literarische Begegnungen zum Bundesweiten Vorlesetag in der Ingeborg-Drewitz-Bibliothek in Steglitz",
+   "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "e03ff5cbd8e9f5787eb6c46b36a7b1205014be9e"
+   "summary": "Literary event at the Steglitz library for the national Read-Aloud Day (Bundesweiter Vorlesetag).",
+   "classified_by": "claude-task",
+   "id": "b1768be428b9e90ccacd5832d8e0b5029e5cd280"
   },
   {
    "title": "KinderUni Lichtenberg: When computers answer",
@@ -21035,14 +21009,14 @@
    "id": "4ee8f20d6dc4fe40f18004381979bb33a43c9e3d"
   },
   {
-   "title": "»3. Erzählsalon mit 7 & ein Streich und Gästen« – Erzählabend mit Musik",
+   "title": "3rd Storytelling Salon with 7 & ein Streich and Guests",
    "start": "2026-11-20T18:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082133-3-erzaehlsalon-mit-7-ein-streich-und-gaesten-erzaehlabend-mit-musik",
    "end": null,
    "venue": "Ulmenallee 35 14050",
    "area": "Charlottenburg-Wilmersdorf",
-   "category": "music",
+   "category": "talk",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -21051,14 +21025,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "music",
+   "title_orig": "»3. Erzählsalon mit 7 & ein Streich und Gästen« – Erzählabend mit Musik",
+   "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "6bfcdd09f26b19fd75bc3e597b170b6eacabb30c"
+   "summary": "Storytelling evening by the group 7 & ein Streich, part of the Berliner Märchentage, with two guest musicians.",
+   "classified_by": "claude-task",
+   "id": "0f0eaedbf006a799635e23a18f7aa306901699d7"
   },
   {
    "title": "Berlin–Tel Aviv musical bridge: chamber concert, Dragonerareal",
@@ -21269,14 +21243,14 @@
    "id": "1959bffe4305dc9c09c64d040c9833ebddd9298a"
   },
   {
-   "title": "MerciPalais: Abschiedswochenende im PalaisPopulaire",
+   "title": "MerciPalais: Farewell Weekend at PalaisPopulaire",
    "start": "2026-11-21T10:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2081916-mercipalais-abschiedswochenende-im-palaispopulaire",
    "end": null,
    "venue": null,
    "area": null,
-   "category": "misc",
+   "category": "festival",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -21285,14 +21259,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "MerciPalais: Abschiedswochenende im PalaisPopulaire",
+   "kind": "festival",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "18ce4cb978449223c551db975b614972cd252239"
+   "summary": "Farewell weekend at PalaisPopulaire with talks, poetry, live music, art tours and a programme for children and families.",
+   "classified_by": "claude-task",
+   "id": "c25fca27a024699c4b2c36dd2a152bff1a4026e4"
   },
   {
    "title": "Children's University Lichtenberg: The Secret of Democracy",
@@ -21399,7 +21373,7 @@
    "id": "699b7ecd309f65dbbdbe13a030b2f9934c437499"
   },
   {
-   "title": "🔥 HEISSA 🔥 HOLZMARKT WINTERFESTIVAL 2026",
+   "title": "Heissa Holzmarkt Winter Festival",
    "start": "2026-11-21T12:00:00+01:00",
    "source": "cal:Holzmarkt",
    "url": "https://www.holzmarkt.com/veranstaltung/heissa-holzmarkt-winterfestival-2026-3",
@@ -21415,14 +21389,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
+   "title_orig": "🔥 HEISSA 🔥 HOLZMARKT WINTERFESTIVAL 2026",
    "kind": "festival",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "96b5d88ee3da20b7c05712262c0ad5b79ffd3fd5"
+   "summary": "Winter festival at Holzmarkt, Wed–Sun, with culture, dance, music, mulled wine and food. Entry contribution of €2–3.",
+   "classified_by": "claude-task",
+   "id": "bafef4a072a63579bffdaec5ae2751f09300df16"
   },
   {
    "title": "Ephraim-Palais: Writing Workshop for Families",
@@ -21581,7 +21555,7 @@
    "id": "6ad57e1bdc6788aff030812edb1577840a283bed"
   },
   {
-   "title": "Kiezfest Novemberlicht Pankow",
+   "title": "Novemberlicht Neighbourhood Festival Pankow",
    "start": "2026-11-21T16:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2012656-kiezfest-novemberlicht-pankow",
@@ -21597,17 +21571,17 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Kiezfest Novemberlicht Pankow",
    "kind": "festival",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "0baf1d707b3047939a90f199dde3a2a120e02f3c"
+   "summary": "Autumn street fair with craft stalls, stick bread over a fire, lantern making for kids, fairy tales, a fire show and mulled wine.",
+   "classified_by": "claude-task",
+   "id": "314607cd9c1c7ff6cc66da85f0628234187a0dce"
   },
   {
-   "title": "FRAUEN SEHEN - Künstlerinnengespräch",
+   "title": "FRAUEN SEHEN: Talk with the Artists",
    "start": "2026-11-21T17:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082138-frauen-sehen-kuenstlerinnengespraech",
@@ -21623,17 +21597,17 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "FRAUEN SEHEN - Künstlerinnengespräch",
    "kind": "talk",
-   "audience": "women",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "b12c0723dd7eaf48d21035b2873a650d1b22a712"
+   "audience": "everyone",
+   "summary": "Annika Lau, Rena Zulauf and Patrizia Laeri talk with the artists about female identity, gender roles and the power of images. Registration required.",
+   "classified_by": "claude-task",
+   "id": "5c431ca9b1c6d0bce8b1e5ee5da34b761f8efb45"
   },
   {
-   "title": "»Musikalischer Abend mit 6 Celli« – Konzert",
+   "title": "Musical Evening with 6 Cellos",
    "start": "2026-11-21T17:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082134-musikalischer-abend-mit-6-celli-konzert",
@@ -21649,14 +21623,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "»Musikalischer Abend mit 6 Celli« – Konzert",
    "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "4b632c46869dc179d14622dbd35a47d63aa0d21c"
+   "summary": "Six cellists from the Cello.Orchester.Berlin play David Popper's Requiem arranged for six cellos, plus other works.",
+   "classified_by": "claude-task",
+   "id": "33befeaa3ae7a490f3e1a468c2c00a1a5db653c6"
   },
   {
    "title": "Concert: 'Ich wollt, dass ich daheime wär' – Motets from 7 Centuries",
@@ -22023,14 +21997,14 @@
    "id": "162af42f7b3ce1123ac792acf90920f0ee085bba"
   },
   {
-   "title": "MerciPalais: Abschiedswochenende im PalaisPopulaire",
+   "title": "MerciPalais: Farewell Weekend at PalaisPopulaire",
    "start": "2026-11-22T10:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2081916-mercipalais-abschiedswochenende-im-palaispopulaire",
    "end": null,
    "venue": null,
    "area": null,
-   "category": "misc",
+   "category": "festival",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -22039,14 +22013,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "MerciPalais: Abschiedswochenende im PalaisPopulaire",
+   "kind": "festival",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "07dc9973dcee90f7aed1de3904c53d89e529d598"
+   "summary": "Farewell weekend at PalaisPopulaire with talks, poetry, live music, art tours and a programme for children and families.",
+   "classified_by": "claude-task",
+   "id": "aa86f8e988366f2338b9d60dc1d4c4ca155e454a"
   },
   {
    "title": "Sunday of the Dead & Crematorium Day at Krematorium Treptow",
@@ -22366,14 +22340,14 @@
    "id": "8a81703be142feb7626244d7e8b8d4f222809c02"
   },
   {
-   "title": "Stockender Betrieb",
+   "title": "Stockender Betrieb: Climbing Performance with Tamara Rettenmund",
    "start": "2026-11-22T15:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082121-stockender-betrieb",
    "end": null,
    "venue": "Kiehnwerderallee 2 12437",
    "area": "Treptow-Köpenick",
-   "category": "misc",
+   "category": "theatre",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -22382,14 +22356,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Stockender Betrieb",
+   "kind": "theatre",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "34e91c0c6e9aa99a7b51d373efcd04306fe93b6a"
+   "summary": "Dancer Tamara Rettenmund revives her climbing attraction within the SPREEPERISKOP installation in the exhibition IM DAZWISCHEN.",
+   "classified_by": "claude-task",
+   "id": "8dee6b0decd775c4083c59e417ef6ccd193cfab0"
   },
   {
    "title": "Tour Around the Eierhäuschen with Helena Ommert (in English)",
@@ -23332,14 +23306,14 @@
    "id": "b13c7afa32f1fdebfd8f19fef29f7977435c142d"
   },
   {
-   "title": "Musikalisch-literarische Aufführung: Ade Kamerad",
+   "title": "Ade Kamerad: Musical-Literary Performance",
    "start": "2026-11-24T19:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2081894-musikalisch-literarische-auffuehrung-die-zivilisation",
    "end": null,
    "venue": null,
    "area": null,
-   "category": "tour",
+   "category": "theatre",
    "is_free": true,
    "price": "Free — donation welcome",
    "price_value": null,
@@ -23348,14 +23322,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "tour",
+   "title_orig": "Musikalisch-literarische Aufführung: Ade Kamerad",
+   "kind": "theatre",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "7766ee84d204289575a52743b2aaffa51f3cb79c"
+   "summary": "Musical-literary performance remembering the 1938 ban of the antifascist Liberated Theatre in Prague. Donations welcome.",
+   "classified_by": "claude-task",
+   "id": "7c9d514846fb234198cc4cca8fa2e22b332ccf29"
   },
   {
    "title": "Ronja von Rönne Reads “Alles Liebe”, with Josephine Apraku",
@@ -24775,32 +24749,6 @@
    "id": "cbb5726f3f4f87a1364ec1cca25ff1ac38a6f446"
   },
   {
-   "title": "Financial Security for Freelancers",
-   "start": "2026-11-27T16:00:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/smart-coop-germany-berlin-events/events/317267742/",
-   "end": null,
-   "venue": null,
-   "area": null,
-   "category": "misc",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "dates": null,
-   "translated": false,
-   "date_source": "jsonld",
-   "title_orig": null,
-   "kind": "misc",
-   "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "8c527db080c9db32b46c99b819976761e71cf4fc"
-  },
-  {
    "title": "TESTING GROUNDS: Disruption Network Lab conference",
    "start": "2026-11-27T16:30:00+00:00",
    "source": "rss:Kunstraum Kreuzberg/Bethanien",
@@ -24879,7 +24827,7 @@
    "id": "c9da37bf42bfb2d418283aa6bb9ac402a373128c"
   },
   {
-   "title": "»Vannys kleine Jamsession« – Jamsession",
+   "title": "Vanny's Little Jam Session",
    "start": "2026-11-27T17:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082135-vannys-kleine-jamsession-jamsession",
@@ -24895,14 +24843,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "»Vannys kleine Jamsession« – Jamsession",
    "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "ac1e997f378d9156c44915d0e624ec920a1d98d1"
+   "summary": "Acoustic jam session in a living-room setting hosted by Vanny; bring your own instrument or just listen. No cover songs.",
+   "classified_by": "claude-task",
+   "id": "5e0da930f75e54113e8ab0f75d6bc81fda4561ff"
   },
   {
    "title": "Meetup of women hobby painters, Ratswaage Lankwitz",
@@ -25191,7 +25139,7 @@
    "id": "4993e5f3e8a2b5ead50a7ce98310156067e2ec03"
   },
   {
-   "title": "41. Black International Cinema Berlin 2026",
+   "title": "41st Black International Cinema Berlin",
    "start": "2026-11-27T19:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082140-41-black-international-cinema-berlin-2026",
@@ -25207,14 +25155,14 @@
    "recurring": false,
    "recurrence": "Every day until 29 Nov",
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "41. Black International Cinema Berlin 2026",
    "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "37c1e6e93eb0695cc89205f485c3b96252979d44"
+   "summary": "Three days of independent film, art and intercultural exchange in the Marlene-Dietrich-Kinosaal at Rathaus Schöneberg.",
+   "classified_by": "claude-task",
+   "id": "6d452f2ff527a1b944b72215bdcab1d0b886aa53"
   },
   {
    "title": "Peppi Guggenheim Exil Music Programme: Raumschiff Jazz",
@@ -25321,14 +25269,14 @@
    "id": "40fcccb4442d87581725b5f458af9d1df1c162e2"
   },
   {
-   "title": "Hybride Grenzstrukturen / Hybrid Border Structures / Hybrydowe Struktury Graniczne",
+   "title": "Hybrid Border Structures",
    "start": "2026-11-28T11:00:00+00:00",
    "source": "rss:Galerie Wedding (kommunale Galerie)",
    "url": "https://galeriewedding.de/hybride-grenzstrukturen-hybrid-border-structures-hybrydowe-struktury-graniczne/",
    "end": null,
    "venue": null,
    "area": null,
-   "category": "exhibition",
+   "category": "workshop",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -25337,14 +25285,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "page",
-   "title_orig": null,
-   "kind": "exhibition",
+   "title_orig": "Hybride Grenzstrukturen / Hybrid Border Structures / Hybrydowe Struktury Graniczne",
+   "kind": "workshop",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "c1fa7679bae7327313f88bc562fcc7bd01807992"
+   "summary": "Day programme in German and Polish, including a workshop by Katharina Blumberg-Stankiewicz and Alina Kokoschka.",
+   "classified_by": "claude-task",
+   "id": "50ead3b81b77980225decc46dcffc027b42e84b3"
   },
   {
    "title": "Workshop | Sad About Trees: Grief and Resistance over Ecological Loss",
@@ -25555,7 +25503,7 @@
    "id": "a07e15884f1d7efab911bbfd8f906948683e9170"
   },
   {
-   "title": "Adventsbasar der Albert Schweitzer Stiftung – Wohnen & Betreuen „Das Miteinander zählt“",
+   "title": "Advent Bazaar of the Albert Schweitzer Stiftung – Wohnen & Betreuen",
    "start": "2026-11-28T15:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082130-adventsbasar-der-albert-schweitzer-stiftung-wohnen-betreuen-das-miteinander-zaehlt",
@@ -25571,14 +25519,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Adventsbasar der Albert Schweitzer Stiftung – Wohnen & Betreuen „Das Miteinander zählt“",
    "kind": "market",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "b96ca5d2a8d9488f20e852d0669ce037cfd2fff3"
+   "summary": "Advent bazaar with the inclusive choir InTakt, children from the Kita Spatzenburg and a Christmas magic show by Jan Gerken.",
+   "classified_by": "claude-task",
+   "id": "5dc735dd416028653f30839c109cd70a99d0d41e"
   },
   {
    "title": "Open Project Dialogue: women artists, archives and museums",
@@ -28025,7 +27973,7 @@
    "id": "30337d369e05939104bf9f8823d69b43764ceaee"
   },
   {
-   "title": "Nachbarschafts-Frühstück",
+   "title": "Neighbourhood Breakfast",
    "start": "2026-12-05T10:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2077657-nachbarschafts-fruehstueck",
@@ -28041,14 +27989,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Nachbarschafts-Frühstück",
    "kind": "meetup",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "ab5554b50818913c699887ed86542c7cdb0b873b"
+   "summary": "Relaxed breakfast to meet neighbours, run by Bürgertreff \"Gemeinsam im Kiez leben\". Donations welcome. Registration required.",
+   "classified_by": "claude-task",
+   "id": "a710031dc83df610e40d3a345bbadb152d0a0fb5"
   },
   {
    "title": "Flinta* Writing Group",
@@ -28077,14 +28025,14 @@
    "id": "3d0245cae84f205c20770c9776e95837e481dcba"
   },
   {
-   "title": "Gesellschaftliche Veränderungen / Social Changes / Przemiany Społeczne",
+   "title": "Social Changes",
    "start": "2026-12-05T11:00:00+00:00",
    "source": "rss:Galerie Wedding (kommunale Galerie)",
    "url": "https://galeriewedding.de/gesellschaftliche-veraenderungen-social-changes-przemiany-spoleczne/",
    "end": null,
    "venue": null,
    "area": null,
-   "category": "meetup",
+   "category": "workshop",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -28093,14 +28041,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "page",
-   "title_orig": null,
-   "kind": "meetup",
+   "title_orig": "Gesellschaftliche Veränderungen / Social Changes / Przemiany Społeczne",
+   "kind": "workshop",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "697e265f44bf524af9f49f6dd5554a2227234ec7"
+   "summary": "Day programme in German, English and Polish, including a workshop by Joanna Cotreanti on her father's photographs from Poland.",
+   "classified_by": "claude-task",
+   "id": "0d20e24d474b239719e0d0a203bf462808f59604"
   },
   {
    "title": "OPUS – Matinee Concert",
@@ -28214,7 +28162,7 @@
    "end": "2026-12-05T15:00:00+00:00",
    "venue": "Lindower Str. 21 - 22/HAUS C, 13347 Berlin",
    "area": "Mitte",
-   "category": "exhibition",
+   "category": "market",
    "is_free": true,
    "price": "Donation",
    "price_value": null,
@@ -28226,10 +28174,10 @@
    "translated": false,
    "date_source": "ical",
    "title_orig": null,
-   "kind": "exhibition",
+   "kind": "market",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Stalls with clothing, accessories and gifts, plus food and drinks; Lubunya.berlin.action has a solidarity and donation stand.",
+   "classified_by": "claude-task",
    "id": "209715663c0424d14fa2ae79c8284a53e12fd762"
   },
   {
@@ -28415,14 +28363,14 @@
    "id": "dc033dc347dd48d6ad1bff4e55bc5eeca84bcdcf"
   },
   {
-   "title": "Lubunya.berlin.action",
+   "title": "Lubunya.berlin.action: Short Films and Talk",
    "start": "2026-12-05T18:00:00+00:00",
    "source": "cal:Sinema Transtopia",
    "url": "https://sinematranstopia.com/de/common-visions-berlin/lubunyaberlinaction",
    "end": "2026-12-05T19:00:00+00:00",
    "venue": "Lindower Str. 21 - 22/HAUS C, 13347 Berlin",
    "area": "Mitte",
-   "category": "exhibition",
+   "category": "film",
    "is_free": true,
    "price": "Donation",
    "price_value": null,
@@ -28431,14 +28379,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
-   "kind": "exhibition",
+   "title_orig": "Lubunya.berlin.action",
+   "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "4d31657ca44f22ee7524f2300eea48ebab2ebefa"
+   "summary": "Three Turkish short films with English subtitles on masculinity, memory and queer kinship, then a talk with Deniz Şimşek and Aykan Safoğlu.",
+   "classified_by": "claude-task",
+   "id": "9cd544eb18b9a1a18f69c773938553904c394512"
   },
   {
    "title": "Peace Meditation in the AMORC Rosicrucian Tradition",
@@ -28597,14 +28545,14 @@
    "id": "9f38b65dc51dfcb8d19c948f08d2732683c5e876"
   },
   {
-   "title": "Gazino Neukölln",
+   "title": "Gazino Neukölln at HANE Salon",
    "start": "2026-12-05T20:30:00+00:00",
    "source": "cal:Sinema Transtopia",
    "url": "https://sinematranstopia.com/de/hane-salon/gazino-neukolln",
    "end": "2026-12-05T21:30:00+00:00",
    "venue": "Lindower Str. 21 - 22/HAUS C, 13347 Berlin",
    "area": "Mitte",
-   "category": "exhibition",
+   "category": "music",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -28613,14 +28561,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
-   "kind": "exhibition",
+   "title_orig": "Gazino Neukölln",
+   "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "fe71093188b06ef8bf0cd0ea4acc774423cd5552"
+   "summary": "Berlin band of four women and non-binary people playing new takes and mash-ups of Arabesque and pop hits, mostly from Turkey.",
+   "classified_by": "claude-task",
+   "id": "15c207597888738b6ef0d37801a41f41139ea2bd"
   },
   {
    "title": "Berlin Museum: Sunday in the Nikolaiviertel",
@@ -29325,14 +29273,14 @@
    "id": "2b9715d5da070028871ba7a02f6da7016fe23ef2"
   },
   {
-   "title": "Komische Oper for free: Fatma & Fatoş Ein musikalischer Nachmittag über starke Frauen",
+   "title": "Komische Oper: Fatma & Fatoş – A Musical Afternoon About Strong Women",
    "start": "2026-12-08T15:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082136-komische-oper-for-free-fatma-fatos-ein-musikalischer-nachmittag-ueber-starke-frauen",
    "end": null,
    "venue": "Friedenstraße 20 12107",
    "area": "Tempelhof-Schöneberg",
-   "category": "theatre",
+   "category": "music",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -29341,14 +29289,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "theatre",
-   "audience": "women",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "9192e0e96251c44768a30aa62415f737787b53a8"
+   "title_orig": "Komische Oper for free: Fatma & Fatoş Ein musikalischer Nachmittag über starke Frauen",
+   "kind": "music",
+   "audience": "everyone",
+   "summary": "OPERNDOLMUŞ, an ensemble of the KOMISCHE OPER Berlin, brings an afternoon of opera, singing and stories to Mariendorf. For all ages.",
+   "classified_by": "claude-task",
+   "id": "457ed3958eac1e6da93c7f5d1c5b28bf8f958ad1"
   },
   {
    "title": "Story Time: We Read Aloud!",
@@ -33875,7 +33823,7 @@
    "id": "ed34cf4bdbf2324c8558213720509a379665533b"
   },
   {
-   "title": "Dafna Maimon",
+   "title": "Dafna Maimon: Orient Express",
    "start": "2027-01-11T13:01:00+00:00",
    "source": "rss:Galerie Wedding (kommunale Galerie)",
    "url": "https://galeriewedding.de/dafna-maimon/",
@@ -33891,17 +33839,17 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "page",
-   "title_orig": null,
+   "title_orig": "Dafna Maimon",
    "kind": "exhibition",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "a627fe5baef931de4a88040f20ef7d04b8b6664b"
+   "summary": "Orient Express, an exhibition by Dafna Maimon curated by Solvej Helweg Ovesen and Bonaventure Soh Bejeng Ndikung.",
+   "classified_by": "claude-task",
+   "id": "20a67977cb66d1c0eaf46ff070a9b48117c5bc21"
   },
   {
-   "title": "Dafna Maimon",
+   "title": "Dafna Maimon: Orient Express",
    "start": "2027-01-11T13:01:00+00:00",
    "source": "rss:Galerie Wedding (kommunale Galerie)",
    "url": "https://galeriewedding.de/dafna-maimon-2/",
@@ -33917,17 +33865,17 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "page",
-   "title_orig": null,
+   "title_orig": "Dafna Maimon",
    "kind": "exhibition",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "a627fe5baef931de4a88040f20ef7d04b8b6664b"
+   "summary": "Orient Express, an exhibition by Dafna Maimon curated by Solvej Helweg Ovesen and Bonaventure Soh Bejeng Ndikung.",
+   "classified_by": "claude-task",
+   "id": "20a67977cb66d1c0eaf46ff070a9b48117c5bc21"
   },
   {
-   "title": "Tour of the exhibition with Dafna Maimon",
+   "title": "Tour of the Exhibition with Dafna Maimon",
    "start": "2027-01-11T13:01:00+00:00",
    "source": "rss:Galerie Wedding (kommunale Galerie)",
    "url": "https://galeriewedding.de/rundgang-durch-die-ausstellung-mit-dafna-maimon/",
@@ -33948,8 +33896,8 @@
    "title_orig": "Rundgang durch die Ausstellung mit Dafna Maimon",
    "kind": "tour",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Tour of Dafna Maimon's exhibition Orient Express with the artist herself.",
+   "classified_by": "claude-task",
    "id": "1f3222f0e4ce3428973345659380642b5e5895da"
   }
  ],
