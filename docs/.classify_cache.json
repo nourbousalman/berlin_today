@@ -12804,5 +12804,173 @@
 "summary": "Tour of Dafna Maimon's exhibition Orient Express with the artist herself.",
 "by": "claude-task",
 "ctx": true
+},
+"Social Board games, billiards and poker afternoon 🎲 ♟️ 🎉": {
+"title": "Social Board Games, Billiards and Poker Afternoon",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "An afternoon of board games, billiards and poker at the Bite & Brew pizza bar.",
+"by": "claude-task",
+"ctx": true
+},
+"Selbstbehauptung und Selbstverteidigung für Frauen (kostenlos)": {
+"title": "Self-Assertion and Self-Defence for Women",
+"kind": "workshop",
+"audience": "women",
+"summary": "Beginner course for young and adult women in simple self-defence and confident self-assertion, led by a Taekwondo instructor. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Lesung: Kerstin Hensel: Abendgruß": {
+"title": "Reading: Kerstin Hensel: Abendgruß",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Author Kerstin Hensel presents her new book of two stories: siblings growing up in the GDR in the late 1960s, and life today.",
+"by": "claude-task",
+"ctx": true
+},
+"Open Studio: Improvisieren mit elektronischen Musikgeräten": {
+"title": "Open Studio: Improvising with Electronic Music Gear",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Try synthesizers, drum machines and mics to make club music with the Ick Mach Welle! musicians. No experience needed. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"FairSpiel - Board Games and MTG": {
+"title": "FairSpiel – Board Games and MTG",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Queer, FLINTA* and inclusive games club plays strategy board games and Magic: The Gathering; allies welcome. €3 entry fee.",
+"by": "claude-task",
+"ctx": true
+},
+"Trommelworkshop": {
+"title": "Drumming Workshop for Kids",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Playful drumming class for children aged 3 to 6: rhythms, drums, percussion instruments and body percussion. Registration requested.",
+"by": "claude-task",
+"ctx": true
+},
+"Sprach-Café in der Waschküche (Berlin)": {
+"title": "Language Café at the Waschküche",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Weekly meetup to chat, play and learn German together. Everyone welcome, free entry, no registration needed.",
+"by": "claude-task",
+"ctx": true
+},
+"Vorlesetag auch an ungewöhnlichen Orten (bundesweit)": {
+"title": "Nationwide Read-Aloud Day, Also in Unusual Places",
+"kind": "festival",
+"audience": "kids",
+"summary": "Nationwide day when volunteers read aloud in schools, nurseries, libraries, bookshops and unusual places to get children into reading.",
+"by": "claude-task",
+"ctx": true
+},
+"Erzählbühne in der KulturMarktHalle": {
+"title": "Storytelling Stage at the KulturMarktHalle",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Freely told stories with words, humour, music and song by professional storytellers from around the world, then an open stage.",
+"by": "claude-task",
+"ctx": true
+},
+"Das November Heimspiel des Theaters der Erfahrungen": {
+"title": "November Home Game at the Theater der Erfahrungen",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Free monthly theatre night: a movement piece by Zehlendorf primary pupils, then ten senior women replay their life stories on stage.",
+"by": "claude-task",
+"ctx": true
+},
+"Produce & Juice – Kreativworkshop für Erwachsene": {
+"title": "Produce & Juice – Creative Workshop for Adults",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Creative workshop for adults: make autumn wreaths together over a drink. Registration requested.",
+"by": "claude-task",
+"ctx": true
+},
+"Open Stage Abend im Ludwig Hoffmann Quartier": {
+"title": "Open Stage Evening at the Ludwig Hoffmann Quartier",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Small open-stage evening in Berlin-Buch: come to watch, or register in advance to perform something yourself.",
+"by": "claude-task",
+"ctx": true
+},
+"Führung im Fo-Guang-Shan Tempel Berlin": {
+"title": "Guided Tour of the Fo-Guang-Shan Temple Berlin",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Public tour of the Chinese-tradition Buddhist temple in Wedding, with an introduction to Buddhism, its symbols and meditation. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Buchvorstellung Berlin in Geschichte und Gegenwart. Jahrbuch des Landesarchivs Berlin 2025": {
+"title": "Book Launch: Berlin in Geschichte und Gegenwart – Yearbook 2025",
+"kind": "talk",
+"audience": "everyone",
+"summary": "The Landesarchiv Berlin presents its 2025 yearbook of ten essays on Berlin history; after an introduction, three authors talk about their work.",
+"by": "claude-task",
+"ctx": true
+},
+"Lesung Verband deutscher Schriftstellerinnen und Schriftsteller in verdi": {
+"title": "Readings by Members of the Writers' Union in verdi",
+"kind": "talk",
+"audience": "everyone",
+"summary": "An afternoon of readings from current books and new releases by authors including Reinhild Paarmann, Ulrich Karger and Carla Bessa.",
+"by": "claude-task",
+"ctx": true
+},
+"Canto Diáspora. Openair Fstival Durchlüften 2026": {
+"title": "Canto Diáspora at the Open-Air Festival Durchlüften 2026",
+"kind": "music",
+"audience": "everyone",
+"summary": "Berlin women's choir of mostly Latin American migrants, led by Colombian singer Carolina Riaño, sings from Latin American traditions.",
+"by": "claude-task",
+"ctx": true
+},
+"\"Von Gundermann bis Guthrie\" - Lieder und Texte von gestern für heute im RegenbogenKino": {
+"title": "Von Gundermann bis Guthrie: Songs and Texts at the RegenbogenKino",
+"kind": "music",
+"audience": "everyone",
+"summary": "Jens Klein-Bösing performs songs by Gerhard Gundermann and Woody Guthrie with texts from Steinbeck's The Grapes of Wrath. Donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Ein musikalisches Mit-mach-Weihnachtsmärchen von und mit ICH & HERR MEYER": {
+"title": "Interactive Musical Christmas Tale with ICH & HERR MEYER",
+"kind": "theatre",
+"audience": "kids",
+"summary": "Join-in musical Christmas story: Santa's sleigh is broken, and young Emil sets out to save Christmas.",
+"by": "claude-task",
+"ctx": true
+},
+"Studieren in Finnland. Info & Austausch für Schüler*innen und Studierende.": {
+"title": "Studying in Finland: Info for School and University Students",
+"kind": "support",
+"audience": "group",
+"summary": "Advice table by the Finland-Institut on study options, universities and student life in Finland, in the Europa ums Eck series.",
+"by": "claude-task",
+"ctx": true
+},
+"Dokumentarfilm „Mittsommernachtstango“": {
+"title": "Documentary: Mittsommernachtstango",
+"kind": "film",
+"audience": "everyone",
+"summary": "Argentine tango musicians travel to Finland to test Aki Kaurismäki's claim that tango began there. 83 min. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Peppi Guggenheim Exil Musikprogramm: Big Shit Posse": {
+"title": "Peppi Guggenheim Exil Music Programme: Big Shit Posse",
+"kind": "music",
+"audience": "everyone",
+"summary": "Jazz-rock band led by Berlin drummer Aldtie Mann, mixing composed sketches and improvisation with funk and electronic elements. Ages 18+.",
+"by": "claude-task",
+"ctx": true
 }
 }
