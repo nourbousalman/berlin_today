@@ -12972,5 +12972,109 @@
 "summary": "Jazz-rock band led by Berlin drummer Aldtie Mann, mixing composed sketches and improvisation with funk and electronic elements. Ages 18+.",
 "by": "claude-task",
 "ctx": true
+},
+"Zauberei und Bier - Show": {
+"title": "Magic and Beer Show",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "",
+"by": "claude-task",
+"ctx": false
+},
+"Sütterlin schreiben": {
+"title": "Writing Sütterlin Script",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "",
+"by": "claude-task",
+"ctx": false
+},
+"Berlin - Lichtenberg": {
+"title": "Clothes Swap at Anton-Saefkow-Bibliothek",
+"kind": "market",
+"audience": "everyone",
+"summary": "Regular clothes swap against fast fashion: bring washed, well-kept clothing (no shoes or children's items), sort it yourself, browse and try on.",
+"by": "claude-task",
+"ctx": true
+},
+"Scherbenland": {
+"title": "Scherbenland",
+"kind": "film",
+"audience": "everyone",
+"summary": "Documentary by Lutz Pehnert & Ferdinand Hübner about the band Ton Steine Scherben and Kreuzberg's counterculture of the early 1970s.",
+"by": "claude-task",
+"ctx": true
+},
+"Übergang": {
+"title": "Übergang",
+"kind": "film",
+"audience": "everyone",
+"summary": "Thomas Heise's last documentary, finished by Peter Badel, weaving history with his own life; centred on Berlin's Schönhauser Allee station.",
+"by": "claude-task",
+"ctx": true
+},
+"Worldstar": {
+"title": "Worldstar",
+"kind": "film",
+"audience": "everyone",
+"summary": "Documentary by Nataša von Kopp about Miroslav Tichý, a painter who late in life became a world-famous photographer against his will.",
+"by": "claude-task",
+"ctx": true
+},
+"»Aufwachsen in prekären Verhältnissen – und dann auch noch queer« – Lesung & Gespräch mit Marek Torčík & Ruben Höppner": {
+"title": "Growing Up Poor and Queer: Marek Torčík & Ruben Höppner",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Reading and talk: Marek Torčík reads from his novel »Was die Zeit nicht nimmt« about a young man finding the courage to stand by himself and his desire.",
+"by": "claude-task",
+"ctx": true
+},
+"Tagträumer": {
+"title": "Tagträumer",
+"kind": "theatre",
+"audience": "everyone",
+"summary": "Tragicomic play about dreamy Rose and Cliff, a stranded, bluntly honest truck driver, whose worlds collide in her far-too-small flat.",
+"by": "claude-task",
+"ctx": true
+},
+"La Haine": {
+"title": "La Haine",
+"kind": "film",
+"audience": "everyone",
+"summary": "Mathieu Kassovitz's 1995 feature about three friends in a Paris banlieue the day after a night of riots. Original with subtitles.",
+"by": "claude-task",
+"ctx": true
+},
+"LPH Collective Resonance Experience – FREE Event": {
+"title": "LPH Collective Resonance Experience",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "",
+"by": "claude-task",
+"ctx": false
+},
+"City Walk Berlin | 21.11. | & optional Blind Walk experience": {
+"title": "City Walk Berlin with Optional Blind Walk Experience",
+"kind": "tour",
+"audience": "everyone",
+"summary": "Berlin city walk by urbanjoy starting at S-Bahnhof Treptower Park, with an optional blind walk. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Illuminaten - Freimaurer - Mindfuck": {
+"title": "Illuminati – Freemasons – Mindfuck",
+"kind": "talk",
+"audience": "everyone",
+"summary": "",
+"by": "claude-task",
+"ctx": false
+},
+"AI Series: Imperial College London - Jonathan Schwarz": {
+"title": "AI Series: Jonathan Schwarz (Imperial College London)",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Jonathan Schwarz, Visiting Professor at Imperial College London, speaks on sovereign AI at TU Berlin's chemistry building.",
+"by": "claude-task",
+"ctx": true
 }
 }
