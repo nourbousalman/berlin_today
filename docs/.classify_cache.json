@@ -13065,9 +13065,9 @@
 "title": "Illuminati – Freemasons – Mindfuck",
 "kind": "talk",
 "audience": "everyone",
-"summary": "",
+"summary": "Talk on how hoaxes by satirist Léo Taxil and Robert Anton Wilson's Discordians grew into lasting conspiracy myths. Regulars' table beforehand.",
 "by": "claude-task",
-"ctx": false
+"ctx": true
 },
 "AI Series: Imperial College London - Jonathan Schwarz": {
 "title": "AI Series: Jonathan Schwarz (Imperial College London)",
@@ -13076,5 +13076,109 @@
 "summary": "Jonathan Schwarz, Visiting Professor at Imperial College London, speaks on sovereign AI at TU Berlin's chemistry building.",
 "by": "claude-task",
 "ctx": true
+},
+"Kostenlose Film-Preview: Heathens mit Regisseur Shawn Hardin (Dokumentarfilm, OV)": {
+"title": "Free Film Preview: Heathens with Director Shawn Hardin",
+"kind": "film",
+"audience": "everyone",
+"summary": "Berlin premiere of a US documentary about five people from fundamentalist Christian families who lost their faith; director talk after. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Moving to Germany as a Highly Skilled Migrant": {
+"title": "Moving to Germany as a Highly Skilled Migrant",
+"kind": "talk",
+"audience": "group",
+"summary": "About moving to Germany as a skilled professional under the updated Skilled Immigration Act, in full effect since June 2024.",
+"by": "claude-task",
+"ctx": true
+},
+"Lange Tafel in historischer Markthalle Neun": {
+"title": "Long Table in the Historic Markthalle Neun",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "",
+"by": "claude-task",
+"ctx": false
+},
+"FLINTA* Voices - Tabea Hassan & LIN": {
+"title": "FLINTA* Voices: Tabea Hassan & LIN",
+"kind": "music",
+"audience": "everyone",
+"summary": "Concert with LIN and Eberswalde singer-songwriter Tabea Hassan, who writes modern German pop about self-doubt, longing and relationships.",
+"by": "claude-task",
+"ctx": true
+},
+"LPH Collective Resonance Experience – Free Event": {
+"title": "LPH Collective Resonance Experience",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "An evening of music, art, movement and community in an industrial loft in Schöneberg. Come alone, bring a friend or meet someone new.",
+"by": "claude-task",
+"ctx": true
+},
+"ENDlich - das Trauerfestival": {
+"title": "ENDlich – The Grief Festival",
+"kind": "festival",
+"audience": "everyone",
+"summary": "Four days on dying, death, farewell and grief, with workshops, talks, music, art, rituals and a market of support services. Families welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin (Reinickendorf)": {
+"title": "Monthly Clothes Swap in Reinickendorf",
+"kind": "market",
+"audience": "everyone",
+"summary": "Bring up to 10 clothing items in good condition to swap; clothes for children and adults in all sizes. Play corner for kids, €2 contribution.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin-Friedrichshain": {
+"title": "Berlin Swap Market in Friedrichshain",
+"kind": "market",
+"audience": "everyone",
+"summary": "Neighbourhood swap market started around Boxhagener Platz: bring at least 2–3 items such as clothes, books, tools or kitchenware to exchange.",
+"by": "claude-task",
+"ctx": true
+},
+"Dänischer Weihnachtsmarkt (Skandinavische Weihnachtsbasare)": {
+"title": "Danish Christmas Market (Scandinavian Christmas Bazaars)",
+"kind": "market",
+"audience": "everyone",
+"summary": "",
+"by": "claude-task",
+"ctx": false
+},
+"Eröffnung Mein. Dein. Unser!?": {
+"title": "Opening: Mein. Dein. Unser!?",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "The Humboldt Forum opens a two-year focus on property and heritage with a weekend of discussions, tours and three new exhibitions.",
+"by": "claude-task",
+"ctx": true
+},
+"Schwedischer Weihnachtsmarkt in Wilmersdorf [2 Euro Eintritt] (Skandinavische Weihnachtsmärkte)": {
+"title": "Swedish Christmas Market in Wilmersdorf",
+"kind": "market",
+"audience": "everyone",
+"summary": "",
+"by": "claude-task",
+"ctx": false
+},
+"Kennenlern-Karussell für queere Co-Elternschaft im Regenbogenfamilienzentrum Lichtenberg": {
+"title": "Speed-Meeting for Queer Co-Parenting, Regenbogenfamilienzentrum",
+"kind": "meetup",
+"audience": "group",
+"summary": "Speed-dating-style rounds for people looking for co-parents to start a queer family; if two people match, their contact details are passed on.",
+"by": "claude-task",
+"ctx": true
+},
+"Peppi Guggenheim Exil Musikprogramm: Peppis Jahresabschlusskonzert: Salvo / Schick / Kneer / Steidle": {
+"title": "Peppi's Year-End Concert: Salvo / Schick / Kneer / Steidle",
+"kind": "music",
+"audience": "everyone",
+"summary": "",
+"by": "claude-task",
+"ctx": false
 }
 }
