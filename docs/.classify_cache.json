@@ -13094,12 +13094,12 @@
 "ctx": true
 },
 "Lange Tafel in historischer Markthalle Neun": {
-"title": "Long Table in the Historic Markthalle Neun",
+"title": "Long Table at the Historic Markthalle Neun",
 "kind": "meetup",
 "audience": "everyone",
-"summary": "",
+"summary": "Long table with pupils' interview stories on food; free spaghetti 5–7 pm while stocks last. Bring your own cutlery, plate and drinks.",
 "by": "claude-task",
-"ctx": false
+"ctx": true
 },
 "FLINTA* Voices - Tabea Hassan & LIN": {
 "title": "FLINTA* Voices: Tabea Hassan & LIN",
@@ -13145,9 +13145,9 @@
 "title": "Danish Christmas Market (Scandinavian Christmas Bazaars)",
 "kind": "market",
 "audience": "everyone",
-"summary": "",
+"summary": "Christmas bazaar of the Danish church parish at Brienner Straße 12, held at the same time as the Swedish Christmas market.",
 "by": "claude-task",
-"ctx": false
+"ctx": true
 },
 "Eröffnung Mein. Dein. Unser!?": {
 "title": "Opening: Mein. Dein. Unser!?",
@@ -13161,9 +13161,9 @@
 "title": "Swedish Christmas Market in Wilmersdorf",
 "kind": "market",
 "audience": "everyone",
-"summary": "",
+"summary": "Christmas bazaar of the Swedish Victoria parish with cinnamon buns, princess cake, glögg and elk sausage. €2 entry, children up to 12 free.",
 "by": "claude-task",
-"ctx": false
+"ctx": true
 },
 "Kennenlern-Karussell für queere Co-Elternschaft im Regenbogenfamilienzentrum Lichtenberg": {
 "title": "Speed-Meeting for Queer Co-Parenting, Regenbogenfamilienzentrum",
@@ -13174,11 +13174,307 @@
 "ctx": true
 },
 "Peppi Guggenheim Exil Musikprogramm: Peppis Jahresabschlusskonzert: Salvo / Schick / Kneer / Steidle": {
-"title": "Peppi's Year-End Concert: Salvo / Schick / Kneer / Steidle",
+"title": "Peppi Guggenheim Year-End Concert: Salvo / Schick / Kneer / Steidle",
 "kind": "music",
 "audience": "everyone",
-"summary": "",
+"summary": "New quartet from Berlin's jazz scene (two saxes, double bass, drums) plays fully improvised music at Little Stage Bar Neukölln. 18+ only.",
 "by": "claude-task",
-"ctx": false
+"ctx": true
+},
+"Helene Weigel – Revolutionärin im Rampenlicht": {
+"title": "Helene Weigel – Revolutionary in the Spotlight",
+"kind": "film",
+"audience": "everyone",
+"summary": "Documentary by Maria Wischnewski (2026, 102 min) on actress Helene Weigel, Brecht's partner and later head of the Berliner Ensemble.",
+"by": "claude-task",
+"ctx": true
+},
+"Vor dem Essen: Schubert": {
+"title": "Before Dinner: Schubert",
+"kind": "music",
+"audience": "everyone",
+"summary": "Andreas Wilhelm plays Schubert piano works, incl. Moment Musical op. 94 no. 6 and a sonata movement. Donation-funded series.",
+"by": "claude-task",
+"ctx": true
+},
+"Vernissage: 19:00-21:00 Uhr / Tadaa! – Leena Katriina Ehrling": {
+"title": "Opening: Tadaa! – Leena Katriina Ehrling",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Opening of Helsinki artist Leena Katriina Ehrling's new works at Galerie Pleiku, mixing painting, drawing, objects and varied materials.",
+"by": "claude-task",
+"ctx": true
+},
+"Lernwerkstatt Biografisches Schreiben für Senior*innen": {
+"title": "Biographical Writing Workshop for Seniors",
+"kind": "workshop",
+"audience": "seniors",
+"summary": "Weekly course on Tuesdays where older people learn to write down their life memories and share experiences in a small group.",
+"by": "claude-task",
+"ctx": true
+},
+"18.11. 19:30 Uhr – TESTBILD: OPEN SCREENING (D)": {
+"title": "TESTBILD: Open Screening",
+"kind": "film",
+"audience": "everyone",
+"summary": "Filmmakers can show short films (max. 25 min) they worked on in the cinema – no registration, no preselection, no jury.",
+"by": "claude-task",
+"ctx": true
+},
+"Solidarität die widersteht - Lesvos Solidarity": {
+"title": "Solidarity That Resists – Lesvos Solidarity",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Ms Gniewoß of Lesvos Solidarity reports on her work in the refugee camp on Lesbos, in the hall of the Protestant parish. Donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Solidarity widersteht": {
+"title": "Solidarity Resists – Lesvos Solidarity",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Ute Gniewoß of Lesvos Solidarity reports on conditions in the refugee camp on Lesbos and her work with refugees. Donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Weihnachtsmarkt am Humboldt Forum & Wintermarkt (außer 22.11. & 24.12.) mit Laser-Shows Di & Do": {
+"title": "Christmas and Winter Market at the Humboldt Forum with Laser Shows",
+"kind": "market",
+"audience": "everyone",
+"summary": "Stalls with treats and crafts plus illuminated baroque façades. Laser shows in the Schlüterhof and on the façade on Tuesdays and Thursdays.",
+"by": "claude-task",
+"ctx": true
+},
+"Unicorns in Tech FLINTA* Afterwork | for the FLINTA* Tech Community": {
+"title": "Unicorns in Tech FLINTA* Afterwork",
+"kind": "meetup",
+"audience": "group",
+"summary": "Relaxed networking evening for FLINTA* people in tech and their allies: meet, chat and share a drink.",
+"by": "claude-task",
+"ctx": true
+},
+"Harald Naegli – Der Sprayer von Zürich": {
+"title": "Harald Naegeli – The Sprayer of Zurich",
+"kind": "film",
+"audience": "everyone",
+"summary": "Documentary by Nathalie David (2021, 97 min) on Swiss graffiti artist Harald Naegeli, known since the late 1970s as the 'Sprayer of Zurich'.",
+"by": "claude-task",
+"ctx": true
+},
+"Vernissage Surprise": {
+"title": "Opening: Surprise",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Opening of a show of new Neukölln art in the courtyard of the Endorphina bakery, with a short speech, guitar music and food. Donations welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"Stummfilmkonzert: The Lost World": {
+"title": "Silent Film Concert: The Lost World",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of the 1925 US silent film by Harry O. Hoyt about an expedition to find living prehistoric animals in the Amazon.",
+"by": "claude-task",
+"ctx": true
+},
+"Klavierkonzert im Stadtteilzentrum Prenzlauerberg": {
+"title": "Piano Concert at the Stadtteilzentrum Prenzlauer Berg",
+"kind": "music",
+"audience": "everyone",
+"summary": "Artem Grazhdankin plays piano music from different eras and countries plus some film music, inviting listeners to reflect on what it means to them.",
+"by": "claude-task",
+"ctx": true
+},
+"Frauen sehen - Künstlerinnengespräch": {
+"title": "Seeing Women – Talk with the Artists",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Annika Lau, Dr. Rena Zulauf and Patrizia Laeri talk with the artists about female identity, role models and the power of images. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Führung Bötzowviertel": {
+"title": "Guided Walk Through the Bötzowviertel",
+"kind": "tour",
+"audience": "everyone",
+"summary": "About 2-hour walk across the Bötzowkiez, starting and ending at the Stierbrunnen on Arnswalder Platz. Pay what you like.",
+"by": "claude-task",
+"ctx": true
+},
+"Sütterlin Workshop - Handschriftgeschichte entdecken": {
+"title": "Sütterlin Workshop – Discover the History of Handwriting",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Look at old texts, then try writing the historic German Kurrent script ('Sütterlin') yourself. No prior knowledge needed, just drop in.",
+"by": "claude-task",
+"ctx": true
+},
+"Canto Diáspora. Openair Festival Durchlüften 2026 indoor": {
+"title": "Canto Diáspora – Durchlüften Festival 2026 (Indoor)",
+"kind": "music",
+"audience": "everyone",
+"summary": "Berlin women's vocal ensemble of mainly Latin American migrants, led by Colombian singer Carolina Riaño, sings from Latin American traditions.",
+"by": "claude-task",
+"ctx": true
+},
+"Großes Chorfest Onkel Toms Hütte": {
+"title": "Big Choir Festival at Onkel Toms Hütte",
+"kind": "music",
+"audience": "everyone",
+"summary": "Choirs sing rock, pop, gospel, jazz, classical and Christmas songs in the shopping arcade of Onkel Toms Hütte U-Bahn station, some to sing along.",
+"by": "claude-task",
+"ctx": true
+},
+"Patricia Morosan: That Every Stone Is": {
+"title": "Patricia Morosan: That Every Stone Is",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Solo show starting from the fossil-rich Les Vaches Noires cliffs in Normandy, with photos, experimental prints, photo sculptures and film.",
+"by": "claude-task",
+"ctx": true
+},
+"Who writes his_tory? Feministische Stimmen zur Wikipedia": {
+"title": "Who writes his_tory? Feminist Voices on Wikipedia",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Reading by the Basel project making marginalised groups more visible on Wikipedia, followed by an open discussion. Free, no registration.",
+"by": "claude-task",
+"ctx": true
+},
+"Are You Building a Startup or a Small Business? Find Out Live [ONLINE]": {
+"title": "Are You Building a Startup or a Small Business? [Online]",
+"kind": "talk",
+"audience": "group",
+"summary": "Online session where Maheka helps Berlin founders work out whether they are building a startup or a small business, and what that means.",
+"by": "claude-task",
+"ctx": true
+},
+"Im Gespräch mit Camille Étienne und Luisa Neubauer": {
+"title": "In Conversation with Camille Étienne and Luisa Neubauer",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Panel with climate activists Camille Étienne and Luisa Neubauer on ecological engagement, with Académie de Berlin and the Franco-German Youth Office.",
+"by": "claude-task",
+"ctx": true
+},
+"„Heiss: Liebeserklärung an die Wechseljahre“ - Lesung und Gespräch mit Stefanie De Velasco": {
+"title": "\"Heiss: A Love Letter to Menopause\" – Reading with Stefanie De Velasco",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Stefanie De Velasco reads from and discusses her book on the physical and emotional changes of menopause, part of the 'Lettekiez liest!' series.",
+"by": "claude-task",
+"ctx": true
+},
+"Lesezeichen - Literatur live in Tegel: Svenja Leiber mit „Nelka“": {
+"title": "Lesezeichen – Live Literature in Tegel: Svenja Leiber, \"Nelka\"",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Reading and talk at the Humboldt-Bibliothek: Svenja Leiber's novel about a 16-year-old from Lviv forced into labour on a German estate in 1941.",
+"by": "claude-task",
+"ctx": true
+},
+"Zwischen Blumen und Beton: Werkstattlesung unserer offenen Schreibgruppe": {
+"title": "Between Flowers and Concrete: Reading by Our Open Writing Group",
+"kind": "talk",
+"audience": "everyone",
+"summary": "The Humboldt-Bibliothek's open writing group led by Ilke S. Prick presents a selection of stories from recent years.",
+"by": "claude-task",
+"ctx": true
+},
+"Weihnachtlicher Nachmittag in der Humboldt-Bibliothek": {
+"title": "Christmas Afternoon at the Humboldt-Bibliothek",
+"kind": "theatre",
+"audience": "kids",
+"summary": "Puppet show 'Mischka's Wondrous Journey' by Nicole Gospodarek (age 4+), plus Christmas crafts, tea and biscuits.",
+"by": "claude-task",
+"ctx": true
+},
+"Ein musikalisches Mit-mach-Weihnachtsmärchen von und mit 'Ich & Herr Meyer'": {
+"title": "Interactive Musical Christmas Tale by 'Ich & Herr Meyer'",
+"kind": "theatre",
+"audience": "kids",
+"summary": "Sing-along Christmas story 'Emil Saves Christmas': Santa's sleigh is broken and Emil tries to convince his dad that Santa exists.",
+"by": "claude-task",
+"ctx": true
+},
+"Winter am THF: Wintermarkt - 04.-06.12": {
+"title": "Winter at THF: Winter Market",
+"kind": "market",
+"audience": "everyone",
+"summary": "Winter market in the Alte Feuerwache at THF Tower with delicacies, one-off handmade gifts, art and a programme.",
+"by": "claude-task",
+"ctx": true
+},
+"Die Aktgalerie / \"Sommer-Akt 2026\" Gemeinschaftsausstellung (Fr / Sa / So)": {
+"title": "Die Aktgalerie: \"Sommer-Akt 2026\" Group Exhibition",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Nude photography from a session of the Berliner Arbeitskreis Künstlerische Aktfotografie, where photographers swapped models. Open Fri–Sun 3–7 pm.",
+"by": "claude-task",
+"ctx": true
+},
+"Der Grinch - Nadia Budde liest Dr. Seuss und anderes Weihnachtliches": {
+"title": "The Grinch – Nadia Budde Reads Dr. Seuss and Other Christmas Stories",
+"kind": "talk",
+"audience": "kids",
+"summary": "Illustrator Nadia Budde reads her new German translation of The Grinch at the Märkisches Viertel library. Ages 5+.",
+"by": "claude-task",
+"ctx": true
+},
+"Winter am THF: Wintermarkt - 11.-13.12.": {
+"title": "Winter at THF: Winter Market",
+"kind": "market",
+"audience": "everyone",
+"summary": "Winter market in the Alte Feuerwache at THF Tower with sustainable gifts, design and art, plus a food court with crêpes, churros and vegan bowls.",
+"by": "claude-task",
+"ctx": true
+},
+"Filmnacht in der Humboldt-Bibliothek: “Gott existiert, ihr Name ist Petrunya”": {
+"title": "Film Night: \"God Exists, Her Name Is Petrunya\"",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening at the Humboldt-Bibliothek, introduced by journalist Oliver Ohmann, who leads an audience discussion afterwards.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlinale Spotlight – Generation: Ödland – Damit keiner das so mitbemerkt": {
+"title": "Berlinale Spotlight – Generation: Ödland",
+"kind": "film",
+"audience": "everyone",
+"summary": "Black-and-white film about refugee children spending the summer holidays at a remote former barracks where their families live in asylum.",
+"by": "claude-task",
+"ctx": true
+},
+"Zauber einer Winternacht - Weihnachtskonzert von Studierenden": {
+"title": "Magic of a Winter Night – Christmas Concert by Students",
+"kind": "music",
+"audience": "everyone",
+"summary": "Students from Warsaw's Chopin University, the Szczecin Art Academy and Musikschule Reinickendorf sing opera, operetta and musical pieces.",
+"by": "claude-task",
+"ctx": true
+},
+"Silvester Party 2026 am Brandenburger Tor mit Feuerwerk": {
+"title": "New Year's Eve Party at the Brandenburg Gate with Fireworks",
+"kind": "party",
+"audience": "everyone",
+"summary": "Free-entry party with DJs, music and fireworks at midnight. About 20,000 free tickets are expected to be released in early December.",
+"by": "claude-task",
+"ctx": true
+},
+"Silvester Party an Siegessäule (mit Feuerwerk ?)": {
+"title": "New Year's Eve Party at the Victory Column",
+"kind": "party",
+"audience": "everyone",
+"summary": "Party run as a rally by an alliance of cultural workers, with trucks, stages and DJs around the Siegessäule from about 6 pm until 5 am.",
+"by": "claude-task",
+"ctx": true
+},
+"Silvester 2026 Berlin: Events, Tips, Partys, Feuerwerke": {
+"title": "New Year's Eve 2026 in Berlin: Events, Tips, Parties, Fireworks",
+"kind": "notice",
+"audience": "everyone",
+"summary": "Overview of New Year's Eve in Berlin: the Brandenburg Gate party, public rehearsals, several fireworks, the Pfannkuchenlauf and Christmas markets.",
+"by": "claude-task",
+"ctx": true
 }
 }
