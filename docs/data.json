@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-17T01:40:06.895811+00:00",
- "count": 1162,
+ "generated_at": "2026-11-17T06:45:20.826601+00:00",
+ "count": 1161,
  "counts": {
-  "events": 1162,
+  "events": 1161,
   "recurring": 398,
-  "oneoff": 764,
+  "oneoff": 763,
   "always_free": 16,
   "manual_check": 207
  },
@@ -1225,14 +1225,14 @@
    "id": "0d7651c2104557619eb6906771936bfdd2252874"
   },
   {
-   "title": "Vor dem Essen: Schubert",
+   "title": "Before Dinner: Schubert",
    "start": "2026-11-17T12:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082171-vorm-essen-schubert",
    "end": null,
    "venue": "Herbartstr. 25 14057",
    "area": "Charlottenburg-Wilmersdorf",
-   "category": "misc",
+   "category": "music",
    "is_free": true,
    "price": "Free — donation welcome",
    "price_value": null,
@@ -1241,14 +1241,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Vor dem Essen: Schubert",
+   "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "813bce9b5efae64a373c2701f50212cdfd1056e6"
+   "summary": "Andreas Wilhelm plays Schubert piano works, incl. Moment Musical op. 94 no. 6 and a sonata movement. Donation-funded series.",
+   "classified_by": "claude-task",
+   "id": "f9ef98994565607e6bbb876b37ec22f1a6266c94"
   },
   {
    "title": "Table Tennis, Franckepark",
@@ -1285,7 +1285,7 @@
    "id": "71982e876f50d051f31031716ba92f7198a4bedb"
   },
   {
-   "title": "Lernwerkstatt Biografisches Schreiben für Senior*innen",
+   "title": "Biographical Writing Workshop for Seniors",
    "start": "2026-11-17T13:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082174-lernwerkstatt-biografisches-schreiben-fuer-senior-innen",
@@ -1309,14 +1309,14 @@
     "2026-12-22",
     "2026-12-29"
    ],
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Lernwerkstatt Biografisches Schreiben für Senior*innen",
    "kind": "workshop",
    "audience": "seniors",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "d8e6c7e85676513c3fd28fab399c967887cfe802"
+   "summary": "Weekly course on Tuesdays where older people learn to write down their life memories and share experiences in a small group.",
+   "classified_by": "claude-task",
+   "id": "999b591dcb8831561b7530cd23ac7969dee9f112"
   },
   {
    "title": "Language Café for Women, Stadtteilbibliothek Buch",
@@ -2592,6 +2592,32 @@
    "id": "909f1c36d274991ebe0f9c0e4fffbed21333adff"
   },
   {
+   "title": "Moving to Germany as a Highly Skilled Migrant",
+   "start": "2026-11-17T16:00:00.000Z",
+   "source": "web:Meetup Berlin",
+   "url": "https://www.meetup.com/expat-republic-germany/events/317168361/",
+   "end": null,
+   "venue": null,
+   "area": null,
+   "category": "talk",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "dates": null,
+   "translated": false,
+   "date_source": "jsonld",
+   "title_orig": null,
+   "kind": "talk",
+   "audience": "group",
+   "summary": "About moving to Germany as a skilled professional under the updated Skilled Immigration Act, in full effect since June 2024.",
+   "classified_by": "claude-task",
+   "id": "5e55c3fb3b36828f2fcf109a39847e56a1869c11"
+  },
+  {
    "title": "Crafts Course for Children at Tik",
    "start": "2026-11-17T16:30:00+01:00",
    "source": "gib:gratis-in-berlin",
@@ -3822,14 +3848,14 @@
    "id": "d87e41a8fe2c814186b72cbacefb2999c8ad0b19"
   },
   {
-   "title": "Helene Weigel – Revolutionärin im Rampenlicht",
+   "title": "Helene Weigel – Revolutionary in the Spotlight",
    "start": "2026-11-17T18:30:00+01:00",
    "source": "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)",
    "url": "https://brotfabrik-berlin.de/veranstaltung/helene-weigel-revoltionaerin-im-rampenlicht/2026-11-17/",
    "end": "2026-11-17T20:30:00+01:00",
    "venue": "KINO Brotfabrik, Cali­ga­ri­platz 1, Berlin, Berlin, 13086, Germany",
    "area": "Pankow",
-   "category": "misc",
+   "category": "film",
    "is_free": true,
    "price": "Donation",
    "price_value": null,
@@ -3838,14 +3864,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Helene Weigel – Revolutionärin im Rampenlicht",
+   "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "8cca041a47c9b9349e2eeaa178ca26f04270cddb"
+   "summary": "Documentary by Maria Wischnewski (2026, 102 min) on actress Helene Weigel, Brecht's partner and later head of the Berliner Ensemble.",
+   "classified_by": "claude-task",
+   "id": "59c9734e622fbffaf787b698994fc40329bca242"
   },
   {
    "title": "Monster Comedy Early Show: stand-up at Mad Monkey Room",
@@ -4158,7 +4184,7 @@
    "id": "f3ba137f7d7a4202843dfe5318d03cd5cc301faf"
   },
   {
-   "title": "Vernissage: 19:00-21:00 Uhr / Tadaa! – Leena Katriina Ehrling",
+   "title": "Opening: Tadaa! – Leena Katriina Ehrling",
    "start": "2026-11-17T19:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082172-vernissage-19-00-21-00-uhr-tadaa-leena-katriina-ehrling",
@@ -4174,14 +4200,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Vernissage: 19:00-21:00 Uhr / Tadaa! – Leena Katriina Ehrling",
    "kind": "exhibition",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "9cf735025bd00bad75bff88d862110647afa9421"
+   "summary": "Opening of Helsinki artist Leena Katriina Ehrling's new works at Galerie Pleiku, mixing painting, drawing, objects and varied materials.",
+   "classified_by": "claude-task",
+   "id": "94db8c0284bcc0799542ca5f102283a899853538"
   },
   {
    "title": "Poetischer Proberaum – Special Edition",
@@ -5344,7 +5370,7 @@
    "id": "20743b2cdb20687b47b251630876a882ab1fef78"
   },
   {
-   "title": "Weihnachtsmarkt am Humboldt Forum & Wintermarkt (außer 22.11. & 24.12.) mit Laser-Shows Di & Do",
+   "title": "Christmas and Winter Market at the Humboldt Forum with Laser Shows",
    "start": "2026-11-18T11:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2070628-weihnachtsmarkt-am-humboldt-forum-wintermarkt-ausser-22-11-24-12-mit-laser-shows-di-do",
@@ -5360,14 +5386,14 @@
    "recurring": false,
    "recurrence": "Every day until 31 Dec",
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Weihnachtsmarkt am Humboldt Forum & Wintermarkt (außer 22.11. & 24.12.) mit Laser-Shows Di & Do",
    "kind": "market",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "f15355e30bb1dabb147253de0ec4edb5fd3f63cf"
+   "summary": "Stalls with treats and crafts plus illuminated baroque façades. Laser shows in the Schlüterhof and on the façade on Tuesdays and Thursdays.",
+   "classified_by": "claude-task",
+   "id": "8e130552edd0cae2abd60ad27cb2d10a2b6e4be9"
   },
   {
    "title": "Open Tour of the Abgeordnetenhaus von Berlin (State Parliament)",
@@ -7056,7 +7082,7 @@
    "id": "4a1e67339c733610b4c09ec7501ea95417434f6a"
   },
   {
-   "title": "Long Table in the Historic Markthalle Neun",
+   "title": "Long Table at the Historic Markthalle Neun",
    "start": "2026-11-18T17:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2045563-lange-tafel-in-historischer-markthalle-neun",
@@ -7077,9 +7103,9 @@
    "title_orig": "Lange Tafel in historischer Markthalle Neun",
    "kind": "meetup",
    "audience": "everyone",
-   "summary": "",
+   "summary": "Long table with pupils' interview stories on food; free spaghetti 5–7 pm while stocks last. Bring your own cutlery, plate and drinks.",
    "classified_by": "claude-task",
-   "id": "768a6577915905e150f0a8e6d90e3685005bcad9"
+   "id": "81565653dbf0306cb20079d3d8837b59a253fc8b"
   },
   {
    "title": "Open Studio: Improvising with Electronic Music Gear",
@@ -7808,14 +7834,14 @@
    "id": "7ba08325769fd86a2c7b831a5ea935f295df3379"
   },
   {
-   "title": "Helene Weigel – Revolutionärin im Rampenlicht",
+   "title": "Helene Weigel – Revolutionary in the Spotlight",
    "start": "2026-11-18T18:30:00+01:00",
    "source": "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)",
    "url": "https://brotfabrik-berlin.de/veranstaltung/helene-weigel-revoltionaerin-im-rampenlicht/2026-11-18/",
    "end": "2026-11-18T20:30:00+01:00",
    "venue": "KINO Brotfabrik, Cali­ga­ri­platz 1, Berlin, Berlin, 13086, Germany",
    "area": "Pankow",
-   "category": "misc",
+   "category": "film",
    "is_free": true,
    "price": "Donation",
    "price_value": null,
@@ -7824,14 +7850,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Helene Weigel – Revolutionärin im Rampenlicht",
+   "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "ff0b2a3ad44679e8873dac1fb954507f4ee30ea4"
+   "summary": "Documentary by Maria Wischnewski (2026, 102 min) on actress Helene Weigel, Brecht's partner and later head of the Berliner Ensemble.",
+   "classified_by": "claude-task",
+   "id": "a92ba8700b9ea466a7fd9b486d9a93fa8aee1f9e"
   },
   {
    "title": "Easy Yoga, Weichselplatz",
@@ -7954,14 +7980,14 @@
    "id": "7cbd1454433b469ffa4d1271be9e8349f2cc0dd7"
   },
   {
-   "title": "Solidarität die widersteht - Lesvos Solidarity",
+   "title": "Solidarity That Resists – Lesvos Solidarity",
    "start": "2026-11-18T19:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082194-solidaritaet-die-widersteht-lesvos-solidarity",
    "end": null,
    "venue": "Baumschulenstraße 83 12436",
    "area": null,
-   "category": "misc",
+   "category": "talk",
    "is_free": true,
    "price": "Free — donation welcome",
    "price_value": null,
@@ -7970,24 +7996,24 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Solidarität die widersteht - Lesvos Solidarity",
+   "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "88579beb3b451f02a416ddee01a00fd468ee8c03"
+   "summary": "Ms Gniewoß of Lesvos Solidarity reports on her work in the refugee camp on Lesbos, in the hall of the Protestant parish. Donations welcome.",
+   "classified_by": "claude-task",
+   "id": "9243455972cc898eb3f10cf03a7eb694c2bbe10b"
   },
   {
-   "title": "Solidarity widersteht",
+   "title": "Solidarity Resists – Lesvos Solidarity",
    "start": "2026-11-18T19:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082193-solidarity-widersteht",
    "end": null,
    "venue": "Baumschulenstr. 83 12437",
    "area": "Treptow-Köpenick",
-   "category": "misc",
+   "category": "talk",
    "is_free": true,
    "price": "Free — donation welcome",
    "price_value": null,
@@ -7996,14 +8022,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Solidarity widersteht",
+   "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "b00197763b380fdfc28125799e90a9c82568bf43"
+   "summary": "Ute Gniewoß of Lesvos Solidarity reports on conditions in the refugee camp on Lesbos and her work with refugees. Donations welcome.",
+   "classified_by": "claude-task",
+   "id": "1b1aaceab1ac0c16ac700ad78fcfff5024248feb"
   },
   {
    "title": "\"Together for Tomorrow\" – Singing Evening at RegenbogenCafé",
@@ -8092,7 +8118,7 @@
    "id": "986ccb2c02fb525d90d5d63d5fb3e0c24059f790"
   },
   {
-   "title": "18.11. 19:30 Uhr – TESTBILD: OPEN SCREENING (D)",
+   "title": "TESTBILD: Open Screening",
    "start": "2026-11-18T19:11:00+00:00",
    "source": "rss:Sputnik Kino",
    "url": "https://sputnik-kino.com/film/583",
@@ -8108,14 +8134,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "page",
-   "title_orig": null,
+   "title_orig": "18.11. 19:30 Uhr – TESTBILD: OPEN SCREENING (D)",
    "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "0e36df9c24368622dbbfa11964a14ec5151088e0"
+   "summary": "Filmmakers can show short films (max. 25 min) they worked on in the cinema – no registration, no preselection, no jury.",
+   "classified_by": "claude-task",
+   "id": "4a6233dc3b5fe40883a0881110e56d353cb43a36"
   },
   {
    "title": "Board game night in Zehlendorf",
@@ -11740,14 +11766,14 @@
    "id": "be01a21056b9eff58d8c3d64902def59164d0889"
   },
   {
-   "title": "Unicorns in Tech FLINTA* Afterwork | for the FLINTA* Tech Community",
+   "title": "Unicorns in Tech FLINTA* Afterwork",
    "start": "2026-11-19T19:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082175-unicorns-in-tech-flinta-afterwork-for-the-flinta-tech-community",
    "end": null,
    "venue": "Adolfstraße 133",
    "area": null,
-   "category": "misc",
+   "category": "meetup",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -11756,14 +11782,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
-   "audience": "women",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "16a7a5b2a00f621ff1ddcd257c887c008f7f5234"
+   "title_orig": "Unicorns in Tech FLINTA* Afterwork | for the FLINTA* Tech Community",
+   "kind": "meetup",
+   "audience": "group",
+   "summary": "Relaxed networking evening for FLINTA* people in tech and their allies: meet, chat and share a drink.",
+   "classified_by": "claude-task",
+   "id": "9bdc666a0d43e558bda9101c971635e04b80a288"
   },
   {
    "title": "Distribution of Rescued Food",
@@ -13322,7 +13348,7 @@
    "id": "bf91399163139cc490575d1ee721aa41363bb4a1"
   },
   {
-   "title": "Vernissage Surprise",
+   "title": "Opening: Surprise",
    "start": "2026-11-20T15:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082173-vernissage-surprise",
@@ -13338,14 +13364,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Vernissage Surprise",
    "kind": "exhibition",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "de7758585cbdfaf67b824ca14a19acfd2582d253"
+   "summary": "Opening of a show of new Neukölln art in the courtyard of the Endorphina bakery, with a short speech, guitar music and food. Donations welcome.",
+   "classified_by": "claude-task",
+   "id": "b3cae80735c3178d3bb1bc6c2becd04c889e87d6"
   },
   {
    "title": "Nationwide Reading Day: “Ich lese vor – Du auch?”",
@@ -14091,14 +14117,14 @@
    "id": "9ff40e7cba4872bba5476e759ec8f66e7b8385f4"
   },
   {
-   "title": "Helene Weigel – Revolutionärin im Rampenlicht",
+   "title": "Helene Weigel – Revolutionary in the Spotlight",
    "start": "2026-11-20T17:00:00+01:00",
    "source": "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)",
    "url": "https://brotfabrik-berlin.de/veranstaltung/helene-weigel-revoltionaerin-im-rampenlicht/2026-11-20/",
    "end": "2026-11-20T18:00:00+01:00",
    "venue": "KINO Brotfabrik, Cali­ga­ri­platz 1, Berlin, Berlin, 13086, Germany",
    "area": "Pankow",
-   "category": "misc",
+   "category": "film",
    "is_free": true,
    "price": "Donation",
    "price_value": null,
@@ -14107,14 +14133,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Helene Weigel – Revolutionärin im Rampenlicht",
+   "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "d9e9d0c6c9ba5998064fa073754bde494bf036af"
+   "summary": "Documentary by Maria Wischnewski (2026, 102 min) on actress Helene Weigel, Brecht's partner and later head of the Berliner Ensemble.",
+   "classified_by": "claude-task",
+   "id": "30494f677c88071da516d55ad8c830264b52dcc6"
   },
   {
    "title": "May Fall dance workshop (NO LIMITS Festival)",
@@ -14548,14 +14574,14 @@
    "id": "3625603bc2c41c151ed0127c575cdeb5e5f1068d"
   },
   {
-   "title": "Harald Naegli – Der Sprayer von Zürich",
+   "title": "Harald Naegeli – The Sprayer of Zurich",
    "start": "2026-11-20T19:00:00+01:00",
    "source": "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)",
    "url": "https://brotfabrik-berlin.de/veranstaltung/harald-naegli-der-sprayer-von-zuerich/",
    "end": "2026-11-20T21:00:00+01:00",
    "venue": "KINO Brotfabrik, Cali­ga­ri­platz 1, Berlin, Berlin, 13086, Germany",
    "area": "Pankow",
-   "category": "misc",
+   "category": "film",
    "is_free": true,
    "price": "Donation",
    "price_value": null,
@@ -14564,14 +14590,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Harald Naegli – Der Sprayer von Zürich",
+   "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "362e3645362cdc4b51d12dfaf0844ec8cc9d10d1"
+   "summary": "Documentary by Nathalie David (2021, 97 min) on Swiss graffiti artist Harald Naegeli, known since the late 1970s as the 'Sprayer of Zurich'.",
+   "classified_by": "claude-task",
+   "id": "53b363a8d67f8d921bc045a537fc4afcec1e8d7d"
   },
   {
    "title": "Berlin–Tel Aviv musical bridge: chamber concert, Dragonerareal",
@@ -16608,7 +16634,7 @@
    "id": "e30212eecbe703c7b5b395d91d54164fe75a1bcc"
   },
   {
-   "title": "Frauen sehen - Künstlerinnengespräch",
+   "title": "Seeing Women – Talk with the Artists",
    "start": "2026-11-21T17:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082138-frauen-sehen-kuenstlerinnengespraech",
@@ -16624,14 +16650,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Frauen sehen - Künstlerinnengespräch",
    "kind": "talk",
-   "audience": "women",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "b12c0723dd7eaf48d21035b2873a650d1b22a712"
+   "audience": "everyone",
+   "summary": "Annika Lau, Dr. Rena Zulauf and Patrizia Laeri talk with the artists about female identity, role models and the power of images. Registration required.",
+   "classified_by": "claude-task",
+   "id": "e85345c5da53bbcd2e71479290d293450b9f33c6"
   },
   {
    "title": "Musical Evening with 6 Cellos",
@@ -16686,7 +16712,7 @@
    "id": "52591ba2298bfbfed2c7c9f0e121d7e016d97f02"
   },
   {
-   "title": "Klavierkonzert im Stadtteilzentrum Prenzlauerberg",
+   "title": "Piano Concert at the Stadtteilzentrum Prenzlauer Berg",
    "start": "2026-11-21T17:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082179-klavierkonzert-im-stadtteilzentrum-prenzlauerberg",
@@ -16702,14 +16728,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Klavierkonzert im Stadtteilzentrum Prenzlauerberg",
    "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "1c7353aed6a47805b92bb0a59ccc62ca96e400d0"
+   "summary": "Artem Grazhdankin plays piano music from different eras and countries plus some film music, inviting listeners to reflect on what it means to them.",
+   "classified_by": "claude-task",
+   "id": "9640cf59cd817ea1975459252ed05dbdc0626776"
   },
   {
    "title": "Open Stage Evening at the Ludwig Hoffmann Quartier",
@@ -16849,14 +16875,14 @@
    "id": "862347eaf9b6f4534cdf5cb051f018435d957c23"
   },
   {
-   "title": "Stummfilmkonzert: The Lost World ",
+   "title": "Silent Film Concert: The Lost World",
    "start": "2026-11-21T19:00:00+01:00",
    "source": "cal:Brotfabrik (Bühne · Kino · free gallery, Weißensee)",
    "url": "https://brotfabrik-berlin.de/veranstaltung/stummfilmkonzert-the-lost-world/",
    "end": "2026-11-21T21:00:00+01:00",
    "venue": "KINO Brotfabrik, Cali­ga­ri­platz 1, Berlin, Berlin, 13086, Germany",
    "area": "Pankow",
-   "category": "music",
+   "category": "film",
    "is_free": true,
    "price": "Donation",
    "price_value": null,
@@ -16865,14 +16891,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "ical",
-   "title_orig": null,
-   "kind": "music",
+   "title_orig": "Stummfilmkonzert: The Lost World ",
+   "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "430038b91ec55c34bd8d64ffcbfb453a0743d916"
+   "summary": "Screening of the 1925 US silent film by Harry O. Hoyt about an expedition to find living prehistoric animals in the Amazon.",
+   "classified_by": "claude-task",
+   "id": "cfdeaa362339a7b0d113c5b097cca4295d7203d8"
   },
   {
    "title": "Gems of European Classical Music – Duo Hans Rabus & Peter Kuhz",
@@ -17961,7 +17987,7 @@
    "id": "8276857eabc51f5b0d4cf47678b16b3c8f4d3849"
   },
   {
-   "title": "Führung Bötzowviertel",
+   "title": "Guided Walk Through the Bötzowviertel",
    "start": "2026-11-22T14:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2027293-fuehrung-boetzowviertel",
@@ -17977,14 +18003,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Führung Bötzowviertel",
    "kind": "tour",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "abcd7c02c86b9b7d3898ca9cd0c0aedd64a62353"
+   "summary": "About 2-hour walk across the Bötzowkiez, starting and ending at the Stierbrunnen on Arnswalder Platz. Pay what you like.",
+   "classified_by": "claude-task",
+   "id": "38e125d79e11817955eab7d0444307f58fb532dc"
   },
   {
    "title": "Artists' Tour of the Exhibition IM DAZWISCHEN",
@@ -20865,6 +20891,32 @@
    "id": "16e68b81de135628aa72ae4a5dff68c37d699cea"
   },
   {
+   "title": "The AI-Built Business: Work Smarter with Automation",
+   "start": "2026-11-23T20:00:00.000Z",
+   "source": "web:Meetup Berlin",
+   "url": "https://www.meetup.com/berlin-germany-thrive-wellbeing-business-community/events/317352045/",
+   "end": null,
+   "venue": null,
+   "area": null,
+   "category": "misc",
+   "is_free": true,
+   "price": null,
+   "price_value": null,
+   "image": null,
+   "description": null,
+   "recurring": false,
+   "recurrence": null,
+   "dates": null,
+   "translated": false,
+   "date_source": "jsonld",
+   "title_orig": null,
+   "kind": "misc",
+   "audience": "everyone",
+   "summary": null,
+   "classified_by": "rules",
+   "id": "1af255c11ac1933cf7025423cba51bb302d1d90b"
+  },
+  {
    "title": "Moritatenzelt: Fairy Tales from Around the World",
    "start": "2026-11-24T09:00:00+01:00",
    "source": "gib:gratis-in-berlin",
@@ -21231,32 +21283,6 @@
    "summary": "The Landesarchiv Berlin presents its 2025 yearbook of ten essays on Berlin history; after an introduction, three authors talk about their work.",
    "classified_by": "claude-task",
    "id": "fbefb8e9caccff62f717a8e5c22ee8ccd7af2795"
-  },
-  {
-   "title": "Board Gaming Happens! at Electric Social",
-   "start": "2026-11-24T17:30:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/sip_happens_berlin/events/317381873/",
-   "end": null,
-   "venue": "Electric Social Grunerstraße 13, 10179,, Berlin Berlin",
-   "area": "Mitte",
-   "category": "meetup",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "dates": null,
-   "translated": true,
-   "date_source": "jsonld",
-   "title_orig": "Board Gaming Happens! @ Electric Social 🎲",
-   "kind": "meetup",
-   "audience": "everyone",
-   "summary": "Sip Happens! board game social: pick or bring a game, grab a drink and meet new people over dice and cards; beginners and pros welcome.",
-   "classified_by": "claude-task",
-   "id": "4730f1dd298266b49affc99f1052ed4792474812"
   },
   {
    "title": "Cook, Eat and Speak German",
@@ -22255,7 +22281,7 @@
    "id": "707a93e47eb31e27ec4a1918deef9342c2efa299"
   },
   {
-   "title": "Sütterlin Workshop - Handschriftgeschichte entdecken",
+   "title": "Sütterlin Workshop – Discover the History of Handwriting",
    "start": "2026-11-26T13:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082159-suetterlin-schreiben",
@@ -22271,14 +22297,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Sütterlin Workshop - Handschriftgeschichte entdecken",
    "kind": "workshop",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "1015f1f869102cee3a0f6f49ea81f4c003ceddcc"
+   "summary": "Look at old texts, then try writing the historic German Kurrent script ('Sütterlin') yourself. No prior knowledge needed, just drop in.",
+   "classified_by": "claude-task",
+   "id": "e72e60082e5198264cfcb309d4081369925c4c3a"
   },
   {
    "title": "Making Advent Wreaths",
@@ -22827,7 +22853,7 @@
    "title_orig": "Schwedischer Weihnachtsmarkt in Wilmersdorf [2 Euro Eintritt] (Skandinavische Weihnachtsmärkte)",
    "kind": "market",
    "audience": "everyone",
-   "summary": "",
+   "summary": "Christmas bazaar of the Swedish Victoria parish with cinnamon buns, princess cake, glögg and elk sausage. €2 entry, children up to 12 free.",
    "classified_by": "claude-task",
    "id": "6607f95c670e28587edb09ebe201bb6b0393174d"
   },
@@ -22853,7 +22879,7 @@
    "title_orig": "Dänischer Weihnachtsmarkt (Skandinavische Weihnachtsbasare)",
    "kind": "market",
    "audience": "everyone",
-   "summary": "",
+   "summary": "Christmas bazaar of the Danish church parish at Brienner Straße 12, held at the same time as the Swedish Christmas market.",
    "classified_by": "claude-task",
    "id": "d3466bb01650b5e351afbbee13a67af9097a67b3"
   },
@@ -23326,14 +23352,14 @@
    "id": "bead3e1a2e9e5ce8e3fa6e905360d7098be22ff6"
   },
   {
-   "title": "Canto Diáspora. Openair Festival Durchlüften 2026 indoor",
+   "title": "Canto Diáspora – Durchlüften Festival 2026 (Indoor)",
    "start": "2026-11-27T19:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082156-canto-diaspora-openair-festival-durchlueften-2026-indoor",
    "end": null,
    "venue": "Schloßplatz 101",
    "area": null,
-   "category": "festival",
+   "category": "music",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -23342,14 +23368,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "festival",
+   "title_orig": "Canto Diáspora. Openair Festival Durchlüften 2026 indoor",
+   "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "551b6664d3b2033058b9c563cc3fa697cdd93dad"
+   "summary": "Berlin women's vocal ensemble of mainly Latin American migrants, led by Colombian singer Carolina Riaño, sings from Latin American traditions.",
+   "classified_by": "claude-task",
+   "id": "19e712b928ecfe2c4fc64b014fff41a03d5c26ff"
   },
   {
    "title": "Reading with Katrin Aimee on Discrimination and Resistance",
@@ -23560,7 +23586,7 @@
    "id": "005cbbe23dcf8f994614efd5de4a01071486e1c3"
   },
   {
-   "title": "Großes Chorfest Onkel Toms Hütte",
+   "title": "Big Choir Festival at Onkel Toms Hütte",
    "start": "2026-11-28T10:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2046969-grosses-chorfest-onkel-toms-huette",
@@ -23576,14 +23602,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Großes Chorfest Onkel Toms Hütte",
    "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "5100221df60667f82f298f9418a6cb4102c787ca"
+   "summary": "Choirs sing rock, pop, gospel, jazz, classical and Christmas songs in the shopping arcade of Onkel Toms Hütte U-Bahn station, some to sing along.",
+   "classified_by": "claude-task",
+   "id": "dee2c60cf11545d8ab65a030707d589afd0ccea8"
   },
   {
    "title": "Patricia Morosan: That Every Stone Is",
@@ -23593,7 +23619,7 @@
    "end": null,
    "venue": null,
    "area": null,
-   "category": "misc",
+   "category": "exhibition",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -23605,10 +23631,10 @@
    "translated": false,
    "date_source": "daypage",
    "title_orig": null,
-   "kind": "misc",
+   "kind": "exhibition",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
+   "summary": "Solo show starting from the fossil-rich Les Vaches Noires cliffs in Normandy, with photos, experimental prints, photo sculptures and film.",
+   "classified_by": "claude-task",
    "id": "b930550c9ef8b9a6c1285a6631997f13b00f945f"
   },
   {
@@ -24340,14 +24366,14 @@
    "id": "d2cf5e0f49f6b57d7275878e87a38df2d7a561f6"
   },
   {
-   "title": "Who writes his_tory? Feministische Stimmen zur Wikipedia",
+   "title": "Who writes his_tory? Feminist Voices on Wikipedia",
    "start": "2026-11-29T15:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082176-who-writes-his-tory-feministische-stimmen-zur-wikipedia",
    "end": null,
    "venue": null,
    "area": null,
-   "category": "misc",
+   "category": "talk",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -24356,14 +24382,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Who writes his_tory? Feministische Stimmen zur Wikipedia",
+   "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "46592afd641b8f7961db10d4d8efd7d6a955b2ab"
+   "summary": "Reading by the Basel project making marginalised groups more visible on Wikipedia, followed by an open discussion. Free, no registration.",
+   "classified_by": "claude-task",
+   "id": "7f320b36477445516060fe7e357b00d46cecdb94"
   },
   {
    "title": "Christmas Sing-Along with the Fliegende Märchenorchester",
@@ -24546,32 +24572,6 @@
    "summary": "Swap women's and men's clothing (bring summer clothes only), browse a small book swap and chat with neighbours over coffee or tea.",
    "classified_by": "claude-task",
    "id": "a1e363b7204b18fcb46193c08a1e4095ae4237c5"
-  },
-  {
-   "title": "Are You Building a Startup or a Small Business? Find Out Live [ONLINE]",
-   "start": "2026-11-30T17:00:00.000Z",
-   "source": "web:Meetup Berlin",
-   "url": "https://www.meetup.com/berlin-ai-startup-founders-club/events/317416983/",
-   "end": null,
-   "venue": null,
-   "area": null,
-   "category": "misc",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "dates": null,
-   "translated": false,
-   "date_source": "jsonld",
-   "title_orig": null,
-   "kind": "misc",
-   "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "6ee2dc41e70b5854f79a90c0dabacdf690b10ca6"
   },
   {
    "title": "Markus Wolf's Personnel File: Spy Chiefs in the Cold War",
@@ -24860,7 +24860,7 @@
    "id": "18b3dc1bb320638ccff42e6593fade701f6739a4"
   },
   {
-   "title": "„Heiss: Liebeserklärung an die Wechseljahre“ - Lesung und Gespräch mit Stefanie De Velasco",
+   "title": "\"Heiss: A Love Letter to Menopause\" – Reading with Stefanie De Velasco",
    "start": "2026-12-01T18:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082180-heiss-liebeserklaerung-an-die-wechseljahre-lesung-und-gespraech-mit-stefanie-de-velasco",
@@ -24876,14 +24876,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "„Heiss: Liebeserklärung an die Wechseljahre“ - Lesung und Gespräch mit Stefanie De Velasco",
    "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "23942bad136fb86ed1d19ae6093c08736e397cd6"
+   "summary": "Stefanie De Velasco reads from and discusses her book on the physical and emotional changes of menopause, part of the 'Lettekiez liest!' series.",
+   "classified_by": "claude-task",
+   "id": "a5973b38dc6a007d0e145a973cf83d4b35d5e2fc"
   },
   {
    "title": "Book Talk: Freiheit auf der Strecke",
@@ -24912,7 +24912,7 @@
    "id": "8a767cac4649ebc358010b7a3bfb6c88b7debe80"
   },
   {
-   "title": "Im Gespräch mit Camille Étienne und Luisa Neubauer",
+   "title": "In Conversation with Camille Étienne and Luisa Neubauer",
    "start": "2026-12-01T19:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082191-im-gespraech-mit-camille-etienne-und-luisa-neubauer",
@@ -24928,14 +24928,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Im Gespräch mit Camille Étienne und Luisa Neubauer",
    "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "0493e155aeacb102487b25f8d1150250a4a5729d"
+   "summary": "Panel with climate activists Camille Étienne and Luisa Neubauer on ecological engagement, with Académie de Berlin and the Franco-German Youth Office.",
+   "classified_by": "claude-task",
+   "id": "2fa5319ffd4687d63d5155c5bab843b03362630c"
   },
   {
    "title": "Frollein Tuesday Treasures: Gözde + Joku",
@@ -25458,7 +25458,7 @@
    "id": "95effc49535f6b2692b2d094f474cf40af7a4a7f"
   },
   {
-   "title": "Lesezeichen - Literatur live in Tegel: Svenja Leiber mit „Nelka“",
+   "title": "Lesezeichen – Live Literature in Tegel: Svenja Leiber, \"Nelka\"",
    "start": "2026-12-02T19:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082181-lesezeichen-literatur-live-in-tegel-svenja-leiber-mit-nelka",
@@ -25474,14 +25474,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Lesezeichen - Literatur live in Tegel: Svenja Leiber mit „Nelka“",
    "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "bffa424da1f9bc4bfd2399dae7d86b5ac8b13a99"
+   "summary": "Reading and talk at the Humboldt-Bibliothek: Svenja Leiber's novel about a 16-year-old from Lviv forced into labour on a German estate in 1941.",
+   "classified_by": "claude-task",
+   "id": "c7d80ca63e6046810b640e523a734b51ce2e0c72"
   },
   {
    "title": "Corporate Concerts: Chamber Music at UdK Berlin",
@@ -25822,7 +25822,7 @@
    "id": "98762a09b44a7d34701c39617994febd220e4c22"
   },
   {
-   "title": "Zwischen Blumen und Beton: Werkstattlesung unserer offenen Schreibgruppe",
+   "title": "Between Flowers and Concrete: Reading by Our Open Writing Group",
    "start": "2026-12-03T19:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082182-zwischen-blumen-und-beton-werkstattlesung-unserer-offenen-schreibgruppe",
@@ -25838,14 +25838,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Zwischen Blumen und Beton: Werkstattlesung unserer offenen Schreibgruppe",
    "kind": "talk",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "d45706c2afd3aa839f7698c1953e6f98f1a730cf"
+   "summary": "The Humboldt-Bibliothek's open writing group led by Ilke S. Prick presents a selection of stories from recent years.",
+   "classified_by": "claude-task",
+   "id": "8a49aeec3a3f2314be81379e294467669f4c96a5"
   },
   {
    "title": "Film: “Operation ICE-Storm. Germans to the Front!”",
@@ -26030,7 +26030,7 @@
    "id": "e24ab139c9ac0439c1b4bc57f5f7cd9d5b70baeb"
   },
   {
-   "title": "Winter am THF: Wintermarkt - 04.-06.12",
+   "title": "Winter at THF: Winter Market",
    "start": "2026-12-04T00:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082189-winter-am-thf-wintermarkt-04-06-12",
@@ -26046,14 +26046,14 @@
    "recurring": false,
    "recurrence": "Every day until 06 Dec",
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Winter am THF: Wintermarkt - 04.-06.12",
    "kind": "market",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "52d4ce92f606100e2f25217322b2b2185daf23a8"
+   "summary": "Winter market in the Alte Feuerwache at THF Tower with delicacies, one-off handmade gifts, art and a programme.",
+   "classified_by": "claude-task",
+   "id": "3e6454f7ee80503b2e7b68eba307db9afeddbfb5"
   },
   {
    "title": "Studio 9. Der Tag: Live Radio Show with a Prominent Guest",
@@ -26238,7 +26238,7 @@
    "id": "a4565387f8598ce32bf1ce147230d26f891d9a59"
   },
   {
-   "title": "Die Aktgalerie / \"Sommer-Akt 2026\" Gemeinschaftsausstellung (Fr / Sa / So)",
+   "title": "Die Aktgalerie: \"Sommer-Akt 2026\" Group Exhibition",
    "start": "2026-12-04T15:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082192-die-aktgalerie-sommer-akt-2026-gemeinschaftsausstellung-fr-sa-so",
@@ -26254,14 +26254,14 @@
    "recurring": false,
    "recurrence": "Every day until 31 Dec",
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Die Aktgalerie / \"Sommer-Akt 2026\" Gemeinschaftsausstellung (Fr / Sa / So)",
    "kind": "exhibition",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "c6210557664c07e8523e185d88638cb026f2a5b1"
+   "summary": "Nude photography from a session of the Berliner Arbeitskreis Künstlerische Aktfotografie, where photographers swapped models. Open Fri–Sun 3–7 pm.",
+   "classified_by": "claude-task",
+   "id": "d90683b3cabe6af45066bbc03d8a81bdbf6fbc48"
   },
   {
    "title": "Psychological Counselling",
@@ -26290,14 +26290,14 @@
    "id": "24909cd6ac5c82aa138d600f5bfbca1a205448ae"
   },
   {
-   "title": "Weihnachtlicher Nachmittag in der Humboldt-Bibliothek",
+   "title": "Christmas Afternoon at the Humboldt-Bibliothek",
    "start": "2026-12-04T16:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082183-weihnachtlicher-nachmittag-in-der-humboldt-bibliothek",
    "end": null,
    "venue": "Karolinenstr. 19 13507",
    "area": "Reinickendorf",
-   "category": "misc",
+   "category": "theatre",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -26306,14 +26306,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
-   "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "078c776fadd3bf765e61fa5ee2ad1eab046a9f91"
+   "title_orig": "Weihnachtlicher Nachmittag in der Humboldt-Bibliothek",
+   "kind": "theatre",
+   "audience": "kids",
+   "summary": "Puppet show 'Mischka's Wondrous Journey' by Nicole Gospodarek (age 4+), plus Christmas crafts, tea and biscuits.",
+   "classified_by": "claude-task",
+   "id": "d5e0988573d0cf6ea6bf7d24bfc645812c94eb09"
   },
   {
    "title": "Winter Festival on Fischerinsel",
@@ -26420,14 +26420,14 @@
    "id": "738ee5291ab4286db08e07394eb1916a107b4696"
   },
   {
-   "title": "Ein musikalisches Mit-mach-Weihnachtsmärchen von und mit 'Ich & Herr Meyer'",
+   "title": "Interactive Musical Christmas Tale by 'Ich & Herr Meyer'",
    "start": "2026-12-04T17:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082145-ein-musikalisches-mit-mach-weihnachtsmaerchen-von-und-mit-ich-herr-meyer",
    "end": null,
    "venue": null,
    "area": null,
-   "category": "music",
+   "category": "theatre",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -26436,14 +26436,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "music",
+   "title_orig": "Ein musikalisches Mit-mach-Weihnachtsmärchen von und mit 'Ich & Herr Meyer'",
+   "kind": "theatre",
    "audience": "kids",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "e5a00541b77b1e62de7927b065df6ef37064aa7f"
+   "summary": "Sing-along Christmas story 'Emil Saves Christmas': Santa's sleigh is broken and Emil tries to convince his dad that Santa exists.",
+   "classified_by": "claude-task",
+   "id": "f7878b6354675c7969baefab586b9bb90d9799c7"
   },
   {
    "title": "Comic Reading and Concert: \"Die Zeitmaschine\" by Thilo Krapp",
@@ -29228,7 +29228,7 @@
    "id": "5dc50244d2b6c33eccfeced56973c48cc2f615f9"
   },
   {
-   "title": "Winter am THF: Wintermarkt - 11.-13.12.",
+   "title": "Winter at THF: Winter Market",
    "start": "2026-12-11T00:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082188-winter-am-thf-wintermarkt-11-13-12",
@@ -29244,14 +29244,14 @@
    "recurring": false,
    "recurrence": "Every day until 13 Dec",
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Winter am THF: Wintermarkt - 11.-13.12.",
    "kind": "market",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "dc48bd70cda628c13244e195d55a0d491feee44f"
+   "summary": "Winter market in the Alte Feuerwache at THF Tower with sustainable gifts, design and art, plus a food court with crêpes, churros and vegan bowls.",
+   "classified_by": "claude-task",
+   "id": "a753fc5dbf498b0d9370945b2671638bbd32b615"
   },
   {
    "title": "Self-help group for family carers, Ratswaage Lankwitz",
@@ -29358,14 +29358,14 @@
    "id": "3361131a0d2d7608d5d9f2a3b8c7d2947646fba1"
   },
   {
-   "title": "Der Grinch - Nadia Budde liest Dr. Seuss und anderes Weihnachtliches",
+   "title": "The Grinch – Nadia Budde Reads Dr. Seuss and Other Christmas Stories",
    "start": "2026-12-11T15:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082184-der-grinch-nadia-budde-liest-dr-seuss-und-anderes-weihnachtliches",
    "end": null,
    "venue": null,
    "area": null,
-   "category": "misc",
+   "category": "talk",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -29374,14 +29374,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
-   "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "4f7bf28d9d2f854225b7fee5fb86c97926f920e0"
+   "title_orig": "Der Grinch - Nadia Budde liest Dr. Seuss und anderes Weihnachtliches",
+   "kind": "talk",
+   "audience": "kids",
+   "summary": "Illustrator Nadia Budde reads her new German translation of The Grinch at the Märkisches Viertel library. Ages 5+.",
+   "classified_by": "claude-task",
+   "id": "24973b724f0cc9296b7a3e3b7874d08f294bd7d9"
   },
   {
    "title": "Artist Talk and Short Tour with Karolina Gembara",
@@ -30632,7 +30632,7 @@
    "id": "58261f2eee90c92b329173cf64c37c6e9d42cf4d"
   },
   {
-   "title": "Filmnacht in der Humboldt-Bibliothek: “Gott existiert, ihr Name ist Petrunya”",
+   "title": "Film Night: \"God Exists, Her Name Is Petrunya\"",
    "start": "2026-12-14T19:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082185-filmnacht-in-der-humboldt-bibliothek-gott-existiert-ihr-name-ist-petrunya",
@@ -30648,14 +30648,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Filmnacht in der Humboldt-Bibliothek: “Gott existiert, ihr Name ist Petrunya”",
    "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "72298c56acf20afe3fd3f281d345f18acf44df7a"
+   "summary": "Screening at the Humboldt-Bibliothek, introduced by journalist Oliver Ohmann, who leads an audience discussion afterwards.",
+   "classified_by": "claude-task",
+   "id": "670636099538711c68aa2aa00ea2fe43da50f232"
   },
   {
    "title": "Literature circle for women",
@@ -31178,14 +31178,14 @@
    "id": "f9c75a9f4d071c9273a5f211f5bc334f5331ab31"
   },
   {
-   "title": "Berlinale Spotlight – Generation: Ödland – Damit keiner das so mitbemerkt",
+   "title": "Berlinale Spotlight – Generation: Ödland",
    "start": "2026-12-16T18:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082190-berlinale-spotlight-generation-oedland-damit-keiner-das-so-mitbemerkt",
    "end": null,
    "venue": "Stresemannstraße 90 10963",
    "area": "Friedrichshain-Kreuzberg",
-   "category": "misc",
+   "category": "film",
    "is_free": true,
    "price": null,
    "price_value": null,
@@ -31194,14 +31194,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
-   "kind": "misc",
+   "title_orig": "Berlinale Spotlight – Generation: Ödland – Damit keiner das so mitbemerkt",
+   "kind": "film",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "482d38e854832495e51dbfaafecca542f577e415"
+   "summary": "Black-and-white film about refugee children spending the summer holidays at a remote former barracks where their families live in asylum.",
+   "classified_by": "claude-task",
+   "id": "9b6723d5f92b2da197b2b42a7a8cbcb54b906fd1"
   },
   {
    "title": "Rainer Mühlhoff: \"Künstliche Intelligenz und der neue Faschismus\"",
@@ -31542,7 +31542,7 @@
    "id": "e13352ed0ff806f16dfa84e73dc279ed59224827"
   },
   {
-   "title": "Zauber einer Winternacht - Weihnachtskonzert von Studierenden",
+   "title": "Magic of a Winter Night – Christmas Concert by Students",
    "start": "2026-12-17T19:30:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082187-zauber-einer-winternacht-weihnachtskonzert-von-studierenden",
@@ -31558,14 +31558,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Zauber einer Winternacht - Weihnachtskonzert von Studierenden",
    "kind": "music",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "2d5ae202472fd748fa6d81e76295e665f340ee86"
+   "summary": "Students from Warsaw's Chopin University, the Szczecin Art Academy and Musikschule Reinickendorf sing opera, operetta and musical pieces.",
+   "classified_by": "claude-task",
+   "id": "407eb9d065d3d214ff91b7fcdc3f2000d28d73cd"
   },
   {
    "title": "Silent Reading Club, Mark-Twain-Bibliothek",
@@ -33076,7 +33076,7 @@
    "id": "5fc73fc0378ea132d280ad7ae3b89908f31c5056"
   },
   {
-   "title": "Peppi's Year-End Concert: Salvo / Schick / Kneer / Steidle",
+   "title": "Peppi Guggenheim Year-End Concert: Salvo / Schick / Kneer / Steidle",
    "start": "2026-12-30T20:00:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2082151-peppi-guggenheim-exil-musikprogramm-peppis-jahresabschlusskonzert-salvo-schick-kneer-steidle",
@@ -33097,35 +33097,9 @@
    "title_orig": "Peppi Guggenheim Exil Musikprogramm: Peppis Jahresabschlusskonzert: Salvo / Schick / Kneer / Steidle",
    "kind": "music",
    "audience": "everyone",
-   "summary": "",
+   "summary": "New quartet from Berlin's jazz scene (two saxes, double bass, drums) plays fully improvised music at Little Stage Bar Neukölln. 18+ only.",
    "classified_by": "claude-task",
-   "id": "2402e18ed3c23d5fa56164cfa60e30070d4f6d66"
-  },
-  {
-   "title": "Silvester 2026 Berlin: Events, Tips, Partys, Feuerwerke",
-   "start": "2026-12-31T00:00:00+01:00",
-   "source": "gib:gratis-in-berlin",
-   "url": "https://www.gratis-in-berlin.de/kalender/item/2054738-silvester-2026-berlin-events-tips-partys-feuerwerke",
-   "end": null,
-   "venue": null,
-   "area": null,
-   "category": "party",
-   "is_free": true,
-   "price": null,
-   "price_value": null,
-   "image": null,
-   "description": null,
-   "recurring": false,
-   "recurrence": null,
-   "dates": null,
-   "translated": false,
-   "date_source": "daypage",
-   "title_orig": null,
-   "kind": "party",
-   "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "0fd6d9f52f94f712aaaff4aac172fce34b1f59c0"
+   "id": "2442972d4241ecf6331e8a8cc2ce899a27e079fb"
   },
   {
    "title": "BastelBuch: crafts from old books",
@@ -33206,7 +33180,7 @@
    "id": "7058f3538d21f3ef41ff5e50f62750acd4b2f89d"
   },
   {
-   "title": "Silvester Party 2026 am Brandenburger Tor mit Feuerwerk",
+   "title": "New Year's Eve Party at the Brandenburg Gate with Fireworks",
    "start": "2026-12-31T23:59:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2076568-silvester-party-2026-am-brandenburger-tor-mit-feuerwerk",
@@ -33222,17 +33196,17 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Silvester Party 2026 am Brandenburger Tor mit Feuerwerk",
    "kind": "party",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "d84ae017c98e15db7d87ce496fe1fb9f8fba102c"
+   "summary": "Free-entry party with DJs, music and fireworks at midnight. About 20,000 free tickets are expected to be released in early December.",
+   "classified_by": "claude-task",
+   "id": "ee07ff8bfb27876d89ce3ce5542697d0719fd467"
   },
   {
-   "title": "Silvester Party an Siegessäule (mit Feuerwerk ?)",
+   "title": "New Year's Eve Party at the Victory Column",
    "start": "2026-12-31T23:59:00+01:00",
    "source": "gib:gratis-in-berlin",
    "url": "https://www.gratis-in-berlin.de/kalender/item/2076441-silvester-party-an-siegessaeule-mit-feuerwerk",
@@ -33248,14 +33222,14 @@
    "recurring": false,
    "recurrence": null,
    "dates": null,
-   "translated": false,
+   "translated": true,
    "date_source": "daypage",
-   "title_orig": null,
+   "title_orig": "Silvester Party an Siegessäule (mit Feuerwerk ?)",
    "kind": "party",
    "audience": "everyone",
-   "summary": null,
-   "classified_by": "rules",
-   "id": "4c219858cd2146f6fbc51de5b79a3079fde0a6d5"
+   "summary": "Party run as a rally by an alliance of cultural workers, with trucks, stages and DJs around the Siegessäule from about 6 pm until 5 am.",
+   "classified_by": "claude-task",
+   "id": "8d2ad61320e715410ee316c29c4a12e5caaddf33"
   },
   {
    "title": "El Funko + Hiddit!",
