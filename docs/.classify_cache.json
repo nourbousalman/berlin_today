@@ -13476,5 +13476,117 @@
 "summary": "Overview of New Year's Eve in Berlin: the Brandenburg Gate party, public rehearsals, several fireworks, the Pfannkuchenlauf and Christmas markets.",
 "by": "claude-task",
 "ctx": true
+},
+"✨ Speak, Lead, and Connect with First Berlin Toastmasters! ✨ (in-person)": {
+"title": "Speak, Lead, and Connect with First Berlin Toastmasters",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Guests can join First Berlin Toastmasters for free to practise public speaking, presentations and giving feedback.",
+"by": "claude-task",
+"ctx": true
+},
+"Music Lovers": {
+"title": "Music Lovers",
+"kind": "party",
+"audience": "everyone",
+"summary": "DJs Yves Taubert and Tornadotoni, vinyl lovers rooted in electronic music since the early 90s, play together at Eschschloraque.",
+"by": "claude-task",
+"ctx": true
+},
+"Post Punk Night": {
+"title": "Post Punk Night",
+"kind": "party",
+"audience": "everyone",
+"summary": "Post-punk and synth DJ night with Nekrobot, an Athens-born Berlin DJ, and Angelic Sintesis from Berlin's underground scene.",
+"by": "claude-task",
+"ctx": true
+},
+"Board Game Afternoon (DE+EN)": {
+"title": "Board Game Afternoon (DE+EN)",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Board game meetup by the queer, inclusive club FairSpiel, mostly strategic Eurogames; about 50 games provided, bring your own too.",
+"by": "claude-task",
+"ctx": true
+},
+"Hamburg": {
+"title": "Clothes Swap at FuxLab",
+"kind": "market",
+"audience": "everyone",
+"summary": "Clothes swap at FuxLab with drinks, cake and music. Entry by donation.",
+"by": "claude-task",
+"ctx": true
+},
+"„Langsam Langsam! – oder die schnellste Schnecke der Welt“": {
+"title": "Slowly Slowly! – or the Fastest Snail in the World",
+"kind": "theatre",
+"audience": "kids",
+"summary": "Puppet theatre for children aged 4+ about a snail who trains to be the fastest, leaves home and befriends a racing driver.",
+"by": "claude-task",
+"ctx": true
+},
+"Poetry-Slam-Workshop für Kinder": {
+"title": "Poetry Slam Workshop for Children",
+"kind": "workshop",
+"audience": "kids",
+"summary": "Children aged 8–12 learn word tricks with Lucia Lucia and Bas Böttcher, write texts about water and perform them on stage.",
+"by": "claude-task",
+"ctx": true
+},
+"Bilderbuchkino in der Bettina-von-Arnim-Bibliothek": {
+"title": "Picture Book Cinema at the Bettina-von-Arnim Library",
+"kind": "film",
+"audience": "kids",
+"summary": "Stories from picture books told as picture-book cinema or kamishibai paper theatre for children aged 4+, about 20 minutes.",
+"by": "claude-task",
+"ctx": true
+},
+"The AI-Built Business: Work Smarter with Automation": {
+"title": "The AI-Built Business: Work Smarter with Automation",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Free live online webinar on using AI to help run parts of an online business.",
+"by": "claude-task",
+"ctx": true
+},
+"Globale Verantwortung in Geschichte und Gegenwart": {
+"title": "Global Responsibility in History and the Present",
+"kind": "talk",
+"audience": "everyone",
+"summary": "",
+"by": "claude-task",
+"ctx": false
+},
+"Markt der Engagement-Möglichkeiten in der Ingeborg-Drewitz-Bibliothek": {
+"title": "Volunteering Fair at the Ingeborg-Drewitz Library",
+"kind": "market",
+"audience": "everyone",
+"summary": "Initiatives, clubs and projects in Steglitz-Zehlendorf present volunteering opportunities, with the local volunteer agency and library.",
+"by": "claude-task",
+"ctx": true
+},
+"„Offene Sprechstunde der Erziehungs- und Familienberatung“": {
+"title": "Open Consultation Hours: Parenting and Family Counselling",
+"kind": "support",
+"audience": "group",
+"summary": "",
+"by": "claude-task",
+"ctx": false
+},
+"„Weihnachts-Mitsing-Ding“ - Mitmach-Aktion": {
+"title": "Christmas Sing-Along",
+"kind": "music",
+"audience": "everyone",
+"summary": "Sing familiar and new Advent and Christmas songs with the district office choir TonArtMitte, with piano. Registration requested.",
+"by": "claude-task",
+"ctx": true
+},
+"Prävention im Fokus. Chancen und Grenzen der politischen Bildung im Kampf gegen Extremismus": {
+"title": "Prevention in Focus: Political Education Against Extremism",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Symposium on what political education can and cannot do to prevent extremist attitudes and behaviour. Registration required.",
+"by": "claude-task",
+"ctx": true
 }
 }
