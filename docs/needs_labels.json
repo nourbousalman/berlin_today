@@ -16,22 +16,22 @@
 {
 "key": "Fotoausstellung “Ein Schiff. Ein Moment Sicherheit.” - SOS Mediterranee (Mo - Fr)",
 "venue": "",
-"site_category": null,
-"about": "",
+"site_category": "Kunst",
+"about": "Die Fotoausstellung “Ein Schiff. Ein Moment Sicherheit.” gewährt tiefe Einblicke in die Arbeit von SOS MEDITERRANEE und nimmt Euch mit an Bord der Ocean Viking. Wir zeigen in bewegenden Bildern nicht nur die Rettungen selbst, sondern die Menschen hinter den Zahlen – Momente der Verzweiflung und Erleichterung, Fürsorge und Zusammenarbeit sowie Freude und Hoffnung auf ein Leben in Frieden und Sicherheit. Die Ausstellung lädt dazu ein, hinzusehen und zivile Seenotrettung als das zu begreifen, was sie ist: ein Ausdruck von Solidarität und Menschlichkeit. Vernissage am 19. NovemberAm 19. November, 18:00-21:00 Uhr, laden wir gemeinsam mit Denizen Eiswerk zu einer Vernissage ein inlusive eines Vort",
 "date": "2026-11-19"
 },
 {
 "key": "Trinkwasser braucht keinen Müll – eine Zero-Waste-Ausstellung für Kinder (täglich)",
 "venue": "",
-"site_category": null,
-"about": "",
+"site_category": "Kinder & Jugendliche",
+"about": "Wie kommt das Wasser eigentlich aus unserem Wasserhahn und was hat die Entscheidung für Leitungswasser mit Klimaschutz und Abfallvermeidung zu tun? Die interaktive Zero-Waste-Wanderausstellung vom Verein a tip: tap e.V. lädt Kinder und Familien dazu ein, unser Trinkwasser und Verpackungsmüll neu zu entdecken. Mit Spielen und Mitmach-Stationen rum um das Thema Trinkwasser und Abfallvermeidung wird Wissen erlebbar und regt dazu an, das eigene Konsumverhalten zu hinterfragen.Dabei zeigt die Ausstellung ganz praktisch, warum Leitungswasser eine ressourcenschonende Alternative zu Flaschenwasser ist und macht durch den Einsatz von Upcycling- und Recyclingmaterialien nachhaltiges Handeln selbst zum",
 "date": "2026-11-19"
 },
 {
 "key": "Ausstellung: \"Verlängerung. Boden, Lüft. Eine weitere Runde am Wildmeisterdamm\" (Di - Sa)",
 "venue": "",
-"site_category": null,
-"about": "",
+"site_category": "Kunst",
+"about": "Fotografien und Collagen nach den Kunstparcours BODEN + LÜFT.An zwei Sonntagen im Juni und September 2026 wurde der Wildmeisterdamm im Rahmen von Gropius’ Kulturinseln zum Kunstparcours. Unter dem Thema BODEN + LÜFT haben Künstler:innen, Nachbar:innen und Besucher:innen den Weg erkundet. Sie haben im Untergrund gegraben und Fährten aufgenommen, sie sind Wind und Vogelstimmen gefolgt.Die Ausstellung im Gemeinschaftshaus versammelt Fotografien und Collagen der vergangenen Parcours und der dort gezeigten künstlerischen Arbeiten und lädt dazu ein, selbst loszugehen. Die Parcours sind vorbei, doch die Erkundung geht weiter.• Datum der Veranstaltung: Mo. 16.11.2026 bis Sa. 09.01.2027, Öffnungszeit",
 "date": "2026-11-19"
 },
 {
@@ -44,8 +44,8 @@
 {
 "key": "Eine andere Italienische Reise. Der Zweite Weltkrieg in Italien: Orte,(Di - So) Geschichte und Erinnerungen",
 "venue": "",
-"site_category": null,
-"about": "",
+"site_category": "Museen",
+"about": "13. November - 9. Mai 2027 Di-So 10-18 UhrGoethes „Italienische Reise“ inspiriert eine neue Entdeckungstour durch Italien, begleitet von einem deutschen Besucher und einer Italienerin. Gemeinsam erkunden sie Orte, die mit dem Zweiten Weltkrieg und Widerstand verbunden sind, diskutieren historische Hintergründe und reflektieren Vorurteile. Das Nationale Institut „Ferruccio Parri“ hat dafür zehn zentrale Themen zum Krieg in Italien gewählt und symbolträchtige Orte bestimmt. Diese vielfältigen Stationen werden mit historischen Materialien und digitalen Einblicken ergänzt. Die Ausstellung lädt dazu ein, sich mit der italienischen Kriegszeit auseinanderzusetzen und anzufragen, wie Erinnerungsorte",
 "date": "2026-11-19"
 },
 {
@@ -85,9 +85,9 @@
 },
 {
 "key": "Electric Sunday – Eternity",
-"venue": "",
-"site_category": null,
-"about": "",
+"venue": "Invalidenstr. 3 10115",
+"site_category": "Musik",
+"about": "Verstorbenen Gedenken mit Elektronischer MusikEine Stunde mit elektronischer Musik und sanftem Leuchten in der St. Elisabeth-Kirche: Ihr könnt eine Kerze anzünden oder die Namen derer, die ihr vermisst, in die digitale Ewigkeit senden – und dabei meditieren oder tanzen. Wir nehmen die Tradition des Verstorbenen-Gedenkens am letzten Sonntag vor dem Advent auf und verbinden sie mit aktuellen Formen der Spiritualität.Dieser Electric Sunday wird gestaltet mit dem SADA Ensemble sowie dem Perperuna Ensemble und ist Teil des Trauerfestivals Endlich. Weitere Informationen hier: https://endlich-trauerfestival.de/",
 "date": "2026-11-22"
 },
 {
@@ -145,6 +145,13 @@
 "site_category": "Kunst",
 "about": "Kunst im Frauentreffpunkt Ratswaage Lankwitz Im Dezember freuen wir uns auf die Ausstellung “Colour (E)Motion” mit Werken aus Acryl von Antje Matthei. Die Vernissage findet statt am Sonntag, den 06.12.26 ab 14:00 Uhr. Weitere offene Sonntage in Anwesenheit der Künstlerin sind am 13.12., 20.12. und 27.12.26 jeweils von 14:00-17:00 Uhr.Der Frauentreffpunkt RATSWAAGE LANKWITZ ist eine kommunale Begegnungsstätte für Frauen des Bezirks und befindet sich in derCharlottenstr. 64/Ecke Amalienstraße, 12247 Berlin (Nähe S-Bahn Lichterfelde-Ost).Die Ratswaage ist nicht barrierefrei.",
 "date": "2026-12-06"
+},
+{
+"key": "Europäisches Adventskonzert 2026 der Schwarzkopf-Stiftung Junges Europa",
+"venue": "",
+"site_category": "Musik",
+"about": "Eintritt nur mit Anmeldung bis 04. Dezember via https://elisabeth.berlin/de/kulturkalender/europaeisches-adventskonzert-2026-der-schwarzkopf-stiftung-junges-europa Konzert in der Adventszeit in der Sophienkirche mit Armin Laschet, Schauspieler Burghart Klaußner, dem Staats- und Domchor Berlin, der Band Folkadu und dem Tenor Maximilian Vogler.Freier Eintritt mit Anmeldung ist bis zum 4. Dezember 2026 online möglich.",
+"date": "2026-12-07"
 },
 {
 "key": "„Offene Sprechstunde der Erziehungs- und Familienberatung“",
