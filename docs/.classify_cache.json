@@ -13550,12 +13550,12 @@
 "ctx": true
 },
 "Globale Verantwortung in Geschichte und Gegenwart": {
-"title": "Global Responsibility in History and the Present",
+"title": "Global Responsibility in History and Present",
 "kind": "talk",
 "audience": "everyone",
-"summary": "",
+"summary": "About Willy Brandt's presidency of the Socialist International from 1976 to 1992 and how it became a globally influential organisation.",
 "by": "claude-task",
-"ctx": false
+"ctx": true
 },
 "Markt der Engagement-Möglichkeiten in der Ingeborg-Drewitz-Bibliothek": {
 "title": "Volunteering Fair at the Ingeborg-Drewitz Library",
@@ -13568,10 +13568,10 @@
 "„Offene Sprechstunde der Erziehungs- und Familienberatung“": {
 "title": "Open Consultation Hours: Parenting and Family Counselling",
 "kind": "support",
-"audience": "group",
-"summary": "",
+"audience": "everyone",
+"summary": "Caritas counsellors answer questions on parenting, family or relationship conflicts and everyday family challenges. Free, no registration.",
 "by": "claude-task",
-"ctx": false
+"ctx": true
 },
 "„Weihnachts-Mitsing-Ding“ - Mitmach-Aktion": {
 "title": "Christmas Sing-Along",
@@ -13586,6 +13586,198 @@
 "kind": "talk",
 "audience": "everyone",
 "summary": "Symposium on what political education can and cannot do to prevent extremist attitudes and behaviour. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Wenn geschriebene Musik spontan klingt | Guy Woodcock, Gitarre solo": {
+"title": "Guy Woodcock, Solo Guitar: When Written Music Sounds Spontaneous",
+"kind": "music",
+"audience": "everyone",
+"summary": "Solo guitar recital built around works by Ferdinand Rebay, including two D-major sonatas, exploring spontaneity in strictly notated music. Donation-funded.",
+"by": "claude-task",
+"ctx": true
+},
+"\"Treffen zum Aktionstag\" - im RegenbogenCafé": {
+"title": "Meetup Before the Protest Day at RegenbogenCafé",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Meet people to go to the 20 November protest day with, over coffee and cake, and talk about what you need to take part and feel safe.",
+"by": "claude-task",
+"ctx": true
+},
+"Fotoausstellung “Ein Schiff. Ein Moment Sicherheit.” - SOS Mediterranee (Mo - Fr)": {
+"title": "Photo Exhibition: One Ship. One Moment of Safety. – SOS Mediterranee",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Photos from aboard the Ocean Viking showing SOS MEDITERRANEE's sea rescues and the people behind the numbers. Opening on 19 November, 18:00–21:00.",
+"by": "claude-task",
+"ctx": true
+},
+"Trinkwasser braucht keinen Müll – eine Zero-Waste-Ausstellung für Kinder (täglich)": {
+"title": "Drinking Water Needs No Waste – Zero-Waste Exhibition for Kids",
+"kind": "exhibition",
+"audience": "kids",
+"summary": "Interactive touring exhibition by a tip: tap e.V. with games and hands-on stations about tap water, packaging waste and climate protection.",
+"by": "claude-task",
+"ctx": true
+},
+"Ausstellung: \"Verlängerung. Boden, Lüft. Eine weitere Runde am Wildmeisterdamm\" (Di - Sa)": {
+"title": "Exhibition: Extension. Ground, Air. Another Round at Wildmeisterdamm",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Photos and collages from the BODEN + LÜFT art trails held on Wildmeisterdamm in 2026 as part of Gropius' Kulturinseln, shown in the community centre.",
+"by": "claude-task",
+"ctx": true
+},
+"Tanja Ostojić: Encounters — On Bodies, Borders, Resistance (täglich)": {
+"title": "Tanja Ostojić: Encounters — On Bodies, Borders, Resistance",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "First major survey in Germany of Berlin artist Tanja Ostojić: performance, video and installation on migration, body politics and gender from 25 years.",
+"by": "claude-task",
+"ctx": true
+},
+"Eine andere Italienische Reise. Der Zweite Weltkrieg in Italien: Orte,(Di - So) Geschichte und Erinnerungen": {
+"title": "Another Italian Journey: World War II in Italy – Places and Memories",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Exhibition by the Istituto Ferruccio Parri on ten key themes of the war and resistance in Italy, with historical materials and digital content.",
+"by": "claude-task",
+"ctx": true
+},
+"Social Hour: Drinks, Games & Good Vibes (50 FREE Tickets) Social Circle x Tinder": {
+"title": "Social Hour: Drinks, Games & Good Vibes – Social Circle x Tinder",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Social evening with drinks and games by Social Circle and Tinder; free tickets are limited. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Meet new People in Berlin! (English/German)(Free Welcome Drink)": {
+"title": "Meet New People in Berlin (English/German) with Free Welcome Drink",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Social meetup for newcomers and long-time Berliners who want to expand their social circle, with a free welcome drink.",
+"by": "claude-task",
+"ctx": true
+},
+"Harald Naegeli – Der Sprayer von Zürich": {
+"title": "Harald Naegeli – The Sprayer of Zurich",
+"kind": "film",
+"audience": "everyone",
+"summary": "Documentary (D/CH 2021, 97 min, dir. Nathalie David) about Swiss graffiti artist Harald Naegeli, known since the late 1970s as the Sprayer of Zurich.",
+"by": "claude-task",
+"ctx": true
+},
+"Geistiges Wahrnehmen und Führung - eine aktuelle Möglichkeit": {
+"title": "Spiritual Perception and Guidance – A Present-Day Possibility",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Talk by Christian Science practitioner Nicole Ehrenhardt on how spiritual perception and guidance can have a healing effect on us and our surroundings.",
+"by": "claude-task",
+"ctx": true
+},
+"Berlin (Steglitz-Lichterfelde)": {
+"title": "Clothing Swap in Steglitz-Lichterfelde",
+"kind": "market",
+"audience": "everyone",
+"summary": "Clothing swap with coffee and homemade cake in the Paulus church youth cellar. Bring up to 10 clean, well-kept items of clothing.",
+"by": "claude-task",
+"ctx": true
+},
+"Electric Sunday – Eternity": {
+"title": "Electric Sunday – Eternity",
+"kind": "music",
+"audience": "everyone",
+"summary": "An hour of electronic music in St. Elisabeth church to remember the dead: light a candle, meditate or dance. With SADA and Perperuna Ensembles.",
+"by": "claude-task",
+"ctx": true
+},
+"Lesebühne DEO (immer am 23ten)": {
+"title": "Lesebühne DEO Reading Stage",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Living-room-style reading stage with readings, video or live music; with Vanessa Karré, Kirsten Fuchs, Franziska Hauser and others plus guests.",
+"by": "claude-task",
+"ctx": true
+},
+"Theaterworkshop und interkultureller Austausch für Frauen": {
+"title": "Theatre Workshop and Intercultural Exchange for Women",
+"kind": "workshop",
+"audience": "women",
+"summary": "Theatre, voice exercises and role play led by actors and dancers to practise speaking German and meet other cultures. Drop in any time.",
+"by": "claude-task",
+"ctx": true
+},
+"Herbstliche Suppen kochen - Workshop für Frauen": {
+"title": "Cooking Autumn Soups – Workshop for Women",
+"kind": "workshop",
+"audience": "women",
+"summary": "Cook and eat plant-based seasonal soups together and learn new recipes; also a chance for women learning German to practise and make friends.",
+"by": "claude-task",
+"ctx": true
+},
+"Peppi Guggenheim Exil Musikprogramm: Prince Gabriel Presents: Drag and Music": {
+"title": "Peppi Guggenheim Exil: Prince Gabriel Presents Drag and Music",
+"kind": "music",
+"audience": "everyone",
+"summary": "Drag performances by Godxxx Noirphiles and Prince Gabriel with live funk and disco on bass, trombone and drums. Ages 18+. Donation-based.",
+"by": "claude-task",
+"ctx": true
+},
+"Workshops mit Café-Atmosphäre in der Ingeborg-Drewitz-Bibliothek am 4. Dezember 2026": {
+"title": "Workshops with Café Atmosphere at Ingeborg-Drewitz Library",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Creative workshops alongside a volunteering fair, including Christmas origami for children 6+ with parents, teens and adults. Materials provided.",
+"by": "claude-task",
+"ctx": true
+},
+"Coca Cola Truck Tour 2026: Coke Trucks Streckenroute 2026 wieder in Berlin": {
+"title": "Coca-Cola Truck Tour 2026: Christmas Trucks Possibly in Berlin",
+"kind": "notice",
+"audience": "everyone",
+"summary": "The Coca-Cola Christmas truck tour runs through Germany from late November; whether it stops in Berlin is unconfirmed and the date is a guess.",
+"by": "claude-task",
+"ctx": true
+},
+"Kunstausstellung in der Ratswaage": {
+"title": "Art Exhibition in the Ratswaage",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "\"Colour (E)Motion\": acrylic works by Antje Matthei at the Ratswaage Lankwitz women's centre. Opening 6 December from 14:00. Not step-free.",
+"by": "claude-task",
+"ctx": true
+},
+"Europäisches Adventskonzert 2026 der Schwarzkopf-Stiftung Junges Europa": {
+"title": "European Advent Concert 2026 of the Schwarzkopf-Stiftung Junges Europa",
+"kind": "music",
+"audience": "everyone",
+"summary": "Advent concert in the Sophienkirche with Armin Laschet, Burghart Klaußner, the Staats- und Domchor Berlin, Folkadu and Maximilian Vogler. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Deutsch lernen mit Theater - einfach und mit Spaß (für Frauen)": {
+"title": "Learning German with Theatre – Easy and Fun (for Women)",
+"kind": "workshop",
+"audience": "women",
+"summary": "Theatre, voice exercises and role play led by actors and dancers to practise speaking German and meet other cultures. Drop in any time.",
+"by": "claude-task",
+"ctx": true
+},
+"Willy Brandt Lecture 2026: Menschenrechte am Ende": {
+"title": "Willy Brandt Lecture 2026: Human Rights at an End",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Lecture on human rights, starting from Iran's January 2026 protests, the regime's violent crackdown and the war that followed.",
+"by": "claude-task",
+"ctx": true
+},
+"English Language Support Group for Women* Affected by Stalking": {
+"title": "English Language Support Group for Women* Affected by Stalking",
+"kind": "support",
+"audience": "women",
+"summary": "Monthly peer support group for women* in Berlin with limited German, led by an anti-stalking counsellor. Short intake talk first. Registration required.",
 "by": "claude-task",
 "ctx": true
 }
