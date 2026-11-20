@@ -13780,5 +13780,285 @@
 "summary": "Monthly peer support group for women* in Berlin with limited German, led by an anti-stalking counsellor. Short intake talk first. Registration required.",
 "by": "claude-task",
 "ctx": true
+},
+"artbook.berlin2026 Messe für Künstlerbücher+ Editionen (bis Sonntag)": {
+"title": "artbook.berlin2026 Fair for Artists' Books and Editions",
+"kind": "market",
+"audience": "everyone",
+"summary": "Exhibition and fair at Kunstquartier Bethanien where 120 printers, book artists, graphic artists and writers show new works, with readings and talks.",
+"by": "claude-task",
+"ctx": true
+},
+"Music Lovers (DJs ab 21 Uhr)": {
+"title": "Music Lovers DJ Night",
+"kind": "party",
+"audience": "everyone",
+"summary": "DJs Yves Taubert and Tornadotoni, vinyl lovers rooted in the electronic scene since the early 90s, play together at Eschschloraque.",
+"by": "claude-task",
+"ctx": true
+},
+"Ausstellung: Tadaa! – Leena Katriina Ehrling": {
+"title": "Exhibition: Tadaa! – Leena Katriina Ehrling",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Helsinki-based artist Leena Katriina Ehrling shows her new series combining painting, drawing, objects and mixed materials at Galerie Pleiku.",
+"by": "claude-task",
+"ctx": true
+},
+"\"Die Feuerzangenbowle\" mit Heinz Rühmann im Nikolaiviertel beim \"Winter-Film-Fest\" schauen (tgl. außer Heiligabend)": {
+"title": "Die Feuerzangenbowle at the Winter-Film-Fest in Nikolaiviertel",
+"kind": "film",
+"audience": "everyone",
+"summary": "Free screenings several times a day of the Heinz Rühmann classic on armchairs and sofas at Nikolaikirchplatz, with a few nostalgic market stalls.",
+"by": "claude-task",
+"ctx": true
+},
+"Game Night. 🌞": {
+"title": "Game Night",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Social evening at Kodex Bierhaus to get to know each other through interactive games and challenges.",
+"by": "claude-task",
+"ctx": true
+},
+"21.11. 21:00 Uhr – ESTNISCHE FILMTAGE 2026: PUULUUP - LIVE IN CONCERT (OV)": {
+"title": "Estonian Film Days 2026: Puuluup – Live in Concert",
+"kind": "music",
+"audience": "everyone",
+"summary": "Puuluup play a short set after the screening of their documentary Puuluup – Cables in the Car. Free for those with a ticket to the screening.",
+"by": "claude-task",
+"ctx": true
+},
+"Winterbasar - im Gefängnis (JVA Tegel)": {
+"title": "Winter Bazaar at Tegel Prison (JVA Tegel)",
+"kind": "market",
+"audience": "everyone",
+"summary": "The prison's workshops sell baked goods, toys, gifts, flower arrangements, metalwork and glass design at the JVA shop, giving insight into inmates' work.",
+"by": "claude-task",
+"ctx": true
+},
+"Synthesizer Musik": {
+"title": "Synthesizer Music Session",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Every third Saturday at Kiezladen WaMa, synthesizers are set up to experiment with sounds together. Synths provided or bring your own; ask for Uwe.",
+"by": "claude-task",
+"ctx": true
+},
+"Europäischer Arthouse-Kinotag (gratis bis günstig)": {
+"title": "European Arthouse Cinema Day",
+"kind": "film",
+"audience": "everyone",
+"summary": "Arthouse cinemas show special screenings, previews and European classics. City Kino Wedding shows five free films; other cinemas charge 5 euros.",
+"by": "claude-task",
+"ctx": true
+},
+"Afternoon Walk+Coffee in Berlin: Sonnenallee/Treptower/Kreuzberg👣🚶🚶‍♀️☀️🥐☕🍪": {
+"title": "Afternoon Walk and Coffee: Sonnenallee, Treptower, Kreuzberg",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Meetup group walk with a coffee stop, starting at S Sonnenallee. A 1 euro cash donation per person is required on site.",
+"by": "claude-task",
+"ctx": true
+},
+"Offener Musiktreff": {
+"title": "Open Music Meetup",
+"kind": "music",
+"audience": "everyone",
+"summary": "Twice a week, people make music together at Kiezladen WaMa. Bring your own instrument or use the keyboards, guitars, bass and e-drums. Singers welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"\"Live Session & Kurzfilmpremiere & Live Performance\" - im RegenbogenKino": {
+"title": "Live Session, Short Film Premiere and Performance at RegenbogenKino",
+"kind": "music",
+"audience": "everyone",
+"summary": "Band Amira Rosa shows its 20-minute alternative pop live session, plus songs by Fenja, a short film premiere by Angel and May and a live performance.",
+"by": "claude-task",
+"ctx": true
+},
+"Last Wednesday Monthly Game Night @ C-Space (Weissensee)": {
+"title": "Last Wednesday Monthly Game Night at C-Space Weissensee",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Berlin Board Gamers host a monthly game room at C*SPACE with hundreds of games to try; bring your own too. Donation asked for drinks.",
+"by": "claude-task",
+"ctx": true
+},
+"Offener Kreativtreff": {
+"title": "Open Creative Meetup",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Mindful painting and creative self-care at Kiezladen WaMa, run with the Treptow-Köpenick self-help contact point. No experience needed; materials provided.",
+"by": "claude-task",
+"ctx": true
+},
+"Döner Dialoge: Einsamkeit": {
+"title": "Döner Dialogues: Loneliness",
+"kind": "talk",
+"audience": "everyone",
+"summary": "With Monika Jiang and Jana Maria Dohmann.",
+"by": "claude-task",
+"ctx": true
+},
+"Nana Benz du Togo": {
+"title": "Nana Benz du Togo",
+"kind": "music",
+"audience": "everyone",
+"summary": "Togolese five-piece mixing voodoo tradition with soul, electronics and West African rhythms, led by three singers with a vintage Korg keyboard.",
+"by": "claude-task",
+"ctx": true
+},
+"Fest der Chöre in der Ladenstraße": {
+"title": "Choir Festival in the Ladenstraße",
+"kind": "music",
+"audience": "everyone",
+"summary": "Twelve choirs sing in the passages and entrance halls of the Ladenstraße, with all shops open and offering something special.",
+"by": "claude-task",
+"ctx": true
+},
+"Wintermarkt in der frachtkante Flughafen TXL am 1. Advent-Wochenende": {
+"title": "Winter Market at frachtkante, Tegel Airport",
+"kind": "market",
+"audience": "everyone",
+"summary": "Second winter market with handmade goods, warm drinks and winter food, live music and DJs, plus workshops for all ages.",
+"by": "claude-task",
+"ctx": true
+},
+"Alt-Rixdorfer Weihnachtsmarkt am Richardplatz": {
+"title": "Alt-Rixdorf Christmas Market at Richardplatz",
+"kind": "market",
+"audience": "everyone",
+"summary": "Charity Christmas market lit by petroleum lamps, with over 100 clubs and groups selling crafts, decorations and food; also pony rides.",
+"by": "claude-task",
+"ctx": true
+},
+"Winterfest und Open House im Silent Green Kulturquartier": {
+"title": "Winter Festival and Open House at Silent Green Kulturquartier",
+"kind": "festival",
+"audience": "everyone",
+"summary": "Silent Green opens its whole site with gift stalls at the BeMarket design market, a film programme and winter food from Mars Silent Green.",
+"by": "claude-task",
+"ctx": true
+},
+"Die russischsprachige Bibliothek „Totschka“ lädt ganz Berlin zu ihrem fünften Buchfestival ein!": {
+"title": "Russian-Language Library Totschka's Fifth Book Festival",
+"kind": "festival",
+"audience": "everyone",
+"summary": "Totschka marks five years at Palais Populaire with a book market, theatre, workshops and a dance party for kids and adults. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Kunstausstellung in der Ratswaage (sonntags bis 27.12.)": {
+"title": "Art Exhibition at the Ratswaage: Colour (E)Motion by Antje Matthei",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Acrylic works by Antje Matthei at the Ratswaage Lankwitz women's centre, open only on four December Sundays with the artist present. Not barrier-free.",
+"by": "claude-task",
+"ctx": true
+},
+"Teamleitung für die Inter*Trans*Beratung": {
+"title": "Job: Team Lead for Inter*Trans* Counselling",
+"kind": "notice",
+"audience": "group",
+"summary": "Schwulenberatung Berlin seeks a full-time team lead for its Inter*Trans* counselling and anti-discrimination team from 1 January 2027.",
+"by": "claude-task",
+"ctx": true
+},
+"English IRL | English Language Meet-Up": {
+"title": "English IRL: English Language Meet-Up",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Relaxed 90-minute online English conversation club on Google Meet by ZebaESL. No lessons; all levels welcome.",
+"by": "claude-task",
+"ctx": true
+},
+"[2026-12-10] English IRL | English Language Meet-Up @ online": {
+"title": "English IRL: English Language Meet-Up",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Online English language meet-up.",
+"by": "claude-task",
+"ctx": true
+},
+"Weihnachtliches Stadionsingen in Mariendorf": {
+"title": "Christmas Stadium Singing in Mariendorf",
+"kind": "music",
+"audience": "everyone",
+"summary": "Mariendorfer SV 06 and a local church host carol singing in the Volkspark Mariendorf stadium, with song sheets, candles and mulled wine. Covered stands.",
+"by": "claude-task",
+"ctx": true
+},
+"Weihnachtssingen im Eisstadion": {
+"title": "Christmas Singing at the Ice Stadium",
+"kind": "music",
+"audience": "everyone",
+"summary": "Carol singing led by choirs at Horst-Dohm-Eisstadion. Bring your own skates to ice skate for free that day.",
+"by": "claude-task",
+"ctx": true
+},
+"Lux Filmpreis Filmvorführungen 2027, Film-Marathon": {
+"title": "LUX Film Prize Screenings 2027: Film Marathon",
+"kind": "film",
+"audience": "everyone",
+"summary": "Free marathon at Delphi Filmpalast of three films nominated for the European Parliament's LUX Audience Award 2027.",
+"by": "claude-task",
+"ctx": true
+},
+"Stadionsingen bzw. Weihnachtssingen - mehr Ideen als 'nur' das bei Union Berlin in der Alten Försterei": {
+"title": "Christmas Stadium Singing at Union Berlin and Alternatives",
+"kind": "notice",
+"audience": "everyone",
+"summary": "Union Berlin's carol singing at Alte Försterei is free for members, with few public tickets; it is broadcast on rbb. Lists alternative stadium singing events.",
+"by": "claude-task",
+"ctx": true
+},
+"Heiligabend geöffnete Weihnachtsmärkte": {
+"title": "Christmas Markets Open on Christmas Eve",
+"kind": "notice",
+"audience": "everyone",
+"summary": "List of Berlin Christmas markets that open on Christmas Eve, including KaDeWe, Potsdamer Platz, Gedächtniskirche and Rathaus Zehlendorf, with hours.",
+"by": "claude-task",
+"ctx": true
+},
+"Weihnachtskonzert vor Rathaus Schöneberg": {
+"title": "Christmas Concert at Rathaus Schöneberg",
+"kind": "music",
+"audience": "everyone",
+"summary": "Traditional Christmas Eve concert and carol singing on the square in front of Rathaus Schöneberg, ending with Silent Night and the Freedom Bell.",
+"by": "claude-task",
+"ctx": true
+},
+"Weihnachtskonzerte: Klassik, Jazz, Gospel, Kirchenkonzerte, ...": {
+"title": "Christmas Concerts: Classical, Jazz, Gospel, Church Concerts",
+"kind": "notice",
+"audience": "everyone",
+"summary": "Pointer to the Musik in Kirchen website listing Christmas church concerts in many styles, some free, plus the Carillon concerts.",
+"by": "claude-task",
+"ctx": true
+},
+"Shopping / Einkaufen an Weihnachtsfeiertagen": {
+"title": "Shopping on the Christmas Holidays",
+"kind": "notice",
+"audience": "everyone",
+"summary": "List of supermarkets at train stations open on Christmas Eve and the holidays, such as Rewe at Hauptbahnhof and Edeka and Denn's at several stations.",
+"by": "claude-task",
+"ctx": true
+},
+"Weihnachtskonzerte im Carillon Tiergarten, wohl Europas größtes Glockenspiel": {
+"title": "Christmas Concerts at the Carillon in Tiergarten",
+"kind": "music",
+"audience": "everyone",
+"summary": "Carillon concerts with Advent chorales and Christmas music from Bohemia, Germany, England, Austria and the USA on both Christmas holidays.",
+"by": "claude-task",
+"ctx": true
+},
+"Gänsebraten-Verdauungslauf durch Grunewald": {
+"title": "Goose Roast Digestion Run through Grunewald",
+"kind": "sport",
+"audience": "everyone",
+"summary": "Traditional 10 km Christmas run, costumes welcome, from Mommsenstadion through the Grunewald with a mulled wine stop at Försterei Saubucht.",
+"by": "claude-task",
+"ctx": true
 }
 }
