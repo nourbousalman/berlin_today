@@ -14060,5 +14060,141 @@
 "summary": "Traditional 10 km Christmas run, costumes welcome, from Mommsenstadion through the Grunewald with a mulled wine stop at Försterei Saubucht.",
 "by": "claude-task",
 "ctx": true
+},
+"Yu-Gi-Oh! Duell-Arena in der Bibliothek Lichtenrade": {
+"title": "Yu-Gi-Oh! Duel Arena at Bibliothek Lichtenrade",
+"kind": "meetup",
+"audience": "kids",
+"summary": "Learn and play the Yu-Gi-Oh! card game at the Lichtenrade district library. For ages 9 and up, no registration needed.",
+"by": "claude-task",
+"ctx": true
+},
+"November Mini Game Jam 2026 (starting 11:45 at SAE)": {
+"title": "November Mini Game Jam at SAE",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "A game jam at the SAE Institute. Only people on the event's \"Going\" list can attend; bring your own equipment or craft supplies. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"SOLITUDE": {
+"title": "SOLITUDE",
+"kind": "music",
+"audience": "everyone",
+"summary": "Candlelit ritual performance on life and death with Wolfgang Schwabe (guqin) and Vincent Laju (shakuhachi) at shizuku. Limited seats. Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"Audiodeskriptions-Abend am 22.11. im City Kino Wedding": {
+"title": "Audio Description Evening at City Kino Wedding",
+"kind": "film",
+"audience": "everyone",
+"summary": "Screening of the Dardenne brothers' \"Das Kind\" with open audio description, preceded by a short workshop on audio description basics.",
+"by": "claude-task",
+"ctx": true
+},
+"🧡SPENDENAKTION🧡": {
+"title": "Donation Drive for Young People in Need",
+"kind": "notice",
+"audience": "everyone",
+"summary": "Friedrichshain residents collect donations for young people who are homeless or in difficult situations. Only the listed items are accepted.",
+"by": "claude-task",
+"ctx": true
+},
+"Vernissage: Face it & own it!": {
+"title": "Opening: Face it & own it!",
+"kind": "exhibition",
+"audience": "everyone",
+"summary": "Exhibition opening of oil paintings by Lars Koepke and his son Vincent J. E. Sieck, ranging from abstract and expressionist to realistic.",
+"by": "claude-task",
+"ctx": true
+},
+"Erlebnisparcours \"Stadtteil der Sinne\" jeden letzten Freitag im Monat von 14:00 - 15:00": {
+"title": "\"Stadtteil der Sinne\" Sensory Course",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "Try finding your way without sight: with a white cane, walk a course that simulates Berlin streets, surfaces and sounds. About 60 minutes.",
+"by": "claude-task",
+"ctx": true
+},
+"Chorkonzert - GosPop-Chor Eichwalde in der Gemeinde Britz": {
+"title": "Choir Concert: GosPop-Chor Eichwalde in Britz",
+"kind": "music",
+"audience": "everyone",
+"summary": "The GosPop-Chor Eichwalde sings German and English pop songs and gospel to open the Advent weekend in Britz. About one hour, max. 60 people.",
+"by": "claude-task",
+"ctx": true
+},
+"Lesung - Literatur über das Unterwasserleben": {
+"title": "Reading: Literature about Underwater Life",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Actor Christian Ohngemach reads literature about underwater life at the private venue KL91 in Dahlem, part of the mini-festival \"Magie des Meeres\". Registration required.",
+"by": "claude-task",
+"ctx": true
+},
+"From your current skills to a practical AI workflow": {
+"title": "From Your Current Skills to a Practical AI Workflow",
+"kind": "workshop",
+"audience": "everyone",
+"summary": "A live, interactive AumOS session at foundations level for a mixed professional audience, including building a workflow map.",
+"by": "claude-task",
+"ctx": true
+},
+"Kneipenquiz": {
+"title": "Pub Quiz: Who Owns Neukölln?",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Quiz night about Neukölln and socialisation of housing at Syndikat, run by the local team of Deutsche Wohnen & Co. Enteignen. Teams of four, prizes.",
+"by": "claude-task",
+"ctx": true
+},
+"Radical Christmas Market": {
+"title": "Radical Christmas Market",
+"kind": "market",
+"audience": "everyone",
+"summary": "Shop Radical hosts 30–45 independent designers and small labels selling handmade alternative fashion, jewellery, bags, accessories and art at Manifesto Market.",
+"by": "claude-task",
+"ctx": true
+},
+"\"Ob Punsch, ob Glühwein – mit uns trinkt ihr nie allein!\" - im RegenbogenCafé": {
+"title": "Punch and Mulled Wine Evening at RegenbogenCafé",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Die Meuterei serves mulled wine, apple punch and snacks; you can paint Christmas ornaments. Proceeds support the Regenbogenfabrik.",
+"by": "claude-task",
+"ctx": true
+},
+"Lesung: Michal Tallo „Alles in Ordnung, Liebe überall“": {
+"title": "Reading: Michal Tallo \"Alles in Ordnung, Liebe überall\"",
+"kind": "talk",
+"audience": "everyone",
+"summary": "Reading from Michal Tallo's short stories, where everyday situations turn strange and absurd. No registration needed.",
+"by": "claude-task",
+"ctx": true
+},
+"Gemeinsames Weihnachtskarten schreiben an Menschen in Senioreneinrichtungen": {
+"title": "Writing Christmas Cards for People in Care Homes",
+"kind": "meetup",
+"audience": "everyone",
+"summary": "Get together to write Christmas cards for residents of senior care homes.",
+"by": "claude-task",
+"ctx": true
+},
+"NoonSong: Die festlichen neun Lieder und Lesungen zum Advent": {
+"title": "NoonSong: Festival of Nine Lessons and Carols for Advent",
+"kind": "music",
+"audience": "everyone",
+"summary": "Christmas carols to sing along with, Bible readings and motets by Praetorius, Reger and others, sung by sirventes berlin under Stefan Schuck. About 70 minutes.",
+"by": "claude-task",
+"ctx": true
+},
+"Silvester-Orgelkonzert in der Sophienkirche": {
+"title": "New Year's Eve Organ Concert at Sophienkirche",
+"kind": "music",
+"audience": "everyone",
+"summary": "Organist Maximilian Schnaus sets works by Johann Sebastian Bach against contemporary pieces for organ and electronics.",
+"by": "claude-task",
+"ctx": true
 }
 }
